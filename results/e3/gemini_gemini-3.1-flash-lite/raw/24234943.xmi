@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/24234943" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24234943/" sourceSha256="e213a59191b873f17f97d7b78d56a162a2f60d69ded6fb37385ce53168f99a6b" sourceText="Syndrome of inappropriate antidiuretic hormone secretion associated with desvenlafaxine. OBJECTIVE: To report a case of syndrome of inappropriate anti-diuretic hormone (SIADH) secretion associated with desvenlafaxine. CASE SUMMARY: A 57-year old female with hyponatraemia. Her medications included desvenlafaxine, and symptoms included nausea, anxiety and confusion. The serum sodium at this time was 120 mmol/L, serum osmolality was 263 mosmol/kg, urine osmolality 410 mosmol/kg and urine sodium 63 mmol/L, consistent with a diagnosis of SIADH. Desvenlafaxine was ceased and fluid restriction implemented. After 4 days the sodium increased to 128 mmol/L and fluid restriction was relaxed. During her further 3 weeks inpatient admission the serum sodium ranged from 134 to 137 mmol/L during treatment with mirtazapine. DISCUSSION: SIADH has been widely reported with a range of antidepressants. This case report suggests that desvenlafaxine might cause clinically significant hyponatremia. CONCLUSIONS: Clinicians should be aware of the potential for antidepressants to cause hyponatremia,and take appropriate corrective action where necessary." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:25+00:00" xmi:version="2.0">
+  <chunks charEnd="1144"/>
+  <entities type="Drug" id="desvenlafaxine" mention="desvenlafaxine" confidence="1.0" sourceSpanStart="73" sourceSpanEnd="87">
+    <properties key="name" value="desvenlafaxine"/>
+  </entities>
+  <entities type="Drug" id="mirtazapine" mention="mirtazapine" confidence="1.0" sourceSpanStart="806" sourceSpanEnd="817">
+    <properties key="name" value="mirtazapine"/>
+  </entities>
+  <entities type="Condition" id="syndrome-of-inappropriate-antidiuretic-hormone-secretion" mention="syndrome of inappropriate antidiuretic hormone secretion" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="56">
+    <properties key="name" value="syndrome of inappropriate antidiuretic hormone secretion"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="hyponatremia" mention="hyponatraemia" confidence="0.95" sourceSpanStart="258" sourceSpanEnd="271">
+    <properties key="name" value="hyponatremia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="desvenlafaxine" targetType="Condition" targetId="syndrome-of-inappropriate-antidiuretic-hormone-secretion" confidence="0.9" evidence="Syndrome of inappropriate antidiuretic hormone secretion associated with desvenlafaxine." sourceSpanStart="0" sourceSpanEnd="88"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="desvenlafaxine" targetType="Condition" targetId="hyponatremia" confidence="0.9" evidence="This case report suggests that desvenlafaxine might cause clinically significant hyponatremia." sourceSpanStart="895" sourceSpanEnd="989"/>
+</raw:RawExtractionResult>

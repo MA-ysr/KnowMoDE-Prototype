@@ -1,0 +1,7 @@
+{
+  "id": "M11_no_provenance_rule",
+  "family": "C3",
+  "expectedConstraint": "C3_HasProvenanceRule",
+  "mutatedFile": "validation-policy.xmi",
+  "description": "the provenance rule is downgraded to WARNING (R7 no longer guaranteed)"
+}

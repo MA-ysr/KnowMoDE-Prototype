@@ -1,0 +1,139 @@
+{
+  "model": "gemini/gemini-3.1-flash-lite",
+  "promptId": "drug_label_extraction@fc3d922aa277",
+  "sample": 60,
+  "goldRelations": 131,
+  "extraction": {
+    "documents": 60,
+    "skipped_existing": 0,
+    "chunks_ok": 60,
+    "chunks_failed": 0,
+    "calls": 60,
+    "cached": 0,
+    "input_tokens": 182180,
+    "output_tokens": 49692,
+    "entities": 306,
+    "relations": 183,
+    "spans_repaired": 456,
+    "malformed_items": 0
+  },
+  "ranAt": "2026-10-15T14:56:52+00:00",
+  "raw": {
+    "tp": 87,
+    "fp": 49,
+    "fn": 44,
+    "precision": 0.64,
+    "recall": 0.664,
+    "f1": 0.652
+  },
+  "validated": {
+    "default": {
+      "tp": 84,
+      "fp": 50,
+      "fn": 47,
+      "precision": 0.627,
+      "recall": 0.641,
+      "f1": 0.634,
+      "summary": {
+        "acceptanceRate": 0.994,
+        "documents": 60,
+        "rawEntities": 306,
+        "rawRelations": 183,
+        "rejected": 3,
+        "validEntities": 306,
+        "validRelations": 180
+      },
+      "rejectionsPerRule": {
+        "relation_evidence_grounded_in_source": 2,
+        "relation_type_and_endpoints_in_schema": 1
+      }
+    },
+    "threshold_0.5": {
+      "tp": 84,
+      "fp": 50,
+      "fn": 47,
+      "precision": 0.627,
+      "recall": 0.641,
+      "f1": 0.634,
+      "summary": {
+        "acceptanceRate": 0.994,
+        "documents": 60,
+        "rawEntities": 306,
+        "rawRelations": 183,
+        "rejected": 3,
+        "validEntities": 306,
+        "validRelations": 180
+      },
+      "rejectionsPerRule": {
+        "relation_evidence_grounded_in_source": 2,
+        "relation_type_and_endpoints_in_schema": 1
+      }
+    },
+    "threshold_0.7": {
+      "tp": 84,
+      "fp": 50,
+      "fn": 47,
+      "precision": 0.627,
+      "recall": 0.641,
+      "f1": 0.634,
+      "summary": {
+        "acceptanceRate": 0.994,
+        "documents": 60,
+        "rawEntities": 306,
+        "rawRelations": 183,
+        "rejected": 3,
+        "validEntities": 306,
+        "validRelations": 180
+      },
+      "rejectionsPerRule": {
+        "relation_evidence_grounded_in_source": 2,
+        "relation_type_and_endpoints_in_schema": 1
+      }
+    },
+    "threshold_0.9": {
+      "tp": 53,
+      "fp": 41,
+      "fn": 78,
+      "precision": 0.564,
+      "recall": 0.405,
+      "f1": 0.471,
+      "summary": {
+        "acceptanceRate": 0.885,
+        "documents": 60,
+        "rawEntities": 306,
+        "rawRelations": 183,
+        "rejected": 56,
+        "validEntities": 303,
+        "validRelations": 130
+      },
+      "rejectionsPerRule": {
+        "entity_confidence_above_threshold": 3,
+        "relation_confidence_above_threshold": 50,
+        "relation_endpoints_accepted": 3,
+        "relation_evidence_grounded_in_source": 2,
+        "relation_type_and_endpoints_in_schema": 1
+      }
+    },
+    "no_grounding": {
+      "tp": 86,
+      "fp": 50,
+      "fn": 45,
+      "precision": 0.632,
+      "recall": 0.656,
+      "f1": 0.644,
+      "summary": {
+        "acceptanceRate": 0.998,
+        "documents": 60,
+        "rawEntities": 306,
+        "rawRelations": 183,
+        "rejected": 1,
+        "validEntities": 306,
+        "validRelations": 182
+      },
+      "rejectionsPerRule": {
+        "relation_evidence_grounded_in_source": 2,
+        "relation_type_and_endpoints_in_schema": 1
+      }
+    }
+  }
+}

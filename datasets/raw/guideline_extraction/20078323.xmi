@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/20078323.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/20078323/" sourceSha256="8fe3ca11328f7f525ba1cb4332f1e567a59b58e2f379910a7ef3e4a0333d476d" sourceText="# PubMed 20078323: Addressing hyperglycemia from hospital admission to discharge.&#10;&#10;Current medical research and opinion (2010), doi:10.1185/03007990903566822&#10;&#10;BACKGROUND: This review examines glycemia management practices in hospitalized patients. Optimal glycemic control remains a challenge among hospitalized patients. Recent studies have questioned the benefit of tight glycemic control and have raised concerns regarding the safety of this approach. As a result, medical societies have updated glycemic targets and have published new consensus guidelines for management of glycemia in hospitalized patients. This review highlights recent inpatient glycemic trials, the new glycemic targets and recommended strategies for management of glycemia in hospitalized patients.&#10;&#10;METHODS: Medline and PubMed searches (diabetes, hyperglycemia, hypoglycemia, intensive therapy insulin, tight glycemic control, and hospital patients) were performed for English-language articles on treatment of diabetes, insulin therapy, hyperglycemia or hypoglycemia in hospitalized patients published from 2004 to present. Earlier works cited in these papers were surveyed. Clinical studies, reviews, consensus/guidelines statements, and meta-analyses relevant to the identification and management of diabetes and hyperglycemia in hospitalized patients were included and selected. This is not an exhaustive review of the published literature.&#10;&#10;RESULTS: Insulin remains the most appropriate agent for a majority of hospitalized patients. In critically ill patients insulin is given as a continuous intravenous (IV) infusion and in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring. Prevention of hypoglycemia is equally as important to patient outcomes and is an equally necessary part of any effective glucose control program. Modern insulin analogs offer advantages over the older human insulins (e.g., regular and neutral protamine Hagedorn [NPH] insulin) because their time-action profiles more closely correspond to physiological basal and prandial insulin requirements, and have a lower propensity for inducing hypoglycemia than human insulin formulations. Long-acting basal insulin analogs (glargine, detemir) are suitable and preferred for the basal component of therapy; rapid-acting insulin analogs (aspart, lispro, glulisine) are recommended for bolus and correction doses. Sliding-scale insulin (SSI) regimens are not effective and should not be used, especially as this excludes a basal insulin component from the therapy.&#10;&#10;CONCLUSIONS: Optimal glycemic management in the hospital setting requires judicious treatment of hyperglycemia while avoiding hypoglycemia. Insulin is the most appropriate agent for management of hyperglycemia for the majority of hospitalized patients. Intravenous insulin infusion is still preferred during and immediately after surgery, but s.c. basal insulin analogs with prandial or correction doses should be used after the immediate post-operative period, and also should be used in non-critically ill patients. Frequent and effective glucose monitoring is critical for avoiding wide deviations from acceptable glucose levels, which under a recently promulgated consensus guideline currently range between 140 mg/dL and 180 mg/dL. Glucose targets near 140 mg/dL are recommended as being the most appropriate for all hospitalized patients.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:55:16+00:00" xmi:version="2.0">
+  <chunks charEnd="2959"/>
+  <chunks index="1" charStart="2847" charEnd="3552"/>
+  <entities type="Recommendation" id="insulin-for-critically-ill-patients" mention="In critically ill patients insulin is given as a continuous intravenous (IV) infusion" confidence="0.9" sourceSpanStart="1516" sourceSpanEnd="1601">
+    <properties key="statement" value="give insulin as a continuous intravenous infusion in critically ill patients"/>
+    <properties key="source" value="Current medical research and opinion"/>
+  </entities>
+  <entities type="Condition" id="critically-ill-state" mention="critically ill patients" confidence="0.85" sourceSpanStart="1519" sourceSpanEnd="1542">
+    <properties key="name" value="critically ill state"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1543" sourceSpanEnd="1550">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="basal-bolus-insulin-non-critically-ill" mention="in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring" confidence="0.92" sourceSpanStart="1606" sourceSpanEnd="1850">
+    <properties key="statement" value="manage hyperglycemia in non-critically ill inpatients using scheduled subcutaneous basal-bolus insulin regimens supplemented with correction doses"/>
+    <properties key="source" value="Current medical research and opinion"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="1639" sourceSpanEnd="1652">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="basal-bolus-insulin" mention="basal-bolus insulin regimens" confidence="0.9" sourceSpanStart="1703" sourceSpanEnd="1731">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="long-acting-basal-analogs-preferred" mention="Long-acting basal insulin analogs (glargine, detemir) are suitable and preferred for the basal component of therapy" confidence="0.93" sourceSpanStart="2333" sourceSpanEnd="2448">
+    <properties key="statement" value="use long-acting basal insulin analogs glargine or detemir for the basal component of therapy"/>
+    <properties key="source" value="Current medical research and opinion"/>
+  </entities>
+  <entities type="Drug" id="glargine" mention="glargine" confidence="0.95" sourceSpanStart="2368" sourceSpanEnd="2376">
+    <properties key="name" value="insulin glargine"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="detemir" mention="detemir" confidence="0.95" sourceSpanStart="2378" sourceSpanEnd="2385">
+    <properties key="name" value="insulin detemir"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="rapid-acting-analogs-recommended" mention="rapid-acting insulin analogs (aspart, lispro, glulisine) are recommended for bolus and correction doses" confidence="0.93" sourceSpanStart="2450" sourceSpanEnd="2553">
+    <properties key="statement" value="use rapid-acting insulin analogs aspart, lispro, or glulisine for bolus and correction doses"/>
+    <properties key="source" value="Current medical research and opinion"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="Drug" id="aspart" mention="aspart" confidence="0.95" sourceSpanStart="2480" sourceSpanEnd="2486">
+    <properties key="name" value="insulin aspart"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="lispro" mention="lispro" confidence="0.95" sourceSpanStart="2488" sourceSpanEnd="2494">
+    <properties key="name" value="insulin lispro"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="glulisine" mention="glulisine" confidence="0.95" sourceSpanStart="2496" sourceSpanEnd="2505">
+    <properties key="name" value="insulin glulisine"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="avoid-sliding-scale-insulin" mention="Sliding-scale insulin (SSI) regimens are not effective and should not be used, especially as this excludes a basal insulin component from the therapy" confidence="0.92" sourceSpanStart="2555" sourceSpanEnd="2704">
+    <properties key="statement" value="avoid sliding-scale insulin regimens as they are not effective and lack a basal insulin component"/>
+    <properties key="source" value="Current medical research and opinion"/>
+  </entities>
+  <entities type="Recommendation" id="insulin-for-hyperglycemia" mention="Insulin is the most appropriate agent for management of hyperglycemia for the majority of hospitalized patients" confidence="0.95" sourceSpanStart="2847" sourceSpanEnd="2958" chunkIndex="1">
+    <properties key="statement" value="use insulin for management of hyperglycemia for the majority of hospitalized patients"/>
+    <properties key="source" value="consensus guideline"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="2903" sourceSpanEnd="2916" chunkIndex="1">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="2847" sourceSpanEnd="2854" chunkIndex="1">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="iv-insulin-during-surgery" mention="Intravenous insulin infusion is still preferred during and immediately after surgery" confidence="0.95" sourceSpanStart="2960" sourceSpanEnd="3044" chunkIndex="1">
+    <properties key="statement" value="use intravenous insulin infusion during and immediately after surgery"/>
+    <properties key="source" value="consensus guideline"/>
+  </entities>
+  <entities type="Drug" id="intravenous-insulin" mention="Intravenous insulin" confidence="0.95" sourceSpanStart="2960" sourceSpanEnd="2979" chunkIndex="1">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="sc-basal-insulin-analogs" mention="s.c. basal insulin analogs with prandial or correction doses should be used after the immediate post-operative period, and also should be used in non-critically ill patients" confidence="0.95" sourceSpanStart="3050" sourceSpanEnd="3223" chunkIndex="1">
+    <properties key="statement" value="use s.c. basal insulin analogs with prandial or correction doses after the immediate post-operative period and in non-critically ill patients"/>
+    <properties key="source" value="consensus guideline"/>
+  </entities>
+  <entities type="Condition" id="non-critically-ill-patients" mention="non-critically ill patients" confidence="0.85" sourceSpanStart="3196" sourceSpanEnd="3223" chunkIndex="1">
+    <properties key="name" value="non-critically ill state"/>
+    <properties key="category" value="clinical state"/>
+  </entities>
+  <entities type="Drug" id="basal-insulin-analogs" mention="s.c. basal insulin analogs" confidence="0.95" sourceSpanStart="3050" sourceSpanEnd="3076" chunkIndex="1">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="glucose-targets-140" mention="Glucose targets near 140 mg/dL are recommended as being the most appropriate for all hospitalized patients" confidence="0.95" sourceSpanStart="3444" sourceSpanEnd="3550" chunkIndex="1">
+    <properties key="statement" value="target glucose near 140 mg/dL for all hospitalized patients"/>
+    <properties key="source" value="consensus guideline"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="LabTest" id="glucose-140-mg-dl" mention="Glucose targets near 140 mg/dL" confidence="0.9" sourceSpanStart="3444" sourceSpanEnd="3474" chunkIndex="1">
+    <properties key="name" value="glucose near 140 mg/dL"/>
+    <properties key="abnormalThreshold" value="&gt; 140 mg/dL"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="insulin-for-critically-ill-patients" targetType="Condition" targetId="critically-ill-state" confidence="0.9" evidence="In critically ill patients insulin is given as a continuous intravenous (IV) infusion and in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring." sourceSpanStart="1516" sourceSpanEnd="1851"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="insulin-for-critically-ill-patients" targetType="Drug" targetId="insulin" confidence="0.9" evidence="In critically ill patients insulin is given as a continuous intravenous (IV) infusion and in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring." sourceSpanStart="1516" sourceSpanEnd="1851"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="basal-bolus-insulin-non-critically-ill" targetType="Condition" targetId="hyperglycemia" confidence="0.9" evidence="In critically ill patients insulin is given as a continuous intravenous (IV) infusion and in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring." sourceSpanStart="1516" sourceSpanEnd="1851"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="basal-bolus-insulin-non-critically-ill" targetType="Drug" targetId="basal-bolus-insulin" confidence="0.9" evidence="In critically ill patients insulin is given as a continuous intravenous (IV) infusion and in non-critically ill inpatients hyperglycemia is best managed using scheduled subcutaneous (SC) basal-bolus insulin regimens supplemented with correction doses as needed and adjusted daily with the guidance of frequent blood glucose monitoring." sourceSpanStart="1516" sourceSpanEnd="1851"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="long-acting-basal-analogs-preferred" targetType="Drug" targetId="glargine" confidence="0.9" evidence="Long-acting basal insulin analogs (glargine, detemir) are suitable and preferred for the basal component of therapy" sourceSpanStart="2333" sourceSpanEnd="2448"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="long-acting-basal-analogs-preferred" targetType="Drug" targetId="detemir" confidence="0.9" evidence="Long-acting basal insulin analogs (glargine, detemir) are suitable and preferred for the basal component of therapy" sourceSpanStart="2333" sourceSpanEnd="2448"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="rapid-acting-analogs-recommended" targetType="Drug" targetId="aspart" confidence="0.9" evidence="rapid-acting insulin analogs (aspart, lispro, glulisine) are recommended for bolus and correction doses" sourceSpanStart="2450" sourceSpanEnd="2553"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="rapid-acting-analogs-recommended" targetType="Drug" targetId="lispro" confidence="0.9" evidence="rapid-acting insulin analogs (aspart, lispro, glulisine) are recommended for bolus and correction doses" sourceSpanStart="2450" sourceSpanEnd="2553"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="rapid-acting-analogs-recommended" targetType="Drug" targetId="glulisine" confidence="0.9" evidence="rapid-acting insulin analogs (aspart, lispro, glulisine) are recommended for bolus and correction doses" sourceSpanStart="2450" sourceSpanEnd="2553"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="insulin-for-hyperglycemia" targetType="Condition" targetId="hyperglycemia" confidence="0.95" evidence="Insulin is the most appropriate agent for management of hyperglycemia for the majority of hospitalized patients." sourceSpanStart="2847" sourceSpanEnd="2959" chunkIndex="1"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="insulin-for-hyperglycemia" targetType="Drug" targetId="insulin" confidence="0.95" evidence="Insulin is the most appropriate agent for management of hyperglycemia for the majority of hospitalized patients." sourceSpanStart="2847" sourceSpanEnd="2959" chunkIndex="1"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="iv-insulin-during-surgery" targetType="Drug" targetId="intravenous-insulin" confidence="0.95" evidence="Intravenous insulin infusion is still preferred during and immediately after surgery" sourceSpanStart="2960" sourceSpanEnd="3044" chunkIndex="1"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="sc-basal-insulin-analogs" targetType="Drug" targetId="basal-insulin-analogs" confidence="0.95" evidence="s.c. basal insulin analogs with prandial or correction doses should be used after the immediate post-operative period, and also should be used in non-critically ill patients." sourceSpanStart="3050" sourceSpanEnd="3224" chunkIndex="1"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="sc-basal-insulin-analogs" targetType="Condition" targetId="non-critically-ill-patients" confidence="0.85" evidence="s.c. basal insulin analogs with prandial or correction doses should be used after the immediate post-operative period, and also should be used in non-critically ill patients." sourceSpanStart="3050" sourceSpanEnd="3224" chunkIndex="1"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="glucose-targets-140" targetType="LabTest" targetId="glucose-140-mg-dl" confidence="0.95" evidence="Glucose targets near 140 mg/dL are recommended as being the most appropriate for all hospitalized patients." sourceSpanStart="3444" sourceSpanEnd="3551" chunkIndex="1"/>
+</raw:RawExtractionResult>

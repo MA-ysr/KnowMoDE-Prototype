@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/21060326.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/21060326/" sourceSha256="6fb9a44824014bcc2ed180ec3dc6cd9fcdf2821f6d7dfa9e878110c4a3c87f68" sourceText="# PubMed 21060326: Epidemiology and risk profile of heart failure.&#10;&#10;Nature reviews. Cardiology (2011), doi:10.1038/nrcardio.2010.165&#10;&#10;Heart failure (HF) is a major public health issue, with a prevalence of over 5.8 million in the USA, and over 23 million worldwide, and rising. The lifetime risk of developing HF is one in five. Although promising evidence shows that the age-adjusted incidence of HF may have plateaued, HF still carries substantial morbidity and mortality, with 5-year mortality that rival those of many cancers. HF represents a considerable burden to the health-care system, responsible for costs of more than $39 billion annually in the USA alone, and high rates of hospitalizations, readmissions, and outpatient visits. HF is not a single entity, but a clinical syndrome that may have different characteristics depending on age, sex, race or ethnicity, left ventricular ejection fraction (LVEF) status, and HF etiology. Furthermore, pathophysiological differences are observed among patients diagnosed with HF and reduced LVEF compared with HF and preserved LVEF, which are beginning to be better appreciated in epidemiological studies. A number of risk factors, such as ischemic heart disease, hypertension, smoking, obesity, and diabetes, among others, have been identified that both predict the incidence of HF as well as its severity. In this Review, we discuss key features of the epidemiology and risk profile of HF.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:25:53+00:00" xmi:version="2.0">
+  <chunks charEnd="1444"/>
+  <entities type="Condition" id="heart-failure" mention="Heart failure (HF)" confidence="0.95" sourceSpanStart="134" sourceSpanEnd="152">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="ischemic-heart-disease" mention="ischemic heart disease" confidence="0.95" sourceSpanStart="1192" sourceSpanEnd="1214">
+    <properties key="name" value="ischemic heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1216" sourceSpanEnd="1228">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="smoking" confidence="0.95" sourceSpanStart="1230" sourceSpanEnd="1237">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="tobacco smoking"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1239" sourceSpanEnd="1246">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1252" sourceSpanEnd="1260">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

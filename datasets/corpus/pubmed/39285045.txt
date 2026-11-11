@@ -1,0 +1,11 @@
+# PubMed 39285045: Unplanned hospital readmission after cholecystectomy in adults with cerebral palsy.
+
+Surgical endoscopy (2024), doi:10.1007/s00464-024-11224-9
+
+BACKGROUND: Adults with cerebral palsy (CP) are a largely understudied, growing population with unique health care requirements. We sought to establish a deeper understanding of the surgical risk in adults with CP undergoing a common general surgical procedure: cholecystectomy.
+
+METHODS: Data were obtained from the State Inpatient Database developed for the Healthcare Cost and Utilization Project. Inclusion criteria included patients ≥ 18 years with CP and a primary ICD-9 procedure code indicating open or laparoscopic cholecystectomy. Demographics, procedure-related factors, and comorbid conditions were analyzed, and unplanned 30 and 90 day readmission rates calculated for each variable. Reasons for readmission based on ICD-9 diagnosis codes were grouped into relevant categories. Univariate analysis identified factors significantly associated with readmission rates.
+
+RESULTS: A total of 802 patients with CP met the inclusion criteria. Unplanned 30 and 90 day readmission rates after laparoscopic cholecystectomy were 11.4% and 18.1%, respectively. Average length of stay (LOS) after laparoscopic cholecystectomy was 7.1 days. After open cholecystectomy, 30 and 90 day readmission rates were 16.9% and 30.3% with an average LOS of 14.6 days. Infection was the most common cause for 30 and 90 day readmission. Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition. Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition.
+
+CONCLUSION: Unplanned readmission rates after open and laparoscopic cholecystectomy in adult patients with CP are much higher than previously demonstrated rates in the general population. These patients frequently suffer multiple comorbid conditions that significantly complicate their surgical care. As more and more of these patients live longer into adulthood, further study is warranted to grasp the perioperative risk of simple and complex surgical procedures.

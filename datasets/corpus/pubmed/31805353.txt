@@ -1,0 +1,11 @@
+# PubMed 31805353: Characteristics of diabetes diagnosis and control in toddlers and preschoolers from families with limited resources: A single center experience.
+
+Diabetes research and clinical practice (2020), doi:10.1016/j.diabres.2019.107966
+
+AIM: To describe the characteristics of diabetes diagnosis, insulin therapy regarding type, dose and frequency also the degree of glycemic control achieved in toddlers and preschoolers coming from families with limited resources.
+
+METHODS: Over one year, 69 toddlers and preschoolers clinically diagnosed as type 1 diabetes were included. Data related to presentation at diagnosis, insulin therapy and glycemic control was reviewed from patients' care givers and medical records.
+
+RESULTS: Diabetic ketoacidosis (DKA) was recorded in 71% of the children at initial diagnosis. The mean time since diabetes diagnosis was 2 ± 1 years. Most of children (65/69, 94%) were on basal-bolus regimen while four (6%) were on basal insulin only. NPH and long acting analogues were used as basal insulin in (74%) and (26%). Regular insulin and rapid acting analogues were used as bolus insulin (27%) and (73%).The mean frequency of daily self monitoring of blood glucose was (2.9 ± 1). The arithmetic mean of HbA1c done over past 6 months to one year before inclusion in the study was 8.2 ± 1.5% (66 ± 12 mmol/mol) with 65% having HbA1c ≥ 7.5% (≥58 mmol/mol).
+
+CONCLUSION: Toddlers and preschoolers with diabetes coming from families with limited resources frequently present with DKA at diagnosis and have suboptimal self-monitoring of blood glucose and glycemic control. NPH is more commonly used in this age group, combined with postprandial rapid analogues and less commonly preprandial regular insulin and that yields more favorable HbA1c but with a greater risk of hypoglycemia. The most common cause of hospital readmission was ketoacidosis and uncontrolled hyperglycemia.

@@ -1,0 +1,7 @@
+{
+  "id": "M05_prompt_targets_undeclared_concept",
+  "family": "C2",
+  "expectedConstraint": "C2_PromptConceptsDeclaredInTargetSchema",
+  "mutatedFile": "extraction-pipeline.xmi",
+  "description": "drug_label task targets a concept that does not exist (dangling reference)"
+}

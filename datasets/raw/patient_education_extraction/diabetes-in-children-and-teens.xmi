@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetes-in-children-and-teens.txt" sourceUri="https://medlineplus.gov/diabetesinchildrenandteens.html" sourceSha256="b22840780256a25005e1065b293bc0158c54304971f31ee19edd64bd83cf5e99" sourceText="# MedlinePlus health topic: Diabetes in Children and Teens&#10;&#10;Also called: Children and Diabetes, Teens and Diabetes&#10;&#10;Until recently, the common type of diabetes in children and teens was type 1. It was called juvenile diabetes. With Type 1 diabetes, the pancreas does not make insulin. Insulin is a hormone that helps glucose,or sugar, get into your cells to give them energy. Without insulin, too much sugar stays in the blood.&#10;&#10;Now younger people are also getting type 2 diabetes. Type 2 diabetes used to be called adult-onset diabetes. But now it is becoming more common in children and teens, due to more obesity. With Type 2 diabetes, the body does not make or use insulin well.&#10;&#10;Children have a higher risk of type 2 diabetes if they are overweight or have obesity, have a family history of diabetes, or are not active. Children who are African American, Hispanic, Native American/Alaska Native, Asian American, or Pacific Islander also have a higher risk. To lower the risk of type 2 diabetes in children:&#10;&#10;Have them maintain a healthy weight&#10;&#10;Be sure they are physically active&#10;&#10;Have them eat smaller portions of healthy foods&#10;&#10;Limit time with the TV, computer, and video&#10;&#10;Children and teens with type 1 diabetes may need to take insulin. Type 2 diabetes may be controlled with diet and exercise. If not, patients will need to take oral diabetes medicines or insulin. A blood test called the A1C can check on how you are managing your diabetes.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:19:56+00:00" xmi:version="2.0">
+  <chunks charEnd="1452"/>
+  <entities type="Condition" id="type-1-diabetes" mention="Type 1 diabetes" confidence="0.98" sourceSpanStart="232" sourceSpanEnd="247">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.98" sourceSpanStart="465" sourceSpanEnd="480">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="608" sourceSpanEnd="615">
+    <properties key="name" value="obesity"/>
+    <properties key="description" value="more obesity"/>
+  </entities>
+  <entities type="RiskFactor" id="overweight-or-obesity" mention="overweight or have obesity" confidence="0.95" sourceSpanStart="743" sourceSpanEnd="769">
+    <properties key="name" value="overweight or obesity"/>
+    <properties key="description" value="children are overweight or have obesity"/>
+  </entities>
+  <entities type="RiskFactor" id="family-history-of-diabetes" mention="family history of diabetes" confidence="0.95" sourceSpanStart="778" sourceSpanEnd="804">
+    <properties key="name" value="family history of diabetes"/>
+    <properties key="description" value="children have a family history of diabetes"/>
+  </entities>
+  <entities type="RiskFactor" id="not-active" mention="not active" confidence="0.95" sourceSpanStart="813" sourceSpanEnd="823">
+    <properties key="name" value="physical inactivity"/>
+    <properties key="description" value="children are not active"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="type-2-diabetes-development" mention="type 2 diabetes" confidence="0.9" sourceSpanStart="983" sourceSpanEnd="998">
+    <properties key="name" value="type 2 diabetes"/>
+  </entities>
+  <entities type="Recommendation" id="maintain-healthy-weight" mention="Have them maintain a healthy weight" confidence="0.9" sourceSpanStart="1013" sourceSpanEnd="1048">
+    <properties key="statement" value="Have them maintain a healthy weight"/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <entities type="Recommendation" id="physically-active" mention="Be sure they are physically active" confidence="0.9" sourceSpanStart="1050" sourceSpanEnd="1084">
+    <properties key="statement" value="Be sure they are physically active"/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <entities type="Recommendation" id="eat-smaller-portions" mention="Have them eat smaller portions of healthy foods" confidence="0.9" sourceSpanStart="1086" sourceSpanEnd="1133">
+    <properties key="statement" value="Have them eat smaller portions of healthy foods"/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <entities type="Recommendation" id="limit-screen-time" mention="Limit time with the TV, computer, and video" confidence="0.9" sourceSpanStart="1135" sourceSpanEnd="1178">
+    <properties key="statement" value="Limit time with the TV, computer, and video"/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1237" sourceSpanEnd="1244">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="LabTest" id="a1c" mention="A1C" confidence="0.95" sourceSpanStart="1399" sourceSpanEnd="1402">
+    <properties key="name" value="A1C"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="obesity" targetType="ClinicalOutcome" targetId="type-2-diabetes-development" confidence="0.9" evidence="But now it is becoming more common in children and teens, due to more obesity." sourceSpanStart="538" sourceSpanEnd="616"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="overweight-or-obesity" targetType="ClinicalOutcome" targetId="type-2-diabetes-development" confidence="0.9" evidence="Children have a higher risk of type 2 diabetes if they are overweight or have obesity, have a family history of diabetes, or are not active." sourceSpanStart="684" sourceSpanEnd="824"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="family-history-of-diabetes" targetType="ClinicalOutcome" targetId="type-2-diabetes-development" confidence="0.9" evidence="Children have a higher risk of type 2 diabetes if they are overweight or have obesity, have a family history of diabetes, or are not active." sourceSpanStart="684" sourceSpanEnd="824"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="not-active" targetType="ClinicalOutcome" targetId="type-2-diabetes-development" confidence="0.9" evidence="Children have a higher risk of type 2 diabetes if they are overweight or have obesity, have a family history of diabetes, or are not active." sourceSpanStart="684" sourceSpanEnd="824"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="maintain-healthy-weight" targetType="Condition" targetId="type-2-diabetes" confidence="0.9" evidence="To lower the risk of type 2 diabetes in children:&#10;&#10;Have them maintain a healthy weight" sourceSpanStart="962" sourceSpanEnd="1048"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="physically-active" targetType="Condition" targetId="type-2-diabetes" confidence="0.9" evidence="To lower the risk of type 2 diabetes in children:&#10;&#10;Have them maintain a healthy weight&#10;&#10;Be sure they are physically active" sourceSpanStart="962" sourceSpanEnd="1084"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="maintain-healthy-weight" targetType="Drug" targetId="insulin" confidence="0.2" evidence="Children and teens with type 1 diabetes may need to take insulin." sourceSpanStart="1180" sourceSpanEnd="1245"/>
+</raw:RawExtractionResult>

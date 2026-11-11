@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/32811495.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/32811495/" sourceSha256="4a0d9d9c99c4b9c7a6cbc3334625de9223cf42ca25a13d576c19954e8506663f" sourceText="# PubMed 32811495: The neglected perioperative population of undiagnosed diabetics - a retrospective cohort study.&#10;&#10;BMC surgery (2020), doi:10.1186/s12893-020-00844-2&#10;&#10;BACKGROUND: Diabetes is known to increase morbidity and 30-day mortality in adults undergoing non-cardiac surgery, but longer term outcomes are less studied. This study was done to explore how undiagnosed and known diabetes affect 30-day and one-year morbidity and mortality outcomes. The secondary aim was to study the prevalence of undiagnosed diabetics in our perioperative Asian surgical population.&#10;&#10;METHODS: A retrospective cohort study of 2106 patients aged &gt; 45 years undergoing non-cardiac surgery in a single tertiary hospital was performed. Undiagnosed diabetics were identified (HbA1c ≥6.5% or fasting blood glucose ≥126 mg/dL) and relevant demographic, clinical and surgical data were analyzed to elicit the relationship to adverse outcomes. Univariate analysis was first performed to identify significant variables with p-values ≤0.1, which were then analyzed using multiple logistic regression to calculate the adjusted odds ratio.&#10;&#10;RESULTS: The prevalence of undiagnosed diabetes was 7.4%. The mean and median HbA1c of known diabetics were 7.9 and 7.5%, while the mean and median HbA1c for undiagnosed diabetics were 7.2 and 6.8% respectively. 36.4% of known diabetics and 20.5% of undiagnosed diabetics respectively had a random blood glucose &gt; 200 mg/dL. Undiagnosed diabetics had a three-fold increase in 1-year mortality compared to non-diabetics (adjusted OR 3.46(1.80-6.49) p &lt; 0.001) but this relationship was not significant between known and non-diabetics. Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).&#10;&#10;CONCLUSIONS: Although undiagnosed diabetics have biochemically less severe disease compared to known diabetics at the point of testing, they are at a one-year mortality disadvantage which is not seen among known diabetics. This worrying trend highlights the importance of identifying and treating diabetes. Congruent to previous studies, known diabetics have higher morbidity and 30-day mortality compared to non-diabetics.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:39:21+00:00" xmi:version="2.0">
+  <chunks charEnd="2356"/>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.95" sourceSpanStart="180" sourceSpanEnd="188">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="undiagnosed-diabetes" mention="undiagnosed diabetics" confidence="0.95" sourceSpanStart="502" sourceSpanEnd="523">
+    <properties key="name" value="undiagnosed diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="known-diabetes" mention="known diabetics" confidence="0.95" sourceSpanStart="1203" sourceSpanEnd="1218">
+    <properties key="name" value="known diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="1-year-mortality" mention="1-year mortality" confidence="0.95" sourceSpanStart="1492" sourceSpanEnd="1508">
+    <properties key="name" value="mortality"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="Condition" id="new-onset-atrial-fibrillation" mention="new-onset atrial fibrillation" confidence="0.95" sourceSpanStart="1720" sourceSpanEnd="1749">
+    <properties key="name" value="new-onset atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="infection" mention="infection" confidence="0.95" sourceSpanStart="1783" sourceSpanEnd="1792">
+    <properties key="name" value="infection"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="1826" sourceSpanEnd="1844">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-mortality" mention="30-day mortality" confidence="0.95" sourceSpanStart="1881" sourceSpanEnd="1897">
+    <properties key="name" value="mortality"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="undiagnosed-diabetes" targetType="ClinicalOutcome" targetId="1-year-mortality" confidence="0.95" evidence="Undiagnosed diabetics had a three-fold increase in 1-year mortality compared to non-diabetics (adjusted OR 3.46(1.80-6.49) p &lt; 0.001) but this relationship was not significant between known and non-diabetics." sourceSpanStart="1184" sourceSpanEnd="1391"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="known-diabetes" targetType="Condition" targetId="new-onset-atrial-fibrillation" confidence="0.95" evidence="Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025)." sourceSpanStart="1338" sourceSpanEnd="1563"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="known-diabetes" targetType="Condition" targetId="infection" confidence="0.95" evidence="Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025)." sourceSpanStart="1338" sourceSpanEnd="1563"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="known-diabetes" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.95" evidence="Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025)." sourceSpanStart="1338" sourceSpanEnd="1563"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="known-diabetes" targetType="ClinicalOutcome" targetId="30-day-mortality" confidence="0.95" evidence="Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025)." sourceSpanStart="1338" sourceSpanEnd="1563"/>
+</raw:RawExtractionResult>

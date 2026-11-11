@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25608114.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25608114/" sourceSha256="3987766a5a22c48f8716e955ed94a222bb705c9eb99be2799ed1c45bd836aef1" sourceText="# PubMed 25608114: 30-Day Readmission Among Elderly Medicare Beneficiaries with Type 2 Diabetes.&#10;&#10;Population health management (2015), doi:10.1089/pop.2014.0116&#10;&#10;This study retrospectively assessed rates and risk factors for all-cause hospital readmission among elderly Medicare beneficiaries with type 2 diabetes mellitus (T2DM) aged ≥65 years. Associations between 30-day readmission and patients' demographic, insurance, index hospital, and clinical characteristics; patient complexities specific to the elderly; and health care utilization were examined using multivariable logistic regressions. Of 202,496 elderly Medicare beneficiaries, 52% were female, 76% were white, the mean age was 75.8 years, and 13.2% had all-cause 30-day readmissions. Elderly patients with cognitive impairment (adjusted odds ratio [aOR]=1.06, 95% confidence interval [CI]=1.01-1.12), falls and falls risk (aOR=1.15, 95% CI=1.08-1.22), polypharmacy (aOR=1.20, 95% CI=1.14-1.27), and urinary incontinence (aOR=1.08, 95% CI=1.01-1.15) were at higher risk for all-cause 30-day readmission than their counterparts without these complexities. As elderly-specific complexities are associated with greater risk for readmission, intervention programs to reduce readmission risk among elderly patients with T2DM should be tailored to suit the needs of elderly patients with extensive complexities.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:38+00:00" xmi:version="2.0">
+  <chunks charEnd="1371"/>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus (T2DM)" confidence="0.95" sourceSpanStart="298" sourceSpanEnd="329">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-30-day-readmission" mention="all-cause 30-day readmissions" confidence="0.95" sourceSpanStart="719" sourceSpanEnd="748">
+    <properties key="name" value="all-cause hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="cognitive-impairment" mention="cognitive impairment" confidence="0.95" sourceSpanStart="772" sourceSpanEnd="792">
+    <properties key="name" value="cognitive impairment"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="RiskFactor" id="falls-and-falls-risk" mention="falls and falls risk" confidence="0.95" sourceSpanStart="867" sourceSpanEnd="887">
+    <properties key="name" value="falls and falls risk"/>
+    <properties key="description" value="patient history of falls or risk of falling"/>
+  </entities>
+  <entities type="RiskFactor" id="polypharmacy" mention="polypharmacy" confidence="0.95" sourceSpanStart="918" sourceSpanEnd="930">
+    <properties key="name" value="polypharmacy"/>
+    <properties key="description" value="use of multiple medications concurrently"/>
+  </entities>
+  <entities type="Condition" id="urinary-incontinence" mention="urinary incontinence" confidence="0.95" sourceSpanStart="965" sourceSpanEnd="985">
+    <properties key="name" value="urinary incontinence"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cognitive-impairment" targetType="ClinicalOutcome" targetId="all-cause-30-day-readmission" confidence="0.95" evidence="Elderly patients with cognitive impairment (adjusted odds ratio [aOR]=1.06, 95% confidence interval [CI]=1.01-1.12), falls and falls risk (aOR=1.15, 95% CI=1.08-1.22), polypharmacy (aOR=1.20, 95% CI=1.14-1.27), and urinary incontinence (aOR=1.08, 95% CI=1.01-1.15) were at higher risk for all-cause 30-day readmission than their counterparts without these complexities." sourceSpanStart="750" sourceSpanEnd="1119"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="falls-and-falls-risk" targetType="ClinicalOutcome" targetId="all-cause-30-day-readmission" confidence="0.95" evidence="Elderly patients with cognitive impairment (adjusted odds ratio [aOR]=1.06, 95% confidence interval [CI]=1.01-1.12), falls and falls risk (aOR=1.15, 95% CI=1.08-1.22), polypharmacy (aOR=1.20, 95% CI=1.14-1.27), and urinary incontinence (aOR=1.08, 95% CI=1.01-1.15) were at higher risk for all-cause 30-day readmission than their counterparts without these complexities." sourceSpanStart="750" sourceSpanEnd="1119"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="polypharmacy" targetType="ClinicalOutcome" targetId="all-cause-30-day-readmission" confidence="0.95" evidence="Elderly patients with cognitive impairment (adjusted odds ratio [aOR]=1.06, 95% confidence interval [CI]=1.01-1.12), falls and falls risk (aOR=1.15, 95% CI=1.08-1.22), polypharmacy (aOR=1.20, 95% CI=1.14-1.27), and urinary incontinence (aOR=1.08, 95% CI=1.01-1.15) were at higher risk for all-cause 30-day readmission than their counterparts without these complexities." sourceSpanStart="750" sourceSpanEnd="1119"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="urinary-incontinence" targetType="ClinicalOutcome" targetId="all-cause-30-day-readmission" confidence="0.95" evidence="Elderly patients with cognitive impairment (adjusted odds ratio [aOR]=1.06, 95% confidence interval [CI]=1.01-1.12), falls and falls risk (aOR=1.15, 95% CI=1.08-1.22), polypharmacy (aOR=1.20, 95% CI=1.14-1.27), and urinary incontinence (aOR=1.08, 95% CI=1.01-1.15) were at higher risk for all-cause 30-day readmission than their counterparts without these complexities." sourceSpanStart="750" sourceSpanEnd="1119"/>
+</raw:RawExtractionResult>

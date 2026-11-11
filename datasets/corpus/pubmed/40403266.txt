@@ -1,0 +1,13 @@
+# PubMed 40403266: Predictors of Hypoglycemia in Patients with Type 2 Diabetes in Acute Care Settings: A Retrospective Correlational Study.
+
+The American journal of nursing (2025), doi:10.1097/AJN.0000000000000082
+
+BACKGROUND: Hypoglycemic episodes are among the most common adverse events experienced by hospitalized patients, occurring in up to half of all inpatients, with or without diabetes. Studies have shown that patients who have episodes of severe hypoglycemia while hospitalized have higher rates of 30-day readmission and postdischarge mortality. The Centers for Medicare and Medicaid Services considers hypoglycemic episodes to be a hospital-acquired condition. The cost burden of poor glycemic control in acute care settings is undeniably substantial.
+
+PURPOSE: The aim of this study was to identify predictors of hypoglycemia among inpatients with type 2 diabetes.
+
+METHODS: This retrospective descriptive correlational study involved abstracting data from 2019 to 2021 electronic health records for 600 hospitalized patients. Data were analyzed using descriptive and associative statistics and multivariate logistic regression.
+
+RESULTS: Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized. The odds of 30-day readmission were significantly lower for patients who received diabetes self-management education, had higher glomerular filtration rates, or were admitted with a diagnosis of bone fracture.
+
+CONCLUSION: The study findings can be used to help health care institutions design and implement more effective policies and procedures to prevent or mitigate hypoglycemic episodes.

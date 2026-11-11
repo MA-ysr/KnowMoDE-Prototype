@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33606487.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33606487/" sourceSha256="810830b39adc3e1a49334e32f99e1f07a0ccebffd734d56d64ce75e864dd3d18" sourceText="# PubMed 33606487: Frailty in Pancreas Transplantation.&#10;&#10;Transplantation (2021), doi:10.1097/TP.0000000000003586&#10;&#10;There are a variety of definitions and criteria used in clinical practice to define frailty. In the absence of a gold-standard definition, frailty has been operationally defined as meeting 3 out of 5 phenotypic criteria indicating compromised function: low grip strength, low energy, slowed walking speed, low physical activity, and unintentional weight loss. Frailty is a common problem in solid organ transplant candidates who are in the process of being listed for a transplant, as well as after transplantation. Patients with diabetes or chronic kidney disease (CKD) are known to be at increased risk of being frail. As pancreas transplantation is exclusively performed among patients with diabetes and the majority of them also have CKD, pancreas transplant candidates and recipients are at high risk of being frail. Sarcopenia, fatigue, low walking speed, low physical activity, and unintentional weight loss, which are some of the phenotypes of frailty, are very prevalent in this population. In various solid organs, frail patients are less likely to be listed or transplanted and have high waitlist mortality. Even after a transplant, they have increased risk of prolonged hospitalization, readmission, and delayed graft function. Given the negative impact of frailty on solid organ transplants, we believe that frailty would have a similar or even worse impact on pancreas transplantation. Due to the paucity of data specifically among pancreas transplant recipients, here we include frailty data from patients with CKD, diabetes, and various solid organ transplant recipients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:50+00:00" xmi:version="2.0">
+  <chunks charEnd="1702"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="644" sourceSpanEnd="652">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease (CKD)" confidence="0.95" sourceSpanStart="656" sourceSpanEnd="684">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="frailty" mention="frailty" confidence="0.9" sourceSpanStart="1066" sourceSpanEnd="1073">
+    <properties key="name" value="frailty"/>
+    <properties key="description" value="frail patients in various solid organs"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="prolonged-hospitalization" mention="prolonged hospitalization" confidence="0.9" sourceSpanStart="1286" sourceSpanEnd="1311">
+    <properties key="name" value="prolonged hospitalization"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="1313" sourceSpanEnd="1324">
+    <properties key="name" value="readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="prolonged-hospitalization" confidence="0.9" evidence="Even after a transplant, they have increased risk of prolonged hospitalization, readmission, and delayed graft function." sourceSpanStart="1233" sourceSpanEnd="1353"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Even after a transplant, they have increased risk of prolonged hospitalization, readmission, and delayed graft function." sourceSpanStart="1233" sourceSpanEnd="1353"/>
+</raw:RawExtractionResult>

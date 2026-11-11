@@ -1,0 +1,7 @@
+{
+  "id": "M06_prompt_relation_without_endpoint",
+  "family": "C2",
+  "expectedConstraint": "C2_PromptRelationEndpointsAreTargeted",
+  "mutatedFile": "extraction-pipeline.xmi",
+  "description": "drug_label task drops DrugClass but still targets BELONGS_TO_CLASS"
+}

@@ -1,0 +1,11 @@
+# PubMed 32675703: Incidence and Risk Factors of Recurrent Clostridioides difficile Infection in Patients With Cirrhosis.
+
+Clinical and translational gastroenterology (2020), doi:10.14309/ctg.0000000000000189
+
+INTRODUCTION: Clostridioides difficile infection (CDI) is common in patients with cirrhosis and is associated with poor outcomes. CDI risk factors in this population have been well characterized; however, risk factors of recurrent CDI (R-CDI) after treatment have not been explored. We sought to estimate the incidence of R-CDI and its associated risk factors in patients with cirrhosis.
+
+METHODS: We performed a cohort study of patients with cirrhosis hospitalized with CDI between 2012 and 2016. We collected patient characteristics, including detailed information on the CDI, features of the underlying liver disease, and outcomes including R-CDI, hospital readmission, and mortality. R-CDI was defined as CDI occurring 2-8 weeks after the initial episode. Cox proportional hazards model was used to identify variables independently associated with the outcomes.
+
+RESULTS: A total of 257 hospitalized patients with cirrhosis and CDI were included. CDI was community associated in 22.6%. The incidence of R-CDI was 11.9%. R-CDI was not significantly associated with medications at hospital admission or discharge. Independent risk factors of R-CDI included increased Charlson Comorbidity Index (hazard ratio [HR] 1.30; 95% confidence interval [CI]: 1.09-1.55) and use of lactulose (HR 2.58; 95% CI: 1.09-6.09). The 30-day readmission rate was 37%, and readmission was associated with increased Charlson Comorbidity Index (HR 1.12; 95% CI: 1.03-1.23) and Model for End-Stage Liver Disease score (HR 1.04; 95% CI: 1.01-1.07). The 90-day mortality was 22.8%.
+
+DISCUSSION: In patients with cirrhosis, R-CDI is associated with comorbidity burden and lactulose use. Attention to these factors might aid clinicians in efforts to prevent R-CDI and improve outcomes in this population.

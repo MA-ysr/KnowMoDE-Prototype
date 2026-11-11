@@ -1,0 +1,3063 @@
+{
+  "perRule" : {
+    "declared_properties_only" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    },
+    "entity_confidence_above_threshold" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    },
+    "entity_has_id_and_mention" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    },
+    "entity_provenance_complete" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    },
+    "entity_type_in_schema" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    },
+    "max_cardinality_respected" : {
+      "evaluated" : 1512,
+      "failed" : 18
+    },
+    "mention_grounded_in_source" : {
+      "evaluated" : 3558,
+      "failed" : 19
+    },
+    "relation_confidence_above_threshold" : {
+      "evaluated" : 1512,
+      "failed" : 2
+    },
+    "relation_endpoints_accepted" : {
+      "evaluated" : 1512,
+      "failed" : 40
+    },
+    "relation_evidence_grounded_in_source" : {
+      "evaluated" : 1512,
+      "failed" : 174
+    },
+    "relation_type_and_endpoints_in_schema" : {
+      "evaluated" : 1512,
+      "failed" : 137
+    },
+    "required_properties_present" : {
+      "evaluated" : 3558,
+      "failed" : 0
+    }
+  },
+  "policyVersion" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+  "rejected" : [ {
+    "confidence" : "0.95",
+    "document" : "openfda/acarbose.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sulfonylurea agents or insulin may cause hypoglycemia.",
+    "originalId" : "DrugClass:sulfonylureas -> Condition:hypoglycemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/acarbose.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Because acarbose given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the potential for hypoglycemia.",
+    "originalId" : "Drug:acarbose -> DrugClass:sulfonylureas",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glipizide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Known hypersensitivity to glipizide or metformin hydrochloride.",
+    "originalId" : "Drug:glipizide-and-metformin -> Condition:hypersensitivity",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.96",
+    "document" : "openfda/glipizide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glipizide-and-metformin -> Condition:metabolic-acidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.96",
+    "document" : "openfda/glipizide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glipizide-and-metformin -> Condition:diabetic-ketoacidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glipizide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "In a controlled initial therapy trial of glipizide and metformin hydrochloride tablets, 2.5 mg/250 mg and 2.5 mg/500 mg the numbers of patients with hypoglycemia documented by symptoms...",
+    "originalId" : "Drug:glipizide-and-metformin -> Condition:hypoglycemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glipizide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Known hypersensitivity to glipizide or metformin hydrochloride.",
+    "originalId" : "Drug:glipizide-and-metformin-hydrochloride -> Condition:hypersensitivity",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glipizide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glipizide-and-metformin-hydrochloride -> Condition:metabolic-acidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glipizide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glipizide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glipizide-and-metformin-hydrochloride -> Condition:diabetic-ketoacidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Hypersensitivity to metformin or glyburide.",
+    "originalId" : "Drug:glyburide-and-metformin -> Condition:hypersensitivity",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glyburide-and-metformin -> Condition:acute-or-chronic-metabolic-acidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma.",
+    "originalId" : "Drug:glyburide-and-metformin -> Condition:diabetic-ketoacidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide-and-metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Concomitant administration of bosentan [see Drug Interactions ( 7 ) ].",
+    "originalId" : "Drug:glyburide-and-metformin -> Drug:bosentan",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide tablets are contraindicated in patients with: ... Type I diabetes mellitus.",
+    "originalId" : "Drug:glyburide -> Condition:type-i-diabetes-mellitus",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Glyburide tablets are contraindicated in patients with: ... Concomitant administration of bosentan.",
+    "originalId" : "Drug:glyburide -> Drug:bosentan",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/glyburide.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Treatment of patients with glucose 6-phosphate dehydrogenase (G6PD) deficiency with sulfonylurea agents can lead to hemolytic anemia.",
+    "originalId" : "DrugClass:sulfonylureas -> Condition:hemolytic-anemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/insulin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "AFREZZA is contraindicated: ... In patients with a previous severe hypersensitivity reaction to any regular human insulin product or any of the inactive ingredients in AFREZZA.",
+    "originalId" : "Drug:afrezza -> Condition:hypersensitivity",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/insulin.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Thiazolidinediones (TZDs), which are peroxisome proliferator-activated receptor (PPAR)-gamma agonists, can cause dose-related fluid retention, particularly when used in combination with insulin.",
+    "originalId" : "DrugClass:thiazolidinediones -> Condition:fluid-retention",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/insulin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following adverse reaction has been identified during post approval use of AFREZZA... Respiratory : bronchospasm.",
+    "originalId" : "Drug:afrezza -> Condition:bronchospasm",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "openfda/metformin.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Additional adverse reactions have been identified during postapproval use of ZITUVIMET, sitagliptin, or metformin. Skin and subcutaneous tissue disorders: hypersensitivity reactions including anaphylaxis, angioedema, rash, urticaria, cutaneous vasculitis, and exfoliative skin conditions including Stevens-Johnson syndrome;",
+    "originalId" : "Drug:sitagliptin -> Condition:hypersensitivity-reactions",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.97",
+    "document" : "openfda/miglitol.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "CONTRAINDICATED_IN Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis",
+    "originalId" : "Drug:miglitol -> Condition:diabetic-ketoacidosis",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "openfda/miglitol.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sulfonylureas and insulin can cause hypoglycemia.",
+    "originalId" : "DrugClass:sulfonylureas -> Condition:hypoglycemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "openfda/miglitol.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Because miglitol tablets given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the hypoglycemic potential of the sulfonylurea or insulin.",
+    "originalId" : "Drug:miglitol -> DrugClass:sulfonylureas",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:alopecia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:hemolytic-anemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:pancreatitis",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:stevens-johnson-syndrome",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:severe-hepatic-dysfunction",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:jaundice",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "openfda/repaglinide.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The following additional adverse reactions have been identified during post approval use of repaglinide... Alopecia Hemolytic anemia Pancreatitis Stevens-Johnson syndrome Severe hepatic dysfunction including jaundice and hepatitis",
+    "originalId" : "Drug:repaglinide -> Condition:hepatitis",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "Screening for retinopathy... are required in the pre-operative period for 67%",
+    "originalId" : "screening-retinopathy-preoperative",
+    "originalType" : "Recommendation",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "cardiac ultrasound... are required in the pre-operative period for... 75.3% of experts",
+    "originalId" : "cardiac-ultrasound-preoperative",
+    "originalType" : "Recommendation",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "reaching an HbA1c<8% are required in the pre-operative period for... 56.7% of experts",
+    "originalId" : "hba1c-target-preoperative",
+    "originalType" : "Recommendation",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c<8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively.",
+    "originalId" : "Recommendation:screening-retinopathy-preoperative -> Condition:type-2-diabetes",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c<8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively.",
+    "originalId" : "Recommendation:cardiac-ultrasound-preoperative -> Condition:type-2-diabetes",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c<8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively.",
+    "originalId" : "Recommendation:hba1c-target-preoperative -> Condition:type-2-diabetes",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31401070.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c<8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively.",
+    "originalId" : "Recommendation:hba1c-target-preoperative -> LabTest:hba1c-lt-8",
+    "originalType" : "RECOMMENDS",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.94",
+    "document" : "pubmed/36370077.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "glucose infusion (5% or 10%) should be started once glucose <14 mmol/L",
+    "originalId" : "glucose-infusion-hhs",
+    "originalType" : "Recommendation",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36370077.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Interventions include: (1) intravenous (IV) 0.9% sodium chloride to restore circulating volume (fluid losses 100-220 ml/kg, caution in elderly),",
+    "originalId" : "Recommendation:iv-sodium-chloride-hhs -> Condition:hyperosmolar-hyperglycaemic-state",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/36370077.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Interventions include: (1) intravenous (IV) 0.9% sodium chloride to restore circulating volume (fluid losses 100-220 ml/kg, caution in elderly),",
+    "originalId" : "Recommendation:iv-sodium-chloride-hhs -> Drug:sodium-chloride",
+    "originalType" : "RECOMMENDS",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36370077.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "(3) glucose infusion (5% or 10%) should be started once glucose <14 mmol/L and",
+    "originalId" : "Recommendation:glucose-infusion-hhs -> Condition:hyperosmolar-hyperglycaemic-state",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36370077.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "(3) glucose infusion (5% or 10%) should be started once glucose <14 mmol/L and",
+    "originalId" : "Recommendation:glucose-infusion-hhs -> Drug:glucose",
+    "originalType" : "RECOMMENDS",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/39551547.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The document outlines recommendations for the management of patients with type 2 diabetes (T2D) at hospital discharge following an ischaemic cardiovascular event. ... Strategies include rigorous control of lipid levels, recommending potent statins combined with ezetimibe and, if necessary, other drugs such as inclisiran, evolocumab, alirocumab, or bempedoic acid.",
+    "originalId" : "Recommendation:lipid-control-statins-ezetimibe -> Condition:type-2-diabetes",
+    "originalType" : "APPLIES_TO",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.5",
+    "document" : "pubmed/23597300.txt",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Many Middle Eastern countries have observed increases in the prevalence of the risk factors for the development of heart failure, including diabetes mellitus, obesity, and hypertension",
+    "originalId" : "RiskFactor:diabetes-mellitus -> ClinicalOutcome:readmission-rate-for-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.88",
+    "document" : "pubmed/25877049.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA.",
+    "originalId" : "RiskFactor:mental-health-problems -> Condition:diabetic-ketoacidosis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.88",
+    "document" : "pubmed/25877049.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA.",
+    "originalId" : "RiskFactor:low-socioeconomic-status -> Condition:diabetic-ketoacidosis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.88",
+    "document" : "pubmed/25877049.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA.",
+    "originalId" : "RiskFactor:high-family-conflict -> Condition:diabetic-ketoacidosis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/28118530.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "30- day hospital readmission",
+    "originalId" : "unplanned-30-day-hospital-readmission",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.88",
+    "document" : "pubmed/28746706.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "peak postoperative glucose levels of more than 250 mg/dL were associated with increased 30-day readmissions (odds ratio, 1.18; 95% CI, 0.99-1.41; P = .07).",
+    "originalId" : "LabTest:peak-postoperative-glucose-levels-more-than-250-mg-dl -> ClinicalOutcome:30-day-unplanned-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/28746706.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "By contrast, a preoperative HbA1c of more than 6.5% was associated with decreased 30-day readmissions (odds ratio, 0.85; 95% CI, 0.74-0.96; P = .01).",
+    "originalId" : "LabTest:preoperative-hba1c-more-than-6-5 -> ClinicalOutcome:30-day-unplanned-readmission",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/29146680.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "In multivariable models adjusting for baseline differences, respondents who reported being 'very satisfied' with the care received during the index hospitalisation were less likely to be readmitted (adjusted OR 0.61, 95% CI 0.43 to 0.88, P=0.007).",
+    "originalId" : "RiskFactor:very-satisfied-with-care -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/29146680.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Participants reporting doctors 'always listened to them carefully' were less likely to be readmitted (adjusted OR 0.68, 95% CI 0.48 to 0.97, P=0.03).",
+    "originalId" : "RiskFactor:doctors-always-listened-to-them-carefully -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29447854.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "With respect to complications, POUR was found to be associated with development of UTI (OR=4.50; 95% CI, 3.14-6.45; p<.001)",
+    "originalId" : "ClinicalOutcome:pour -> Condition:uti",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29447854.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "With respect to complications, POUR was found to be associated with development of UTI (OR=4.50; 95% CI, 3.14-6.45; p<.001), sepsis (OR=4.05; 95% CI, 1.16-13.55; p=.022)",
+    "originalId" : "ClinicalOutcome:pour -> Condition:sepsis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29447854.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "With respect to complications, POUR was found to be associated with [...] increased risk of readmission within 90 days of the index surgery (OR=1.60; 95% CI, 1.11-2.26; p=.009).",
+    "originalId" : "ClinicalOutcome:pour -> ClinicalOutcome:readmission-within-90-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29807789.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "anemia (Hgb < 10 g/dL)",
+    "originalId" : "LabTest:hgb-10-g-dl -> RiskFactor:anemia",
+    "originalType" : "INDICATES",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29807789.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "malnutrition (albumin < 3.4 g/dL)",
+    "originalId" : "LabTest:albumin-3-4-g-dl -> RiskFactor:malnutrition",
+    "originalType" : "INDICATES",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/29807789.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "obesity (body mass index > 45 kg/m2)",
+    "originalId" : "LabTest:body-mass-index-45-kg-m2 -> RiskFactor:obesity",
+    "originalType" : "INDICATES",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/30763752.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with PCDF with nonhome discharges had an increased likelihood of having a severe postdischarge AE (OR, 1.71; 95% CI, 1.26-2.33; P = 0.0006) and an unplanned readmission (OR, 1.45; 95% CI, 1.15-1.82; P = 0.002).",
+    "originalId" : "ClinicalOutcome:nonhome-discharge -> ClinicalOutcome:severe-postdischarge-ae",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/30763752.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with PCDF with nonhome discharges had an increased likelihood of having a severe postdischarge AE (OR, 1.71; 95% CI, 1.26-2.33; P = 0.0006) and an unplanned readmission (OR, 1.45; 95% CI, 1.15-1.82; P = 0.002).",
+    "originalId" : "ClinicalOutcome:nonhome-discharge -> ClinicalOutcome:unplanned-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/30840063.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Black patients had a greater length of stay (mean [SD], 2.2 [3.0] days vs 1.9 [1.7] days; adjusted odds ratio, 0.30 [95% CI, 0.20-0.40]; P < .001), as well as a higher rate of emergency department visits (541 [11.6%] vs 826 [7.6%]; adjusted odds ratio, 1.60 [95% CI, 1.43-1.79]; P < .001) and readmissions (414 [5.8%] vs 245 [3.5%]; adjusted odds ratio, 1.73 [95% CI, 1.47-2.03]; P < .001).",
+    "originalId" : "RiskFactor:black-race -> ClinicalOutcome:readmissions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31364257.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "readmitted within 30 days",
+    "originalId" : "hospital-readmission-within-30-days",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31364257.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Significant preoperative patient factors for increased readmission were diabetes mellitus (OR 1.93, CI 1.63-2.28, P < 0.00001), complicated appendicitis (OR 3.6, CI 2.43-5.34, P < 0.00001) and open surgical technique (OR 1.39, CI 1.08-1.79, P < 0.00001).",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:hospital-readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31364257.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Significant preoperative patient factors for increased readmission were diabetes mellitus (OR 1.93, CI 1.63-2.28, P < 0.00001), complicated appendicitis (OR 3.6, CI 2.43-5.34, P < 0.00001) and open surgical technique (OR 1.39, CI 1.08-1.79, P < 0.00001).",
+    "originalId" : "Condition:complicated-appendicitis -> ClinicalOutcome:hospital-readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31364257.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Significant preoperative patient factors for increased readmission were diabetes mellitus (OR 1.93, CI 1.63-2.28, P < 0.00001), complicated appendicitis (OR 3.6, CI 2.43-5.34, P < 0.00001) and open surgical technique (OR 1.39, CI 1.08-1.79, P < 0.00001).",
+    "originalId" : "RiskFactor:open-surgical-technique -> ClinicalOutcome:hospital-readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "emergency department visits within 30 days of discharge",
+    "originalId" : "emergency-department-visit-within-30-days",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "visitar departamento emergência em 30 dias após a alta hospitalar",
+    "originalId" : "visita-a-departamento-de-emergencia-em-30-dias",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "The diagnosis of heart failure and Medication Regimen Complexity Index >16.5 were positively associated with emergency department visits (OR=2.3; 95%CI: 1.04-4.94; p=0.048; and OR=2.1; 95%CI: 1.11-4.02; p=0.011), respectively.",
+    "originalId" : "Condition:heart-failure -> ClinicalOutcome:emergency-department-visit-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "The diagnosis of heart failure and Medication Regimen Complexity Index >16.5 were positively associated with emergency department visits (OR=2.3; 95%CI: 1.04-4.94; p=0.048; and OR=2.1; 95%CI: 1.11-4.02; p=0.011), respectively.",
+    "originalId" : "RiskFactor:medication-regimen-complexity-index-165 -> ClinicalOutcome:emergency-department-visit-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Furthermore, the diagnosis of diabetes mellitus and chronic kidney disease were protection factors for the outcome (OR=0.4; 95%CI: 0.20-0.73; p=0.004; and OR=0.3; 95%CI: 0.13-0.86; p=0.023).",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:emergency-department-visit-within-30-days",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Furthermore, the diagnosis of diabetes mellitus and chronic kidney disease were protection factors for the outcome (OR=0.4; 95%CI: 0.20-0.73; p=0.004; and OR=0.3; 95%CI: 0.13-0.86; p=0.023).",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:emergency-department-visit-within-30-days",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "O diagnóstico de insuficiência cardíaca e o índice da complexidade da farmacoterapia >16,5 apresentaram associação positiva com visita a departamento de emergência (RC=2,3; IC95%: 1,04-4,94; p=0,048; e RC=2,1; IC95%: 1,11-4,02; p=0,011), respectivamente.",
+    "originalId" : "Condition:insuficiencia-cardiaca -> ClinicalOutcome:visita-a-departamento-de-emergencia-em-30-dias",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "O diagnóstico de insuficiência cardíaca e o índice da complexidade da farmacoterapia >16,5 apresentaram associação positiva com visita a departamento de emergência (RC=2,3; IC95%: 1,04-4,94; p=0,048; e RC=2,1; IC95%: 1,11-4,02; p=0,011), respectivamente.",
+    "originalId" : "RiskFactor:indice-da-complexidade-da-farmacoterapia-16-5 -> ClinicalOutcome:visita-a-departamento-de-emergencia-em-30-dias",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Ainda, o diagnóstico de diabetes mellitus e a doença renal crônica foram fatores de proteção para o desfecho (RC=0,4; IC95%: 0,20-0,73; p=0,004; e RC=0,3; IC95%: 0,13-0,86; p=0,023).",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:visita-a-departamento-de-emergencia-em-30-dias",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31664324.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Ainda, o diagnóstico de diabetes mellitus e a doença renal crônica foram fatores de proteção para o desfecho (RC=0,4; IC95%: 0,20-0,73; p=0,004; e RC=0,3; IC95%: 0,13-0,86; p=0,023).",
+    "originalId" : "Condition:doenca-renal-cronica -> ClinicalOutcome:visita-a-departamento-de-emergencia-em-30-dias",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "severe hypoglycemia at 3 months",
+    "originalId" : "severe-hypoglycemia-within-3-months",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "Glycosylated hemoglobin (HbA1c) less than 7% (53 mmol/mol)",
+    "originalId" : "hba1c-less-than-7-percent",
+    "originalType" : "LabTest",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "History of non-severe hypoglycemia within the past 3 months",
+    "originalId" : "history-of-non-severe-hypoglycemia",
+    "originalType" : "RiskFactor",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities.",
+    "originalId" : "RiskFactor:history-of-non-severe-hypoglycemia -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities.",
+    "originalId" : "RiskFactor:black-race -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities.",
+    "originalId" : "Drug:insulin -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities.",
+    "originalId" : "RiskFactor:comorbidities -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Metformin and sulfonlylurea use in the past 3 months, increasing age and body mass index had lower odds of a future severe hypoglycemia event.",
+    "originalId" : "Drug:metformin -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31757766.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Metformin and sulfonlylurea use in the past 3 months, increasing age and body mass index had lower odds of a future severe hypoglycemia event.",
+    "originalId" : "Drug:sulfonylurea -> ClinicalOutcome:severe-hypoglycemia-within-3-months",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31834473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Preoperative factors associated with non-home discharge on multivariate analysis included older age, non-independent functional status, insulin-dependent diabetes, and hypoalbuminemia (all p < 0.05).",
+    "originalId" : "Condition:insulin-dependent-diabetes -> ClinicalOutcome:non-home-discharge",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31898171.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Frailty was an independent risk factor for mortality and unplanned readmissions (p < 0.001 both).",
+    "originalId" : "RiskFactor:frailty -> ClinicalOutcome:mortality-outcome",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/31898171.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Frailty was an independent risk factor for mortality and unplanned readmissions (p < 0.001 both).",
+    "originalId" : "RiskFactor:frailty -> ClinicalOutcome:unplanned-readmissions-outcome",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/32811495.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Undiagnosed diabetics had a three-fold increase in 1-year mortality compared to non-diabetics (adjusted OR 3.46(1.80-6.49) p < 0.001) but this relationship was not significant between known and non-diabetics.",
+    "originalId" : "Condition:undiagnosed-diabetes -> ClinicalOutcome:1-year-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/32811495.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).",
+    "originalId" : "Condition:known-diabetes -> Condition:new-onset-atrial-fibrillation",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/32811495.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).",
+    "originalId" : "Condition:known-diabetes -> Condition:infection",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/32811495.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).",
+    "originalId" : "Condition:known-diabetes -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/32811495.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).",
+    "originalId" : "Condition:known-diabetes -> ClinicalOutcome:30-day-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P < 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02).",
+    "originalId" : "RiskFactor:postoperative-superficial-wound-infection -> ClinicalOutcome:readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P < 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02).",
+    "originalId" : "RiskFactor:asa-classification -> ClinicalOutcome:readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P < 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02).",
+    "originalId" : "RiskFactor:body-mass-index -> ClinicalOutcome:readmission-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.",
+    "originalId" : "RiskFactor:female-sex -> ClinicalOutcome:prolonged-los",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:prolonged-los",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.",
+    "originalId" : "RiskFactor:postoperative-wound-dehiscence -> ClinicalOutcome:prolonged-los",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.",
+    "originalId" : "RiskFactor:asa-classification -> ClinicalOutcome:prolonged-los",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33306614.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.",
+    "originalId" : "RiskFactor:operative-time -> ClinicalOutcome:prolonged-los",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Diabetes was the most impactful comorbidity and was associated with higher risk of myocardial infarction (RR = 4.58, p < 0.01), pneumonia (RR = 1.80, p = 0.02), dysphagia (RR = 1.58, p < 0.01), and meningitis (RR = 3.62, p < 0.01).",
+    "originalId" : "Condition:diabetes -> Condition:myocardial-infarction",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Diabetes was the most impactful comorbidity and was associated with higher risk of myocardial infarction (RR = 4.58, p < 0.01), pneumonia (RR = 1.80, p = 0.02), dysphagia (RR = 1.58, p < 0.01), and meningitis (RR = 3.62, p < 0.01).",
+    "originalId" : "Condition:diabetes -> Condition:pneumonia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Diabetes was the most impactful comorbidity and was associated with higher risk of myocardial infarction (RR = 4.58, p < 0.01), pneumonia (RR = 1.80, p = 0.02), dysphagia (RR = 1.58, p < 0.01), and meningitis (RR = 3.62, p < 0.01).",
+    "originalId" : "Condition:diabetes -> Condition:dysphagia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Diabetes was the most impactful comorbidity and was associated with higher risk of myocardial infarction (RR = 4.58, p < 0.01), pneumonia (RR = 1.80, p = 0.02), dysphagia (RR = 1.58, p < 0.01), and meningitis (RR = 3.62, p < 0.01).",
+    "originalId" : "Condition:diabetes -> Condition:meningitis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Analysis of surgical approaches revealed that the translabyrinthine approach, compared with the open craniotomy approach, was negatively associated with postoperative complications including pneumonia (RR = 0.43, p < 0.01), urinary tract infection (RR = 0.55, p = 0.01), dysphagia (RR = 0.66, p < 0.01), and readmission (RR = 0.45, p < 0.01).",
+    "originalId" : "RiskFactor:translabyrinthine-approach -> Condition:pneumonia",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Analysis of surgical approaches revealed that the translabyrinthine approach, compared with the open craniotomy approach, was negatively associated with postoperative complications including pneumonia (RR = 0.43, p < 0.01), urinary tract infection (RR = 0.55, p = 0.01), dysphagia (RR = 0.66, p < 0.01), and readmission (RR = 0.45, p < 0.01).",
+    "originalId" : "RiskFactor:translabyrinthine-approach -> Condition:urinary-tract-infection",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Analysis of surgical approaches revealed that the translabyrinthine approach, compared with the open craniotomy approach, was negatively associated with postoperative complications including pneumonia (RR = 0.43, p < 0.01), urinary tract infection (RR = 0.55, p = 0.01), dysphagia (RR = 0.66, p < 0.01), and readmission (RR = 0.45, p < 0.01).",
+    "originalId" : "RiskFactor:translabyrinthine-approach -> Condition:dysphagia",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/33710153.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Analysis of surgical approaches revealed that the translabyrinthine approach, compared with the open craniotomy approach, was negatively associated with postoperative complications including pneumonia (RR = 0.43, p < 0.01), urinary tract infection (RR = 0.55, p = 0.01), dysphagia (RR = 0.66, p < 0.01), and readmission (RR = 0.45, p < 0.01).",
+    "originalId" : "RiskFactor:translabyrinthine-approach -> ClinicalOutcome:readmission",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34107481.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "ICU readmission and age (over 85 years) were independent predictors of in-hospital mortality on multivariable analysis.",
+    "originalId" : "ClinicalOutcome:icu-readmission -> ClinicalOutcome:in-hospital-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34363511.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Medicaid insurance (HR 1.16), cirrhosis (HR 1.31), Type 1 diabetes mellitus (HR 1.38), and end-stage renal disease (HR 1.36) were independently associated with 30-day readmission (all p < 0.01), with similar findings in 90-day readmissions.",
+    "originalId" : "RiskFactor:medicaid-insurance -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34363511.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Medicaid insurance (HR 1.16), cirrhosis (HR 1.31), Type 1 diabetes mellitus (HR 1.38), and end-stage renal disease (HR 1.36) were independently associated with 30-day readmission (all p < 0.01), with similar findings in 90-day readmissions.",
+    "originalId" : "Condition:cirrhosis -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34363511.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Medicaid insurance (HR 1.16), cirrhosis (HR 1.31), Type 1 diabetes mellitus (HR 1.38), and end-stage renal disease (HR 1.36) were independently associated with 30-day readmission (all p < 0.01), with similar findings in 90-day readmissions.",
+    "originalId" : "Condition:type-1-diabetes-mellitus -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34363511.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Medicaid insurance (HR 1.16), cirrhosis (HR 1.31), Type 1 diabetes mellitus (HR 1.38), and end-stage renal disease (HR 1.36) were independently associated with 30-day readmission (all p < 0.01), with similar findings in 90-day readmissions.",
+    "originalId" : "Condition:end-stage-renal-disease -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34378796.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "readmission rate for the hip persona was 13.8% and 27.6% for the CHF persona. At 30 days",
+    "originalId" : "hospital-readmission-within-30-days",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34400473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84)",
+    "originalId" : "Condition:valvular-heart-disease -> ClinicalOutcome:readmissions-due-to-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34400473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84) and chronic kidney disease (HR 1.42; 95% CI 1.03 to 1.94).",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:readmissions-due-to-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34400473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53)",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:readmissions-due-to-gastrointestinal-bleeding",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34400473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81)",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:readmissions-due-to-gastrointestinal-bleeding",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34400473.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81) and previous anaemia (HR 2.41; 95% CI 1.54 to 3.77).",
+    "originalId" : "Condition:previous-anaemia -> ClinicalOutcome:readmissions-due-to-gastrointestinal-bleeding",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34474452.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "In particular, patients with high CV had a higher odds ratio (OR) of readmission (OR = 2.19 [1.17, 4.09]; P = 0.01), experiencing a surgical site infection (OR = 3.22 [1.39, 7.45]; P = 0.01), and undergoing reoperations (OR = 2.65 [1.34, 5.23]; P = 0.01) compared with patients with low CV.",
+    "originalId" : "RiskFactor:postoperative-glycemic-variability -> Condition:surgical-site-infection",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34487424.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Hypertension (odds ratio (OR) = 2.08; 95% confidence interval (CI) 1.69-2.55; P < 0.001; I2 = 0%), diabetes mellitus (OR = 1.77; 95% CI 1.38-2.27; P < 0.001; I2 = 0%) and chronic renal failure (OR = 2.37; 95% CI 1.09-5.14; P < 0.001; I2 = 0%) were more common in these patients.",
+    "originalId" : "Condition:hypertension -> ClinicalOutcome:hospital-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34487424.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Hypertension (odds ratio (OR) = 2.08; 95% confidence interval (CI) 1.69-2.55; P < 0.001; I2 = 0%), diabetes mellitus (OR = 1.77; 95% CI 1.38-2.27; P < 0.001; I2 = 0%) and chronic renal failure (OR = 2.37; 95% CI 1.09-5.14; P < 0.001; I2 = 0%) were more common in these patients.",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:hospital-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/34487424.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Hypertension (odds ratio (OR) = 2.08; 95% confidence interval (CI) 1.69-2.55; P < 0.001; I2 = 0%), diabetes mellitus (OR = 1.77; 95% CI 1.38-2.27; P < 0.001; I2 = 0%) and chronic renal failure (OR = 2.37; 95% CI 1.09-5.14; P < 0.001; I2 = 0%) were more common in these patients.",
+    "originalId" : "Condition:chronic-renal-failure -> ClinicalOutcome:hospital-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34989297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Independent predictors for 30-day all-cause readmissions of CDE included discharged against medical advice (AMA) [Adjusd Hazard Ratio (aHR):2.01, 95% CI:1.73-2.53, p<0.001]",
+    "originalId" : "RiskFactor:discharged-against-medical-advice -> ClinicalOutcome:30-day-all-cause-readmissions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34989297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Independent predictors for 30-day all-cause readmissions of CDE included discharged against medical advice (AMA) [Adjusd Hazard Ratio (aHR):2.01, 95% CI:1.73-2.53, p<0.001], diabetes mellitus (DM) [aHR:1.22, 95% CI:1.16-1.29, p<0.001]",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:30-day-all-cause-readmissions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/34989297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Independent predictors for 30-day all-cause readmissions of CDE included discharged against medical advice (AMA) [Adjusd Hazard Ratio (aHR):2.01, 95% CI:1.73-2.53, p<0.001], diabetes mellitus (DM) [aHR:1.22, 95% CI:1.16-1.29, p<0.001], and chronic kidney disease (CKD) [aHR:1.29, 95% CI:1.21-1.37, p<0.001].",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:30-day-all-cause-readmissions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "pubmed/35257839.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "HbA1c levels above 7.6 may be associated with higher readmission rate (AUC=0.63, 95%CI 0.50-0.75, p=.185).",
+    "originalId" : "LabTest:hba1c-above-7-6 -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/35690929.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "Preoperative HbA1c level < 7%",
+    "originalId" : "preoperative-hba1c-level-7",
+    "originalType" : "LabTest",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... anemia (IRR 1.40, 95% CI 1.24-1.57)",
+    "originalId" : "Condition:anemia -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... arthritis (IRR 1.20, 95% CI 1.10-1.31)",
+    "originalId" : "Condition:arthritis -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... coronary artery disease (IRR 1.34, 95% CI 1.23-1.47)",
+    "originalId" : "Condition:coronary-artery-disease -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... cancer (IRR 1.96, 95% CI 1.64-2.30)",
+    "originalId" : "Condition:cancer -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... chronic kidney disease (IRR 1.36, 95% CI 1.21-1.57)",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... COPD (IRR 1.18, 95% CI 1.04-1.34)",
+    "originalId" : "Condition:copd -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... depression (IRR 1.50, 95% CI 1.37-1.66)",
+    "originalId" : "Condition:depression -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... diabetes mellitus (IRR 1.48, 95% CI 1.36-1.48)",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36154554.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Adjusted independent predictors of cumulative readmission inlcuded ... and heart failure (IRR 1.17, 95% CI 1.03-1.34).",
+    "originalId" : "Condition:heart-failure -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36592186.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The addition of SGLT2i to conventional therapy for AHF reduced all-cause death (odds ratio [OR] 0.75; 95% CI 0.56-0.99; p = 0.049)",
+    "originalId" : "Drug:sglt2i -> ClinicalOutcome:all-cause-death",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/36592186.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The addition of SGLT2i to conventional therapy for AHF reduced all-cause death (odds ratio [OR] 0.75; 95% CI 0.56-0.99; p = 0.049), readmissions for heart failure (HF) (OR 0.54; 95% CI 0.44-0.66; p < 0.001)",
+    "originalId" : "Drug:sglt2i -> ClinicalOutcome:readmissions-for-heart-failure",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/36644890.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After Cox regression analysis, pAHF was an independent predictor of all-cause mortality (adjusted hazard ratio [aHR] 1.7 [95% CI 1.3-2.2]; p < 0.001)",
+    "originalId" : "Condition:postoperative-acute-heart-failure -> ClinicalOutcome:all-cause-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/36644890.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After Cox regression analysis, pAHF was an independent predictor of all-cause mortality (adjusted hazard ratio [aHR] 1.7 [95% CI 1.3-2.2]; p < 0.001) and AHF readmission (aHR 2.3 [95% CI 1.5-3.7]; p < 0.001).",
+    "originalId" : "Condition:postoperative-acute-heart-failure -> ClinicalOutcome:ahf-readmission-within-1-year",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/36732827.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Metformin use is associated with a reduced risk of frailty.",
+    "originalId" : "Drug:metformin -> Condition:frailty",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/37115159.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "rehospitalization for any cause ... at 90 days after discharge",
+    "originalId" : "rehospitalization-at-90-days",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/37115159.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "After PS matching, AKI was associated with higher rates of rehospitalization for any cause (hazard ratio [HR], 1.62; 95% CI, 1.60-1.65), end-stage renal disease (HR, 6.21; 95% CI, 1.04-36.92), heart failure (HR, 2.81; 95% CI, 2.66, 2.97), sepsis (HR, 2.62; 95% CI, 2.49-2.75), pneumonia (HR, 1.47; 95% CI, 1.37-1.57), myocardial infarction (HR, 1.48; 95% CI, 1.33-1.65), and volume depletion (HR, 1.64; 95% CI, 1.37-1.96) at 90 days after discharge compared with the group without AKI, with similar findings at 365 days.",
+    "originalId" : "Condition:aki -> ClinicalOutcome:rehospitalization-at-90-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with acute renal failure (OR: 5.836; 95% CI: 1.060-32.134; p = 0.043)",
+    "originalId" : "Condition:diabetes -> Condition:acute-renal-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... wound disruption (OR: 6.194; 95% CI: 1.752-21.900; p = 0.005)",
+    "originalId" : "Condition:diabetes -> Condition:wound-disruption",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... prolonged length of stay (OR: 1.430; 95% CI: 1.261-1.622; p < 0.001)",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:prolonged-length-of-stay",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... unplanned readmission (OR: 1.380; 95% CI: 1.096-1.737; p = 0.006)",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:unplanned-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... superficial incisional surgical site infections (OR: 0.240; 95% CI: 0.058-0.995; p = 0.049)",
+    "originalId" : "Condition:diabetes -> Condition:superficial-incisional-surgical-site-infections",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... urinary tract infection occurrences (OR: 2.173; 95% CI: 1.186-3.980; p = 0.012)",
+    "originalId" : "Condition:diabetes -> Condition:urinary-tract-infection",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... organ space surgical site infection occurrences (OR: 3.322; 95% CI: 1.016-10.864; p = 0.047)",
+    "originalId" : "Condition:diabetes -> Condition:organ-space-surgical-site-infection",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... pneumonia occurrences (OR: 2.091; 95% CI: 1.125-3.884; p = 0.020)",
+    "originalId" : "Condition:diabetes -> Condition:pneumonia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... any medical complication (OR: 1.697; 95% CI: 1.246-2.313; p = 0.001)",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:any-medical-complication",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37470297.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... and any complication (OR: 1.495; 95% CI: 1.136-1.968; p = 0.004).",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:any-complication",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/37941164.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The self-management ability and satisfaction were significantly higher, and the readmission rate was significantly lower (p < 0.05).",
+    "originalId" : "RiskFactor:continuous-nursing-intervention -> ClinicalOutcome:readmission-rate",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "lowest-dose S/V (≤50 mg twice a day)",
+    "originalId" : "sacubitril-valsartan",
+    "originalType" : "Drug",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "RiskFactor:age-75-and-above -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "Drug:sacubitril-valsartan -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "Condition:ventricular-tachycardia -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "Condition:valvular-heart-disease -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "Condition:chronic-obstructive-pulmonary-disease -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/38099726.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The corresponding nomogram showed that patients aged 75 years and above, or taking the lowest-dose S/V (≤50 mg twice a day), or diagnosed with ventricular tachycardia, or valvular heart disease, or chronic obstructive pulmonary disease, or diabetes mellitus were at the highest risk of all-cause readmission.",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:all-cause-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38211728.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications, including... and revision surgery",
+    "originalId" : "RiskFactor:marfan-syndrome-risk-factor -> ClinicalOutcome:revision-surgery",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38211728.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Additionally, patients who have MFS demonstrated significant higher rates of medical complications, including... and transfusion",
+    "originalId" : "RiskFactor:marfan-syndrome-risk-factor -> ClinicalOutcome:transfusion",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38365207.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Temporary use of insulin pump therapy for perioperative patients with diabetes results in a reduction in blood glucose and blood glucose fluctuation during hospitalization, HbA1c, and the risk of postoperative complication and readmission, thus significantly decreasing costs in this complex patient cohort.",
+    "originalId" : "RiskFactor:insulin-pump-therapy -> Condition:postoperative-complication",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38365751.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Per 0.1 unit increase in SHR was associated with... a 12% (adjusted HR: 1.12, 95% CI: 1.02-1.22) higher incidence of cardiovascular mortality or readmission for heart failure",
+    "originalId" : "RiskFactor:stress-hyperglycemia-ratio -> ClinicalOutcome:cardiovascular-mortality-or-readmission-for-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38365751.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Per 0.1 unit increase in SHR was associated with... a 12% (adjusted HR: 1.12, 95% CI: 1.01-1.23) higher incidence of MACE.",
+    "originalId" : "RiskFactor:stress-hyperglycemia-ratio -> ClinicalOutcome:major-adverse-cardiovascular-events",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/38849653.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Patients with diabetes had significantly higher 30- and 90-day mortality rates compared to those without diabetes (p < .001), but also had higher preoperative comorbidity.",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:30-day-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/38849653.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Patients with diabetes had significantly higher 30- and 90-day mortality rates compared to those without diabetes (p < .001), but also had higher preoperative comorbidity.",
+    "originalId" : "RiskFactor:preoperative-comorbidity -> ClinicalOutcome:30-day-mortality",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/39019470.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with CP had an increased risk of acute kidney injury (odds ratio [OR]: 1.66; 95% confidence interval [CI]: 1.07-2.5; p = 0.019)",
+    "originalId" : "Condition:cerebral-palsy -> Condition:acute-kidney-injury",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/39019470.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with CP had an increased risk of ... pneumonia (OR: 5.63; 95% CI: 3.69-8.67; p < 0.001)",
+    "originalId" : "Condition:cerebral-palsy -> Condition:pneumonia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/39019470.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with CP had an increased risk of ... urinary tract infection (OR: 5.01; 95% CI: 3.85-6.52; p < 0.001)",
+    "originalId" : "Condition:cerebral-palsy -> Condition:urinary-tract-infection",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/39019470.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Patients with CP had an increased risk of ... and transfusion (OR: 2.21; 95% CI: 1.50-3.23; p < 0.001).",
+    "originalId" : "Condition:cerebral-palsy -> RiskFactor:transfusion",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/39019470.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "CP patients additionally had a higher incidence of ... readmissions (OR: 5.24; 95% CI: 2.57-4.96; p < 0.001).",
+    "originalId" : "Condition:cerebral-palsy -> ClinicalOutcome:readmissions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/39152477.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "DM patients exhibited a notably higher risk of cardiac death or readmission for heart failure at 2 years compared to non-DM patients (9.5% vs. 5.4%, P < 0.001).",
+    "originalId" : "Condition:diabetes-mellitus -> ClinicalOutcome:cardiac-death-or-readmission-for-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/39874177.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "all-cause ... rehospitalizations",
+    "originalId" : "all-cause-rehospitalizations",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/39874177.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Patients who developed HF had higher risk of death and hospitalizations (all P < .001), irrespective of EF.",
+    "originalId" : "Condition:heart-failure -> ClinicalOutcome:all-cause-rehospitalizations",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/39935097.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Re-administration rates were decreased significantly after the fourth injection in the SGLT2i group (p = 0.030, hazard ratio: 0.45, 95% confidence interval: 0.22-0.92).",
+    "originalId" : "RiskFactor:luseogliflozin-treatment -> ClinicalOutcome:re-administration-of-ranibizumab",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "1.0",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "unplanned readmission within 31 days",
+    "originalId" : "unplanned-readmission-within-31-days",
+    "originalType" : "ClinicalOutcome",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "tumor stage (TNM ≥ III)",
+    "originalId" : "tnm-stage-iii",
+    "originalType" : "RiskFactor",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13)",
+    "originalId" : "RiskFactor:age -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87)",
+    "originalId" : "RiskFactor:postoperative-complications -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01)",
+    "originalId" : "RiskFactor:tnm-stage-iii -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64)",
+    "originalId" : "RiskFactor:tumor-site-rectum -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70)",
+    "originalId" : "RiskFactor:stoma-creation -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70), Complicated diabetes (OR = 1.56)",
+    "originalId" : "Condition:complicated-diabetes -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70), Complicated diabetes (OR = 1.56), Charlson Comorbidity Index (CCI) (OR = 1.27)",
+    "originalId" : "RiskFactor:charlson-comorbidity-index -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70), Complicated diabetes (OR = 1.56), Charlson Comorbidity Index (CCI) (OR = 1.27), blood transfusion (BT) (OR = 1.24)",
+    "originalId" : "RiskFactor:blood-transfusion -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70), Complicated diabetes (OR = 1.56), Charlson Comorbidity Index (CCI) (OR = 1.27), blood transfusion (BT) (OR = 1.24), Length of hospital stay (LOS) (OR = 1.65)",
+    "originalId" : "RiskFactor:length-of-hospital-stay -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "This meta-analysis identified several significant risk factors associated with unplanned readmission during this period (P < 0.05), including age (OR = 1.13), postoperative complications (OR = 1.87), tumor stage (TNM ≥ III) (OR = 2.01), tumor site in the rectum (OR = 1.64), stoma creation (OR = 1.70), Complicated diabetes (OR = 1.56), Charlson Comorbidity Index (CCI) (OR = 1.27), blood transfusion (BT) (OR = 1.24), Length of hospital stay (LOS) (OR = 1.65), and surgical approach (OR = 1.22).",
+    "originalId" : "RiskFactor:surgical-approach -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40269754.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Notably, female (OR = 0.85) was identified as a protective factor against unplanned readmission.",
+    "originalId" : "RiskFactor:female-gender -> ClinicalOutcome:unplanned-readmission-within-31-days",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/40403266.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized.",
+    "originalId" : "RiskFactor:history-of-hypoglycemia -> Condition:hypoglycemia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/40403266.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized.",
+    "originalId" : "Drug:insulin -> Condition:hypoglycemia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "pubmed/40403266.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized.",
+    "originalId" : "Drug:sulfonylurea -> Condition:hypoglycemia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40792574.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "SGLT2i use reduced the hazard for MAKEs by 11.5%, primarily due to a 19.7% reduction in the hazard for worsen kidney function.",
+    "originalId" : "Drug:sglt2is -> Condition:worsen-kidney-function",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/40892282.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Secondary analyses revealed that prophylactic fluid restriction significantly reduced the incidence of postoperative hyponatremia from ~ 13.1% to ~ 4.0%",
+    "originalId" : "RiskFactor:prophylactic-fluid-restriction -> Condition:postoperative-hyponatremia",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/41175276.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Male sex was also associated with higher rates of hyperglycemia (76.4% vs. 73.3%; p=0.009) and severe hyperglycemia (48.6% vs. 43.7%; p<0.001), with these associations persisting after adjustment",
+    "originalId" : "RiskFactor:male-sex -> ClinicalOutcome:hyperglycemia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/41175276.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "One-month rehospitalization rates were also higher in men (12.7% vs. 11.1%; p=0.088), reaching statistical significance after multivariable adjustment (aOR 1.27; 95% CI: 1.03-1.55; p=0.02).",
+    "originalId" : "RiskFactor:male-sex -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/41566288.txt",
+    "failedRule" : "mention_grounded_in_source",
+    "kind" : "ENTITY",
+    "mention" : "HbA1c ≥ 6.5%",
+    "originalId" : "hba1c-ge-6-5",
+    "originalType" : "LabTest",
+    "rejectionReason" : "Entity mention is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/41566288.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Patients were stratified by preoperative HbA1c levels: well-controlled (HbA1c < 6.5%) versus poorly controlled (HbA1c ≥ 6.5%).",
+    "originalId" : "LabTest:hba1c-ge-6-5 -> Condition:poorly-controlled-diabetes",
+    "originalType" : "INDICATES",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/41566288.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Patients with poorly controlled diabetes had higher rates complications overall (13.0% vs. 9.2%, p = 0.29) and readmission (4.4% vs. 1.0%, p = 0.044).",
+    "originalId" : "Condition:poorly-controlled-diabetes -> ClinicalOutcome:readmission",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/41566288.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "In multivariable analysis, HbA1c ≥ 6.5% was independently associated with an increased risk of complications (OR 2.2, 95% CI 1.0–4.7, p = 0.047).",
+    "originalId" : "LabTest:hba1c-ge-6-5 -> ClinicalOutcome:postoperative-complications",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/42186793.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "The intervention group also had a shorter length of stay, a lower 30-day readmission rate, higher CSQ-8 scores, higher CTM-3 scores, and greater 1-min sit-to-stand performance at discharge and 30 days.",
+    "originalId" : "RiskFactor:respiratory-endocrinology-multidisciplinary-co-management-pathway -> ClinicalOutcome:30-day-readmission",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "pubmed/42186793.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Co-management reduced hyperglycemic patient-days (rate ratio 0.799) without an increase in mild, moderate or severe hypoglycemia.",
+    "originalId" : "RiskFactor:respiratory-endocrinology-multidisciplinary-co-management-pathway -> Condition:hyperglycemia",
+    "originalType" : "REDUCES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/42464180.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p < 0.05).",
+    "originalId" : "RiskFactor:mrci-score -> ClinicalOutcome:rehospitalization-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/42464180.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p < 0.05).",
+    "originalId" : "RiskFactor:mrci-score -> ClinicalOutcome:rehospitalization-within-90-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/42464180.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p < 0.05).",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:rehospitalization-within-30-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "pubmed/42464180.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p < 0.05).",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:rehospitalization-within-90-days",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/atrial-fibrillation.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "If AFib is not treated, it can lead to serious health problems (complications) such as: Stroke Heart failure Blood clots Sudden cardiac arrest (SCA) Cognitive impairment and dementia",
+    "originalId" : "Condition:atrial-fibrillation -> ClinicalOutcome:heart-failure-outcome",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/atrial-fibrillation.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "If AFib is not treated, it can lead to serious health problems (complications) such as: Stroke Heart failure Blood clots Sudden cardiac arrest (SCA) Cognitive impairment and dementia",
+    "originalId" : "Condition:atrial-fibrillation -> ClinicalOutcome:blood-clots",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/atrial-fibrillation.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "If AFib is not treated, it can lead to serious health problems (complications) such as: Stroke Heart failure Blood clots Sudden cardiac arrest (SCA) Cognitive impairment and dementia",
+    "originalId" : "Condition:atrial-fibrillation -> ClinicalOutcome:sudden-cardiac-arrest",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/atrial-fibrillation.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "If AFib is not treated, it can lead to serious health problems (complications) such as: Stroke Heart failure Blood clots Sudden cardiac arrest (SCA) Cognitive impairment and dementia",
+    "originalId" : "Condition:atrial-fibrillation -> ClinicalOutcome:cognitive-impairment-and-dementia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other factors that may affect your risk of developing cancer can include:\n\nExposure to ultraviolet (UV) rays from the sun",
+    "originalId" : "RiskFactor:exposure-to-ultraviolet-rays -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other factors that may affect your risk of developing cancer can include:\n\nExposure to ultraviolet (UV) rays from the sun\n\nSmoking",
+    "originalId" : "RiskFactor:smoking -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other factors that may affect your risk of developing cancer can include:\n\nExposure to ultraviolet (UV) rays from the sun\n\nSmoking\n\nYour diet",
+    "originalId" : "RiskFactor:diet -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other factors that may affect your risk of developing cancer can include:\n\nExposure to ultraviolet (UV) rays from the sun\n\nSmoking\n\nYour diet\n\nPhysical inactivity",
+    "originalId" : "RiskFactor:physical-inactivity -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Avoid or reduce lifestyle habits such as:\n\nSmoking and tobacco use",
+    "originalId" : "RiskFactor:smoking -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Avoid or reduce lifestyle habits such as:\n\nSmoking and tobacco use",
+    "originalId" : "RiskFactor:tobacco-use -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Avoid or reduce lifestyle habits such as:\n\nSmoking and tobacco use\n\nHaving too much sun exposure",
+    "originalId" : "RiskFactor:sun-exposure -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Avoid or reduce lifestyle habits such as:\n\nSmoking and tobacco use\n\nHaving too much sun exposure\n\nDrinking too much alcohol",
+    "originalId" : "RiskFactor:drinking-too-much-alcohol -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/cancer.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Avoid or reduce lifestyle habits such as:\n\nSmoking and tobacco use\n\nHaving too much sun exposure\n\nDrinking too much alcohol\n\nNot getting enough physical activity",
+    "originalId" : "RiskFactor:not-getting-enough-physical-activity -> Condition:cancer",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/chronic-kidney-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sometimes it can lead to kidney failure.",
+    "originalId" : "Condition:chronic-kidney-disease -> Condition:kidney-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/diabetes-and-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If you had gestational diabetes, you are at risk of developing type 2 diabetes.",
+    "originalId" : "Condition:gestational-diabetes -> Condition:type-2-diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Eye disease, due to changes in fluid levels, swelling in the tissues, and damage to the blood vessels in the eyes.",
+    "originalId" : "Condition:diabetes -> Condition:eye-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Foot problems, caused by damage to the nerves and reduced blood flow to your feet.",
+    "originalId" : "Condition:diabetes -> Condition:foot-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Gum disease and other dental problems, because a high amount of glucose in your saliva helps harmful bacteria grow in your mouth.",
+    "originalId" : "Condition:diabetes -> Condition:gum-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Heart disease and stroke, caused by damage to your blood vessels and the nerves that control your heart and blood vessels.",
+    "originalId" : "Condition:diabetes -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Heart disease and stroke, caused by damage to your blood vessels and the nerves that control your heart and blood vessels.",
+    "originalId" : "Condition:diabetes -> Condition:stroke",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Kidney disease, due to damage to the blood vessels in your kidneys.",
+    "originalId" : "Condition:diabetes -> Condition:kidney-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Many people with diabetes develop high blood pressure.",
+    "originalId" : "Condition:diabetes -> Condition:high-blood-pressure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Nerve problems (diabetic neuropathy), caused by damage to the nerves and the small blood vessels that nourish your nerves with oxygen and nutrients.",
+    "originalId" : "Condition:diabetes -> Condition:nerve-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Sexual and bladder problems, caused by damage to the nerves and reduced blood flow in the genitals and bladder.",
+    "originalId" : "Condition:diabetes -> Condition:sexual-and-bladder-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, having too much glucose in your blood can cause complications, including: Skin conditions, some of which are caused by changes in the small blood vessels and reduced circulation.",
+    "originalId" : "Condition:diabetes -> Condition:skin-conditions",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-complications.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "People with diabetes are also more likely to have infections, including skin infections.",
+    "originalId" : "Condition:diabetes -> Condition:infections",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.2",
+    "document" : "medlineplus/diabetes-in-children-and-teens.txt",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Children and teens with type 1 diabetes may need to take insulin.",
+    "originalId" : "Recommendation:maintain-healthy-weight -> Drug:insulin",
+    "originalType" : "RECOMMENDS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-type-1.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, high blood glucose can lead to serious problems with your heart, eyes, kidneys, nerves, gums, and teeth.",
+    "originalId" : "Condition:high-blood-glucose -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetes-type-1.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, high blood glucose can lead to serious problems with your heart, eyes, kidneys, nerves, gums, and teeth.",
+    "originalId" : "Condition:high-blood-glucose -> Condition:kidney-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/diabetes-type-1.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having a parent or sibling with type 1 diabetes may increase your chance of developing it.",
+    "originalId" : "RiskFactor:family-history-type-1-diabetes -> Condition:type-1-diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/diabetes.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Gestational diabetes usually goes away after you give birth. But you will have a higher risk of developing type 2 diabetes later.",
+    "originalId" : "Condition:gestational-diabetes -> Condition:type-2-diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/diabetic-diet.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If you have prediabetes, you are more likely to develop type 2 diabetes.",
+    "originalId" : "Condition:prediabetes -> Condition:type-2-diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If it's not treated, it can cause serious problems such as vision loss and retinal detachment, where the retina is pulled away from its normal position at the back of your eye.",
+    "originalId" : "Condition:diabetic-retinopathy -> Condition:retinal-detachment",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "But your risk of developing it is higher if you have diabetes and: Have had diabetes for a long time",
+    "originalId" : "RiskFactor:long-duration-diabetes -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "But your risk of developing it is higher if you have diabetes and: Don't have good control over your high blood glucose or high blood pressure",
+    "originalId" : "RiskFactor:poor-glycemic-control -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "But your risk of developing it is higher if you have diabetes and: Are pregnant",
+    "originalId" : "RiskFactor:pregnancy -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "But your risk of developing it is higher if you have diabetes and: Have high blood cholesterol",
+    "originalId" : "RiskFactor:high-blood-cholesterol -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-eye-problems.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "But your risk of developing it is higher if you have diabetes and: Smoke tobacco",
+    "originalId" : "RiskFactor:smoking -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/diabetic-heart-disease.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Your risk for heart disease is also higher if you\n...\nHave chronic kidney disease",
+    "originalId" : "Condition:chronic-kidney-disease -> ClinicalOutcome:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sun exposure can damage your eyes and raise your risk of cataracts and age-related macular degeneration.",
+    "originalId" : "RiskFactor:sun-exposure -> Condition:cataracts",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sun exposure can damage your eyes and raise your risk of cataracts and age-related macular degeneration.",
+    "originalId" : "RiskFactor:sun-exposure -> Condition:age-related-macular-degeneration",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Being overweight or having obesity increases your risk of developing diabetes.",
+    "originalId" : "RiskFactor:being-overweight-or-having-obesity -> Condition:diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having diabetes puts you at higher risk of getting diabetic retinopathy or glaucoma.",
+    "originalId" : "Condition:diabetes -> Condition:diabetic-retinopathy",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having diabetes puts you at higher risk of getting diabetic retinopathy or glaucoma.",
+    "originalId" : "Condition:diabetes -> Condition:glaucoma",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Smoking increases the risk of developing age-related eye diseases such as macular degeneration and cataracts and can damage the optic nerve.",
+    "originalId" : "RiskFactor:smoking -> Condition:macular-degeneration",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/eye-care.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Smoking increases the risk of developing age-related eye diseases such as macular degeneration and cataracts and can damage the optic nerve.",
+    "originalId" : "RiskFactor:smoking -> Condition:cataracts",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "medlineplus/eye-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Getting older increases your risk of some eye diseases.",
+    "originalId" : "RiskFactor:getting-older -> Condition:cataracts",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.7",
+    "document" : "medlineplus/eye-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other things that may put you at a higher risk of some eye diseases can include if you: \n\nAre overweight or obese\n\nHave a family history of eye disease\n\nAre African American, Hispanic, or Native American\n\nHave certain health conditions such as Diabetic eye problems, or high blood pressure",
+    "originalId" : "RiskFactor:overweight-or-obese -> Condition:diabetic-eye-problems",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/fistulas.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other common causes of fistulas include: Diseases, such as Crohn's disease or ulcerative colitis",
+    "originalId" : "Condition:crohns-disease -> Condition:fistula",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/fistulas.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Other common causes of fistulas include: Diseases, such as Crohn's disease or ulcerative colitis",
+    "originalId" : "Condition:ulcerative-colitis -> Condition:fistula",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Over time, left-sided heart failure can lead to right-sided heart failure.",
+    "originalId" : "Condition:left-sided-heart-failure -> Condition:right-sided-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Breathing problems from fluid in and around your lungs (also called congestive heart failure)",
+    "originalId" : "Condition:heart-failure -> Condition:congestive-heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nKidney or liver damage",
+    "originalId" : "Condition:heart-failure -> Condition:kidney-or-liver-damage",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nKidney or liver damage, including cirrhosis",
+    "originalId" : "Condition:heart-failure -> Condition:cirrhosis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nMalnutrition",
+    "originalId" : "Condition:heart-failure -> Condition:malnutrition",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nOther heart conditions, such as irregular heartbeat",
+    "originalId" : "Condition:heart-failure -> Condition:irregular-heartbeat",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nOther heart conditions, such as ... sudden cardiac arrest",
+    "originalId" : "Condition:heart-failure -> Condition:sudden-cardiac-arrest",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/heart-failure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Fluid buildup and reduced blood flow to your organs can lead to serious problems, including:\n\n...\n\nPulmonary hypertension",
+    "originalId" : "Condition:heart-failure -> Condition:pulmonary-hypertension",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having high blood pressure can put you at risk for other health problems, such as heart disease, heart attack, and stroke.",
+    "originalId" : "Condition:hypertension -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having high blood pressure can put you at risk for other health problems, such as heart disease, heart attack, and stroke.",
+    "originalId" : "Condition:hypertension -> Condition:heart-attack",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Having high blood pressure can put you at risk for other health problems, such as heart disease, heart attack, and stroke.",
+    "originalId" : "Condition:hypertension -> Condition:stroke",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Some women with gestational hypertension do go on to develop preeclampsia, a more serious type of high blood pressure in pregnancy.",
+    "originalId" : "Condition:gestational-hypertension -> Condition:preeclampsia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Sometimes chronic hypertension can also lead to preeclampsia.",
+    "originalId" : "Condition:chronic-hypertension -> Condition:preeclampsia",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "High blood pressure in pregnancy can lead to complications such as:\n...\nPreterm birth",
+    "originalId" : "Condition:high-blood-pressure-in-pregnancy -> ClinicalOutcome:preterm-birth",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "High blood pressure in pregnancy can lead to complications such as:\n...\nYour baby having a low birth weight",
+    "originalId" : "Condition:high-blood-pressure-in-pregnancy -> ClinicalOutcome:low-birth-weight",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/high-blood-pressure-in-pregnancy.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "High blood pressure in pregnancy can lead to complications such as:\n...\nA higher risk of heart disease for you",
+    "originalId" : "Condition:high-blood-pressure-in-pregnancy -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "When your blood pressure stays high over time, it causes the heart to pump harder and work overtime, possibly leading to serious health problems such as heart attack, stroke, heart failure, and kidney failure.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:heart-attack",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "When your blood pressure stays high over time, it causes the heart to pump harder and work overtime, possibly leading to serious health problems such as heart attack, stroke, heart failure, and kidney failure.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:stroke",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "When your blood pressure stays high over time, it causes the heart to pump harder and work overtime, possibly leading to serious health problems such as heart attack, stroke, heart failure, and kidney failure.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "When your blood pressure stays high over time, it causes the heart to pump harder and work overtime, possibly leading to serious health problems such as heart attack, stroke, heart failure, and kidney failure.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:kidney-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Diabetes raises the risk of heart disease more in women than in men.",
+    "originalId" : "Condition:diabetes -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "High blood pressure is a major risk factor for heart disease.",
+    "originalId" : "RiskFactor:high-blood-pressure-risk -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "High levels of cholesterol can clog your arteries and raise your risk of coronary artery disease and heart attack.",
+    "originalId" : "RiskFactor:high-cholesterol -> Condition:coronary-artery-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "High levels of cholesterol can clog your arteries and raise your risk of coronary artery disease and heart attack.",
+    "originalId" : "RiskFactor:high-cholesterol -> Condition:heart-attack",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "High levels of triglyceride may also raise the risk of coronary artery disease, especially in women.",
+    "originalId" : "RiskFactor:high-triglycerides -> Condition:coronary-artery-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Being overweight or having obesity can increase your risk of heart disease.",
+    "originalId" : "RiskFactor:overweight-or-obesity -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-heart-disease.txt",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Having diabetes doubles your risk of diabetic heart disease.",
+    "originalId" : "Condition:diabetes -> ClinicalOutcome:diabetic-heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "This can be dangerous, because high blood pressure can lead to life-threatening conditions like heart attack or stroke.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:heart-attack",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/how-to-prevent-high-blood-pressure.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "This can be dangerous, because high blood pressure can lead to life-threatening conditions like heart attack or stroke.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:stroke",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/hyperglycemia.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If your blood glucose levels get very high, you can develop diabetes-related ketoacidosis (DKA).",
+    "originalId" : "Condition:hyperglycemia -> Condition:diabetes-related-ketoacidosis",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/kidney-cysts.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "About half of people with the most common type of PKD end up with kidney failure.",
+    "originalId" : "Condition:polycystic-kidney-disease -> Condition:kidney-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/kidney-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease.",
+    "originalId" : "Condition:diabetes -> Condition:kidney-diseases",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/kidney-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease.",
+    "originalId" : "Condition:high-blood-pressure -> Condition:kidney-diseases",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/kidney-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease.",
+    "originalId" : "RiskFactor:close-family-member-with-kidney-disease -> Condition:kidney-diseases",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/lung-diseases.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Some lung diseases can lead to respiratory failure.",
+    "originalId" : "Condition:lung-disease -> Condition:respiratory-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/paget-s-disease-of-bone.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "In severe Paget's disease, the heart has to work harder to pump blood to affected bones. Heart failure is more likely if you also have hardening of the arteries.",
+    "originalId" : "Condition:pagets-disease-of-bone -> Condition:heart-failure",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/paget-s-disease-of-bone.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Kidney stones, which can happen when the excessive breakdown of the bone leads to extra calcium in the body",
+    "originalId" : "Condition:pagets-disease-of-bone -> Condition:kidney-stones",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/paget-s-disease-of-bone.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "Osteosarcoma, cancer of the bone",
+    "originalId" : "Condition:pagets-disease-of-bone -> Condition:osteosarcoma",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/prediabetes.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke.",
+    "originalId" : "Condition:prediabetes -> Condition:type-2-diabetes",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/prediabetes.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke.",
+    "originalId" : "Condition:prediabetes -> Condition:heart-disease",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.95",
+    "document" : "medlineplus/prediabetes.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke.",
+    "originalId" : "Condition:prediabetes -> Condition:stroke",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.9",
+    "document" : "medlineplus/tremor.txt",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "For certain types of tremor, having a family history raises your risk of getting it.",
+    "originalId" : "RiskFactor:family-history -> Condition:tremor",
+    "originalType" : "INCREASES_RISK_OF",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  } ],
+  "summary" : {
+    "acceptanceRate" : 0.941,
+    "documents" : 438,
+    "rawEntities" : 3558,
+    "rawRelations" : 1512,
+    "rejected" : 300,
+    "validEntities" : 3539,
+    "validRelations" : 1231
+  }
+}

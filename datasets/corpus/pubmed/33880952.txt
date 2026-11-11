@@ -1,0 +1,11 @@
+# PubMed 33880952: Retrospective Quality Improvement Study of Insulin-Induced Hypoglycemia and Implementation of Hospital-Wide Initiatives.
+
+Journal of diabetes science and technology (2021), doi:10.1177/19322968211008513
+
+BACKGROUND: Hospitalized patients who are receiving antihyperglycemic agents are at increased risk for hypoglycemia. Inpatient hypoglycemia may lead to increased risk for morbidity, mortality, prolonged hospitalization, and readmission within 30 days of discharge, which in turn may lead to increased costs. Hospital-wide initiatives targeting hypoglycemia are known to be beneficial; however, their impact on patient care and economic measures in community nonteaching hospitals are unknown.
+
+METHODS: This retrospective quality improvement study examined the effects of hospital-wide hypoglycemia initiatives on the rates of insulin-induced hypoglycemia in a community hospital setting from January 1, 2016, until September 30, 2019. The potential cost of care savings has been calculated.
+
+RESULTS: Among 49 315 total patient days, 2682 days had an instance of hypoglycemia (5.4%). Mean ± SD hypoglycemic patient days/month was 59.6 ± 16.0. The frequency of hypoglycemia significantly decreased from 7.5% in January 2016 to 3.9% in September 2019 (P = .001). Patients with type 2 diabetes demonstrated a significant decrease in the frequency of hypoglycemia (7.4%-3.8%; P < .0001), while among patients with type 1 diabetes the frequency trended downwards but did not reach statistical significance (18.5%-18.0%; P = 0.08). Based on the reduction of hypoglycemia rates, the hospital had an estimated cost of care savings of $98 635 during the study period.
+
+CONCLUSIONS: In a community hospital setting, implementation of hospital-wide initiatives targeting hypoglycemia resulted in a significant and sustainable decrease in the rate of insulin-induced hypoglycemia. These high-leverage risk reduction strategies may be translated into considerable cost savings and could be implemented at other community hospitals.

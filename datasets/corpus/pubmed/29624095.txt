@@ -1,0 +1,13 @@
+# PubMed 29624095: EXTERNAL VALIDATION OF THE DIABETES EARLY RE-ADMISSION RISK INDICATOR (DERRI™).
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2018), doi:10.4158/EP-2018-0035
+
+OBJECTIVE: The Diabetes Early Re-admission Risk Indicator (DERRI™) was previously developed and internally validated as a tool to predict the risk of all-cause re-admission within 30 days of discharge (30-day re-admission) of hospitalized patients with diabetes. In this study, the predictive performance of the DERRI™ with and without additional predictors was assessed in an external sample.
+
+METHODS: We conducted a retrospective cohort study of adult patients with diabetes discharged from two academic medical centers between January 1, 2000 and December 31, 2014. We applied the previously developed DERRI™, which includes admission laboratory results, sociodemographics, a diagnosis of certain comorbidities, and recent discharge information, and evaluated the effect of adding metabolic indicators on predictive performance using multivariable logistic regression. Total cholesterol and hemoglobin A1c (A1c) were selected based on clinical relevance and univariate association with 30-day re-admission.
+
+RESULTS: Among 105,974 discharges, 19,032 (18.0%) were followed by 30-day re-admission for any cause. The DERRI™ had a C-statistic of 0.634 for 30-day re-admission. Total cholesterol was the lipid parameter most strongly associated with 30-day re-admission. The DERRI™ predictors A1c and total cholesterol were significantly associated with 30-day re-admission; however, their addition to the DERRI™ did not significantly change model performance (C-statistic, 0.643 [95% confidence interval, 0.638 to 0.647]; P = .92).
+
+CONCLUSION: Performance of the DERRI™ in this external cohort was modest but comparable to other re-admission prediction models. Addition of A1c and total cholesterol to the DERRI™ did not significantly improve performance. Although the DERRI™ may be useful to direct resources toward diabetes patients at higher risk, better prediction is needed.
+
+ABBREVIATIONS: A1c = hemoglobin A1c; CI = confidence interval; DERRI™ = Diabetes Early Re-admission Risk Indicator; GEE = generalized estimating equation; HDL-C = high-density-lipoprotein cholesterol; ICD-9-CM = International Classification of Diseases, Ninth Revision, Clinical Modification; LDL-C = low-density-lipoprotein cholesterol.

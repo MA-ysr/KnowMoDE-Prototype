@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/17445520" sourceUri="https://pubmed.ncbi.nlm.nih.gov/17445520/" sourceSha256="82a3bb57cca55166496be09c1656baaa1429af1547a7a1db423d74068c851ad6" sourceText="Caffeine challenge test in panic disorder and depression with panic attacks. Our aim was to observe if patients with panic disorder (PD) and patients with major depression with panic attacks (MDP) (Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition criteria) respond in a similar way to the induction of panic attacks by an oral caffeine challenge test. We randomly selected 29 patients with PD, 27 with MDP, 25 with major depression without panic attacks (MD), and 28 healthy volunteers. The patients had no psychotropic drug for at least a 4-week period. In a randomized double-blind experiment performed in 2 occasions 7 days apart, 480 mg caffeine and a caffeine-free (placebo) solution were administered in a coffee form and anxiety scales were applied before and after each test. A total of 58.6% (n = 17) of patients with PD, 44.4% (n = 12) of patients with MDP, 12.0% (n = 3) of patients with MD, and 7.1% (n= 2) of control subjects had a panic attack after the 480-mg caffeine challenge test (chi(2)(3) = 16.22, P = .001). The patients with PD and MDP were more sensitive to caffeine than were patients with MD and healthy volunteers. No panic attack was observed after the caffeine-free solution intake. The patients with MD had a lower heart rate response to the test than all the other groups (2-way analysis of variance, group by time interaction with Greenhouse-Geisser correction: F(3,762) = 2.85, P = .026). Our data suggest that there is an association between panic attacks, no matter if associated with PD or MDP, and hyperreactivity to an oral caffeine challenge test." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:01+00:00" xmi:version="2.0">
+  <chunks charEnd="1607"/>
+  <entities type="Drug" id="caffeine" mention="caffeine" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="8">
+    <properties key="name" value="caffeine"/>
+  </entities>
+  <entities type="Condition" id="panic-disorder" mention="panic disorder" confidence="0.95" sourceSpanStart="27" sourceSpanEnd="41">
+    <properties key="name" value="panic disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="major-depression-with-panic-attacks" mention="major depression with panic attacks" confidence="0.95" sourceSpanStart="155" sourceSpanEnd="190">
+    <properties key="name" value="major depression with panic attacks"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="panic-attacks" mention="panic attacks" confidence="0.95" sourceSpanStart="177" sourceSpanEnd="190">
+    <properties key="name" value="panic attacks"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="major-depression-without-panic-attacks" mention="major depression without panic attacks" confidence="0.95" sourceSpanStart="436" sourceSpanEnd="474">
+    <properties key="name" value="major depression without panic attacks"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="caffeine" targetType="Condition" targetId="panic-attacks" confidence="0.9" evidence="A total of 58.6% (n = 17) of patients with PD, 44.4% (n = 12) of patients with MDP, 12.0% (n = 3) of patients with MD, and 7.1% (n= 2) of control subjects had a panic attack after the 480-mg caffeine challenge test" sourceSpanStart="805" sourceSpanEnd="1019"/>
+</raw:RawExtractionResult>

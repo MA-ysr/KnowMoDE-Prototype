@@ -1,0 +1,11 @@
+# PubMed 39414709: Subcutaneous fast-acting insulin analogues ± long-acting insulin vs IV insulin infusion in DKA: updated meta-analysis of randomised trials.
+
+Endocrine (2025), doi:10.1007/s12020-024-04071-0
+
+BACKGROUND: Diabetic ketoacidosis (DKA) is often treated with intravenous regular insulin infusion (IVRII). Subcutaneous fast-acting insulin analogues (FAIAs); either alone or combined with subcutaneous long-acting insulin (LAI); might be useful to treat DKA. Our meta-analysis updated on their benefits and safety in DKA.
+
+METHODS: We searched major electronic databases for randomised trials on subcutaneous FAIAs ± subcutaneous LAI vs IVRII in DKA. Primary outcomes were all-cause in-hospital mortality, time to resolution of DKA and hyperglycemia, in-hospital DKA recurrence and hospital readmission for DKA post-discharge. Secondary outcomes included resource utilisation and patient satisfaction. Safety outcomes were adverse events. Reviewers assessed risk of bias and quality of evidence using GRADE. We performed a priori subgroup and trial sequential analyses on primary outcomes.
+
+RESULTS: Seven trials enrolled 351 mainly adult patients (255/351) with mild to moderate DKA. No trials studied subcutaneous FAIA and subcutaneous LAI. Their risk of bias was high or unclear in several domains. No all-cause in-hospital mortality and DKA recurrence were reported. No trial investigated hospital readmission for DKA post-discharge. There was no difference in mean time to resolution of DKA (mean difference = -0.70, 95% CI -2.18 to 0.79 h, p = 0.36) or hyperglycemia [blood glucose < 250 mg/dL (13.9 mmol/L)] (mean difference = -0.17, 95% CI -1.10 to 0.76 h, p = 0.72) between subcutaneous FAIA and IVRII groups. There were largely no subgroup effects. Both groups had similar secondary outcomes. Hypoglycemia was the most common adverse event. Quality of evidence was low to very-low for all outcomes. The only possible trial sequential analysis for time to resolution of DKA was inconclusive.
+
+CONCLUSIONS: There was low- to very-low quality evidence that subcutaneous FAIA did not affect patient-centered outcomes in mainly adult patients with mild to moderate DKA compared to IVRII.

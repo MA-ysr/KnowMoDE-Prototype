@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33295194.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33295194/" sourceSha256="815004d26e2e1897bfb93b4e6a1c5e66fc2c3f31fdc5527908763f0b8186d42b" sourceText="# PubMed 33295194: Enhanced Recovery After Surgery Protocols. Does Frailty Play a Role?&#10;&#10;The American surgeon (2021), doi:10.1177/0003134820956357&#10;&#10;INTRODUCTION: The 5-modified frailty index (mFI) is a valid predictor of 30-day mortality after surgery. With the wide implementation of enhanced recovery after surgery (ERAS) protocols in colorectal patients, the predictive power of frailty and its contribution to morbidity and length of stay (LOS) can be underestimated.&#10;&#10;METHODS: We reviewed all colectomy patients undergoing ERAS protocol at a single, tertiary care institution from January 2016-January 2019. The 5-mFI score was calculated based on the presence of 5 comorbidities: Congestive heart failure (CHF), diabetes mellitus, chronic obstructive pulmonary disease, functional status, and hypertension (HTN). Multivariate analysis was used to assess the impact of 5-mFI score on morbidity, emergency department (ED) visits, readmissions, and LOS.&#10;&#10;RESULTS: 360 patients were evaluated including 163 elderly patients. Frailer patients had a higher rate of ED visits (P = .024), readmissions (P = .029), and LOS (P &lt; .001). Patients with CHF had a higher chance of prolonged LOS, whereas patients with HTN had a higher chance of ED. Elderly patients with an mFI score of 3 and 4 were likely to have longer LOS (P = .01, P = .07, respectively). Elderly patients with an mFI score of 4 were 15 times more likely to visit ED and 22 times more likely to be readmitted than patients with an mFI score of 0.&#10;&#10;DISCUSSION: An increase in 5-mFI for elderly patients undergoing colorectal procedures increases ED visits or readmissions, and it correlates to a higher LOS, especially in elderly patients. This instrument should be used in the assessment of frail, elderly patients undergoing colorectal procedures.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:01+00:00" xmi:version="2.0">
+  <chunks charEnd="1812"/>
+  <entities type="RiskFactor" id="frailty" mention="Frailer patients" confidence="0.9" sourceSpanStart="1027" sourceSpanEnd="1043">
+    <properties key="name" value="frailty"/>
+    <properties key="description" value="Higher 5-modified frailty index score"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmissions" mention="readmissions" confidence="0.9" sourceSpanStart="1087" sourceSpanEnd="1099">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="CHF" confidence="0.95" sourceSpanStart="1146" sourceSpanEnd="1149">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="HTN" confidence="0.95" sourceSpanStart="1210" sourceSpanEnd="1213">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="hospital-readmissions" confidence="0.9" evidence="Frailer patients had a higher rate of ED visits (P = .024), readmissions (P = .029), and LOS (P &lt; .001)." sourceSpanStart="1027" sourceSpanEnd="1131"/>
+</raw:RawExtractionResult>

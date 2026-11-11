@@ -1,0 +1,133 @@
+{
+  "corpus": {
+    "pubmed": 362,
+    "papers": 1,
+    "medlineplus": 58,
+    "openfda": 12,
+    "gold-bc5cdr": 1,
+    "tabular": 2
+  },
+  "llm": {
+    "calls": 634,
+    "inputTokens": 2227893,
+    "outputTokens": 593734,
+    "cost": "0 (free tier)",
+    "chunks": 635,
+    "chunksWithoutResponse": 1,
+    "callsPerTaskAndModel": {
+      "drug_label_extraction (gemini/gemini-3.5-flash-lite)": 146,
+      "guideline_extraction (gemini/gemini-3.5-flash-lite)": 61,
+      "literature_extraction (gemini/gemini-3.5-flash-lite)": 263,
+      "literature_extraction (gemini/gemini-3.1-flash-lite)": 79,
+      "patient_education_extraction (gemini/gemini-3.5-flash-lite)": 85
+    },
+    "spansRepaired": 5055,
+    "itemsReturned": 5070,
+    "spanRepairRate": 0.997,
+    "itemsInRawModels": 5070
+  },
+  "validation": {
+    "acceptanceRate": 0.941,
+    "documents": 438,
+    "rawEntities": 3558,
+    "rawRelations": 1512,
+    "rejected": 300,
+    "validEntities": 3539,
+    "validRelations": 1231
+  },
+  "rejectionsPerRule": {
+    "max_cardinality_respected": 18,
+    "mention_grounded_in_source": 19,
+    "relation_confidence_above_threshold": 2,
+    "relation_endpoints_accepted": 40,
+    "relation_evidence_grounded_in_source": 174,
+    "relation_type_and_endpoints_in_schema": 137
+  },
+  "graph": {
+    "nodes": {
+      "ClinicalOutcome": 185,
+      "Condition": 564,
+      "Drug": 136,
+      "DrugClass": 24,
+      "ExtractionRun": 5,
+      "LabTest": 36,
+      "Recommendation": 71,
+      "RiskFactor": 330,
+      "SourceDocument": 369
+    },
+    "relationships": {
+      "APPLIES_TO": 49,
+      "BELONGS_TO_CLASS": 34,
+      "CONTRAINDICATED_IN": 60,
+      "EXTRACTED_FROM": 3510,
+      "INCREASES_RISK_OF": 510,
+      "INDICATES": 11,
+      "INTERACTS_WITH": 127,
+      "MAY_CAUSE": 281,
+      "PRODUCED_BY": 1483,
+      "RECOMMENDS": 60,
+      "REDUCES_RISK_OF": 75,
+      "TREATS": 16
+    }
+  },
+  "predictor": {
+    "auroc": 0.6466,
+    "auprc": 0.1702,
+    "positiveRate": 0.0897,
+    "train": 52479,
+    "test": 17494,
+    "patients": 69973
+  },
+  "runTimesSeconds": {
+    "check (C1-C5)": 1.87,
+    "generate (check+T1+T3+T4+T6)": 2.09,
+    "t2 (validator generation + validation of all raw extractions)": 17.3,
+    "t5 (loader generation)": 1.97
+  },
+  "sizes": {
+    "models (M1, authored per use case)": {
+      "files": 5,
+      "lines": 1246
+    },
+    "metamodels (M2)": {
+      "files": 4,
+      "lines": 834
+    },
+    "constraints C1-C5 (EVL)": {
+      "files": 1,
+      "lines": 535
+    },
+    "transformations T1-T6 (ETL/EGL/EGX)": {
+      "files": 16,
+      "lines": 780
+    },
+    "MDE runtime (Java, incl. tests)": {
+      "files": 13,
+      "lines": 1213
+    },
+    "Python runtime kernel (corpus, LLM, kg, ml, explain, cli)": {
+      "files": 27,
+      "lines": 1984
+    },
+    "Python evaluation scripts + tools": {
+      "files": 11,
+      "lines": 1456
+    },
+    "generated: prompts + side-cars (T4)": {
+      "files": 9,
+      "lines": 721
+    },
+    "generated: graph schema + DDL (T1, T3)": {
+      "files": 2,
+      "lines": 203
+    },
+    "generated: validator (T2a) + loader (T5)": {
+      "files": 2,
+      "lines": 5685
+    },
+    "generated: explanation service (T6)": {
+      "files": 14,
+      "lines": 432
+    }
+  }
+}

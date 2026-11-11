@@ -1,0 +1,5 @@
+# PubMed 27164170: Examining IV Insulin Practice Guidelines in the Cardiac Surgery Patient: Nurses Evaluating Quality Outcomes.
+
+Journal of nursing care quality (2016), doi:10.1097/NCQ.0000000000000190
+
+Recent changes in the Surgical Care Improvement Project guideline require blood glucose values be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery. Our study compares the first group of patients transitioned off IV insulin on postoperative day 1, 24 hours after anesthesia end time, whereas the second group was transitioned off IV insulin on the second day, 48 hours after anesthesia end time. Results show no statistical difference in outcomes between groups.

@@ -1,0 +1,11 @@
+# PubMed 29966783: Drivers of Cost in Adult Thoracolumbar Spine Deformity Surgery.
+
+World neurosurgery (2018), doi:10.1016/j.wneu.2018.06.155
+
+BACKGROUND: In an era of rising health care costs, it is prudent to consider effective use of resources. Given the rapidly expanding elderly population with an anticipated increase in adult spinal deformity, identifying the significant cost drivers for the surgical management is an important step in the process of increasing sustainability and cost-effectiveness of adult spinal deformity surgery.
+
+METHODS: A total of 129 patients undergoing elective spine surgery for thoraco-lumbar deformity were enrolled in a prospective longitudinal registry. Patient-reported resource use during the 3-month postoperative period, including outpatient visits, spine-related diagnostic tests, injections, emergency department room visits, rehabilitation/skilled nursing facility utilization, and use of all medications, was collected in a single-center prospective registry. Multiple linear regression analysis was conducted to find the significant patient coefficient for the cost variability.
+
+RESULTS: The study population showed significant improvement (P < 0.001) in all patient-reported outcomes including disability (Oswestry Disability Index), pain (Numeric Rating Scale for Back Pain and Numeric Rating Scale for Leg Pain), and quality of life (Euro-Qol-5D). In risk-adjusted multiple patient comorbidities including chronic obstructive pulmonary disease and diabetes, preoperative deformity diagnosis, number of levels involved, length of surgery and hospital stay, 90-day readmission and use of inpatient rehabilitation were the significant drivers of the cost.
+
+CONCLUSIONS: Our study demonstrates that several patient-specific, surgery-related factors, 90-day readmission and postdischarge inpatient rehabilitation use, were associated with increased cost associated with the adult deformity spine surgery.

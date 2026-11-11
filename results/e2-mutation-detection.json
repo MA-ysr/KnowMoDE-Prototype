@@ -1,0 +1,344 @@
+{
+  "summary": {
+    "mutants": 22,
+    "blockedBeforeGeneration": 22,
+    "expectedConstraintOrLoadError": 22,
+    "meanSeconds": 1.63
+  },
+  "mutants": [
+    {
+      "id": "M01_concept_without_property",
+      "family": "C1",
+      "expectedConstraint": "C1_ConceptHasProperty",
+      "mutatedFile": "kg-schema.xmi",
+      "description": "DrugClass loses its only property",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C1_ConceptHasIdentifyingProperty",
+        "C1_ConceptHasProperty"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.9
+    },
+    {
+      "id": "M02_negative_cardinality",
+      "family": "C1",
+      "expectedConstraint": "C1_CardinalitiesValid",
+      "mutatedFile": "kg-schema.xmi",
+      "description": "APPLIES_TO gets minCardinality -3",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C1_CardinalitiesValid"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.82
+    },
+    {
+      "id": "M03_empty_query_template",
+      "family": "C1",
+      "expectedConstraint": "C1_PatternHasTemplate",
+      "mutatedFile": "kg-schema.xmi",
+      "description": "guideline_rules loses its Cypher template (parameters cleared and template emptied)",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C1_PatternHasTemplate"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.78
+    },
+    {
+      "id": "M04_pattern_writes_graph",
+      "family": "C1",
+      "expectedConstraint": "C1_PatternReadsOnly",
+      "mutatedFile": "kg-schema.xmi",
+      "description": "protective_factors template mutates the graph",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C1_PatternReadsOnly"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.78
+    },
+    {
+      "id": "M05_prompt_targets_undeclared_concept",
+      "family": "C2",
+      "expectedConstraint": "C2_PromptConceptsDeclaredInTargetSchema",
+      "mutatedFile": "extraction-pipeline.xmi",
+      "description": "drug_label task targets a concept that does not exist (dangling reference)",
+      "blocked": true,
+      "expectedConstraintFired": false,
+      "caughtAtLoad": true,
+      "firedConstraints": [],
+      "unresolvedReferences": 1,
+      "seconds": 0.42
+    },
+    {
+      "id": "M06_prompt_relation_without_endpoint",
+      "family": "C2",
+      "expectedConstraint": "C2_PromptRelationEndpointsAreTargeted",
+      "mutatedFile": "extraction-pipeline.xmi",
+      "description": "drug_label task drops DrugClass but still targets BELONGS_TO_CLASS",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C2_EveryConceptTargetedBySomeTask",
+        "C2_FewShotOutputsMentionOnlyTargetedTypes",
+        "C2_PromptRelationEndpointsAreTargeted"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.75
+    },
+    {
+      "id": "M07_concept_extracted_by_no_task",
+      "family": "C2",
+      "expectedConstraint": "C2_EveryConceptTargetedBySomeTask",
+      "mutatedFile": "extraction-pipeline.xmi",
+      "description": "the only task that extracts DrugClass stops targeting it (with BELONGS_TO_CLASS and the few-shot items that use them): no task extracts DrugClass any more",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C2_EveryConceptTargetedBySomeTask"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.79
+    },
+    {
+      "id": "M08_threshold_out_of_range",
+      "family": "C3",
+      "expectedConstraint": "C3_ThresholdInRange",
+      "mutatedFile": "validation-policy.xmi",
+      "description": "confidence threshold 1.5",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C3_ThresholdInRange"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.6
+    },
+    {
+      "id": "M09_overlap_not_smaller_than_chunk",
+      "family": "C3",
+      "expectedConstraint": "C3_OverlapSmallerThanChunk",
+      "mutatedFile": "extraction-pipeline.xmi",
+      "description": "literature task overlap equals chunk size",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C3_OverlapSmallerThanChunk"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.81
+    },
+    {
+      "id": "M10_rule_without_expression",
+      "family": "C3",
+      "expectedConstraint": "C3_RuleHasExpression",
+      "mutatedFile": "validation-policy.xmi",
+      "description": "entity_confidence_above_threshold loses its expression",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C3_RuleHasExpression"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.6
+    },
+    {
+      "id": "M11_no_provenance_rule",
+      "family": "C3",
+      "expectedConstraint": "C3_HasProvenanceRule",
+      "mutatedFile": "validation-policy.xmi",
+      "description": "the provenance rule is downgraded to WARNING (R7 no longer guaranteed)",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C3_HasProvenanceRule"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.79
+    },
+    {
+      "id": "M12_uncovered_audience",
+      "family": "C4",
+      "expectedConstraint": "C4_AudienceCovered",
+      "mutatedFile": "explainability.xmi",
+      "description": "auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C4_AudienceCovered",
+        "C4_DecisionClassCoversEveryAudience",
+        "C4_DecisionClassCoversEveryAudience"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.78
+    },
+    {
+      "id": "M13_low_audience_gets_feature_attribution",
+      "family": "C4",
+      "expectedConstraint": "C4_LowAudienceNoFeatureAttribution",
+      "mutatedFile": "explainability.xmi",
+      "description": "patient (LOW) is added to the FEATURE_ATTRIBUTION type",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C4_LowAudienceNoFeatureAttribution"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.6
+    },
+    {
+      "id": "M14_low_audience_only_technical",
+      "family": "C4",
+      "expectedConstraint": "C4_LowAudienceGetsAccessibleExplanation",
+      "mutatedFile": "explainability.xmi",
+      "description": "patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C4_AudienceCovered",
+        "C4_DecisionClassCoversEveryAudience",
+        "C4_DecisionClassCoversEveryAudience",
+        "C4_LowAudienceGetsAccessibleExplanation"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.78
+    },
+    {
+      "id": "M15_decision_class_misses_audience",
+      "family": "C4",
+      "expectedConstraint": "C4_DecisionClassCoversEveryAudience",
+      "mutatedFile": "decision-bindings.xmi",
+      "description": "LowReadmissionRisk no longer offers anything to the patient",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C4_DecisionClassCoversEveryAudience"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.77
+    },
+    {
+      "id": "M16_explanation_uses_undeclared_pattern",
+      "family": "C5",
+      "expectedConstraint": "C5_PatternsDeclaredInTargetSchema",
+      "mutatedFile": "explainability.xmi",
+      "description": "GuidelineCompliance references a query pattern that is not in the schema (dangling)",
+      "blocked": true,
+      "expectedConstraintFired": false,
+      "caughtAtLoad": true,
+      "firedConstraints": [],
+      "unresolvedReferences": 1,
+      "seconds": 0.41
+    },
+    {
+      "id": "M17_binding_feature_not_in_model",
+      "family": "C5",
+      "expectedConstraint": "C5_BindingFeatureExistsInModel",
+      "mutatedFile": "decision-bindings.xmi",
+      "description": "a feature binding refers to a feature the model does not have",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C5_BindingFeatureExistsInModel"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.78
+    },
+    {
+      "id": "M18_binding_without_resolution",
+      "family": "C5",
+      "expectedConstraint": "C5_BindingHasResolution",
+      "mutatedFile": "decision-bindings.xmi",
+      "description": "number_emergency binding loses its entityName",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C5_BindingHasResolution"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.82
+    },
+    {
+      "id": "M19_configs_disagree_on_schema",
+      "family": "C5",
+      "expectedConstraint": "C5_AllConfigsShareOneSchema",
+      "mutatedFile": "validation-policy.xmi",
+      "description": "validation policy points to a different schema file",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C5_AllConfigsShareOneSchema"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.8
+    },
+    {
+      "id": "M20_missing_trace_pattern",
+      "family": "C5",
+      "expectedConstraint": "C5_FullProvenanceAudienceHasTracePattern",
+      "mutatedFile": "explainability.xmi",
+      "description": "auditor requires full provenance but no trace pattern is bound",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C5_FullProvenanceAudienceHasTracePattern"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.56
+    },
+    {
+      "id": "M21_counterfactual_pattern_not_actionable",
+      "family": "C4",
+      "expectedConstraint": "C4_CounterfactualPatternsActionable",
+      "mutatedFile": "explainability.xmi",
+      "description": "ModifiableFactors (COUNTERFACTUAL) also runs causal_context, which may return non-modifiable risk factors",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C4_CounterfactualPatternsActionable"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.77
+    },
+    {
+      "id": "M22_actionable_pattern_without_modifiability",
+      "family": "C1",
+      "expectedConstraint": "C1_ActionablePatternFiltersModifiable",
+      "mutatedFile": "kg-schema.xmi",
+      "description": "causal_context is declared actionableOnly without filtering on the modifiability property",
+      "blocked": true,
+      "expectedConstraintFired": true,
+      "caughtAtLoad": false,
+      "firedConstraints": [
+        "C1_ActionablePatternFiltersModifiable"
+      ],
+      "unresolvedReferences": 0,
+      "seconds": 1.71
+    }
+  ]
+}

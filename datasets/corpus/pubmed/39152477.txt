@@ -1,0 +1,15 @@
+# PubMed 39152477: Combined risk estimates of diabetes and coronary angiography-derived index of microcirculatory resistance in patients with non-ST elevation myocardial infarction.
+
+Cardiovascular diabetology (2024), doi:10.1186/s12933-024-02400-1
+
+BACKGROUND: Diabetes mellitus (DM) and coronary microvascular dysfunction (CMD) increase the risk of adverse cardiac events in patients with non-ST-segment elevation myocardial infarction (NSTEMI). This study aimed to evaluate the combined risk estimates of DM and CMD, assessed by the angiography-derived index of microcirculatory resistance (angio-IMR), in patients with NSTEMI.
+
+METHODS: A total of 2212 patients with NSTEMI who underwent successful percutaneous coronary intervention (PCI) were retrospectively enrolled from three centers. The primary outcome was a composite of cardiac death or readmission for heart failure at a 2-year follow-up.
+
+RESULTS: Post-PCI angio-IMR did not significantly differ between the DM group and the non-DM group (20.13 [17.91-22.70] vs. 20.19 [18.14-22.77], P = 0.530). DM patients exhibited a notably higher risk of cardiac death or readmission for heart failure at 2 years compared to non-DM patients (9.5% vs. 5.4%, P < 0.001). NSTEMI patients with both DM and CMD experienced the highest cumulative incidence of cardiac death or readmission for heart failure at 2 years (24.0%, P < 0.001). The combination of DM and CMD in NSTEMI patients were identified as the most powerful independent predictor for cardiac death or readmission for heart failure at 2 years (adjusted HR: 7.894, [95% CI, 4.251-14.659], p < 0.001).
+
+CONCLUSIONS: In patients with NSTEMI, the combination of DM and CMD is an independent predictor of cardiac death or readmission for heart failure. Angio-IMR could be used as an additional evaluation tool for the management of NSTEMI patients with DM.
+
+TRIAL REGISTRATION: URL: https://www.
+
+CLINICALTRIALS: gov ; Unique identifier: NCT05696379.

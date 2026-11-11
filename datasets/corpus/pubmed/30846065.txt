@@ -1,0 +1,11 @@
+# PubMed 30846065: Epidemiology and Predictors of 30-Day Readmission in Patients With Sepsis.
+
+Chest (2019), doi:10.1016/j.chest.2018.12.008
+
+BACKGROUND: Patients with sepsis are particularly vulnerable to readmissions. We describe the associated etiology and risk factors for readmission in patients with sepsis using a large administrative database inclusive of patients of all ages and insurance status.
+
+METHODS: Our study cohort was derived from the Healthcare Cost and Utilization Project's National Readmission Data from 2013 to 2014 by identifying patients admitted with sepsis. The primary outcome was 30-day readmission with etiology identified by using International Classification of Diseases, Ninth Revision, Clinical Modification, codes.
+
+RESULTS: From a total 1,030,335 index admissions; mean age, 66.8 ± 17.4 years (60% age ≥65 years), 898,257 patients (87.2%) survived to discharge. A total of 157,235 (17.5%) patients had a 30-day readmission; median time to readmission was 11 days (interquartile range, 5-19). Infectious etiology (42.16%; including sepsis, 22.86%) was the most commonly associated cause for 30-day readmission followed by gastrointestinal (9.6%), cardiovascular (8.73%), pulmonary (7.82%), and renal causes (4.99%). Significant predictors associated with increased 30-day readmission included diabetes (OR, 1.07; 95% CI, 1.06-1.08; P < .001), chronic kidney disease (1.12;1.10-1.14, P < .001), congestive heart failure (OR, 1.16; 95% CI, 1.14-1.18; P < .001), discharge to short-/long-term facility (OR, 1.13; 95% CI, 1.11-1.14; P < .001), Charlson comorbidity index ≥ 2, and length of stay ≥ 3 days during the index admission. The mean cost per readmission was $16,852; annual cost was > $3.5 billion within the United States.
+
+CONCLUSION: We describe that readmission after a sepsis hospitalization is common and costly. The majority of readmissions were associated with infectious etiologies. The striking rate of readmission demands efforts to further clarify the determinants of readmission and develop strategies in terms of quality of care and care transitions to prevent this outcome.

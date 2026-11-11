@@ -1,0 +1,216 @@
+/*
+ * T2b, application step of T2 (paper, Phase 4): RawExtraction (+ verdicts of the generated validator) -> ValidatedKG.
+ *
+ * Inputs (model aliases): Raw (all raw extraction files, one RawExtractionResult per document),
+ * Schema, Policy. Output: VKG (one ValidatedKG per document).
+ * Runtime variables set by the CLI:
+ *   verdicts  Map<EObject, Sequence<Sequence{ruleName, ruleType, severity, passed, message}>>
+ *   policyVersion  sha256 of the validation-policy model file
+ *   validatedAt    ISO timestamp
+ *   ids            helper with factId(String) : String (sha256-based, stable)
+ *
+ * Accepted = no ERROR-severity rule failed. Every accepted fact gets a ProvenanceRecord copying the
+ * document-level provenance (source, span, LLM, prompt id/hash, timestamp) and the full list of
+ * rule verdicts (R7). Every rejected item names the first failing ERROR rule (R4).
+ */
+
+pre {
+  var schema = Schema!KGSchemaDefinition.all.first();
+  var config = Policy!ValidationConfig.all.first();
+  var docOf : Map = new Map;   // RawExtractionResult -> ValidatedKG
+  for (d in Raw!RawExtractionResult.all) {
+    var v = new VKG!ValidatedKG;
+    v.name = "validated:" + d.sourceDocument;
+    v.sourceDocument = d.sourceDocument;
+    v.validationPolicy = config.name;
+    v.validationPolicyVersion = policyVersion;
+    v.validatedAt = validatedAt;
+    docOf.put(d, v);
+  }
+}
+
+operation Any verdictsOf() : Sequence {
+  var v = verdicts.get(self);
+  if (v.isUndefined()) { return Sequence{}; }
+  return v;
+}
+
+operation Any failedErrorRules() : Sequence {
+  return self.verdictsOf().select(v | not v.at(3) and v.at(2) = "ERROR");
+}
+
+operation Any isAccepted() : Boolean {
+  return self.failedErrorRules().isEmpty();
+}
+
+operation Any rawIdentifyingValue() : String {
+  // value of the concept's first required property (same rule as T1's uniqueness constraint)
+  var concept = schema.concepts.selectOne(c | c.name = self.type);
+  if (concept.isUndefined()) { return self.id; }
+  var idProp = concept.properties.selectOne(p | p.isRequired);
+  if (idProp.isUndefined()) { return self.id; }
+  var p = self.properties.selectOne(q | q.key = idProp.name);
+  if (p.isUndefined() or p.value.isUndefined()) { return self.mention; }
+  return p.value.trim();
+}
+
+// Canonicalisation (schema-declared vocabulary): the canonical entity whose name, one of whose aliases,
+// or whose pattern matches the value (case-insensitive), in declaration order; undefined otherwise.
+operation Any canonicalEntityOf(concept : Any, value : String) : Any {
+  var none;
+  if (concept.isUndefined() or value.isUndefined()) { return none; }
+  var v = value.trim().toLowerCase();
+  for (ce in concept.canonicalEntities) {
+    if (ce.name.toLowerCase() = v) { return ce; }
+    if (ce.aliases.exists(a | a.toLowerCase() = v)) { return ce; }
+    if (ce.pattern.isDefined() and ce.pattern.trim().length() > 0 and v.matches("(?i)" + ce.pattern)) { return ce; }
+  }
+  return none;
+}
+
+// canonical name if the value belongs to the vocabulary; otherwise the value itself
+operation Any canonicalValue(concept : Any, value : String) : String {
+  if (concept.isUndefined() or value.isUndefined()) { return value; }
+  var ce = self.canonicalEntityOf(concept, value);
+  if (ce.isDefined()) { return ce.name; }
+  return value.trim();
+}
+
+operation Any identifyingValue() : String {
+  var concept = schema.concepts.selectOne(c | c.name = self.type);
+  return self.canonicalValue(concept, self.rawIdentifyingValue());
+}
+
+operation Any makeProvenance(doc : Any, status : String) : VKG!ProvenanceRecord {
+  var prov = new VKG!ProvenanceRecord;
+  prov.sourceDocument = doc.sourceDocument;
+  prov.sourceUri = doc.sourceUri;
+  prov.sourceSha256 = doc.sourceSha256;
+  prov.charStart = self.sourceSpanStart;
+  prov.charEnd = self.sourceSpanEnd;
+  prov.mention = self.isKindOf(Raw!RawEntity) ? self.mention : self.evidence;
+  prov.extractionTask = doc.extractionTask;
+  prov.llmModel = doc.llmModel;
+  prov.promptId = doc.promptId;
+  prov.promptHash = doc.promptHash;
+  prov.extractionTimestamp = doc.extractionTimestamp;
+  prov.confidence = self.confidence;
+  prov.validationPolicyVersion = policyVersion;
+  prov.validationStatus = status;
+  for (v in self.verdictsOf()) {
+    var rv = new VKG!RuleVerdict;
+    rv.ruleName = v.at(0); rv.ruleType = v.at(1); rv.severity = v.at(2); rv.passed = v.at(3); rv.message = v.at(4);
+    prov.rulesEvaluated.add(rv);
+  }
+  return prov;
+}
+
+rule AcceptEntity
+  transform e : Raw!RawEntity
+  to v : VKG!ValidEntity {
+  guard : e.isAccepted()
+  var doc = e.eContainer();
+  var concept = schema.concepts.selectOne(c | c.name = e.type);
+  var idProp = concept.properties.selectOne(p | p.isRequired);
+  v.type = e.type;
+  v.id = e.id;
+  v.confidence = e.confidence;
+  var original = e.rawIdentifyingValue();
+  var canonical = e.canonicalValue(concept, original);
+  // modifiability and plain wording are declared in the vocabulary (never taken from the LLM output)
+  var ce = e.canonicalEntityOf(concept, original);
+  if (ce.isDefined()) {
+    v.modifiable = ce.isModifiable;
+    if (ce.plainLabel.isDefined() and ce.plainLabel.trim().length() > 0) { v.plainLabel = ce.plainLabel.trim(); }
+  }
+  for (p in e.properties) {
+    var vp = new VKG!ValidProperty;
+    vp.key = p.key;
+    vp.value = (idProp.isDefined() and p.key = idProp.name) ? canonical : p.value;
+    v.properties.add(vp);
+  }
+  v.provenance = e.makeProvenance(doc, "VALIDATED");
+  if (canonical <> original) { v.provenance.normalizedFrom = original; }
+  docOf.get(doc).validEntities.add(v);
+}
+
+rule RejectEntity
+  transform e : Raw!RawEntity
+  to r : VKG!RejectedItem {
+  guard : not e.isAccepted()
+  var doc = e.eContainer();
+  var failed = e.failedErrorRules().first();
+  r.kind = VKG!ItemKind#ENTITY;
+  r.originalType = e.type;
+  r.originalId = e.id;
+  r.mention = e.mention;
+  r.confidence = e.confidence;
+  r.failedRule = failed.at(0);
+  r.ruleType = failed.at(1);
+  r.rejectionReason = failed.at(4);
+  r.provenance = e.makeProvenance(doc, "REJECTED");
+  docOf.get(doc).rejected.add(r);
+}
+
+rule AcceptRelation
+  transform rel : Raw!RawRelation
+  to v : VKG!ValidRelation {
+  guard : rel.isAccepted()
+  var doc = rel.eContainer();
+  var src = doc.entities.selectOne(e | e.type = rel.sourceType and e.id = rel.sourceId);
+  var tgt = doc.entities.selectOne(e | e.type = rel.targetType and e.id = rel.targetId);
+  v.type = rel.type;
+  v.sourceType = rel.sourceType;
+  v.sourceId = rel.sourceId;
+  v.targetType = rel.targetType;
+  v.targetId = rel.targetId;
+  v.sourceKey = src.isDefined() ? src.identifyingValue() : rel.sourceId;
+  v.targetKey = tgt.isDefined() ? tgt.identifyingValue() : rel.targetId;
+  v.confidence = rel.confidence;
+  v.factId = ids.factId(doc.sourceDocument + "|" + rel.type + "|" + rel.sourceType + ":" + v.sourceKey + "|"
+                        + rel.targetType + ":" + v.targetKey + "|" + rel.sourceSpanStart + "-" + rel.sourceSpanEnd);
+  v.provenance = rel.makeProvenance(doc, "VALIDATED");
+  docOf.get(doc).validRelations.add(v);
+}
+
+rule RejectRelation
+  transform rel : Raw!RawRelation
+  to r : VKG!RejectedItem {
+  guard : not rel.isAccepted()
+  var doc = rel.eContainer();
+  var failed = rel.failedErrorRules().first();
+  r.kind = VKG!ItemKind#RELATION;
+  r.originalType = rel.type;
+  r.originalId = rel.sourceType + ":" + rel.sourceId + " -> " + rel.targetType + ":" + rel.targetId;
+  r.mention = rel.evidence;
+  r.confidence = rel.confidence;
+  r.failedRule = failed.at(0);
+  r.ruleType = failed.at(1);
+  r.rejectionReason = failed.at(4);
+  r.provenance = rel.makeProvenance(doc, "REJECTED");
+  docOf.get(doc).rejected.add(r);
+}
+
+post {
+  for (d in Raw!RawExtractionResult.all) {
+    var v = docOf.get(d);
+    var s = new VKG!ValidationStats;
+    s.totalEntities = d.entities.size();
+    s.validEntities = v.validEntities.size();
+    s.rejectedEntities = v.rejected.select(r | r.kind = VKG!ItemKind#ENTITY).size();
+    s.totalRelations = d.relations.size();
+    s.validRelations = v.validRelations.size();
+    s.rejectedRelations = v.rejected.select(r | r.kind = VKG!ItemKind#RELATION).size();
+    var total = s.totalEntities + s.totalRelations;
+    s.acceptanceRate = (total = 0) ? 1.0d : ((s.validEntities + s.validRelations).asDouble() / total.asDouble());
+    for (vr in config.rules) {
+      var rs = new VKG!RuleStat;
+      rs.ruleName = vr.name;
+      var items = (vr.scope.name = "ENTITY") ? d.entities : d.relations;
+      rs.evaluated = items.size();
+      rs.failed = items.select(i | i.verdictsOf().exists(x | x.at(0) = vr.name and not x.at(3))).size();
+      s.perRule.add(rs);
+    }
+    v.stats = s;
+  }
+}

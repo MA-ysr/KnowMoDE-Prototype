@@ -1,0 +1,1 @@
+{"text": "{\"entities\": [], \"relations\": []}", "usage": {"input": 4664, "output": 9}, "error": null, "model": "gemini-3.5-flash-lite", "provider": "gemini", "latency": 0.9857398330022988}

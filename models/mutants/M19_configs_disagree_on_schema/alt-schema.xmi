@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kgschema:KGSchemaDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:kgschema="http://www.xaikg.org/1.0/kgschema" name="AlternativeKG" nsURI="http://example.org/alt">
+  <concepts name="Thing" description="placeholder"><properties name="name" isRequired="true" isExplainable="true"/></concepts>
+</kgschema:KGSchemaDefinition>

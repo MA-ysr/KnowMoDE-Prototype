@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40907673.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40907673/" sourceSha256="8712f7ba4c7ae80bc16adb8695cb86c669f98235a616b463d0d597b6a2528f28" sourceText="# PubMed 40907673: Is Semaglutide a Safer Weight-Management Option Than Bariatric Surgery for Patients Undergoing Total Hip Arthroplasty (THA)?&#10;&#10;The Journal of arthroplasty (2026), doi:10.1016/j.arth.2025.08.068&#10;&#10;BACKGROUND: Weight management strategies before total hip arthroplasty (THA) include bariatric surgery and Glucagon-like peptide-1 receptor agonists, including semaglutide. Previous studies have reported higher THA implant failure in patients who had prior bariatric surgery. This study aimed to evaluate semaglutide as a weight management alternative for patients undergoing THA and any effects on perioperative outcomes.&#10;&#10;METHODS: A retrospective review of primary, elective THAs performed between 2012 and 2024 was conducted at a single, urban, academic center. The study identified 224 patients who had a history of bariatric surgery, 202 patients who had perioperative semaglutide use, and a control group of 2,991 patients who had a body mass index (BMI) &gt; 35. Demographic variables and clinical outcomes were compared between cohorts.&#10;&#10;RESULTS: The bariatric patients were younger (57 versus 61, P = 0.012) and more often women (65.6 versus 57.4 versus 55.4%, P &lt; 0.001) than semaglutide and control patients. Preoperative hemoglobin A1c was lowest in semaglutide patients (6.2 versus 5.7 versus 5.8%, P &lt; 0.001). The changes in BMI varied across groups one year before and after THA (P &lt; 0.001). The bariatric and semaglutide groups decreased their BMI by 1.4 and 0.8, respectively, and control patients increased by 0.4. Implant survivorship was 95.5% at 10 years. There was no correlation found between any cohort and 90-day emergency department visits, readmissions, and all-time revision. Higher American Society of Anesthesiologists class and Charlson Comorbidity Index ≥ 5 conferred increased complications.&#10;&#10;CONCLUSIONS: Semaglutide appears to be a safe alternative to bariatric surgery for weight management before THA, with similar implant survival and postoperative complication rates. Further studies are warranted to understand outcomes for THA patients who use semaglutide.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:47:26+00:00" xmi:version="2.0">
+  <chunks charEnd="2108"/>
+  <entities type="RiskFactor" id="bariatric-surgery" mention="bariatric surgery" confidence="0.95" sourceSpanStart="72" sourceSpanEnd="89">
+    <properties key="name" value="bariatric surgery"/>
+    <properties key="description" value="surgical procedure for weight management"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="tha-implant-failure" mention="THA implant failure" confidence="0.9" sourceSpanStart="424" sourceSpanEnd="443">
+    <properties key="name" value="THA implant failure"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-asa-class" mention="Higher American Society of Anesthesiologists class" confidence="0.95" sourceSpanStart="1714" sourceSpanEnd="1764">
+    <properties key="name" value="higher american society of anesthesiologists class"/>
+    <properties key="description" value="higher ASA physical status classification system score"/>
+  </entities>
+  <entities type="RiskFactor" id="charlson-comorbidity-index-ge-5" mention="Charlson Comorbidity Index ≥ 5" confidence="0.95" sourceSpanStart="1769" sourceSpanEnd="1799">
+    <properties key="name" value="charlson comorbidity index &gt;= 5"/>
+    <properties key="description" value="Charlson Comorbidity Index score of 5 or greater"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="complications" mention="complications" confidence="0.9" sourceSpanStart="1820" sourceSpanEnd="1833">
+    <properties key="name" value="complications"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="bariatric-surgery" targetType="ClinicalOutcome" targetId="tha-implant-failure" confidence="0.9" evidence="Previous studies have reported higher THA implant failure in patients who had prior bariatric surgery." sourceSpanStart="386" sourceSpanEnd="488"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="higher-asa-class" targetType="ClinicalOutcome" targetId="complications" confidence="0.95" evidence="Higher American Society of Anesthesiologists class and Charlson Comorbidity Index ≥ 5 conferred increased complications." sourceSpanStart="1714" sourceSpanEnd="1834"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="charlson-comorbidity-index-ge-5" targetType="ClinicalOutcome" targetId="complications" confidence="0.95" evidence="Higher American Society of Anesthesiologists class and Charlson Comorbidity Index ≥ 5 conferred increased complications." sourceSpanStart="1714" sourceSpanEnd="1834"/>
+</raw:RawExtractionResult>

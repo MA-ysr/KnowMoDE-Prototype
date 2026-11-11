@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37535655.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37535655/" sourceSha256="2d721420df81a19588d41158d156d848dfb9d0ee6108dcd93dbb50bc0878152f" sourceText="# PubMed 37535655: Rates and reasons for hospital readmission after acute ischemic stroke in a US population-based cohort.&#10;&#10;PloS one (2023), doi:10.1371/journal.pone.0289640&#10;&#10;Hospital readmissions following stroke are costly and lead to worsened patient outcomes. We examined readmissions rates, diagnoses at readmission, and risk factors associated with readmission following acute ischemic stroke (AIS) in a large United States (US) administrative database. Using the 2019 Nationwide Readmissions Database, we identified adults discharged with AIS (ICD-10-CM I63*) as the principal diagnosis. Survival analysis with Weibull accelerated failure time regression was used to examine variables associated with hospital readmission. In 2019, 273,811 of 285,451 AIS patients survived their initial hospitalization. Of these, 60,831 (22.2%) were readmitted within 2019. Based on Kaplan Meyer analysis, readmission rates were 9.7% within 30 days and 30.5% at 1 year following initial discharge. The most common causes of readmissions were stroke and post stroke sequalae (25.4% of 30-day readmissions, 15.0% of readmissions between 30-364 days), followed by sepsis (10.3% of 30-day readmissions, 9.4% of readmissions between 30-364 days), and acute renal failure (3.2% of 30-day readmissions, 3.0% of readmissions between 30-364 days). After adjusting for multiple patient and hospital-level characteristics, patients at increased risk of readmission were older (71.6 vs. 69.8 years, p&lt;0.001) and had longer initial lengths of stay (7.6 vs. 6.2 day, p&lt;0.001). They more often had modifiable comorbidities, including vascular risk factors (hypertension, diabetes, atrial fibrillation), depression, epilepsy, and drug abuse. Social determinants associated with increased readmission included living in an urban (vs. rural) setting, living in zip-codes with the lowest median income, and having Medicare insurance. All factors were significant at p&lt;0.001. Unplanned hospital readmissions following AIS were high, with the most common reasons for readmission being recurrent stroke and post stroke sequalae, followed by sepsis and acute renal failure. These findings suggest that efforts to reduce readmissions should focus on optimizing secondary stroke and infection prevention, particularly among older socially disadvantaged patients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:38:33+00:00" xmi:version="2.0">
+  <chunks charEnd="2329"/>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="readmission" confidence="0.9" sourceSpanStart="50" sourceSpanEnd="61">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1633" sourceSpanEnd="1645">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1647" sourceSpanEnd="1655">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="1657" sourceSpanEnd="1676">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="depression" mention="depression" confidence="0.95" sourceSpanStart="1679" sourceSpanEnd="1689">
+    <properties key="name" value="depression"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.95" sourceSpanStart="1691" sourceSpanEnd="1699">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="RiskFactor" id="drug-abuse" mention="drug abuse" confidence="0.9" sourceSpanStart="1705" sourceSpanEnd="1715">
+    <properties key="name" value="drug abuse"/>
+    <properties key="description" value="patient history of drug abuse"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypertension" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.85" evidence="They more often had modifiable comorbidities, including vascular risk factors (hypertension, diabetes, atrial fibrillation), depression, epilepsy, and drug abuse." sourceSpanStart="1554" sourceSpanEnd="1716"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.85" evidence="They more often had modifiable comorbidities, including vascular risk factors (hypertension, diabetes, atrial fibrillation), depression, epilepsy, and drug abuse." sourceSpanStart="1554" sourceSpanEnd="1716"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="atrial-fibrillation" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.85" evidence="They more often had modifiable comorbidities, including vascular risk factors (hypertension, diabetes, atrial fibrillation), depression, epilepsy, and drug abuse." sourceSpanStart="1554" sourceSpanEnd="1716"/>
+</raw:RawExtractionResult>

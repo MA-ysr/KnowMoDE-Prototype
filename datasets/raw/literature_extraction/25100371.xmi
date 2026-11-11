@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25100371.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25100371/" sourceSha256="03c7b61cb0dad2d53610b2aac834876c74f80e6c50519d8641b79883a6232b3c" sourceText="# PubMed 25100371: An individualized inpatient diabetes education and hospital transition program for poorly controlled hospitalized patients with diabetes.&#10;&#10;Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2014), doi:10.4158/EP14061.OR&#10;&#10;OBJECTIVE: To evaluate predictors of outcomes associated with an inpatient diabetes education and discharge support program for hospitalized patients with poorly controlled diabetes (glycated hemoglobin [HbA1c]&gt;9%).&#10;&#10;METHODS: Patients participated in individualized diabetes education conducted by a certified diabetes educator (CDE) that included an exploration of barriers and goal setting during hospitalization with telephone follow-up and communication with primary providers at discharge. Predictors of HbA1c reduction, successful follow-up, and readmission were analyzed.&#10;&#10;RESULTS: There were 82 subjects, and 48% were insulin naïve. Patients with type 2 diabetes (T2D, n = 58) had a significant decrease in HbA1c at follow-up (-2.8%, P&lt;.0001), while those with type 1 diabetes (T1D, n = 19) did not (+0.02%, P = .96). However, after adjustment for other factors, only increasing age, higher baseline HbA1c, earlier education, and initiation of basal insulin were significant predictors of reduction in HbA1c. Higher area level income and empowerment and earlier education were significant predictors of outpatient follow-up within 30 days. While 28% were admitted for severe hyperglycemia, only 1 patient was readmitted with severe hyperglycemia. Successful phone contact was 77% and 57% with and without the support of non-CDE assistants respectively, but all outcomes were similar.&#10;&#10;CONCLUSION: The study suggests that an individualized inpatient diabetes education and transition program is associated with a significant reduction in HbA1c that is dependent on baseline HbA1c, older age, initiation of insulin, and earlier enrollment. Additional interventions are needed to ensure better continuity of care.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:19+00:00" xmi:version="2.0">
+  <chunks charEnd="2046"/>
+  <entities type="Condition" id="poorly-controlled-diabetes" mention="poorly controlled diabetes" confidence="0.95" sourceSpanStart="482" sourceSpanEnd="508">
+    <properties key="name" value="poorly controlled diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-9" mention="glycated hemoglobin [HbA1c]&gt;9%" confidence="0.95" sourceSpanStart="510" sourceSpanEnd="540">
+    <properties key="name" value="glycated hemoglobin &gt;9%"/>
+    <properties key="abnormalThreshold" value="&gt;9%"/>
+  </entities>
+  <entities type="RiskFactor" id="increasing-age" mention="increasing age" confidence="0.9" sourceSpanStart="1203" sourceSpanEnd="1217">
+    <properties key="name" value="increasing age"/>
+    <properties key="description" value="older age of the patient"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-baseline-hba1c" mention="higher baseline HbA1c" confidence="0.9" sourceSpanStart="1219" sourceSpanEnd="1240">
+    <properties key="name" value="higher baseline hba1c"/>
+    <properties key="description" value="higher baseline glycated hemoglobin level"/>
+  </entities>
+  <entities type="RiskFactor" id="earlier-education" mention="earlier education" confidence="0.9" sourceSpanStart="1242" sourceSpanEnd="1259">
+    <properties key="name" value="earlier education"/>
+    <properties key="description" value="earlier enrollment in education program"/>
+  </entities>
+  <entities type="Drug" id="basal-insulin" mention="basal insulin" confidence="0.9" sourceSpanStart="1279" sourceSpanEnd="1292">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-area-level-income" mention="Higher area level income" confidence="0.9" sourceSpanStart="1344" sourceSpanEnd="1368">
+    <properties key="name" value="higher area level income"/>
+    <properties key="description" value="higher income level of the area"/>
+  </entities>
+  <entities type="RiskFactor" id="empowerment" mention="empowerment" confidence="0.9" sourceSpanStart="1373" sourceSpanEnd="1384">
+    <properties key="name" value="empowerment"/>
+    <properties key="description" value="patient empowerment"/>
+  </entities>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="hba1c-9" targetType="Condition" targetId="poorly-controlled-diabetes" confidence="0.95" evidence="poorly controlled diabetes (glycated hemoglobin [HbA1c]&gt;9%)" sourceSpanStart="482" sourceSpanEnd="541"/>
+</raw:RawExtractionResult>

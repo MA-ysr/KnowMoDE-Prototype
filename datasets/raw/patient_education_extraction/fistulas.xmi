@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/fistulas.txt" sourceUri="https://medlineplus.gov/fistulas.html" sourceSha256="9456612c42ff79359478fbde3c7446e82ac91d6da7e1dec3cab6da2ff0c90a5e" sourceText="# MedlinePlus health topic: Fistulas&#10;&#10;A fistula is an abnormal connection between two parts inside of the body. Fistulas may develop between different organs, such as between the esophagus and the windpipe or the bowel and the vagina. They can also develop between two blood vessels, such as between an artery and a vein or between two arteries.&#10;&#10;Some people are born with a fistula. Other common causes of fistulas include:&#10;&#10;Complications from surgery&#10;&#10;Injury&#10;&#10;Infection&#10;&#10;Diseases, such as Crohn's disease or ulcerative colitis&#10;&#10;Treatment depends on the cause of the fistula, where it is, and how bad it is. Some fistulas will close on their own. In some cases, you may need antibiotics and/or surgery.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:21:42+00:00" xmi:version="2.0">
+  <chunks charEnd="704"/>
+  <entities type="Condition" id="fistula" mention="fistula" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="35">
+    <properties key="name" value="fistula"/>
+  </entities>
+  <entities type="Condition" id="crohns-disease" mention="Crohn's disease" confidence="0.95" sourceSpanStart="491" sourceSpanEnd="506">
+    <properties key="name" value="crohn's disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="ulcerative-colitis" mention="ulcerative colitis" confidence="0.95" sourceSpanStart="510" sourceSpanEnd="528">
+    <properties key="name" value="ulcerative colitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="antibiotics" mention="antibiotics" confidence="0.95" sourceSpanStart="676" sourceSpanEnd="687">
+    <properties key="name" value="antibiotics"/>
+    <properties key="drugClass" value="antibiotic"/>
+  </entities>
+  <entities type="Recommendation" id="antibiotics-surgery-treatment" mention="you may need antibiotics and/or surgery" confidence="0.9" sourceSpanStart="663" sourceSpanEnd="702">
+    <properties key="statement" value="You may need antibiotics and/or surgery."/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="crohns-disease" targetType="Condition" targetId="fistula" confidence="0.9" evidence="Other common causes of fistulas include: Diseases, such as Crohn's disease or ulcerative colitis" sourceSpanStart="435" sourceSpanEnd="527"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="ulcerative-colitis" targetType="Condition" targetId="fistula" confidence="0.9" evidence="Other common causes of fistulas include: Diseases, such as Crohn's disease or ulcerative colitis" sourceSpanStart="435" sourceSpanEnd="527"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="antibiotics-surgery-treatment" targetType="Drug" targetId="antibiotics" confidence="0.9" evidence="In some cases, you may need antibiotics and/or surgery." sourceSpanStart="648" sourceSpanEnd="703"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="antibiotics-surgery-treatment" targetType="Condition" targetId="fistula" confidence="0.9" evidence="Some fistulas will close on their own. In some cases, you may need antibiotics and/or surgery." sourceSpanStart="609" sourceSpanEnd="703"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 30227406: Early Hospital Readmission in Older and Younger Kidney Transplant Recipients.
+
+American journal of nephrology (2018), doi:10.1159/000492338
+
+BACKGROUND: Up to 31% of kidney transplant (KT) recipients experience early hospital readmission (EHR). We hypothesized that EHR among older KT recipients is higher than younger recipients due to increased comorbidities and higher prevalence of frailty.
+
+METHODS: We identified 22,458 older (age ≥65) and 86,372 younger (18 to < 65) first-time KT recipients (December 1, 1999 - December 31, 2014) using United States Renal Data System data. We estimated the association between patient-level characteristics and EHR (30 days post-KT discharge) with modified Poisson regression among older and younger KT recipients, separately. We estimated the association between graft loss and mortality and EHR using Cox proportional hazards.
+
+RESULTS: EHR was more common in older KT recipients (30.1 vs. 27.6%; p < 0.001). Risk factors for EHR that differed by recipient age included female sex, African American race, diabetes, smoking, dialysis vintage, donor age, and length of stay. Risk of graft loss associated with EHR was greater among older KT recipients (adjusted hazard ratio [aHR] 1.64, 95% CI 1.51-1.77, p < 0.001) than younger KT recipients (aHR 1.43, 95% CI 1.38-1.48, p < 0.001; interaction p < 0.01). However, the risk of mortality associated with EHR was greater among younger recipients (aHR 1.52, 95% CI 1.47-1.57, p < 0.001) than that in older -recipients (aHR 1.40, 95% CI 1.34-1.47, p < 0.001; interaction p < 0.01).
+
+CONCLUSIONS: Older KT recipients are more likely to experience EHR and are at a higher risk of graft loss after EHR than younger recipients. Targeted interventions to prevent EHR and subsequent graft loss in this population should be identified.

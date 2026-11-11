@@ -1,0 +1,13 @@
+# PubMed 30430798: Short-term Adherence with Discharge Recommendation for Insulin Treatment among Patients with Type 2 Diabetes.
+
+The Israel Medical Association journal : IMAJ (2018)
+
+BACKGROUND: Basal-bolus (BB) insulin treatment is increasingly used in poorly controlled diabetes patients during hospitalization and is commonly recommended at discharge; however, the extent of adherence with this recommendation is unknown.
+
+OBJECTIVES: To determine short-term adherence of type 2 diabetes mellitus (T2DM) patients discharged from internal medicine wards with recommendation for BB insulin treatment.
+
+METHODS: Prescription (primary physician adherence) and purchase (patient adherence) of long-acting and short-acting insulins during the first month following discharge from internal medicine wards was determined in 153 T2DM patients. Adherence was defined as full if prescription/purchase of both basal (long-acting) and bolus (short-acting) insulin was completed, and as partial if only one kind of insulin (basal or bolus) was prescribed/purchased. Association between demographic and clinical parameters and adherence was determined.
+
+RESULTS: Full adherence with discharge instructions was higher for primary physicians than for patients )79.1% vs. 69.3%, respectively, P = 0.0182). Pre-hospitalization hemoglobin A1C was significantly associated with adherence by both patients and primary physicians (full-adherence group 9.04% ± 2.04%; no-adherence group 7.51% ± 1.35%, P = 0.002). Age was negatively associated with adherence of both primary physicians and patients; however, this association did not reach statistical significance. Patients with certain background diseases such as atrial fibrillation, coronary heart disease, and chronic heart failure had significantly worse adherence (P < 0.05). When the sole cause of admission was diabetes, full adherence (100%) of both primary physicians and patients was found.
+
+CONCLUSIONS: Short-term adherence with discharge recommendation for BB insulin treatment is associated with pre-hospitalization patient characteristics.

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/2358093" sourceUri="https://pubmed.ncbi.nlm.nih.gov/2358093/" sourceSha256="b1c4241f23ff194c1440ceb9a1ede77d1c38dbee4d4fe28bbf89325756cd99b5" sourceText="The long-term safety of danazol in women with hereditary angioedema. Although the short-term safety (less than or equal to 6 months) of danazol has been established in a variety of settings, no information exists as to its long-term safety. We therefore investigated the long-term safety of danazol by performing a retrospective chart review of 60 female patients with hereditary angioedema treated with danazol for a continuous period of 6 months or longer. The mean age of the patients was 35.2 years and the mean duration of therapy was 59.7 months. Virtually all patients experienced one or more adverse reactions. Menstrual abnormalities (79%), weight gain (60%), muscle cramps/myalgias (40%), and transaminase elevations (40%) were the most common adverse reactions. The drug was discontinued due to adverse reactions in 8 patients. No patient has died or suffered any apparent long-term sequelae that were directly attributable to the drug. We conclude that, despite a relatively high incidence of adverse reactions, danazol has proven to be remarkably safe over the long-term in this group of patients." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:35+00:00" xmi:version="2.0">
+  <chunks charEnd="1110"/>
+  <entities type="Drug" id="danazol" mention="danazol" confidence="1.0" sourceSpanStart="24" sourceSpanEnd="31">
+    <properties key="name" value="danazol"/>
+  </entities>
+  <entities type="Condition" id="hereditary-angioedema" mention="hereditary angioedema" confidence="1.0" sourceSpanStart="46" sourceSpanEnd="67">
+    <properties key="name" value="hereditary angioedema"/>
+  </entities>
+  <entities type="Condition" id="menstrual-abnormalities" mention="Menstrual abnormalities" confidence="1.0" sourceSpanStart="619" sourceSpanEnd="642">
+    <properties key="name" value="menstrual abnormalities"/>
+  </entities>
+  <entities type="Condition" id="weight-gain" mention="weight gain" confidence="1.0" sourceSpanStart="650" sourceSpanEnd="661">
+    <properties key="name" value="weight gain"/>
+  </entities>
+  <entities type="Condition" id="muscle-cramps-myalgias" mention="muscle cramps/myalgias" confidence="1.0" sourceSpanStart="669" sourceSpanEnd="691">
+    <properties key="name" value="muscle cramps/myalgias"/>
+  </entities>
+  <entities type="Condition" id="transaminase-elevations" mention="transaminase elevations" confidence="1.0" sourceSpanStart="703" sourceSpanEnd="726">
+    <properties key="name" value="transaminase elevations"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="danazol" targetType="Condition" targetId="hereditary-angioedema" confidence="0.95" evidence="We therefore investigated the long-term safety of danazol by performing a retrospective chart review of 60 female patients with hereditary angioedema treated with danazol for a continuous period of 6 months or longer." sourceSpanStart="241" sourceSpanEnd="458"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="danazol" targetType="Condition" targetId="menstrual-abnormalities" confidence="0.9" evidence="Menstrual abnormalities (79%), weight gain (60%), muscle cramps/myalgias (40%), and transaminase elevations (40%) were the most common adverse reactions." sourceSpanStart="619" sourceSpanEnd="772"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="danazol" targetType="Condition" targetId="weight-gain" confidence="0.9" evidence="Menstrual abnormalities (79%), weight gain (60%), muscle cramps/myalgias (40%), and transaminase elevations (40%) were the most common adverse reactions." sourceSpanStart="619" sourceSpanEnd="772"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="danazol" targetType="Condition" targetId="muscle-cramps-myalgias" confidence="0.9" evidence="Menstrual abnormalities (79%), weight gain (60%), muscle cramps/myalgias (40%), and transaminase elevations (40%) were the most common adverse reactions." sourceSpanStart="619" sourceSpanEnd="772"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="danazol" targetType="Condition" targetId="transaminase-elevations" confidence="0.9" evidence="Menstrual abnormalities (79%), weight gain (60%), muscle cramps/myalgias (40%), and transaminase elevations (40%) were the most common adverse reactions." sourceSpanStart="619" sourceSpanEnd="772"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 40947547: Outcomes of Culprit-Only Versus Multi-Vessel PCI With Impella Support in Acute Myocardial Infarction Complicated by Cardiogenic Shock.
+
+Catheterization and cardiovascular interventions : official journal of the Society for Cardiac Angiography & Interventions (2025), doi:10.1002/ccd.70166
+
+BACKGROUND: Current practice for managing acute myocardial infarction complicated by cardiogenic shock (AMI-CS) involves culprit-only revascularization with percutaneous coronary intervention (PCI). However, 50% of these patients present with multi-vessel disease (MVD). In the current era with the availability of more temporary mechanical circulatory support options, the decision to limit PCI to culprit only vessel remains controversial.
+
+METHODS: Data from Nationwide Readmission Database between 2016 and 2021 was analyzed for patients over 18 years diagnosed with AMI and CS who underwent PCIs and were supported with percutaneous left ventricular assist device (pLVAD) on day 0. Exclusions included patients receiving coronary artery bypass grafting, heart transplant, durable left ventricular assist devices, extracorporeal membrane oxygenation, intra-aortic balloon pump, or with chronic total occlusion. Patients were categorized into culprit vessel only PCI (CV-PCI) and multi-vessel PCI (MV-PCI) groups. The primary outcome was in-hospital mortality. Secondary outcomes included 30-day mortality, 1 year mortality, 30-day readmissions, and acute kidney injury (AKI) requiring dialysis.
+
+RESULTS: MV-PCI group were older patients (67 vs. 65 years, p < 0.001) with significantly higher prevalence of hypertension, type 2 diabetes, peripheral vascular disease, stage 5 chronic kidney disease, and atrial fibrillation. Patients undergoing CV-PCI had significantly higher rates of ventricular tachycardia/fibrillation and cardiac arrest. No significant differences were found in outcomes between the groups, except for a higher rate of access site hematoma in the MV-PCI group (1.5% vs. 0.8%, p = 0.02).
+
+CONCLUSION: In AMI-CS patients with pLVAD support, MV-PCI was not associated with increased in-hospital mortality or AKI requiring dialysis.

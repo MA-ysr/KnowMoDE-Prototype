@@ -1,0 +1,26 @@
+[*
+  T4 side-car: machine-readable description of one extraction task, for the Python pipeline.
+  The CLI adds promptId, promptHash, generatedAt and the fingerprints of the input models.
+*]
+[% var pt = t.promptTemplate; var cs = t.chunkingStrategy; var pipeline = t.eContainer(); %]
+{
+  "task": "[%=t.name%]",
+  "pipeline": "[%=pipeline.name%]",
+  "targetSchema": "[%=pipeline.targetSchema.name%]",
+  "llmModel": "[%=t.llmModel%]",
+  "temperature": [%=t.temperature%],
+  "maxTokens": [%=t.maxTokens%],
+  "sourceCollection": "[%=t.sourceCollection%]",
+  "outputFormat": "[%=pt.outputFormat.name%]",
+  "chunking": {"chunkSize": [%=cs.chunkSize%], "overlap": [%=cs.overlap%], "splitter": "[%=cs.splitter.name%]"},
+  "targetConcepts": [[%=pt.targetConcepts.collect(c | "\"" + c.name + "\"").concat(", ")%]],
+  "requiredProperties": {[%=pt.targetConcepts.collect(c | "\"" + c.name + "\": [" + c.properties.select(p | p.isRequired).collect(p | "\"" + p.name + "\"").concat(", ") + "]").concat(", ")%]},
+  "explainableProperties": {[%=pt.targetConcepts.collect(c | "\"" + c.name + "\": [" + c.properties.select(p | p.isExplainable).collect(p | "\"" + p.name + "\"").concat(", ") + "]").concat(", ")%]},
+  "targetRelations": [
+[% var first = true; for (r in pt.targetRelations) { %]
+    [% if (not first) { %],[% } %]{"id": "[%=r.id%]", "name": "[%=r.name%]", "source": "[%=r.source.name%]", "target": "[%=r.target.name%]", "minCardinality": [%=r.minCardinality%], "maxCardinality": [%=r.maxCardinality%]}
+[% first = false; } %]
+  ],
+  "fewShotExamples": [%=pt.fewShotExamples.size()%],
+  "promptFile": "[%=t.name%].txt"
+}

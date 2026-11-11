@@ -1,0 +1,11 @@
+# PubMed 33615858: Effects of a Dedicated Inpatient Diabetes Management Service on Glycemic Control in a Community Hospital Setting.
+
+Journal of diabetes science and technology (2021), doi:10.1177/1932296821993198
+
+BACKGROUND: Community hospitals account for over 84% of all hospitals and over 94% of hospital admissions in the United States. In academic settings, implementation of an Inpatient Diabetes Management Service (IDMS) model of care has been shown to reduce rates of hyper- and hypoglycemia, hospital length of stay (LOS), and associated hospital costs. However, few studies to date have evaluated the implementation of a dedicated IDMS in a community hospital setting.
+
+METHODS: This retrospective study examined the effects of changing the model of inpatient diabetes consultations from a local, private endocrine practice to a full-time endocrine hospitalist on glycemic control, LOS, and 30-day readmission rates in a 267-bed community hospital.
+
+RESULTS: Overall diabetes patient days for the hospital were similar pre- and post-intervention (20,191 vs 20,262); however, the volume of patients seen by IDMS increased significantly after changing models. Rates of hyperglycemia decreased both among patients seen by IDMS (53.8% to 42.5%, P < .0001) and those not consulted on by IDMS (33.2% to 29.9%; P < .0001). When examined over time, rates of hypoglycemia steadily decreased in the 24 months after dedicated IDMS initiation (P = .02); no such time effect was seen prior to IDMS (P = .34). LOS and 30DRR were not significantly different between IDMS models.
+
+CONCLUSIONS: Implementation of an endocrine hospitalist-based IDMS at a community hospital was associated with significantly decreased hyperglycemia, while avoiding concurrent increases in hypoglycemia. Further studies are needed to investigate whether these effects are associated with improvements in clinical outcomes, patient or staff satisfaction scores, or total cost of care.

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/11135381" sourceUri="https://pubmed.ncbi.nlm.nih.gov/11135381/" sourceSha256="3d15c6e7b492100b1b32337271d45f4ae60ce1058247bd645f6a05f68beb9b05" sourceText="Effect of methoxamine on maximum urethral pressure in women with genuine stress incontinence: a placebo-controlled, double-blind crossover study. The aim of the study was to evaluate the potential role for a selective alpha1-adrenoceptor agonist in the treatment of urinary stress incontinence. A randomised, double-blind, placebo-controlled, crossover study design was employed. Half log incremental doses of intravenous methoxamine or placebo (saline) were administered to a group of women with genuine stress incontinence while measuring maximum urethral pressure (MUP), blood pressure, heart rate, and symptomatic side effects. Methoxamine evoked non-significant increases in MUP and diastolic blood pressure but caused a significant rise in systolic blood pressure and significant fall in heart rate at maximum dosage. Systemic side effects including piloerection, headache, and cold extremities were experienced in all subjects. The results indicate that the clinical usefulness of direct, peripherally acting sub-type-selective alpha1-adrenoceptor agonists in the medical treatment of stress incontinence may be limited by associated piloerection and cardiovascular side effects." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:34+00:00" xmi:version="2.0">
+  <chunks charEnd="1186"/>
+  <entities type="Drug" id="methoxamine" mention="methoxamine" confidence="0.95" sourceSpanStart="10" sourceSpanEnd="21">
+    <properties key="name" value="methoxamine"/>
+  </entities>
+  <entities type="Condition" id="genuine-stress-incontinence" mention="genuine stress incontinence" confidence="0.95" sourceSpanStart="65" sourceSpanEnd="92">
+    <properties key="name" value="genuine stress incontinence"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="piloerection" mention="piloerection" confidence="0.95" sourceSpanStart="856" sourceSpanEnd="868">
+    <properties key="name" value="piloerection"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.95" sourceSpanStart="870" sourceSpanEnd="878">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="cold-extremities" mention="cold extremities" confidence="0.95" sourceSpanStart="884" sourceSpanEnd="900">
+    <properties key="name" value="cold extremities"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methoxamine" targetType="Condition" targetId="piloerection" confidence="0.9" evidence="Systemic side effects including piloerection, headache, and cold extremities were experienced in all subjects." sourceSpanStart="824" sourceSpanEnd="934"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methoxamine" targetType="Condition" targetId="headache" confidence="0.9" evidence="Systemic side effects including piloerection, headache, and cold extremities were experienced in all subjects." sourceSpanStart="824" sourceSpanEnd="934"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methoxamine" targetType="Condition" targetId="cold-extremities" confidence="0.9" evidence="Systemic side effects including piloerection, headache, and cold extremities were experienced in all subjects." sourceSpanStart="824" sourceSpanEnd="934"/>
+</raw:RawExtractionResult>

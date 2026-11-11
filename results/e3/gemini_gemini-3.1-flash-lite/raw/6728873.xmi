@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/6728873" sourceUri="https://pubmed.ncbi.nlm.nih.gov/6728873/" sourceSha256="3efd6da6a46747dd95f857a9522ff8c62430eae4626b807f950047624a94e4e5" sourceText="Interstrain variation in acute toxic response to caffeine among inbred mice. Acute toxic dosage-dependent behavioral effects of caffeine were compared in adult males from seven inbred mouse strains (A/J, BALB/cJ, CBA/J, C3H/HeJ, C57BL/6J, DBA/2J, SWR/J). C57BL/6J, chosen as a &quot;prototypic&quot; mouse strain, was used to determine behavioral responses to a broad range (5-500 mg/kg) of caffeine doses. Five phenotypic characteristics--locomotor activity, righting ability, clonic seizure induction, stress-induced lethality, death without external stress--were scored at various caffeine doses in drug-naive animals under empirically optimized, rigidly constant experimental conditions. Mice (n = 12 for each point) received single IP injections of a fixed volume/g body weight of physiological saline carrier with or without caffeine in doses ranging from 125-500 mg/kg. Loss of righting ability was scored at 1, 3, 5 min post dosing and at 5 min intervals thereafter for 20 min. In the same animals the occurrence of clonic seizures was scored as to time of onset and severity for 20 min after drug administration. When these proceeded to tonic seizures, death occurred in less than 20 min. Animals surviving for 20 min were immediately stressed by a swim test in 25 degrees C water, and death-producing tonic seizures were scored for 2 min. In other animals locomotor activity was measured 15 or 60 min after caffeine administration. By any single behavioral criterion or a combination of these criteria, marked differences in response to toxic caffeine doses were observed between strains. These results indicate that behavioral toxicity testing of alkylxanthines in a single mouse strain may be misleading and suggest that toxic responses of the central nervous system to this class of compounds are genetically influenced in mammals." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:11+00:00" xmi:version="2.0">
+  <chunks charEnd="1834"/>
+  <entities type="Drug" id="caffeine" mention="caffeine" confidence="1.0" sourceSpanStart="49" sourceSpanEnd="57">
+    <properties key="name" value="caffeine"/>
+  </entities>
+  <entities type="Condition" id="clonic-seizure" mention="clonic seizure" confidence="0.95" sourceSpanStart="468" sourceSpanEnd="482">
+    <properties key="name" value="clonic seizure"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="tonic-seizures" mention="tonic seizures" confidence="0.95" sourceSpanStart="1136" sourceSpanEnd="1150">
+    <properties key="name" value="tonic seizures"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="death" mention="death" confidence="0.9" sourceSpanStart="1152" sourceSpanEnd="1157">
+    <properties key="name" value="death"/>
+    <properties key="category" value="systemic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="caffeine" targetType="Condition" targetId="clonic-seizure" confidence="0.9" evidence="Five phenotypic characteristics--locomotor activity, righting ability, clonic seizure induction, stress-induced lethality, death without external stress--were scored at various caffeine doses in drug-naive animals under empirically optimized, rigidly constant experimental conditions." sourceSpanStart="397" sourceSpanEnd="681"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="caffeine" targetType="Condition" targetId="tonic-seizures" confidence="0.9" evidence="When these proceeded to tonic seizures, death occurred in less than 20 min." sourceSpanStart="1112" sourceSpanEnd="1187"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="caffeine" targetType="Condition" targetId="death" confidence="0.9" evidence="When these proceeded to tonic seizures, death occurred in less than 20 min." sourceSpanStart="1112" sourceSpanEnd="1187"/>
+</raw:RawExtractionResult>

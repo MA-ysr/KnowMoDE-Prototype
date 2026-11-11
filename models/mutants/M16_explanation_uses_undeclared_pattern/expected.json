@@ -1,0 +1,7 @@
+{
+  "id": "M16_explanation_uses_undeclared_pattern",
+  "family": "C5",
+  "expectedConstraint": "C5_PatternsDeclaredInTargetSchema",
+  "mutatedFile": "explainability.xmi",
+  "description": "GuidelineCompliance references a query pattern that is not in the schema (dangling)"
+}

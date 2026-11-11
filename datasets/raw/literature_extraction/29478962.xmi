@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29478962.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29478962/" sourceSha256="47ae293f1d1b7d223ea73a5cbfe2a8c69b12a280cebbe8a3fcea861fdc2b660c" sourceText="# PubMed 29478962: Risk of Readmission After Uncomplicated Hospitalization After Radical Cystectomy.&#10;&#10;Clinical genitourinary cancer (2018), doi:10.1016/j.clgc.2018.01.004&#10;&#10;BACKGROUND: Enhanced recovery pathways after radical cystectomy attempt to decrease length of hospitalization, but might increase risk of readmission after discharge. We evaluated the relationship between length of stay and readmission after uncomplicated hospitalization for bladder cancer patients treated with radical cystectomy.&#10;&#10;PATIENTS AND METHODS: Using the American College of Surgeons National Surgical Quality Improvement Program database, we identified bladder cancer patients who were treated with radical cystectomy from 2011 to 2015. We limited this cohort to those who did not have complications captured while in-hospital, and assessed the proportion readmitted within 30 days of surgery on the basis of length of stay (ie, &lt; 7, 7-9, ≥ 10 days). We fit multivariable logistic regression models to estimate odds of readmission after adjusting for potential confounding factors.&#10;&#10;RESULTS: Among 4624 patients treated with radical cystectomy, 1003 (21.7%) were readmitted within 30 days of surgery. Of 1,003 readmitted patients, 503 (50%) experienced a major complication after discharge. Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P &lt; .01). Patients with hospitalization &lt; 7 days were not at increased risk of readmission compared with those with prolonged stays (354/1769, 20.0% &lt; 7 days vs. 201/968, 20.8% ≥ 10 days, adjusted odds ratio, 1.04; 95% confidence interval, 0.90-1.21).&#10;&#10;CONCLUSION: In the absence of in-hospital complications after radical cystectomy, shorter hospitalizations were not associated with an increased risk of readmission. These findings emphasize the safety and potential cost savings of enhanced recovery pathways after these complex operations.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:32:52+00:00" xmi:version="2.0">
+  <chunks charEnd="1964"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.98" sourceSpanStart="1368" sourceSpanEnd="1376">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="diversion-with-neobladder" mention="diversion with neobladder" confidence="0.95" sourceSpanStart="1341" sourceSpanEnd="1366">
+    <properties key="name" value="diversion with neobladder"/>
+    <properties key="description" value="diversion with neobladder"/>
+  </entities>
+  <entities type="RiskFactor" id="prolonged-surgical-time" mention="prolonged surgical time" confidence="0.95" sourceSpanStart="1378" sourceSpanEnd="1401">
+    <properties key="name" value="prolonged surgical time"/>
+    <properties key="description" value="prolonged surgical time"/>
+  </entities>
+  <entities type="RiskFactor" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1407" sourceSpanEnd="1414">
+    <properties key="name" value="obesity"/>
+    <properties key="description" value="obesity"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-within-30-days" mention="readmitted within 30 days" confidence="0.96" sourceSpanStart="840" sourceSpanEnd="865">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="diversion-with-neobladder" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P &lt; .01)." sourceSpanStart="1275" sourceSpanEnd="1429"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P &lt; .01)." sourceSpanStart="1275" sourceSpanEnd="1429"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="prolonged-surgical-time" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P &lt; .01)." sourceSpanStart="1275" sourceSpanEnd="1429"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="obesity" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P &lt; .01)." sourceSpanStart="1275" sourceSpanEnd="1429"/>
+</raw:RawExtractionResult>

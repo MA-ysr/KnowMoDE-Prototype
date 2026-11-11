@@ -1,0 +1,28 @@
+[% var j = ids; %]
+{
+  "name": [%=j.json(c.name)%],
+  "description": [%=j.json(c.description)%],
+  "targetSchema": [%=j.json(c.targetSchema.name)%],
+  "tracePattern": [% if (c.traceQueryPattern.isDefined()) { %][%=j.json(c.traceQueryPattern.name)%][% } else { %]null[% } %],
+  "retrievalLimit": [%=c.retrievalLimit%],
+  "audiences": [
+[% var first = true; for (a in c.audiences) { %]
+    [% if (not first) { %],[% } %]{"role": [%=j.json(a.role)%], "technicalLevel": [%=j.json(a.technicalLevel.name)%], "informationNeeds": [%=j.json(a.informationNeeds)%],
+     "requiresFullProvenance": [%=a.requiresFullProvenance%],
+     "budget": {"maxFacts": [%=a.presentationBudget.maxFacts%], "maxWords": [%=a.presentationBudget.maxWords%], "allowCodes": [%=a.presentationBudget.allowCodes%], "plainLanguage": [%=a.presentationBudget.plainLanguage%], "allocation": [%=j.json(a.presentationBudget.allocation.name)%]}}
+[% first = false; } %]
+  ],
+  "explanationTypes": [
+[% first = true; for (t in c.explanationTypes) { %]
+    [% if (not first) { %],[% } %]{"name": [%=j.json(t.name)%], "slug": [%=j.json(j.snake(t.name))%], "category": [%=j.json(t.category.name)%], "description": [%=j.json(t.description)%],
+     "queryPatterns": [[%=t.queryPatterns.collect(q | j.json(q.name)).concat(", ")%]],
+     "audiences": [[%=t.audiences.collect(a | j.json(a.role)).concat(", ")%]],
+     "template": [%=j.json(t.template.name)%]}
+[% first = false; } %]
+  ],
+  "templates": [
+[% first = true; for (t in c.templates) { %]
+    [% if (not first) { %],[% } %]{"name": [%=j.json(t.name)%], "format": [%=j.json(t.format.name)%], "file": [%=j.json("templates/" + t.name + ".j2")%]}
+[% first = false; } %]
+  ]
+}

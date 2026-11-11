@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/24636762.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24636762/" sourceSha256="72fcb915e0eda7f4bf0cd2c86ee55af0d21e0c6ab26e86df60cef6139f6e0739" sourceText="# PubMed 24636762: Frequency and causes of hospitalization in older compared to younger adults with type 2 diabetes in the United States: a retrospective, claims-based analysis.&#10;&#10;Journal of diabetes and its complications (2014), doi:10.1016/j.jdiacomp.2014.02.009&#10;&#10;AIMS: This study assessed the frequency and most common causes of hospitalization in older compared to younger adults with type 2 diabetes mellitus (T2DM) in the US.&#10;&#10;METHODS: A retrospective study utilizing data from a nationally representative insurance claim database included patients who were diagnosed or treated for diabetes during or prior to the defined study period and who experienced hospitalization with or without re-hospitalization.&#10;&#10;RESULTS: Among 887,182 patients with T2DM, 31% were ≥ 65 years old and nearly 1 in 4 (23.5%) were hospitalized during the observation period. Only 2.3% of first hospitalizations were determined to be diabetes-related, and these events were most commonly associated with a history of pre-study hospitalization and increasing age. Hypoglycemia was a common cause for T2DM-related hospitalizations (22.9%), and older patients demonstrated a higher proportion of hypoglycemia-related hospitalizations (age ≥ 65 years: 38.3% vs. age &lt; 65 years: 11.4%). Survival analysis predicting readmission within 6 months after first hospitalization showed that primary factors associated with first readmissions were history of prior hospitalization, malignancy, insulin use, and presence of pre-existing liver or renal disease.&#10;&#10;CONCLUSIONS: Hospitalization is common in patients with diagnosed diabetes, and nearly 1 in 4 diabetes-related hospital admissions were due to hypoglycemia. While the overall rate of hypoglycemia-associated admission was low, the age-specific rate was nearly 2.5-fold higher in older adults (≥ 65 years), affirming the need to carefully assess the potential benefit/risk of diabetes medications in those ≥ 65 years of age.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:26:58+00:00" xmi:version="2.0">
+  <chunks charEnd="1951"/>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="1043" sourceSpanEnd="1055">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-6-months" mention="readmission within 6 months" confidence="0.95" sourceSpanStart="1291" sourceSpanEnd="1318">
+    <properties key="name" value="hospital readmission within 6 months"/>
+    <properties key="timeWindow" value="6 months"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-prior-hospitalization" mention="history of prior hospitalization" confidence="0.95" sourceSpanStart="1415" sourceSpanEnd="1447">
+    <properties key="name" value="prior inpatient admissions"/>
+    <properties key="description" value="history of prior hospitalization"/>
+  </entities>
+  <entities type="Condition" id="malignancy" mention="malignancy" confidence="0.95" sourceSpanStart="1449" sourceSpanEnd="1459">
+    <properties key="name" value="malignancy"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1461" sourceSpanEnd="1468">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="pre-existing-liver-or-renal-disease" mention="pre-existing liver or renal disease" confidence="0.95" sourceSpanStart="1490" sourceSpanEnd="1525">
+    <properties key="name" value="pre-existing liver or renal disease"/>
+    <properties key="category" value="hepatic/renal"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-prior-hospitalization" targetType="ClinicalOutcome" targetId="hospital-readmission-within-6-months" confidence="0.9" evidence="Survival analysis predicting readmission within 6 months after first hospitalization showed that primary factors associated with first readmissions were history of prior hospitalization, malignancy, insulin use, and presence of pre-existing liver or renal disease." sourceSpanStart="1262" sourceSpanEnd="1526"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="malignancy" targetType="ClinicalOutcome" targetId="hospital-readmission-within-6-months" confidence="0.9" evidence="Survival analysis predicting readmission within 6 months after first hospitalization showed that primary factors associated with first readmissions were history of prior hospitalization, malignancy, insulin use, and presence of pre-existing liver or renal disease." sourceSpanStart="1262" sourceSpanEnd="1526"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="insulin" targetType="ClinicalOutcome" targetId="hospital-readmission-within-6-months" confidence="0.9" evidence="Survival analysis predicting readmission within 6 months after first hospitalization showed that primary factors associated with first readmissions were history of prior hospitalization, malignancy, insulin use, and presence of pre-existing liver or renal disease." sourceSpanStart="1262" sourceSpanEnd="1526"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="pre-existing-liver-or-renal-disease" targetType="ClinicalOutcome" targetId="hospital-readmission-within-6-months" confidence="0.9" evidence="Survival analysis predicting readmission within 6 months after first hospitalization showed that primary factors associated with first readmissions were history of prior hospitalization, malignancy, insulin use, and presence of pre-existing liver or renal disease." sourceSpanStart="1262" sourceSpanEnd="1526"/>
+</raw:RawExtractionResult>

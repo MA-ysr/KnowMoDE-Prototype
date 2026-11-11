@@ -1,0 +1,15 @@
+# PubMed 28746706: Association Between Preoperative Hemoglobin A1c Levels, Postoperative Hyperglycemia, and Readmissions Following Gastrointestinal Surgery.
+
+JAMA surgery (2017), doi:10.1001/jamasurg.2017.2350
+
+IMPORTANCE: Preoperative hyperglycemia is associated with adverse postoperative outcomes among patients who undergo surgery. Whether preoperative hemoglobin A1c (HbA1c) or postoperative glucose levels are more useful in predicting adverse events following surgery is uncertain in the current literature.
+
+OBJECTIVE: To examine the use of preoperative HbA1c and early postoperative glucose levels for predicting postoperative complications and readmission.
+
+DESIGN, SETTING, AND PARTICIPANTS: In this observational cohort study, inpatient gastrointestinal surgical procedures performed at 117 Veterans Affairs hospitals from 2007 to 2014 were identified, and cases of known infection within 3 days before surgery were excluded. Preoperative HbA1c levels were examined as a continuous and categorical variable (<5.7%, 5.7%-6.5%, and >6.5%). A logistic regression modeled postoperative complications and readmissions with the closest preoperative HbA1c within 90 days and the highest postoperative glucose levels within 48 hours of undergoing surgery.
+
+MAIN OUTCOMES AND MEASURES: Postoperative complications and 30-day unplanned readmission following discharge.
+
+RESULTS: Of 21 541 participants, 1193 (5.5%) were women, and the mean (SD) age was 63.7 (10.6) years. The cohort included 23 094 operations with measurements of preoperative HbA1c levels and postoperative glucose levels. The complication and 30-day readmission rates were 27.2% and 14.7%, respectively. In logistic regression models adjusting for HbA1c, postoperative glucose levels, postoperative insulin use, diabetes, body mass index (calculated as weight in kilograms divided by height in meters squared), and other patient and procedural factors, peak postoperative glucose levels of more than 250 mg/dL were associated with increased 30-day readmissions (odds ratio, 1.18; 95% CI, 0.99-1.41; P = .07). By contrast, a preoperative HbA1c of more than 6.5% was associated with decreased 30-day readmissions (odds ratio, 0.85; 95% CI, 0.74-0.96; P = .01). As preoperative HbA1c increased, the frequency of 48-hour postoperative glucose checks increased (4.92, 6.89, and 9.71 for an HbA1c <5.7%, 5.7%-6.4%, and >6.5%, respectively; P < .001). Patients with a preoperative HbA1c of more than 6.5% had lower thresholds for postoperative insulin use.
+
+CONCLUSIONS AND RELEVANCE: Early postoperative hyperglycemia was associated with increased readmission, but elevated preoperative HbA1c was not. A higher preoperative HbA1c was associated with increased postoperative glucose level checks and insulin use, suggesting that heightened postoperative vigilance and a lower threshold to treat hyperglycemia may explain this finding.

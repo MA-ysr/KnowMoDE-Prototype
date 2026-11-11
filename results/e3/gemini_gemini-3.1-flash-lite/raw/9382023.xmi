@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/9382023" sourceUri="https://pubmed.ncbi.nlm.nih.gov/9382023/" sourceSha256="68d5afbf86b9dd84d548e573f2b39d9f820e40e05e332a751778522a7ae9c2f0" sourceText="Hypertensive response during dobutamine stress echocardiography. Among 3,129 dobutamine stress echocardiographic studies, a hypertensive response, defined as systolic blood pressure (BP) &gt; or = 220 mm Hg and/or diastolic BP &gt; or = 110 mm Hg, occurred in 30 patients (1%). Patients with this response more often had a history of hypertension and had higher resting systolic and diastolic BP before dobutamine infusion." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:50+00:00" xmi:version="2.0">
+  <chunks charEnd="417"/>
+  <entities type="Drug" id="dobutamine" mention="dobutamine" confidence="0.95" sourceSpanStart="29" sourceSpanEnd="39">
+    <properties key="name" value="dobutamine"/>
+  </entities>
+  <entities type="Condition" id="hypertensive-response" mention="hypertensive response" confidence="0.9" sourceSpanStart="0" sourceSpanEnd="21">
+    <properties key="name" value="hypertensive response"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="328" sourceSpanEnd="340">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="dobutamine" targetType="Condition" targetId="hypertensive-response" confidence="0.9" evidence="Hypertensive response during dobutamine stress echocardiography." sourceSpanStart="0" sourceSpanEnd="64"/>
+</raw:RawExtractionResult>

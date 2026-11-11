@@ -1,0 +1,7 @@
+{
+  "id": "M02_negative_cardinality",
+  "family": "C1",
+  "expectedConstraint": "C1_CardinalitiesValid",
+  "mutatedFile": "kg-schema.xmi",
+  "description": "APPLIES_TO gets minCardinality -3"
+}

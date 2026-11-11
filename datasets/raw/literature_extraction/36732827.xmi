@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36732827.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36732827/" sourceSha256="7ebcb3816f0cf3968d796755219aa815e97fcc350f36dd3d9b820d7f26ea7c22" sourceText="# PubMed 36732827: Association of metformin exposure with low risks of frailty and adverse outcomes in patients with diabetes.&#10;&#10;European journal of medical research (2023), doi:10.1186/s40001-023-01017-6&#10;&#10;BACKGROUND: Diabetes is an independent risk factor of frailty, which increases adverse outcomes in patients with diabetes. Metformin is a common antidiabetic drug in clinical practice. Insulin resistance and chronic inflammation are the two common mechanisms of diabetes and frailty, as well as the main targets of metformin. Research suggested that metformin has anti-aging potential. However, few studies focus on the relationship between metformin and frailty. Thus, we aimed to explore whether metformin was associated with a low risk of frailty and other adverse outcomes in diabetic patients.&#10;&#10;METHODS: A total of 422 patients (≥ 40 years old) with type 2 diabetes were recruited. Frailty was defined by the Fried phenotype. General information and metformin exposure data were collected, and comprehensive geriatric assessment and laboratory tests were performed. Follow-up was conducted after 4.5 years. The primary outcome was the combined endpoint of cardiovascular events, cerebrovascular events, readmission, and death. Binary logistic regression analysis was used to analyze the association of metformin with frailty. Survival analysis was performed using Cox proportional hazards models.&#10;&#10;RESULTS: The total prevalence of frailty was 19.4% among the participants with diabetes. 13.1% of patients in the metformin group and 28.2% in the non-metformin group had frailty. Metformin was inversely associated with frailty after adjusting for age, sex, duration, blood glucose levels, target organ damage, comorbidities, and polypharmacy. Further longitudinal analysis showed that metformin was also independently associated with a low risk of combined primary outcomes after adjusting for multiple covariables, while frailty was related to an increased risk of the combined primary outcomes. In the non-frail group, metformin was associated with a decreased risk of combined primary outcomes after adjustment for age and sex. However, the protective effect of metformin on adverse outcomes was not found in frail participants with diabetes.&#10;&#10;CONCLUSIONS: Metformin use is associated with a reduced risk of frailty. In addition, frailty may attenuate the protective effects of metformin on adverse outcomes in diabetic patients. The early identification and prevention of frailty progression may help enhance the benefits of metformin in patients with diabetes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:50:17+00:00" xmi:version="2.0">
+  <chunks charEnd="2575"/>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.95" sourceSpanStart="117" sourceSpanEnd="125">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="frailty" mention="frailty" confidence="0.95" sourceSpanStart="259" sourceSpanEnd="266">
+    <properties key="name" value="frailty"/>
+    <properties key="category" value="geriatric"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.98" sourceSpanStart="328" sourceSpanEnd="337">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="adverse-outcomes" mention="adverse outcomes" confidence="0.9" sourceSpanStart="765" sourceSpanEnd="781">
+    <properties key="name" value="adverse outcomes"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="combined-primary-outcomes" mention="combined primary outcomes" confidence="0.9" sourceSpanStart="1857" sourceSpanEnd="1882">
+    <properties key="name" value="combined primary outcomes"/>
+  </entities>
+  <entities type="Drug" id="metformin-drug" mention="Metformin" confidence="0.98" sourceSpanStart="2030" sourceSpanEnd="2039">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="combined-endpoint-of-cardiovascular-events-cerebrovascular-events-readmission-and-death" mention="combined endpoint of cardiovascular events, cerebrovascular events, readmission, and death" confidence="0.95" sourceSpanStart="1145" sourceSpanEnd="1235">
+    <properties key="name" value="combined endpoint of cardiovascular events, cerebrovascular events, readmission, and death"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="adverse-outcomes" confidence="0.9" evidence="Diabetes is an independent risk factor of frailty, which increases adverse outcomes in patients with diabetes." sourceSpanStart="217" sourceSpanEnd="327"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="frailty" confidence="0.95" evidence="Metformin use is associated with a reduced risk of frailty." sourceSpanStart="2269" sourceSpanEnd="2328"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="metformin-drug" targetType="ClinicalOutcome" targetId="combined-primary-outcomes" confidence="0.92" evidence="Further longitudinal analysis showed that metformin was also independently associated with a low risk of combined primary outcomes after adjusting for multiple covariables, while frailty was related to an increased risk of the combined primary outcomes." sourceSpanStart="1752" sourceSpanEnd="2005"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="frailty" targetType="ClinicalOutcome" targetId="combined-primary-outcomes" confidence="0.92" evidence="Further longitudinal analysis showed that metformin was also independently associated with a low risk of combined primary outcomes after adjusting for multiple covariables, while frailty was related to an increased risk of the combined primary outcomes." sourceSpanStart="1752" sourceSpanEnd="2005"/>
+</raw:RawExtractionResult>

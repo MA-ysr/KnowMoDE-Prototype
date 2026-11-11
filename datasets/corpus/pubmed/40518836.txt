@@ -1,0 +1,11 @@
+# PubMed 40518836: Factors leading to escalations in hospital-at-home: a scoping review.
+
+Hospital practice (1995) (2025), doi:10.1080/21548331.2025.2520741
+
+OBJECTIVE: Hospital-at-Home (H@H) models are safe and cost-effective alternatives for patients with acute or subacute conditions, offering care in the comfort and familiarity of their homes. Escalations, where patients are transferred back to traditional inpatient settings, are key performance metrics but represent significant challenges for H@H programs by interrupting the continuity and advantages of home-based treatment. This scoping review analyzes the factors leading to escalations across H@H programs.
+
+METHODS: We searched 5 databases: Embase, Google Scholar, PubMed, Scopus, and Web of Science. Our search focused on papers reporting the reasons why patients needed further escalations to Brick and Mortar (B&M) and the sociodemographic characteristics of these patients from 2005 to date. Besides factors leading to escalations, we charted the H@H program's objective, diseases treated, type of visit and personnel visiting, and predictors of escalation.
+
+RESULTS: Our search yielded 2932 papers, with 23 meeting our inclusion criteria. Common reasons for escalation included falling, lack of treatment response, exacerbation of the primary disease, cardiac symptoms, and medication adverse effects. Among our studies, higher escalation rates were observed in patients with infectious diseases (16%) and heart failure (9%). Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease.
+
+CONCLUSION: Escalations in H@H settings are influenced by primary underlying conditions, patient comorbidities, and care complexity. The novelty and ambiguity of the term 'escalation' and the diverse patient populations and H@H protocols limit statistical analysis. Standardizing definitions and consistent documentation of the number of patients needing care escalations and the reasons behind them is pivotal for proper analysis, nuanced understanding, and plausible prevention.

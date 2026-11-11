@@ -1,0 +1,11 @@
+# PubMed 25022929: Outcomes of heart failure with preserved ejection fraction in a Southeast Asian cohort.
+
+Journal of cardiovascular medicine (Hagerstown, Md.) (2015), doi:10.2459/JCM.0000000000000100
+
+BACKGROUND: Heart failure with preserved ejection fraction (HF-PEF) has been shown to be of better or equivalent prognosis than heart failure with reduced ejection fraction (HF-REF). We aimed to characterize and study the outcome of HF-PEF in a multiethnic South East Asian context.
+
+METHODS: This is a single-centre retrospective analysis of 312 patients admitted with decompensated heart failure over 1 year from January to December 2009. We evaluated clinical characteristics of patients according to left ventricular ejection fraction at least 50 or less than 50%. Outcomes as defined by 1-year mortality and 90-day re-hospitalization rates for heart failure were compared between the two groups in an in-patient setting.
+
+RESULTS: The median age was 68 years and median length of hospitalization was 4 days. Around 21.8% had HF-PEF. Patients with preserved ejection fraction were more often older, female, hypertensive, with atrial fibrillation, had no coronary artery disease and had never smoked before. They were less often prescribed antiplatelets, angiotensin-converting enzyme inhibitor/angiotensin-II receptor blocker, aldosterone-receptor antagonists, digoxin and loop diuretics. After 1 year, mortality was 5.9% in patients with HF-PEF and 11.3% in those with HF-REF, but the difference was nonsignificant (P = 0.195). There was also no difference in 90-day rehospitalization rates between the groups (16.2 vs. 17.6%, respectively, P = 0.780). Poor prognostic factors for the cohort of heart failure patients included increased age, diabetes and renal impairment, but not left ventricular ejection fraction.
+
+CONCLUSION: HF-PEF is associated with distinct risk factors from HF-REF, but has a similar morbidity and mortality to HF-REF.

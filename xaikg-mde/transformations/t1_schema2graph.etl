@@ -1,0 +1,142 @@
+/*
+ * T1 (paper, Phase 3, M2M): KG Schema model -> property-graph schema model.
+ *
+ *   KGConcept      -> NodeLabel (+ UNIQUE constraint on its first required property)
+ *   KGProperty     -> NodeProperty (explainable properties are indexed)
+ *   KGRelation     -> RelationshipType (several KGRelations sharing a name -> one type per endpoint pair)
+ *   KGQueryPattern -> StoredQuery
+ *
+ * Two framework-level labels (SourceDocument, ExtractionRun) are added for provenance (D7): every
+ * loaded fact links to the document and the extraction run it came from.
+ *
+ * Purely structural: the output is fully determined by the KG schema (R1).
+ */
+
+pre {
+  var schema = Schema!KGSchemaDefinition.all.first();
+  var graph = new Graph!GraphSchema;
+  graph.databaseName = schema.name;
+  graph.sourceSchema = schema.name;
+}
+
+rule ConceptToLabel
+  transform c : Schema!KGConcept
+  to l : Graph!NodeLabel {
+
+  l.name = c.name;
+  l.description = c.description;
+  l.sourceConcept = c.name;
+  for (p in c.properties) {
+    l.properties.add(p.equivalent());
+  }
+  graph.nodeLabels.add(l);
+
+  // identifying property: first required property (C1_ConceptHasIdentifyingProperty guarantees one)
+  var idProp = c.properties.selectOne(p | p.isRequired);
+  if (idProp.isDefined()) {
+    var k = new Graph!SchemaConstraint;
+    k.name = c.name.toLowerCase() + "_" + idProp.name.toLowerCase() + "_unique";
+    k.constraintType = "UNIQUE";
+    k.label = c.name;
+    k.property = idProp.name;
+    graph.constraints.add(k);
+  }
+  // framework-level merge key: lower-cased identifying value, set by the loader (T5)
+  var keyProp = new Graph!NodeProperty;
+  keyProp.name = "_key"; keyProp.dataType = "STRING"; keyProp.isRequired = true; keyProp.isIndexed = true; keyProp.isExplainable = false;
+  l.properties.add(keyProp);
+  var kk = new Graph!SchemaConstraint;
+  kk.name = c.name.toLowerCase() + "_key_unique";
+  kk.constraintType = "UNIQUE";
+  kk.label = c.name;
+  kk.property = "_key";
+  graph.constraints.add(kk);
+
+  // explainable properties are looked up by the explanation service: index them
+  for (p in c.properties.select(p | p.isExplainable and (not idProp.isDefined() or p <> idProp))) {
+    var idx = new Graph!SchemaIndex;
+    idx.name = c.name.toLowerCase() + "_" + p.name.toLowerCase() + "_idx";
+    idx.label = c.name;
+    idx.property = p.name;
+    idx.indexType = (p.dataType.name = "STRING") ? "TEXT" : "RANGE";
+    graph.indexes.add(idx);
+  }
+}
+
+rule PropertyToNodeProperty
+  transform p : Schema!KGProperty
+  to np : Graph!NodeProperty {
+
+  np.name = p.name;
+  np.dataType = p.dataType.name;
+  np.isRequired = p.isRequired;
+  np.isIndexed = p.isExplainable;
+  np.isExplainable = p.isExplainable;
+}
+
+rule RelationToRelationshipType
+  transform r : Schema!KGRelation
+  to t : Graph!RelationshipType {
+
+  t.name = r.name;
+  t.sourceLabel = r.source.name;
+  t.targetLabel = r.target.name;
+  t.semantics = r.semantics;
+  t.minCardinality = r.minCardinality;
+  t.maxCardinality = r.maxCardinality;
+  t.sourceRelationId = r.id;
+  graph.relationshipTypes.add(t);
+}
+
+rule PatternToStoredQuery
+  transform q : Schema!KGQueryPattern
+  to s : Graph!StoredQuery {
+
+  s.name = q.name;
+  s.cypherQuery = q.cypherTemplate;
+  s.parameters.addAll(q.parameters);
+  graph.storedQueries.add(s);
+}
+
+post {
+  // Provenance labels (framework-level, not part of the domain schema)
+  var doc = new Graph!NodeLabel;
+  doc.name = "SourceDocument";
+  doc.description = "A document of the corpus from which facts were extracted (provenance)";
+  doc.sourceConcept = "(provenance)";
+  for (n in Sequence{"id", "uri", "sha256", "licence", "collection"}) {
+    var p = new Graph!NodeProperty;
+    p.name = n; p.dataType = "STRING"; p.isRequired = (n = "id"); p.isIndexed = (n = "id"); p.isExplainable = false;
+    doc.properties.add(p);
+  }
+  graph.nodeLabels.add(doc);
+  var dk = new Graph!SchemaConstraint;
+  dk.name = "sourcedocument_id_unique"; dk.constraintType = "UNIQUE"; dk.label = "SourceDocument"; dk.property = "id";
+  graph.constraints.add(dk);
+
+  var run = new Graph!NodeLabel;
+  run.name = "ExtractionRun";
+  run.description = "One LLM extraction run: prompt version, model, validation policy (provenance)";
+  run.sourceConcept = "(provenance)";
+  // runId = promptId + "@" + llmModel: the same generated prompt run by two LLMs is two runs
+  for (n in Sequence{"runId", "promptId", "promptHash", "extractionTask", "llmModel", "validationPolicyVersion", "timestamp"}) {
+    var p = new Graph!NodeProperty;
+    p.name = n; p.dataType = "STRING"; p.isRequired = (n = "runId"); p.isIndexed = (n = "runId" or n = "promptId"); p.isExplainable = false;
+    run.properties.add(p);
+  }
+  graph.nodeLabels.add(run);
+  var rk = new Graph!SchemaConstraint;
+  rk.name = "extractionrun_runid_unique"; rk.constraintType = "UNIQUE"; rk.label = "ExtractionRun"; rk.property = "runId";
+  graph.constraints.add(rk);
+  var ri = new Graph!SchemaIndex;
+  ri.name = "extractionrun_promptid_idx"; ri.label = "ExtractionRun"; ri.property = "promptId"; ri.indexType = "RANGE";
+  graph.indexes.add(ri);
+
+  for (pair in Sequence{Sequence{"EXTRACTED_FROM", "SourceDocument", "entity was extracted from this document"},
+                        Sequence{"PRODUCED_BY", "ExtractionRun", "entity was produced by this extraction run"}}) {
+    var t = new Graph!RelationshipType;
+    t.name = pair.at(0); t.sourceLabel = "(any domain label)"; t.targetLabel = pair.at(1);
+    t.semantics = pair.at(2); t.minCardinality = 1; t.maxCardinality = -1; t.sourceRelationId = "(provenance)";
+    graph.relationshipTypes.add(t);
+  }
+}

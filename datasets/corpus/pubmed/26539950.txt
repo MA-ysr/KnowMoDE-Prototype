@@ -1,0 +1,11 @@
+# PubMed 26539950: Risk Factors for 30-Day Readmissions of Individuals with Decompensated Cirrhosis.
+
+Southern medical journal (2015), doi:10.14423/SMJ.0000000000000371
+
+OBJECTIVES: Patients with cirrhosis have a high rate of 30-day hospital readmission that affects their quality of life and contributes to increased healthcare-related costs. The aim of our study was to identify frequency, predictors, and preventable causes of hospital readmissions among patients with decompensated cirrhosis.
+
+METHODS: We retrospectively reviewed electronic medical records of all patients with a confirmed diagnosis of decompensated cirrhosis admitted to Dayton VA Medical Center between 2009 and 2013. Demographics, clinical factors, laboratory values, and outcomes were recorded. Univariate analysis was performed using independent samples t tests and Wilcoxon rank sums tests for continuous variables and χ(2) or Fisher exact tests for categorical variables. A multiple logistic regression analysis was performed for variables found to be significant by univariate analysis to predict the risk factors for 30-day readmission. A detailed chart review was conducted for all patients readmitted within 30 days by a single gastroenterologist to identify the reason for readmission and to decide whether any of these readmissions were preventable.
+
+RESULTS: The 30-day readmission rate for decompensated cirrhotic patients was 27.03%. The risk factors for 30-day readmission were higher body mass index (BMI), lower body temperature, higher blood urea nitrogen, higher creatinine, more cirrhosis-related complications, and more readmissions per year per univariate analysis. Multivariable analysis revealed only BMI as a significant predictor of 30-day readmission (P = 0.023). A total of 36.7% of 30-day readmissions were possibly preventable.
+
+CONCLUSIONS: The independent variable that predicted 30-day readmission in patients with decompensated cirrhosis was higher BMI. Approximately one-third of 30-day readmissions were possibly preventable. These findings support the need to develop specific interventions for disease management to improve patient care and save on extraneous healthcare costs.

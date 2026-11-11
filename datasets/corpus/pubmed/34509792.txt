@@ -1,0 +1,11 @@
+# PubMed 34509792: Predictors and outcomes of recurrent diabetic ketoacidosis in Israeli adults.
+
+Diabetes & metabolic syndrome (2021), doi:10.1016/j.dsx.2021.102276
+
+AIMS: To identify risk factors for recurrent episodes of DKA that may allow the development of an effective prevention strategies.
+
+METHODS: Retrospective analysis of admissions for DKA in adult patients between 2004, and 2017 in a tertiary hospital. The clinical characteristics and outcomes of DKA of patients were stratified into an isolated episode of DKA (group 1) and recurrent episodes (group 2).
+
+RESULTS: 385 patients were included in the study, 281 had a single admission of DKA, and 104 had recurrent admissions. There were no statistically significant differences between the two groups in demographic or clinical variables. Patients in the recurrent DKA group had a younger age at diabetes diagnosis, 32.1 ± 17.08 vs. 36.13 ± 19.52 (p = 0.05). Patients with A1C greater than 9.0% were associated with recurrent DKA in cox regression analysis (HR 2.023; 95% Cl 1.112-3.679; p = 0.021). Recurrent DKA was a significant predictor of one-year mortality in cox regression analysis (HR 0.172; 95% CI 0.04-0.742; p = 0.018).
+
+CONCLUSION: High A1C levels, which account for poorly controlled diabetes, was identified as the strongest predictor of recurrent DKA. This patient population warrants particular attention and the development of intervention strategies in further studies.

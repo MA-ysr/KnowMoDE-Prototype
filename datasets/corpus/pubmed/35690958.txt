@@ -1,0 +1,13 @@
+# PubMed 35690958: Management of Hyperglycemia in Hospitalized Adult Patients in Non-Critical Care Settings: An Endocrine Society Clinical Practice Guideline.
+
+The Journal of clinical endocrinology and metabolism (2022), doi:10.1210/clinem/dgac278
+
+BACKGROUND: Adult patients with diabetes or newly recognized hyperglycemia account for over 30% of noncritically ill hospitalized patients. These patients are at increased risk for adverse clinical outcomes in the absence of defined approaches to glycemic management.
+
+OBJECTIVE: To review and update the 2012 Management of Hyperglycemia in Hospitalized Patients in Non-Critical Care Settings: An Endocrine Society Clinical Practice Guideline and to address emerging areas specific to the target population of noncritically ill hospitalized patients with diabetes or newly recognized or stress-induced hyperglycemia.
+
+METHODS: A multidisciplinary panel of clinician experts, together with a patient representative and experts in systematic reviews and guideline development, identified and prioritized 10 clinical questions related to inpatient management of patients with diabetes and/or hyperglycemia. The systematic reviews queried electronic databases for studies relevant to the selected questions. The Grading of Recommendations Assessment, Development and Evaluation (GRADE) methodology was used to assess the certainty of evidence and make recommendations.
+
+RESULTS: The panel agreed on 10 frequently encountered areas specific to glycemic management in the hospital for which 15 recommendations were made. The guideline includes conditional recommendations for hospital use of emerging diabetes technologies including continuous glucose monitoring and insulin pump therapy; insulin regimens for prandial insulin dosing, glucocorticoid, and enteral nutrition-associated hyperglycemia; and use of noninsulin therapies. Recommendations were also made for issues relating to preoperative glycemic measures, appropriate use of correctional insulin, and diabetes self-management education in the hospital. A conditional recommendation was made against preoperative use of caloric beverages in patients with diabetes.
+
+CONCLUSION: The recommendations are based on the consideration of important outcomes, practicality, feasibility, and patient values and preferences. These recommendations can be used to inform system improvement and clinical practice for this frequently encountered inpatient population.

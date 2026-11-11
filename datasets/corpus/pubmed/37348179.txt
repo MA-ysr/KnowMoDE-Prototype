@@ -1,0 +1,5 @@
+# PubMed 37348179: Poor adherence to clinical practice guidelines: A call to action for increased albuminuria testing in patients with type 2 diabetes.
+
+Journal of diabetes and its complications (2023), doi:10.1016/j.jdiacomp.2023.108548
+
+We describe the substantial shortfall in adherence to guideline-recommended albumin-to-creatinine ratio (uACR) testing for people in the United States with type 2 diabetes. Poor compliance with current guidelines leads to delays in diagnosis-and treatment- of chronic kidney disease, which adversely affects clinical outcomes and contributes to incremental economic burden.

@@ -1,0 +1,13 @@
+# PubMed 35032131: A review of literature on risk prediction tools for hospital readmissions in older adults.
+
+Journal of health organization and management (2022), doi:10.1108/JHOM-11-2020-0450
+
+PURPOSE: The purpose of this paper is to identify and analyse the readmission risk prediction tools reported in the literature and their benefits when it comes to healthcare organisations and management.
+
+DESIGN/METHODOLOGY/APPROACH: Readmission risk prediction is a growing topic of interest with the aim of identifying patients in particular those suffering from chronic diseases such as congestive heart failure, chronic obstructive pulmonary disease and diabetes, who are at risk of readmission. Several models have been developed with different levels of predictive ability. A structured and extensive literature search of several databases was conducted using the Preferred Reporting Items for Systematic Reviews and Meta-analysis strategy, and this yielded a total of 48,984 records.
+
+FINDINGS: Forty-three articles were selected for full-text and extensive review after following the screening process and according to the eligibility criteria. About 34 unique readmission risk prediction models were identified, in which their predictive ability ranged from poor to good (c statistic 0.5-0.86). Readmission rates ranged between 3.1 and 74.1% depending on the risk category. This review shows that readmission risk prediction is a complex process and is still relatively new as a concept and poorly understood. It confirms that readmission prediction models hold significant accuracy at identifying patients at higher risk for such an event within specific context.
+
+RESEARCH LIMITATIONS/IMPLICATIONS: Since most prediction models were developed for specific populations, conditions or hospital settings, the generalisability and transferability of the predictions across wider or other contexts may be difficult to achieve. Therefore, the value of prediction models remains limited to hospital management. Future research is indicated in this regard.
+
+ORIGINALITY/VALUE: This review is the first to cover readmission risk prediction tools that have been published in the literature since 2011, thereby providing an assessment of the relevance of this crucial KPI to health organisations and managers.

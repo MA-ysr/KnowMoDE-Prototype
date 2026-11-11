@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/28545542.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/28545542/" sourceSha256="497ee3b74e9d4b1e24ff420dedd5c6df4a6bea88743c37d3e63beae8af67571b" sourceText="# PubMed 28545542: Recognition and treatment of sleep-disordered breathing: an important component of chronic disease management.&#10;&#10;Journal of translational medicine (2017), doi:10.1186/s12967-017-1211-y&#10;&#10;Sleep-disordered breathing (SDB) is a highly prevalent condition, and is associated with many debilitating chronic diseases. The role of untreated obstructive sleep apnea (OSA) in arterial hypertension has been recognized in international guidelines. Treatment with continuous positive airway pressure (CPAP) is associated with clinically-relevant reductions in blood pressure. In heart failure (HF), SDB is associated with worse prognosis and increased mortality. Major HF guidelines recommend that patients should be treated for sleep apnea to improve their HF status. Severe OSA increases the risk of arrhythmias, including atrial fibrillation, influences risk management in stroke, and is highly prevalent in patients with type 2 diabetes. Effective treatment with CPAP improves the success of antiarrhythmic interventions, improves outcomes in stroke and reduces hyperglycemia in diabetes. Patients with coronary artery disease also have a high prevalence of SDB, which is independently associated with worse outcomes. The role of CPAP for secondary cardiovascular prevention remains to be determined. Data from large, well-conducted clinical trials have shown that noninvasive ventilation, targeted to markedly reduce hypercapnia, significantly improves survival and reduces readmission in stable hypercapnic chronic obstructive pulmonary disease. The association of SDB with chronic diseases contributes to the high healthcare costs incurred by SDB patients. SDB also has an important negative impact on quality of life, which is reversed by CPAP treatment. The high prevalence of SDB, and its association with diseases that cause significant morbidity and mortality, suggest that the diagnosis and management of SDB is an important therapeutic goal. First, adherent CPAP treatment significantly improves the quality of life of all patients with SDB; second, it eliminates the negative impact of untreated SDB on any associated chronic diseases; and third, it significantly reduces the increased costs of all hospital and medical services directly associated with untreated SDB. In short, the recognition and treatment of SDB is vital for the continued health and wellbeing of individual patients with SDB.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:31:35+00:00" xmi:version="2.0">
+  <chunks charEnd="2418"/>
+  <entities type="Condition" id="sleep-disordered-breathing" mention="Sleep-disordered breathing (SDB)" confidence="0.95" sourceSpanStart="204" sourceSpanEnd="236">
+    <properties key="name" value="sleep-disordered breathing"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="obstructive-sleep-apnea" mention="obstructive sleep apnea (OSA)" confidence="0.95" sourceSpanStart="351" sourceSpanEnd="380">
+    <properties key="name" value="obstructive sleep apnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="arterial-hypertension" mention="arterial hypertension" confidence="0.95" sourceSpanStart="384" sourceSpanEnd="405">
+    <properties key="name" value="arterial hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure (HF)" confidence="0.95" sourceSpanStart="585" sourceSpanEnd="603">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="831" sourceSpanEnd="850">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="931" sourceSpanEnd="946">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="1072" sourceSpanEnd="1085">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="1113" sourceSpanEnd="1136">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+</raw:RawExtractionResult>

@@ -1,0 +1,7 @@
+{
+  "id": "M03_empty_query_template",
+  "family": "C1",
+  "expectedConstraint": "C1_PatternHasTemplate",
+  "mutatedFile": "kg-schema.xmi",
+  "description": "guideline_rules loses its Cypher template (parameters cleared and template emptied)"
+}

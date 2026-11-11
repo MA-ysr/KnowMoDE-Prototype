@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/38561880.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/38561880/" sourceSha256="2a82eb81d3bd3e8a9c0066afd851906a743ae7638ed4cbf2b4a4ecfeaa4b7cf9" sourceText="# PubMed 38561880: Consensus Guidelines for Influenza Vaccination in Patients with Diabetes.&#10;&#10;Acta medica Indonesiana (2024)&#10;&#10;Influenza is a prevalent health issue encountered in daily practice. Patients with diabetes mellitus face a higher risk of infections, including influenza, owing to the compromised immune system associated with diabetes. This susceptibility arises from the potential of diabetes mellitus to weaken the immune system. Moreover, elevated blood glucose levels can create a conducive environment for the growth of bacteria and viruses. This consensus is formulated by a multidisciplinary team to serve as practical guidance for the administration of influenza vaccinations to patients with diabetes mellitus in daily practice.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T19:01:02+00:00" xmi:version="2.0">
+  <chunks charEnd="749"/>
+  <entities type="Recommendation" id="influenza-vaccination-for-diabetes" mention="administration of influenza vaccinations to patients with diabetes mellitus" confidence="0.9" sourceSpanStart="654" sourceSpanEnd="729">
+    <properties key="statement" value="administer influenza vaccinations to patients with diabetes mellitus"/>
+    <properties key="source" value="Acta medica Indonesiana"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="712" sourceSpanEnd="729">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="influenza-vaccination-for-diabetes" targetType="Condition" targetId="diabetes-mellitus" confidence="0.9" evidence="This consensus is formulated by a multidisciplinary team to serve as practical guidance for the administration of influenza vaccinations to patients with diabetes mellitus in daily practice." sourceSpanStart="558" sourceSpanEnd="748"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 33421275: Electronic dashboard-based remote glycemic management program reduces length of stay and readmission rate among hospitalized adults.
+
+Journal of diabetes investigation (2021), doi:10.1111/jdi.13500
+
+AIMS/INTRODUCTION: Currently, the impact of hospital-wide glycemic control interventions on length of hospital stay (LOS) and readmission rates are largely unknown. We investigated the impact of a 4-year hospital-wide remote glycemic management program on LOS and 30-day readmission rates among hospitalized adults who received glucose monitoring.
+
+MATERIALS AND METHODS: In this retrospective study, hospitalized patients who received glucose monitoring were classified into groups 1 (high glucose variability), 2 (hypoglycemia), 3 (hyperglycemia) and 4 (relatively stable). The monthly percentage changes, and average monthly percentage changes of hyperglycemia, hypoglycemia and treat to target were determined using joinpoint regression analysis.
+
+RESULTS: A total of 106,528 hospitalized patients (mean age 60.9 ± 18.5 years, 57% men) were enrolled. We observed a significant reduction in the percentage of inpatients in poor glycemic control groups (groups 1, 2 and 3, all P < 0.001), and a reciprocal increase in the relatively stable group (group 4) from 2016 to 2019. We found a significant reduction in LOS by 11.4% (10.5-9.3 days, P = 0.002, after adjustment for age, sex, and admission department). The 30-day readmission rate decreased from 29.9% to 29.3%, mainly among those in group 4 in 2019 (P < 0.001 after adjustment of sex, age, admission department and LOS).
+
+CONCLUSIONS: Improved glycemic control through a hospital-wide electronic remote glycemic management system reduced LOS and 30-day readmission rates. Findings observed in this study might be associated with the reduction in cost of avoidable hospitalizations.

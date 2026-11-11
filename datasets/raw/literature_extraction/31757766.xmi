@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31757766.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31757766/" sourceSha256="62660655278f8e95bca6436a53a16d0fca5d8ecf9116a0a01327a971768b0f6f" sourceText="# PubMed 31757766: Risk prediction for severe hypoglycemia in a type 2 diabetes population with previous non-severe hypoglycemia.&#10;&#10;Journal of diabetes and its complications (2020), doi:10.1016/j.jdiacomp.2019.107490&#10;&#10;BACKGROUND/AIM: Episodes of non-severe hypoglycemia can be captured through diagnoses documented in the electronic medical record. We aimed to create a clinically useful prediction model for a severe hypoglycemia event, requiring an emergency department visit or hospitalization, in patients with Type 2 diabetes with a history of non-severe hypoglycemia.&#10;&#10;METHODS: Using electronic medical record data from 50,439 patients with Type 2 diabetes in one health system, number of severe hypoglycemia events and associated patient characteristics from 2006 to 2015 were previously defined. Using the landmarking method, a dynamic prediction model was built using the subset of 1876 patients who had a documented non-severe hypoglycemia diagnosis code, using logistic regression to obtain landmark-specific odds of severe hypoglycemia in this group. For model performance, the bootstrap procedure was employed for internal validation and area under the curve (AUC) and index of prediction accuracy (IPA) were calculated.&#10;&#10;RESULTS: Glycosylated hemoglobin (HbA1c) less than 7% (53 mmol/mol) was associated with increased odds ratio (OR) of severe hypoglycemia at 3 months (OR 1.92 95% Confidence Interval (CI) 1.19-3.10 at HbA1c 5% (31 mmol/mol) and OR 1.21, CI 1.03-1.41 at HbA1c 6%(42 mmol/mol).) History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities. Metformin and sulfonlylurea use in the past 3 months, increasing age and body mass index had lower odds of a future severe hypoglycemia event. For the prediction model for 3 month risk of severe hypoglycemia, the AUC was 0.890 (CI 0.843-0.907) and the IPA was 10.8% (CI 4.4% - 12.4%).&#10;&#10;CONCLUSION: In patients with a documented diagnosis of non-severe hypoglycemia, a dynamic prediction model identifies patients with Type 2 diabetes with 3-month increased risk of severe hypoglycemia, allowing for preventive efforts, such as medication changes, at the point of care.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:36:45+00:00" xmi:version="2.0">
+  <chunks charEnd="2279"/>
+  <entities type="ClinicalOutcome" id="severe-hypoglycemia-within-3-months" mention="severe hypoglycemia at 3 months" confidence="0.95" sourceSpanStart="894" sourceSpanEnd="925">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="timeWindow" value="3 months"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-less-than-7-percent" mention="Glycosylated hemoglobin (HbA1c) less than 7% (53 mmol/mol)" confidence="0.95" sourceSpanStart="809" sourceSpanEnd="868">
+    <properties key="name" value="HbA1c &lt; 7%"/>
+    <properties key="abnormalThreshold" value="&lt; 7%"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-non-severe-hypoglycemia" mention="History of non-severe hypoglycemia within the past 3 months" confidence="0.95" sourceSpanStart="1045" sourceSpanEnd="1104">
+    <properties key="name" value="history of non-severe hypoglycemia"/>
+    <properties key="description" value="History of non-severe hypoglycemia within the past 3 months"/>
+  </entities>
+  <entities type="RiskFactor" id="black-race" mention="Black race" confidence="0.95" sourceSpanStart="1643" sourceSpanEnd="1653">
+    <properties key="name" value="black race"/>
+    <properties key="description" value="Black race"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1655" sourceSpanEnd="1662">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="RiskFactor" id="comorbidities" mention="comorbidities" confidence="0.9" sourceSpanStart="1695" sourceSpanEnd="1708">
+    <properties key="name" value="comorbidities"/>
+    <properties key="description" value="comorbidities"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.95" sourceSpanStart="1710" sourceSpanEnd="1719">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="Drug" id="sulfonylurea" mention="sulfonlylurea" confidence="0.9" sourceSpanStart="1724" sourceSpanEnd="1737">
+    <properties key="name" value="sulfonylurea"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-non-severe-hypoglycemia" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities." sourceSpanStart="1045" sourceSpanEnd="1197"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="black-race" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities." sourceSpanStart="1045" sourceSpanEnd="1197"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="insulin" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities." sourceSpanStart="1045" sourceSpanEnd="1197"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="comorbidities" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="History of non-severe hypoglycemia within the past 3 months increased odds for severe hypoglycemia (OR 2.58 95% CI 1.80-3.70) as did Black race, insulin use with the past 3 months, and comorbidities." sourceSpanStart="1045" sourceSpanEnd="1197"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="metformin" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="Metformin and sulfonlylurea use in the past 3 months, increasing age and body mass index had lower odds of a future severe hypoglycemia event." sourceSpanStart="1199" sourceSpanEnd="1307"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sulfonylurea" targetType="ClinicalOutcome" targetId="severe-hypoglycemia-within-3-months" confidence="0.95" evidence="Metformin and sulfonlylurea use in the past 3 months, increasing age and body mass index had lower odds of a future severe hypoglycemia event." sourceSpanStart="1199" sourceSpanEnd="1307"/>
+</raw:RawExtractionResult>

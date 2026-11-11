@@ -1,0 +1,27 @@
+{
+  "dataset": "tabular",
+  "updatedAt": "2026-10-15T11:00:00+00:00",
+  "fileCount": 2,
+  "files": {
+    "IDS_mapping.csv": {
+      "uri": "https://archive.ics.uci.edu/static/public/296/diabetes+130-us+hospitals+for+years+1999-2008.zip",
+      "licence": "CC BY 4.0 (UCI Machine Learning Repository, dataset 296)",
+      "collection": "tabular",
+      "title": "Diabetes 130-US hospitals for years 1999-2008",
+      "retrievedAt": "2026-10-15T11:00:00+00:00",
+      "sha256": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e",
+      "bytes": 2547,
+      "archiveMember": "IDS_mapping.csv"
+    },
+    "diabetic_data.csv": {
+      "uri": "https://archive.ics.uci.edu/static/public/296/diabetes+130-us+hospitals+for+years+1999-2008.zip",
+      "licence": "CC BY 4.0 (UCI Machine Learning Repository, dataset 296)",
+      "collection": "tabular",
+      "title": "Diabetes 130-US hospitals for years 1999-2008",
+      "retrievedAt": "2026-10-15T11:00:00+00:00",
+      "sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+      "bytes": 19159383,
+      "archiveMember": "diabetic_data.csv"
+    }
+  }
+}

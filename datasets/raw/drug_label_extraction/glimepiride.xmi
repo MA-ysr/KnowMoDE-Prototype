@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/glimepiride.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22glimepiride%22" sourceSha256="b19dd9e7a6752db7c0acfcf586f8afe2988397e85d21ebf31366190b00b3daa8" sourceText="# FDA prescribing information: glimepiride&#10;&#10;Generic name: GLIMEPIRIDE&#10;Brand name: Glimepiride&#10;Pharmacologic class: Sulfonylurea [EPC]&#10;Label set id: 0003458f-352a-46fa-9d99-230daa76ae29, effective 20241113&#10;&#10;## Indications and usage&#10;&#10;1 INDICATIONS AND USAGE Glimepiride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus [see Clinical Studies (14.1) ]. Limitations of Use Glimepiride tablets should not be used for the treatment of type 1 diabetes mellitus or diabetic ketoacidosis, as it would not be effective in these settings. Glimepiride tablets are a sulfonylurea indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus ( 1 ). Limitations of Use: Not for treating type 1 diabetes mellitus or diabetic ketoacidosis ( 1 ).&#10;&#10;## Contraindications&#10;&#10;4 CONTRAINDICATIONS Glimepiride tablets are contraindicated in patients with a history of a hypersensitivity reaction to: Glimepiride or any of the product’s ingredients [see Warnings and Precautions (5.2) ]. Sulfonamide derivatives: Patients who have developed an allergic reaction to sulfonamide derivatives may develop an allergic reaction to glimepiride. Do not use glimepiride in patients who have a history of an allergic reaction to sulfonamide derivatives. Hypersensitivity to glimepiride or any of the product’s ingredients ( 4 ) Hypersensitivity to sulfonamide derivatives ( 4 )&#10;&#10;## Warnings and precautions&#10;&#10;5 WARNINGS AND PRECAUTIONS Hypoglycemia: May be severe. Ensure proper patient selection, dosing, and instructions, particularly in at-risk populations (e.g., elderly, renally impaired) and when used with other anti-diabetic medications ( 5.1 ). Hypersensitivity Reactions: Postmarketing reports include anaphylaxis, angioedema and Stevens-Johnson Syndrome. If a reaction is suspected, promptly discontinue glimepiride, assess for other potential causes for the reaction, and institute alternative treatment for diabetes ( 5.2 ). Hemolytic Anemia: Can occur if glucose 6-phosphate dehydrogenase (G6PD) deficient. Consider a non-sulfonylurea alternative. ( 5.3 ). Potential Increased Risk of Cardiovascular Mortality with Sulfonylureas: Inform patient of risks, benefits and treatment alternatives ( 5.4 ). Macrovascular Outcomes: No clinical studies establishing conclusive evidence of macrovascular risk reduction with glimepiride or any other anti-diabetic drug ( 5.5 ). 5.1 Hypoglycemia All sulfonylureas, including glimepiride, can cause severe hypoglycemia [see Adverse Reactions (6.1) ]. The patient's ability to concentrate and react may be impaired as a result of hypoglycemia. These impairments may present a risk in situations where these abilities are especially important, such as driving or operating other machinery. Severe hypoglycemia can lead to unconsciousness or convulsions and may result in temporary or permanent impairment of brain function or death. Patients must be educated to recognize and manage hypoglycemia. Use caution when initiating and increasing glimepiride tablets doses in patients who may be predisposed to hypoglycemia (e.g., the elderly, patients with renal impairment, patients on other anti-diabetic medications). Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of glucose-lowering medications. Hypoglycemia is also more likely to occur when caloric intake is deficient, after severe or prolonged exercise, or when alcohol is ingested. Early warning symptoms of hypoglycemia may be different or less pronounced in patients with autonomic neuropathy, the elderly, and in patients who are taking beta-adrenergic blocking medications or other sympatholytic agents. These situations may result in severe hypoglycemia before the patient is aware of the hypoglycemia. 5.2 Hypersensitivity Reactions There have been postmarketing reports of hypersensitivity reactions in patients treated with glimepiride, including serious reactions such as anaphylaxis, angioedema, and Stevens-Johnson Syndrome [see Adverse Reactions (6.2) ]. If a hypersensitivity reaction is suspected, promptly discontinue glimepiride, assess for other potential causes for the reaction, and institute alternative treatment for diabetes. 5.3 Hemolytic Anemia Sulfonylureas can cause hemolytic anemia in patients with glucose 6-phosphate dehydrogenase (G6PD) deficiency. Because glimepiride tablets are a sulfonylurea, use caution in patients with G6PD deficiency and consider the use of a non-sulfonylurea alternative. There are also postmarketing reports of hemolytic anemia in patients receiving glimepiride who did not have known G6PD deficiency [see Adverse Reactions (6.2) ]. 5.4 Increased Risk of Cardiovascular Mortality with Sulfonylureas The administration of oral hypoglycemic drugs has been reported to be associated with increased cardiovascular mortality as compared to treatment with diet alone or diet plus insulin. This warning is based on the study conducted by the University Group Diabetes Program (UGDP), a long-term, prospective clinical trial designed to evaluate the effectiveness of glucose-lowering drugs in preventing or delaying vascular complications in patients with non-insulin-dependent diabetes. The study involved 823 patients who were randomly assigned to one of four treatment groups. UGDP reported that patients treated for 5 to 8 years with diet plus a fixed dose of tolbutamide (1.5 grams per day) had a rate of cardiovascular mortality approximately 2 and a half times that of patients treated with diet alone. A significant increase in total mortality was not observed, but the use of tolbutamide was discontinued based on the increase in cardiovascular mortality, thus limiting the opportunity for the study to show an increase in overall mortality. Despite controversy regarding the interpretation of these results, the findings of the UGDP study provide an adequate basis for this warning. The patient should be informed of the potential risks and advantages of glimepiride and of alternative modes of therapy. Although only one drug in the sulfonylurea class (tolbutamide) was included in this study, it is prudent from a safety standpoint to consider that this warning may also apply to other oral hypoglycemic drugs in this class, in view of their close similarities in mode of action and chemical structure. 5.5 Macrovascular Outcomes There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with glimepiride or any other anti-diabetic drug.&#10;&#10;## Adverse reactions&#10;&#10;6 ADVERSE REACTIONS The following serious adverse reactions are discussed in more detail below and elsewhere in the labeling: Hypoglycemia [see Warnings and Precautions (5.1) ] Hemolytic anemia [see Warnings and Precautions (5.3) ] In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea. Common adverse reactions in clinical trials (≥5% and more common than with placebo) include hypoglycemia, headache, nausea, and dizziness ( 6.1 ). To report SUSPECTED ADVERSE REACTIONS, contact Dr. Reddy’s Laboratories, Inc. at 1-888-375-3784 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch . 6.1 Clinical Trials Experience Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice. Approximately 2,800 patients with type 2 diabetes have been treated with glimepiride in the controlled clinical trials. In these trials, approximately 1,700 patients were treated with glimepiride for at least 1 year. Table 1 summarizes adverse events, other than hypoglycemia, that were reported in 11 pooled placebo-controlled trials, whether or not considered to be possibly or probably related to study medication. Treatment duration ranged from 13 weeks to 12 months. Terms that are reported represent those that occurred at an incidence of ≥5% among glimepiride-treated patients and more commonly than in patients who received placebo. Table 1. Eleven Pooled Placebo-Controlled Trials ranging from 13 weeks to 12 months: Adverse Events (excluding hypoglycemia) Occurring in ≥5% of glimepiride-treated Patients and at a Greater Incidence than with Placebo Glimepiride doses ranged from 1 to 16 mg administered daily Glimepiride N=745 % Placebo N=294 % Headache 8.2 7.8 Accidental Injury Insufficient information to determine whether any of the accidental injury events were associated with hypoglycemia 5.8 3.4 Flu Syndrome 5.4 4.4 Nausea 5 3.4 Dizziness 5 2.4 Hypoglycemia In a randomized, double-blind, placebo-controlled monotherapy trial of 14 weeks duration, patients already on sulfonylurea therapy underwent a 3-week washout period then were randomized to glimepiride tablets 1 mg, 4 mg, 8 mg or placebo. Patients randomized to glimepiride tablets 4 mg or 8 mg underwent forced-titration from an initial dose of 1 mg to these final doses, as tolerated [see Clinical Studies (14.1) ]. The overall incidence of possible hypoglycemia (defined by the presence of at least one symptom that the investigator believed might be related to hypoglycemia; a concurrent glucose measurement was not required) was 4% for glimepiride tablets 1 mg, 17% for glimepiride tablets 4 mg, 16% for glimepiride tablets 8 mg and 0% for placebo. All of these events were self-treated. In a randomized, double-blind, placebo-controlled monotherapy trial of 22 weeks duration, patients received a starting dose of either 1 mg glimepiride tablets or placebo daily. The dose of glimepiride tablets was titrated to a target fasting plasma glucose of 90 to 150 mg/dL. Final daily doses of glimepiride tablets were 1, 2, 3, 4, 6 or 8 mg [see Clinical Studies (14.1) ]. The overall incidence of possible hypoglycemia (as defined above for the 14-week trial) for glimepiride vs. placebo was 19.7% vs. 3.2%. All of these events were self-treated. Weight gain Glimepiride, like all sulfonylureas, can cause weight gain [see Clinical Studies (14.1) ]. Allergic Reactions In clinical trials, allergic reactions, such as pruritus, erythema, urticaria, and morbilliform or maculopapular eruptions, occurred in less than 1% of glimepiride-treated patients. These may resolve despite continued treatment with glimepiride. There are postmarketing reports of more serious allergic reactions (e.g., dyspnea, hypotension, shock) [see Warnings and Precautions (5.2) ]. Laboratory Tests Elevated Serum Alanine Aminotransferase (ALT) In 11 pooled placebo-controlled trials of glimepiride, 1.9% of glimepiride-treated patients and 0.8% of placebo-treated patients developed serum ALT greater than 2 times the upper limit of the reference range. 6.2 Postmarketing Experience The following adverse reactions have been identified during postapproval use of glimepiride. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Serious hypersensitivity reactions, including anaphylaxis, angioedema, and Stevens-Johnson Syndrome [see Warnings and Precautions (5.2) ] Hemolytic anemia in patients with and without G6PD deficiency [see Warnings and Precautions (5.3) ] Impairment of liver function (e.g., with cholestasis and jaundice), as well as hepatitis, which may progress to liver failure. Porphyria cutanea tarda, photosensitivity reactions and allergic vasculitis Leukopenia, agranulocytosis, aplastic anemia, and pancytopenia Thrombocytopenia (including severe cases with platelet count less than 10,000/μL) and thrombocytopenic purpura Hepatic porphyria reactions and disulfiram-like reactions Hyponatremia and syndrome of inappropriate antidiuretic hormone secretion (SIADH), most often in patients who are on other medications or who have medical conditions known to cause hyponatremia or increase release of antidiuretic hormone Dysgeusia Alopecia&#10;&#10;## Drug interactions&#10;&#10;7 DRUG INTERACTIONS Certain medications may affect glucose metabolism, requiring glimepiride tablets dose adjustment and close monitoring of blood glucose ( 7.1 ). Miconazole: Severe hypoglycemia can occur when glimepiride and oral miconazole are used concomitantly. ( 7.2 ). Cytochrome P450 2C9 interactions: Inhibitors and inducers of cytochrome P450 2C9 may affect glycemic control by altering glimepiride plasma concentrations ( 7.3 ). Colesevelam: Coadministration may reduce glimepiride absorption. Glimepiride should be administered at least 4 hours prior to colesevelam ( 2.1 , 7.4 ). 7.1 Drugs Affecting Glucose Metabolism A number of medications affect glucose metabolism and may require glimepiride tablets dose adjustment and particularly close monitoring for hypoglycemia or worsening glycemic control. The following are examples of medications that may increase the glucose-lowering effect of sulfonylureas including glimepiride, increasing the susceptibility to and/or intensity of hypoglycemia: oral anti-diabetic medications, pramlintide acetate, insulin, angiotensin converting enzyme (ACE) inhibitors, H 2 receptor antagonists, fibrates, propoxyphene, pentoxifylline, somatostatin analogs, anabolic steroids and androgens, cyclophosphamide, phenyramidol, guanethidine, fluconazole, sulfinpyrazone, tetracyclines, clarithromycin, disopyramide, quinolones, and those drugs that are highly protein-bound, such as fluoxetine, nonsteroidal anti-inflammatory drugs, salicylates, sulfonamides, chloramphenicol, coumarins, probenecid and monoamine oxidase inhibitors. When these medications are administered to a patient receiving glimepiride, monitor the patient closely for hypoglycemia. When these medications are withdrawn from a patient receiving glimepiride, monitor the patient closely for worsening glycemic control. The following are examples of medications that may reduce the glucose-lowering effect of sulfonylureas including glimepiride, leading to worsening glycemic control: danazol, glucagon, somatropin, protease inhibitors, atypical antipsychotic medications (e.g., olanzapine and clozapine), barbiturates, diazoxide, laxatives, rifampin, thiazides and other diuretics, corticosteroids, phenothiazines, thyroid hormones, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics (e.g., epinephrine, albuterol, terbutaline), and isoniazid. When these medications are administered to a patient receiving glimepiride, monitor the patient closely for worsening glycemic control. When these medications are withdrawn from a patient receiving glimepiride, monitor the patient closely for hypoglycemia. Beta-blockers, clonidine, and reserpine may lead to either potentiation or weakening of glimepiride’s glucose-lowering effect. Both acute and chronic alcohol intake may potentiate or weaken the glucose-lowering action of glimepiride in an unpredictable fashion. The signs of hypoglycemia may be reduced or absent in patients taking sympatholytic drugs such as beta-blockers, clonidine, guanethidine, and reserpine. 7.2 Miconazole A potential interaction between oral miconazole and sulfonylureas leading to severe hypoglycemia has been reported. Whether this interaction also occurs with other dosage forms of miconazole is not known. 7.3 Cytochrome P450 2C9 Interactions There may be an interaction between glimepiride and inhibitors (e.g., fluconazole) and inducers (e.g., rifampin) of cytochrome P450 2C9. Fluconazole may inhibit the metabolism of glimepiride, causing increased plasma concentrations of glimepiride which may lead to hypoglycemia. Rifampin may induce the metabolism of glimepiride, causing decreased plasma concentrations of glimepiride which may lead to worsening glycemic control. 7.4 Concomitant Administration of Colesevelam Colesevelam can reduce the maximum plasma concentration and total exposure of glimepiride when the two are coadministered. However, absorption is not reduced when glimepiride is administered 4 hours prior to colesevelam. Therefore, glimepiride should be administered at least 4 hours prior to colesevelam.&#10;&#10;## Use in specific populations&#10;&#10;8 USE IN SPECIFIC POPULATIONS Pediatric Patients: Not recommended because of adverse effects on body weight and hypoglycemia ( 8.4 ). Geriatric or Renally Impaired Patients: At risk for hypoglycemia with glimepiride. Use caution in dose selection and titration, and monitor closely ( 8.5 , 8.6 ). 8.1 Pregnancy Risk Summary Available data from a small number of published studies and postmarketing experience with glimepiride use in pregnancy over decades have not identified any drug associated risks for major birth defects, miscarriage, or adverse maternal outcomes. However, sulfonylureas (including glimepiride) cross the placenta and have been associated with neonatal adverse reactions such as hypoglycemia. Therefore, glimepiride tablets should be discontinued at least two weeks before expected delivery (see Clinical Considerations). Poorly controlled diabetes in pregnancy is also associated with risks to the mother and fetus (see Clinical Considerations). In animal studies (see Data), there were no effects on embryo-fetal development following administration of glimepiride to pregnant rats and rabbits at oral doses approximately 4,000 times and 60 times the maximum human dose based on body surface area, respectively. However, fetotoxicity was observed in rats and rabbits at doses 50 times and 0.1 times the maximum human dose, respectively. The estimated background risk of major birth defects is 6% to 10% in women with pregestational diabetes with a HbA 1c &gt;7% and has been reported to be as high as 20% to 25% in women with a HbA 1c &gt;10%. The estimated background risk of miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively. Clinical Considerations Disease-associated maternal and/or embryo-fetal risk Poorly controlled diabetes in pregnancy increases the maternal risk for diabetic ketoacidosis, preeclampsia, spontaneous abortions, preterm delivery, and delivery complications. Poorly controlled diabetes increases the fetal risk for major birth defects, still birth, and macrosomia-related morbidity. Fetal/neonatal adverse reactions Neonates of women with gestational diabetes who are treated with sulfonylureas during pregnancy may be at increased risk for neonatal intensive care admission and may develop respiratory distress, hypoglycemia, birth injury, and be large for gestational age. Prolonged severe hypoglycemia, lasting 4 to 10 days, has been reported in neonates born to mothers receiving a sulfonylurea at the time of delivery and has been reported with the use of agents with a prolonged half-life. Observe newborns for symptoms of hypoglycemia and respiratory distress and manage accordingly. Dose adjustments during pregnancy and the postpartum period Due to reports of prolonged severe hypoglycemia in neonates born to mothers receiving a sulfonylurea at the time of delivery, glimepiride tablets should be discontinued at least two weeks before expected delivery (see Fetal/Neonatal Adverse Reactions). Data Animal data In animal studies, there was no increase in congenital anomalies, but an increase in fetal deaths occurred in rats and rabbits at glimepiride doses 50 times (rats) and 0.1 times (rabbits) the maximum recommended human dose (based on body surface area). This fetotoxicity was observed only at doses inducing maternal hypoglycemia and is believed to be directly related to the pharmacologic (hypoglycemic) action of glimepiride, as has been similarly noted with other sulfonylureas. 8.2 Lactation Risk Summary Breastfed infants of lactating women using glimepiride tablets should be monitored for symptoms of hypoglycemia (see Clinical Considerations). It is not known whether glimepiride is excreted in human milk and there are no data on the effects of glimepiride on milk production. Glimepiride is present in rat milk [see Data]. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for glimepiride and any potential adverse effects on the breastfed child from glimepiride or from the underlying maternal condition. Clinical Considerations Monitoring for adverse reactions Monitor breastfed infants for signs of hypoglycemia (e.g., jitters, cyanosis, apnea, hypothermia, excessive sleepiness, poor feeding, seizures). Data During prenatal and postnatal studies in rats, significant concentrations of glimepiride were present in breast milk and the serum of the pups. Offspring of rats exposed to high levels of glimepiride during pregnancy and lactation developed skeletal deformities consisting of shortening, thickening, and bending of the humerus during the postnatal period. These skeletal deformations were determined to be the result of nursing from mothers exposed to glimepiride. 8.4 Pediatric Use The pharmacokinetics, efficacy and safety of glimepiride have been evaluated in pediatric patients with type 2 diabetes as described below. Glimepiride tablets are not recommended in pediatric patients because of its adverse effects on body weight and hypoglycemia. The pharmacokinetics of a 1 mg single dose of glimepiride was evaluated in 30 patients with type 2 diabetes (male = 7; female = 23) between ages 10 and 17 years. The mean (± SD) AUC (0-last) (339±203 ng•hr/mL), C max (102±48 ng/mL) and t 1/2 (3.1±1.7 hours) for glimepiride were comparable to historical data from adults (AUC (0-last) 315±96 ng•hr/mL, C max 103±34 ng/mL and t 1/2 5.3±4.1 hours). The safety and efficacy of glimepiride in pediatric patients was evaluated in a single-blind, 24-week trial that randomized 272 patients (8 to 17 years of age) with type 2 diabetes to glimepiride (n=135) or metformin (n=137). Both treatment-naïve patients (those treated with only diet and exercise for at least 2 weeks prior to randomization) and previously treated patients (those previously treated or currently treated with other oral antidiabetic medications for at least 3 months) were eligible to participate. Patients who were receiving oral antidiabetic agents at the time of study entry discontinued these medications before randomization without a washout period. Glimepiride was initiated at 1 mg, and then titrated up to 2, 4 or 8 mg (mean last dose 4 mg) through Week 12, targeting a self-monitored fasting fingerstick blood glucose 65 years of age. No overall differences in safety or effectiveness were observed between these patients and younger patients, but greater sensitivity of some older individuals cannot be ruled out. There were no significant differences in glimepiride pharmacokinetics between patients with type 2 diabetes ≤65 years (n=49) and those &gt;65 years (n=42) [see Clinical Pharmacology (12.3) ]. Glimepiride is substantially excreted by the kidney. Elderly patients are more likely to have renal impairment. In addition, hypoglycemia may be difficult to recognize in the elderly [see Dosage and Administration (2.1) and Warnings and Precautions (5.1) ]. Use caution when initiating glimepiride and increasing the dose of glimepiride tablets in this patient population. 8.6 Renal Impairment To minimize the risk of hypoglycemia, the recommended starting dose of glimepiride tablets are 1 mg daily for all patients with type 2 diabetes and renal impairment [see Dosage and Administration (2.1) and Warnings and Precautions (5.1) ]. A multiple-dose titration study was conducted in 16 patients with type 2 diabetes and renal impairment using doses ranging from 1 mg to 8 mg daily for 3 months. Baseline creatinine clearance ranged from 10 to 60 mL/min. The pharmacokinetics of glimepiride tablets were evaluated in the multiple-dose titration study and the results were consistent with those observed in patients enrolled in a single-dose study. In both studies, the relative total clearance of glimepiride increased when kidney function was impaired. Both studies also demonstrated that the elimination of the two major metabolites was reduced in patients with renal impairment [see Clinical Pharmacology (12.3) ].&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:05:48+00:00" xmi:version="2.0">
+  <chunks charEnd="1496"/>
+  <chunks index="1" charStart="1469" charEnd="1496"/>
+  <chunks index="2" charStart="1498" charEnd="5498"/>
+  <chunks index="3" charStart="5198" charEnd="6638"/>
+  <chunks index="4" charStart="6640" charEnd="6660"/>
+  <chunks index="5" charStart="6662" charEnd="10662"/>
+  <chunks index="6" charStart="10362" charEnd="12174" status="UNPARSEABLE" error="unparseable JSON: Expecting ',' delimiter: line 336 column 60 (char 11834)"/>
+  <chunks index="7" charStart="12176" charEnd="12196"/>
+  <chunks index="8" charStart="12198" charEnd="16198"/>
+  <chunks index="9" charStart="15898" charEnd="16295"/>
+  <chunks index="10" charStart="16297" charEnd="16327"/>
+  <chunks index="11" charStart="16329" charEnd="20329"/>
+  <chunks index="12" charStart="20029" charEnd="24029"/>
+  <chunks index="13" charStart="23729" charEnd="24455"/>
+  <entities type="Drug" id="glimepiride" mention="Glimepiride" confidence="0.98" sourceSpanStart="31" sourceSpanEnd="42">
+    <properties key="name" value="glimepiride"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylurea" confidence="0.95" sourceSpanStart="115" sourceSpanEnd="127">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.97" sourceSpanStart="368" sourceSpanEnd="392">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus" confidence="0.96" sourceSpanStart="504" sourceSpanEnd="528">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.96" sourceSpanStart="532" sourceSpanEnd="553">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="hypersensitivity reaction" confidence="0.9" sourceSpanStart="971" sourceSpanEnd="996">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="allergic-reaction-to-sulfonamide-derivatives" mention="allergic reaction to sulfonamide derivatives" confidence="0.92" sourceSpanStart="1144" sourceSpanEnd="1188">
+    <properties key="name" value="allergic reaction to sulfonamide derivatives"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.98" sourceSpanStart="1904" sourceSpanEnd="1915" chunkIndex="2">
+    <properties key="name" value="glimepiride"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.99" sourceSpanStart="2474" sourceSpanEnd="2486" chunkIndex="2">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.95" sourceSpanStart="4077" sourceSpanEnd="4088" chunkIndex="2">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immunologic"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="angioedema" confidence="0.95" sourceSpanStart="4090" sourceSpanEnd="4100" chunkIndex="2">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immunologic"/>
+  </entities>
+  <entities type="Condition" id="stevens-johnson-syndrome" mention="Stevens-Johnson Syndrome" confidence="0.95" sourceSpanStart="4106" sourceSpanEnd="4130" chunkIndex="2">
+    <properties key="name" value="stevens-johnson syndrome"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="Hemolytic Anemia" confidence="0.95" sourceSpanStart="4348" sourceSpanEnd="4364" chunkIndex="2">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="glucose-6-phosphate-dehydrogenase-deficiency" mention="glucose 6-phosphate dehydrogenase (G6PD) deficient" confidence="0.95" sourceSpanStart="2058" sourceSpanEnd="2108" chunkIndex="2">
+    <properties key="name" value="glucose 6-phosphate dehydrogenase deficiency"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylureas" confidence="0.95" sourceSpanStart="4365" sourceSpanEnd="4378" chunkIndex="2">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="tolbutamide" mention="tolbutamide" confidence="0.95" sourceSpanStart="5510" sourceSpanEnd="5521" chunkIndex="3">
+    <properties key="name" value="tolbutamide"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-mortality" mention="cardiovascular mortality" confidence="0.95" sourceSpanStart="5556" sourceSpanEnd="5580" chunkIndex="3">
+    <properties key="name" value="cardiovascular mortality"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.95" sourceSpanStart="6111" sourceSpanEnd="6122" chunkIndex="3">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylurea" confidence="0.9" sourceSpanStart="6190" sourceSpanEnd="6202" chunkIndex="3">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="tolbutamide" mention="tolbutamide" confidence="0.95" sourceSpanStart="6210" sourceSpanEnd="6221" chunkIndex="3">
+    <properties key="name" value="tolbutamide"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.98" sourceSpanStart="6953" sourceSpanEnd="6964" chunkIndex="5">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.98" sourceSpanStart="6970" sourceSpanEnd="6982" chunkIndex="5">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="Hemolytic anemia" confidence="0.98" sourceSpanStart="6839" sourceSpanEnd="6855" chunkIndex="5">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="dizziness" mention="dizziness" confidence="0.98" sourceSpanStart="6984" sourceSpanEnd="6993" chunkIndex="5">
+    <properties key="name" value="dizziness"/>
+    <properties key="category" value="nervous system"/>
+  </entities>
+  <entities type="Condition" id="asthenia" mention="asthenia" confidence="0.98" sourceSpanStart="6995" sourceSpanEnd="7003" chunkIndex="5">
+    <properties key="name" value="asthenia"/>
+    <properties key="category" value="general"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.98" sourceSpanStart="7005" sourceSpanEnd="7013" chunkIndex="5">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="nervous system"/>
+  </entities>
+  <entities type="Condition" id="nausea" mention="nausea" confidence="0.98" sourceSpanStart="7019" sourceSpanEnd="7025" chunkIndex="5">
+    <properties key="name" value="nausea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="accidental-injury" mention="Accidental Injury" confidence="0.95" sourceSpanStart="8589" sourceSpanEnd="8606" chunkIndex="5">
+    <properties key="name" value="accidental injury"/>
+    <properties key="category" value="injury"/>
+  </entities>
+  <entities type="Condition" id="flu-syndrome" mention="Flu Syndrome" confidence="0.95" sourceSpanStart="8731" sourceSpanEnd="8743" chunkIndex="5">
+    <properties key="name" value="flu syndrome"/>
+    <properties key="category" value="infections"/>
+  </entities>
+  <entities type="Condition" id="weight-gain" mention="weight gain" confidence="0.98" sourceSpanStart="10138" sourceSpanEnd="10149" chunkIndex="5">
+    <properties key="name" value="weight gain"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.98" sourceSpanStart="10172" sourceSpanEnd="10185" chunkIndex="5">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="pruritus" mention="pruritus" confidence="0.95" sourceSpanStart="10308" sourceSpanEnd="10316" chunkIndex="5">
+    <properties key="name" value="pruritus"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="erythema" mention="erythema" confidence="0.95" sourceSpanStart="10318" sourceSpanEnd="10326" chunkIndex="5">
+    <properties key="name" value="erythema"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="urticaria" mention="urticaria" confidence="0.95" sourceSpanStart="10328" sourceSpanEnd="10337" chunkIndex="5">
+    <properties key="name" value="urticaria"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="morbilliform-or-maculopapular-eruptions" mention="morbilliform or maculopapular eruptions" confidence="0.95" sourceSpanStart="10343" sourceSpanEnd="10382" chunkIndex="5">
+    <properties key="name" value="morbilliform or maculopapular eruptions"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="dyspnea" mention="dyspnea" confidence="0.95" sourceSpanStart="10580" sourceSpanEnd="10587" chunkIndex="5">
+    <properties key="name" value="dyspnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.95" sourceSpanStart="10589" sourceSpanEnd="10600" chunkIndex="5">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="shock" mention="shock" confidence="0.95" sourceSpanStart="10602" sourceSpanEnd="10607" chunkIndex="5">
+    <properties key="name" value="shock"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.99" sourceSpanStart="12279" sourceSpanEnd="12290" chunkIndex="8">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="Drug" id="miconazole" mention="miconazole" confidence="0.99" sourceSpanStart="12362" sourceSpanEnd="12372" chunkIndex="8">
+    <properties key="name" value="miconazole"/>
+  </entities>
+  <entities type="Drug" id="colesevelam" mention="Colesevelam" confidence="0.99" sourceSpanStart="12638" sourceSpanEnd="12649" chunkIndex="8">
+    <properties key="name" value="colesevelam"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.95" sourceSpanStart="13105" sourceSpanEnd="13118" chunkIndex="8">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="pramlintide-acetate" mention="pramlintide acetate" confidence="0.98" sourceSpanStart="13241" sourceSpanEnd="13260" chunkIndex="8">
+    <properties key="name" value="pramlintide acetate"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.98" sourceSpanStart="13262" sourceSpanEnd="13269" chunkIndex="8">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="fluconazole" mention="fluconazole" confidence="0.98" sourceSpanStart="13486" sourceSpanEnd="13497" chunkIndex="8">
+    <properties key="name" value="fluconazole"/>
+  </entities>
+  <entities type="Drug" id="rifampin" mention="rifampin" confidence="0.98" sourceSpanStart="14356" sourceSpanEnd="14364" chunkIndex="8">
+    <properties key="name" value="rifampin"/>
+  </entities>
+  <entities type="Condition" id="severe-hypoglycemia" mention="Severe hypoglycemia" confidence="0.98" sourceSpanStart="15348" sourceSpanEnd="15367" chunkIndex="8">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="15355" sourceSpanEnd="15367" chunkIndex="8">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="worsening-glycemic-control" mention="worsening glycemic control" confidence="0.98" sourceSpanStart="15916" sourceSpanEnd="15942" chunkIndex="8">
+    <properties key="name" value="worsening glycemic control"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.98" sourceSpanStart="16068" sourceSpanEnd="16079" chunkIndex="9">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="Drug" id="colesevelam" mention="Colesevelam" confidence="0.98" sourceSpanStart="16198" sourceSpanEnd="16209" chunkIndex="9">
+    <properties key="name" value="colesevelam"/>
+  </entities>
+  <entities type="Drug" id="colesevelam" mention="Colesevelam" confidence="0.98" sourceSpanStart="16198" sourceSpanEnd="16209" chunkIndex="9">
+    <properties key="name" value="colesevelam"/>
+  </entities>
+  <entities type="Condition" id="worsening-glycemic-control" mention="worsening glycemic control" confidence="0.9" sourceSpanStart="15916" sourceSpanEnd="15942" chunkIndex="9">
+    <properties key="name" value="worsening glycemic control"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.98" sourceSpanStart="16533" sourceSpanEnd="16544" chunkIndex="11">
+    <properties key="name" value="glimepiride"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.95" sourceSpanStart="16908" sourceSpanEnd="16921" chunkIndex="11">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="17030" sourceSpanEnd="17042" chunkIndex="11">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="neonatal-hypoglycemia" mention="hypoglycemia" confidence="0.9" sourceSpanStart="17030" sourceSpanEnd="17042" chunkIndex="11">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="poorly-controlled-diabetes" mention="Poorly controlled diabetes" confidence="0.9" sourceSpanStart="17173" sourceSpanEnd="17199" chunkIndex="11">
+    <properties key="name" value="poorly controlled diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.99" sourceSpanStart="20149" sourceSpanEnd="20160" chunkIndex="12">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.99" sourceSpanStart="20649" sourceSpanEnd="20661" chunkIndex="12">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="21347" sourceSpanEnd="21362" chunkIndex="12">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.99" sourceSpanStart="22113" sourceSpanEnd="22122" chunkIndex="12">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="23233" sourceSpanEnd="23249" chunkIndex="12">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-and-renal-impairment" mention="type 2 diabetes and renal impairment" confidence="0.95" sourceSpanStart="23661" sourceSpanEnd="23697" chunkIndex="12">
+    <properties key="name" value="type 2 diabetes and renal impairment"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="23839" sourceSpanEnd="23854" chunkIndex="13">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="23859" sourceSpanEnd="23875" chunkIndex="13">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="0.98" sourceSpanStart="24017" sourceSpanEnd="24028" chunkIndex="13">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glimepiride" targetType="DrugClass" targetId="sulfonylureas" confidence="0.95" evidence="Pharmacologic class: Sulfonylurea [EPC]" sourceSpanStart="94" sourceSpanEnd="133"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.97" evidence="Glimepiride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus" sourceSpanStart="256" sourceSpanEnd="392"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hypersensitivity" confidence="0.95" evidence="Glimepiride tablets are contraindicated in patients with a history of a hypersensitivity reaction to: Glimepiride or any of the product’s ingredients" sourceSpanStart="899" sourceSpanEnd="1048"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="allergic-reaction-to-sulfonamide-derivatives" confidence="0.95" evidence="Do not use glimepiride in patients who have a history of an allergic reaction to sulfonamide derivatives." sourceSpanStart="1238" sourceSpanEnd="1343"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hypoglycemia" confidence="0.98" evidence="All sulfonylureas, including glimepiride, can cause severe hypoglycemia [see Adverse Reactions (6.1) ]." sourceSpanStart="2487" sourceSpanEnd="2590" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="anaphylaxis" confidence="0.9" evidence="There have been postmarketing reports of hypersensitivity reactions in patients treated with glimepiride, including serious reactions such as anaphylaxis, angioedema, and Stevens-Johnson Syndrome [see Adverse Reactions (6.2) ]." sourceSpanStart="3935" sourceSpanEnd="4162" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="angioedema" confidence="0.9" evidence="There have been postmarketing reports of hypersensitivity reactions in patients treated with glimepiride, including serious reactions such as anaphylaxis, angioedema, and Stevens-Johnson Syndrome [see Adverse Reactions (6.2) ]." sourceSpanStart="3935" sourceSpanEnd="4162" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="stevens-johnson-syndrome" confidence="0.9" evidence="There have been postmarketing reports of hypersensitivity reactions in patients treated with glimepiride, including serious reactions such as anaphylaxis, angioedema, and Stevens-Johnson Syndrome [see Adverse Reactions (6.2) ]." sourceSpanStart="3935" sourceSpanEnd="4162" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hemolytic-anemia" confidence="0.9" evidence="There are also postmarketing reports of hemolytic anemia in patients receiving glimepiride who did not have known G6PD deficiency [see Adverse Reactions (6.2) ]." sourceSpanStart="4625" sourceSpanEnd="4786" chunkIndex="2"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glimepiride" targetType="DrugClass" targetId="sulfonylureas" confidence="0.98" evidence="Because glimepiride tablets are a sulfonylurea, use caution in patients with G6PD deficiency and consider the use of a non-sulfonylurea alternative." sourceSpanStart="4476" sourceSpanEnd="4624" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="tolbutamide" targetType="Condition" targetId="cardiovascular-mortality" confidence="0.9" evidence="UGDP reported that patients treated for 5 to 8 years with diet plus a fixed dose of tolbutamide (1.5 grams per day) had a rate of cardiovascular mortality approximately 2 and a half times that of patients treated with diet alone." sourceSpanStart="5426" sourceSpanEnd="5655" chunkIndex="3"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="tolbutamide" targetType="DrugClass" targetId="sulfonylureas" confidence="0.9" evidence="Although only one drug in the sulfonylurea class (tolbutamide) was included in this study, it is prudent from a safety standpoint to consider that this warning may also apply to other oral hypoglycemic drugs in this class, in view of their close similarities in mode of action and chemical structure." sourceSpanStart="6160" sourceSpanEnd="6460" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hypoglycemia" confidence="0.98" evidence="In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea." sourceSpanStart="6894" sourceSpanEnd="7026" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="dizziness" confidence="0.98" evidence="In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea." sourceSpanStart="6894" sourceSpanEnd="7026" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="asthenia" confidence="0.98" evidence="In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea." sourceSpanStart="6894" sourceSpanEnd="7026" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="headache" confidence="0.98" evidence="In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea." sourceSpanStart="6894" sourceSpanEnd="7026" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="nausea" confidence="0.98" evidence="In clinical trials, the most common adverse reactions with glimepiride were hypoglycemia, dizziness, asthenia, headache, and nausea." sourceSpanStart="6894" sourceSpanEnd="7026" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hemolytic-anemia" confidence="0.95" evidence="Hemolytic anemia [see Warnings and Precautions (5.3) ]" sourceSpanStart="6839" sourceSpanEnd="6893" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="weight-gain" confidence="0.98" evidence="Glimepiride, like all sulfonylureas, can cause weight gain [see Clinical Studies (14.1) ]." sourceSpanStart="10150" sourceSpanEnd="10240" chunkIndex="5"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glimepiride" targetType="Drug" targetId="miconazole" confidence="0.98" evidence="Severe hypoglycemia can occur when glimepiride and oral miconazole are used concomitantly." sourceSpanStart="12374" sourceSpanEnd="12464" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glimepiride" targetType="Drug" targetId="colesevelam" confidence="0.95" evidence="Coadministration may reduce glimepiride absorption." sourceSpanStart="12651" sourceSpanEnd="12702" chunkIndex="8"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glimepiride" targetType="DrugClass" targetId="sulfonylureas" confidence="0.95" evidence="The following are examples of medications that may increase the glucose-lowering effect of sulfonylureas including glimepiride" sourceSpanStart="13014" sourceSpanEnd="13140" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glimepiride" targetType="Drug" targetId="fluconazole" confidence="0.98" evidence="Fluconazole may inhibit the metabolism of glimepiride, causing increased plasma concentrations of glimepiride which may lead to hypoglycemia." sourceSpanStart="15650" sourceSpanEnd="15791" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glimepiride" targetType="Drug" targetId="rifampin" confidence="0.98" evidence="Rifampin may induce the metabolism of glimepiride, causing decreased plasma concentrations of glimepiride which may lead to worsening glycemic control." sourceSpanStart="15792" sourceSpanEnd="15943" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glimepiride" targetType="Drug" targetId="colesevelam" confidence="0.95" evidence="Colesevelam can reduce the maximum plasma concentration and total exposure of glimepiride when the two are coadministered." sourceSpanStart="15990" sourceSpanEnd="16112" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Pediatric Patients: Not recommended because of adverse effects on body weight and hypoglycemia ( 8.4 )." sourceSpanStart="16359" sourceSpanEnd="16462" chunkIndex="11"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="neonatal-hypoglycemia" confidence="0.9" evidence="However, sulfonylureas (including glimepiride) cross the placenta and have been associated with neonatal adverse reactions such as hypoglycemia." sourceSpanStart="16899" sourceSpanEnd="17043" chunkIndex="11"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glimepiride" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Glimepiride tablets are not recommended in pediatric patients because of its adverse effects on body weight and hypoglycemia." sourceSpanStart="21383" sourceSpanEnd="21508" chunkIndex="12"/>
+</raw:RawExtractionResult>

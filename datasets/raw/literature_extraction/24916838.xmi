@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/24916838.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24916838/" sourceSha256="c7978e7019a3afdbb4cc58a6b69c77491bfb59e1332cdf511b6274bf4636e9ec" sourceText="# PubMed 24916838: A comparison of continuous intravenous insulin and subcutaneous insulin among patients with type 2 diabetes and congestive heart failure exacerbation.&#10;&#10;Diabetes/metabolism research and reviews (2015), doi:10.1002/dmrr.2569&#10;&#10;BACKGROUND: The study aims to determine whether the route of insulin administration influences glycaemic variability and inflammatory or neurohormonal markers in patients with type 2 diabetes and congestive heart failure (CHF) exacerbation.&#10;&#10;METHODS: Patients (n = 65) were randomized to intravenous (IV) insulin (duration 48 h) or subcutaneous (SQ) insulin. Inflammatory cytokines and markers of lipid oxidation, high-frequency heart rate variability (n = 27) and cardiac impedance (pre-ejection period, n = 28) were used to estimate parasympathetic and sympathetic tone in patients with valid cardiac data. Glycaemic variability was measured using a continuous glucose monitor.&#10;&#10;RESULTS: Mean glucose was lower (7.7 ± 1.2 vs 9.4 ± 2.7 mmol/L, p = 0.004), coefficient of variation was higher (p = 0.03) and glycaemic lability index was similar on day 1 in the IV group compared with the SQ group, but groups were similar by day 2. The IV group had more confirmed hypoglycaemia (p = 0.005). There were no differences in hospital readmission or hospital length of stay between groups. There were no differences in CHF biomarkers, heart rate variability or pre-ejection period between groups. Increasing log glycaemic lability index was associated with lower on-treatment pre-ejection period (p = 0.03) while increasing coefficient of variation was associated with increasing brain natriuretic peptide (p = 0.004) and paroxonase-1 (p = 0.02). Other univariable analyses were not significant.&#10;&#10;CONCLUSIONS: There were modest, transient differences in glucose control between IV and SQ insulin in hospitalized CHF patients. However, the analyses do not support a link between insulin route and inflammatory markers or autonomic tone. Further study is needed to assess outcomes in hospitalized CHF patients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:10+00:00" xmi:version="2.0">
+  <chunks charEnd="2046"/>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="58" sourceSpanEnd="65">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="111" sourceSpanEnd="126">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure-exacerbation" mention="congestive heart failure (CHF) exacerbation" confidence="0.95" sourceSpanStart="439" sourceSpanEnd="482">
+    <properties key="name" value="congestive heart failure exacerbation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypoglycaemia" mention="hypoglycaemia" confidence="0.95" sourceSpanStart="1207" sourceSpanEnd="1220">
+    <properties key="name" value="hypoglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmission" confidence="0.95" sourceSpanStart="1263" sourceSpanEnd="1283">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+</raw:RawExtractionResult>

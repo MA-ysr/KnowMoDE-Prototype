@@ -1,0 +1,7 @@
+{
+  "id": "M01_concept_without_property",
+  "family": "C1",
+  "expectedConstraint": "C1_ConceptHasProperty",
+  "mutatedFile": "kg-schema.xmi",
+  "description": "DrugClass loses its only property"
+}

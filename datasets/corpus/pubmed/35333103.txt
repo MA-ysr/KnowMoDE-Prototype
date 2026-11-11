@@ -1,0 +1,11 @@
+# PubMed 35333103: Geriatric Trauma Patients: Outcomes Before and After Addition of a Hospitalist Consultation.
+
+The American surgeon (2023), doi:10.1177/00031348221075771
+
+BACKGROUND: Research has shown improvements in patient care and outcomes with addition of a rounding geriatrician. The purpose of this study was to determine if addition of a hospitalist consultation improved patient outcomes.
+
+METHODS: A retrospective review was conducted of all trauma patients, ≥65 years, before (n=481) and after (n=430) addition of a hospitalist consultant. Data included were demographics, comorbidities, injury severity, blood pressure, laboratory levels, pain control methods, ICU and ventilator requirements, complications, hospital length of stay, mortality, preexisting wishes, and 30-day readmission.
+
+RESULTS: Adding a hospitalist consultation did not improve blood glucose or blood pressure control. It decreased narcotics-only use (36.0% vs 73.8%) while increasing multimodal pain control use (51.8% vs 14.8%, P<.001) and testing of HbA1c (7% vs .6%, P<.001). There was also increased knowledge of patient resuscitation status preferences (29.1% vs 12.9%, P<.001).
+
+CONCLUSIONS: This article does not support use of routine hospitalist consultation in the geriatric trauma population. However, with study limitations, we continue to evaluate hospitalist utility and will adjust our daily rounds to more closely match prior studies.

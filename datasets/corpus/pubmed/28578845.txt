@@ -1,0 +1,11 @@
+# PubMed 28578845: How Do Preoperative Medications Influence Outcomes After Total Joint Arthroplasty?
+
+The Journal of arthroplasty (2017), doi:10.1016/j.arth.2017.04.031
+
+BACKGROUND: Recent health care policy changes require hospitals and physicians to demonstrate improved quality. In 2012, a prospective database was formed with the Blue Cross and Blue Shield of Michigan to improve quality of care. The purpose of this study was to analyze patient preoperative medication as predictors of outcomes after total joint arthroplasty.
+
+METHODS: Data were collected on patient's preoperative medications from 2012 to 2015 using a total joint arthroplasty database. Medications were categorized as antiplatelet, antimicrobial, anticoagulant, narcotic, steroid, insulin, or oral diabetes medication. Outcomes included hospital length of stay (LOS), discharge disposition/destination, and 90-day readmission. Univariate and multivariate regression analyses were performed.
+
+RESULTS: A total of 3959 patients were studied. Eighty percent (3163 patients) were discharged home. The remainder (795) went to an extended-care facility (ECF). Patients discharged to an ECF were taking more medications (1.13 vs 0.80 in total knee arthroplasty; 1.18 vs 0.83 in total hip arthroplasty; P <.001). Patients who were readmitted took more medications (1.0 vs 0.85; P <.01). There were more discharges to an ECF in narcotic, steroid, and diabetes medication users. Patients taking anticoagulants, narcotics, insulin, and antiplatelets had greater readmission rates. There was a significant correlation between the number of medications and an increased LOS.
+
+CONCLUSION: Patients taking more medications were more frequently discharged to an ECF and had increased LOS and readmission rates. Narcotics and diabetic medications had the greatest influence. Category and quantity of preoperative medications can be used as predictors of outcomes after arthroplasty surgery.

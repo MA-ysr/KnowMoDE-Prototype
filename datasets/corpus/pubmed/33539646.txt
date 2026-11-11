@@ -1,0 +1,11 @@
+# PubMed 33539646: Risk factors for readmission with dehydration after ileostomy formation: A systematic review and meta-analysis.
+
+Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland (2021), doi:10.1111/codi.15566
+
+AIM: Ileostomy formation is a commonly performed procedure with substantial associated morbidity. Patients with an ileostomy experience high rates of unplanned hospital readmission with dehydration, and such events have a long-term health and economic impact. Reports of the significant risk factors associated with these readmissions have been inconsistent. This study aimed to identify the significant risk factors for readmission with dehydration following ileostomy formation.
+
+METHOD: A systematic search was conducted using the Medline, Embase, Cochrane and CINAHL databases. All original research articles reporting risk factors for readmission with dehydration following ileostomy formation in adults were included. The primary outcome was the pooled risk ratio of clinically relevant variables potentially associated with dehydration-related readmission following ileostomy formation. The secondary outcome was the incidence of dehydration-related readmission.
+
+RESULTS: Ten studies (27 089 patients) were included. The incidences of 30- and 60-day readmission with dehydration were 5.0% (range 2.1%-13.2%) and 10.3% (range 7.3%-14.1%), respectively. Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission. A preoperative diagnosis of colorectal cancer was less likely to result in readmission with dehydration.
+
+CONCLUSION: Readmission with dehydration following ileostomy formation is a significant issue with several risk factors. Awareness of these risk factors will help inform the design of future studies addressing risk prediction, allow risk stratification of ileostomates and aid in the development of personalized prevention strategies.

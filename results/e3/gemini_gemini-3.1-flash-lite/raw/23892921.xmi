@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/23892921" sourceUri="https://pubmed.ncbi.nlm.nih.gov/23892921/" sourceSha256="4b97cdb1dad16abe9d44d1023dc77f8d9feb3e717ed641320a60a0ba978c0cd7" sourceText="&quot;Real-world&quot; data on the efficacy and safety of lenalidomide and dexamethasone in patients with relapsed/refractory multiple myeloma who were treated according to the standard clinical practice: a study of the Greek Myeloma Study Group. Lenalidomide and dexamethasone (RD) is a standard of care for relapsed/refractory multiple myeloma (RRMM), but there is limited published data on its efficacy and safety in the &quot;real world&quot; (RW), according to the International Society of Pharmacoeconomics and Outcomes Research definition. We studied 212 RRMM patients who received RD in RW. Objective response (&gt;PR (partial response)) rate was 77.4 % (complete response (CR), 20.2 %). Median time to first and best response was 2 and 5 months, respectively. Median time to CR when RD was given as 2nd or &gt;2(nd)-line treatment at 4 and 11 months, respectively. Quality of response was independent of previous lines of therapies or previous exposure to thalidomide or bortezomib. Median duration of response was 34.4 months, and it was higher in patients who received RD until progression (not reached versus 19 months, p &lt; 0.001). Improvement of humoral immunity occurred in 60 % of responders (p &lt; 0.001) and in the majority of patients who achieved stable disease. Adverse events were reported in 68.9 % of patients (myelosuppression in 49.4 %) and 12.7 % of patients needed hospitalization. Peripheral neuropathy was observed only in 2.5 % of patients and deep vein thrombosis in 5.7 %. Dose reductions were needed in 31 % of patients and permanent discontinuation in 38.9 %. Median time to treatment discontinuation was 16.8 months. Performance status (PS) and initial lenalidomide dose predicted for treatment discontinuation. Extra-medullary relapses occurred in 3.8 % of patients. Our study confirms that RD is effective and safe in RRMM in the RW; it produces durable responses especially in patients who continue on treatment till progression and improves humoral immunity even in patients with stable disease." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:55:11+00:00" xmi:version="2.0">
+  <chunks charEnd="2006"/>
+  <entities type="Drug" id="lenalidomide" mention="lenalidomide" confidence="1.0" sourceSpanStart="48" sourceSpanEnd="60">
+    <properties key="name" value="lenalidomide"/>
+  </entities>
+  <entities type="Drug" id="dexamethasone" mention="dexamethasone" confidence="1.0" sourceSpanStart="65" sourceSpanEnd="78">
+    <properties key="name" value="dexamethasone"/>
+  </entities>
+  <entities type="Condition" id="relapsed-refractory-multiple-myeloma" mention="relapsed/refractory multiple myeloma" confidence="1.0" sourceSpanStart="96" sourceSpanEnd="132">
+    <properties key="name" value="relapsed/refractory multiple myeloma"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+  <entities type="Condition" id="myelosuppression" mention="myelosuppression" confidence="0.95" sourceSpanStart="1306" sourceSpanEnd="1322">
+    <properties key="name" value="myelosuppression"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-neuropathy" mention="Peripheral neuropathy" confidence="0.95" sourceSpanStart="1381" sourceSpanEnd="1402">
+    <properties key="name" value="peripheral neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="deep-vein-thrombosis" mention="deep vein thrombosis" confidence="0.95" sourceSpanStart="1446" sourceSpanEnd="1466">
+    <properties key="name" value="deep vein thrombosis"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="lenalidomide" targetType="Condition" targetId="relapsed-refractory-multiple-myeloma" confidence="0.95" evidence="Lenalidomide and dexamethasone (RD) is a standard of care for relapsed/refractory multiple myeloma (RRMM)" sourceSpanStart="237" sourceSpanEnd="342"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="dexamethasone" targetType="Condition" targetId="relapsed-refractory-multiple-myeloma" confidence="0.95" evidence="Lenalidomide and dexamethasone (RD) is a standard of care for relapsed/refractory multiple myeloma (RRMM)" sourceSpanStart="237" sourceSpanEnd="342"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lenalidomide" targetType="Condition" targetId="myelosuppression" confidence="0.8" evidence="Adverse events were reported in 68.9 % of patients (myelosuppression in 49.4 %)" sourceSpanStart="1254" sourceSpanEnd="1333"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="dexamethasone" targetType="Condition" targetId="myelosuppression" confidence="0.8" evidence="Adverse events were reported in 68.9 % of patients (myelosuppression in 49.4 %)" sourceSpanStart="1254" sourceSpanEnd="1333"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lenalidomide" targetType="Condition" targetId="peripheral-neuropathy" confidence="0.8" evidence="Peripheral neuropathy was observed only in 2.5 % of patients" sourceSpanStart="1381" sourceSpanEnd="1441"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="dexamethasone" targetType="Condition" targetId="peripheral-neuropathy" confidence="0.8" evidence="Peripheral neuropathy was observed only in 2.5 % of patients" sourceSpanStart="1381" sourceSpanEnd="1441"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lenalidomide" targetType="Condition" targetId="deep-vein-thrombosis" confidence="0.8" evidence="Peripheral neuropathy was observed only in 2.5 % of patients and deep vein thrombosis in 5.7 %." sourceSpanStart="1381" sourceSpanEnd="1476"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="dexamethasone" targetType="Condition" targetId="deep-vein-thrombosis" confidence="0.8" evidence="Peripheral neuropathy was observed only in 2.5 % of patients and deep vein thrombosis in 5.7 %." sourceSpanStart="1381" sourceSpanEnd="1476"/>
+</raw:RawExtractionResult>

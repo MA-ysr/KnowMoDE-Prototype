@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/35007641.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/35007641/" sourceSha256="42412b29d096e00782293086b6ea278f6e2047c5e2654906a7e51647c605a156" sourceText="# PubMed 35007641: Prognostic Value of Insulin Resistance Assessed by HOMA-IR in Non-Diabetic Patients with Decompensated Heart Failure.&#10;&#10;Current problems in cardiology (2023), doi:10.1016/j.cpcardiol.2022.101112&#10;&#10;The predictive value of insulin resistance in patients hospitalized with heart failure is unknown. To evaluate prognostic value of insulin resistance (defined by a HOMA IR ≥ 2.5) for the combined event of death and readmission at 90 and 365 days post discharge and to determine if there are differences according to ejection fraction. Prospective study of 156 p hospitalized for acute heart failure without diabetes. A total of 83 years, 48% female, EF ≤ 45% 48%. Of 28% presented HOMA ≥2.5. HOMA IR ≥2.5 was associated with combined event (OR 2.4; 95% CI 1.9-5.1; P: 0.02) at 90 days. A multivariate analysis demonstrated its independent predictive value (OR 2.5, 95% CI 1.1-5.8; P: 0.03). At 1 year follow-up HOMA IR did not predict events. The predictive value of HOMA-IR was not associated with ventricular function. HOMA IR index was a predictor of a combined event at 90 days in our population. It is a simple determination that could contribute to identify higher risk patients during this vulnerable post-discharge phase. These data must be validated in larger studies.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:44:40+00:00" xmi:version="2.0">
+  <chunks charEnd="1292"/>
+  <entities type="LabTest" id="homa-ir-2-5" mention="HOMA IR ≥ 2.5" confidence="0.95" sourceSpanStart="378" sourceSpanEnd="391">
+    <properties key="name" value="HOMA IR ≥ 2.5"/>
+    <properties key="abnormalThreshold" value="≥ 2.5"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="combined-event-of-death-and-readmission-at-90-days" mention="combined event of death and readmission at 90 and 365 days post discharge" confidence="0.9" sourceSpanStart="401" sourceSpanEnd="474">
+    <properties key="name" value="combined event of death and readmission"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="RiskFactor" id="homa-ir-≥2-5" mention="HOMA ≥2.5" confidence="0.95" sourceSpanStart="695" sourceSpanEnd="704">
+    <properties key="name" value="homa-ir &gt;= 2.5"/>
+    <properties key="description" value="HOMA-IR index greater than or equal to 2.5"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="combined-event-at-90-days" mention="combined event" confidence="0.95" sourceSpanStart="739" sourceSpanEnd="753">
+    <properties key="name" value="combined event of death and readmission"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="homa-ir-≥2-5" targetType="ClinicalOutcome" targetId="combined-event-at-90-days" confidence="0.92" evidence="HOMA IR ≥2.5 was associated with combined event (OR 2.4; 95% CI 1.9-5.1; P: 0.02) at 90 days." sourceSpanStart="706" sourceSpanEnd="799"/>
+</raw:RawExtractionResult>

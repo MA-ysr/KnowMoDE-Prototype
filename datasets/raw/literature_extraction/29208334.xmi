@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29208334.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29208334/" sourceSha256="7aedee50522b11e3a3cb93bba6c23d70066263459ff451200966a236f74524fd" sourceText="# PubMed 29208334: Factors influencing recurrent emergency department visits for epistaxis in the elderly.&#10;&#10;Auris, nasus, larynx (2018), doi:10.1016/j.anl.2017.11.010&#10;&#10;OBJECTIVE: Our objective is to determine the risk factors associated with recurrent epistaxis requiring emergency department (ED) visits in the elderly.&#10;&#10;METHODS: We used a 5% national sample of Medicare data from January 2012 through December 2013. Our cohort included patients with a new diagnosis of epistaxis in the ED, defined as no epistaxis in the prior 12 months. We assessed the rates of ED visits for recurrent epistaxis in the 12 months following the incident visit. Our variables included demographics, geographic location, procedures performed during the incident visit and comorbidities.&#10;&#10;RESULTS: Out of the 4120 patients with incident epistaxis, 775 were readmitted with recurrent epistaxis within 12 months. 60% presented in the first 30days and 75% within 90 days. There was a significant increase in ED visits for patients over 75 years of age and in men compared to women. Recurrent ED visits for epistaxis was higher in patients with congestive heart failure, diabetes mellitus, and obstructive sleep apnea compared to those without these comorbidities.&#10;&#10;CONCLUSION: Additional ED visits for epistaxis are more common in the elderly and in males. Congestive heart failure, diabetes mellitus and obstructive sleep apnea were found to be independent risk factors.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:32:08+00:00" xmi:version="2.0">
+  <chunks charEnd="1451"/>
+  <entities type="ClinicalOutcome" id="recurrent-emergency-department-visits-for-epistaxis-within-12-months" mention="recurrent ED visits for epistaxis" confidence="0.95" sourceSpanStart="1061" sourceSpanEnd="1094">
+    <properties key="name" value="recurrent emergency department visits for epistaxis"/>
+    <properties key="timeWindow" value="12 months"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1123" sourceSpanEnd="1147">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1149" sourceSpanEnd="1166">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="obstructive-sleep-apnea" mention="obstructive sleep apnea" confidence="0.95" sourceSpanStart="1172" sourceSpanEnd="1195">
+    <properties key="name" value="obstructive sleep apnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="congestive-heart-failure" targetType="ClinicalOutcome" targetId="recurrent-emergency-department-visits-for-epistaxis-within-12-months" confidence="0.9" evidence="Recurrent ED visits for epistaxis was higher in patients with congestive heart failure, diabetes mellitus, and obstructive sleep apnea compared to those without these comorbidities." sourceSpanStart="1061" sourceSpanEnd="1242"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="recurrent-emergency-department-visits-for-epistaxis-within-12-months" confidence="0.9" evidence="Recurrent ED visits for epistaxis was higher in patients with congestive heart failure, diabetes mellitus, and obstructive sleep apnea compared to those without these comorbidities." sourceSpanStart="1061" sourceSpanEnd="1242"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="obstructive-sleep-apnea" targetType="ClinicalOutcome" targetId="recurrent-emergency-department-visits-for-epistaxis-within-12-months" confidence="0.9" evidence="Recurrent ED visits for epistaxis was higher in patients with congestive heart failure, diabetes mellitus, and obstructive sleep apnea compared to those without these comorbidities." sourceSpanStart="1061" sourceSpanEnd="1242"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 24467719: Polypharmacy and health outcomes among older adults discharged from hospital: results from the CRIME study.
+
+Geriatrics & gerontology international (2015), doi:10.1111/ggi.12241
+
+AIM: To investigate if older adults using multiple drugs have an increased risk of rehospitalization and mortality after hospital discharge.
+
+METHODS: This was a prospective cohort study carried out in acute care hospitals. The primary outcomes of the study were rehospitalization and mortality within 1 year after discharge from acute care hospitals. The study population was categorized in two groups according to the number of drugs prescribed at hospital discharge: no polypharmacy (<8 drugs) and polypharmacy (≥8 drugs).
+
+RESULTS: The mean age of 480 participants was 78.6±6.8 years ,and half of them (n=238; 49.6%) were using multiple drugs (≥8 drugs). Overall, 65 out of 242 participants (26.9%) in the no polypharmacy group and 92/238 (39.1%) in the polypharmacy group were rehospitalized (P=0.004), and 15 out of 242 (6.2%) in the no polypharmacy and 23 out of 238 (9.7%) in the polypharmacy group died during the 1 year follow up (P=0.16). After adjusting for potential confounders, participants in the polypharmacy group had an increased risk of 1-year rehospitalization as compared with those in the no polypharmacy group (RR=1.81, 95% CI=1.18-2.75). No significant association was observed between mortality and polypharmacy.
+
+CONCLUSIONS: Older persons using multiple drugs are at increased risk of rehospitalization. Further studies are required to assess the impact of programs aimed at reducing polypharmacy on health outcomes.

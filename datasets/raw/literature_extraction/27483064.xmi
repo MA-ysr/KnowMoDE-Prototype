@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/27483064.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/27483064/" sourceSha256="616c5ed9dab662057577c4bb252bba1c4225875459e68b76d194a69cd9962af0" sourceText="# PubMed 27483064: Effects of Liraglutide on Clinical Stability Among Patients With Advanced Heart Failure and Reduced Ejection Fraction: A Randomized Clinical Trial.&#10;&#10;JAMA (2016), doi:10.1001/jama.2016.10260&#10;&#10;IMPORTANCE: Abnormal cardiac metabolism contributes to the pathophysiology of advanced heart failure with reduced left ventricular ejection fraction (LVEF). Glucagon-like peptide 1 (GLP-1) agonists have shown cardioprotective effects in early clinical studies of patients with advanced heart failure, irrespective of type 2 diabetes status.&#10;&#10;OBJECTIVE: To test whether therapy with a GLP-1 agonist improves clinical stability following hospitalization for acute heart failure.&#10;&#10;DESIGN, SETTING, AND PARTICIPANTS: Phase 2, double-blind, placebo-controlled randomized clinical trial of patients with established heart failure and reduced LVEF who were recently hospitalized. Patients were enrolled between August 2013 and March 2015 at 24 US sites.&#10;&#10;INTERVENTIONS: The GLP-1 agonist liraglutide (n = 154) or placebo (n = 146) via a daily subcutaneous injection; study drug was advanced to a dosage of 1.8 mg/d during the first 30 days as tolerated and continued for 180 days.&#10;&#10;MAIN OUTCOMES AND MEASURES: The primary end point was a global rank score in which all patients, regardless of treatment assignment, were ranked across 3 hierarchical tiers: time to death, time to rehospitalization for heart failure, and time-averaged proportional change in N-terminal pro-B-type natriuretic peptide level from baseline to 180 days. Higher values indicate better health (stability). Exploratory secondary outcomes included primary end point components, cardiac structure and function, 6-minute walk distance, quality of life, and combined events.&#10;&#10;RESULTS: Among the 300 patients who were randomized (median age, 61 years [interquartile range {IQR}, 52-68 years]; 64 [21%] women; 178 [59%] with type 2 diabetes; median LVEF of 25% [IQR, 19%-33%]; median N-terminal pro-B-type natriuretic peptide level of 2049 pg/mL [IQR, 1054-4235 pg/mL]), 271 completed the study. Compared with placebo, liraglutide had no significant effect on the primary end point (mean rank of 146 for the liraglutide group vs 156 for the placebo group, P = .31). There were no significant between-group differences in the number of deaths (19 [12%] in the liraglutide group vs 16 [11%] in the placebo group; hazard ratio, 1.10 [95% CI, 0.57-2.14]; P = .78) or rehospitalizations for heart failure (63 [41%] vs 50 [34%], respectively; hazard ratio, 1.30 [95% CI, 0.89-1.88]; P = .17) or for the exploratory secondary end points. Prespecified subgroup analyses in patients with diabetes did not reveal any significant between-group differences. The number of investigator-reported hyperglycemic events was 16 (10%) in the liraglutide group vs 27 (18%) in the placebo group and hypoglycemic events were infrequent (2 [1%] vs 4 [3%], respectively).&#10;&#10;CONCLUSIONS AND RELEVANCE: Among patients recently hospitalized with heart failure and reduced LVEF, the use of liraglutide did not lead to greater posthospitalization clinical stability. These findings do not support the use of liraglutide in this clinical situation.&#10;&#10;TRIAL REGISTRATION: clinicaltrials.gov Identifier: NCT01800968.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:30:19+00:00" xmi:version="2.0">
+  <chunks charEnd="2919"/>
+  <chunks index="1" charStart="2921" charEnd="3255"/>
+  <entities type="Drug" id="liraglutide" mention="liraglutide" confidence="0.98" sourceSpanStart="30" sourceSpanEnd="41">
+    <properties key="name" value="liraglutide"/>
+    <properties key="drugClass" value="glucagon-like peptide 1 agonist"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="93" sourceSpanEnd="106">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="527" sourceSpanEnd="542">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemic-events" mention="hyperglycemic events" confidence="0.9" sourceSpanStart="2754" sourceSpanEnd="2774">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemic-events" mention="hypoglycemic events" confidence="0.9" sourceSpanStart="2850" sourceSpanEnd="2869">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="2990" sourceSpanEnd="3003" chunkIndex="1">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Drug" id="liraglutide" mention="liraglutide" confidence="0.95" sourceSpanStart="3033" sourceSpanEnd="3044" chunkIndex="1">
+    <properties key="name" value="liraglutide"/>
+    <properties key="drugClass" value="glp-1 receptor agonist"/>
+  </entities>
+</raw:RawExtractionResult>

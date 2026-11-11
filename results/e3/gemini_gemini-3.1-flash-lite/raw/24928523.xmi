@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/24928523" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24928523/" sourceSha256="87de134990372413f13477edde2ae1790f6671d3b28be0471b0e3f88d09b41c6" sourceText="Combination of bortezomib, thalidomide, and dexamethasone (VTD) as a consolidation therapy after autologous stem cell transplantation for symptomatic multiple myeloma in Japanese patients. Consolidation therapy for patients with multiple myeloma (MM) has been widely adopted to improve treatment response following autologous stem cell transplantation. In this study, we retrospectively analyzed the safety and efficacy of combination regimen of bortezomib, thalidomide, and dexamethasone (VTD) as consolidation therapy in 24 Japanese patients with newly diagnosed MM. VTD consisted of bortezomib at a dose of 1.3 mg/m(2) and dexamethasone at a dose of 40 mg/day on days 1, 8, 15, and 22 of a 35-day cycle, with daily oral thalidomide at a dose of 100 mg/day. Grade 3-4 neutropenia and thrombocytopenia were documented in four and three patients (17 and 13 %), respectively, but drug dose reduction due to cytopenia was not required in any case. Peripheral neuropathy was common (63 %), but severe grade 3-4 peripheral neuropathy was not observed. Very good partial response or better response (&gt;VGPR) rates before and after consolidation therapy were 54 and 79 %, respectively. Patients had a significant probability of improving from &lt;VGPR before consolidation therapy to &gt;VGPR after consolidation therapy (p = 0.041). The VTD regimen may be safe and effective as a consolidation therapy in the treatment of MM in Japanese population." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:41+00:00" xmi:version="2.0">
+  <chunks charEnd="1436"/>
+  <entities type="Drug" id="bortezomib" mention="bortezomib" confidence="1.0" sourceSpanStart="15" sourceSpanEnd="25">
+    <properties key="name" value="bortezomib"/>
+  </entities>
+  <entities type="Drug" id="thalidomide" mention="thalidomide" confidence="1.0" sourceSpanStart="27" sourceSpanEnd="38">
+    <properties key="name" value="thalidomide"/>
+  </entities>
+  <entities type="Drug" id="dexamethasone" mention="dexamethasone" confidence="1.0" sourceSpanStart="44" sourceSpanEnd="57">
+    <properties key="name" value="dexamethasone"/>
+  </entities>
+  <entities type="Condition" id="multiple-myeloma" mention="multiple myeloma" confidence="1.0" sourceSpanStart="150" sourceSpanEnd="166">
+    <properties key="name" value="multiple myeloma"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+  <entities type="Condition" id="neutropenia" mention="neutropenia" confidence="0.95" sourceSpanStart="770" sourceSpanEnd="781">
+    <properties key="name" value="neutropenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="thrombocytopenia" mention="thrombocytopenia" confidence="0.95" sourceSpanStart="786" sourceSpanEnd="802">
+    <properties key="name" value="thrombocytopenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-neuropathy" mention="Peripheral neuropathy" confidence="0.95" sourceSpanStart="946" sourceSpanEnd="967">
+    <properties key="name" value="peripheral neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="bortezomib" targetType="Condition" targetId="multiple-myeloma" confidence="0.9" evidence="Combination of bortezomib, thalidomide, and dexamethasone (VTD) as a consolidation therapy after autologous stem cell transplantation for symptomatic multiple myeloma in Japanese patients." sourceSpanStart="0" sourceSpanEnd="188"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="thalidomide" targetType="Condition" targetId="multiple-myeloma" confidence="0.9" evidence="Combination of bortezomib, thalidomide, and dexamethasone (VTD) as a consolidation therapy after autologous stem cell transplantation for symptomatic multiple myeloma in Japanese patients." sourceSpanStart="0" sourceSpanEnd="188"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="dexamethasone" targetType="Condition" targetId="multiple-myeloma" confidence="0.9" evidence="Combination of bortezomib, thalidomide, and dexamethasone (VTD) as a consolidation therapy after autologous stem cell transplantation for symptomatic multiple myeloma in Japanese patients." sourceSpanStart="0" sourceSpanEnd="188"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="bortezomib" targetType="Condition" targetId="neutropenia" confidence="0.8" evidence="Grade 3-4 neutropenia and thrombocytopenia were documented in four and three patients (17 and 13 %), respectively, but drug dose reduction due to cytopenia was not required in any case." sourceSpanStart="760" sourceSpanEnd="945"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="bortezomib" targetType="Condition" targetId="thrombocytopenia" confidence="0.8" evidence="Grade 3-4 neutropenia and thrombocytopenia were documented in four and three patients (17 and 13 %), respectively, but drug dose reduction due to cytopenia was not required in any case." sourceSpanStart="760" sourceSpanEnd="945"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="bortezomib" targetType="Condition" targetId="peripheral-neuropathy" confidence="0.8" evidence="Peripheral neuropathy was common (63 %), but severe grade 3-4 peripheral neuropathy was not observed." sourceSpanStart="946" sourceSpanEnd="1047"/>
+</raw:RawExtractionResult>

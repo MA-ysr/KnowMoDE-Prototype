@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/limb-loss.txt" sourceUri="https://medlineplus.gov/limbloss.html" sourceSha256="9c12fe2b060df6379a80baa40fd0f2e691d9d781fee17ad2256ec18e8b19e193" sourceText="# MedlinePlus health topic: Limb Loss&#10;&#10;Also called: Amputation, Phantom Limb&#10;&#10;People can lose all or part of an arm or leg for many reasons. Common ones include:&#10;&#10;Problems with the flow of blood through your body. These may be the result of atherosclerosis or diabetes. Severe cases may result in amputation (the surgical removal of a limb).&#10;&#10;Injuries, including from traffic accidents and military combat.&#10;&#10;Cancer.&#10;&#10;Birth defects.&#10;&#10;Some amputees have phantom pain, which is the feeling of pain in the missing limb. Other physical problems include surgical complications and skin problems if you wear an artificial limb. Many amputees use an artificial limb. Learning how to use it takes time. Physical therapy can help you adapt.&#10;&#10;Recovery from the loss of a limb can be hard. Sadness, anger, and frustration are common. If you are having a tough time, talk to your health care provider. Treatment with medicine or counseling can help.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:23:57+00:00" xmi:version="2.0">
+  <chunks charEnd="937"/>
+  <entities type="Condition" id="atherosclerosis" mention="atherosclerosis" confidence="0.95" sourceSpanStart="241" sourceSpanEnd="256">
+    <properties key="name" value="atherosclerosis"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="260" sourceSpanEnd="268">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="amputation" mention="amputation" confidence="0.95" sourceSpanStart="297" sourceSpanEnd="307">
+    <properties key="name" value="amputation"/>
+  </entities>
+  <entities type="Condition" id="cancer" mention="Cancer" confidence="0.95" sourceSpanStart="408" sourceSpanEnd="414">
+    <properties key="name" value="cancer"/>
+  </entities>
+  <entities type="Condition" id="birth-defects" mention="Birth defects" confidence="0.95" sourceSpanStart="417" sourceSpanEnd="430">
+    <properties key="name" value="birth defects"/>
+  </entities>
+  <entities type="Condition" id="phantom-pain" mention="phantom pain" confidence="0.95" sourceSpanStart="452" sourceSpanEnd="464">
+    <properties key="name" value="phantom pain"/>
+  </entities>
+  <entities type="Condition" id="surgical-complications" mention="surgical complications" confidence="0.95" sourceSpanStart="548" sourceSpanEnd="570">
+    <properties key="name" value="surgical complications"/>
+  </entities>
+  <entities type="Condition" id="skin-problems" mention="skin problems" confidence="0.95" sourceSpanStart="575" sourceSpanEnd="588">
+    <properties key="name" value="skin problems"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+</raw:RawExtractionResult>

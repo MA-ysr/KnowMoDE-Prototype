@@ -1,0 +1,15 @@
+# PubMed 34789421: An analysis of readmission trends by urgency and race/ethnicity in the MBSAQIP registry, 2015-2018.
+
+Surgery for obesity and related diseases : official journal of the American Society for Bariatric Surgery (2022), doi:10.1016/j.soard.2021.10.018
+
+BACKGROUND: Large-scale analyses stratifying bariatric surgery readmissions by urgency are lacking.
+
+OBJECTIVES: Identify predictors of urgent/nonurgent readmission among "ideal" bariatric candidates, using a national registry.
+
+SETTING: Metabolic and Bariatric Surgery Accreditation and Quality Improvement Program (MBSAQIP) national database.
+
+METHODS: We extracted an "ideal" patient cohort from the 2015-2018 Metabolic and Bariatric Surgery Accreditation Quality Improvement Program (MBSAQIP) registry, characterized by only typical weight-related comorbidities (hypertension [HTN], obstructive sleep apnea [OSA], gastroesophageal reflux disease [GERD], and diabetes (insulin-dependent diabetes mellitus [IDDM] and non-insulin-dependent diabetes mellitus [NIDDM]) undergoing primary bariatric surgery with an uneventful postoperative course. Readmissions were classified as "urgent" (UR; e.g., leak, obstruction, bleeding) or "nonurgent" (NUR; e.g., dehydration, nonspecific abdominal pain). χ2 or t test analyses were used for bivariate significance testing. Multivariate logistic regression models were constructed to assess independent predictors of readmission.
+
+RESULTS: The cohort (N = 292,547) comprised 38.5% of all MBSAQIP patients (mean age [standard deviation] = 43.2 [11.7]; body mass index [BMI] = 44.9 [6.6]; 81% female; 62% White, 17% Black, 14% Hispanic). Total readmission rates were 2.75% (n = 8046) and decreased from 2015-2018 (3.00%-2.63%; P < .001). Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p < .001), Black (OR = 1.46, P < .001) and Hispanic race (OR = 1.14, P < .001), GERD (OR = 1.27, P < .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P < .001). NUR and UR readmission rates were 1.27% (n = 3702) and 1.06% (n = 3090), respectively. NURs decreased over time (1.42%-1.16%, P < .001), with no change in Urs (1.01%-1.06%, P = .51); this trend persisted in multivariate analysis (2017: NUR OR = .85, P < .001; 2018: NUR OR = .82, p < .001). Independent predictors of both URs and NURs included Black (NUR OR = 1.71, p < .001; UR OR = 1.27, p < .001) and Hispanic (NUR OR = 1.15, P < .001; UR OR = 1.19, P < .001) race, RYGB (NUR OR = 1.84, P < .001; UR OR = 2.34, P < .001), and GERD (NUR OR = 1.39, p < .001; UR OR = 1.17, P < .001). Female sex (NUR OR = 1.64, P < .001), age (NUR OR = .98, P < .001), HTN (NUR OR = 1.22, P < .001), and IDDM (NUR OR = 1.41, P < .001) predicted NURs, while higher BMI (UR OR = 1.01, P < .001), and OSA (UR OR = 1.10, P = .02) predicted URs.
+
+CONCLUSION: Readmission rates for "ideal" bariatric patients improved over time, driven by reductions in non-urgent etiologies. Racial disparities persist for both urgent and non-urgent causes of readmission.

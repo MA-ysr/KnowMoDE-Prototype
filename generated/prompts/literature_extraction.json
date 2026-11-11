@@ -1,0 +1,92 @@
+{
+  "task" : "literature_extraction",
+  "pipeline" : "DiabetesReadmissionExtraction",
+  "targetSchema" : "DiabetesReadmissionKG",
+  "llmModel" : "gemini/gemini-3.5-flash-lite",
+  "temperature" : 0.1,
+  "maxTokens" : 4096,
+  "sourceCollection" : "corpus/pubmed corpus/papers",
+  "outputFormat" : "JSON",
+  "chunking" : {
+    "chunkSize" : 3000,
+    "overlap" : 200,
+    "splitter" : "SENTENCE"
+  },
+  "targetConcepts" : [ "RiskFactor", "Condition", "LabTest", "ClinicalOutcome", "Drug" ],
+  "requiredProperties" : {
+    "RiskFactor" : [ "name" ],
+    "Condition" : [ "name" ],
+    "LabTest" : [ "name" ],
+    "ClinicalOutcome" : [ "name" ],
+    "Drug" : [ "name" ]
+  },
+  "explainableProperties" : {
+    "RiskFactor" : [ "name", "description" ],
+    "Condition" : [ "name", "category" ],
+    "LabTest" : [ "name", "abnormalThreshold" ],
+    "ClinicalOutcome" : [ "name", "timeWindow" ],
+    "Drug" : [ "name", "drugClass" ]
+  },
+  "targetRelations" : [ {
+    "id" : "INCREASES_RISK_OF_Condition",
+    "name" : "INCREASES_RISK_OF",
+    "source" : "Condition",
+    "target" : "ClinicalOutcome",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "INCREASES_RISK_OF_RiskFactor",
+    "name" : "INCREASES_RISK_OF",
+    "source" : "RiskFactor",
+    "target" : "ClinicalOutcome",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "INCREASES_RISK_OF_Drug",
+    "name" : "INCREASES_RISK_OF",
+    "source" : "Drug",
+    "target" : "ClinicalOutcome",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "REDUCES_RISK_OF_RiskFactor",
+    "name" : "REDUCES_RISK_OF",
+    "source" : "RiskFactor",
+    "target" : "ClinicalOutcome",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "REDUCES_RISK_OF_Drug",
+    "name" : "REDUCES_RISK_OF",
+    "source" : "Drug",
+    "target" : "ClinicalOutcome",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "INDICATES",
+    "name" : "INDICATES",
+    "source" : "LabTest",
+    "target" : "Condition",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "MAY_CAUSE",
+    "name" : "MAY_CAUSE",
+    "source" : "Drug",
+    "target" : "Condition",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  } ],
+  "fewShotExamples" : 2,
+  "promptFile" : "literature_extraction.txt",
+  "promptId" : "literature_extraction@9b00038fb5d2",
+  "promptHash" : "9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb",
+  "generatedAt" : "2026-11-01T19:22:28.693502Z",
+  "sourceModels" : {
+    "Decision:decision-bindings.xmi" : "e2113e3aa998712187c683da2cfd67cd34a5c7fee0f7c27c537e74d7b2168fa9",
+    "Explainability:explainability.xmi" : "7e3b3f77ef3ebc17655a71f704cbdddf8b21ae20dc1ae5b6b1628b6dbcb3070b",
+    "Pipeline:extraction-pipeline.xmi" : "e9ad894c5a7f3a4d8c724f75fda08a2456fbd17601e16e0074a759a539f8b413",
+    "Policy:validation-policy.xmi" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+    "Schema:kg-schema.xmi" : "4f85cb83f677044bec61c0f50982e1f7adf4f301f9fa8641a5d81894e718fc4e"
+  }
+}

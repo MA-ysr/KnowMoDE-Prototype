@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/insulin.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22insulin human%22" sourceSha256="e9355d2fc8e494c13b835a3e05130849507d9e2f910f0b9baa2e12f6490c6867" sourceText="# FDA prescribing information: insulin&#10;&#10;Generic name: INSULIN HUMAN&#10;Brand name: AFREZZA&#10;Pharmacologic class: Insulin [EPC]&#10;Label set id: 29f4637b-e204-425b-b89c-7238008d8c10, effective 20260530&#10;&#10;## Boxed warning&#10;&#10;WARNING: RISK OF ACUTE BRONCHOSPASM IN PATIENTS WITH CHRONIC LUNG DISEASE Acute bronchospasm has been observed in AFREZZA-treated patients with asthma and Chronic Obstructive Pulmonary Disease (COPD) [see Warnings and Precautions ( 5.1 )]. AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD [see Contraindications ( 4 )]. Before initiating AFREZZA, perform a detailed medical history, physical examination, and spirometry (FEV 1 ) to identify potential lung disease in all patients [see Dosage and Administration ( 2.1 ), Warnings and Precautions ( 5.1 )]. WARNING: RISK OF ACUTE BRONCHOSPASM IN PATIENTS WITH CHRONIC LUNG DISEASE See full prescribing information for complete boxed warning. Acute bronchospasm has been observed in AFREZZA-treated patients with asthma and Chronic Obstructive Pulmonary Disease (COPD). ( 5.1 ) AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD. ( 4 ) Before initiating AFREZZA, perform a detailed medical history, physical examination, and spirometry (FEV 1 ) to identify potential lung disease in all patients. ( 2.1 ), ( 5.1 )&#10;&#10;## Indications and usage&#10;&#10;1 INDICATIONS AND USAGE AFREZZA ® is indicated to improve glycemic control in adult and pediatric patients 6 years of age and older with diabetes mellitus. AFREZZA ® is a rapid acting inhaled human insulin indicated to improve glycemic control in adult and pediatric patients 6 years of age and older with diabetes mellitus. ( 1 ) Limitations of Use : Not recommended for the treatment of diabetic ketoacidosis (DKA) ( 1 ) Not recommended in patients who smoke or who have recently stopped smoking ( 1 ) Limitations of Use: AFREZZA is not recommended for the treatment of diabetic ketoacidosis (DKA) [see Warnings and Precautions ( 5.6 )] . The safety and effectiveness of AFREZZA in patients who smoke have not been established. The use of AFREZZA is not recommended in patients who smoke or who have recently stopped smoking [see Warnings and Precautions ( 5.5 )].&#10;&#10;## Contraindications&#10;&#10;4 CONTRAINDICATIONS AFREZZA is contraindicated: During episodes of hypoglycemia [see Warnings and Precautions ( 5.3 )]. In patients with chronic lung disease, such as asthma or COPD, because of the risk of acute bronchospasm [see Warnings and Precautions ( 5.1 )]. In patients with a previous severe hypersensitivity reaction to any regular human insulin product or any of the inactive ingredients in AFREZZA. Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA [see Warnings and Precautions ( 5.7 )]. During episodes of hypoglycemia ( 4 ) Chronic lung disease, such as asthma, or COPD ( 4 ) Hypersensitivity to any regular human insulin product or any of the inactive ingredients in AFREZZA ( 4 )&#10;&#10;## Warnings and precautions&#10;&#10;5 WARNINGS AND PRECAUTIONS Hypoglycemia or Hyperglycemia with Changes in Insulin Regimen : Make necessary changes to a patient's insulin regimen under close medical supervision with increased frequency of blood glucose monitoring. For patients with type 2 diabetes mellitus, oral antidiabetic treatment dosage modifications may be needed. ( 5.2 ) Hypoglycemia (may be life-threatening): Increase frequency of glucose monitoring in patients at higher risk for hypoglycemia and those who have reduced symptomatic awareness of hypoglycemia. ( 5.3 ) Decline in Pulmonary Function : Assess pulmonary function (e.g., spirometry (FEV 1 )) at baseline, after 6 months of therapy, and annually, even in the absence of pulmonary symptoms. In patients who have a decline of ≥ 20% in FEV 1 from baseline, consider discontinuing AFREZZA. Consider more frequent monitoring of pulmonary function in patients with pulmonary symptoms ( 5.4 ) Lung Cancer : In patients with active lung cancer, a prior history of lung cancer, or in patients at risk for lung cancer, consider whether the benefits of AFREZZA use outweigh this potential risk. ( 5.5 ) Diabetic Ketoacidosis : In patients at risk for DKA, increase the frequency of glucose monitoring and consider changing to alternate route of insulin delivery. ( 5.6 ) Hypersensitivity Reactions : Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA. If hypersensitivity reactions occur, discontinue AFREZZA, treat per standard of care and monitor until symptoms and signs resolve. ( 5.7 ) Hypokalemia (may be life-threatening): Monitor potassium levels in patients at risk of hypokalemia. ( 5.8 ) Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists: Observe for signs and symptoms of heart failure; consider dosage reduction or discontinuation if heart failure occurs. ( 5.9 ) 5.1 Acute Bronchospasm in Patients with Chronic Lung Disease Because of the risk of acute bronchospasm, AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD [see Contraindications ( 4 )] . Before initiating therapy with AFREZZA, evaluate patients with a medical history, physical examination, and spirometry (FEV 1 ) to identify potential underlying lung disease. Acute bronchospasm has been observed in AFREZZA-treated patients with asthma and COPD. In a study of patients with asthma whose bronchodilators were temporarily withheld for assessment, bronchoconstriction and wheezing following AFREZZA dosing was reported in 29% (5/17) and 0% (0/13) of patients with and without a diagnosis of asthma, respectively. In this study, a mean decline in FEV 1 of 400 mL was observed 15 minutes after a single AFREZZA dose in patients with asthma. In a subset study of 8 patients with COPD, a mean decline in FEV 1 of 200 mL was observed 18 minutes after a single AFREZZA dose. 5.2 Hypoglycemia or Hyperglycemia with Changes in Insulin Regimen Changes in an insulin regimen (e.g., insulin strength, manufacturer, injection site or type, or method of administration) may affect glycemic control and predispose to hypoglycemia [see Warnings and Precautions ( 5.3 )] or hyperglycemia. If clinically indicated, make any necessary changes to a patient's insulin regimen under close medical supervision with increased frequency of blood glucose monitoring. For patients with type 2 diabetes mellitus, dosage modifications of concomitant oral antidiabetic treatment may be needed [see Drug Interactions ( 7 )] . 5.3 Hypoglycemia Hypoglycemia is the most common adverse reaction associated with insulins, including AFREZZA. Severe hypoglycemia can cause seizures, may be life-threatening, or cause death. Hypoglycemia can impair concentration ability and reaction time; this may place an individual and others at risk in situations where these abilities are important (e.g., driving or operating other machinery). AFREZZA's time action profile impacts the timing of hypoglycemia following inhalation of the drug product [see Clinical Pharmacology ( 12.3 )] . Hypoglycemia can occur suddenly, and symptoms may differ across patients and change over time in the same patient. Symptomatic awareness of hypoglycemia may be less pronounced in patients with longstanding diabetes mellitus, in patients with diabetic nerve disease, in patients using medications that block the sympathetic nervous system (e.g., beta-blockers) [see Drug Interactions ( 7 )], or in patients who experience recurrent hypoglycemia. Risk Factors and Mitigation Strategies for Hypoglycemia The risk of hypoglycemia after use of AFREZZA is related to the duration of action of the insulin and, in general, is highest when the glucose lowering effect of the insulin is maximal [See Clinical Pharmacology ( 12.3 )] . The glucose lowering effect time course of AFREZZA may vary in different individuals or at different times in the same individual and depends on many conditions [see Clinical Pharmacology ( 12.2 )] . Other factors which may increase the risk of hypoglycemia include changes in meal pattern (e.g., macronutrient content or timing of meals), changes in level of physical activity, or changes to concomitantly administered medication [see Drug Interactions ( 7 )]. Patients with renal or hepatic impairment may be at higher risk of hypoglycemia [see Use in Specific Populations ( 8.6 , 8.7 )]. Advise patients to recognize and manage hypoglycemia and self-monitor glucose. In patients at higher risk for hypoglycemia and patients who have reduced symptomatic awareness of hypoglycemia, increased frequency of glucose monitoring is recommended. 5.4 Decline in Pulmonary Function AFREZZA causes a decline in pulmonary function over time as measured by FEV 1 . In clinical trials excluding patients with chronic lung disease and lasting up to 2 years, AFREZZA-treated patients experienced a small [40 mL (95% CI: -80, -1)] but greater FEV 1 decline than comparator-treated patients. The FEV 1 decline was noted within the first 3 months, and persisted for the entire duration of therapy (up to 2 years of observation). In this population, the annual rate of FEV 1 decline did not appear to worsen with increased duration of use. The effects of AFREZZA on pulmonary function for treatment duration longer than 2 years has not been established. There are insufficient data in long term studies to draw conclusions regarding reversal of the effect on FEV 1 after discontinuation of AFREZZA. The observed changes in FEV 1 were similar in patients with type 1 and type 2 diabetes mellitus. Assess pulmonary function (e.g., spirometry) at baseline, after the first 6 months of therapy, and annually thereafter, even in the absence of pulmonary symptoms. In patients who have a decline of ≥ 20% in FEV 1 from baseline, consider discontinuing AFREZZA. Consider more frequent monitoring of pulmonary function in patients with pulmonary symptoms such as wheezing, bronchospasm, breathing difficulties, or persistent or recurring cough. If symptoms persist, discontinue AFREZZA [see Adverse Reactions ( 6.1 ) ] . 5.5 Lung Cancer In clinical trials, two cases of lung cancer, one in controlled trials and one in uncontrolled trials (2 cases in 2,750 patient-years of exposure), were observed in patients exposed to AFREZZA while no cases of lung cancer were observed in patients exposed to comparators (0 cases in 2,169 patient-years of exposure). In both cases, a prior history of heavy tobacco use was identified as a risk factor for lung cancer. Two additional cases of lung cancer (squamous cell and lung blastoma) occurred in non-smokers exposed to AFREZZA and were reported by investigators after clinical trial completion. These data are insufficient to determine whether AFREZZA has an effect on lung or respiratory tract tumors. In patients with active lung cancer, a prior history of lung cancer, or in patients at risk for lung cancer, consider whether the benefits of AFREZZA use outweigh this potential risk. 5.6 Diabetic Ketoacidosis In clinical trials enrolling patients with type 1 diabetes mellitus, DKA was more common in AFREZZA-treated patients (0.43%; n=13) than in comparator-treated patients (0.14%; n=3). Patients with type 1 diabetes should always use AFREZZA concomitantly with basal insulin. In patients at risk for DKA, such as those with an acute illness or infection, increase the frequency of glucose monitoring and consider discontinuing AFREZZA and giving insulin using an alternate route of administration. 5.7 Hypersensitivity Reactions Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA. If hypersensitivity reactions occur, discontinue AFREZZA, treat per standard of care and monitor until symptoms and signs resolve [see Adverse Reactions ( 6.1 )] . AFREZZA is contraindicated in patients with a previous severe hypersensitivity reaction to any regular human insulin product or any of the inactive ingredients in AFREZZA [see Contraindications ( 4 )] . 5.8 Hypokalemia All insulin products, including AFREZZA, cause a shift in potassium from the extracellular to intracellular space, possibly leading to hypokalemia. Untreated hypokalemia may cause respiratory paralysis, ventricular arrhythmia, and death. Monitor potassium levels in AFREZZA-treated patients at risk for hypokalemia (e.g., patients using potassium-lowering medications, patients taking medications sensitive to serum potassium concentrations and patients receiving intravenously administered insulin). 5.9 Fluid Retention and Heart Failure with Concomitant Use of PPAR-gamma Agonists Thiazolidinediones (TZDs), which are peroxisome proliferator-activated receptor (PPAR)-gamma agonists, can cause dose-related fluid retention, particularly when used in combination with insulin. Fluid retention may lead to or exacerbate heart failure. Patients treated with insulin, including AFREZZA, and a PPAR-gamma agonist should be observed for signs and symptoms of heart failure. If heart failure develops, manage according to current standards of care, and consider discontinuing or reducing the dosage of the PPAR-gamma agonist.&#10;&#10;## Adverse reactions&#10;&#10;6 ADVERSE REACTIONS The following serious adverse reactions are described below and elsewhere in the labeling: Acute bronchospasm in patients with chronic lung disease [see Warnings and Precautions ( 5.1 )] Hypoglycemia [see Warnings and Precautions ( 5.3 )] Decline in pulmonary function [see Warnings and Precautions ( 5.4 )] Lung cancer [see Warnings and Precautions ( 5.5 )] Diabetic ketoacidosis [see Warnings and Precautions ( 5.6 )] Hypersensitivity reactions [see Warnings and Precautions ( 5.7 )] The most common adverse reactions associated with AFREZZA (2% or greater incidence) are hypoglycemia, cough, and throat pain or irritation ( 6 ) To report SUSPECTED ADVERSE REACTIONS, contact MannKind at 1-877-323-8505 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch. 6.1 Clinical Trials Experience Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice. Adverse Reactions in Clinical Trials in Adults with Type 1 or Type 2 Diabetes Mellitus The data described below reflect exposure of 3,017 adult patients to AFREZZA and include 1,026 patients with type 1 diabetes mellitus and 1,991 patients with type 2 diabetes mellitus. The mean exposure duration was 8.2 months for patients with type 1 diabetes mellitus and those with type 2 diabetes mellitus [see Clinical Studies ( 14.2 , 14.3 )] . In the overall population: 1,874 patients with type 1 or type 2 diabetes mellitus were exposed to AFREZZA for 6 months and 724 patients for greater than one year. 620 and 1,254 patients with type 1 or type 2 diabetes mellitus, respectively, were exposed to AFREZZA for up to 6 months. 238 and 486 patients with type 1 or type 2 diabetes mellitus, respectively, were exposed to AFREZZA for greater than one year (median exposure was 1.8 years). AFREZZA was studied in placebo and active-controlled adult trials (n = 3 and n = 10, respectively). The mean age of the adult population was 50 years and 20 patients were older than 75 years of age; 51% of the population were males; 83% were White, 5% were Black or African American, and 2% were Asian; 10% were Hispanic or Latino ethnicity. At baseline, the type 1 diabetes mellitus population had diabetes mellitus for an average of 17 years and had a mean HbA1c of 8.3%, and the type 2 diabetes mellitus population had diabetes mellitus for an average of 11 years and had a mean HbA1c of 8.8%. At baseline, 33% of the population reported peripheral neuropathy, 32% reported retinopathy and 20% had a history of cardiovascular disease. Table 2 shows the frequency of common adverse reactions, excluding hypoglycemia, associated with the use of AFREZZA in the pool of controlled trials in adults with type 2 diabetes mellitus patients that occurred more commonly on AFREZZA than on placebo and/or comparator and occurred in at least 2% of patients treated with AFREZZA. Table 2. Common Adverse Reactions That Occurred in ≥ 2% in Adult Patients with Type 2 Diabetes Mellitus (excluding Hypoglycemia) Treated with AFREZZA Adverse Reaction AFREZZA (n = 1,991) % Placebo a (n = 290) % Non-placebo comparators (n=1,363) % Cough 26 20 5 Throat pain or irritation 4 4 1 Headache 3 3 2 Diarrhea 3 1 2 Productive cough 2 1 1 Fatigue 2 1 1 Nausea 2 0.3 1 a Carrier particle without insulin was used as placebo [see Description ( 11.1 )]. Table 3 shows the frequency of common adverse reactions, excluding hypoglycemia, associated with the use of AFREZZA in the pool of active-controlled trials in adults with type 1 diabetes mellitus. These adverse reactions occurred more commonly on AFREZZA than on comparator and occurred in at least 2% of patients treated with AFREZZA. Table 3. Common Adverse Reactions That Occurred in ≥ 2% in Adult Patients with Type 1 Diabetes Mellitus (excluding Hypoglycemia) Treated with AFREZZA Adverse Reaction AFREZZA (n=1,026) % Subcutaneous Insulin (n = 835) % Cough 29 5 Throat pain or irritation 6 2 Headache 5 3 Pulmonary function test decreased 3 1 Bronchitis 3 2 Urinary tract infection 2 2 Hypoglycemia Hypoglycemia is the most commonly observed adverse reaction in patients treated with AFREZZA [see Warnings and Precautions ( 5.3 )] . The rates of reported hypoglycemia depend on the definition of hypoglycemia used, diabetes type, insulin dose, intensity of glucose control, background therapies, and other intrinsic and extrinsic patient factors. For these reasons, comparing rates of hypoglycemia across clinical trials of AFREZZA or with the incidence of hypoglycemia for other insulin products may be misleading and also, may not be representative of hypoglycemia rates that will occur in clinical practice. The incidence of severe and non-severe hypoglycemia in AFREZZA-treated patients versus placebo-treated patients with type 2 diabetes mellitus is shown in Table 4 . A hypoglycemic episode was recorded if a patient reported symptoms of hypoglycemia with or without a blood glucose value consistent with hypoglycemia. Severe hypoglycemia was defined as an event with symptoms consistent with hypoglycemia requiring the assistance of another person and associated with either a blood glucose value consistent with hypoglycemia or prompt recovery after treatment for hypoglycemia. Table 4. Incidence of Severe and Non-Severe Hypoglycemia in a Placebo-Controlled Study of Adult Patients with Type 2 Diabetes Mellitus Hypoglycemia Severity AFREZZA (N=177) Placebo (N=176) Severe Hypoglycemia 5% 2% Non-Severe Hypoglycemia 67% 30% Other Adverse Reactions in Adults with Type 1 or Type 2 Diabetes MellitusOther Adverse Reactions in Adults with Type 1 or Type 2 Diabetes Mellitus Cough Approximately 27% of adults treated with AFREZZA reported cough, compared to approximately 5% of patients treated with comparator. In clinical trials, cough was the most common reason for discontinuation of AFREZZA therapy (3% of adult AFREZZA-treated patients). Pulmonary Function Decline In clinical trials lasting up to 2 years, excluding patients with chronic lung disease, adults treated with AFREZZA had a 40 mL (95% CI: -80, -1) greater decline from baseline in forced expiratory volume in one second (FEV 1 ) compared to patients treated with comparator anti-diabetes treatments. The decline occurred during the first 3 months of therapy and persisted over 2 years ( Figure 1 ). A decline in FEV 1 of ≥ 15% occurred in 6% of AFREZZA-treated patients compared to 3% of comparator-treated patients [see Warnings and Precautions ( 5.4 )]. Figure 1. Mean (+/-SE) Change in FEV 1 (Liters) from Baseline for Adult Patients with Type 1 and Type 2 Diabetes Mellitus Figure 1 Weight Gain Weight gain has occurred with some insulin therapies, including AFREZZA. Weight gain has been attributed to the anabolic effects of insulin and the decrease in glycosuria. In a clinical trial of adult patients with type 2 diabetes mellitus [see Clinical Studies ( 14.3 )] , there was a mean 0.49 kg weight gain among AFREZZA-treated patients compared with a mean 1.13 kg weight loss among placebo-treated patients. Adverse Reactions in the Clinical Trial in Pediatric Patients Aged 6 Years and Older with Type 1 or Type 2 Diabetes Mellitus A 26-week open-label, randomized clinical trial evaluated the safety of AFREZZA versus rapid-acting insulin analog (RAA), both in combination with basal insulin, in 230 pediatric patients with type 1 or type 2 diabetes mellitus [see Clinical Studies ( 14.4 )]. The trial was followed by a 26-week safety extension. The mean age of patients was 12.6 years (range: 4 to 17 in the RAA arm, 6 to 17 in the AFREZZA arm). The majority (97.8%) had type 1 diabetes mellitus; a small subset (2.2%) had type 2 diabetes mellitus [see Clinical Studies ( 14.4 )] . The trial population had the following characteristics: 38% were female, 77% were White, 10% were Black or African American, 3% were Asian, 6% multiracial, and 20% were Hispanic or Latino ethnicity. Table 5 shows the frequency of common adverse reactions, excluding hypoglycemia, associated with the use of AFREZZA during the pediatric clinical trial. Data observed for 52 weeks was consistent with the 26-week safety profile. These adverse reactions occurred more commonly on AFREZZA than the comparator and occurred in at least 5% of patients treated with AFREZZA. The overall safety profile was similar to that of adults. In this trial, the change in percent predicted FEV1 from baseline to Week 26 was similar in both groups. Table 5. Common Adverse Reactions That Occurred in ≥ 5% of Pediatric Patients Aged 6 Years and Older With Type 1 and Type 2 Diabetes Mellitus (excluding Hypoglycemia) Treated with AFREZZA and More Commonly on AFREZZA Than on RAA Adverse Reaction a AFREZZA (n=117) % RAA (n=113) % Cough 21 3 Upper respiratory tract infection 18 14 Oropharyngeal pain 11 4 Headache 8 5 Vomiting 5 3 a This study was not designed to evaluate meaningful comparisons of adverse reaction incidence between AFREZZA and RAA. Hypoglycemia In the pediatric clinical trial [see Clinical Studies ( 14.4 )] , events of severe hypoglycemia (level 3) were defined as an episode associated with severe cognitive impairment requiring external assistance for recovery. Level 3 hypoglycemia was reported in 2 (1.7%) AFREZZA-treated pediatric patients versus 1 (0.9%) RAA-treated patient during the randomized treatment period. 6.2 Postmarketing Experience The following adverse reaction has been identified during post approval use of AFREZZA. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure: Respiratory : bronchospasm.&#10;&#10;## Drug interactions&#10;&#10;2.5 Dosage Modifications for Drug Interactions Dosage modification may be needed when: AFREZZA is used concomitantly with certain drugs that increase and/or decrease the glucose lowering effect [see Drug Interactions ( 7 )]. Switching from another insulin to AFREZZA [see Dosage and Administration ( 2.3 ) and Warnings and Precautions ( 5.2 )] 7 DRUG INTERACTIONS Table 6 presents clinically significant drug interactions with AFREZZA. Table 6. Clinically Significant Drug Interactions with AFREZZA Antidiabetic agents, Angiotensin-Converting Enzyme Inhibitors, Angiotensin II Receptor Blocking Agents, Disopyramide, Fibrates, Fluoxetine, Monoamine Oxidase Inhibitors, Pentoxifylline, Pramlintide, Salicylates, Somatostatin Analogs (e.g., octreotide), and Sulfonamide Antibiotics Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may increase the risk of hypoglycemia. Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA. Alcohol, Beta-blockers, Clonidine, and Lithium Salts Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use with AFREZZA may either increase or decrease the blood glucose lowering effect of AFREZZA. Pentamidine Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of pentamidine with AFREZZA may cause hypoglycemia, which may sometimes be followed by hyperglycemia Beta-blockers, Clonidine, Guanethidine, and Reserpine Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may blunt the signs and symptoms of hypoglycemia, making it more difficult to recognize See full prescribing information for details regarding concomitant use of drugs that may ( 7 ): Decrease blood glucose lowering effect of AFREZZA Increase or decrease the blood glucose lowering effect of AFREZZA Blunt signs and symptoms of hypoglycemia&#10;&#10;## Use in specific populations&#10;&#10;8 USE IN SPECIFIC POPULATIONS 8.1 Pregnancy Risk Summary Limited available data with AFREZZA use in pregnant women are insufficient to determine drug-associated risks for adverse developmental outcomes. Available information from published studies with human insulin use during pregnancy has not reported a clear association with human insulin and adverse developmental outcomes ( see Data ). There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy ( see Clinical Considerations ). In animal reproduction studies, there were no adverse developmental outcomes with subcutaneous administration of carrier particles (vehicle without insulin) to pregnant rats during organogenesis at doses 21 times the human daily dose of 99 mg AFREZZA, based on AUC (see Data ) . The estimated background risk of major birth defects is 6-10% in women with pre-gestational diabetes with HbA1c &gt;7 and has been reported to be as high as 20-25% in women with HbA1c &gt;10. The estimated background risk of miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2-4% and 15-20%, respectively. Clinical Considerations Disease-associated maternal and/or embryo/fetal risk Poorly controlled diabetes in pregnancy increases the maternal risk for DKA, pre-eclampsia, spontaneous abortions, preterm delivery, stillbirth, and delivery complications. Poorly controlled diabetes increases the fetal risk for major birth defects, stillbirth, and macrosomia- related morbidity. Data Human Data There are limited data with AFREZZA use in pregnant women. Published data do not report a clear association with human insulin and major birth defects, miscarriage, or adverse maternal or fetal outcomes when human insulin is used during pregnancy. However, these studies cannot definitely establish the absence of any risk because of methodological limitations including small sample size and lack of blinding. Animal Data In pregnant rats given subcutaneous doses of 10, 30, and 100 mg/kg/day of carrier particles (vehicle without insulin) from gestation day 6 through 17 (organogenesis), no major malformations were observed at doses up to 100 mg/kg/day (21 times the human systemic exposure at a daily dose of 99 mg AFREZZA, based on AUC). In pregnant rabbits given subcutaneous doses of 2, 10, and 100 mg/kg/day of carrier particles (vehicle without insulin) from gestation day 7 through 19 (organogenesis), adverse maternal effects were observed in all dose groups (at human systemic exposure following a daily dose of 99 mg AFREZZA, based on AUC). In pregnant rats given subcutaneous doses of 10, 30, and 100 mg/kg/day of carrier particles (vehicle without insulin) from gestation day 7 through lactation day 20 (weaning), decreased epididymis and testes weights were observed in F1 male offspring, however, no decrease in fertility was noted, and impaired learning were observed in F1 pups at &gt; 30 mg/kg/day (6 times the human systemic exposure at a daily dose of 99 mg AFREZZA, based on AUC). 8.2 Lactation Risk Summary There are no data on the presence of AFREZZA in human milk, the effects on the breastfed infant, or the effects on milk production. One small published study reported that exogenous subcutaneous insulin was present in human milk. No adverse effects in infants were noted. The carrier particles are present in rat milk ( see Data ). Potential adverse reactions that are related to inhalational administration of AFREZZA are unlikely to be associated with potential exposure of AFREZZA through breast milk. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for AFREZZA and any potential adverse effects on the breastfed infant from AFREZZA or from the underlying maternal condition. Data Subcutaneous administration of the carrier particle in lactating rats resulted in excretion of the carrier particle in rat milk at levels that were approximately 10% of the maternal exposure. Given the results of the rat study, it is highly likely that the insulin and carrier in AFREZZA are excreted in human milk. 8.4 Pediatric Use The safety and effectiveness of AFREZZA to improve glycemic control have been established in pediatric patients 6 years of age and older with diabetes mellitus. Use of AFREZZA for this indication is supported by evidence from an adequate and well controlled trial in pediatric patients aged 6 years and older with type 1 or type 2 diabetes mellitus and from trials in adults with type 1 or type 2 diabetes mellitus [see Adverse Reactions ( 6.1 ), Clinical Studies ( 14.2 , 14.3 , 14.4 )] . The overall safety profile in pediatric patients was similar to adults [see Adverse Reactions ( 6.1 )] . The safety and effectiveness of AFREZZA have not been established in pediatric patients less than 6 years of age. 8.5 Geriatric Use In the AFREZZA clinical studies , 671 (12%) patients were 65 years of age or older, of which 42 (0.8%) were 75 years of age or older. In these studies, 381 (13%) of AFREZZA-treated patients were 65 years of age or older, of which 20 (0.7%) were 75 years of age or older. No overall differences in effectiveness of AFREZZA have been observed between patients 65 years of age and older and younger adult patients [see Clinical Studies ( 14 )] . Clinical studies of AFREZZA did not include sufficient numbers of patients 65 years of age and older to determine whether there were differences in safety between these patients and younger adult patients. Pharmacokinetic and pharmacodynamic studies to assess the effect of age on pharmacokinetics or pharmacodynamics on insulin human, respectively, have not been conducted. 8.6 Hepatic Impairment The effect of hepatic impairment on the pharmacokinetics of AFREZZA has not been studied. Frequent glucose monitoring and a lower dosage may be necessary in AFREZZA-treated patients with hepatic impairment [see Dosage and Administration ( 2.2 , 2.3 ) and Warnings and Precautions ( 5.3 )] . 8.7 Renal Impairment The effect of renal impairment on the pharmacokinetics of AFREZZA has not been studied. Some studies with human insulin have shown increased circulating levels of insulin in patients with renal failure. Frequent glucose monitoring and a lower dosage may be necessary in AFREZZA-treated patients with renal impairment [see Dosage and Administration ( 2.2 , 2.3 ) and Warnings and Precautions ( 5.3 )] .&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:11:57+00:00" xmi:version="2.0">
+  <chunks charEnd="3034"/>
+  <chunks index="1" charStart="3007" charEnd="3034"/>
+  <chunks index="2" charStart="3036" charEnd="7036"/>
+  <chunks index="3" charStart="6736" charEnd="10736"/>
+  <chunks index="4" charStart="10436" charEnd="13166"/>
+  <chunks index="5" charStart="13168" charEnd="13188"/>
+  <chunks index="6" charStart="13190" charEnd="17190"/>
+  <chunks index="7" charStart="16890" charEnd="20890"/>
+  <chunks index="8" charStart="20590" charEnd="23009"/>
+  <chunks index="9" charStart="23011" charEnd="26045"/>
+  <chunks index="10" charStart="26015" charEnd="26045"/>
+  <chunks index="11" charStart="26047" charEnd="30047"/>
+  <chunks index="12" charStart="29747" charEnd="32575"/>
+  <entities type="Drug" id="insulin" mention="INSULIN HUMAN" confidence="0.99" sourceSpanStart="54" sourceSpanEnd="67">
+    <properties key="name" value="insulin human"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.99" sourceSpanStart="80" sourceSpanEnd="87">
+    <properties key="name" value="insulin human"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="DrugClass" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="109" sourceSpanEnd="116">
+    <properties key="name" value="insulins"/>
+  </entities>
+  <entities type="Condition" id="acute-bronchospasm" mention="Acute bronchospasm" confidence="0.98" sourceSpanStart="230" sourceSpanEnd="248">
+    <properties key="name" value="acute bronchospasm"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="asthma" mention="asthma" confidence="0.98" sourceSpanStart="357" sourceSpanEnd="363">
+    <properties key="name" value="asthma"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="Chronic Obstructive Pulmonary Disease (COPD)" confidence="0.98" sourceSpanStart="368" sourceSpanEnd="412">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="chronic-lung-disease" mention="chronic lung disease" confidence="0.95" sourceSpanStart="497" sourceSpanEnd="517">
+    <properties key="name" value="chronic lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.98" sourceSpanStart="1514" sourceSpanEnd="1531">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis (DKA)" confidence="0.98" sourceSpanStart="1766" sourceSpanEnd="1793">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="2334" sourceSpanEnd="2346">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="hypersensitivity" confidence="0.95" sourceSpanStart="2567" sourceSpanEnd="2583">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.98" sourceSpanStart="2734" sourceSpanEnd="2745">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.99" sourceSpanStart="3063" sourceSpanEnd="3075" chunkIndex="2">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="Hyperglycemia" confidence="0.99" sourceSpanStart="3079" sourceSpanEnd="3092" chunkIndex="2">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="3109" sourceSpanEnd="3116" chunkIndex="2">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.99" sourceSpanStart="3285" sourceSpanEnd="3309" chunkIndex="2">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.99" sourceSpanStart="3852" sourceSpanEnd="3859" chunkIndex="2">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="lung-cancer" mention="Lung Cancer" confidence="0.98" sourceSpanStart="3961" sourceSpanEnd="3972" chunkIndex="2">
+    <properties key="name" value="lung cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic Ketoacidosis" confidence="0.99" sourceSpanStart="4167" sourceSpanEnd="4188" chunkIndex="2">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="Hypersensitivity Reactions" confidence="0.98" sourceSpanStart="4335" sourceSpanEnd="4361" chunkIndex="2">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.99" sourceSpanStart="4421" sourceSpanEnd="4432" chunkIndex="2">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="hypokalemia" mention="Hypokalemia" confidence="0.99" sourceSpanStart="4597" sourceSpanEnd="4608" chunkIndex="2">
+    <properties key="name" value="hypokalemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="fluid-retention" mention="Fluid Retention" confidence="0.98" sourceSpanStart="4705" sourceSpanEnd="4720" chunkIndex="2">
+    <properties key="name" value="fluid retention"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="Heart Failure" confidence="0.99" sourceSpanStart="4725" sourceSpanEnd="4738" chunkIndex="2">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="DrugClass" id="ppar-gamma-agonists" mention="PPAR-gamma Agonists" confidence="0.95" sourceSpanStart="4763" sourceSpanEnd="4782" chunkIndex="2">
+    <properties key="name" value="ppar-gamma agonists"/>
+  </entities>
+  <entities type="Condition" id="acute-bronchospasm" mention="Acute Bronchospasm" confidence="0.98" sourceSpanStart="4915" sourceSpanEnd="4933" chunkIndex="2">
+    <properties key="name" value="acute bronchospasm"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="chronic-lung-disease" mention="Chronic Lung Disease" confidence="0.98" sourceSpanStart="4951" sourceSpanEnd="4971" chunkIndex="2">
+    <properties key="name" value="chronic lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="asthma" mention="asthma" confidence="0.99" sourceSpanStart="5088" sourceSpanEnd="5094" chunkIndex="2">
+    <properties key="name" value="asthma"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="copd" mention="COPD" confidence="0.99" sourceSpanStart="5098" sourceSpanEnd="5102" chunkIndex="2">
+    <properties key="name" value="copd"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.99" sourceSpanStart="6736" sourceSpanEnd="6748" chunkIndex="3">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.99" sourceSpanStart="6945" sourceSpanEnd="6952" chunkIndex="3">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="7296" sourceSpanEnd="7313" chunkIndex="3">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-nerve-disease" mention="diabetic nerve disease" confidence="0.95" sourceSpanStart="7332" sourceSpanEnd="7354" chunkIndex="3">
+    <properties key="name" value="diabetic nerve disease"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="DrugClass" id="beta-blockers" mention="beta-blockers" confidence="0.98" sourceSpanStart="7435" sourceSpanEnd="7448" chunkIndex="3">
+    <properties key="name" value="beta-blockers"/>
+  </entities>
+  <entities type="Condition" id="recurrent-hypoglycemia" mention="recurrent hypoglycemia" confidence="0.95" sourceSpanStart="7511" sourceSpanEnd="7533" chunkIndex="3">
+    <properties key="name" value="recurrent hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal or hepatic impairment" confidence="0.9" sourceSpanStart="8291" sourceSpanEnd="8318" chunkIndex="3">
+    <properties key="name" value="renal or hepatic impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="renal or hepatic impairment" confidence="0.9" sourceSpanStart="8291" sourceSpanEnd="8318" chunkIndex="3">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="chronic-lung-disease" mention="chronic lung disease" confidence="0.95" sourceSpanStart="8813" sourceSpanEnd="8833" chunkIndex="3">
+    <properties key="name" value="chronic lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 and type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="9557" sourceSpanEnd="9592" chunkIndex="3">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 1 and type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="9557" sourceSpanEnd="9592" chunkIndex="3">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="wheezing" mention="wheezing" confidence="0.95" sourceSpanStart="9953" sourceSpanEnd="9961" chunkIndex="3">
+    <properties key="name" value="wheezing"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="bronchospasm" mention="bronchospasm" confidence="0.95" sourceSpanStart="9963" sourceSpanEnd="9975" chunkIndex="3">
+    <properties key="name" value="bronchospasm"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="breathing-difficulties" mention="breathing difficulties" confidence="0.95" sourceSpanStart="9977" sourceSpanEnd="9999" chunkIndex="3">
+    <properties key="name" value="breathing difficulties"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="persistent-or-recurring-cough" mention="persistent or recurring cough" confidence="0.95" sourceSpanStart="10004" sourceSpanEnd="10033" chunkIndex="3">
+    <properties key="name" value="persistent or recurring cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="lung-cancer" mention="lung cancer" confidence="0.98" sourceSpanStart="10115" sourceSpanEnd="10126" chunkIndex="3">
+    <properties key="name" value="lung cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.99" sourceSpanStart="10651" sourceSpanEnd="10658" chunkIndex="4">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="lung-cancer" mention="lung cancer" confidence="0.98" sourceSpanStart="10859" sourceSpanEnd="10870" chunkIndex="4">
+    <properties key="name" value="lung cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="active-lung-cancer" mention="active lung cancer" confidence="0.95" sourceSpanStart="10852" sourceSpanEnd="10870" chunkIndex="4">
+    <properties key="name" value="active lung cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic Ketoacidosis" confidence="0.99" sourceSpanStart="11023" sourceSpanEnd="11044" chunkIndex="4">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="dka" mention="DKA" confidence="0.95" sourceSpanStart="11114" sourceSpanEnd="11117" chunkIndex="4">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus" confidence="0.98" sourceSpanStart="11088" sourceSpanEnd="11112" chunkIndex="4">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="Hypersensitivity Reactions" confidence="0.98" sourceSpanStart="11542" sourceSpanEnd="11568" chunkIndex="4">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.98" sourceSpanStart="11626" sourceSpanEnd="11637" chunkIndex="4">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="severe-hypersensitivity-reaction" mention="severe hypersensitivity reaction" confidence="0.98" sourceSpanStart="11882" sourceSpanEnd="11914" chunkIndex="4">
+    <properties key="name" value="severe hypersensitivity reaction"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Drug" id="regular-human-insulin" mention="regular human insulin" confidence="0.95" sourceSpanStart="11922" sourceSpanEnd="11943" chunkIndex="4">
+    <properties key="name" value="regular human insulin"/>
+  </entities>
+  <entities type="Condition" id="hypokalemia" mention="Hypokalemia" confidence="0.99" sourceSpanStart="12034" sourceSpanEnd="12045" chunkIndex="4">
+    <properties key="name" value="hypokalemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="12050" sourceSpanEnd="12057" chunkIndex="4">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="respiratory-paralysis" mention="respiratory paralysis" confidence="0.95" sourceSpanStart="12226" sourceSpanEnd="12247" chunkIndex="4">
+    <properties key="name" value="respiratory paralysis"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="ventricular-arrhythmia" mention="ventricular arrhythmia" confidence="0.95" sourceSpanStart="12249" sourceSpanEnd="12271" chunkIndex="4">
+    <properties key="name" value="ventricular arrhythmia"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="death" mention="death" confidence="0.95" sourceSpanStart="12277" sourceSpanEnd="12282" chunkIndex="4">
+    <properties key="name" value="death"/>
+    <properties key="category" value="general"/>
+  </entities>
+  <entities type="DrugClass" id="thiazolidinediones" mention="Thiazolidinediones" confidence="0.98" sourceSpanStart="12629" sourceSpanEnd="12647" chunkIndex="4">
+    <properties key="name" value="thiazolidinediones"/>
+  </entities>
+  <entities type="DrugClass" id="ppar-gamma-agonists" mention="PPAR-gamma agonists" confidence="0.95" sourceSpanStart="12609" sourceSpanEnd="12628" chunkIndex="4">
+    <properties key="name" value="ppar-gamma agonists"/>
+  </entities>
+  <entities type="Condition" id="fluid-retention" mention="fluid retention" confidence="0.95" sourceSpanStart="12755" sourceSpanEnd="12770" chunkIndex="4">
+    <properties key="name" value="fluid retention"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.98" sourceSpanStart="12866" sourceSpanEnd="12879" chunkIndex="4">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.98" sourceSpanStart="13746" sourceSpanEnd="13753" chunkIndex="6">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="acute-bronchospasm" mention="Acute bronchospasm" confidence="0.95" sourceSpanStart="13301" sourceSpanEnd="13319" chunkIndex="6">
+    <properties key="name" value="acute bronchospasm"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="chronic-lung-disease" mention="chronic lung disease" confidence="0.95" sourceSpanStart="13337" sourceSpanEnd="13357" chunkIndex="6">
+    <properties key="name" value="chronic lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="13784" sourceSpanEnd="13796" chunkIndex="6">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="decline-in-pulmonary-function" mention="Decline in pulmonary function" confidence="0.95" sourceSpanStart="13449" sourceSpanEnd="13478" chunkIndex="6">
+    <properties key="name" value="decline in pulmonary function"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="lung-cancer" mention="Lung cancer" confidence="0.95" sourceSpanStart="13518" sourceSpanEnd="13529" chunkIndex="6">
+    <properties key="name" value="lung cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic ketoacidosis" confidence="0.95" sourceSpanStart="13569" sourceSpanEnd="13590" chunkIndex="6">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="Hypersensitivity reactions" confidence="0.95" sourceSpanStart="13630" sourceSpanEnd="13656" chunkIndex="6">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="cough" mention="cough" confidence="0.95" sourceSpanStart="13798" sourceSpanEnd="13803" chunkIndex="6">
+    <properties key="name" value="cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="throat-pain-or-irritation" mention="throat pain or irritation" confidence="0.95" sourceSpanStart="13809" sourceSpanEnd="13834" chunkIndex="6">
+    <properties key="name" value="throat pain or irritation"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="Headache" confidence="0.95" sourceSpanStart="16505" sourceSpanEnd="16513" chunkIndex="6">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="Diarrhea" confidence="0.95" sourceSpanStart="16520" sourceSpanEnd="16528" chunkIndex="6">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="productive-cough" mention="Productive cough" confidence="0.95" sourceSpanStart="16535" sourceSpanEnd="16551" chunkIndex="6">
+    <properties key="name" value="productive cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="fatigue" mention="Fatigue" confidence="0.95" sourceSpanStart="16558" sourceSpanEnd="16565" chunkIndex="6">
+    <properties key="name" value="fatigue"/>
+    <properties key="category" value="constitutional"/>
+  </entities>
+  <entities type="Condition" id="nausea" mention="Nausea" confidence="0.95" sourceSpanStart="16572" sourceSpanEnd="16578" chunkIndex="6">
+    <properties key="name" value="nausea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.98" sourceSpanStart="16917" sourceSpanEnd="16924" chunkIndex="7">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Subcutaneous Insulin" confidence="0.95" sourceSpanStart="17193" sourceSpanEnd="17213" chunkIndex="7">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="Type 1 Diabetes Mellitus" confidence="0.95" sourceSpanStart="17085" sourceSpanEnd="17109" chunkIndex="7">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.98" sourceSpanStart="17361" sourceSpanEnd="17373" chunkIndex="7">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="cough" mention="Cough" confidence="0.95" sourceSpanStart="18956" sourceSpanEnd="18961" chunkIndex="7">
+    <properties key="name" value="cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="throat-pain-or-irritation" mention="Throat pain or irritation" confidence="0.95" sourceSpanStart="17237" sourceSpanEnd="17262" chunkIndex="7">
+    <properties key="name" value="throat pain or irritation"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="Headache" confidence="0.95" sourceSpanStart="17267" sourceSpanEnd="17275" chunkIndex="7">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="pulmonary-function-test-decreased" mention="Pulmonary function test decreased" confidence="0.95" sourceSpanStart="17280" sourceSpanEnd="17313" chunkIndex="7">
+    <properties key="name" value="pulmonary function test decreased"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="bronchitis" mention="Bronchitis" confidence="0.95" sourceSpanStart="17318" sourceSpanEnd="17328" chunkIndex="7">
+    <properties key="name" value="bronchitis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="urinary-tract-infection" mention="Urinary tract infection" confidence="0.95" sourceSpanStart="17333" sourceSpanEnd="17356" chunkIndex="7">
+    <properties key="name" value="urinary tract infection"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="19903" sourceSpanEnd="19927" chunkIndex="7">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="weight-gain" mention="Weight gain" confidence="0.95" sourceSpanStart="19937" sourceSpanEnd="19948" chunkIndex="7">
+    <properties key="name" value="weight gain"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.95" sourceSpanStart="20891" sourceSpanEnd="20898" chunkIndex="8">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus" confidence="0.95" sourceSpanStart="20930" sourceSpanEnd="20954" chunkIndex="8">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="20982" sourceSpanEnd="21006" chunkIndex="8">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="21307" sourceSpanEnd="21319" chunkIndex="8">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="cough" mention="Cough" confidence="0.9" sourceSpanStart="22051" sourceSpanEnd="22056" chunkIndex="8">
+    <properties key="name" value="cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="upper-respiratory-tract-infection" mention="Upper respiratory tract infection" confidence="0.9" sourceSpanStart="22062" sourceSpanEnd="22095" chunkIndex="8">
+    <properties key="name" value="upper respiratory tract infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="oropharyngeal-pain" mention="Oropharyngeal pain" confidence="0.9" sourceSpanStart="22102" sourceSpanEnd="22120" chunkIndex="8">
+    <properties key="name" value="oropharyngeal pain"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="Headache" confidence="0.9" sourceSpanStart="22126" sourceSpanEnd="22134" chunkIndex="8">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="vomiting" mention="Vomiting" confidence="0.9" sourceSpanStart="22139" sourceSpanEnd="22147" chunkIndex="8">
+    <properties key="name" value="vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="severe-hypoglycemia" mention="severe hypoglycemia" confidence="0.95" sourceSpanStart="22361" sourceSpanEnd="22380" chunkIndex="8">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="bronchospasm" mention="bronchospasm" confidence="0.95" sourceSpanStart="22996" sourceSpanEnd="23008" chunkIndex="8">
+    <properties key="name" value="bronchospasm"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.99" sourceSpanStart="23120" sourceSpanEnd="23127" chunkIndex="9">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="24072" sourceSpanEnd="24084" chunkIndex="9">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="olanzapine" mention="olanzapine" confidence="0.95" sourceSpanStart="24117" sourceSpanEnd="24127" chunkIndex="9">
+    <properties key="name" value="olanzapine"/>
+  </entities>
+  <entities type="Drug" id="clozapine" mention="clozapine" confidence="0.95" sourceSpanStart="24132" sourceSpanEnd="24141" chunkIndex="9">
+    <properties key="name" value="clozapine"/>
+  </entities>
+  <entities type="Drug" id="albuterol" mention="albuterol" confidence="0.95" sourceSpanStart="24366" sourceSpanEnd="24375" chunkIndex="9">
+    <properties key="name" value="albuterol"/>
+  </entities>
+  <entities type="Drug" id="epinephrine" mention="epinephrine" confidence="0.95" sourceSpanStart="24377" sourceSpanEnd="24388" chunkIndex="9">
+    <properties key="name" value="epinephrine"/>
+  </entities>
+  <entities type="Drug" id="terbutaline" mention="terbutaline" confidence="0.95" sourceSpanStart="24390" sourceSpanEnd="24401" chunkIndex="9">
+    <properties key="name" value="terbutaline"/>
+  </entities>
+  <entities type="Drug" id="alcohol" mention="Alcohol" confidence="0.95" sourceSpanStart="24716" sourceSpanEnd="24723" chunkIndex="9">
+    <properties key="name" value="alcohol"/>
+  </entities>
+  <entities type="Drug" id="clonidine" mention="Clonidine" confidence="0.95" sourceSpanStart="24740" sourceSpanEnd="24749" chunkIndex="9">
+    <properties key="name" value="clonidine"/>
+  </entities>
+  <entities type="Drug" id="lithium-salts" mention="Lithium Salts" confidence="0.95" sourceSpanStart="24755" sourceSpanEnd="24768" chunkIndex="9">
+    <properties key="name" value="lithium salts"/>
+  </entities>
+  <entities type="Drug" id="pentamidine" mention="Pentamidine" confidence="0.95" sourceSpanStart="25066" sourceSpanEnd="25077" chunkIndex="9">
+    <properties key="name" value="pentamidine"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="25371" sourceSpanEnd="25384" chunkIndex="9">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="guanethidine" mention="Guanethidine" confidence="0.95" sourceSpanStart="25411" sourceSpanEnd="25423" chunkIndex="9">
+    <properties key="name" value="guanethidine"/>
+  </entities>
+  <entities type="Drug" id="reserpine" mention="Reserpine" confidence="0.95" sourceSpanStart="25429" sourceSpanEnd="25438" chunkIndex="9">
+    <properties key="name" value="reserpine"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.95" sourceSpanStart="26132" sourceSpanEnd="26139" chunkIndex="11">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="human insulin" confidence="0.9" sourceSpanStart="26300" sourceSpanEnd="26313" chunkIndex="11">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.9" sourceSpanStart="26514" sourceSpanEnd="26522" chunkIndex="11">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="poorly-controlled-diabetes" mention="poorly controlled diabetes" confidence="0.95" sourceSpanStart="27369" sourceSpanEnd="27395" chunkIndex="11">
+    <properties key="name" value="poorly controlled diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="dka" mention="DKA" confidence="0.9" sourceSpanStart="27441" sourceSpanEnd="27444" chunkIndex="11">
+    <properties key="name" value="dka"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pre-eclampsia" mention="pre-eclampsia" confidence="0.9" sourceSpanStart="27446" sourceSpanEnd="27459" chunkIndex="11">
+    <properties key="name" value="pre-eclampsia"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="spontaneous-abortions" mention="spontaneous abortions" confidence="0.9" sourceSpanStart="27461" sourceSpanEnd="27482" chunkIndex="11">
+    <properties key="name" value="spontaneous abortions"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="preterm-delivery" mention="preterm delivery" confidence="0.9" sourceSpanStart="27484" sourceSpanEnd="27500" chunkIndex="11">
+    <properties key="name" value="preterm delivery"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="stillbirth" mention="stillbirth" confidence="0.9" sourceSpanStart="27502" sourceSpanEnd="27512" chunkIndex="11">
+    <properties key="name" value="stillbirth"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="delivery-complications" mention="delivery complications" confidence="0.9" sourceSpanStart="27518" sourceSpanEnd="27540" chunkIndex="11">
+    <properties key="name" value="delivery complications"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="major-birth-defects" mention="major birth defects" confidence="0.9" sourceSpanStart="27598" sourceSpanEnd="27617" chunkIndex="11">
+    <properties key="name" value="major birth defects"/>
+    <properties key="category" value="congenital"/>
+  </entities>
+  <entities type="Condition" id="macrosomia-related-morbidity" mention="macrosomia- related morbidity" confidence="0.9" sourceSpanStart="27635" sourceSpanEnd="27664" chunkIndex="11">
+    <properties key="name" value="macrosomia-related morbidity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="afrezza" mention="AFREZZA" confidence="0.95" sourceSpanStart="29833" sourceSpanEnd="29840" chunkIndex="12">
+    <properties key="name" value="afrezza"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.9" sourceSpanStart="30217" sourceSpanEnd="30224" chunkIndex="12">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="30436" sourceSpanEnd="30453" chunkIndex="12">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-or-type-2-diabetes-mellitus" mention="type 1 or type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="30608" sourceSpanEnd="30642" chunkIndex="12">
+    <properties key="name" value="type 1 or type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="31843" sourceSpanEnd="31861" chunkIndex="12">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="32157" sourceSpanEnd="32173" chunkIndex="12">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="renal-failure" mention="renal failure" confidence="0.95" sourceSpanStart="32362" sourceSpanEnd="32375" chunkIndex="12">
+    <properties key="name" value="renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="acute-bronchospasm" confidence="0.95" evidence="Acute bronchospasm has been observed in AFREZZA-treated patients with asthma and Chronic Obstructive Pulmonary Disease (COPD)" sourceSpanStart="287" sourceSpanEnd="412"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="chronic-lung-disease" confidence="0.98" evidence="AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="453" sourceSpanEnd="540"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="asthma" confidence="0.98" evidence="AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="453" sourceSpanEnd="540"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="chronic-obstructive-pulmonary-disease" confidence="0.98" evidence="AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="453" sourceSpanEnd="540"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="diabetes-mellitus" confidence="0.98" evidence="AFREZZA ® is indicated to improve glycemic control in adult and pediatric patients 6 years of age and older with diabetes mellitus." sourceSpanStart="1401" sourceSpanEnd="1532"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypoglycemia" confidence="0.98" evidence="AFREZZA is contraindicated: During episodes of hypoglycemia" sourceSpanStart="2287" sourceSpanEnd="2346"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypersensitivity" confidence="0.95" evidence="AFREZZA is contraindicated: ... In patients with a previous severe hypersensitivity reaction to any regular human insulin product or any of the inactive ingredients in AFREZZA." sourceSpanStart="2085" sourceSpanEnd="2382"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="anaphylaxis" confidence="0.95" evidence="Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA" sourceSpanStart="2677" sourceSpanEnd="2769"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="chronic-lung-disease" confidence="0.98" evidence="Because of the risk of acute bronchospasm, AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="4972" sourceSpanEnd="5102" chunkIndex="2"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="asthma" confidence="0.98" evidence="Because of the risk of acute bronchospasm, AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="4972" sourceSpanEnd="5102" chunkIndex="2"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="copd" confidence="0.98" evidence="Because of the risk of acute bronchospasm, AFREZZA is contraindicated in patients with chronic lung disease such as asthma or COPD" sourceSpanStart="4972" sourceSpanEnd="5102" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypersensitivity-reactions" confidence="0.95" evidence="Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA." sourceSpanStart="4364" sourceSpanEnd="4457" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="anaphylaxis" confidence="0.95" evidence="Severe, life-threatening, generalized allergy, including anaphylaxis, can occur with AFREZZA." sourceSpanStart="4364" sourceSpanEnd="4457" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="acute-bronchospasm" confidence="0.98" evidence="Acute bronchospasm has been observed in AFREZZA-treated patients with asthma and COPD." sourceSpanStart="5310" sourceSpanEnd="5396" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="insulin" targetType="Condition" targetId="hypoglycemia" confidence="0.99" evidence="Hypoglycemia is the most common adverse reaction associated with insulins, including AFREZZA." sourceSpanStart="6561" sourceSpanEnd="6654" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="AFREZZA's time action profile impacts the timing of hypoglycemia following inhalation of the drug product" sourceSpanStart="6945" sourceSpanEnd="7050" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="lung-cancer" confidence="0.9" evidence="In clinical trials, two cases of lung cancer, one in controlled trials and one in uncontrolled trials (2 cases in 2,750 patient-years of exposure), were observed in patients exposed to AFREZZA" sourceSpanStart="10127" sourceSpanEnd="10319" chunkIndex="3"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="severe-hypersensitivity-reaction" confidence="0.98" evidence="AFREZZA is contraindicated in patients with a previous severe hypersensitivity reaction to any regular human insulin product or any of the inactive ingredients in AFREZZA" sourceSpanStart="11827" sourceSpanEnd="11997" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypokalemia" confidence="0.95" evidence="All insulin products, including AFREZZA, cause a shift in potassium from the extracellular to intracellular space, possibly leading to hypokalemia." sourceSpanStart="12046" sourceSpanEnd="12193" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="insulin" targetType="Condition" targetId="hypokalemia" confidence="0.95" evidence="All insulin products, including AFREZZA, cause a shift in potassium from the extracellular to intracellular space, possibly leading to hypokalemia." sourceSpanStart="12046" sourceSpanEnd="12193" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="DrugClass" sourceId="thiazolidinediones" targetType="Condition" targetId="fluid-retention" confidence="0.95" evidence="Thiazolidinediones (TZDs), which are peroxisome proliferator-activated receptor (PPAR)-gamma agonists, can cause dose-related fluid retention, particularly when used in combination with insulin." sourceSpanStart="12629" sourceSpanEnd="12823" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="acute-bronchospasm" confidence="0.95" evidence="Acute bronchospasm in patients with chronic lung disease [see Warnings and Precautions ( 5.1 )]" sourceSpanStart="13301" sourceSpanEnd="13396" chunkIndex="6"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="chronic-lung-disease" confidence="0.7" evidence="Acute bronchospasm in patients with chronic lung disease [see Warnings and Precautions ( 5.1 )]" sourceSpanStart="13301" sourceSpanEnd="13396" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Hypoglycemia [see Warnings and Precautions ( 5.3 )]" sourceSpanStart="13397" sourceSpanEnd="13448" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="decline-in-pulmonary-function" confidence="0.95" evidence="Decline in pulmonary function [see Warnings and Precautions ( 5.4 )]" sourceSpanStart="13449" sourceSpanEnd="13517" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="lung-cancer" confidence="0.95" evidence="Lung cancer [see Warnings and Precautions ( 5.5 )]" sourceSpanStart="13518" sourceSpanEnd="13568" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.95" evidence="Diabetic ketoacidosis [see Warnings and Precautions ( 5.6 )]" sourceSpanStart="13569" sourceSpanEnd="13629" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypersensitivity-reactions" confidence="0.95" evidence="Hypersensitivity reactions [see Warnings and Precautions ( 5.7 )]" sourceSpanStart="13630" sourceSpanEnd="13695" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="cough" confidence="0.95" evidence="The most common adverse reactions associated with AFREZZA (2% or greater incidence) are hypoglycemia, cough, and throat pain or irritation ( 6 )" sourceSpanStart="13696" sourceSpanEnd="13840" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="throat-pain-or-irritation" confidence="0.95" evidence="The most common adverse reactions associated with AFREZZA (2% or greater incidence) are hypoglycemia, cough, and throat pain or irritation ( 6 )" sourceSpanStart="13696" sourceSpanEnd="13840" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="headache" confidence="0.9" evidence="Headache 3 3 2" sourceSpanStart="16505" sourceSpanEnd="16519" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="diarrhea" confidence="0.9" evidence="Diarrhea 3 1 2" sourceSpanStart="16520" sourceSpanEnd="16534" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="productive-cough" confidence="0.9" evidence="Productive cough 2 1 1" sourceSpanStart="16535" sourceSpanEnd="16557" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="fatigue" confidence="0.9" evidence="Fatigue 2 1 1" sourceSpanStart="16558" sourceSpanEnd="16571" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="nausea" confidence="0.9" evidence="Nausea 2 0.3 1" sourceSpanStart="16572" sourceSpanEnd="16586" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="cough" confidence="0.95" evidence="Cough 29 5" sourceSpanStart="17226" sourceSpanEnd="17236" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="throat-pain-or-irritation" confidence="0.95" evidence="Throat pain or irritation 6 2" sourceSpanStart="17237" sourceSpanEnd="17266" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="headache" confidence="0.95" evidence="Headache 5 3" sourceSpanStart="17267" sourceSpanEnd="17279" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="pulmonary-function-test-decreased" confidence="0.95" evidence="Pulmonary function test decreased 3 1" sourceSpanStart="17280" sourceSpanEnd="17317" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="bronchitis" confidence="0.95" evidence="Bronchitis 3 2" sourceSpanStart="17318" sourceSpanEnd="17332" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="urinary-tract-infection" confidence="0.95" evidence="Urinary tract infection 2 2" sourceSpanStart="17333" sourceSpanEnd="17360" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Hypoglycemia is the most commonly observed adverse reaction in patients treated with AFREZZA" sourceSpanStart="17374" sourceSpanEnd="17466" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="weight-gain" confidence="0.95" evidence="Weight gain has occurred with some insulin therapies, including AFREZZA." sourceSpanStart="19949" sourceSpanEnd="20021" chunkIndex="7"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="cough" confidence="0.9" evidence="Table 5. Common Adverse Reactions That Occurred in ≥ 5% of Pediatric Patients Aged 6 Years and Older With Type 1 and Type 2 Diabetes Mellitus (excluding Hypoglycemia) Treated with AFREZZA and More Commonly on AFREZZA Than on RAA Adverse Reaction a AFREZZA (n=117) % RAA (n=113) % Cough 21 3" sourceSpanStart="21771" sourceSpanEnd="22061" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="upper-respiratory-tract-infection" confidence="0.9" evidence="Upper respiratory tract infection 18 14" sourceSpanStart="22062" sourceSpanEnd="22101" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="oropharyngeal-pain" confidence="0.9" evidence="Oropharyngeal pain 11 4" sourceSpanStart="22102" sourceSpanEnd="22125" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="headache" confidence="0.9" evidence="Headache 8 5" sourceSpanStart="22126" sourceSpanEnd="22138" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="vomiting" confidence="0.9" evidence="Vomiting 5 3" sourceSpanStart="22139" sourceSpanEnd="22151" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="bronchospasm" confidence="0.95" evidence="The following adverse reaction has been identified during post approval use of AFREZZA... Respiratory : bronchospasm." sourceSpanStart="22759" sourceSpanEnd="22886" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="olanzapine" confidence="0.9" evidence="Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA." sourceSpanStart="24086" sourceSpanEnd="24715" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="clozapine" confidence="0.9" evidence="Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA." sourceSpanStart="24086" sourceSpanEnd="24715" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="albuterol" confidence="0.9" evidence="Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA." sourceSpanStart="24086" sourceSpanEnd="24715" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="epinephrine" confidence="0.9" evidence="Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA." sourceSpanStart="24086" sourceSpanEnd="24715" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="terbutaline" confidence="0.9" evidence="Atypical Antipsychotics (e.g., olanzapine and clozapine), Corticosteroids, Danazol, Diuretics, Estrogens, Glucagon, Isoniazid, Niacin, Oral Contraceptives, Phenothiazines, Progestogens (e.g., in oral contraceptives), Protease inhibitors, Somatropin, Sympathomimetic Agents (e.g., albuterol, epinephrine, terbutaline) and Thyroid Hormones. Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may reduce the blood glucose lowering effect of AFREZZA." sourceSpanStart="24086" sourceSpanEnd="24715" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="alcohol" confidence="0.9" evidence="Alcohol, Beta-blockers, Clonidine, and Lithium Salts Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use with AFREZZA may either increase or decrease the blood glucose lowering effect of AFREZZA." sourceSpanStart="24716" sourceSpanEnd="25065" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="clonidine" confidence="0.9" evidence="Alcohol, Beta-blockers, Clonidine, and Lithium Salts Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use with AFREZZA may either increase or decrease the blood glucose lowering effect of AFREZZA." sourceSpanStart="24716" sourceSpanEnd="25065" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="lithium-salts" confidence="0.9" evidence="Alcohol, Beta-blockers, Clonidine, and Lithium Salts Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use with AFREZZA may either increase or decrease the blood glucose lowering effect of AFREZZA." sourceSpanStart="24716" sourceSpanEnd="25065" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="pentamidine" confidence="0.9" evidence="Pentamidine Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of pentamidine with AFREZZA may cause hypoglycemia, which may sometimes be followed by hyperglycemia" sourceSpanStart="25066" sourceSpanEnd="25384" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="guanethidine" confidence="0.9" evidence="Beta-blockers, Clonidine, Guanethidine, and Reserpine Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may blunt the signs and symptoms of hypoglycemia, making it more difficult to recognize" sourceSpanStart="25385" sourceSpanEnd="25760" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="afrezza" targetType="Drug" targetId="reserpine" confidence="0.9" evidence="Beta-blockers, Clonidine, Guanethidine, and Reserpine Prevention or Management Monitor blood glucose more frequently and modify AFREZZA dosage, as clinically indicated, when used concomitantly with these drugs. Mechanism and Clinical Effect(s) Concomitant use of these drugs with AFREZZA may blunt the signs and symptoms of hypoglycemia, making it more difficult to recognize" sourceSpanStart="25385" sourceSpanEnd="25760" chunkIndex="9"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="diabetes-mellitus" confidence="0.95" evidence="The safety and effectiveness of AFREZZA to improve glycemic control have been established in pediatric patients 6 years of age and older with diabetes mellitus." sourceSpanStart="30294" sourceSpanEnd="30454" chunkIndex="12"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="hepatic-impairment" confidence="0.7" evidence="Frequent glucose monitoring and a lower dosage may be necessary in AFREZZA-treated patients with hepatic impairment" sourceSpanStart="31952" sourceSpanEnd="32067" chunkIndex="12"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="afrezza" targetType="Condition" targetId="renal-impairment" confidence="0.7" evidence="Frequent glucose monitoring and a lower dosage may be necessary in AFREZZA-treated patients with renal impairment" sourceSpanStart="32377" sourceSpanEnd="32490" chunkIndex="12"/>
+</raw:RawExtractionResult>

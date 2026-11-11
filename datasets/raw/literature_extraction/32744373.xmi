@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/32744373.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/32744373/" sourceSha256="eb9f27ce55f7406ceea13e6110eafc92a5e0abbe05f358777c7d0cc6c52d8469" sourceText="# PubMed 32744373: A transitional care intervention for hypertension control for older people with diabetes: A cluster randomized controlled trial.&#10;&#10;Journal of advanced nursing (2020), doi:10.1111/jan.14466&#10;&#10;AIMS: To evaluate the effect of a nurse-coordinated hospital-initiated transitional care programme on hypertension control for older people with diabetes in China.&#10;&#10;DESIGN: A cluster randomized controlled trial.&#10;&#10;METHODS: A total of 10 wards (clusters) of four acute care hospitals participated in the trial. They were randomly assigned to the intervention group or the control group. A total of 270 participants (135 in each group) were recruited from these wards. Data were collected between June 2016 - June 2017. Participants in the intervention group received a 6-month hospital to home transitional care programme coordinated by discharge nurses and community nurses. The programme comprised self-management education, lifestyle changes, individualized medication treatment, structured telephone support, and primary care visits. Outcomes were measured at baseline, and 3 months and 6 months from the baseline.&#10;&#10;RESULTS: The mean age was 70.9 (SD 5.8) years and 55% of participants were men. The intervention group demonstrated a statistically significant decrease in mean systolic blood pressure of 10.7 mmHg and mean diastolic blood pressure of 4.1 mmHg compared with the control group. The findings also demonstrated significant improvements in HbA1c, hypertension knowledge, diabetes knowledge, treatment adherence, quality of life, hospital readmission, and emergency department visits in the intervention group compared with the control group. However, no significant differences in adverse events were observed between the two groups.&#10;&#10;CONCLUSIONS: A hospital-initiated and nurse-coordinated transitional care intervention improves hypertension control and reduces hospital readmissions for older people with diabetes.&#10;&#10;IMPACT: Lack hospital to home transitional care for hospitalized older people with hypertension and diabetes can result in high readmission rates and emergency department visits. A hospital-initiated and nurse-coordinated transitional care intervention built on collaboration between acute care hospitals and community health centres results in improved hypertension control and reduced readmissions for older people with diabetes and other chronic conditions. An integrated and well-coordinated care services between acute care hospitals and community health centres can strengthen the primary care approach to supporting self-management of hypertension, diabetes, and other ageing-associated health conditions for community-dwelling older people.&#10;&#10;TRIAL REGISTRATION: The trial was registered with the Australia New Zealand Clinical Trials Registry (ID: ACTRN12617001352392).&#10;&#10;目的: 为了评估由护士协作的医院发起的过渡护理方案对中国老年糖尿病患者控制高血压的效果。 设计: 一项群组随机对照试验。 方法: 共有四家急性护理医院的10个病房（群组）参加了试验。随机分为干预组或对照组。这些病房共招募了270名参与者（每组135名）。数据收集时间为2016年6月至2017年6月。干预组的参与者接受了由出院护士和社区护士协调的为期6个月的从医院到家庭的过渡护理计划。该计划包括自我管理教育、生活方式改变、个性化药物治疗、结构化电话支持和初级保健就诊。在基线以及距基线3个月和6个月的时间测量结果。 结果: 平均年龄为70.9（标准差5.8）岁，55％的参与者为男性。与对照组相比，干预组的平均收缩压下降了10.7mmHg，舒张压平均下降了4.1 mmHg。研究结果还表明，与对照组相比，干预组在糖化血红蛋白、高血压知识、糖尿病知识、治疗依从性、生活质量、再入院率和急诊方面都有显著改善。但是，两组之间在不良反应没有显著差异。 结论: 由医院启动和护士协调的过渡护理干预措施可以改善高血压控制，并减少糖尿病老年患者再入院。 影响: 对于患有高血压和糖尿病的住院老年人，缺乏医院到家庭的过渡护理可能会导致较高的再入院率和急诊就诊率。在急性护理医院和社区卫生中心合作的基础上，医院发起和护士协调的过渡护理干预措施可以改善高血压控制，并减少患有糖尿病和其他慢性病的老年人的再入院率。急性护理医院和社区卫生中心之间的综合和协调良好的护理服务可以加强初级护理方法，以支持社区老年人高血压、糖尿病和其他与老龄化有关的健康状况的自我管理。 试验注册: 该试验已在澳大利亚新西兰临床中心注册 试验注册（ID：ACTRN12617001352392）。.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:39:12+00:00" xmi:version="2.0">
+  <chunks charEnd="2689"/>
+  <chunks index="1" charStart="2691" charEnd="3548"/>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="56" sourceSpanEnd="68">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="99" sourceSpanEnd="107">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmission" confidence="0.95" sourceSpanStart="1551" sourceSpanEnd="1571">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="lack-hospital-to-home-transitional-care" mention="Lack hospital to home transitional care for hospitalized older people with hypertension and diabetes" confidence="0.9" sourceSpanStart="1949" sourceSpanEnd="2049">
+    <properties key="name" value="lack of transitional care"/>
+    <properties key="description" value="lack hospital to home transitional care for hospitalized older people with hypertension and diabetes"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="high-readmission-rates" mention="high readmission rates" confidence="0.9" sourceSpanStart="2064" sourceSpanEnd="2086">
+    <properties key="name" value="high readmission rates"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="糖尿病" confidence="0.9" sourceSpanStart="2850" sourceSpanEnd="2853" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="再入院" confidence="0.9" sourceSpanStart="3207" sourceSpanEnd="3210" chunkIndex="1">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="lack-of-hospital-to-home-transitional-care" mention="缺乏医院到家庭的过渡护理" confidence="0.85" sourceSpanStart="3313" sourceSpanEnd="3325" chunkIndex="1">
+    <properties key="name" value="lack of hospital-to-home transitional care"/>
+    <properties key="description" value="absence of hospital-to-home transitional care for hospitalized older adults with hypertension and diabetes"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-rate" mention="再入院率" confidence="0.9" sourceSpanStart="3333" sourceSpanEnd="3337" chunkIndex="1">
+    <properties key="name" value="hospital readmission rate"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lack-hospital-to-home-transitional-care" targetType="ClinicalOutcome" targetId="high-readmission-rates" confidence="0.88" evidence="Lack hospital to home transitional care for hospitalized older people with hypertension and diabetes can result in high readmission rates and emergency department visits." sourceSpanStart="1949" sourceSpanEnd="2119"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lack-of-hospital-to-home-transitional-care" targetType="ClinicalOutcome" targetId="readmission-rate" confidence="0.85" evidence="对于患有高血压和糖尿病的住院老年人，缺乏医院到家庭的过渡护理可能会导致较高的再入院率和急诊就诊率。" sourceSpanStart="3295" sourceSpanEnd="3344" chunkIndex="1"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/12948256" sourceUri="https://pubmed.ncbi.nlm.nih.gov/12948256/" sourceSha256="bcced61c02881f9388c68b82875254b40ef0f7c273a5d5861a626aac14ae5d2d" sourceText="Ethambutol and optic neuropathy. PURPOSE: To demonstrate the association between ethambutol and optic neuropathy. METHOD: Thirteen patients who developed optic neuropathy after being treated with ethambutol for tuberculosis of the lung or lymph node at Siriraj Hospital between 1997 and 2001 were retrospectively reviewed. The clinical characteristics and initial and final visual acuity were analyzed to determine visual outcome. RESULTS: All patients had optic neuropathy between 1 to 6 months (mean = 2.9 months) after starting ethambutol therapy at a dosage ranging from 13 to 20 mg/kg/day (mean = 17 mg/kg/day). Seven (54%) of the 13 patients experienced visual recovery after stopping the drug. Of 6 patients with irreversible visual impairment, 4 patients had diabetes mellitus, glaucoma and a history of heavy smoking. CONCLUSION: Early recognition of optic neuropathy should be considered in patients with ethambutol therapy. A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:55:32+00:00" xmi:version="2.0">
+  <chunks charEnd="1086"/>
+  <entities type="Drug" id="ethambutol" mention="ethambutol" confidence="1.0" sourceSpanStart="0" sourceSpanEnd="10">
+    <properties key="name" value="ethambutol"/>
+  </entities>
+  <entities type="Condition" id="optic-neuropathy" mention="optic neuropathy" confidence="1.0" sourceSpanStart="15" sourceSpanEnd="31">
+    <properties key="name" value="optic neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="tuberculosis" mention="tuberculosis" confidence="0.95" sourceSpanStart="211" sourceSpanEnd="223">
+    <properties key="name" value="tuberculosis"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="1.0" sourceSpanStart="767" sourceSpanEnd="784">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="glaucoma" mention="glaucoma" confidence="1.0" sourceSpanStart="786" sourceSpanEnd="794">
+    <properties key="name" value="glaucoma"/>
+    <properties key="category" value="ophthalmological"/>
+  </entities>
+  <entities type="Condition" id="heavy-smoking" mention="heavy smoking" confidence="0.9" sourceSpanStart="812" sourceSpanEnd="825">
+    <properties key="name" value="heavy smoking"/>
+    <properties key="category" value="behavioral"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="ethambutol" targetType="Condition" targetId="optic-neuropathy" confidence="0.95" evidence="Thirteen patients who developed optic neuropathy after being treated with ethambutol for tuberculosis of the lung or lymph node at Siriraj Hospital between 1997 and 2001 were retrospectively reviewed." sourceSpanStart="122" sourceSpanEnd="322"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="ethambutol" targetType="Condition" targetId="tuberculosis" confidence="0.95" evidence="Thirteen patients who developed optic neuropathy after being treated with ethambutol for tuberculosis of the lung or lymph node at Siriraj Hospital between 1997 and 2001 were retrospectively reviewed." sourceSpanStart="122" sourceSpanEnd="322"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="ethambutol" targetType="Condition" targetId="diabetes-mellitus" confidence="0.85" evidence="A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers." sourceSpanStart="935" sourceSpanEnd="1086"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="ethambutol" targetType="Condition" targetId="glaucoma" confidence="0.85" evidence="A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers." sourceSpanStart="935" sourceSpanEnd="1086"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="ethambutol" targetType="Condition" targetId="heavy-smoking" confidence="0.85" evidence="A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers." sourceSpanStart="935" sourceSpanEnd="1086"/>
+</raw:RawExtractionResult>

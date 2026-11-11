@@ -1,0 +1,13 @@
+# PubMed 31898171: Frailty and diabetes status in older patients with cancer: impact on mortality in the ANCRAGE cohort.
+
+Aging clinical and experimental research (2020), doi:10.1007/s40520-019-01362-9
+
+BACKGROUND: Frailty, diabetes and cancer are associated with aging, but the relationship between these conditions is not well defined.
+
+AIMS: We studied older patients with cancer from the prospective single-center cohort ANCRAGE (ANalyses of CanceR in AGEd) aiming to determine the impact of type 2 diabetes (T2D) and its vascular complications (VC) on frailty and adverse outcomes (mortality, unplanned readmission) during follow-up.
+
+METHODS: Analysis of cohort patients ≥ 75 years, included between 2009 and 2017, who underwent a comprehensive geriatric assessment (CGA). Variables of interest were history of T2D and VC, tumor site and metastatic status, CGA including eight domains (social environment, functional status, mobility, nutrition, mood, cognition, polypharmacy and comorbidities) and frailty.
+
+RESULTS: Among 1092 patients (47% female, mean age 82 ± 5 years), 219 (20%) had a reported diagnosis of T2D at baseline including 152 (69%) with VC. The most common tumor sites were prostate (15%), breast (15%), skin (12%), and colorectum (11%); 29% of patients had a metastatic disease. Frailty was highly prevalent (84%). During follow-up (median of 15.3 months), 653 (60%) patients died (60% no T2D, 43% T2D without VC, 66% with VC). After adjustment for age, gender and metastatic status, diabetics with VC had a higher risk of all-cause death (aHR1.89, 1.24-2.86, p = 0.004). Death was more frequently due to a non-cancer cause (p < 0.001). No difference in unplanned readmissions was observed in the three groups. Frailty was an independent risk factor for mortality and unplanned readmissions (p < 0.001 both).
+
+CONCLUSION: In older cancer patients from the prospective ANCRAGE cohort, all-cause mortality was significantly higher in frail patients and those with complicated T2D, a finding questioning the quality of care management in such vulnerable patients, and stimulating further research in this multidisciplinary field.

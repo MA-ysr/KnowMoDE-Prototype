@@ -1,0 +1,11 @@
+# PubMed 35951121: Redefining the role of routine postoperative bloodwork following uncomplicated bariatric surgery.
+
+Surgical endoscopy (2023), doi:10.1007/s00464-022-09518-x
+
+BACKGROUND: A quality improvement opportunity was identified to de-adopt the low-value care practice of routinely performing bloodwork for all patients undergoing elective bariatric surgery. While these patients are typically discharged on postoperative day 1 (POD1) after bloodwork is performed, it is uncommon for the discharge plan to change due to unexpected laboratory abnormalities alone.
+
+METHODS: Patients undergoing bariatric surgery between September 2020 and April 2021 only had POD1 bloodwork if there were perioperative clinical concerns, they had insulin-dependent diabetes, or they were therapeutically anticoagulated. Thirty-day Emergency Department (ED) visits and readmissions were monitored as balancing measures. Outcomes were compared to a control group that underwent bariatric surgery prior to September 2020 when POD1 laboratory testing was routinely performed. Financial and environmental costs were estimated based our institutional standards.
+
+RESULTS: The intervention group consisted of 303 patients: 248 (82%) Roux-en-Y gastric bypasses and 55 (18%) sleeve gastrectomies. Most patients (n = 256, 84.5%) did not have POD1 bloodwork. Twelve (3.9%) had bloodwork performed in violation of our protocol, of which none had a change in management based on the results. Of the 35 (12%) who had appropriately ordered bloodwork, 6 (2%) required a transfusion and 2 (0.7%) required a second surgery on the same admission for hemorrhage. Forty-four (14.5%) had 30-day ED visits of which 17 (5.6%) were within 7 days. Sixteen (5.3%) were readmitted. There were no significant differences between intervention and control groups in the rate of transfusion, second surgery, or 30-day ED visits. The avoidance of POD1 bloodwork saved approximately $6602.24 in lab processing fees alone and 512 test tubes.
+
+CONCLUSION: POD1 bloodwork can be safely avoided in the absence of clinical concerns. In addition to not significantly increasing postoperative complications, there were benefits from a financial cost, environmental impact, and patient discomfort perspective.

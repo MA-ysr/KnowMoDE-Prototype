@@ -1,0 +1,11 @@
+# PubMed 32811495: The neglected perioperative population of undiagnosed diabetics - a retrospective cohort study.
+
+BMC surgery (2020), doi:10.1186/s12893-020-00844-2
+
+BACKGROUND: Diabetes is known to increase morbidity and 30-day mortality in adults undergoing non-cardiac surgery, but longer term outcomes are less studied. This study was done to explore how undiagnosed and known diabetes affect 30-day and one-year morbidity and mortality outcomes. The secondary aim was to study the prevalence of undiagnosed diabetics in our perioperative Asian surgical population.
+
+METHODS: A retrospective cohort study of 2106 patients aged > 45 years undergoing non-cardiac surgery in a single tertiary hospital was performed. Undiagnosed diabetics were identified (HbA1c ≥6.5% or fasting blood glucose ≥126 mg/dL) and relevant demographic, clinical and surgical data were analyzed to elicit the relationship to adverse outcomes. Univariate analysis was first performed to identify significant variables with p-values ≤0.1, which were then analyzed using multiple logistic regression to calculate the adjusted odds ratio.
+
+RESULTS: The prevalence of undiagnosed diabetes was 7.4%. The mean and median HbA1c of known diabetics were 7.9 and 7.5%, while the mean and median HbA1c for undiagnosed diabetics were 7.2 and 6.8% respectively. 36.4% of known diabetics and 20.5% of undiagnosed diabetics respectively had a random blood glucose > 200 mg/dL. Undiagnosed diabetics had a three-fold increase in 1-year mortality compared to non-diabetics (adjusted OR 3.46(1.80-6.49) p < 0.001) but this relationship was not significant between known and non-diabetics. Compared to non-diabetics, known diabetics were at increased risks of new-onset atrial fibrillation (aOR 2.48(1.01-6.25) p = 0.047), infection (aOR 1.49(1.07-2.07) p = 0.017), 30-day readmission (aOR 1.62(1.17-2.25) p = 0.004) and 30-day mortality (aOR 3.11(1.16-8.56) p = 0.025).
+
+CONCLUSIONS: Although undiagnosed diabetics have biochemically less severe disease compared to known diabetics at the point of testing, they are at a one-year mortality disadvantage which is not seen among known diabetics. This worrying trend highlights the importance of identifying and treating diabetes. Congruent to previous studies, known diabetics have higher morbidity and 30-day mortality compared to non-diabetics.

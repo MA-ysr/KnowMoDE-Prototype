@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36881837.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36881837/" sourceSha256="927e07f3f0f23d6caa858193b8013f92db33edd314f899b721ef709d21d31362" sourceText="# PubMed 36881837: Assessment of Cardiovascular Disease Among Predominantly Black Gout Patients.&#10;&#10;Journal of clinical rheumatology : practical reports on rheumatic &amp; musculoskeletal diseases (2023), doi:10.1097/RHU.0000000000001948&#10;&#10;INTRODUCTION: Although the association between gout and cardiovascular disease (CVD) has been extensively studied, scarce data are available for the Black population. We aimed to assess the association between gout and CVD in a predominantly Black urban population with gout.&#10;&#10;METHODS: A cross-sectional analysis was performed between a gout cohort and an age-/sex-matched control group. Clinical parameters and 2D echocardiograms were reviewed for the patients with gout and heart failure (HF). The primary outcome studied includes the prevalence and strength of association between gout and CVD. Secondary outcomes studied includes strength of association of gout and HF categorized by ejection fraction, mortality, and HF readmissions.&#10;&#10;RESULTS: Four hundred seventy-one patients with gout had a mean age of 63.7 ± 0.5 years; 89% were Black, 63% were men, and mean body mass index was 31.3 ± 0.4 kg/m 2 . Hypertension, diabetes mellitus, and dyslipidemia were present in 89%, 46%, and 52%, respectively. Compared with controls, patients with gout had significantly higher rates of angina, arrhythmia, coronary artery disease/stents, myocardial infarction, coronary artery bypass graft surgery, cerebrovascular accident, and peripheral vascular disease. The adjusted odds ratio for CVD was 2.9 (95% confidence interval, 1.9-4.5; p &lt; 0.001). Gout patients had a higher prevalence of HF with 45% (n = 212) compared with controls with 9.4% (n = 44). Adjusted odds ratio for HF risk was 7.1 (95% confidence interval, 4.7-10.6; p &lt; 0.01).&#10;&#10;CONCLUSIONS: Gout in a predominantly Black population confers 3 times the CVD risk and 7 times HF-specific risk compared with age- and sex-matched cohort. Further research is needed to confirm our findings and to develop interventions to reduce morbidity associated with gout.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:27:14+00:00" xmi:version="2.0">
+  <chunks charEnd="2047"/>
+  <entities type="Condition" id="gout" mention="gout" confidence="0.95" sourceSpanStart="82" sourceSpanEnd="86">
+    <properties key="name" value="gout"/>
+    <properties key="category" value="rheumatologic"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-disease" mention="cardiovascular disease (CVD)" confidence="0.95" sourceSpanStart="289" sourceSpanEnd="317">
+    <properties key="name" value="cardiovascular disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure (HF)" confidence="0.95" sourceSpanStart="709" sourceSpanEnd="727">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="heart-failure-readmissions" mention="HF readmissions" confidence="0.9" sourceSpanStart="955" sourceSpanEnd="970">
+    <properties key="name" value="heart failure readmissions"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.9" sourceSpanStart="940" sourceSpanEnd="949">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1155" sourceSpanEnd="1172">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="gout" targetType="ClinicalOutcome" targetId="mortality" confidence="0.7" evidence="Secondary outcomes studied includes strength of association of gout and HF categorized by ejection fraction, mortality, and HF readmissions." sourceSpanStart="831" sourceSpanEnd="971"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="gout" targetType="ClinicalOutcome" targetId="heart-failure-readmissions" confidence="0.7" evidence="Secondary outcomes studied includes strength of association of gout and HF categorized by ejection fraction, mortality, and HF readmissions." sourceSpanStart="831" sourceSpanEnd="971"/>
+</raw:RawExtractionResult>

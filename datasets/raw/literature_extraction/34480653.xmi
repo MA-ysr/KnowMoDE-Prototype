@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34480653.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34480653/" sourceSha256="7f11e02945256b0617cae608b98bc95f02b1cf54412f8e7e053af478f94c4f84" sourceText="# PubMed 34480653: Predicting and Preventing Acute Care Re-Utilization by Patients with Diabetes.&#10;&#10;Current diabetes reports (2021), doi:10.1007/s11892-021-01402-7&#10;&#10;PURPOSE OF REVIEW: Acute care re-utilization, i.e., hospital readmission and post-discharge Emergency Department (ED) use, is a significant driver of healthcare costs and a marker for healthcare quality. Diabetes is a major contributor to acute care re-utilization and associated costs. The goals of this paper are to (1) review the epidemiology of readmissions among patients with diabetes, (2) describe models that predict readmission risk, and (3) address various strategies for reducing the risk of acute care re-utilization.&#10;&#10;RECENT FINDINGS: Hospital readmissions and ED visits by diabetes patients are common and costly. Major risk factors for readmission include sociodemographics, comorbidities, insulin use, hospital length of stay (LOS), and history of readmissions, most of which are non-modifiable. Several models for predicting the risk of readmission among diabetes patients have been developed, two of which have reasonable accuracy in external validation. In retrospective studies and mostly small randomized controlled trials (RCTs), interventions such as inpatient diabetes education, inpatient diabetes management services, transition of care support, and outpatient follow-up are generally associated with a reduction in the risk of acute care re-utilization. Data on readmission risk and readmission risk reduction interventions are limited or lacking among patients with diabetes hospitalized for COVID-19. The evidence supporting post-discharge follow-up by telephone is equivocal and also limited. Acute care re-utilization of patients with diabetes presents an important opportunity to improve healthcare quality and reduce costs. Currently available predictive models are useful for identifying higher risk patients but could be improved. Machine learning models, which are becoming more common, have the potential to generate more accurate acute care re-utilization risk predictions. Tools embedded in electronic health record systems are needed to translate readmission risk prediction models into clinical practice. Several risk reduction interventions hold promise but require testing in multi-site RCTs to prove their generalizability, scalability, and effectiveness.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:42:33+00:00" xmi:version="2.0">
+  <chunks charEnd="2364"/>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="Hospital readmissions" confidence="0.95" sourceSpanStart="712" sourceSpanEnd="733">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="acute-care-re-utilization" mention="acute care re-utilization" confidence="0.95" sourceSpanStart="1418" sourceSpanEnd="1443">
+    <properties key="name" value="acute care re-utilization"/>
+  </entities>
+  <entities type="RiskFactor" id="insulin-use" mention="insulin use" confidence="0.9" sourceSpanStart="869" sourceSpanEnd="880">
+    <properties key="name" value="insulin use"/>
+    <properties key="description" value="patient use of insulin"/>
+  </entities>
+  <entities type="RiskFactor" id="hospital-length-of-stay" mention="hospital length of stay (LOS)" confidence="0.9" sourceSpanStart="882" sourceSpanEnd="911">
+    <properties key="name" value="hospital length of stay"/>
+    <properties key="description" value="duration of hospital stay"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-readmissions" mention="history of readmissions" confidence="0.9" sourceSpanStart="917" sourceSpanEnd="940">
+    <properties key="name" value="history of readmissions"/>
+    <properties key="description" value="prior readmissions"/>
+  </entities>
+  <entities type="RiskFactor" id="inpatient-diabetes-education" mention="inpatient diabetes education" confidence="0.9" sourceSpanStart="1238" sourceSpanEnd="1266">
+    <properties key="name" value="inpatient diabetes education"/>
+    <properties key="description" value="diabetes education provided during inpatient stay"/>
+  </entities>
+  <entities type="RiskFactor" id="inpatient-diabetes-management-services" mention="inpatient diabetes management services" confidence="0.9" sourceSpanStart="1268" sourceSpanEnd="1306">
+    <properties key="name" value="inpatient diabetes management services"/>
+    <properties key="description" value="management services for diabetes provided during inpatient stay"/>
+  </entities>
+  <entities type="RiskFactor" id="transition-of-care-support" mention="transition of care support" confidence="0.9" sourceSpanStart="1308" sourceSpanEnd="1334">
+    <properties key="name" value="transition of care support"/>
+    <properties key="description" value="support during transition of care"/>
+  </entities>
+  <entities type="RiskFactor" id="outpatient-follow-up" mention="outpatient follow-up" confidence="0.9" sourceSpanStart="1340" sourceSpanEnd="1360">
+    <properties key="name" value="outpatient follow-up"/>
+    <properties key="description" value="follow-up care in an outpatient setting"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="insulin-use" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.85" evidence="Major risk factors for readmission include sociodemographics, comorbidities, insulin use, hospital length of stay (LOS), and history of readmissions, most of which are non-modifiable." sourceSpanStart="792" sourceSpanEnd="975"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="hospital-length-of-stay" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.85" evidence="Major risk factors for readmission include sociodemographics, comorbidities, insulin use, hospital length of stay (LOS), and history of readmissions, most of which are non-modifiable." sourceSpanStart="792" sourceSpanEnd="975"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-readmissions" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.85" evidence="Major risk factors for readmission include sociodemographics, comorbidities, insulin use, hospital length of stay (LOS), and history of readmissions, most of which are non-modifiable." sourceSpanStart="792" sourceSpanEnd="975"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="inpatient-diabetes-education" targetType="ClinicalOutcome" targetId="acute-care-re-utilization" confidence="0.9" evidence="In retrospective studies and mostly small randomized controlled trials (RCTs), interventions such as inpatient diabetes education, inpatient diabetes management services, transition of care support, and outpatient follow-up are generally associated with a reduction in the risk of acute care re-utilization." sourceSpanStart="1137" sourceSpanEnd="1444"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="inpatient-diabetes-management-services" targetType="ClinicalOutcome" targetId="acute-care-re-utilization" confidence="0.9" evidence="In retrospective studies and mostly small randomized controlled trials (RCTs), interventions such as inpatient diabetes education, inpatient diabetes management services, transition of care support, and outpatient follow-up are generally associated with a reduction in the risk of acute care re-utilization." sourceSpanStart="1137" sourceSpanEnd="1444"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="transition-of-care-support" targetType="ClinicalOutcome" targetId="acute-care-re-utilization" confidence="0.9" evidence="In retrospective studies and mostly small randomized controlled trials (RCTs), interventions such as inpatient diabetes education, inpatient diabetes management services, transition of care support, and outpatient follow-up are generally associated with a reduction in the risk of acute care re-utilization." sourceSpanStart="1137" sourceSpanEnd="1444"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="outpatient-follow-up" targetType="ClinicalOutcome" targetId="acute-care-re-utilization" confidence="0.9" evidence="In retrospective studies and mostly small randomized controlled trials (RCTs), interventions such as inpatient diabetes education, inpatient diabetes management services, transition of care support, and outpatient follow-up are generally associated with a reduction in the risk of acute care re-utilization." sourceSpanStart="1137" sourceSpanEnd="1444"/>
+</raw:RawExtractionResult>

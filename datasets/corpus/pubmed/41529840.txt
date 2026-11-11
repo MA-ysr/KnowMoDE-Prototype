@@ -1,0 +1,11 @@
+# PubMed 41529840: A Unified System-Wide Electronic Dashboard for Inpatient Glucose Management Across a Large Health System.
+
+Journal of diabetes science and technology (2026), doi:10.1177/19322968251411335
+
+BACKGROUND: Despite established guidelines and increasing national hospital quality metrics, achieving consistent inpatient glycemic control remains challenging. A system-wide glucose data monitoring dashboard can help consolidate and visualize key metrics to support quality improvement (QI) and standardize care.
+
+METHODS: A web-based diabetes dashboard was implemented across 7 hospitals within a large health care system to monitor monthly data from the electronic health record. Metrics included patient-days with hypoglycemia (<70 mg/dL), hyperglycemia (mean >180 mg/dL), in-hospital mortality, hospital length of stay (LOS), and 30-day readmissions to the emergency department (ED) or inpatient/observation (IP/OBS). A total of 455 303 admissions were analyzed between January 2018 and March 2025, comparing pre-implementation (2018-2022) to post-implementation (2023-2025). Statistical analyses included t tests or Wilcoxon rank-sum tests. Given differences between the large academic site and 6 community hospitals, a difference-in-differences analysis was performed to evaluate impact by hospital type.
+
+RESULTS: After implementation of the dashboard, patient-days with hypoglycemia decreased from 4.81% to 4.15%, hyperglycemia from 25.30% to 23.46%, mortality from 2.69% to 2.13%, and LOS from 7.56 to 7.29 days (all P < .01). Emergency department and IP/OBS readmissions increased slightly (P < .01 and P = .01, respectively). Comparing the community hospitals to the academic, statistically significant reductions were observed in hypoglycemia, hyperglycemia, and mortality but with increased ED readmissions. There were no differences in LOS or IP/OBS readmission.
+
+CONCLUSIONS: Implementation of a system-wide electronic dashboard was associated with improved glycemic control, mortality, and LOS. Dashboards can effectively support multidisciplinary collaboration and QI in diverse hospital settings.

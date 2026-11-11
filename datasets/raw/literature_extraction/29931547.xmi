@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29931547.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29931547/" sourceSha256="acd6e4164aa5de4a5972131d13d4b5cd78fcd1916b30769d32333246e53c5376" sourceText="# PubMed 29931547: Strategies to Prevent Readmission in High-Risk Patients with Diabetes: the Importance of an Interdisciplinary Approach.&#10;&#10;Current diabetes reports (2018), doi:10.1007/s11892-018-1027-z&#10;&#10;PURPOSE OF REVIEW: Patients with diabetes are known to have higher 30-day readmission rates compared to the general inpatient population. A number of strategies have been shown to be effective in lowering readmission rates.&#10;&#10;RECENT FINDINGS: A review of the current literature revealed several strategies that have been associated with a decreased risk of readmission in high-risk patients with diabetes. These strategies include inpatient diabetes survival skills education and medication reconciliation prior to discharge to send the patient home with the &quot;right&quot; medications. Other key strategies include scheduling a follow-up phone call soon after discharge and an office visit to adjust the diabetes regimen. The authors identified the most successful strategies to reduce readmissions as well as some institutional barriers to following a transitional care program. Recent studies have identified risk factors in the diabetes population that are associated with an increased risk of readmission as well as interventions to lower this risk. A standardized transitional care program that focuses on providing interventions while reducing barriers to implementation can contribute to a decreased risk of readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:33:22+00:00" xmi:version="2.0">
+  <chunks charEnd="1425"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="80" sourceSpanEnd="88">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="271" sourceSpanEnd="289">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="inpatient-diabetes-survival-skills-education" mention="inpatient diabetes survival skills education" confidence="0.9" sourceSpanStart="634" sourceSpanEnd="678">
+    <properties key="name" value="inpatient diabetes survival skills education"/>
+    <properties key="description" value="inpatient diabetes survival skills education provided to the patient"/>
+  </entities>
+  <entities type="RiskFactor" id="medication-reconciliation-prior-to-discharge" mention="medication reconciliation prior to discharge" confidence="0.9" sourceSpanStart="683" sourceSpanEnd="727">
+    <properties key="name" value="medication reconciliation prior to discharge"/>
+    <properties key="description" value="medication reconciliation prior to discharge"/>
+  </entities>
+  <entities type="RiskFactor" id="scheduling-a-follow-up-phone-call-soon-after-discharge" mention="scheduling a follow-up phone call soon after discharge" confidence="0.9" sourceSpanStart="812" sourceSpanEnd="866">
+    <properties key="name" value="scheduling a follow-up phone call soon after discharge"/>
+    <properties key="description" value="scheduling a follow-up phone call soon after discharge"/>
+  </entities>
+  <entities type="RiskFactor" id="office-visit-to-adjust-the-diabetes-regimen" mention="office visit to adjust the diabetes regimen" confidence="0.9" sourceSpanStart="874" sourceSpanEnd="917">
+    <properties key="name" value="office visit to adjust the diabetes regimen"/>
+    <properties key="description" value="office visit to adjust the diabetes regimen"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="983" sourceSpanEnd="994">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="standardized-transitional-care-program" mention="standardized transitional care program" confidence="0.9" sourceSpanStart="1253" sourceSpanEnd="1291">
+    <properties key="name" value="standardized transitional care program"/>
+    <properties key="description" value="standardized transitional care program that focuses on providing interventions while reducing barriers to implementation"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="inpatient-diabetes-survival-skills-education" targetType="ClinicalOutcome" targetId="readmission" confidence="0.85" evidence="These strategies include inpatient diabetes survival skills education and medication reconciliation prior to discharge to send the patient home with the &quot;right&quot; medications." sourceSpanStart="609" sourceSpanEnd="782"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="medication-reconciliation-prior-to-discharge" targetType="ClinicalOutcome" targetId="readmission" confidence="0.85" evidence="These strategies include inpatient diabetes survival skills education and medication reconciliation prior to discharge to send the patient home with the &quot;right&quot; medications." sourceSpanStart="609" sourceSpanEnd="782"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="standardized-transitional-care-program" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="A standardized transitional care program that focuses on providing interventions while reducing barriers to implementation can contribute to a decreased risk of readmission." sourceSpanStart="1251" sourceSpanEnd="1424"/>
+</raw:RawExtractionResult>

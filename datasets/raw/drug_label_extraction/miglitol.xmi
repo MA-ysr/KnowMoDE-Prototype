@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/miglitol.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22miglitol%22" sourceSha256="0dbec1f568b7cf719ae55c7622472eed9cc350c19bd7ebe5a074851157a2ef7e" sourceText="# FDA prescribing information: miglitol&#10;&#10;Generic name: MIGLITOL&#10;Brand name: Miglitol&#10;Pharmacologic class: alpha-Glucosidase Inhibitor [EPC]&#10;Label set id: b8da2015-d254-2425-e053-2995a90acf0e, effective 20211207&#10;&#10;## Indications and usage&#10;&#10;INDICATIONS AND USAGE Miglitol tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.&#10;&#10;## Contraindications&#10;&#10;CONTRAINDICATIONS Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis Inflammatory bowel disease, colonic ulceration, or partial intestinal obstruction, and in patients predisposed to intestinal obstruction Chronic intestinal diseases associated with marked disorders of digestion or absorption, or with conditions that may deteriorate as a result of increased gas formation in the intestine Hypersensitivity to the drug or any of its components&#10;&#10;## Precautions&#10;&#10;PRECAUTIONS Macrovascular Outcomes There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with miglitol tablets or any other anti-diabetic drug. General Hypoglycemia Because of its mechanism of action, miglitol tablets, when administered alone should not cause hypoglycemia in the fasted or postprandial state. Sulfonylureas and insulin can cause hypoglycemia. Because miglitol tablets given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the hypoglycemic potential of the sulfonylurea or insulin. Consider reducing the dose of sulfonylureas or insulin when miglitol tablets are used in combination with these medications. Oral glucose (dextrose), whose absorption is not delayed by miglitol tablets, should be used instead of sucrose (cane sugar) in the treatment of mild-to-moderate hypoglycemia. Sucrose, whose hydrolysis to glucose and fructose is inhibited by miglitol tablets, is unsuitable for the rapid correction of hypoglycemia. Severe hypoglycemia may require the use of either intravenous glucose infusion or glucagon injection. Loss of Control of Blood Glucose When diabetic patients are exposed to stress such as fever, trauma, infection, or surgery, a temporary loss of control of blood glucose may occur. At such times, temporary insulin therapy may be necessary. Renal Impairment Plasma concentrations of miglitol tablets in renally impaired volunteers were proportionally increased relative to the degree of renal dysfunction. Long-term clinical trials in diabetic patients with significant renal dysfunction (serum creatinine &gt;2.0 mg/dL) have not been conducted. Therefore, treatment of these patients with miglitol tablets is not recommended. Information for Patients The following information should be provided to patients: Miglitol tablets should be taken orally three times a day at the start of each main meal. It is important to continue to adhere to dietary instructions, a regular exercise program, and regular testing of urine and/or blood glucose. Miglitol tablets themselves do not cause hypoglycemia when administered to patients in the fasted state. Sulfonylurea drugs and insulin, however, can lower blood sugar levels and cause symptoms or life-threatening hypoglycemia. Because miglitol tablets given in combination with a sulfonylurea or insulin will cause a further lowering of blood sugar, it may increase the hypoglycemic potential of these agents. The risk of hypoglycemia, its symptoms and treatment, and conditions that predispose to its development should be well understood by patients and responsible family members. Because miglitol tablets prevent the breakdown of table sugar, a source of glucose (dextrose, D-glucose) should be readily available to treat symptoms of low blood sugar when taking miglitol tablets in combination with a sulfonylurea or insulin. If side effects occur with miglitol tablets, they usually develop during the first few weeks of therapy. They are most commonly mild-to-moderate dose-related gastrointestinal effects, such as flatulence, soft stools, diarrhea, or abdominal discomfort, and generally diminish in frequency and intensity with time. Discontinuation of drug usually results in rapid resolution of these gastrointestinal symptoms. Physician Counseling Information for Patients In initiating treatment for type 2 diabetes, diet should be emphasized as the primary form of treatment. Caloric restriction and weight loss are essential in the obese diabetic patient. Proper dietary management alone may be effective in controlling the blood glucose and symptoms of hyperglycemia. The importance of regular physical activity should also be stressed, and cardiovascular risk factors should be identified and corrective measures taken where possible. Use of miglitol tablets or other antidiabetic medications must be viewed by both the physician and patient as a treatment in addition to diet and not as a substitution or as a convenient mechanism for avoiding dietary restraint. Furthermore, loss of blood glucose control on diet alone may be transient, thus requiring only short-term administration of miglitol tablets or other antidiabetic medications. Maintenance or discontinuation of miglitol tablets or other antidiabetic medications should be based on clinical judgment using regular clinical and laboratory evaluations. Laboratory Tests Therapeutic response to miglitol tablets may be monitored by periodic blood glucose tests. Measurement of glycosylated hemoglobin levels is recommended for the monitoring of long-term glycemic control. Drug Interactions Several studies investigated the possible interaction between miglitol and glyburide. In six healthy volunteers given a single dose of 5 mg glyburide on a background of 6 days treatment with miglitol (50 mg 3 times daily for 4 days followed by 100 mg 3 times daily for 2 days) or placebo, the mean C max and AUC values for glyburide were 17% and 25% lower, respectively, when glyburide was given with miglitol. In a study in diabetic patients in which the effects of adding miglitol 100 mg 3 times daily for 7 days or placebo to a background regimen of 3.5 mg glyburide daily were investigated, the mean AUC value for glyburide was 18% lower in the group treated with miglitol, although this difference was not statistically significant. Information on a potential interaction with glyburide was obtained from one of the large U.S. clinical trials (Study 7) in which patients were dosed with either miglitol or placebo on a background of glyburide 10 mg twice daily. At the 6-month and 1-year clinic visits, patients taking concomitant miglitol 100 mg 3 times daily exhibited mean C max values for glyburide that were 16% and 8% lower, respectively, compared to patients taking glyburide alone. However, these differences were not statistically significant. Thus, although there was a trend toward lower AUC and C max values for glyburide when co-administered with miglitol tablets, no definitive statement regarding a potential interaction can be made based on the foregoing three studies. The effect of miglitol (100 mg 3 times daily for 7 days) on the pharmacokinetics of a single 1000 mg dose of metformin was investigated in healthy volunteers. Mean AUC and C max values for metformin were 12% to 13% lower when the volunteers were given miglitol as compared with placebo, but this difference was not statistically significant. In a study with healthy volunteers, co-administration of either 50 mg or 100 mg miglitol 3 times daily together with digoxin reduced the average plasma concentrations of digoxin by 19% and 28%, respectively. However, in diabetic patients under treatment with digoxin, plasma digoxin concentrations were not altered by co-administration of miglitol 100 mg 3 times daily for 14 days. Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively. No effect of miglitol was observed on the pharmacokinetics or pharmacodynamics of either warfarin or nifedipine. Intestinal adsorbents (e.g., charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (e.g., amylase, pancreatin) may reduce the effect of miglitol tablets and should not be taken concomitantly. In 12 healthy males, concomitantly administered antacid did not influence the pharmacokinetics of miglitol. Carcinogenesis, Mutagenesis, and Impairment of Fertility Miglitol was administered to mice by the dietary route at doses as high as approximately 500 mg/kg body weight (corresponding to greater than 5 times the exposure in humans based on AUC) for 21 months. In a two-year rat study, miglitol was administered in the diet at exposures comparable to the maximum human exposures based on AUC. There was no evidence of carcinogenicity resulting from dietary treatment with miglitol. In vitro, miglitol was found to be nonmutagenic in the bacterial mutagenesis (Ames) assay and the eukaryotic forward mutation assay (CHO/HGPRT). Miglitol did not have any clastogenic effects in vivo in the mouse micronucleus test. There were no heritable mutations detected in dominant lethal assay. A combined male and female fertility study conducted in Wistar rats treated orally with miglitol at dose levels of 300 mg/kg body weight (approximately 8 times the maximum human exposure based on body surface area) produced no untoward effect on reproductive performance or capability to reproduce. Survival, growth, development, and fertility of the offspring were not compromised. Pregnancy Teratogenic Effects Pregnancy Category B The safety of miglitol tablets in pregnant women has not been established. Developmental toxicology studies have been performed in rats at doses of 50, 150 and 450 mg/kg, corresponding to levels of approximately 1.5, 4, and 12 times the maximum recommended human exposure based on body surface area. In rabbits, doses of 10, 45, and 200 mg/kg corresponding to levels of approximately 0.5, 3, and 10 times the human exposure were examined. These studies revealed no evidence of fetal malformations attributable to miglitol. Doses of miglitol up to 4 and 3 times the human dose (based on body surface area), for rats and rabbits respectively, did not reveal evidence of impaired fertility or harm to the fetus. The highest doses tested in these studies, 450 mg/kg in the rat and 200 mg/kg in the rabbit promoted maternal and/or fetal toxicity. Fetotoxicity was indicated by a slight but significant reduction in fetal weight in the rat study and slight reduction in fetal weight, delayed ossification of the fetal skeleton and increase in the percentage of non-viable fetuses in the rabbit study. In the peri-postnatal study in rats, the NOAEL (No Observed Adverse Effect Level) was 100 mg/kg (corresponding to approximately four times the exposure to humans, based on body surface area). An increase in stillborn progeny was noted at the high dose (300 mg/kg) in the rat peri-postnatal study, but not at the high dose (450 mg/kg) in the delivery segment of the rat developmental toxicity study. Otherwise, there was no adverse effect on survival, growth, development, behavior, or fertility in either the rat developmental toxicity or peri-postnatal studies. There are however, no adequate and well-controlled studies in pregnant women. Because animal reproduction studies are not always predictive of human response, miglitol should be used during pregnancy only if clearly needed. Nursing Mothers Miglitol has been shown to be excreted in human milk to a very small degree. Total excretion into milk accounted for 0.02% of a 100 mg maternal dose. The estimated exposure to a nursing infant is approximately 0.4% of the maternal dose. Although the levels of miglitol reached in human milk are exceedingly low, it is recommended that miglitol tablets not be administered to a nursing woman. Pediatric Use Safety and effectiveness of miglitol tablets in pediatric patients have not been established. Geriatric Use Of the total number of subjects in clinical studies of miglitol tablets in the United States, patients valid for safety analyses included 24% over 65, and 3% over 75. No overall differences in safety and effectiveness were observed between these subjects and younger subjects. The pharmacokinetics of miglitol were studied in elderly and young males (n=8 per group). At the dosage of 100 mg 3 times daily for 3 days, no differences between the two groups were found.&#10;&#10;## Adverse reactions&#10;&#10;ADVERSE REACTIONS Gastrointestinal Gastrointestinal symptoms are the most common reactions to miglitol tablets. In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 11.7%, 28.7%, and 41.5% respectively in 962 patients treated with miglitol tablets, 25 mg to 100 mg 3 times daily, whereas the corresponding incidences were 4.7%, 10.0%, and 12.0% in 603 placebo-treated patients. The incidence of diarrhea and abdominal pain tended to diminish with continued treatment. Dermatologic Skin rash was reported in 4.3% of patients treated with miglitol tablets compared to 2.4% of placebo-treated patients. Rashes were generally transient and most were assessed as unrelated to miglitol tablets by physician investigators. Abnormal Laboratory Findings Low serum iron occurred more often in patients treated with miglitol tablets (9.2%) than in placebo-treated patients (4.2%) but did not persist in the majority of cases and was not associated with reductions in hemoglobin or changes in other hematologic indices. Postmarketing Experience The following adverse reactions have been reported during post-approval use of miglitol tablets. Because these reactions are reported voluntarily from a population of uncertain size, it is generally not possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention. Pneumatosis Cystoides Intestinalis There have been rare postmarketing reports of pneumatosis cystoides intestinalis associated with the use of alpha-glucosidase inhibitors, including miglitol tablets. Pneumatosis cystoides intestinalis may present with symptoms of diarrhea, mucus discharge, rectal bleeding, and constipation. Complications may include pneumoperitoneum, volvulus, intestinal obstruction, intussusception, intestinal hemorrhage, and intestinal perforation. If pneumatosis cystoides intestinalis is suspected, discontinue miglitol tablets and perform the appropriate diagnostic imaging.&#10;&#10;## Drug interactions&#10;&#10;Drug Interactions Several studies investigated the possible interaction between miglitol and glyburide. In six healthy volunteers given a single dose of 5 mg glyburide on a background of 6 days treatment with miglitol (50 mg 3 times daily for 4 days followed by 100 mg 3 times daily for 2 days) or placebo, the mean C max and AUC values for glyburide were 17% and 25% lower, respectively, when glyburide was given with miglitol. In a study in diabetic patients in which the effects of adding miglitol 100 mg 3 times daily for 7 days or placebo to a background regimen of 3.5 mg glyburide daily were investigated, the mean AUC value for glyburide was 18% lower in the group treated with miglitol, although this difference was not statistically significant. Information on a potential interaction with glyburide was obtained from one of the large U.S. clinical trials (Study 7) in which patients were dosed with either miglitol or placebo on a background of glyburide 10 mg twice daily. At the 6-month and 1-year clinic visits, patients taking concomitant miglitol 100 mg 3 times daily exhibited mean C max values for glyburide that were 16% and 8% lower, respectively, compared to patients taking glyburide alone. However, these differences were not statistically significant. Thus, although there was a trend toward lower AUC and C max values for glyburide when co-administered with miglitol tablets, no definitive statement regarding a potential interaction can be made based on the foregoing three studies. The effect of miglitol (100 mg 3 times daily for 7 days) on the pharmacokinetics of a single 1000 mg dose of metformin was investigated in healthy volunteers. Mean AUC and C max values for metformin were 12% to 13% lower when the volunteers were given miglitol as compared with placebo, but this difference was not statistically significant. In a study with healthy volunteers, co-administration of either 50 mg or 100 mg miglitol 3 times daily together with digoxin reduced the average plasma concentrations of digoxin by 19% and 28%, respectively. However, in diabetic patients under treatment with digoxin, plasma digoxin concentrations were not altered by co-administration of miglitol 100 mg 3 times daily for 14 days. Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively. No effect of miglitol was observed on the pharmacokinetics or pharmacodynamics of either warfarin or nifedipine. Intestinal adsorbents (e.g., charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (e.g., amylase, pancreatin) may reduce the effect of miglitol tablets and should not be taken concomitantly. In 12 healthy males, concomitantly administered antacid did not influence the pharmacokinetics of miglitol.&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:14:33+00:00" xmi:version="2.0">
+  <chunks charEnd="904"/>
+  <chunks index="1" charStart="890" charEnd="904"/>
+  <chunks index="2" charStart="906" charEnd="4906"/>
+  <chunks index="3" charStart="4606" charEnd="8606"/>
+  <chunks index="4" charStart="8306" charEnd="12306"/>
+  <chunks index="5" charStart="12006" charEnd="12482"/>
+  <chunks index="6" charStart="12484" charEnd="14636"/>
+  <chunks index="7" charStart="14616" charEnd="17484"/>
+  <entities type="Drug" id="miglitol" mention="MIGLITOL" confidence="0.99" sourceSpanStart="31" sourceSpanEnd="39">
+    <properties key="name" value="miglitol"/>
+    <properties key="drugClass" value="alpha-glucosidase inhibitor"/>
+  </entities>
+  <entities type="DrugClass" id="alpha-glucosidase-inhibitors" mention="alpha-Glucosidase Inhibitor" confidence="0.95" sourceSpanStart="106" sourceSpanEnd="133">
+    <properties key="name" value="alpha-glucosidase inhibitors"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.98" sourceSpanStart="369" sourceSpanEnd="393">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic ketoacidosis" confidence="0.97" sourceSpanStart="491" sourceSpanEnd="512">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="inflammatory-bowel-disease" mention="Inflammatory bowel disease" confidence="0.97" sourceSpanStart="513" sourceSpanEnd="539">
+    <properties key="name" value="inflammatory bowel disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="colonic-ulceration" mention="colonic ulceration" confidence="0.97" sourceSpanStart="541" sourceSpanEnd="559">
+    <properties key="name" value="colonic ulceration"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="partial-intestinal-obstruction" mention="partial intestinal obstruction" confidence="0.97" sourceSpanStart="564" sourceSpanEnd="594">
+    <properties key="name" value="partial intestinal obstruction"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="intestinal-obstruction" mention="intestinal obstruction" confidence="0.95" sourceSpanStart="572" sourceSpanEnd="594">
+    <properties key="name" value="intestinal obstruction"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="chronic-intestinal-diseases-associated-with-marked-disorders-of-digestion-or-absorption" mention="Chronic intestinal diseases associated with marked disorders of digestion or absorption" confidence="0.95" sourceSpanStart="650" sourceSpanEnd="737">
+    <properties key="name" value="chronic intestinal diseases associated with marked disorders of digestion or absorption"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="Hypersensitivity" confidence="0.95" sourceSpanStart="835" sourceSpanEnd="851">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol" confidence="0.99" sourceSpanStart="1047" sourceSpanEnd="1055" chunkIndex="2">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylureas" confidence="0.95" sourceSpanStart="1263" sourceSpanEnd="1276" chunkIndex="2">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1281" sourceSpanEnd="1288" chunkIndex="2">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="1299" sourceSpanEnd="1311" chunkIndex="2">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glucose" mention="Oral glucose" confidence="0.9" sourceSpanStart="1638" sourceSpanEnd="1650" chunkIndex="2">
+    <properties key="name" value="glucose"/>
+  </entities>
+  <entities type="Drug" id="dextrose" mention="dextrose" confidence="0.9" sourceSpanStart="1652" sourceSpanEnd="1660" chunkIndex="2">
+    <properties key="name" value="dextrose"/>
+  </entities>
+  <entities type="Drug" id="glucagon" mention="glucagon" confidence="0.9" sourceSpanStart="2036" sourceSpanEnd="2044" chunkIndex="2">
+    <properties key="name" value="glucagon"/>
+  </entities>
+  <entities type="Condition" id="flatulence" mention="flatulence" confidence="0.9" sourceSpanStart="4016" sourceSpanEnd="4026" chunkIndex="2">
+    <properties key="name" value="flatulence"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="soft-stools" mention="soft stools" confidence="0.9" sourceSpanStart="4028" sourceSpanEnd="4039" chunkIndex="2">
+    <properties key="name" value="soft stools"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.9" sourceSpanStart="4041" sourceSpanEnd="4049" chunkIndex="2">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-discomfort" mention="abdominal discomfort" confidence="0.9" sourceSpanStart="4054" sourceSpanEnd="4074" chunkIndex="2">
+    <properties key="name" value="abdominal discomfort"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.9" sourceSpanStart="4307" sourceSpanEnd="4322" chunkIndex="2">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.9" sourceSpanStart="4563" sourceSpanEnd="4576" chunkIndex="2">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol" confidence="0.99" sourceSpanStart="4753" sourceSpanEnd="4761" chunkIndex="3">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.99" sourceSpanStart="5636" sourceSpanEnd="5645" chunkIndex="3">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.99" sourceSpanStart="7161" sourceSpanEnd="7170" chunkIndex="3">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="digoxin" mention="digoxin" confidence="0.99" sourceSpanStart="7511" sourceSpanEnd="7518" chunkIndex="3">
+    <properties key="name" value="digoxin"/>
+  </entities>
+  <entities type="Drug" id="ranitidine" mention="ranitidine" confidence="0.99" sourceSpanStart="7888" sourceSpanEnd="7898" chunkIndex="3">
+    <properties key="name" value="ranitidine"/>
+  </entities>
+  <entities type="Drug" id="propranolol" mention="propranolol" confidence="0.99" sourceSpanStart="7903" sourceSpanEnd="7914" chunkIndex="3">
+    <properties key="name" value="propranolol"/>
+  </entities>
+  <entities type="Drug" id="warfarin" mention="warfarin" confidence="0.99" sourceSpanStart="8034" sourceSpanEnd="8042" chunkIndex="3">
+    <properties key="name" value="warfarin"/>
+  </entities>
+  <entities type="Drug" id="nifedipine" mention="nifedipine" confidence="0.99" sourceSpanStart="8046" sourceSpanEnd="8056" chunkIndex="3">
+    <properties key="name" value="nifedipine"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol" confidence="0.99" sourceSpanStart="8380" sourceSpanEnd="8388" chunkIndex="4">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol" confidence="0.9" sourceSpanStart="12071" sourceSpanEnd="12079" chunkIndex="5">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol tablets" confidence="0.98" sourceSpanStart="12600" sourceSpanEnd="12616" chunkIndex="6">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="abdominal pain" confidence="0.95" sourceSpanStart="12671" sourceSpanEnd="12685" chunkIndex="6">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="12687" sourceSpanEnd="12695" chunkIndex="6">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="flatulence" mention="flatulence" confidence="0.95" sourceSpanStart="12701" sourceSpanEnd="12711" chunkIndex="6">
+    <properties key="name" value="flatulence"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="skin-rash" mention="Skin rash" confidence="0.95" sourceSpanStart="13033" sourceSpanEnd="13042" chunkIndex="6">
+    <properties key="name" value="skin rash"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="low-serum-iron" mention="Low serum iron" confidence="0.9" sourceSpanStart="13297" sourceSpanEnd="13311" chunkIndex="6">
+    <properties key="name" value="low serum iron"/>
+    <properties key="category" value="laboratory"/>
+  </entities>
+  <entities type="Condition" id="ileus" mention="ileus" confidence="0.95" sourceSpanStart="13915" sourceSpanEnd="13920" chunkIndex="6">
+    <properties key="name" value="ileus"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="paralytic-ileus" mention="paralytic ileus" confidence="0.95" sourceSpanStart="13932" sourceSpanEnd="13947" chunkIndex="6">
+    <properties key="name" value="paralytic ileus"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="subileus" mention="subileus" confidence="0.95" sourceSpanStart="13950" sourceSpanEnd="13958" chunkIndex="6">
+    <properties key="name" value="subileus"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="gastrointestinal-pain" mention="gastrointestinal pain" confidence="0.95" sourceSpanStart="13960" sourceSpanEnd="13981" chunkIndex="6">
+    <properties key="name" value="gastrointestinal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="nausea" mention="nausea" confidence="0.95" sourceSpanStart="13983" sourceSpanEnd="13989" chunkIndex="6">
+    <properties key="name" value="nausea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-distention" mention="abdominal distention" confidence="0.95" sourceSpanStart="13991" sourceSpanEnd="14011" chunkIndex="6">
+    <properties key="name" value="abdominal distention"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="pneumatosis-cystoides-intestinalis" mention="pneumatosis cystoides intestinalis" confidence="0.95" sourceSpanStart="14013" sourceSpanEnd="14047" chunkIndex="6">
+    <properties key="name" value="pneumatosis cystoides intestinalis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="miglitol" mention="miglitol" confidence="0.99" sourceSpanStart="14718" sourceSpanEnd="14726" chunkIndex="7">
+    <properties key="name" value="miglitol"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.99" sourceSpanStart="14731" sourceSpanEnd="14740" chunkIndex="7">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.99" sourceSpanStart="16256" sourceSpanEnd="16265" chunkIndex="7">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="digoxin" mention="digoxin" confidence="0.99" sourceSpanStart="16606" sourceSpanEnd="16613" chunkIndex="7">
+    <properties key="name" value="digoxin"/>
+  </entities>
+  <entities type="Drug" id="ranitidine" mention="ranitidine" confidence="0.99" sourceSpanStart="16983" sourceSpanEnd="16993" chunkIndex="7">
+    <properties key="name" value="ranitidine"/>
+  </entities>
+  <entities type="Drug" id="propranolol" mention="propranolol" confidence="0.99" sourceSpanStart="16998" sourceSpanEnd="17009" chunkIndex="7">
+    <properties key="name" value="propranolol"/>
+  </entities>
+  <entities type="Drug" id="warfarin" mention="warfarin" confidence="0.99" sourceSpanStart="17129" sourceSpanEnd="17137" chunkIndex="7">
+    <properties key="name" value="warfarin"/>
+  </entities>
+  <entities type="Drug" id="nifedipine" mention="nifedipine" confidence="0.99" sourceSpanStart="17141" sourceSpanEnd="17151" chunkIndex="7">
+    <properties key="name" value="nifedipine"/>
+  </entities>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="miglitol" targetType="DrugClass" targetId="alpha-glucosidase-inhibitors" confidence="0.95" evidence="Pharmacologic class: alpha-Glucosidase Inhibitor" sourceSpanStart="85" sourceSpanEnd="133"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.98" evidence="Miglitol tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="260" sourceSpanEnd="394"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.97" evidence="CONTRAINDICATED_IN Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis" sourceSpanStart="257" sourceSpanEnd="300"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="inflammatory-bowel-disease" confidence="0.97" evidence="Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis Inflammatory bowel disease" sourceSpanStart="436" sourceSpanEnd="539"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="colonic-ulceration" confidence="0.97" evidence="Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis Inflammatory bowel disease, colonic ulceration" sourceSpanStart="436" sourceSpanEnd="559"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="partial-intestinal-obstruction" confidence="0.97" evidence="Miglitol tablets are contraindicated in patients with: Diabetic ketoacidosis Inflammatory bowel disease, colonic ulceration, or partial intestinal obstruction" sourceSpanStart="436" sourceSpanEnd="594"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="intestinal-obstruction" confidence="0.95" evidence="and in patients predisposed to intestinal obstruction" sourceSpanStart="596" sourceSpanEnd="649"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="chronic-intestinal-diseases-associated-with-marked-disorders-of-digestion-or-absorption" confidence="0.95" evidence="Chronic intestinal diseases associated with marked disorders of digestion or absorption" sourceSpanStart="650" sourceSpanEnd="737"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="hypersensitivity" confidence="0.95" evidence="Hypersensitivity to the drug or any of its components" sourceSpanStart="835" sourceSpanEnd="888"/>
+  <relations type="MAY_CAUSE" sourceType="DrugClass" sourceId="sulfonylureas" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Sulfonylureas and insulin can cause hypoglycemia." sourceSpanStart="1263" sourceSpanEnd="1312" chunkIndex="2"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="DrugClass" targetId="sulfonylureas" confidence="0.9" evidence="Because miglitol tablets given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the hypoglycemic potential of the sulfonylurea or insulin." sourceSpanStart="1313" sourceSpanEnd="1512" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="flatulence" confidence="0.9" evidence="They are most commonly mild-to-moderate dose-related gastrointestinal effects, such as flatulence, soft stools, diarrhea, or abdominal discomfort, and generally diminish in frequency and intensity with time." sourceSpanStart="3929" sourceSpanEnd="4136" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="soft-stools" confidence="0.9" evidence="They are most commonly mild-to-moderate dose-related gastrointestinal effects, such as flatulence, soft stools, diarrhea, or abdominal discomfort, and generally diminish in frequency and intensity with time." sourceSpanStart="3929" sourceSpanEnd="4136" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="diarrhea" confidence="0.9" evidence="They are most commonly mild-to-moderate dose-related gastrointestinal effects, such as flatulence, soft stools, diarrhea, or abdominal discomfort, and generally diminish in frequency and intensity with time." sourceSpanStart="3929" sourceSpanEnd="4136" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="abdominal-discomfort" confidence="0.9" evidence="They are most commonly mild-to-moderate dose-related gastrointestinal effects, such as flatulence, soft stools, diarrhea, or abdominal discomfort, and generally diminish in frequency and intensity with time." sourceSpanStart="3929" sourceSpanEnd="4136" chunkIndex="2"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="glyburide" confidence="0.95" evidence="Several studies investigated the possible interaction between miglitol and glyburide." sourceSpanStart="5561" sourceSpanEnd="5646" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="metformin" confidence="0.95" evidence="The effect of miglitol (100 mg 3 times daily for 7 days) on the pharmacokinetics of a single 1000 mg dose of metformin was investigated in healthy volunteers." sourceSpanStart="7052" sourceSpanEnd="7210" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="digoxin" confidence="0.95" evidence="In a study with healthy volunteers, co-administration of either 50 mg or 100 mg miglitol 3 times daily together with digoxin reduced the average plasma concentrations of digoxin by 19% and 28%, respectively." sourceSpanStart="7394" sourceSpanEnd="7601" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="ranitidine" confidence="0.95" evidence="Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively." sourceSpanStart="7776" sourceSpanEnd="7944" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="propranolol" confidence="0.95" evidence="Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively." sourceSpanStart="7776" sourceSpanEnd="7944" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="warfarin" confidence="0.9" evidence="No effect of miglitol was observed on the pharmacokinetics or pharmacodynamics of either warfarin or nifedipine." sourceSpanStart="7945" sourceSpanEnd="8057" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="nifedipine" confidence="0.9" evidence="No effect of miglitol was observed on the pharmacokinetics or pharmacodynamics of either warfarin or nifedipine." sourceSpanStart="7945" sourceSpanEnd="8057" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="abdominal-pain" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 11.7%, 28.7%, and 41.5% respectively in 962 patients treated with miglitol tablets" sourceSpanStart="12618" sourceSpanEnd="12799" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="diarrhea" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 11.7%, 28.7%, and 41.5% respectively in 962 patients treated with miglitol tablets" sourceSpanStart="12618" sourceSpanEnd="12799" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="flatulence" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 11.7%, 28.7%, and 41.5% respectively in 962 patients treated with miglitol tablets" sourceSpanStart="12618" sourceSpanEnd="12799" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="skin-rash" confidence="0.9" evidence="Skin rash was reported in 4.3% of patients treated with miglitol tablets compared to 2.4% of placebo-treated patients." sourceSpanStart="13033" sourceSpanEnd="13151" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="low-serum-iron" confidence="0.9" evidence="Low serum iron occurred more often in patients treated with miglitol tablets (9.2%) than in placebo-treated patients (4.2%)" sourceSpanStart="13297" sourceSpanEnd="13420" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="ileus" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="paralytic-ileus" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="subileus" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="gastrointestinal-pain" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="nausea" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="abdominal-distention" confidence="0.95" evidence="Gastrointestinal Disorders: ileus (including paralytic ileus), subileus, gastrointestinal pain, nausea, abdominal distention." sourceSpanStart="13887" sourceSpanEnd="14012" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="miglitol" targetType="Condition" targetId="pneumatosis-cystoides-intestinalis" confidence="0.95" evidence="There have been rare postmarketing reports of pneumatosis cystoides intestinalis associated with the use of alpha-glucosidase inhibitors, including miglitol tablets." sourceSpanStart="14048" sourceSpanEnd="14213" chunkIndex="6"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="glyburide" confidence="0.95" evidence="Several studies investigated the possible interaction between miglitol and glyburide." sourceSpanStart="14656" sourceSpanEnd="14741" chunkIndex="7"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="metformin" confidence="0.95" evidence="The effect of miglitol (100 mg 3 times daily for 7 days) on the pharmacokinetics of a single 1000 mg dose of metformin was investigated in healthy volunteers." sourceSpanStart="16147" sourceSpanEnd="16305" chunkIndex="7"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="digoxin" confidence="0.95" evidence="In a study with healthy volunteers, co-administration of either 50 mg or 100 mg miglitol 3 times daily together with digoxin reduced the average plasma concentrations of digoxin by 19% and 28%, respectively." sourceSpanStart="16489" sourceSpanEnd="16696" chunkIndex="7"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="ranitidine" confidence="0.95" evidence="Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively." sourceSpanStart="16871" sourceSpanEnd="17039" chunkIndex="7"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="miglitol" targetType="Drug" targetId="propranolol" confidence="0.95" evidence="Other healthy volunteer studies have demonstrated that miglitol may significantly reduce the bioavailability of ranitidine and propranolol by 60% and 40%, respectively." sourceSpanStart="16871" sourceSpanEnd="17039" chunkIndex="7"/>
+</raw:RawExtractionResult>

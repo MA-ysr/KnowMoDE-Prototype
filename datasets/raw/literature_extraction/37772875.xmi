@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37772875.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37772875/" sourceSha256="fff0841b3cdecd831c7b60cf3fa4e4dac05695e164f7df337fe4ece02ffb580f" sourceText="# PubMed 37772875: Outpatient Total Ankle Arthroplasty (TAA) as a Rising Alternative to Inpatient TAA: A Database Analysis.&#10;&#10;Foot &amp; ankle international (2023), doi:10.1177/10711007231199090&#10;&#10;BACKGROUND: There is growing evidence that total ankle arthroplasty (TAA) can safely be performed as an outpatient procedure, with the benefit of decreased health care expenses and improved patient satisfaction. The purpose of our study was to compare readmissions, arthroplasty failures, infections, and annual trends between outpatient and inpatient TAA using a large publicly available for-fee database.&#10;&#10;METHODS: The PearlDiver Database was queried to identify outpatient and inpatient TAA-associated claims for several payer types from January 2010 to October 2021. Preoperative patient characteristics and annual trends were compared for inpatient and outpatient TAA. International Classification of Diseases, Ninth and Tenth Revision, diagnosis codes were used to identify infections and arthroplasty failures. Complications rates were compared after matching patients by age, gender, and the following comorbidities: diabetes, smoking, congestive heart failure (CHF), hypertension (HTN), obesity, and chronic kidney disease (CKD).&#10;&#10;RESULTS: A total of 12 274 patients were included in the final exact-matched analysis for complications, with 6137 patients in each group. Outpatients had a significantly lower rate of readmission within 90 days (2.6% vs 4.0%, P &lt; .001), arthroplasty failure (4.1% vs 6.9%, P &lt; .001), and infection (2.4% vs 3.1%, P = .015). Among database enrollees, outpatient TAA has risen in proportion to inpatient TAA from 2019 to 2021.&#10;&#10;CONCLUSION: Outpatient TAA had lower rates of risk-adjusted readmission, arthroplasty failure, and infection compared to inpatient TAA.&#10;&#10;LEVEL OF EVIDENCE: Level III, retrospective comparative database study.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:41:58+00:00" xmi:version="2.0">
+  <chunks charEnd="1867"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1116" sourceSpanEnd="1124">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure (CHF)" confidence="0.95" sourceSpanStart="1135" sourceSpanEnd="1165">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension (HTN)" confidence="0.95" sourceSpanStart="1167" sourceSpanEnd="1185">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1187" sourceSpanEnd="1194">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease (CKD)" confidence="0.95" sourceSpanStart="1200" sourceSpanEnd="1228">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+</raw:RawExtractionResult>

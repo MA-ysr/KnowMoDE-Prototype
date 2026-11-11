@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/gangrene.txt" sourceUri="https://medlineplus.gov/gangrene.html" sourceSha256="444f3c392473a6890f20f038a93007d613a7c95ce53854c93db32e3d837c44a1" sourceText="# MedlinePlus health topic: Gangrene&#10;&#10;Also called: Gas Gangrene&#10;&#10;Gangrene is the death of tissues in your body. It happens when a part of your body loses its blood supply. Gangrene can happen on the surface of the body, such as on the skin, or inside the body, in muscles or organs. Causes include:&#10;&#10;Serious injuries&#10;&#10;Problems with blood circulation, such as atherosclerosis and peripheral arterial disease&#10;&#10;Diabetes&#10;&#10;Skin symptoms may include a blue or black color, pain, numbness, and sores that produce a foul-smelling discharge. If the gangrene is internal, you may run a fever and feel unwell, and the area may be swollen and painful.&#10;&#10;Gangrene is a serious condition. It needs immediate attention. Treatment includes surgery, antibiotics, and oxygen therapy. In severe cases an amputation may be necessary.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:21:46+00:00" xmi:version="2.0">
+  <chunks charEnd="813"/>
+  <entities type="Condition" id="gangrene" mention="Gangrene" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="36">
+    <properties key="name" value="gangrene"/>
+  </entities>
+  <entities type="Condition" id="gas-gangrene" mention="Gas Gangrene" confidence="0.95" sourceSpanStart="51" sourceSpanEnd="63">
+    <properties key="name" value="gas gangrene"/>
+  </entities>
+  <entities type="Condition" id="atherosclerosis" mention="atherosclerosis" confidence="0.95" sourceSpanStart="359" sourceSpanEnd="374">
+    <properties key="name" value="atherosclerosis"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="peripheral-arterial-disease" mention="peripheral arterial disease" confidence="0.95" sourceSpanStart="379" sourceSpanEnd="406">
+    <properties key="name" value="peripheral arterial disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.95" sourceSpanStart="408" sourceSpanEnd="416">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

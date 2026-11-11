@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34585897.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34585897/" sourceSha256="d3586419fcd5f6d97a9ea48357d27b2a1437b0ed015e2713275f630fb56d6ad9" sourceText="# PubMed 34585897: Current Role of Dapagliflozin in Clinical Practice.&#10;&#10;The Journal of the Association of Physicians of India (2021)&#10;&#10;Dapagliflozin is the first in a novel class of glucose-lowering agents known as sodium-glucose co-transporter-2 (SGLT2) inhibitors which was approved by USFDA in management of type 2 diabetes mellitus (T2DM) as an adjunct to diet and exercise to improve glycemic control in adults initially, followed by to reduce the risk of hospitalization for heart failure (HHF) in adults with T2DM and established cardiovascular disease or multiple cardiovascular risk factors. Most recently, it is approved to reduce the risk of cardiovascular death and in adults with heart failure (HF) with reduced ejection fraction (NYHA class II-IV). Dapagliflozin has been studied in a wide range of patients with diabetes and plethora of evidence has confirmed its efficacy as a monotherapy as well as an add-on to the oral therapies and insulin, when compared to placebo. Additional advantages include weight reduction which has been consistently demonstrated in Phase III studies and good tolerability. Also there is a demonstrable reduction in systolic blood pressure in patients treated with SGLT2 inhibitors. DECLARE TIMI 58 study clearly demonstrated that Dapagliflozin was non inferior in reducing major adverse cardiovascular events (MACE) in patients with T2DM and high CV risk compared with placebo. 27% risk reduction in heart failure hospitalisation was noted along without increased risk of amputation. DAPA HF evaluated the efficacy and safety of the dapagliflozin in patients with HF and reduced ejection fraction, irrespective of the presence or absence of diabetes. Patients with symptomatic HF due to reduced ejection fraction treated with dapagliflozin had positive outcomes with reduction in cardiovascular deaths and HF events. The DAPA-CKD trial which was conducted to assess the efficacy and safety of dapagliflozin in patients with chronic kidney disease (CKD), with or without type 2 diabetes found that it significantly lowered the risk of a sustained decline in the estimated GFR of at least 50%, end-stage kidney disease, or death from renal or cardiovascular causes in patients with CKD, regardless of the presence or absence of diabetes. Ongoing trials like DELIVER, DAPA ACT HF-TIMI 68, DICTATE-AHF, HF readmission study, DAPA MI Study, Effectiveness of Dapagliflozin for Weight Loss, will throw more light on the precise effects of dapagliflozin in several clinical scenarios. To conclude - Dapagliflozin was well studied not only in T2DM but also in HF and CKD patients with positive results and good safety profile.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:43:04+00:00" xmi:version="2.0">
+  <chunks charEnd="2663"/>
+  <entities type="Drug" id="dapagliflozin" mention="Dapagliflozin" confidence="0.98" sourceSpanStart="35" sourceSpanEnd="48">
+    <properties key="name" value="dapagliflozin"/>
+    <properties key="drugClass" value="sodium-glucose co-transporter-2 inhibitor"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus (T2DM)" confidence="0.95" sourceSpanStart="310" sourceSpanEnd="341">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospitalization-for-heart-failure" mention="hospitalization for heart failure (HHF)" confidence="0.95" sourceSpanStart="460" sourceSpanEnd="499">
+    <properties key="name" value="hospitalization for heart failure"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="cardiovascular-death" mention="cardiovascular death" confidence="0.95" sourceSpanStart="652" sourceSpanEnd="672">
+    <properties key="name" value="cardiovascular death"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure (HF)" confidence="0.95" sourceSpanStart="692" sourceSpanEnd="710">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="major-adverse-cardiovascular-events" mention="major adverse cardiovascular events (MACE)" confidence="0.95" sourceSpanStart="1318" sourceSpanEnd="1360">
+    <properties key="name" value="major adverse cardiovascular events"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="heart-failure-hospitalisation" mention="heart failure hospitalisation" confidence="0.95" sourceSpanStart="1445" sourceSpanEnd="1474">
+    <properties key="name" value="heart failure hospitalisation"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease (CKD)" confidence="0.95" sourceSpanStart="1969" sourceSpanEnd="1997">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="dapagliflozin" targetType="ClinicalOutcome" targetId="hospitalization-for-heart-failure" confidence="0.9" evidence="Dapagliflozin is the first in a novel class of glucose-lowering agents known as sodium-glucose co-transporter-2 (SGLT2) inhibitors which was approved by USFDA in management of type 2 diabetes mellitus (T2DM) as an adjunct to diet and exercise to improve glycemic control in adults initially, followed by to reduce the risk of hospitalization for heart failure (HHF) in adults with T2DM and established cardiovascular disease or multiple cardiovascular risk factors." sourceSpanStart="134" sourceSpanEnd="599"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="dapagliflozin" targetType="ClinicalOutcome" targetId="cardiovascular-death" confidence="0.9" evidence="Most recently, it is approved to reduce the risk of cardiovascular death and in adults with heart failure (HF) with reduced ejection fraction (NYHA class II-IV)." sourceSpanStart="600" sourceSpanEnd="761"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="dapagliflozin" targetType="ClinicalOutcome" targetId="major-adverse-cardiovascular-events" confidence="0.9" evidence="DECLARE TIMI 58 study clearly demonstrated that Dapagliflozin was non inferior in reducing major adverse cardiovascular events (MACE) in patients with T2DM and high CV risk compared with placebo." sourceSpanStart="1227" sourceSpanEnd="1422"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="dapagliflozin" targetType="ClinicalOutcome" targetId="heart-failure-hospitalisation" confidence="0.9" evidence="27% risk reduction in heart failure hospitalisation was noted along without increased risk of amputation." sourceSpanStart="1423" sourceSpanEnd="1528"/>
+</raw:RawExtractionResult>

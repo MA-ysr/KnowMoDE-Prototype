@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/18450790" sourceUri="https://pubmed.ncbi.nlm.nih.gov/18450790/" sourceSha256="216a2d6d273ccf77a93157aa9cf84b400cc9fa445fdbc99bde0ffaea236ffa0c" sourceText="Thalidomide and sensory neurotoxicity: a neurophysiological study. BACKGROUND: Recent studies confirmed a high incidence of sensory axonal neuropathy in patients treated with different doses of thalidomide. The study's aims were to measure variations in sural nerve sensory action potential (SAP) amplitude in patients with refractory cutaneous lupus erythematosus (CLE) treated with thalidomide and use these findings to identify the neurotoxic potential of thalidomide and the recovery capacity of sensory fibres after discontinuation of treatment. PATIENTS AND METHODS: Clinical and electrophysiological data in 12 female patients with CLE during treatment with thalidomide and up to 47 months after discontinuation of treatment were analysed. Sural nerve SAP amplitude reduction &gt; or =40% was the criteria for discontinuing therapy. RESULTS: During treatment, 11 patients showed a reduction in sural nerve SAP amplitude compared to baseline values (9 with a reduction &gt; or =50% and 2 &lt;50%). One patient showed no changes in SAP amplitude. Five patients complained of paresthesias and leg cramps. After thalidomide treatment, sural SAP amplitude recovered in 3 patients. At detection of reduction in sural nerve SAP amplitude, the median thalidomide cumulative dose was 21.4 g. The threshold neurotoxic dosage is lower than previously reported. CONCLUSIONS: Sural nerve SAP amplitude reduction is a reliable and sensitive marker of degeneration and recovery of sensory fibres. This electrophysiological parameter provides information about subclinical neurotoxic potential of thalidomide but is not helpful in predicting the appearance of sensory symptoms." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:50+00:00" xmi:version="2.0">
+  <chunks charEnd="1659"/>
+  <entities type="Drug" id="thalidomide" mention="thalidomide" confidence="1.0" sourceSpanStart="0" sourceSpanEnd="11">
+    <properties key="name" value="thalidomide"/>
+  </entities>
+  <entities type="Condition" id="sensory-axonal-neuropathy" mention="sensory axonal neuropathy" confidence="0.95" sourceSpanStart="124" sourceSpanEnd="149">
+    <properties key="name" value="sensory axonal neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="refractory-cutaneous-lupus-erythematosus" mention="refractory cutaneous lupus erythematosus" confidence="0.95" sourceSpanStart="324" sourceSpanEnd="364">
+    <properties key="name" value="refractory cutaneous lupus erythematosus"/>
+    <properties key="category" value="autoimmune"/>
+  </entities>
+  <entities type="Condition" id="paresthesias" mention="paresthesias" confidence="0.95" sourceSpanStart="1071" sourceSpanEnd="1083">
+    <properties key="name" value="paresthesias"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="leg-cramps" mention="leg cramps" confidence="0.95" sourceSpanStart="1088" sourceSpanEnd="1098">
+    <properties key="name" value="leg cramps"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thalidomide" targetType="Condition" targetId="sensory-axonal-neuropathy" confidence="0.95" evidence="Recent studies confirmed a high incidence of sensory axonal neuropathy in patients treated with different doses of thalidomide." sourceSpanStart="79" sourceSpanEnd="206"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="thalidomide" targetType="Condition" targetId="refractory-cutaneous-lupus-erythematosus" confidence="0.95" evidence="The study's aims were to measure variations in sural nerve sensory action potential (SAP) amplitude in patients with refractory cutaneous lupus erythematosus (CLE) treated with thalidomide" sourceSpanStart="207" sourceSpanEnd="395"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thalidomide" targetType="Condition" targetId="paresthesias" confidence="0.9" evidence="Five patients complained of paresthesias and leg cramps." sourceSpanStart="1043" sourceSpanEnd="1099"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thalidomide" targetType="Condition" targetId="leg-cramps" confidence="0.9" evidence="Five patients complained of paresthesias and leg cramps." sourceSpanStart="1043" sourceSpanEnd="1099"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,9 @@
+# PubMed 27611905: National trends in heart failure hospitalization rates in Slovenia 2004-2012.
+
+European journal of heart failure (2016), doi:10.1002/ejhf.617
+
+AIMS: Heart failure (HF) hospitalization rates are decreasing in western Europe, but little is known about trends in central and east European countries. We analysed the Slovenian national hospitalization database to determine the burden of HF hospitalization.
+
+METHODS AND RESULTS: The Slovenian National Hospital Discharge Registry was searched for HF hospitalizations between 2004 and 2012 in patients aged ≥20 years. A total of 55 531 main HF hospitalizations (43 636 first HF hospitalizations) in 34 406 patients (median age 78 years, 55% female) were recorded. The most common co-morbidities were arterial hypertension (54.3%), atrial fibrillation (40.6%), diabetes mellitus (24.5%), and ischaemic heart disease (21.9%). The number of age-standardized main and first HF hospitalizations per 100 000 population decreased from 249 to 232 (7.1%, P = 0.002) and from 467 to 435 (6.8%, P = 0.074), respectively. Crude main and first HF hospitalization rates increased from 249 to 298 (19.8%, P < 0.001) and from 530 to 558 (5.4%, P = 0.100), respectively. After a first HF hospitalization, any HF readmission rates within 30, 60, and 90 days and at 1 year were 11.7, 17.2, 20.9, and 37.5%, respectively. Hospitalization trends were similar in both sexes and across all age groups. In a multivariate log binomial regression model, myocardial infarction, chronic kidney disease, diabetes mellitus, male sex, and year of admission were independently associated with higher HF readmission rates (P < 0.01 for all).
+
+CONCLUSIONS: In Slovenia, standardized HF hospitalization rates have decreased but the crude HF hospitalization burden has increased. Readmissions were associated with established cardiovascular risk factors.

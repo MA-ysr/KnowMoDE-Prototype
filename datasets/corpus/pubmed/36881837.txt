@@ -1,0 +1,11 @@
+# PubMed 36881837: Assessment of Cardiovascular Disease Among Predominantly Black Gout Patients.
+
+Journal of clinical rheumatology : practical reports on rheumatic & musculoskeletal diseases (2023), doi:10.1097/RHU.0000000000001948
+
+INTRODUCTION: Although the association between gout and cardiovascular disease (CVD) has been extensively studied, scarce data are available for the Black population. We aimed to assess the association between gout and CVD in a predominantly Black urban population with gout.
+
+METHODS: A cross-sectional analysis was performed between a gout cohort and an age-/sex-matched control group. Clinical parameters and 2D echocardiograms were reviewed for the patients with gout and heart failure (HF). The primary outcome studied includes the prevalence and strength of association between gout and CVD. Secondary outcomes studied includes strength of association of gout and HF categorized by ejection fraction, mortality, and HF readmissions.
+
+RESULTS: Four hundred seventy-one patients with gout had a mean age of 63.7 ± 0.5 years; 89% were Black, 63% were men, and mean body mass index was 31.3 ± 0.4 kg/m 2 . Hypertension, diabetes mellitus, and dyslipidemia were present in 89%, 46%, and 52%, respectively. Compared with controls, patients with gout had significantly higher rates of angina, arrhythmia, coronary artery disease/stents, myocardial infarction, coronary artery bypass graft surgery, cerebrovascular accident, and peripheral vascular disease. The adjusted odds ratio for CVD was 2.9 (95% confidence interval, 1.9-4.5; p < 0.001). Gout patients had a higher prevalence of HF with 45% (n = 212) compared with controls with 9.4% (n = 44). Adjusted odds ratio for HF risk was 7.1 (95% confidence interval, 4.7-10.6; p < 0.01).
+
+CONCLUSIONS: Gout in a predominantly Black population confers 3 times the CVD risk and 7 times HF-specific risk compared with age- and sex-matched cohort. Further research is needed to confirm our findings and to develop interventions to reduce morbidity associated with gout.

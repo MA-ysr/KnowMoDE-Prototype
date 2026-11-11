@@ -1,0 +1,7 @@
+{
+  "id": "M18_binding_without_resolution",
+  "family": "C5",
+  "expectedConstraint": "C5_BindingHasResolution",
+  "mutatedFile": "decision-bindings.xmi",
+  "description": "number_emergency binding loses its entityName"
+}

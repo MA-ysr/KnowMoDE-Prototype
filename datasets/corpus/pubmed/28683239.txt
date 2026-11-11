@@ -1,0 +1,13 @@
+# PubMed 28683239: COMPARISON OF EFFICACY AND SAFETY OF GLARGINE AND DETEMIR INSULIN IN THE MANAGEMENT OF INPATIENT HYPERGLYCEMIA AND DIABETES.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2017), doi:10.4158/EP171804.OR
+
+OBJECTIVE: Glargine and detemir insulin are the two most commonly prescribed basal insulin analogues for the ambulatory and inpatient management of diabetes. The efficacy and safety of basal insulin analogues in the hospital setting has not been established.
+
+METHODS: This observational study compared differences in glycemic control and outcomes in non-intensive care unit patients with blood glucose (BG) >140 mg/dL who were treated with glargine or detemir, between January 1, 2012, and September 30, 2015, in two academic centers.
+
+RESULTS: Among 6,245 medical and surgical patients with hyperglycemia, 5,749 received one or more doses of glargine, and 496 patients received detemir during the hospital stay. There were no differences in the mean daily BG (glargine, 182 ± 46 mg/dL vs. detemir, 180 ± 44 mg/dL; P = .70). There were no differences in mortality, hospital complications, or re-admissions between groups (all, P>.05). After adjusting for potential confounders, there was no statistically significant difference in hypoglycemia rates between treatment groups. Patients treated with detemir required higher total daily basal insulin doses (0.27 ± 0.16 units/kg/day vs. 0.22 ± 0.15 units/kg/day; P<.001). Glargine-treated patients had statistically longer length of stay; however, this difference may not be clinically relevant (6.8 ± 7.4 days vs. 6.0 ± 6.3 days; P<.001).
+
+CONCLUSION: Our study indicates that treatment with glargine and detemir results in similar inpatient glycemic control in general medicine and surgery patients. Detemir treatment was associated with higher daily basal insulin dose and number of injections. A prospective randomized study is needed to confirm these findings.
+
+ABBREVIATIONS: BG = blood glucose BMI = body mass index CI = confidence interval eGFR = estimated glomerular filtration rate HbA1c = glycated hemoglobin ICD-9 = International Classification of Diseases, ninth revision ICU = intensive care unit IQR = interquartile range LOS = length-of-stay OR = odd ratio.

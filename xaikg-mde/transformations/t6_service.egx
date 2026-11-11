@@ -1,0 +1,62 @@
+/*
+ * T6 (paper, Phase 3, M2T): Explainability model (+ KG Schema and Decision bindings) -> explanation
+ * service. Generated artefacts (output root generated/service/):
+ *   contract.json   audiences, explanation types, templates, trace binding  (the explanation contract, R5)
+ *   patterns.json   the KGQueryPatterns of the schema (name, Cypher, parameters)
+ *   bindings.json   AI model spec, decision classes, feature bindings
+ *   coverage.json   audience x explanation-type matrix (R6)
+ *   router.py       one FastAPI endpoint per (ExplanationType, Audience) pair + /trace for audiences
+ *                   requiring full provenance + /contract
+ *   templates/*.j2  one Jinja2 template per ExplanationTemplate
+ *   app.py          service bootstrap (loopback bind)
+ * Model aliases: Schema, Explainability, Decision. `ids` is the Java helper for string literals.
+ */
+
+rule Contract
+  transform c : Explainability!ExplainabilityConfig {
+  template : "t6_contract_json.egl"
+  parameters : Map{"ids" = ids}
+  target : "contract.json"
+}
+
+rule Patterns
+  transform s : Schema!KGSchemaDefinition {
+  template : "t6_patterns_json.egl"
+  parameters : Map{"ids" = ids}
+  target : "patterns.json"
+}
+
+rule Bindings
+  transform d : Decision!DecisionBindingConfig {
+  template : "t6_bindings_json.egl"
+  parameters : Map{"ids" = ids}
+  target : "bindings.json"
+}
+
+rule Coverage
+  transform c : Explainability!ExplainabilityConfig {
+  template : "t6_coverage_json.egl"
+  parameters : Map{"ids" = ids}
+  target : "coverage.json"
+}
+
+rule Router
+  transform c : Explainability!ExplainabilityConfig {
+  template : "t6_router_py.egl"
+  parameters : Map{"ids" = ids}
+  target : "router.py"
+}
+
+rule Template
+  transform t : Explainability!ExplanationTemplate {
+  template : "t6_template_j2.egl"
+  parameters : Map{"ids" = ids}
+  target : "templates/" + t.name + ".j2"
+}
+
+rule App
+  transform c : Explainability!ExplainabilityConfig {
+  template : "t6_app_py.egl"
+  parameters : Map{"ids" = ids}
+  target : "app.py"
+}

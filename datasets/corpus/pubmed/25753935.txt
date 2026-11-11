@@ -1,0 +1,13 @@
+# PubMed 25753935: Multimorbidity in risk stratification tools to predict negative outcomes in adult population.
+
+European journal of internal medicine (2015), doi:10.1016/j.ejim.2015.02.010
+
+INTRODUCTION: Risk stratification tools were developed to assess risk of negative health outcomes. These tools assess a variety of variables and clinical factors and they can be used to identify targets of potential interventions and to develop care plans. The role of multimorbidity in these tools has never been assessed.
+
+OBJECTIVES: To summarize validated risk stratification tools for predicting negative outcomes, with a specific focus on multimorbidity.
+
+METHODS: MEDLINE, Cochrane Central Register of Controlled Trials and PubMed database were interrogated for studies concerning risk prediction models in medical populations. Review was conducted to identify prediction models tested with patients in both derivation and validation cohorts. A qualitative synthesis was performed focusing particularly on how multimorbidity is assessed by each algorithm and how much this weighs in the ability of discrimination.
+
+RESULTS: Of 3674 citations reviewed, 36 articles met criteria. Of these, 29 had as outcome hospital admission/readmission. The most common multimorbidity measure employed in the models was the Charlson Comorbidity Index (12 articles). C-statistics ranged between 0.5 and 0.85 in predicting hospital admission/ readmission. The highest c-statistics was 0.83 in models with disability as outcome. For healthcare cost, models which used ACG-PM case mix explained better the variability of total costs.
+
+CONCLUSIONS: This review suggests that predictive risk models which employ multimorbidity as predictor variable are more accurate; CHF, cerebro-vascular disease, COPD and diabetes were strong predictors in some of the reviewed models. However, the variability in the risk factors used in these models does not allow making assumptions.

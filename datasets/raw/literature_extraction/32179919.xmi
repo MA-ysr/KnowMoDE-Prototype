@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/32179919.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/32179919/" sourceSha256="08c500be4187d7bb3dba7fc9b6eff5b3a2ff93b00f2e9778fced9172105c6e3e" sourceText="# PubMed 32179919: Hospital Readmissions After Laboratory-Confirmed Influenza Hospitalization.&#10;&#10;The Journal of infectious diseases (2020), doi:10.1093/infdis/jiaa117&#10;&#10;BACKGROUND: Influenza infection causes substantial morbidity and mortality. However, little is known about hospital readmissions after an influenza hospitalization. The aim of our study was to characterize frequency of hospital readmissions among patients hospitalized with laboratory-confirmed influenza.&#10;&#10;METHODS: We conducted a retrospective study using Tennessee Emerging Infections Program Influenza Surveillance data from 2006 to 2016 and the concurrent Tennessee Hospital Discharge Data System. We analyzed demographic characteristics and outcomes to better understand frequency and factors associated with hospital readmissions.&#10;&#10;RESULTS: Of the 2897 patients with a laboratory-confirmed influenza hospitalization, 409 (14%) and 1364 (47%) had at least 1 hospital readmission within 30 days and 1 year of the influenza hospitalization, respectively. Multiple readmissions occurred in 739 patients (54%). The readmission group was older, female predominant, and had more comorbidities than patients not hospitalized. Pneumonia, acute chronic obstructive pulmonary disease/asthma exacerbation, septicemia, acute respiratory failure, and acute renal failure were the most common causes for readmission at 30 days. Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year.&#10;&#10;CONCLUSIONS: After an admission with laboratory-confirmed influenza, there is a high likelihood of readmission within 30 days and 1 year adding to the morbidity of influenza.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:38:19+00:00" xmi:version="2.0">
+  <chunks charEnd="1753"/>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="hospital readmission within 30 days" confidence="0.95" sourceSpanStart="930" sourceSpanEnd="965">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-1-year" mention="1 year of the influenza hospitalization" confidence="0.95" sourceSpanStart="970" sourceSpanEnd="1009">
+    <properties key="name" value="hospital readmission within 1 year"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="Pneumonia" confidence="0.9" sourceSpanStart="1191" sourceSpanEnd="1200">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="acute-chronic-obstructive-pulmonary-disease-asthma-exacerbation" mention="acute chronic obstructive pulmonary disease/asthma exacerbation" confidence="0.9" sourceSpanStart="1202" sourceSpanEnd="1265">
+    <properties key="name" value="acute chronic obstructive pulmonary disease/asthma exacerbation"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="septicemia" mention="septicemia" confidence="0.9" sourceSpanStart="1267" sourceSpanEnd="1277">
+    <properties key="name" value="septicemia"/>
+    <properties key="category" value="systemic"/>
+  </entities>
+  <entities type="Condition" id="acute-respiratory-failure" mention="acute respiratory failure" confidence="0.9" sourceSpanStart="1279" sourceSpanEnd="1304">
+    <properties key="name" value="acute respiratory failure"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="acute renal failure" confidence="0.9" sourceSpanStart="1310" sourceSpanEnd="1329">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-disease" mention="cardiovascular disease" confidence="0.95" sourceSpanStart="1397" sourceSpanEnd="1419">
+    <properties key="name" value="cardiovascular disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="lung-disease" mention="lung disease" confidence="0.95" sourceSpanStart="1421" sourceSpanEnd="1433">
+    <properties key="name" value="lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="kidney disease" confidence="0.95" sourceSpanStart="1435" sourceSpanEnd="1449">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1451" sourceSpanEnd="1459">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="immunosuppression" mention="immunosuppression" confidence="0.95" sourceSpanStart="1461" sourceSpanEnd="1478">
+    <properties key="name" value="immunosuppression"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="liver-disease" mention="liver disease" confidence="0.95" sourceSpanStart="1484" sourceSpanEnd="1497">
+    <properties key="name" value="liver disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cardiovascular-disease" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="lung-disease" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="kidney-disease" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="immunosuppression" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="liver-disease" targetType="ClinicalOutcome" targetId="hospital-readmission-within-1-year" confidence="0.9" evidence="Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year." sourceSpanStart="1386" sourceSpanEnd="1576"/>
+</raw:RawExtractionResult>

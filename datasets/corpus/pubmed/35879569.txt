@@ -1,0 +1,11 @@
+# PubMed 35879569: Incidence and trends of decision regret following elective hernia repair.
+
+Surgical endoscopy (2022), doi:10.1007/s00464-021-08766-7
+
+BACKGROUND: One approach to evaluate decision-making is using the concept of decision regret, which measures patient remorse after a healthcare decision. This is particularly important for elective, preference-sensitive conditions with multiple treatment options, such as ventral and inguinal hernia repair. In this study, we assessed decision regret among patients who pursued surgical management of ventral and inguinal hernias.
+
+METHODS: We retrospectively reviewed a statewide registry of adult patients who underwent elective ventral and inguinal hernia repair between January 2017 and March 2020 and completed a validated survey measuring decision regret. 30-day outcomes included complications, emergency department (ED) utilization, readmission, and reoperation. Multivariable logistic regression examined the association of regret with age, sex, race, insurance status, ASA, tobacco use, diabetes, admission status, surgical approach (open vs. laparoscopic vs. robotic), year, and outcomes.
+
+RESULTS: 8315 patients underwent surgery during the study period with a mean age of 60.5 (14.7) years and 1812 (22%) female patients. Among 2159 patients who underwent ventral hernia repair, 248 (11%) reported regret to undergo surgery, 64 (3%) experienced a complication, 160 (7%) visited an ED, 86 (4%) were readmitted, and 29 (1%) underwent reoperation. Outcomes associated with regret after ventral hernia repair included complications (OR 2.33, 95% CI 1.26-4.29) and readmission (OR 2.67, 95% CI 1.51-4.71). Among 6,156 patients who underwent inguinal hernia repair, 533 (9%) reported regret to undergo surgery, 41 (1%) experienced a complication, 304 (5%) visited an ED, 72 (1%) were readmitted, and 63 (1%) underwent reoperation. Outcomes associated with regret after inguinal hernia repair included ED visits (OR 2.03, 95% CI 1.44-2.87) and readmission (OR 4.23, 95% CI 2.35-7.61).
+
+CONCLUSION: Roughly 1 in 10 patients undergoing hernia repair report regret with their decision to undergo surgery. Developing a better understanding of the factors associated with decision regret after hernia repair may better inform both patients and surgeon decision-making.

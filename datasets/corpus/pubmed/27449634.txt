@@ -1,0 +1,17 @@
+# PubMed 27449634: Validation of the HOSPITAL Score for 30-Day All-Cause Readmissions of Patients Discharged to Skilled Nursing Facilities.
+
+Journal of the American Medical Directors Association (2016), doi:10.1016/j.jamda.2016.06.008
+
+OBJECTIVES: To validate the HOSPITAL score for predicting 30-day all-cause readmission rates in a cohort of medical patients discharged to skilled nursing facilities (SNFs).
+
+DESIGN: Retrospective cohort.
+
+SETTING: Cleveland Clinic Main Campus.
+
+PARTICIPANTS: Cleveland Clinic Main Campus medicine services patients who were admitted between January 1, 2011, and December 31, 2012, and subsequently discharged to 110 SNFs within a 25-mile radius of the hospital.
+
+MEASUREMENTS: Thirty-day all-cause readmissions to any hospital in the Cleveland Clinic Health System and the HOSPITAL score.
+
+RESULTS: During the study period, 4208 medical patients were discharged to 110 SNFs; 30-day all-cause readmission rates were 40.9% for high-risk patients, 28.1% for intermediate-risk patients, and 15.4% for low-risk patients. Compared to intermediate- and low-risk patients, high-risk patients had more hospitalizations in the past year (3.6 vs 1.1 vs 0.8; P < .0001), longer hospital stays (12.0 days vs 9.9 days vs 4.9 days; P < .0001) and more comorbidities, including end-stage renal disease (18.5% vs 9.3% vs 2.5%; P < .0001), congestive heart failure (39.9% vs 33.1% vs 26.1%; P < .0001), chronic obstructive pulmonary disease (26.9% vs 21.5% vs 20.2%; P < .0001), and diabetes (46.5% vs 38.6% vs 35.3%; P < .0001). The c--statistic for the HOSPITAL score was 0.65.
+
+CONCLUSIONS: Among patients discharged to an SNF, the HOSPITAL score may be used to identify those at highest risk of readmission within 30 days.

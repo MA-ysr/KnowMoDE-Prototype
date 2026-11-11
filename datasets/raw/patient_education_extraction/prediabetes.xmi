@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/prediabetes.txt" sourceUri="https://medlineplus.gov/prediabetes.html" sourceSha256="875c5513555f1afdd8835b4f14ecd07e844dd85a65a23460360491c1ae08bb56" sourceText="# MedlinePlus health topic: Prediabetes&#10;&#10;Also called: Insulin Resistance&#10;&#10;What is prediabetes?Prediabetes means that your blood glucose, or blood sugar, levels are higher than normal but not high enough to be called diabetes. Glucose comes from the foods you eat. Too much glucose in your blood can damage your body over time.&#10;&#10;If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke. But if you make some lifestyle changes now, you may be able to delay or prevent type 2 diabetes.&#10;&#10;What causes prediabetes?Prediabetes usually happens when your body has a problem with insulin. Insulin is a hormone that helps the glucose get into your cells to give them energy. A problem with insulin could be:&#10;&#10;Insulin resistance, a condition in which the body can't use its insulin properly. It makes it hard for your cells to get glucose from your blood. This can cause your blood sugar levels to rise.&#10;&#10;Your body can't make enough insulin to keep your blood sugar levels at a healthy level&#10;&#10;Researchers think that being overweight and not getting regular physical activity are major factors in causing prediabetes.&#10;&#10;Who is at risk for prediabetes?About 1 out of every 3 adults has prediabetes. It is more common in people who:&#10;&#10;Are overweight or have obesity&#10;&#10;Are age 45 or older&#10;&#10;Have a parent, brother, or sister with diabetes&#10;&#10;Are African American, Alaska Native, American Indian, Asian American, Hispanic/Latino, Native Hawaiian, or Pacific Islander American&#10;&#10;Are not physically active&#10;&#10;Have health conditions such as high blood pressure and high cholesterol&#10;&#10;Have had gestational diabetes (diabetes in pregnancy)&#10;&#10;Have a history of heart disease or stroke&#10;&#10;Have metabolic syndrome&#10;&#10;Have polycystic ovary syndrome (PCOS)&#10;&#10;What are the symptoms of prediabetes?Most people don't know they have prediabetes because usually there are no symptoms.&#10;&#10;Some people with prediabetes may have darkened skin in the armpit or on the back and sides of the neck. They may also have many small skin growths in those same areas.&#10;&#10;How is prediabetes diagnosed?There are a few different blood tests that can diagnose prediabetes. The most common ones are:&#10;&#10;Fasting plasma glucose (FPG) test, which measures your blood sugar at a single point in time. You need to fast (not eat or drink) for at least 8 hours before the test. The results of the test are given in mg/dL (milligrams per deciliter):&#10;A normal level is 99 or below&#10;&#10;Prediabetes is 100 to 125&#10;&#10;Type 2 diabetes is 126 and above&#10;&#10;A1C test, which measures your average blood sugar over the past 3 months. The results of an A1C test are given as a percentage. The higher the percentage, the higher your blood sugar levels have been.&#10;A normal level is below 5.7%&#10;&#10;Prediabetes is between 5.7 to 6.4%&#10;&#10;Type 2 diabetes is above 6.5%&#10;&#10;If I have prediabetes, will I get diabetes?If you have prediabetes, you may be able to delay or prevent type 2 diabetes through lifestyle changes:&#10;&#10;Losing weight, if you are overweight&#10;&#10;Getting regular physical activity&#10;&#10;Following a healthy, reduced-calorie eating plan&#10;&#10;In some cases, your health care provider may also recommend taking diabetes medicines.&#10;&#10;Can prediabetes be prevented?If you are at risk for prediabetes, those same lifestyle changes (losing weight, regular physical activity, and a healthy eating plan) may prevent you from getting it.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:24:46+00:00" xmi:version="2.0">
+  <chunks charEnd="3430"/>
+  <entities type="Condition" id="prediabetes" mention="Prediabetes" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="39">
+    <properties key="name" value="prediabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="insulin-resistance" mention="Insulin Resistance" confidence="0.95" sourceSpanStart="54" sourceSpanEnd="72">
+    <properties key="name" value="insulin resistance"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.98" sourceSpanStart="384" sourceSpanEnd="399">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.98" sourceSpanStart="401" sourceSpanEnd="414">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="stroke" confidence="0.98" sourceSpanStart="420" sourceSpanEnd="426">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="1554" sourceSpanEnd="1573">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="high-cholesterol" mention="high cholesterol" confidence="0.95" sourceSpanStart="1578" sourceSpanEnd="1594">
+    <properties key="name" value="high cholesterol"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="gestational-diabetes" mention="gestational diabetes" confidence="0.95" sourceSpanStart="1605" sourceSpanEnd="1625">
+    <properties key="name" value="gestational diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="metabolic-syndrome" mention="metabolic syndrome" confidence="0.95" sourceSpanStart="1699" sourceSpanEnd="1717">
+    <properties key="name" value="metabolic syndrome"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="polycystic-ovary-syndrome" mention="polycystic ovary syndrome (PCOS)" confidence="0.95" sourceSpanStart="1724" sourceSpanEnd="1756">
+    <properties key="name" value="polycystic ovary syndrome"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="LabTest" id="fasting-plasma-glucose-100-to-125" mention="Prediabetes is 100 to 125" confidence="0.95" sourceSpanStart="2444" sourceSpanEnd="2469">
+    <properties key="name" value="fasting plasma glucose 100 to 125 mg/dL"/>
+    <properties key="abnormalThreshold" value="100 to 125 mg/dL"/>
+  </entities>
+  <entities type="LabTest" id="a1c-5-7-to-6-4" mention="Prediabetes is between 5.7 to 6.4%" confidence="0.95" sourceSpanStart="2736" sourceSpanEnd="2770">
+    <properties key="name" value="A1C between 5.7 to 6.4%"/>
+    <properties key="abnormalThreshold" value="5.7 to 6.4%"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="prediabetes" targetType="Condition" targetId="type-2-diabetes" confidence="0.95" evidence="If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke." sourceSpanStart="328" sourceSpanEnd="427"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="prediabetes" targetType="Condition" targetId="heart-disease" confidence="0.95" evidence="If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke." sourceSpanStart="328" sourceSpanEnd="427"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="prediabetes" targetType="Condition" targetId="stroke" confidence="0.95" evidence="If you have prediabetes, you are more likely to develop type 2 diabetes, heart disease, and stroke." sourceSpanStart="328" sourceSpanEnd="427"/>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="fasting-plasma-glucose-100-to-125" targetType="Condition" targetId="prediabetes" confidence="0.9" evidence="Prediabetes is 100 to 125" sourceSpanStart="2444" sourceSpanEnd="2469"/>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="a1c-5-7-to-6-4" targetType="Condition" targetId="prediabetes" confidence="0.9" evidence="Prediabetes is between 5.7 to 6.4%" sourceSpanStart="2736" sourceSpanEnd="2770"/>
+</raw:RawExtractionResult>

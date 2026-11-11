@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  M1 model 5/5: Decision bindings of the diabetes readmission use case (conforms to xaikg::decision).
+  Binds the black-box model (its decision classes, R5) to the explanation contract, and each model
+  feature to the KG concept that grounds it (so SHAP attributions can be resolved to KG entities).
+
+  Feature names are the columns of the UCI "Diabetes 130-US hospitals" dataset (id 296).
+  ICD-9 groups follow Strack et al. 2014, Table 2.
+-->
+<decision:DecisionBindingConfig
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:decision="http://www.xaikg.org/1.0/decision"
+    name="DiabetesReadmissionDecisions">
+  <targetSchema href="kg-schema.xmi#DiabetesReadmissionKG"/>
+  <explainability href="explainability.xmi#DiabetesReadmissionExplainability"/>
+
+  <aiModel name="readmission_gbm" version="0.1.0" taskType="binary_classification"
+      trainingDataset="datasets/tabular/uci-296-diabetes-130-us-hospitals" attributionMethod="SHAP"
+      featureNames="age time_in_hospital num_lab_procedures num_procedures num_medications number_outpatient number_emergency number_inpatient number_diagnoses admission_type_id discharge_disposition_id admission_source_id max_glu_serum A1Cresult diag_1 diag_2 diag_3 metformin repaglinide nateglinide chlorpropamide glimepiride glipizide glyburide pioglitazone rosiglitazone acarbose miglitol insulin glyburide-metformin glipizide-metformin change diabetesMed"/>
+
+  <!-- ============================ Decision classes (the contract, R5) ============================ -->
+  <decisionClasses name="HighReadmissionRisk" label="high risk of readmission within 30 days" positive="true"
+      predictedOutcome="hospital readmission within 30 days" threshold="0.5"
+      explanationTypes="explainability.xmi#PlainLanguageContrast explainability.xmi#CausalEvidence explainability.xmi#ModifiableFactors explainability.xmi#GuidelineCompliance explainability.xmi#AttributionReport"/>
+  <decisionClasses name="LowReadmissionRisk" label="low risk of readmission within 30 days" positive="false"
+      predictedOutcome="hospital readmission within 30 days" threshold="0.5"
+      explanationTypes="explainability.xmi#CausalEvidence explainability.xmi#GuidelineCompliance explainability.xmi#AttributionReport"/>
+
+  <!-- ============================ Feature bindings ============================ -->
+  <!-- Medications: the dataset value is No / Steady / Up / Down; the feature is active when the drug is prescribed. -->
+  <featureBindings featureName="metformin" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="metformin" activeWhen="value != 'No'"/>
+  <featureBindings featureName="repaglinide" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="repaglinide" activeWhen="value != 'No'"/>
+  <featureBindings featureName="nateglinide" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="nateglinide" activeWhen="value != 'No'"/>
+  <featureBindings featureName="chlorpropamide" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="chlorpropamide" activeWhen="value != 'No'"/>
+  <featureBindings featureName="glimepiride" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="glimepiride" activeWhen="value != 'No'"/>
+  <featureBindings featureName="glipizide" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="glipizide" activeWhen="value != 'No'"/>
+  <featureBindings featureName="glyburide" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="glyburide" activeWhen="value != 'No'"/>
+  <featureBindings featureName="pioglitazone" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="pioglitazone" activeWhen="value != 'No'"/>
+  <featureBindings featureName="rosiglitazone" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="rosiglitazone" activeWhen="value != 'No'"/>
+  <featureBindings featureName="acarbose" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="acarbose" activeWhen="value != 'No'"/>
+  <featureBindings featureName="miglitol" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="miglitol" activeWhen="value != 'No'"/>
+  <featureBindings featureName="insulin" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="insulin" activeWhen="value != 'No'"/>
+  <featureBindings featureName="glyburide-metformin" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="glyburide and metformin" activeWhen="value != 'No'"/>
+  <featureBindings featureName="glipizide-metformin" kind="ENTITY" concept="kg-schema.xmi#Drug" entityName="glipizide and metformin" activeWhen="value != 'No'"/>
+
+  <!-- Laboratory results (categorical levels) -->
+  <featureBindings featureName="A1Cresult" kind="LAB_LEVEL" concept="kg-schema.xmi#LabTest" activeWhen="value in ('>8', '>7', 'Norm')"
+      valueMap="{&quot;>8&quot;: &quot;HbA1c > 8%&quot;, &quot;>7&quot;: &quot;HbA1c > 7%&quot;, &quot;Norm&quot;: &quot;HbA1c normal&quot;, &quot;None&quot;: null}"
+      description="HbA1c result during the encounter; 'None' means the test was not performed (see also the RiskFactor binding hba1c_not_measured derived by the service)."/>
+  <featureBindings featureName="max_glu_serum" kind="LAB_LEVEL" concept="kg-schema.xmi#LabTest" activeWhen="value in ('>300', '>200', 'Norm')"
+      valueMap="{&quot;>300&quot;: &quot;serum glucose > 300 mg/dL&quot;, &quot;>200&quot;: &quot;serum glucose > 200 mg/dL&quot;, &quot;Norm&quot;: &quot;serum glucose normal&quot;, &quot;None&quot;: null}"/>
+
+  <!-- Utilisation and administrative risk factors -->
+  <featureBindings featureName="number_inpatient" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="prior inpatient admissions" activeWhen="value >= 1"/>
+  <featureBindings featureName="number_emergency" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="prior emergency visits" activeWhen="value >= 1"/>
+  <featureBindings featureName="number_outpatient" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="prior outpatient visits" activeWhen="value >= 1"/>
+  <featureBindings featureName="time_in_hospital" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="length of hospital stay" activeWhen="value >= 7"/>
+  <featureBindings featureName="num_medications" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="polypharmacy" activeWhen="value >= 10"/>
+  <featureBindings featureName="number_diagnoses" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="multiple comorbidities" activeWhen="value >= 7"/>
+  <featureBindings featureName="num_lab_procedures" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="high number of laboratory procedures" activeWhen="value >= 60"/>
+  <featureBindings featureName="num_procedures" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="inpatient procedures" activeWhen="value >= 1"/>
+  <featureBindings featureName="age" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="older age" activeWhen="value in ('[70-80)', '[80-90)', '[90-100)')"/>
+  <featureBindings featureName="discharge_disposition_id" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="discharge to a skilled nursing facility" activeWhen="value in (3, 4, 5, 22, 23, 24)"
+      description="IDS_mapping.csv: 3 = SNF, 4 = ICF, 5 = another inpatient institution, 22-24 = rehab / long-term care"/>
+  <featureBindings featureName="admission_type_id" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="emergency admission" activeWhen="value == 1"/>
+  <featureBindings featureName="admission_source_id" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="admission from the emergency room" activeWhen="value == 7"/>
+  <featureBindings featureName="change" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="change of diabetes medication" activeWhen="value == 'Ch'"/>
+  <featureBindings featureName="diabetesMed" kind="RISK_FACTOR" concept="kg-schema.xmi#RiskFactor" entityName="diabetes medication prescribed" activeWhen="value == 'Yes'"/>
+
+  <!-- Diagnoses (ICD-9-CM codes grouped as in Strack et al. 2014) -->
+  <featureBindings featureName="diag_1" kind="ICD9_GROUP" concept="kg-schema.xmi#Condition" activeWhen="value not in ('?', None)"
+      valueMap="{&quot;390-459,785&quot;: &quot;circulatory disease&quot;, &quot;428&quot;: &quot;heart failure&quot;, &quot;460-519,786&quot;: &quot;respiratory disease&quot;, &quot;520-579,787&quot;: &quot;digestive disease&quot;, &quot;250&quot;: &quot;diabetes&quot;, &quot;800-999&quot;: &quot;injury and poisoning&quot;, &quot;710-739&quot;: &quot;musculoskeletal disease&quot;, &quot;580-629,788&quot;: &quot;genitourinary disease&quot;, &quot;585&quot;: &quot;chronic kidney disease&quot;, &quot;140-239&quot;: &quot;neoplasm&quot;}"
+      description="Primary diagnosis. Specific codes (e.g. 428 heart failure, 585 chronic kidney disease) take precedence over ranges."/>
+  <featureBindings featureName="diag_2" kind="ICD9_GROUP" concept="kg-schema.xmi#Condition" activeWhen="value not in ('?', None)"
+      valueMap="{&quot;390-459,785&quot;: &quot;circulatory disease&quot;, &quot;428&quot;: &quot;heart failure&quot;, &quot;460-519,786&quot;: &quot;respiratory disease&quot;, &quot;520-579,787&quot;: &quot;digestive disease&quot;, &quot;250&quot;: &quot;diabetes&quot;, &quot;800-999&quot;: &quot;injury and poisoning&quot;, &quot;710-739&quot;: &quot;musculoskeletal disease&quot;, &quot;580-629,788&quot;: &quot;genitourinary disease&quot;, &quot;585&quot;: &quot;chronic kidney disease&quot;, &quot;140-239&quot;: &quot;neoplasm&quot;}"/>
+  <featureBindings featureName="diag_3" kind="ICD9_GROUP" concept="kg-schema.xmi#Condition" activeWhen="value not in ('?', None)"
+      valueMap="{&quot;390-459,785&quot;: &quot;circulatory disease&quot;, &quot;428&quot;: &quot;heart failure&quot;, &quot;460-519,786&quot;: &quot;respiratory disease&quot;, &quot;520-579,787&quot;: &quot;digestive disease&quot;, &quot;250&quot;: &quot;diabetes&quot;, &quot;800-999&quot;: &quot;injury and poisoning&quot;, &quot;710-739&quot;: &quot;musculoskeletal disease&quot;, &quot;580-629,788&quot;: &quot;genitourinary disease&quot;, &quot;585&quot;: &quot;chronic kidney disease&quot;, &quot;140-239&quot;: &quot;neoplasm&quot;}"/>
+
+</decision:DecisionBindingConfig>

@@ -1,0 +1,15 @@
+# PubMed 35822418: Examining sources of post-acute care inequities with layered target matching.
+
+Health services research (2023), doi:10.1111/1475-6773.14027
+
+OBJECTIVE: To examine factors associated with racial inequities in discharge location, skilled nursing facility (SNF) utilization, and readmissions.
+
+DATA SOURCES: A 20% sample of longitudinal Medicare claims from 2016 to 2018.
+
+STUDY DESIGN: We present layered target matching, a method for studying sources of inequities. Layered target matching examines a fixed target population profile representing any race, ethnicity, or vulnerable population, sequentially adjusting for sets of characteristics that may contribute to inequities these groups endure. We use the method to study racial inequities in post-acute care use and readmissions.
+
+DATA COLLECTION/EXTRACTION METHODS: We studied Black and non-Hispanic White fee-for-service Medicare beneficiaries aged 66+ admitted to short-term acute-care hospitals for qualifying diagnoses or procedures between January 1, 2016 and November 30, 2018.
+
+PRINCIPAL FINDINGS: Admitted Black patients tended to be younger, had significantly higher rates of risk factors such as diabetes, stroke, or renal disease, and were much more frequently admitted to large or academic hospitals. Relative to demographically similar White patients, Black patients were significantly more likely to be discharged to SNFs (21.8% vs. 19.3%, difference = 2.5%, p < 0.0001) and to receive any SNF care within 30 days of discharge (25.3% vs. 22.4%, difference = 2.9%, p < 0.0001). Black patients were also significantly more likely to experience 30-day readmission (18.7% vs. 14.5%, difference = 4.2%, p < 0.0001). Differences in reasons for hospitalization and risk factors explained most of the differences in discharge location, post-acute care use, and readmission rates, while additional adjustment for differences in hospital characteristics and complications made little difference for any of the measures studied.
+
+CONCLUSIONS: We found significant Black-White differences in discharge to SNFs, SNF utilization, and readmission rates. Using layered target matching, we found that differences in risk factors and reasons for hospitalization explained most of these differences, while differences in hospitals did not materially impact the differences.

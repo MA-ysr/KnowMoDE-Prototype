@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34789421.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34789421/" sourceSha256="baf5e04497bd3dc17efbadbe3d225ea43961d46204a0bf7b5e383cbfad8ec5f4" sourceText="# PubMed 34789421: An analysis of readmission trends by urgency and race/ethnicity in the MBSAQIP registry, 2015-2018.&#10;&#10;Surgery for obesity and related diseases : official journal of the American Society for Bariatric Surgery (2022), doi:10.1016/j.soard.2021.10.018&#10;&#10;BACKGROUND: Large-scale analyses stratifying bariatric surgery readmissions by urgency are lacking.&#10;&#10;OBJECTIVES: Identify predictors of urgent/nonurgent readmission among &quot;ideal&quot; bariatric candidates, using a national registry.&#10;&#10;SETTING: Metabolic and Bariatric Surgery Accreditation and Quality Improvement Program (MBSAQIP) national database.&#10;&#10;METHODS: We extracted an &quot;ideal&quot; patient cohort from the 2015-2018 Metabolic and Bariatric Surgery Accreditation Quality Improvement Program (MBSAQIP) registry, characterized by only typical weight-related comorbidities (hypertension [HTN], obstructive sleep apnea [OSA], gastroesophageal reflux disease [GERD], and diabetes (insulin-dependent diabetes mellitus [IDDM] and non-insulin-dependent diabetes mellitus [NIDDM]) undergoing primary bariatric surgery with an uneventful postoperative course. Readmissions were classified as &quot;urgent&quot; (UR; e.g., leak, obstruction, bleeding) or &quot;nonurgent&quot; (NUR; e.g., dehydration, nonspecific abdominal pain). χ2 or t test analyses were used for bivariate significance testing. Multivariate logistic regression models were constructed to assess independent predictors of readmission.&#10;&#10;RESULTS: The cohort (N = 292,547) comprised 38.5% of all MBSAQIP patients (mean age [standard deviation] = 43.2 [11.7]; body mass index [BMI] = 44.9 [6.6]; 81% female; 62% White, 17% Black, 14% Hispanic). Total readmission rates were 2.75% (n = 8046) and decreased from 2015-2018 (3.00%-2.63%; P &lt; .001). Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001). NUR and UR readmission rates were 1.27% (n = 3702) and 1.06% (n = 3090), respectively. NURs decreased over time (1.42%-1.16%, P &lt; .001), with no change in Urs (1.01%-1.06%, P = .51); this trend persisted in multivariate analysis (2017: NUR OR = .85, P &lt; .001; 2018: NUR OR = .82, p &lt; .001). Independent predictors of both URs and NURs included Black (NUR OR = 1.71, p &lt; .001; UR OR = 1.27, p &lt; .001) and Hispanic (NUR OR = 1.15, P &lt; .001; UR OR = 1.19, P &lt; .001) race, RYGB (NUR OR = 1.84, P &lt; .001; UR OR = 2.34, P &lt; .001), and GERD (NUR OR = 1.39, p &lt; .001; UR OR = 1.17, P &lt; .001). Female sex (NUR OR = 1.64, P &lt; .001), age (NUR OR = .98, P &lt; .001), HTN (NUR OR = 1.22, P &lt; .001), and IDDM (NUR OR = 1.41, P &lt; .001) predicted NURs, while higher BMI (UR OR = 1.01, P &lt; .001), and OSA (UR OR = 1.10, P = .02) predicted URs.&#10;&#10;CONCLUSION: Readmission rates for &quot;ideal&quot; bariatric patients improved over time, driven by reductions in non-urgent etiologies. Racial disparities persist for both urgent and non-urgent causes of readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:43:50+00:00" xmi:version="2.0">
+  <chunks charEnd="2968"/>
+  <chunks index="1" charStart="2841" charEnd="3050"/>
+  <entities type="Condition" id="hypertension" mention="hypertension [HTN]" confidence="0.95" sourceSpanStart="834" sourceSpanEnd="852">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="obstructive-sleep-apnea" mention="obstructive sleep apnea [OSA]" confidence="0.95" sourceSpanStart="854" sourceSpanEnd="883">
+    <properties key="name" value="obstructive sleep apnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="gastroesophageal-reflux-disease" mention="gastroesophageal reflux disease [GERD]" confidence="0.95" sourceSpanStart="885" sourceSpanEnd="923">
+    <properties key="name" value="gastroesophageal reflux disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="insulin-dependent-diabetes-mellitus" mention="insulin-dependent diabetes mellitus [IDDM]" confidence="0.95" sourceSpanStart="939" sourceSpanEnd="981">
+    <properties key="name" value="insulin-dependent diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="gerd" mention="GERD" confidence="0.95" sourceSpanStart="1928" sourceSpanEnd="1932">
+    <properties key="name" value="gastroesophageal reflux disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="htn" mention="HTN" confidence="0.95" sourceSpanStart="1956" sourceSpanEnd="1959">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="iddm" mention="IDDM" confidence="0.95" sourceSpanStart="1987" sourceSpanEnd="1991">
+    <properties key="name" value="insulin-dependent diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="black-race" mention="Black" confidence="0.9" sourceSpanStart="2359" sourceSpanEnd="2364">
+    <properties key="name" value="black race"/>
+    <properties key="description" value="patient of black race/ethnicity"/>
+  </entities>
+  <entities type="RiskFactor" id="hispanic-race" mention="Hispanic" confidence="0.9" sourceSpanStart="2419" sourceSpanEnd="2427">
+    <properties key="name" value="hispanic race"/>
+    <properties key="description" value="patient of hispanic race/ethnicity"/>
+  </entities>
+  <entities type="RiskFactor" id="roux-en-y-gastric-bypass" mention="Roux-en-Y gastric bypass (RYGB)" confidence="0.95" sourceSpanStart="1791" sourceSpanEnd="1822">
+    <properties key="name" value="roux-en-y gastric bypass"/>
+    <properties key="description" value="Roux-en-Y gastric bypass surgery"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmissions" confidence="0.95" sourceSpanStart="330" sourceSpanEnd="342">
+    <properties key="name" value="readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="Readmission" confidence="0.95" sourceSpanStart="2853" sourceSpanEnd="2864" chunkIndex="1">
+    <properties key="name" value="readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="gerd" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="htn" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="iddm" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="black-race" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="hispanic-race" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="roux-en-y-gastric-bypass" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Independent predictors of readmissions included Roux-en-Y gastric bypass (RYGB) (odds ratio [OR] = 1.97, p &lt; .001), Black (OR = 1.46, P &lt; .001) and Hispanic race (OR = 1.14, P &lt; .001), GERD (OR = 1.27, P &lt; .001), HTN (OR = 1.08, P = .003), and IDDM (OR = 1.39, P &lt; .001)." sourceSpanStart="1743" sourceSpanEnd="2014"/>
+</raw:RawExtractionResult>

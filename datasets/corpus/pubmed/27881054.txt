@@ -1,0 +1,11 @@
+# PubMed 27881054: Transition of Care for Patients with Diabetes.
+
+Current diabetes reviews (2017), doi:10.2174/1573399813666161123104407
+
+BACKGROUND: Diabetes is a common chronic condition among adults that can complicate the transition from the hospital to the community. Hospital readmission is an important contributor to total medical expenditures and is an emerging indicator of quality of care. Failure to acknowledge diabetes transition of care is associated with increased emergency department visits and 30-day readmissions.
+
+METHODS: Literature review of transition of care models, sample tools and processes are presented. Updated guidelines and recommendations aiming to identify and address risk factors for readmission of patients with diabetes are provided.
+
+RESULTS: Increased attention has been given to different aspects of diabetes care in regards to discharge planning. This includes early initiation of a discharge plan identifying readmission risk factors at time of admission. In addition, involvement of patients, families, care givers, health care providers and institutions to establish transitional care. Utilization of hospital resources includes medication reconciliation, diabetes education, care coordination, discharge planning, follow up appointments and post discharge care.
+
+CONCLUSION: Addressing transition of care is not a choice but an important quality of care marker. The transition of care determines where patients with diabetes will follow up and how payers will remunerate hospitals for management of diabetes during hospitalization, discharge planning process and readmission rates. Different transition of care models have been identified, utilized and evaluated. However, more research needs to be done to establish standardized transitional care guidelines specific to this population.

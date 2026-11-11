@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40449290.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40449290/" sourceSha256="c0dd5fc9d4d4c587a50deb4e6b28afe3cdc2c5774d18b02d14ff0e9b5e5bbc29" sourceText="# PubMed 40449290: Early prescription of SGLT2i for acute patient care: from current evidence to future directions.&#10;&#10;Current problems in cardiology (2025), doi:10.1016/j.cpcardiol.2025.103081&#10;&#10;Sodium-glucose cotransporter 2 inhibitors (SGLT2i) have emerged as transformative therapies in the management of chronic heart failure (HF), offering substantial reductions in mortality and hospitalizations. Beyond their initial classification as diuretics, SGLT2i exert a spectrum of cardioprotective effects that extend far beyond renal modulation. By activating autophagic pathways and mimicking a starvation-like state, SGLT2i enhance cellular bioenergetics and mitigate acute injury, potentially underpinning both their immediate and sustained cardiometabolic benefits when administered early in acute care settings. In acute decompensated HF, early initiation of SGLT2i enhances clinical decongestion by increasing diuresis, improving diuretic efficiency, and mitigating diuretic resistance, translating to shorter hospitalizations and reduced readmissions and mortality. In acute myocardial infarction, SGLT2i reduce the incidence of first and total HF hospitalizations, arrhythmic events, adverse cardiac remodelling, and contrast-induced acute kidney injury, while mitigating stent failure and atherosclerotic progression. Furthermore, they demonstrated efficacy in preventing new-onset and recurrent supraventricular and ventricular arrhythmias. However, the evidence remains inconclusive regarding their impact on sudden cardiac death or outcomes following cardiac arrest. In critically ill patients, SGLT2i use is associated with reduced rates of acute kidney injury and the need for renal replacement therapy, with promising implications for the management of sepsis and multi-organ dysfunction. Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population. This narrative review synthesizes the underlying pathophysiological mechanisms, current clinical evidence, and potential future applications of early SGLT2i therapy in acute care settings, providing insights into their expanding role in contemporary cardiovascular medicine.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:46:23+00:00" xmi:version="2.0">
+  <chunks charEnd="2262"/>
+  <entities type="Drug" id="sglt2i" mention="SGLT2i" confidence="1.0" sourceSpanStart="41" sourceSpanEnd="47">
+    <properties key="name" value="sglt2i"/>
+    <properties key="drugClass" value="sodium-glucose cotransporter 2 inhibitor"/>
+  </entities>
+  <entities type="Condition" id="chronic-heart-failure" mention="chronic heart failure" confidence="0.95" sourceSpanStart="306" sourceSpanEnd="327">
+    <properties key="name" value="chronic heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.95" sourceSpanStart="369" sourceSpanEnd="378">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospitalizations" mention="hospitalizations" confidence="0.95" sourceSpanStart="383" sourceSpanEnd="399">
+    <properties key="name" value="hospitalizations"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmissions" mention="readmissions" confidence="0.95" sourceSpanStart="1043" sourceSpanEnd="1055">
+    <properties key="name" value="readmissions"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="acute-kidney-injury" mention="acute kidney injury" confidence="0.95" sourceSpanStart="1240" sourceSpanEnd="1259">
+    <properties key="name" value="acute kidney injury"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="arrhythmic-events" mention="arrhythmic events" confidence="0.95" sourceSpanStart="1171" sourceSpanEnd="1188">
+    <properties key="name" value="arrhythmic events"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="stent-failure" mention="stent failure" confidence="0.95" sourceSpanStart="1278" sourceSpanEnd="1291">
+    <properties key="name" value="stent failure"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="renal-replacement-therapy" mention="renal replacement therapy" confidence="0.95" sourceSpanStart="1689" sourceSpanEnd="1714">
+    <properties key="name" value="renal replacement therapy"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="1839" sourceSpanEnd="1855">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="electrolyte-disturbances" mention="electrolyte disturbances" confidence="0.95" sourceSpanStart="1857" sourceSpanEnd="1881">
+    <properties key="name" value="electrolyte disturbances"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="acid-base-imbalances" mention="acid-base imbalances" confidence="0.95" sourceSpanStart="1883" sourceSpanEnd="1903">
+    <properties key="name" value="acid-base imbalances"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="urinary-tract-infections" mention="urinary tract infections" confidence="0.95" sourceSpanStart="1905" sourceSpanEnd="1929">
+    <properties key="name" value="urinary tract infections"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="dysglycemia" mention="dysglycemia" confidence="0.95" sourceSpanStart="1935" sourceSpanEnd="1946">
+    <properties key="name" value="dysglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="mortality" confidence="0.95" evidence="Sodium-glucose cotransporter 2 inhibitors (SGLT2i) have emerged as transformative therapies in the management of chronic heart failure (HF), offering substantial reductions in mortality and hospitalizations." sourceSpanStart="193" sourceSpanEnd="400"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="hospitalizations" confidence="0.95" evidence="Sodium-glucose cotransporter 2 inhibitors (SGLT2i) have emerged as transformative therapies in the management of chronic heart failure (HF), offering substantial reductions in mortality and hospitalizations." sourceSpanStart="193" sourceSpanEnd="400"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="readmissions" confidence="0.95" evidence="In acute decompensated HF, early initiation of SGLT2i enhances clinical decongestion by increasing diuresis, improving diuretic efficiency, and mitigating diuretic resistance, translating to shorter hospitalizations and reduced readmissions and mortality." sourceSpanStart="815" sourceSpanEnd="1070"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="arrhythmic-events" confidence="0.95" evidence="In acute myocardial infarction, SGLT2i reduce the incidence of first and total HF hospitalizations, arrhythmic events, adverse cardiac remodelling, and contrast-induced acute kidney injury, while mitigating stent failure and atherosclerotic progression." sourceSpanStart="1071" sourceSpanEnd="1324"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="acute-kidney-injury" confidence="0.95" evidence="In critically ill patients, SGLT2i use is associated with reduced rates of acute kidney injury and the need for renal replacement therapy, with promising implications for the management of sepsis and multi-organ dysfunction." sourceSpanStart="1577" sourceSpanEnd="1801"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2i" targetType="ClinicalOutcome" targetId="renal-replacement-therapy" confidence="0.95" evidence="In critically ill patients, SGLT2i use is associated with reduced rates of acute kidney injury and the need for renal replacement therapy, with promising implications for the management of sepsis and multi-organ dysfunction." sourceSpanStart="1577" sourceSpanEnd="1801"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt2i" targetType="Condition" targetId="renal-impairment" confidence="0.85" evidence="Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population." sourceSpanStart="1802" sourceSpanEnd="1986"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt2i" targetType="Condition" targetId="electrolyte-disturbances" confidence="0.85" evidence="Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population." sourceSpanStart="1802" sourceSpanEnd="1986"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt2i" targetType="Condition" targetId="acid-base-imbalances" confidence="0.85" evidence="Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population." sourceSpanStart="1802" sourceSpanEnd="1986"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt2i" targetType="Condition" targetId="urinary-tract-infections" confidence="0.85" evidence="Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population." sourceSpanStart="1802" sourceSpanEnd="1986"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt2i" targetType="Condition" targetId="dysglycemia" confidence="0.85" evidence="Importantly, adverse effects such as renal impairment, electrolyte disturbances, acid-base imbalances, urinary tract infections, and dysglycemia appear infrequently in this population." sourceSpanStart="1802" sourceSpanEnd="1986"/>
+</raw:RawExtractionResult>

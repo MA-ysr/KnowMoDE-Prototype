@@ -1,0 +1,11 @@
+# PubMed 32381028: Postpartum visits in the gynecological emergency room: How can we improve?
+
+BMC pregnancy and childbirth (2020), doi:10.1186/s12884-020-02927-7
+
+BACKGROUND: The attendance to the gynecological-emergency-room (GER) of women only a few weeks following previous discharge after birth comprises a medical as well as social problem. The objective of the study was to characterize the postpartum women that attended the GER, and depict the leading etiologies and risk-factors that lead them to attend the GER, and to examine correlations between their medical findings at discharge and the reasons for their attendance to the hospital.
+
+METHODS: All women that attended the GER between 01/01/2016 and 30/09/2016 during 6 weeks after birth were included. The variables assessed were: medical history, mode of birth, maternal complications of birth, diagnosis at the GER, treatment received and readmission.
+
+RESULTS: There were 446 visits of 413 women (5.6% of all deliveries). Most were generally healthy after their first normal vaginal birth with no complications during or following birth. 38.7% had a cesarean birth (p < 0.001). The most common causes of the visits were fever (30.3%), problems in episiotomy or surgical scar (26.6%) and abdominal pain (25.7%). Women with hypertensive disorders during birth had significantly more hypertensive problems in the GER. Diabetic women suffered statistically more from hypertensive disorder in the GER. 33.2% were examined and found healthy. Seventy-two women (1% of all deliveries) were hospitalized, most of them due to infection. Only 7.5% were referred to the GER due to bleeding.
+
+CONCLUSIONS: Postpartum women are at risk of morbidities, especially following cesarean sections and in women with hypertensive disorders of during pregnancy. Scheduled visits to high-risk women to attend outpatient clinic sooner are recommended.

@@ -1,0 +1,93 @@
+{
+  "perRule" : {
+    "declared_properties_only" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_confidence_above_threshold" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_has_id_and_mention" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_provenance_complete" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_type_in_schema" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "max_cardinality_respected" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "mention_grounded_in_source" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "relation_confidence_above_threshold" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "relation_endpoints_accepted" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "relation_evidence_grounded_in_source" : {
+      "evaluated" : 183,
+      "failed" : 2
+    },
+    "relation_type_and_endpoints_in_schema" : {
+      "evaluated" : 183,
+      "failed" : 1
+    },
+    "required_properties_present" : {
+      "evaluated" : 306,
+      "failed" : 0
+    }
+  },
+  "policyVersion" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+  "rejected" : [ {
+    "confidence" : "0.9",
+    "document" : "bc5cdr/3084231",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Possible pathophysiological mechanisms which may have been operative in this case include: ... an indirect CNS toxic effect mediated through valproic acid-induced hyperammonemia.",
+    "originalId" : "Drug:valproic-acid -> Condition:hyperammonemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/3895875",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "The mean plasma lidocaine level of patients on beta-blocking agents was no different from that in patients not on beta blocking agents.",
+    "originalId" : "Drug:lidocaine -> DrugClass:beta-blocking-agents",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.7",
+    "document" : "bc5cdr/920167",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Two mothers with heart valve prosthesis were treated with warfarin during pregnancy. ... The baby died of cerebral and pulmonary hemorrhage.",
+    "originalId" : "Drug:warfarin -> Condition:cerebral-and-pulmonary-hemorrhage",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  } ],
+  "summary" : {
+    "acceptanceRate" : 0.994,
+    "documents" : 60,
+    "rawEntities" : 306,
+    "rawRelations" : 183,
+    "rejected" : 3,
+    "validEntities" : 306,
+    "validRelations" : 180
+  }
+}

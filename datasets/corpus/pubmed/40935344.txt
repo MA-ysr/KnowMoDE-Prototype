@@ -1,0 +1,11 @@
+# PubMed 40935344: Risk Factors for Readmission After Unicompartmental Knee Arthroplasty.
+
+The Journal of arthroplasty (2026), doi:10.1016/j.arth.2025.09.001
+
+BACKGROUND: Unicompartmental knee arthroplasty (UKA) is a common surgical treatment for unicompartmental knee osteoarthritis. This study analyzed national data to identify risk factors associated with 30- and 90-day readmissions following inpatient UKA, aiming to inform preoperative optimization strategies.
+
+METHODS: Utilizing a large national database, 27,821 inpatient UKA procedures from 2016 to 2018 were identified. Patient demographics, comorbidities, and readmission causes were analyzed. Multivariate logistic regression identified significant predictors of readmission.
+
+RESULTS: The overall 30- and 90-day readmission rates were 2 and 2.3%, respectively. Infection was the leading surgical cause (0.53%), while acute kidney failure was the most common medical cause (1.6%). Significant predictors included hypertension (odds ratio (OR) 1.3, P < 0.001), diabetes (OR 1.5, P < 0.001), heart disease (OR 2.0, P < 0.001), obesity (OR 1.2, P = 0.006), morbid obesity (OR 1.4, P = 0.007), chronic obstructive pulmonary disease (COPD) (OR 1.9, P < 0.001), anemia (OR 1.5, P = 0.003), chronic kidney disease (OR 1.3, P = 0.047), and anticoagulation therapy (OR 1.8, P < 0.001). Patients who had these comorbidities experienced significantly longer hospital stays (P < 0.001) and higher hospital charges (P = 0.046).
+
+CONCLUSIONS: To the best of our knowledge, in the largest analysis of UKA readmissions to date, key risk factors associated with readmission were identified. Modifiable risk factors, such as obesity, hypertension, diabetes, and anemia, should be optimized preoperatively, while nonmodifiable risk factors require targeted counseling. As UKA becomes more prevalent, careful patient selection and comprehensive preoperative assessments are important to minimize readmissions. Future research should develop targeted predictive models and assess longer-term outcomes to enhance patient safety and the cost-effectiveness of UKA.

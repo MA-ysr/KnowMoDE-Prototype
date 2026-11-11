@@ -1,0 +1,17 @@
+# PubMed 26416770: Changes in Frailty After Kidney Transplantation.
+
+Journal of the American Geriatrics Society (2015), doi:10.1111/jgs.13657
+
+OBJECTIVES: To understand the natural history of frailty after an aggressive surgical intervention, kidney transplantation (KT).
+
+DESIGN: Prospective cohort study (December 2008-March 2014).
+
+SETTING: Baltimore, Maryland.
+
+PARTICIPANTS: Kidney transplantation recipients (N = 349).
+
+MEASUREMENTS: The Fried frailty score was measured at the time of KT and during routine clinical follow-up. Using a Cox proportional hazards model, factors associated with improvements in frailty score after KT were identified. Using a longitudinal analysis, predictors of frailty score changes after KT were identified using a multilevel mixed-effects Poisson model.
+
+RESULTS: At KT, 19.8% of recipients were frail; 1 month after KT, 33.3% were frail; at 2 months, 27.7% were frail; and at 3 months, 17.2% were frail. On average, frailty scores had worsened by 1 month (mean change 0.4, P < .001), returned to baseline by 2 months (mean change 0.2, P = .07), and improved by 3 months (mean change -0.3, P = .04) after KT. The only recipient or transplant factor associated with improvement in frailty score after KT was pre-KT frailty (hazard ratio = 2.55, 95% confidence interval (CI) = 1.71-3.82, P < .001). Pre-KT frailty status (relative risk (RR) = 1.49, 95% CI = 1.29-1.72, P < .001), recipient diabetes mellitus (RR = 1.26, 95% CI = 1.08-1.46, P = .003), and delayed graft function (RR = 1.22, 95% CI = 1.04-1.43, P = .02) were independently associated with long-term changes in frailty score.
+
+CONCLUSION: After KT, in adult recipients of all ages, frailty initially worsens but then improves by 3 months. Although KT recipients who were frail at KT had higher frailty scores over the long term, they were most likely to show improvements in their physiological reserve after KT, supporting the transplantation in these individuals and suggesting that pretransplant frailty is not an irreversible state of low physiological reserve.

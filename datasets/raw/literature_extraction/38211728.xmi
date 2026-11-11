@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/38211728.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/38211728/" sourceSha256="b24a42353ae86b5bc21dad4216affdc373bf32bf04e0dbc9131d1785839487e6" sourceText="# PubMed 38211728: Increased Rate of Complications Following Total Knee Arthroplasty in Patients Who Have Marfan Syndrome.&#10;&#10;The Journal of arthroplasty (2024), doi:10.1016/j.arth.2024.01.004&#10;&#10;BACKGROUND: Outcomes of Marfan syndrome (MFS) patients after total knee arthroplasty (TKA) are poorly documented in the literature. The purpose of this study was to evaluate MFS as a potential risk factor for complications after TKA.&#10;&#10;METHODS: Using a national private payer insurance database from 2010 to 2022, MFS patients undergoing primary TKA were identified and compared to 10:1 matched controls based on age, sex, obesity, diabetes mellitus, and a comorbidity index. A total of 4,092 patients undergoing primary TKA were analyzed, of which 372 had MFS. Multivariable logistic regression analyses were done for medical complications up to 90 days and surgical complications up to 2 years. 90-day emergency department-visits and inpatient readmissions were also documented.&#10;&#10;RESULTS: Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications, including prosthetic instability (1-year, odds ratio (OR) 3.88, 95% confidence interval (CI) [1.58 to 8.66]; 2-year, OR 4.39, 95% CI [2.16 to 8.44]), and revision surgery (2 year, OR 1.79, 95% CI [1.05 to 2.91]). Additionally, patients who have MFS demonstrated significant higher rates of medical complications, including aortic dissection (2.15 versus 0%) and transfusion (OR 2.63, 95% CI [1.31 to 4.90]).&#10;&#10;CONCLUSIONS: Patients who have MFS are at higher risks of postoperative complications after TKA, encompassing both medical and surgical complications. Specifically, patients who have MFS have a significantly higher likelihood of experiencing prosthetic instability and requiring revision surgery. Given these results, it is crucial for orthopedic surgeons and patients alike to consider these risks when determining a course of TKA for patients who have MFS.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:42:59+00:00" xmi:version="2.0">
+  <chunks charEnd="1958"/>
+  <entities type="Condition" id="marfan-syndrome" mention="Marfan syndrome" confidence="1.0" sourceSpanStart="106" sourceSpanEnd="121">
+    <properties key="name" value="marfan syndrome"/>
+    <properties key="category" value="genetic disorder"/>
+  </entities>
+  <entities type="RiskFactor" id="marfan-syndrome-risk-factor" mention="MFS" confidence="0.95" sourceSpanStart="233" sourceSpanEnd="236">
+    <properties key="name" value="marfan syndrome"/>
+    <properties key="description" value="Patients with Marfan syndrome undergoing total knee arthroplasty."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="surgical-complications" mention="surgical complications" confidence="0.9" sourceSpanStart="850" sourceSpanEnd="872">
+    <properties key="name" value="surgical complications"/>
+    <properties key="timeWindow" value="up to 2 years"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="medical-complications" mention="medical complications" confidence="0.9" sourceSpanStart="1380" sourceSpanEnd="1401">
+    <properties key="name" value="medical complications"/>
+    <properties key="timeWindow" value="up to 90 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="prosthetic-instability" mention="prosthetic instability" confidence="0.95" sourceSpanStart="1741" sourceSpanEnd="1763">
+    <properties key="name" value="prosthetic instability"/>
+    <properties key="timeWindow" value="1-year and 2-year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="revision-surgery" mention="revision surgery" confidence="0.95" sourceSpanStart="1778" sourceSpanEnd="1794">
+    <properties key="name" value="revision surgery"/>
+    <properties key="timeWindow" value="2 years"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="aortic-dissection" mention="aortic dissection" confidence="0.95" sourceSpanStart="1413" sourceSpanEnd="1430">
+    <properties key="name" value="aortic dissection"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="transfusion" mention="transfusion" confidence="0.95" sourceSpanStart="1452" sourceSpanEnd="1463">
+    <properties key="name" value="transfusion"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="surgical-complications" confidence="0.95" evidence="Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications" sourceSpanStart="982" sourceSpanEnd="1088"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="prosthetic-instability" confidence="0.95" evidence="Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications, including prosthetic instability" sourceSpanStart="982" sourceSpanEnd="1122"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="revision-surgery" confidence="0.95" evidence="Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications, including... and revision surgery" sourceSpanStart="585" sourceSpanEnd="791"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="medical-complications" confidence="0.95" evidence="Additionally, patients who have MFS demonstrated significant higher rates of medical complications" sourceSpanStart="1303" sourceSpanEnd="1401"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="aortic-dissection" confidence="0.95" evidence="Additionally, patients who have MFS demonstrated significant higher rates of medical complications, including aortic dissection" sourceSpanStart="1303" sourceSpanEnd="1430"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="marfan-syndrome-risk-factor" targetType="ClinicalOutcome" targetId="transfusion" confidence="0.95" evidence="Additionally, patients who have MFS demonstrated significant higher rates of medical complications, including... and transfusion" sourceSpanStart="812" sourceSpanEnd="946"/>
+</raw:RawExtractionResult>

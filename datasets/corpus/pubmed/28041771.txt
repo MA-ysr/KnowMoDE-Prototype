@@ -1,0 +1,11 @@
+# PubMed 28041771: The Effect of Comorbidities on Discharge Disposition and Readmission for Total Joint Arthroplasty Patients.
+
+The Journal of arthroplasty (2017), doi:10.1016/j.arth.2016.11.035
+
+BACKGROUND: As the annual demand and number of total joint arthroplasty cases increase, so do concerns of outcomes of patient with specific comorbidities relative to outcomes and costs of care.
+
+METHODS: The study cohort included 2009 primary total knee arthroplasty (TKA) patients and 905 total hip arthroplasty patients. Discharge disposition was classified as discharge to any facility or home. The comorbidities of the patients who were readmitted and those without a 90-day event were also evaluated.
+
+RESULTS: In the TKA population, age, female gender, nonsmoking status, venous thromboembolism (VTE) history, and diabetes were significantly associated with discharge to extended care facility (ECF) on univariate analysis, unlike body mass index. With multivariate analyses, female gender, age, VTE history, and diabetes were associated with ECF placement, but smoking was not. In the total hip arthroplasty population, age, female gender, and nonsmoking status were significantly associated with discharge to ECF on univariate analysis, whereas body mass index, diabetes, and VTE history were not. On multivariate analyses, female gender and age were associated with ECF, but smoking was not. The only significant finding for the readmission data was an increased rate of readmission for TKA patients of older age.
+
+CONCLUSION: The potential of projecting patient discharge and readmission allows physicians to counsel patients and improve patient expectations.

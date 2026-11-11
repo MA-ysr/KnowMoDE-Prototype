@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/41175276.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/41175276/" sourceSha256="c2ab3ac184a963fa17d593711e9cf557f1172ae89d5d2cca512fc49bfeb5ef4c" sourceText="# PubMed 41175276: Sex based disparities in glycemic control and hospitalization outcomes of medical patients with diabetes mellitus-a historical cohort study.&#10;&#10;Internal and emergency medicine (2026), doi:10.1007/s11739-025-04170-4&#10;&#10;While sex differences in type 2 diabetes mellitus (T2DM) are well-documented in outpatient settings, data on inpatient disparities remain limited. This study examines the relationship between sex and glycemic control, chronic treatment patterns, and hospitalization outcomes in patients with T2DM. A historical cohort of 5,133 adult T2DM patients hospitalized for &gt; 24 h at a tertiary Israeli medical center in 2023 was analyzed. Outcomes included hypoglycemia, hyperglycemia, length of stay, 30-day readmission, and mortality. Propensity score matching and multivariable regression were applied to adjust for confounding variables. Men were more frequently treated with chronic aspirin therapy than women (35.8% vs. 29.4%; p &lt; 0.001), a difference that remained significant after multivariable adjustment (aOR 1.31; 95% CI: 1.13-1.52; p &lt; 0.001). Male sex was also associated with higher rates of hyperglycemia (76.4% vs. 73.3%; p = 0.009) and severe hyperglycemia (48.6% vs. 43.7%; p &lt; 0.001), with these associations persisting after adjustment (hyperglycemia: aOR 1.23; 95% CI: 1.03-1.46; p = 0.02; severe hyperglycemia: aOR 1.28; 95% CI: 1.09-1.49; p = 0.002) and confirmed in propensity score-matched analyses. One-month rehospitalization rates were also higher in men (12.7% vs. 11.1%; p = 0.088), reaching statistical significance after multivariable adjustment (aOR 1.27; 95% CI: 1.03-1.55; p = 0.02). Sex-based disparities persist in inpatient glycemic control and chronic treatment patterns. Men are more prone to hyperglycemia and rehospitalization, while women are less likely to receive guideline-recommended cardioprotective therapies. A sex-specific approach may improve inpatient diabetes management and long-term outcomes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:47:54+00:00" xmi:version="2.0">
+  <chunks charEnd="1974"/>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="1.0" sourceSpanStart="258" sourceSpanEnd="282">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="male-sex" mention="Male sex" confidence="1.0" sourceSpanStart="1081" sourceSpanEnd="1089">
+    <properties key="name" value="male sex"/>
+    <properties key="description" value="being male"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hyperglycemia" mention="hyperglycemia" confidence="1.0" sourceSpanStart="1131" sourceSpanEnd="1144">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="timeWindow" value="during hospitalization"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="726" sourceSpanEnd="744">
+    <properties key="name" value="30-day readmission"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="male-sex" targetType="ClinicalOutcome" targetId="hyperglycemia" confidence="0.95" evidence="Male sex was also associated with higher rates of hyperglycemia (76.4% vs. 73.3%; p=0.009) and severe hyperglycemia (48.6% vs. 43.7%; p&lt;0.001), with these associations persisting after adjustment" sourceSpanStart="637" sourceSpanEnd="825"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="male-sex" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.95" evidence="One-month rehospitalization rates were also higher in men (12.7% vs. 11.1%; p=0.088), reaching statistical significance after multivariable adjustment (aOR 1.27; 95% CI: 1.03-1.55; p=0.02)." sourceSpanStart="866" sourceSpanEnd="1033"/>
+</raw:RawExtractionResult>

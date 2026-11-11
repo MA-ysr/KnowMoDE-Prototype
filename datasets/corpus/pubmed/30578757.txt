@@ -1,0 +1,11 @@
+# PubMed 30578757: Short-term outcomes of endoscopic sleeve gastroplasty in 1000 consecutive patients.
+
+Gastrointestinal endoscopy (2019), doi:10.1016/j.gie.2018.12.012
+
+BACKGROUND AND AIMS: Questions related to the safety and long-term efficacy of endoscopic sleeve gastroplasty (ESG) are not yet answered. Here we report weight loss, morbidity, revisions, and comorbidity resolution during the first 18 months after primary ESG.
+
+METHODS: This is a consecutive case series from a prospective observational study executed in a specialized center with a standardized pathway for multimodal management of obesity.
+
+RESULTS: The 1000 patients in this study had a baseline body mass index of 33.3 ± 4.5 kg/m2 and age of 34.4 ± 9.5 years. Eight hundred ninety-seven patients (89.7%) were women. Mean percentage of total weight loss at 6, 12, and 18 months was 13.7% ± 6.8% (n = 369; follow-up rate = 423; 87.2%), 15.0% ± 7.7% (n = 216; follow-up rate = 232; 93.1%), and 14.8% ± 8.5% (n = 54; follow-up rate = 63; 85.7%), respectively. Lost to follow-up at the 12- and 18-month visits were 6.9% and 14.3%, respectively. Thirteen of 17 cases of diabetes, all 28 cases of hypertension, and 18 of 32 cases of dyslipidemia were in complete remission by the third month. With regard to postoperative complaints, 924 patients (92.4%) complained of nausea or abdominal pain that was controlled with medications during the first week after ESG. Twenty-four patients were readmitted: 8 for severe abdominal pain, of whom 3 had ESG reversal; 7 for postprocedure bleeding, 2 of whom received 2 units of packed red blood cells each; 4 for perigastric collection with pleural effusion, 3 of whom underwent percutaneous drainage; and 5 for postprocedure fever with no sequelae. Eight patients were revised to sleeve gastrectomy, and 5 had redo-ESG. No patient required an emergency intervention, and there were no mortalities.
+
+CONCLUSIONS: ESG appears to be well tolerated, safe, and effective. Significant weight loss occurs during the first 18 months without mortality or significant morbidity. Some patients require revision or reversal during the first year.

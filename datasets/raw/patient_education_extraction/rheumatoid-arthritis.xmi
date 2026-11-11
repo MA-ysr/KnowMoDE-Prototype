@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/rheumatoid-arthritis.txt" sourceUri="https://medlineplus.gov/rheumatoidarthritis.html" sourceSha256="35a0a5b94331515dead670cf45a01af09091b0b9a6f78ace7533bbf37d990ec2" sourceText="# MedlinePlus health topic: Rheumatoid Arthritis&#10;&#10;Also called: RA&#10;&#10;What is rheumatoid arthritis?Rheumatoid arthritis (RA) is a form of arthritis that causes pain, swelling, and stiffness in your joints. RA is an autoimmune disease. Although it is most common in the wrist and fingers, this disease can cause your immune system to attack any joint tissue. The inflammation (swelling) that comes with RA can also affect other body parts. Inflammation could cause medical issues in your eyes, skin, heart, nerves, blood, or lungs.&#10;&#10;RA differs from osteoarthritis, a common arthritis that often comes with age. RA affects the lining of your joints and damages the tissue that covers the ends of the bones in a joint. Eventually, this might cause your joints to not work as well.&#10;&#10;There is no cure for RA, but early treatment can help you manage symptoms, reduce joint damage, and lead a productive life.&#10;&#10;Who is more likely to get rheumatoid arthritis?Rheumatoid arthritis can happen at any age, but your risk increases as you become an older adult. Your chance of developing RA can also increase if:&#10;&#10;You're a woman. Women are more likely to get RA than men.&#10;&#10;You have a family history. If a member of your family has RA, you're more likely to get the disease.&#10;&#10;You're a smoker.Smoking over a long period of time increases your risk of getting RA and how serious the disease can be.&#10;&#10;You have other medical conditions that may increase your risk of getting RA. These include obesity, gum disease, and lung disease.&#10;&#10;What causes rheumatoid arthritis?No one knows what causes rheumatoid arthritis. A few things that might play a part in getting RA include:&#10;&#10;Your genes are parts of DNA in your cells that are passed down from your parents. Certain genes may increase your risk of getting rheumatoid arthritis, but not everyone with these genes gets RA.&#10;&#10;The environment, which includes things such as cigarette smoke, sometimes triggers RA symptoms.&#10;&#10;Hormones are chemical messengers in your bloodstream that control the actions of certain cells or organs. Researchers think that sex hormones might play a role in getting RA. Women are more likely to develop the disease, and RA symptoms may change during and after pregnancy.&#10;&#10;What are the symptoms of rheumatoid arthritis?Your immune system may start turning against your body's joints and tissues years before you notice any symptoms of RA. The changes from this type of immune malfunction usually settle in your joints.&#10;&#10;RA affects people differently. You might have the disease for only a short time, or your symptoms might come and go. The severe form can be chronic (long-lasting) and may last a lifetime.&#10;&#10;Symptoms of rheumatoid arthritis may include:&#10;&#10;Joint pain or stiffness when moving. This is usually worse in the morning or after inactivity. RA usually affects both joints. If one of your hands or knees is affected, so is the other.&#10;&#10;Joint tenderness, redness, and warmth.&#10;&#10;Joint swelling may make daily activities hard. These could include things such as combing your hair, buttoning your clothes, or bending your knees.&#10;&#10;Fatigue, fever, and a loss of appetite.&#10;&#10;Hard bumps (rheumatoid nodules) under your skin near the joints.&#10;&#10;How is rheumatoid arthritis diagnosed?There's no single test for rheumatoid arthritis. The disease develops over time. At first, you may only have a few symptoms, making it hard to diagnose RA in its early stages. To find out if you have RA, your health care provider may:&#10;&#10;Ask about your medical history, including your symptoms.&#10;&#10;Ask about your family health history, including relatives who have had RA.&#10;&#10;Do a physical exam, which includes checking your joints, looking for rashes or nodules, and listening to your chest for signs of inflammation in your lungs.&#10;&#10;Order blood tests or imaging studies (x-ray or ultrasound) to make sure other health conditions aren't causing your symptoms since they may be like other types of arthritis and joint conditions.&#10;&#10;Your provider may refer you to a rheumatologist (a doctor who specializes in arthritis care) for tests, diagnosis, and care.&#10;&#10;What are the treatments for rheumatoid arthritis?There is no cure for RA, but early treatment can help prevent your symptoms from getting worse and damaging your joints. Treatment can include medicine, lifestyle changes, and surgery. These may slow or stop joint damage and reduce pain and swelling.&#10;&#10;Your provider may use a combination of treatments. Your treatment may change based on your symptoms.&#10;&#10;You can help manage your RA symptoms if you:&#10;&#10;Are physically active&#10;&#10;Keep a healthy weight&#10;&#10;Avoid injuries to your joints&#10;&#10;Avoid activities that have repetitive motions, like bending your knee over and over&#10;&#10;Stop smoking, or don't start&#10;&#10;NIH: National Institute of Arthritis and Musculoskeletal and Skin Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:25:20+00:00" xmi:version="2.0">
+  <chunks charEnd="3950"/>
+  <chunks index="1" charStart="3756" charEnd="4794"/>
+  <entities type="Condition" id="rheumatoid-arthritis" mention="Rheumatoid arthritis (RA)" confidence="0.98" sourceSpanStart="96" sourceSpanEnd="121">
+    <properties key="name" value="rheumatoid arthritis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="osteoarthritis" mention="osteoarthritis" confidence="0.95" sourceSpanStart="545" sourceSpanEnd="559">
+    <properties key="name" value="osteoarthritis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="RiskFactor" id="older-adult" mention="older adult" confidence="0.9" sourceSpanStart="1033" sourceSpanEnd="1044">
+    <properties key="name" value="older adult"/>
+    <properties key="description" value="Your risk increases as you become an older adult."/>
+  </entities>
+  <entities type="RiskFactor" id="woman" mention="You're a woman" confidence="0.9" sourceSpanStart="1098" sourceSpanEnd="1112">
+    <properties key="name" value="woman"/>
+    <properties key="description" value="Women are more likely to get RA than men."/>
+  </entities>
+  <entities type="RiskFactor" id="family-history-ra" mention="You have a family history" confidence="0.9" sourceSpanStart="1157" sourceSpanEnd="1182">
+    <properties key="name" value="family history"/>
+    <properties key="description" value="If a member of your family has RA, you're more likely to get the disease."/>
+  </entities>
+  <entities type="RiskFactor" id="smoker" mention="You're a smoker" confidence="0.9" sourceSpanStart="1259" sourceSpanEnd="1274">
+    <properties key="name" value="smoker"/>
+    <properties key="description" value="Smoking over a long period of time increases your risk of getting RA and how serious the disease can be."/>
+  </entities>
+  <entities type="RiskFactor" id="obesity" mention="obesity" confidence="0.9" sourceSpanStart="1472" sourceSpanEnd="1479">
+    <properties key="name" value="obesity"/>
+    <properties key="description" value="These include obesity, gum disease, and lung disease."/>
+  </entities>
+  <entities type="RiskFactor" id="gum-disease" mention="gum disease" confidence="0.9" sourceSpanStart="1481" sourceSpanEnd="1492">
+    <properties key="name" value="gum disease"/>
+    <properties key="description" value="These include obesity, gum disease, and lung disease."/>
+  </entities>
+  <entities type="RiskFactor" id="lung-disease" mention="lung disease" confidence="0.9" sourceSpanStart="1498" sourceSpanEnd="1510">
+    <properties key="name" value="lung disease"/>
+    <properties key="description" value="These include obesity, gum disease, and lung disease."/>
+  </entities>
+  <entities type="Condition" id="rheumatoid-arthritis" mention="rheumatoid arthritis" confidence="0.95" sourceSpanStart="4106" sourceSpanEnd="4126" chunkIndex="1">
+    <properties key="name" value="rheumatoid arthritis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+</raw:RawExtractionResult>

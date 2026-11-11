@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36807850.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36807850/" sourceSha256="a03949e472353153d5983507d179ab44b5ccaaddc3d8674348b35ae509dcefc1" sourceText="# PubMed 36807850: Real-world safety of neurohormonal antagonist initiation among older adults following a heart failure hospitalization.&#10;&#10;ESC heart failure (2023), doi:10.1002/ehf2.14317&#10;&#10;AIMS: To optimize guideline-directed medical therapy for heart failure, patients may require the initiation of multiple neurohormonal antagonists (NHAs) during and following hospitalization. The safety of this approach for older adults is not well established.&#10;&#10;METHODS AND RESULTS: We conducted an observational cohort study of 207 223 Medicare beneficiaries discharged home following a hospitalization for heart failure with reduced ejection fraction (HFrEF) (2008-2015). We performed Cox proportional hazards regression to examine the association between the count of NHAs initiated within 90 days of hospital discharge (as a time-varying exposure) and all-cause mortality, all-cause rehospitalization, and fall-related adverse events over the 90 day period following hospitalization. We calculated inverse probability-weighted hazard ratios (IPW-HRs) with 95% confidence intervals (CIs) comparing initiation of 1, 2, or 3 NHAs vs. 0. The IPW-HRs for mortality were 0.80 [95% CI (0.78-0.83)] for 1 NHA, 0.70 [95% CI (0.66-0.75)] for 2, and 0.94 [95% CI (0.83-1.06)] for 3. The IPW-HRs for readmission were 0.95 [95% CI (0.93-0.96)] for 1 NHA, 0.89 [95% CI (0.86-0.91)] for 2, and 0.96 [95% CI (0.90-1.02)] for 3. The IPW-HRs for fall-related adverse events were 1.13 [95% CI (1.10-1.15)] for 1 NHA, 1.25 [95% CI (1.21-1.30)] for 2, and 1.64 [95% CI (1.54-1.76)] for 3.&#10;&#10;CONCLUSIONS: Initiating 1-2 NHAs among older adults within 90 days of HFrEF hospitalization was associated with lower mortality and lower readmission. However, initiating 3 NHAs was not associated with reduced mortality or readmission and was associated with a significant risk for fall-related adverse events.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:50:35+00:00" xmi:version="2.0">
+  <chunks charEnd="1873"/>
+  <entities type="Condition" id="heart-failure-with-reduced-ejection-fraction" mention="heart failure with reduced ejection fraction (HFrEF)" confidence="0.95" sourceSpanStart="597" sourceSpanEnd="649">
+    <properties key="name" value="heart failure with reduced ejection fraction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-mortality" mention="all-cause mortality" confidence="0.95" sourceSpanStart="845" sourceSpanEnd="864">
+    <properties key="name" value="all-cause mortality"/>
+    <properties key="timeWindow" value="90 day"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-rehospitalization" mention="all-cause rehospitalization" confidence="0.95" sourceSpanStart="866" sourceSpanEnd="893">
+    <properties key="name" value="all-cause rehospitalization"/>
+    <properties key="timeWindow" value="90 day"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="fall-related-adverse-events" mention="fall-related adverse events" confidence="0.95" sourceSpanStart="899" sourceSpanEnd="926">
+    <properties key="name" value="fall-related adverse events"/>
+    <properties key="timeWindow" value="90 day"/>
+  </entities>
+  <entities type="RiskFactor" id="initiation-of-1-nha" mention="1 NHA" confidence="0.9" sourceSpanStart="1188" sourceSpanEnd="1193">
+    <properties key="name" value="initiation of 1 nha"/>
+    <properties key="description" value="initiation of 1 neurohormonal antagonist within 90 days of hospital discharge"/>
+  </entities>
+  <entities type="RiskFactor" id="initiation-of-2-nhas" mention="2" confidence="0.9" sourceSpanStart="1225" sourceSpanEnd="1226">
+    <properties key="name" value="initiation of 2 nhas"/>
+    <properties key="description" value="initiation of 2 neurohormonal antagonists within 90 days of hospital discharge"/>
+  </entities>
+  <entities type="RiskFactor" id="initiation-of-3-nhas" mention="3 NHAs" confidence="0.9" sourceSpanStart="1733" sourceSpanEnd="1739">
+    <properties key="name" value="initiation of 3 nhas"/>
+    <properties key="description" value="initiation of 3 neurohormonal antagonists within 90 days of hospital discharge"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-1-nha" targetType="ClinicalOutcome" targetId="all-cause-mortality" confidence="0.9" evidence="The IPW-HRs for mortality were 0.80 [95% CI (0.78-0.83)] for 1 NHA" sourceSpanStart="1127" sourceSpanEnd="1193"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-2-nhas" targetType="ClinicalOutcome" targetId="all-cause-mortality" confidence="0.9" evidence="The IPW-HRs for mortality were 0.80 [95% CI (0.78-0.83)] for 1 NHA, 0.70 [95% CI (0.66-0.75)] for 2" sourceSpanStart="1127" sourceSpanEnd="1226"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-1-nha" targetType="ClinicalOutcome" targetId="all-cause-rehospitalization" confidence="0.9" evidence="The IPW-HRs for readmission were 0.95 [95% CI (0.93-0.96)] for 1 NHA" sourceSpanStart="1265" sourceSpanEnd="1333"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-2-nhas" targetType="ClinicalOutcome" targetId="all-cause-rehospitalization" confidence="0.9" evidence="The IPW-HRs for readmission were 0.95 [95% CI (0.93-0.96)] for 1 NHA, 0.89 [95% CI (0.86-0.91)] for 2" sourceSpanStart="1265" sourceSpanEnd="1366"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-1-nha" targetType="ClinicalOutcome" targetId="fall-related-adverse-events" confidence="0.9" evidence="The IPW-HRs for fall-related adverse events were 1.13 [95% CI (1.10-1.15)] for 1 NHA" sourceSpanStart="1405" sourceSpanEnd="1489"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="initiation-of-3-nhas" targetType="ClinicalOutcome" targetId="fall-related-adverse-events" confidence="0.9" evidence="and was associated with a significant risk for fall-related adverse events." sourceSpanStart="1797" sourceSpanEnd="1872"/>
+</raw:RawExtractionResult>

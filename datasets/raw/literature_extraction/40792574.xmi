@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40792574.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40792574/" sourceSha256="bdc085d6505a0969e742f159cd75bea72efd42c3383a552cf9d8ed48530043f1" sourceText="# PubMed 40792574: Effects of Sodium-Glucose Cotransporter 2 Inhibitors on Stage 4 Cardiovascular-Kidney-Metabolic Syndrome: A Propensity Score-Matched Study.&#10;&#10;Journal of the American Heart Association (2025), doi:10.1161/JAHA.124.040382&#10;&#10;BACKGROUND: This study investigated the effects of sodium-glucose cotransporter 2 inhibitors (SGLT2is) on patients with stage 4 cardiovascular-kidney-metabolic syndrome over 1 year.&#10;&#10;METHODS: Data from patients with stage 4 cardiovascular-kidney-metabolic syndrome hospitalized at Civil Aviation General Hospital from March 2021 to September 2023 were collected. Patients were classified into the SGLT2i group and the control group on the basis of SGLT2i exposure. A propensity score-matched model established a well-balanced comparison between the groups. The initial occurrence of major adverse cardiovascular events (MACEs), major adverse kidney events (MAKEs) and all-cause death within 1 year were assessed.&#10;&#10;RESULTS: A total of 3657 patients were included, resulting in 812 matched pairs. The SGLT2i group exhibited significant reductions in MACEs, MAKEs, and all-cause death compared with the control group. Based on adjusted Cox regression, those receiving SGLT2is had a 27.4% lower hazard for MACEs, driven primarily by a 12.4% lower hazard for cardiovascular death and 32.7% lower hazard for heart failure readmission. SGLT2i use reduced the hazard for MAKEs by 11.5%, primarily due to a 19.7% reduction in the hazard for worsen kidney function. All-cause mortality hazard decreased by 11.3%. Subgroup analyses confirmed consistent cardiovascular and renal benefits of SGLT2is. Further sensitivity analyses supported the robustness of the results.&#10;&#10;CONCLUSIONS: SGLT2i use in patients with stage 4 cardiovascular-kidney-metabolic syndrome was associated with reduced hazards of MACEs, MAKEs, and all-cause death, supporting the cardiovascular and renal benefits in this population.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:47:10+00:00" xmi:version="2.0">
+  <chunks charEnd="1931"/>
+  <entities type="Drug" id="sglt2is" mention="sodium-glucose cotransporter 2 inhibitors" confidence="1.0" sourceSpanStart="30" sourceSpanEnd="71">
+    <properties key="name" value="sodium-glucose cotransporter 2 inhibitors"/>
+    <properties key="drugClass" value="SGLT2 inhibitor"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="maces" mention="major adverse cardiovascular events (MACEs)" confidence="1.0" sourceSpanStart="822" sourceSpanEnd="865">
+    <properties key="name" value="major adverse cardiovascular events"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="makes" mention="major adverse kidney events (MAKEs)" confidence="1.0" sourceSpanStart="867" sourceSpanEnd="902">
+    <properties key="name" value="major adverse kidney events"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-death" mention="all-cause death" confidence="1.0" sourceSpanStart="907" sourceSpanEnd="922">
+    <properties key="name" value="all-cause death"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="heart-failure-readmission" mention="heart failure readmission" confidence="0.95" sourceSpanStart="1341" sourceSpanEnd="1366">
+    <properties key="name" value="heart failure readmission"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="Condition" id="worsen-kidney-function" mention="worsen kidney function" confidence="0.95" sourceSpanStart="1471" sourceSpanEnd="1493">
+    <properties key="name" value="worsen kidney function"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2is" targetType="ClinicalOutcome" targetId="maces" confidence="0.95" evidence="The SGLT2i group exhibited significant reductions in MACEs, MAKEs, and all-cause death compared with the control group." sourceSpanStart="1034" sourceSpanEnd="1153"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2is" targetType="ClinicalOutcome" targetId="makes" confidence="0.95" evidence="The SGLT2i group exhibited significant reductions in MACEs, MAKEs, and all-cause death compared with the control group." sourceSpanStart="1034" sourceSpanEnd="1153"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2is" targetType="ClinicalOutcome" targetId="all-cause-death" confidence="0.95" evidence="The SGLT2i group exhibited significant reductions in MACEs, MAKEs, and all-cause death compared with the control group." sourceSpanStart="1034" sourceSpanEnd="1153"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2is" targetType="ClinicalOutcome" targetId="heart-failure-readmission" confidence="0.95" evidence="Based on adjusted Cox regression, those receiving SGLT2is had a 27.4% lower hazard for MACEs, driven primarily by a 12.4% lower hazard for cardiovascular death and 32.7% lower hazard for heart failure readmission." sourceSpanStart="1154" sourceSpanEnd="1367"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt2is" targetType="Condition" targetId="worsen-kidney-function" confidence="0.95" evidence="SGLT2i use reduced the hazard for MAKEs by 11.5%, primarily due to a 19.7% reduction in the hazard for worsen kidney function." sourceSpanStart="1368" sourceSpanEnd="1494"/>
+</raw:RawExtractionResult>

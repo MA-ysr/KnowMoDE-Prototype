@@ -1,0 +1,11 @@
+# PubMed 19364697: Inpatient to outpatient transfer of diabetes care: planing for an effective hospital discharge.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2009), doi:10.4158/EP.15.3.263
+
+OBJECTIVE: To review data on diabetes discharge planning, provide a definition of an effective diabetes discharge, and summarize one institution's diabetes discharge planning processes in a teaching hospital.
+
+METHODS: We performed a MEDLINE search of the English-language literature published between January 1998 and December 2007 for articles related to the inpatient to outpatient transition of diabetes care. Regulatory guidelines about discharge planning were reviewed. We also analyzed our institution's procedures regarding hospital discharge.
+
+RESULTS: We define an effective diabetes discharge as one where the patient has received the necessary skills training and been provided with a clear and understandable postdischarge plan for diabetes care that has been clearly documented and is accessible by the patient's outpatient health care team. Diabetes is one of the most common conditions managed in the hospital, yet how to transition a patient with diabetes to the outpatient setting is understudied, and the outcome of patients with diabetes after discharge is unknown. Strategies that can be used to ensure an effective diabetes discharge are early identification of patients in need of education, implementation of a clinical pathway, and clear instructions about medications and follow-up appointments at the time of discharge.
+
+CONCLUSIONS: Effective transfer of care from the inpatient to the outpatient setting remains a priority in the United States. Studies are needed to better define how best to ensure that patients with diabetes are successfully transitioned to ambulatory care.

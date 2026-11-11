@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33144086.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33144086/" sourceSha256="1e6c932921cb1806faa7cc999425753562a33a99d7b482aabb36509fa20b37b6" sourceText="# PubMed 33144086: Efficacy and safety of dapagliflozin in acute heart failure: Rationale and design of the DICTATE-AHF trial.&#10;&#10;American heart journal (2021), doi:10.1016/j.ahj.2020.10.071&#10;&#10;BACKGROUND: Dapagliflozin, a sodium-glucose cotransporter-2 inhibitor, reduces cardiovascular death and worsening heart failure in patients with chronic heart failure and reduced ejection fraction. Early initiation during an acute heart failure (AHF) hospitalization may facilitate decongestion, improve natriuresis, and facilitate safe transition to a beneficial outpatient therapy for both diabetes and heart failure.&#10;&#10;OBJECTIVE: The objective is to assess the efficacy and safety of initiating dapagliflozin within the first 24 hours of hospitalization in patients with AHF compared to usual care.&#10;&#10;METHODS: DICTATE-AHF is a prospective, multicenter, open-label, randomized trial enrolling a planned 240 patients in the United States. Patients with type 2 diabetes hospitalized with hypervolemic AHF and an estimated glomerular filtration rate of at least 30 mL/min/1.73m2 are eligible for participation. Patients are randomly assigned 1:1 to dapagliflozin 10 mg once daily or structured usual care until day 5 or hospital discharge. Both treatment arms receive protocolized diuretic and insulin therapies. The primary endpoint is diuretic response expressed as the cumulative change in weight per cumulative loop diuretic dose in 40 mg intravenous furosemide equivalents. Secondary and exploratory endpoints include inpatient worsening AHF, 30-day hospital readmission for AHF or diabetic reasons, change in NT-proBNP, and measures of natriuresis. Safety endpoints include the incidence of hyper/hypoglycemia, ketoacidosis, worsening kidney function, hypovolemic hypotension, and inpatient mortality.&#10;&#10;CONCLUSIONS: The DICTATE-AHF trial will establish the efficacy and safety of early initiation of dapagliflozin during AHF across both AHF and diabetic outcomes in patients with diabetes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:39:34+00:00" xmi:version="2.0">
+  <chunks charEnd="1983"/>
+  <entities type="Drug" id="dapagliflozin" mention="Dapagliflozin" confidence="0.98" sourceSpanStart="42" sourceSpanEnd="55">
+    <properties key="name" value="dapagliflozin"/>
+    <properties key="drugClass" value="sodium-glucose cotransporter-2 inhibitor"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="65" sourceSpanEnd="78">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="cardiovascular-death" mention="cardiovascular death" confidence="0.95" sourceSpanStart="269" sourceSpanEnd="289">
+    <properties key="name" value="cardiovascular death"/>
+  </entities>
+  <entities type="Condition" id="chronic-heart-failure" mention="chronic heart failure" confidence="0.95" sourceSpanStart="335" sourceSpanEnd="356">
+    <properties key="name" value="chronic heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="acute-heart-failure" mention="acute heart failure" confidence="0.95" sourceSpanStart="415" sourceSpanEnd="434">
+    <properties key="name" value="acute heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-for-ahf-or-diabetic-reasons" mention="30-day hospital readmission for AHF or diabetic reasons" confidence="0.95" sourceSpanStart="1535" sourceSpanEnd="1590">
+    <properties key="name" value="hospital readmission for ahf or diabetic reasons"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="dapagliflozin" targetType="ClinicalOutcome" targetId="cardiovascular-death" confidence="0.9" evidence="Dapagliflozin, a sodium-glucose cotransporter-2 inhibitor, reduces cardiovascular death and worsening heart failure in patients with chronic heart failure and reduced ejection fraction." sourceSpanStart="202" sourceSpanEnd="387"/>
+</raw:RawExtractionResult>

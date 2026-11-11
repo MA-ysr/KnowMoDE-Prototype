@@ -1,0 +1,11 @@
+# PubMed 29478962: Risk of Readmission After Uncomplicated Hospitalization After Radical Cystectomy.
+
+Clinical genitourinary cancer (2018), doi:10.1016/j.clgc.2018.01.004
+
+BACKGROUND: Enhanced recovery pathways after radical cystectomy attempt to decrease length of hospitalization, but might increase risk of readmission after discharge. We evaluated the relationship between length of stay and readmission after uncomplicated hospitalization for bladder cancer patients treated with radical cystectomy.
+
+PATIENTS AND METHODS: Using the American College of Surgeons National Surgical Quality Improvement Program database, we identified bladder cancer patients who were treated with radical cystectomy from 2011 to 2015. We limited this cohort to those who did not have complications captured while in-hospital, and assessed the proportion readmitted within 30 days of surgery on the basis of length of stay (ie, < 7, 7-9, ≥ 10 days). We fit multivariable logistic regression models to estimate odds of readmission after adjusting for potential confounding factors.
+
+RESULTS: Among 4624 patients treated with radical cystectomy, 1003 (21.7%) were readmitted within 30 days of surgery. Of 1,003 readmitted patients, 503 (50%) experienced a major complication after discharge. Factors associated with an increased risk of readmission included diversion with neobladder, diabetes, prolonged surgical time, and obesity (all P < .01). Patients with hospitalization < 7 days were not at increased risk of readmission compared with those with prolonged stays (354/1769, 20.0% < 7 days vs. 201/968, 20.8% ≥ 10 days, adjusted odds ratio, 1.04; 95% confidence interval, 0.90-1.21).
+
+CONCLUSION: In the absence of in-hospital complications after radical cystectomy, shorter hospitalizations were not associated with an increased risk of readmission. These findings emphasize the safety and potential cost savings of enhanced recovery pathways after these complex operations.

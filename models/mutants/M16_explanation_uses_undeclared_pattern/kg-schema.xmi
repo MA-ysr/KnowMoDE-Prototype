@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  M1 model 1/5: KG Schema of the diabetes 30-day readmission use case (conforms to xaikg::kgschema).
+  Single source of schema truth (R1): prompts (T4), graph DDL (T1/T3), validator (T2), loader (T5)
+  and the explanation service (T6) are all derived from this file.
+-->
+<kgschema:KGSchemaDefinition
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:kgschema="http://www.xaikg.org/1.0/kgschema"
+    name="DiabetesReadmissionKG"
+    nsURI="http://www.xaikg.org/usecases/diabetes-readmission"
+    description="Clinical knowledge grounding a 30-day hospital readmission risk model for inpatients with diabetes. Built from FDA drug labels, MedlinePlus health topics and the biomedical literature (public sources only).">
+
+  <!-- ============================ Concepts ============================ -->
+  <concepts name="Drug" uri="http://www.xaikg.org/usecases/diabetes-readmission#Drug"
+      description="A medication, identified by its generic (INN) name, e.g. metformin, insulin glargine, glipizide.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Generic name in lowercase, e.g. 'metformin'"/>
+    <properties name="drugClass" dataType="STRING" isRequired="false" isExplainable="true" description="Pharmacological class, e.g. 'biguanide', 'sulfonylurea', 'insulin'"/>
+    <properties name="rxnormCui" dataType="STRING" isRequired="false" isExplainable="false" description="RxNorm concept identifier if stated"/>
+    <canonicalEntities name="insulin" isModifiable="true" plainLabel="insulin" pattern="^(human |regular |basal |bolus |premixed |exogenous |subcutaneous |intravenous )?insulin( human| glargine| lispro| aspart| detemir| degludec| glulisine| isophane| therapy| analog(ue)?s?| sliding scale| regimen)?$|^nph[- ]insulin$|^basal-bolus insulin$">
+      <aliases>insulin human</aliases>
+      <aliases>human insulin</aliases>
+      <aliases>regular human insulin</aliases>
+      <aliases>regular insulin</aliases>
+      <aliases>nph-insulin</aliases>
+      <aliases>nph insulin</aliases>
+      <aliases>neutral protamine hagedorn insulin</aliases>
+      <aliases>insulin glargine</aliases>
+      <aliases>insulin lispro</aliases>
+      <aliases>insulin aspart</aliases>
+      <aliases>insulin detemir</aliases>
+      <aliases>basal insulin</aliases>
+      <aliases>basal-bolus insulin</aliases>
+      <aliases>sliding scale insulin</aliases>
+      <aliases>insulin sliding scale</aliases>
+      <aliases>insulin therapy</aliases>
+      <aliases>insulin analogs</aliases>
+      <aliases>insulin analogues</aliases>
+      <aliases>exogenous insulin</aliases>
+      <aliases>insulin isophane</aliases>
+      <aliases>premixed insulin</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="metformin" isModifiable="true" plainLabel="metformin, a diabetes medicine">
+      <aliases>metformin hydrochloride</aliases>
+      <aliases>metformin hcl</aliases>
+      <aliases>glucophage</aliases>
+      <aliases>biguanide metformin</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glyburide and metformin" isModifiable="true" plainLabel="glyburide with metformin, a combined diabetes medicine">
+      <aliases>glyburide and metformin hydrochloride</aliases>
+      <aliases>glyburide-metformin</aliases>
+      <aliases>glyburide/metformin</aliases>
+      <aliases>glucovance</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glipizide and metformin" isModifiable="true" plainLabel="glipizide with metformin, a combined diabetes medicine">
+      <aliases>glipizide and metformin hydrochloride</aliases>
+      <aliases>glipizide-metformin</aliases>
+      <aliases>glipizide/metformin</aliases>
+      <aliases>metaglip</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glipizide" isModifiable="true" plainLabel="glipizide, a diabetes medicine">
+      <aliases>glucotrol</aliases>
+      <aliases>glipizide tablets</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glyburide" isModifiable="true" plainLabel="glyburide, a diabetes medicine">
+      <aliases>glibenclamide</aliases>
+      <aliases>micronase</aliases>
+      <aliases>diabeta</aliases>
+      <aliases>glynase</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glimepiride" isModifiable="true" plainLabel="glimepiride, a diabetes medicine">
+      <aliases>amaryl</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="pioglitazone" isModifiable="true" plainLabel="pioglitazone, a diabetes medicine">
+      <aliases>actos</aliases>
+      <aliases>pioglitazone hydrochloride</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="rosiglitazone" isModifiable="true" plainLabel="rosiglitazone, a diabetes medicine">
+      <aliases>avandia</aliases>
+      <aliases>rosiglitazone maleate</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="repaglinide" isModifiable="true" plainLabel="repaglinide, a diabetes medicine">
+      <aliases>prandin</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="nateglinide" isModifiable="true" plainLabel="nateglinide, a diabetes medicine">
+      <aliases>starlix</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="acarbose" isModifiable="true" plainLabel="acarbose, a diabetes medicine">
+      <aliases>precose</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="miglitol" isModifiable="true" plainLabel="miglitol, a diabetes medicine">
+      <aliases>glyset</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="chlorpropamide" isModifiable="true" plainLabel="chlorpropamide, an older diabetes medicine">
+      <aliases>diabinese</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="sglt2 inhibitors" isModifiable="true" plainLabel="SGLT2 inhibitor medicines, a newer class of diabetes medicines">
+      <aliases>sglt2i</aliases>
+      <aliases>sglt-2i</aliases>
+      <aliases>sglt2 inhibitor</aliases>
+      <aliases>sglt-2 inhibitor</aliases>
+      <aliases>sglt-2 inhibitors</aliases>
+      <aliases>sglt2-inhibitors</aliases>
+      <aliases>sodium-glucose cotransporter-2 inhibitor</aliases>
+      <aliases>sodium-glucose cotransporter-2 inhibitors</aliases>
+      <aliases>sodium-glucose cotransporter 2 inhibitor</aliases>
+      <aliases>sodium-glucose cotransporter 2 inhibitors</aliases>
+      <aliases>sodium glucose cotransporter 2 inhibitors</aliases>
+      <aliases>sodium-glucose co-transporter 2 inhibitors</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glp-1 receptor agonists" isModifiable="true" plainLabel="GLP-1 receptor agonist medicines, a newer class of diabetes medicines">
+      <aliases>glucagon-like peptide-1 receptor agonists</aliases>
+      <aliases>glucagon-like peptide-1 receptor agonist</aliases>
+      <aliases>glp-1 receptor agonist</aliases>
+      <aliases>glp-1 ra</aliases>
+      <aliases>glp-1 ras</aliases>
+      <aliases>glp-1ra</aliases>
+      <aliases>glp1 receptor agonists</aliases>
+      <aliases>glp-1 agonists</aliases>
+    </canonicalEntities>
+  </concepts>
+
+  <concepts name="DrugClass" uri="http://www.xaikg.org/usecases/diabetes-readmission#DrugClass"
+      description="A pharmacological class of medications, e.g. sulfonylureas, thiazolidinediones, insulins.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Class name in lowercase plural, e.g. 'sulfonylureas'"/>
+  </concepts>
+
+  <concepts name="Condition" uri="http://www.xaikg.org/usecases/diabetes-readmission#Condition"
+      description="A disease, disorder, symptom or clinical state, e.g. hypoglycemia, heart failure, chronic kidney disease, poor glycemic control.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Condition name in lowercase, e.g. 'hypoglycemia'"/>
+    <properties name="icd9Range" dataType="STRING" isRequired="false" isExplainable="false" description="ICD-9-CM code or range if stated, e.g. '428' or '390-459'"/>
+    <properties name="category" dataType="STRING" isRequired="false" isExplainable="true" description="Body system or category, e.g. 'circulatory', 'metabolic', 'renal'"/>
+    <canonicalEntities name="heart failure" plainLabel="heart failure, when the heart does not pump as well as it should">
+      <aliases>congestive heart failure</aliases>
+      <aliases>chf</aliases>
+      <aliases>chronic heart failure</aliases>
+      <aliases>acute heart failure</aliases>
+      <aliases>acute congestive heart failure</aliases>
+      <aliases>acute decompensated heart failure</aliases>
+      <aliases>cardiac failure</aliases>
+      <aliases>heart failure (hf)</aliases>
+      <aliases>decompensated heart failure</aliases>
+      <aliases>hf</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="chronic kidney disease" plainLabel="long-term kidney disease">
+      <aliases>ckd</aliases>
+      <aliases>kidney disease</aliases>
+      <aliases>chronic renal disease</aliases>
+      <aliases>chronic renal insufficiency</aliases>
+      <aliases>chronic renal failure</aliases>
+      <aliases>renal insufficiency</aliases>
+      <aliases>renal impairment</aliases>
+      <aliases>kidney failure</aliases>
+      <aliases>renal failure</aliases>
+      <aliases>end-stage renal disease</aliases>
+      <aliases>esrd</aliases>
+      <aliases>diabetic kidney disease</aliases>
+      <aliases>diabetic nephropathy</aliases>
+      <aliases>renal disease</aliases>
+      <aliases>impaired renal function</aliases>
+      <aliases>reduced kidney function</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="diabetes" plainLabel="diabetes">
+      <aliases>diabetes mellitus</aliases>
+      <aliases>type 2 diabetes</aliases>
+      <aliases>type 2 diabetes mellitus</aliases>
+      <aliases>t2dm</aliases>
+      <aliases>type ii diabetes</aliases>
+      <aliases>type 2 dm</aliases>
+      <aliases>dm</aliases>
+      <aliases>diabetes mellitus type 2</aliases>
+      <aliases>type-2 diabetes</aliases>
+      <aliases>type 1 diabetes</aliases>
+      <aliases>type 1 diabetes mellitus</aliases>
+      <aliases>t1dm</aliases>
+      <aliases>diabetic patients</aliases>
+      <aliases>diabetes mellitus (dm)</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="hypoglycemia" plainLabel="low blood sugar">
+      <aliases>hypoglycaemia</aliases>
+      <aliases>low blood sugar</aliases>
+      <aliases>low blood glucose</aliases>
+      <aliases>severe hypoglycemia</aliases>
+      <aliases>severe hypoglycaemia</aliases>
+      <aliases>hypoglycemic events</aliases>
+      <aliases>hypoglycemic episodes</aliases>
+      <aliases>hypoglycemic reactions</aliases>
+      <aliases>hypoglycemic shock</aliases>
+      <aliases>symptomatic hypoglycemia</aliases>
+      <aliases>hypoglycemic event</aliases>
+      <aliases>hypoglycaemic events</aliases>
+      <aliases>prolonged severe hypoglycemia</aliases>
+      <aliases>recurrent hypoglycemia</aliases>
+      <aliases>hypoglycemic episode</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="poor glycemic control" plainLabel="blood sugar that is not well controlled">
+      <aliases>poorly controlled type 2 diabetes</aliases>
+      <aliases>uncontrolled type 2 diabetes</aliases>
+      <aliases>poorly controlled type 1 diabetes</aliases>
+      <aliases>poorly controlled diabetes</aliases>
+      <aliases>uncontrolled diabetes</aliases>
+      <aliases>poor glycaemic control</aliases>
+      <aliases>inadequate glycemic control</aliases>
+      <aliases>suboptimal glycemic control</aliases>
+      <aliases>poor baseline glycemic control</aliases>
+      <aliases>worsening glycemic control</aliases>
+      <aliases>poorly controlled blood sugar</aliases>
+      <aliases>uncontrolled hyperglycemia</aliases>
+      <aliases>poor diabetes control</aliases>
+      <aliases>not well controlled diabetes</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="hyperglycemia" plainLabel="high blood sugar">
+      <aliases>persistent hyperglycemia</aliases>
+      <aliases>stress hyperglycemia</aliases>
+      <aliases>hospital hyperglycemia</aliases>
+      <aliases>hyperglycaemia</aliases>
+      <aliases>high blood sugar</aliases>
+      <aliases>high blood glucose</aliases>
+      <aliases>elevated blood glucose</aliases>
+      <aliases>severe hyperglycemia</aliases>
+      <aliases>inpatient hyperglycemia</aliases>
+      <aliases>admission hyperglycemia</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="circulatory disease" plainLabel="heart or blood vessel disease">
+      <aliases>cardiovascular disease</aliases>
+      <aliases>circulatory system disease</aliases>
+      <aliases>diseases of the circulatory system</aliases>
+      <aliases>cardiovascular diseases</aliases>
+      <aliases>cardiovascular disorder</aliases>
+      <aliases>heart disease</aliases>
+      <aliases>coronary heart disease</aliases>
+      <aliases>coronary artery disease</aliases>
+      <aliases>ischemic heart disease</aliases>
+      <aliases>atherosclerotic cardiovascular disease</aliases>
+      <aliases>cardiac disease</aliases>
+      <aliases>hypertension</aliases>
+      <aliases>high blood pressure</aliases>
+      <aliases>stroke</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="respiratory disease" plainLabel="lung or breathing problems">
+      <aliases>pulmonary disease</aliases>
+      <aliases>respiratory disorder</aliases>
+      <aliases>diseases of the respiratory system</aliases>
+      <aliases>chronic obstructive pulmonary disease</aliases>
+      <aliases>copd</aliases>
+      <aliases>pneumonia</aliases>
+      <aliases>respiratory infection</aliases>
+      <aliases>lung disease</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="digestive disease" plainLabel="stomach, bowel or liver problems">
+      <aliases>gastrointestinal disease</aliases>
+      <aliases>diseases of the digestive system</aliases>
+      <aliases>gastrointestinal disorder</aliases>
+      <aliases>digestive system disease</aliases>
+      <aliases>liver disease</aliases>
+      <aliases>hepatic impairment</aliases>
+      <aliases>gastroparesis</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="injury and poisoning" plainLabel="an injury or a poisoning">
+      <aliases>injury</aliases>
+      <aliases>poisoning</aliases>
+      <aliases>trauma</aliases>
+      <aliases>injuries</aliases>
+      <aliases>fracture</aliases>
+      <aliases>fractures</aliases>
+      <aliases>falls</aliases>
+      <aliases>fall</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="musculoskeletal disease" plainLabel="bone, joint or muscle problems">
+      <aliases>musculoskeletal disorder</aliases>
+      <aliases>diseases of the musculoskeletal system</aliases>
+      <aliases>arthritis</aliases>
+      <aliases>osteoarthritis</aliases>
+      <aliases>osteoporosis</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="genitourinary disease" plainLabel="kidney, bladder or urinary problems">
+      <aliases>genitourinary disorder</aliases>
+      <aliases>diseases of the genitourinary system</aliases>
+      <aliases>urinary tract infection</aliases>
+      <aliases>uti</aliases>
+      <aliases>urinary tract infections</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="neoplasm" plainLabel="a tumour or cancer">
+      <aliases>cancer</aliases>
+      <aliases>malignancy</aliases>
+      <aliases>neoplasms</aliases>
+      <aliases>tumor</aliases>
+      <aliases>tumour</aliases>
+      <aliases>malignant neoplasm</aliases>
+      <aliases>carcinoma</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="diabetic foot ulcer" plainLabel="a sore or wound on the foot caused by diabetes">
+      <aliases>diabetic foot ulcers</aliases>
+      <aliases>plantar diabetic foot ulcer</aliases>
+      <aliases>diabetic foot</aliases>
+      <aliases>diabetic foot infection</aliases>
+      <aliases>diabetes-related foot ulcer</aliases>
+    </canonicalEntities>
+  </concepts>
+
+  <concepts name="LabTest" uri="http://www.xaikg.org/usecases/diabetes-readmission#LabTest"
+      description="A laboratory measurement with a clinically meaningful level, e.g. 'HbA1c > 8%', 'serum glucose > 300 mg/dL'.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Test and level, e.g. 'HbA1c > 8%'"/>
+    <properties name="abnormalThreshold" dataType="STRING" isRequired="false" isExplainable="true" description="Threshold that makes the result abnormal, e.g. '> 7%'"/>
+    <canonicalEntities name="HbA1c &gt; 8%" plainLabel="a high average blood sugar level (HbA1c above 8%)" pattern="^(hb)?a1c ?(&gt;|&gt;=|≥|above|over|greater than) ?8(\.0)?%?$|^(elevated|high|higher|raised) (hb)?a1c( levels?)?$|^(elevated|high|higher) glycated (hemoglobin|haemoglobin)( levels?)?$">
+      <aliases>a1c &gt; 8</aliases>
+      <aliases>a1c &gt;8%</aliases>
+      <aliases>hba1c &gt;8%</aliases>
+      <aliases>hba1c above 8%</aliases>
+      <aliases>a1c above 8%</aliases>
+      <aliases>glycated hemoglobin &gt; 8%</aliases>
+      <aliases>hba1c &gt; 8</aliases>
+      <aliases>a1c greater than 8%</aliases>
+      <aliases>elevated hba1c</aliases>
+      <aliases>high hba1c</aliases>
+      <aliases>elevated a1c</aliases>
+      <aliases>high a1c</aliases>
+      <aliases>poorly controlled hba1c</aliases>
+      <aliases>hemoglobin a1c &gt; 8%</aliases>
+      <aliases>hba1c &gt;= 8%</aliases>
+      <aliases>a1c &gt;= 8%</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="HbA1c &gt; 7%" plainLabel="an above-target average blood sugar level (HbA1c above 7%)" pattern="^(hb)?a1c ?(&gt;|&gt;=|≥|above|over|greater than) ?7(\.0)?%?$">
+      <aliases>a1c &gt; 7</aliases>
+      <aliases>a1c &gt;7%</aliases>
+      <aliases>hba1c &gt;7%</aliases>
+      <aliases>hba1c above 7%</aliases>
+      <aliases>a1c above 7%</aliases>
+      <aliases>hba1c &gt; 7</aliases>
+      <aliases>hba1c &gt;= 7%</aliases>
+      <aliases>a1c &gt;= 7%</aliases>
+      <aliases>hemoglobin a1c &gt; 7%</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="HbA1c normal" plainLabel="a normal average blood sugar level (HbA1c)">
+      <aliases>normal a1c</aliases>
+      <aliases>normal hba1c</aliases>
+      <aliases>a1c in normal range</aliases>
+      <aliases>hba1c within target</aliases>
+      <aliases>a1c &lt; 7%</aliases>
+      <aliases>hba1c &lt; 7%</aliases>
+      <aliases>a1c at goal</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="serum glucose &gt; 300 mg/dL" plainLabel="a very high blood sugar reading" pattern="^(serum |blood |plasma )?glucose ?(&gt;|&gt;=|≥|above|over) ?300( mg/dl)?$">
+      <aliases>glucose &gt; 300 mg/dl</aliases>
+      <aliases>serum glucose &gt;= 300 mg/dl</aliases>
+      <aliases>blood glucose &gt; 300 mg/dl</aliases>
+      <aliases>glucose above 300 mg/dl</aliases>
+      <aliases>glucose &gt;300</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="serum glucose &gt; 200 mg/dL" plainLabel="a high blood sugar reading" pattern="^(serum |blood |plasma |random )?glucose ?(&gt;|&gt;=|≥|above|over) ?200( mg/dl)?$">
+      <aliases>glucose &gt; 200 mg/dl</aliases>
+      <aliases>blood glucose &gt; 200 mg/dl</aliases>
+      <aliases>glucose above 200 mg/dl</aliases>
+      <aliases>random glucose &gt;200 mg/dl</aliases>
+      <aliases>hyperglycemia &gt; 200 mg/dl</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="serum glucose normal" plainLabel="a normal blood sugar reading">
+      <aliases>normal glucose</aliases>
+      <aliases>normal blood glucose</aliases>
+      <aliases>normal serum glucose</aliases>
+      <aliases>normoglycemia</aliases>
+    </canonicalEntities>
+  </concepts>
+
+  <concepts name="RiskFactor" uri="http://www.xaikg.org/usecases/diabetes-readmission#RiskFactor"
+      description="A patient-level or utilisation factor that changes the probability of a clinical outcome, e.g. prior inpatient admissions, number of emergency visits, insulin dose change, discharge to a nursing facility.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Short factor name in lowercase, e.g. 'prior inpatient admissions'"/>
+    <properties name="description" dataType="STRING" isRequired="false" isExplainable="true" description="One sentence, as stated in the source"/>
+    <canonicalEntities name="prior inpatient admissions" plainLabel="several hospital stays in the past year" pattern="^(a )?(higher |greater |increased )?(number of )?(prior|previous|recent|past) (inpatient |hospital )?(admissions?|visits?|hospitali[sz]ations?)( in the (past|preceding|previous) year)?$">
+      <aliases>prior inpatient visits</aliases>
+      <aliases>number of prior inpatient visits</aliases>
+      <aliases>previous hospitalization</aliases>
+      <aliases>previous hospitalizations</aliases>
+      <aliases>history of recent prior hospitalization</aliases>
+      <aliases>history of readmissions</aliases>
+      <aliases>prior hospitalization</aliases>
+      <aliases>prior hospitalizations</aliases>
+      <aliases>recent hospitalization</aliases>
+      <aliases>accumulated number of admissions</aliases>
+      <aliases>more readmissions per year</aliases>
+      <aliases>previous admissions</aliases>
+      <aliases>prior admissions</aliases>
+      <aliases>number of inpatient visits</aliases>
+      <aliases>higher number of prior inpatient visits</aliases>
+      <aliases>frequent hospitalizations</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="prior emergency visits" plainLabel="earlier emergency department visits" pattern="^(a )?(higher |greater |increased )?(number of )?(prior |previous |recent |frequent )?(emergency|ed|er)( department| room)? visits?( in the (past|preceding|previous) year)?$">
+      <aliases>emergency department visits</aliases>
+      <aliases>prior emergency department visits</aliases>
+      <aliases>number of emergency visits</aliases>
+      <aliases>previous emergency visits</aliases>
+      <aliases>frequent emergency department visits</aliases>
+      <aliases>emergency room visits</aliases>
+      <aliases>prior ed visits</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="prior outpatient visits" plainLabel="earlier outpatient clinic visits">
+      <aliases>outpatient visits</aliases>
+      <aliases>number of outpatient visits</aliases>
+      <aliases>previous outpatient visits</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="length of hospital stay" plainLabel="a long hospital stay" pattern="^(a )?(longer |increased |prolonged |extended |greater )?(hospital )?length of (hospital )?stay.*$">
+      <aliases>longer hospital length of stay</aliases>
+      <aliases>hospital length of stay</aliases>
+      <aliases>increased length of index admission</aliases>
+      <aliases>length of stay</aliases>
+      <aliases>longer length of stay</aliases>
+      <aliases>prolonged hospital stay</aliases>
+      <aliases>prolonged length of stay</aliases>
+      <aliases>long hospital stay</aliases>
+      <aliases>length of stay after index admission</aliases>
+      <aliases>initial hospitalization of 8 days or longer</aliases>
+      <aliases>length of stay greater than 4 days</aliases>
+      <aliases>longer hospitalization</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="polypharmacy" isModifiable="true" plainLabel="taking many different medicines">
+      <aliases>high medication burden</aliases>
+      <aliases>number of medications</aliases>
+      <aliases>multiple medications</aliases>
+      <aliases>many medications</aliases>
+      <aliases>high number of medications</aliases>
+      <aliases>medication regimen complexity</aliases>
+      <aliases>medication count</aliases>
+      <aliases>increased number of medications</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="multiple comorbidities" plainLabel="having several health conditions at the same time">
+      <aliases>comorbidity burden</aliases>
+      <aliases>number of comorbidities</aliases>
+      <aliases>comorbidities</aliases>
+      <aliases>multimorbidity</aliases>
+      <aliases>high comorbidity burden</aliases>
+      <aliases>number of diagnoses</aliases>
+      <aliases>higher number of diagnoses</aliases>
+      <aliases>multiple chronic conditions</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="high number of laboratory procedures" plainLabel="many laboratory tests during the hospital stay">
+      <aliases>number of laboratory procedures</aliases>
+      <aliases>number of lab tests</aliases>
+      <aliases>many laboratory tests</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="inpatient procedures" plainLabel="procedures during the hospital stay">
+      <aliases>number of procedures</aliases>
+      <aliases>inpatient operation</aliases>
+      <aliases>surgical procedures</aliases>
+      <aliases>procedures during hospitalization</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="older age" plainLabel="older age" pattern="^(older|increased|increasing|advanced|advancing|old|higher) age$|^age( ?(&gt;|&gt;=|≥|over|above) ?\d+( years)?)?$|^(elderly|older adults?|older patients?)$">
+      <aliases>age</aliases>
+      <aliases>increased age</aliases>
+      <aliases>increasing age</aliases>
+      <aliases>advanced age</aliases>
+      <aliases>old age</aliases>
+      <aliases>elderly</aliases>
+      <aliases>age &gt;70</aliases>
+      <aliases>age &gt;= 65 years</aliases>
+      <aliases>age over 85 years</aliases>
+      <aliases>age 65 or older</aliases>
+      <aliases>older patients</aliases>
+      <aliases>advancing age</aliases>
+      <aliases>age ≥ 65 years</aliases>
+      <aliases>age over 65</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="discharge to a skilled nursing facility" plainLabel="leaving the hospital for a nursing or rehabilitation facility" pattern="^(initial )?discharge(d)? to (a |an )?(skilled nursing|nursing|rehabilitation|long-term care|care|post-acute care|short/long-term) (facility|home)( or .*)?$|^(snf|nursing home|non-?home) discharge$">
+      <aliases>discharge to skilled nursing facility</aliases>
+      <aliases>initial discharge to skilled nursing facility</aliases>
+      <aliases>nursing home discharge</aliases>
+      <aliases>snf discharge</aliases>
+      <aliases>snf or irf discharge</aliases>
+      <aliases>discharge to a care facility or home health care</aliases>
+      <aliases>discharge to skilled nursing facility or home health care</aliases>
+      <aliases>discharge to short/long-term facility</aliases>
+      <aliases>discharge to a nursing facility</aliases>
+      <aliases>discharge to long-term care</aliases>
+      <aliases>nonhome discharge</aliases>
+      <aliases>discharge to a rehabilitation facility</aliases>
+      <aliases>discharge to post-acute care facility</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="emergency admission" plainLabel="an emergency admission">
+      <aliases>emergent or urgent admission</aliases>
+      <aliases>emergency hospital admission</aliases>
+      <aliases>urgent admission</aliases>
+      <aliases>unplanned admission</aliases>
+      <aliases>emergency admissions</aliases>
+      <aliases>admission through the emergency department</aliases>
+      <aliases>nonelective admission</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="admission from the emergency room" plainLabel="being admitted through the emergency department">
+      <aliases>admission from the emergency department</aliases>
+      <aliases>emergency room referral</aliases>
+      <aliases>emergency department admission source</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="change of diabetes medication" plainLabel="a change of diabetes medicines during the hospital stay">
+      <aliases>change in diabetes medication</aliases>
+      <aliases>medication change</aliases>
+      <aliases>change in diabetic medication</aliases>
+      <aliases>diabetes medication change</aliases>
+      <aliases>changes to diabetes medications</aliases>
+      <aliases>alteration of diabetes medication</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="diabetes medication prescribed" plainLabel="being prescribed diabetes medicines">
+      <aliases>diabetes medication</aliases>
+      <aliases>antidiabetic medication</aliases>
+      <aliases>use of diabetes medication</aliases>
+      <aliases>antihyperglycemic therapy</aliases>
+      <aliases>glucose-lowering medication</aliases>
+      <aliases>insulin or oral diabetes medication</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="HbA1c measured during admission" isModifiable="true" plainLabel="having the HbA1c (average blood sugar) test during the hospital stay">
+      <aliases>hba1c measurement on admission</aliases>
+      <aliases>measuring hba1c on admission</aliases>
+      <aliases>hba1c testing on admission</aliases>
+      <aliases>measuring hba1c</aliases>
+      <aliases>hba1c measurement during admission</aliases>
+      <aliases>hba1c measurement</aliases>
+      <aliases>measurement of hba1c</aliases>
+      <aliases>a1c testing during admission</aliases>
+      <aliases>hba1c testing</aliases>
+      <aliases>a1c measurement</aliases>
+      <aliases>hba1c test during hospitalization</aliases>
+      <aliases>inpatient hba1c measurement</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="diabetes education" isModifiable="true" plainLabel="learning how to manage diabetes (diabetes education)" pattern="^(inpatient |structured |formal )?diabetes (self-management |survival skills? )?education( and support)?( programs?| sessions?)?$">
+      <aliases>structured education</aliases>
+      <aliases>structured diabetes education programme</aliases>
+      <aliases>early identification of patients in need of education</aliases>
+      <aliases>patient education</aliases>
+      <aliases>diabetes self-management training</aliases>
+      <aliases>self-management education</aliases>
+      <aliases>education on diabetes self-management</aliases>
+      <aliases>diabetes self-management education</aliases>
+      <aliases>diabetes self-management education and support</aliases>
+      <aliases>inpatient diabetes education</aliases>
+      <aliases>inpatient diabetes survival skills education</aliases>
+      <aliases>diabetes survival skills education</aliases>
+      <aliases>structured diabetes education</aliases>
+      <aliases>dsme</aliases>
+      <aliases>dsmes</aliases>
+      <aliases>diabetes education program</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="inpatient diabetes specialist care" isModifiable="true" plainLabel="care from a diabetes specialist team during the hospital stay">
+      <aliases>endocrine consultation</aliases>
+      <aliases>endocrinology consultation</aliases>
+      <aliases>endocrinology consult</aliases>
+      <aliases>inpatient diabetes management services</aliases>
+      <aliases>inpatient diabetes team</aliases>
+      <aliases>diabetes specialist team</aliases>
+      <aliases>specialist diabetes team</aliases>
+      <aliases>inpatient diabetes consultation</aliases>
+      <aliases>diabetes team consultation</aliases>
+      <aliases>glucose management team</aliases>
+      <aliases>combined specialist diabetes/mental health team approach</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="post-discharge follow-up" isModifiable="true" plainLabel="a follow-up visit soon after leaving the hospital">
+      <aliases>follow-up appointments</aliases>
+      <aliases>follow-up visits</aliases>
+      <aliases>scheduled follow-up</aliases>
+      <aliases>follow-up care</aliases>
+      <aliases>clear instructions about medications and follow-up appointments</aliases>
+      <aliases>follow-up visit</aliases>
+      <aliases>follow-up visit after discharge</aliases>
+      <aliases>follow-up within 1 to 2 weeks after discharge</aliases>
+      <aliases>outpatient follow-up after discharge</aliases>
+      <aliases>post-discharge follow-up appointment</aliases>
+      <aliases>follow-up appointment after discharge</aliases>
+      <aliases>outpatient follow-up</aliases>
+      <aliases>follow-up after discharge</aliases>
+      <aliases>early follow-up</aliases>
+      <aliases>post-discharge follow-up visit</aliases>
+      <aliases>early outpatient follow-up</aliases>
+      <aliases>timely follow-up</aliases>
+      <aliases>follow-up appointment</aliases>
+      <aliases>outpatient follow-up visit</aliases>
+      <aliases>adherence to medical follow-up recommendations</aliases>
+      <aliases>medical follow-up</aliases>
+      <aliases>early post-discharge follow-up</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="medication reconciliation" isModifiable="true" plainLabel="a review of all your medicines before going home">
+      <aliases>reconciliation of medications</aliases>
+      <aliases>medication review at discharge</aliases>
+      <aliases>medication reconciliation prior to discharge</aliases>
+      <aliases>medication reconciliation at discharge</aliases>
+      <aliases>discharge medication reconciliation</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="medication therapy management" isModifiable="true" plainLabel="a pharmacist-led review and follow-up of your medicines">
+      <aliases>full multidisciplinary medication therapy management</aliases>
+      <aliases>partial multidisciplinary medication therapy management</aliases>
+      <aliases>multidisciplinary medication therapy management</aliases>
+      <aliases>pharmacist-led medication management</aliases>
+      <aliases>clinical pharmacist intervention</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="transitional care program" isModifiable="true" plainLabel="support from a care-transition team after leaving the hospital">
+      <aliases>standardized transitional care program</aliases>
+      <aliases>transition of care support</aliases>
+      <aliases>transitional care</aliases>
+      <aliases>transitions of care program</aliases>
+      <aliases>diabetes transition of care program</aliases>
+      <aliases>care transfer model led by the hospital clinical pharmacist</aliases>
+      <aliases>integrated case management services</aliases>
+      <aliases>case management</aliases>
+      <aliases>care coordination</aliases>
+      <aliases>team-based patient-centered approach</aliases>
+      <aliases>community care navigation</aliases>
+      <aliases>bridge clinic attendance</aliases>
+      <aliases>bridge attendance in patients with low cci</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="remote patient monitoring" isModifiable="true" plainLabel="remote monitoring of your health at home">
+      <aliases>home telemonitoring</aliases>
+      <aliases>remote patient monitoring program</aliases>
+      <aliases>telemonitoring</aliases>
+      <aliases>remote monitoring</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="continuous glucose monitoring" isModifiable="true" plainLabel="continuous glucose monitoring with a sensor">
+      <aliases>use of continuous glucose monitors at hospital discharge</aliases>
+      <aliases>continuous glucose monitors</aliases>
+      <aliases>cgm</aliases>
+      <aliases>cgm use</aliases>
+      <aliases>continuous glucose monitoring at discharge</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="glycemic control" isModifiable="true" plainLabel="keeping blood sugar in the target range">
+      <aliases>target glucose range</aliases>
+      <aliases>glycemic targets</aliases>
+      <aliases>glucose targets</aliases>
+      <aliases>good glycemic control</aliases>
+      <aliases>optimal glycemic control</aliases>
+      <aliases>improved glycemic control</aliases>
+      <aliases>glucose control</aliases>
+      <aliases>glycaemic control</aliases>
+      <aliases>good glycaemic control</aliases>
+      <aliases>blood glucose control</aliases>
+      <aliases>preoperative optimization of hba1c</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="insulin continuation after discharge" isModifiable="true" plainLabel="continuing insulin after leaving the hospital, as prescribed">
+      <aliases>continued insulin therapy</aliases>
+      <aliases>insulin continuation post-discharge</aliases>
+      <aliases>continuation of insulin after discharge</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="medication adherence" isModifiable="true" plainLabel="taking your medicines as prescribed">
+      <aliases>adherence to medication</aliases>
+      <aliases>medication compliance</aliases>
+      <aliases>adherence to diabetes medication</aliases>
+      <aliases>treatment adherence</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="initiation of glucose-lowering medication" isModifiable="true" plainLabel="starting or adjusting diabetes medicines">
+      <aliases>initiation of 1 nha</aliases>
+      <aliases>initiation of 2 nhas</aliases>
+      <aliases>initiation of non-insulin hypoglycemic agents</aliases>
+      <aliases>treatment intensification</aliases>
+      <aliases>intensification of diabetes therapy</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="insulin pump therapy" isModifiable="true" plainLabel="using an insulin pump">
+      <aliases>continuous subcutaneous insulin infusion</aliases>
+      <aliases>csii</aliases>
+      <aliases>insulin pump</aliases>
+    </canonicalEntities>
+  </concepts>
+
+  <concepts name="ClinicalOutcome" uri="http://www.xaikg.org/usecases/diabetes-readmission#ClinicalOutcome"
+      description="An outcome that risk factors, conditions and drugs may influence, e.g. hospital readmission within 30 days, mortality, hypoglycemic emergency.">
+    <properties name="name" dataType="STRING" isRequired="true" isExplainable="true" description="Outcome name in lowercase, e.g. 'hospital readmission within 30 days'"/>
+    <properties name="timeWindow" dataType="STRING" isRequired="false" isExplainable="true" description="Time window if stated, e.g. '30 days'"/>
+    <canonicalEntities name="hospital readmission within 30 days" plainLabel="coming back to the hospital within 30 days" pattern="^(all-cause |unplanned |early |potentially preventable )?(hospital )?re-?(admission|admissions|hospitali[sz]ation)( within (30|thirty) days)?( of discharge| after discharge)?$|^(30|thirty)-day( all-cause| unplanned)?( hospital)? re-?(admission|hospitali[sz]ation)$">
+      <aliases>30-day readmission</aliases>
+      <aliases>30-day hospital readmission</aliases>
+      <aliases>readmission within 30 days</aliases>
+      <aliases>readmission within 30 days of discharge</aliases>
+      <aliases>all-cause hospital readmission within 30 days</aliases>
+      <aliases>30-day all-cause readmission</aliases>
+      <aliases>all-cause 30-day readmission</aliases>
+      <aliases>early readmission</aliases>
+      <aliases>hospital readmission</aliases>
+      <aliases>readmission</aliases>
+      <aliases>rehospitalization</aliases>
+      <aliases>rehospitalisation</aliases>
+      <aliases>unplanned readmission</aliases>
+      <aliases>30-day unplanned readmission</aliases>
+      <aliases>hospital readmission within 1 month</aliases>
+      <aliases>being hospitalized again</aliases>
+      <aliases>readmitted after discharge</aliases>
+      <aliases>hospital readmissions</aliases>
+      <aliases>readmissions</aliases>
+      <aliases>unplanned hospital readmission</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="hospital admission" plainLabel="a hospital admission">
+      <aliases>hospitalization</aliases>
+      <aliases>hospitalisation</aliases>
+      <aliases>hospital admissions</aliases>
+      <aliases>inpatient admission</aliases>
+    </canonicalEntities>
+    <canonicalEntities name="mortality" plainLabel="death">
+      <aliases>death</aliases>
+      <aliases>all-cause mortality</aliases>
+      <aliases>all-cause death</aliases>
+    </canonicalEntities>
+  </concepts>
+
+  <concepts name="Recommendation" uri="http://www.xaikg.org/usecases/diabetes-readmission#Recommendation"
+      description="A clinical guideline statement or care recommendation, e.g. 'measure HbA1c in hospitalized patients without a result in the previous 3 months'.">
+    <properties name="statement" dataType="STRING" isRequired="true" isExplainable="true" description="The recommendation, one sentence, close to the source wording"/>
+    <properties name="source" dataType="STRING" isRequired="true" isExplainable="true" description="Issuing body or publication, e.g. 'American Diabetes Association'"/>
+    <properties name="strength" dataType="STRING" isRequired="false" isExplainable="true" description="Strength or evidence grade if stated, e.g. 'grade A'"/>
+  </concepts>
+
+  <!-- ============================ Relations ============================ -->
+  <relations id="TREATS" name="TREATS" source="Drug" target="Condition"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the drug is indicated for (treats, controls or prevents) the condition"/>
+  <relations id="MAY_CAUSE" name="MAY_CAUSE" source="Drug" target="Condition"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the drug can cause the condition as an adverse effect"/>
+  <relations id="CONTRAINDICATED_IN" name="CONTRAINDICATED_IN" source="Drug" target="Condition"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the drug must not be used, or used with caution, in patients with the condition"/>
+  <relations id="INTERACTS_WITH" name="INTERACTS_WITH" source="Drug" target="Drug"
+      minCardinality="0" maxCardinality="-1"
+      semantics="co-administration of the two drugs changes the effect or risk of one of them"/>
+  <relations id="BELONGS_TO_CLASS" name="BELONGS_TO_CLASS" source="Drug" target="DrugClass"
+      minCardinality="0" maxCardinality="1"
+      semantics="the drug is a member of the pharmacological class"/>
+  <relations id="INCREASES_RISK_OF_Condition" name="INCREASES_RISK_OF" source="Condition" target="ClinicalOutcome"
+      minCardinality="0" maxCardinality="-1"
+      semantics="having the condition raises the probability of the outcome"/>
+  <relations id="INCREASES_RISK_OF_RiskFactor" name="INCREASES_RISK_OF" source="RiskFactor" target="ClinicalOutcome"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the factor raises the probability of the outcome"/>
+  <relations id="INCREASES_RISK_OF_Drug" name="INCREASES_RISK_OF" source="Drug" target="ClinicalOutcome"
+      minCardinality="0" maxCardinality="-1"
+      semantics="use of the drug is associated with a higher probability of the outcome"/>
+  <relations id="REDUCES_RISK_OF_RiskFactor" name="REDUCES_RISK_OF" source="RiskFactor" target="ClinicalOutcome"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the factor (often a care-process factor such as a test being performed) lowers the probability of the outcome"/>
+  <relations id="REDUCES_RISK_OF_Drug" name="REDUCES_RISK_OF" source="Drug" target="ClinicalOutcome"
+      minCardinality="0" maxCardinality="-1"
+      semantics="use of the drug is associated with a lower probability of the outcome"/>
+  <relations id="INDICATES" name="INDICATES" source="LabTest" target="Condition"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the test level is a marker of the condition, e.g. HbA1c > 8% indicates poor glycemic control"/>
+  <relations id="APPLIES_TO" name="APPLIES_TO" source="Recommendation" target="Condition"
+      minCardinality="1" maxCardinality="-1"
+      semantics="the recommendation concerns patients with the condition"/>
+  <relations id="RECOMMENDS_LabTest" name="RECOMMENDS" source="Recommendation" target="LabTest"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the recommendation advises performing or targeting the test level"/>
+  <relations id="RECOMMENDS_Drug" name="RECOMMENDS" source="Recommendation" target="Drug"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the recommendation advises using the drug"/>
+  <relations id="RECOMMENDS_RiskFactor" name="RECOMMENDS" source="Recommendation" target="RiskFactor"
+      minCardinality="0" maxCardinality="-1"
+      semantics="the recommendation advises a care process or a change of a modifiable factor, e.g. diabetes education, follow-up after discharge, medication reconciliation"/>
+
+  <!-- ============================ Query patterns ============================ -->
+  <!-- Parameters bound by the explanation service (a pattern receives only those it declares):
+         $factors  : KG keys of the entities resolved from the attributed features (top positive attributions)
+         $active   : KG keys of every binding active for the encounter, attributed or not
+         $outcome  : key of the ClinicalOutcome the decision class predicts
+         $limit    : the retrieval limit of the explainability configuration: candidate facts per attributed
+                     factor (patterns returning factorKey) or per pattern / per condition (the others);
+                     the audience's presentation budget selects among the candidates afterwards
+         $contrastFactors : factors of the contrast case (contrastive explanations)
+         $factIds  : fact ids to trace (audit)
+       Column conventions read by the service: factId* (fact identifiers, scalar or list), factorKey (the
+       attributed factor a row is evidence for), actionKeys (the modifiable entities an actionable row
+       advises on); factorLabel / protectiveLabel / conditionLabel carry the plain-language wording. -->
+  <queryPatterns name="causal_context" parameters="factors outcome limit"
+      description="Direct evidence paths from the decision's factors to the predicted outcome (causal explanations), up to $limit facts per factor.">
+    <cypherTemplate>MATCH (f)-[r:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})
+WHERE f._key IN $factors
+WITH f, o, r ORDER BY r._prov_confidence DESC, r._prov_fact_id
+WITH f, o, collect(r)[..$limit] AS rs
+UNWIND rs AS r
+RETURN labels(f)[0] AS factorType, f.name AS factor, f._key AS factorKey, f._plain_label AS factorLabel,
+       type(r) AS relation, o.name AS outcome,
+       r._prov_fact_id AS factId, r._prov_source_document AS sourceDocument, r._prov_char_start AS charStart,
+       r._prov_char_end AS charEnd, r._prov_confidence AS confidence, r._prov_prompt_id AS promptId
+ORDER BY confidence DESC, factId</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="drug_adverse_chain" parameters="factors outcome limit"
+      description="Two-hop evidence: a drug the patient takes may cause a condition that increases the risk of the outcome (up to $limit chains per drug).">
+    <cypherTemplate>MATCH (d:Drug)-[r1:MAY_CAUSE]->(c:Condition)-[r2:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})
+WHERE d._key IN $factors
+WITH d, c, o, r1, r2 ORDER BY r1._prov_confidence * r2._prov_confidence DESC, r1._prov_fact_id, r2._prov_fact_id
+WITH d, collect({condition: c.name, outcome: o.name,
+                 factId1: r1._prov_fact_id, source1: r1._prov_source_document, confidence1: r1._prov_confidence,
+                 factId2: r2._prov_fact_id, source2: r2._prov_source_document, confidence2: r2._prov_confidence})[..$limit] AS chains
+UNWIND chains AS x
+RETURN d.name AS drug, d._key AS factorKey, x.condition AS condition, x.outcome AS outcome,
+       x.factId1 AS factId1, x.source1 AS source1, x.confidence1 AS confidence1,
+       x.factId2 AS factId2, x.source2 AS source2, x.confidence2 AS confidence2
+ORDER BY confidence1 * confidence2 DESC, factId1, factId2</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="lab_indication_chain" parameters="factors outcome limit"
+      description="Two-hop evidence: an abnormal lab level indicates a condition that increases the risk of the outcome (up to $limit chains per lab level).">
+    <cypherTemplate>MATCH (l:LabTest)-[r1:INDICATES]->(c:Condition)-[r2:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})
+WHERE l._key IN $factors
+WITH l, c, o, r1, r2 ORDER BY r1._prov_confidence * r2._prov_confidence DESC, r1._prov_fact_id, r2._prov_fact_id
+WITH l, collect({condition: c.name, outcome: o.name,
+                 factId1: r1._prov_fact_id, source1: r1._prov_source_document, confidence1: r1._prov_confidence,
+                 factId2: r2._prov_fact_id, source2: r2._prov_source_document, confidence2: r2._prov_confidence})[..$limit] AS chains
+UNWIND chains AS x
+RETURN l.name AS labTest, l._key AS factorKey, x.condition AS condition, x.outcome AS outcome,
+       x.factId1 AS factId1, x.source1 AS source1, x.confidence1 AS confidence1,
+       x.factId2 AS factId2, x.source2 AS source2, x.confidence2 AS confidence2
+ORDER BY confidence1 * confidence2 DESC, factId1, factId2</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="contrastive_difference" parameters="factors contrastFactors outcome limit"
+      description="Evidence for the factors present in this decision but absent in the contrast case (why this patient and not a similar one), up to $limit facts per factor.">
+    <cypherTemplate>UNWIND [x IN $factors WHERE NOT x IN $contrastFactors] AS differing
+MATCH (f {_key: differing})-[r:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})
+WITH f, o, r ORDER BY r._prov_confidence DESC, r._prov_fact_id
+WITH f, o, collect(r)[..$limit] AS rs
+UNWIND rs AS r
+RETURN labels(f)[0] AS factorType, f.name AS factor, f._key AS factorKey, f._plain_label AS factorLabel, o.name AS outcome,
+       r._prov_fact_id AS factId, r._prov_source_document AS sourceDocument, r._prov_confidence AS confidence
+ORDER BY confidence DESC, factId</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="counterfactual_recommendations" parameters="active outcome limit" actionableOnly="true"
+      description="Guideline recommendations of a modifiable medicine or care process for a condition of the encounter on the path to the outcome: the condition is active itself or indicated by an active lab level, and it or the active entity increases the risk of the outcome (what could change the outcome). Recommendations of the different conditions are interleaved, up to $limit per condition.">
+    <cypherTemplate>MATCH (f)
+WHERE f._key IN $active
+MATCH (rec:Recommendation)-[ra:APPLIES_TO]->(c:Condition)
+WHERE (c = f OR (f)-[:INDICATES]->(c))
+  AND (EXISTS { MATCH (f)-[:INCREASES_RISK_OF]->(:ClinicalOutcome {_key: $outcome}) }
+       OR EXISTS { MATCH (c)-[:INCREASES_RISK_OF]->(:ClinicalOutcome {_key: $outcome}) })
+MATCH (rec)-[rr:RECOMMENDS]->(t)
+WHERE t._modifiable = true
+WITH rec, ra, c, collect(DISTINCT f.name) AS via, collect(DISTINCT t.name) AS recommends,
+     collect(DISTINCT coalesce(t._plain_label, t.name)) AS recommendsLabel, collect(DISTINCT t._key) AS actionKeys,
+     collect(DISTINCT rr._prov_fact_id) AS factIdsRecommends
+ORDER BY ra._prov_confidence DESC, ra._prov_fact_id
+WITH c, collect({recommendation: rec.statement, guidelineSource: rec.source, strength: rec.strength, via: via,
+                 recommends: recommends, recommendsLabel: recommendsLabel, actionKeys: actionKeys,
+                 factId: ra._prov_fact_id, factIdsRecommends: factIdsRecommends,
+                 sourceDocument: ra._prov_source_document, confidence: ra._prov_confidence})[..$limit] AS advice
+UNWIND range(0, size(advice) - 1) AS conditionRank
+WITH c, advice[conditionRank] AS x, conditionRank
+RETURN x.recommendation AS recommendation, x.guidelineSource AS guidelineSource, x.strength AS strength,
+       c.name AS condition, c._plain_label AS conditionLabel, x.via AS via, x.recommends AS recommends,
+       x.recommendsLabel AS recommendsLabel, x.actionKeys AS actionKeys, x.factId AS factId,
+       x.factIdsRecommends AS factIdsRecommends, x.sourceDocument AS sourceDocument, x.confidence AS confidence,
+       conditionRank
+ORDER BY conditionRank, confidence DESC, condition, factId</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="protective_factors" parameters="active outcome limit" actionableOnly="true"
+      description="Modifiable factors and drugs the literature associates with a lower probability of the outcome, excluding drugs contraindicated in a condition of the encounter, ranked first by their relation to the encounter's active entities (the entity itself is active, it treats or interacts with an active entity, or its evidence studies the active entities) (counterfactual explanations: what lowers the risk).">
+    <cypherTemplate>MATCH (f)-[r:REDUCES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})
+WHERE f._modifiable = true
+  AND NOT EXISTS { MATCH (f)-[:CONTRAINDICATED_IN]->(x) WHERE x._key IN $active }
+WITH f, o, collect(r) AS rs
+OPTIONAL MATCH (f)-[:TREATS|INTERACTS_WITH]-(a)
+WHERE a._key IN $active
+WITH f, o, rs, collect(DISTINCT a.name) AS linked
+OPTIONAL MATCH (m)-[:EXTRACTED_FROM]->(d:SourceDocument)
+WHERE m._key IN $active AND NOT m = f AND d.id IN [x IN rs | x._prov_source_document]
+WITH f, o, rs, linked, collect(DISTINCT m.name) AS studied
+WITH f, o, rs, reduce(acc = CASE WHEN f._key IN $active THEN [f.name] ELSE [] END, x IN linked + studied |
+       CASE WHEN x IN acc THEN acc ELSE acc + x END) AS relatedTo
+WITH f, o, rs, relatedTo,
+     reduce(b = head(rs), x IN rs | CASE WHEN x._prov_confidence > b._prov_confidence THEN x ELSE b END) AS best
+RETURN labels(f)[0] AS factorType, f.name AS protectiveFactor, f._plain_label AS protectiveLabel, [f._key] AS actionKeys,
+       o.name AS outcome, relatedTo, size(relatedTo) AS relevance, size(rs) AS sources,
+       best._prov_fact_id AS factId, [x IN rs | x._prov_fact_id] AS factIds,
+       best._prov_source_document AS sourceDocument, best._prov_confidence AS confidence
+ORDER BY relevance DESC, sources DESC, confidence DESC, protectiveFactor
+LIMIT $limit</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="guideline_rules" parameters="active limit"
+      description="All guideline statements applying to the conditions active for the encounter (rule-based explanations, compliance view). Statements of the different conditions are interleaved, up to $limit per condition.">
+    <cypherTemplate>MATCH (rec:Recommendation)-[ra:APPLIES_TO]->(c:Condition)
+WHERE c._key IN $active
+OPTIONAL MATCH (rec)-[:RECOMMENDS]->(target)
+WITH rec, ra, c, collect(DISTINCT target.name) AS recommends
+ORDER BY ra._prov_confidence DESC, ra._prov_fact_id
+WITH c, collect({recommendation: rec.statement, guidelineSource: rec.source, strength: rec.strength,
+                 recommends: recommends, factId: ra._prov_fact_id, sourceDocument: ra._prov_source_document,
+                 confidence: ra._prov_confidence})[..$limit] AS statements
+UNWIND range(0, size(statements) - 1) AS conditionRank
+WITH c, statements[conditionRank] AS x, conditionRank
+RETURN x.recommendation AS recommendation, x.guidelineSource AS guidelineSource, x.strength AS strength,
+       c.name AS condition, x.recommends AS recommends,
+       x.factId AS factId, x.sourceDocument AS sourceDocument, x.confidence AS confidence, conditionRank
+ORDER BY conditionRank, confidence DESC, condition, factId</cypherTemplate>
+  </queryPatterns>
+
+  <queryPatterns name="provenance_trace" parameters="factIds"
+      description="Full provenance of given facts: source document, character span, extraction run (prompt version, LLM), validation policy version.">
+    <cypherTemplate>MATCH (s)-[r]->(t)
+WHERE r._prov_fact_id IN $factIds
+OPTIONAL MATCH (doc:SourceDocument {id: r._prov_source_document})
+OPTIONAL MATCH (run:ExtractionRun {runId: r._prov_run_id})
+RETURN r._prov_fact_id AS factId, labels(s)[0] AS sourceType, coalesce(s.name, s.statement) AS source, type(r) AS relation,
+       labels(t)[0] AS targetType, coalesce(t.name, t.statement) AS target,
+       properties(r) AS provenance, properties(doc) AS document, properties(run) AS extractionRun</cypherTemplate>
+  </queryPatterns>
+
+</kgschema:KGSchemaDefinition>

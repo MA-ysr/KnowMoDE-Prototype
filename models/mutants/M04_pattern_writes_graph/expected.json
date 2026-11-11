@@ -1,0 +1,7 @@
+{
+  "id": "M04_pattern_writes_graph",
+  "family": "C1",
+  "expectedConstraint": "C1_PatternReadsOnly",
+  "mutatedFile": "kg-schema.xmi",
+  "description": "protective_factors template mutates the graph"
+}

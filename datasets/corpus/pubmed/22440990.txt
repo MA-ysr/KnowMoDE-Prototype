@@ -1,0 +1,11 @@
+# PubMed 22440990: Outcomes associated with insulin therapy disruption after hospital discharge among patients with type 2 diabetes mellitus who had used insulin before and during hospitalization.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2012), doi:10.4158/EP11314.OR
+
+OBJECTIVE: To evaluate outcomes associated with insulin therapy disruption after hospital discharge in patients with type 2 diabetes mellitus who had used insulin before and during hospitalization.
+
+METHODS: In this observational, retrospective analysis of medical records obtained from a coordinated health system in the United States, patients with type 2 diabetes mellitus who had used insulin 30 days before and during hospitalization were included. Clinical and cost outcomes were compared between patients who continued insulin therapy and those who had disrupted insulin therapy after hospital discharge.
+
+RESULTS: In total, 2160 records were analyzed (851 patients with continued insulin therapy and 1309 patients with disrupted insulin therapy). Mean baseline glycated hemoglobin A1c levels were 8.56% and 7.73% in patients who continued insulin therapy and patients who disrupted insulin therapy, respectively (P<.001), suggesting that patients who discontinued insulin therapy had better glycemic control at baseline. Continued insulin therapy was associated with an expected greater reduction in glycated hemoglobin A1c (P<.001); similar hypoglycemia rates; lower risks of all-cause hospital readmission, diabetes-related readmission, and all-cause emergency department visits; and improved survival. Continued insulin therapy was associated with $3432 lower total medical service costs than disrupted therapy over the 6-month postdischarge period.
+
+CONCLUSION: Ensuring adherence to insulin therapy in patients who require insulin therapy after hospitalization should be a priority for postdischarge patient care programs. However, the clinical implications of this study are limited by the fact that it could not be determined whether all patients required insulin therapy after hospital discharge.

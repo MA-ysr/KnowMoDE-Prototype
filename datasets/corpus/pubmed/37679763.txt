@@ -1,0 +1,11 @@
+# PubMed 37679763: Triglyceride-glucose index and heart failure: a systematic review and meta-analysis.
+
+Cardiovascular diabetology (2023), doi:10.1186/s12933-023-01973-7
+
+BACKGROUND: Insulin resistance (IR) is a major metabolic disorder observed in heart failure (HF) and is tightly associated with patients' poor prognosis. The triglyceride-glucose index (TyG) has been proposed as a surrogate marker of IR in HF. Yet, whether TyG is a reliable clinical marker is still under debate. Hence, we aimed to respond to this relevant question via a systematic review and meta-analysis of existing studies.
+
+METHODS: A systematic search was conducted in PubMed, Embase, Scopus, and Web of Science to find studies investigating the TyG index in patients with HF or its association with the incidence of HF. Adjusted hazard ratios (HR) and 95% confidence intervals (CI) were pooled through random-effect meta-analysis. HRs were calculated using TyG as a continuous variable (1 unit increase) and by comparing the group with the highest TyG to the lowest TyG group.
+
+RESULTS: Thirty studies, involving 772,809 participants, were included in this systematic review. Meta-analysis of seven studies comparing the highest-TyG to the lowest-TyG group showed a significantly increased risk of HF in the former group (HR 1.21, 95% CI 1.14 to 1.29, P < 0.01). The same result was found when pooling the HRs for a one-unit increase in the TyG index (HR 1.17, 95% CI 1.08 to 1.26). Similarly, a more elevated TyG index was associated with a higher incidence of HF in patients with type 2 diabetes or coronary artery disease. Additionally, the incidence of adverse events (readmission and mortality) in patients with HF was associated with TyG.
+
+CONCLUSION: Our findings support the TyG index as a valuable marker to assess the risk of HF incidence in different populations and as a prognostic marker in patients with HF. Further studies should be conducted to confirm these associations and investigate the clinical utility of the TyG index.

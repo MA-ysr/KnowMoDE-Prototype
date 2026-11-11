@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/8392553" sourceUri="https://pubmed.ncbi.nlm.nih.gov/8392553/" sourceSha256="9d98b02ca4d46236a89962557205431b00be97669368b6ea1fc930444174771b" sourceText="Protective effect of clentiazem against epinephrine-induced cardiac injury in rats. We investigated the effects of clentiazem, a 1,5-benzothiazepine calcium antagonist, on epinephrine-induced cardiomyopathy in rats. With 2-week chronic epinephrine infusion, 16 of 30 rats died within 4 days, and severe ischemic lesions and fibrosis of the left ventricles were observed. In epinephrine-treated rats, left atrial and left ventricular papillary muscle contractile responses to isoproterenol were reduced, but responses to calcium were normal or enhanced compared to controls. Left ventricular alpha and beta adrenoceptor densities were also reduced compared to controls. Treatment with clentiazem prevented epinephrine-induced death (P &lt; .05), and attenuated the ventricular ischemic lesions and fibrosis, in a dose-dependent manner. Left atrial and left ventricular papillary muscle contractile responses to isoproterenol were reduced compared to controls in groups treated with clentiazem alone, but combined with epinephrine, clentiazem restored left atrial responses and enhanced left ventricular papillary responses to isoproterenol. On the other hand clentiazem did not prevent epinephrine-induced down-regulation of alpha and beta adrenoceptors. Interestingly, clentiazem, infused alone, resulted in decreased adrenergic receptor densities in the left ventricle. Clentiazem also did not prevent the enhanced responses to calcium seen in the epinephrine-treated animals, although the high dose of clentiazem partially attenuated the maximal response to calcium compared to epinephrine-treated animals. In conclusion, clentiazem attenuated epinephrine-induced cardiac injury, possibly through its effect on the adrenergic pathway." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:01+00:00" xmi:version="2.0">
+  <chunks charEnd="1733"/>
+  <entities type="Drug" id="clentiazem" mention="clentiazem" confidence="0.95" sourceSpanStart="21" sourceSpanEnd="31">
+    <properties key="name" value="clentiazem"/>
+    <properties key="drugClass" value="1,5-benzothiazepine calcium antagonist"/>
+  </entities>
+  <entities type="Drug" id="epinephrine" mention="epinephrine" confidence="0.95" sourceSpanStart="40" sourceSpanEnd="51">
+    <properties key="name" value="epinephrine"/>
+  </entities>
+  <entities type="Drug" id="isoproterenol" mention="isoproterenol" confidence="0.95" sourceSpanStart="475" sourceSpanEnd="488">
+    <properties key="name" value="isoproterenol"/>
+  </entities>
+  <entities type="Condition" id="cardiac-injury" mention="cardiac injury" confidence="0.9" sourceSpanStart="1663" sourceSpanEnd="1677">
+    <properties key="name" value="cardiac injury"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cardiomyopathy" mention="cardiomyopathy" confidence="0.9" sourceSpanStart="192" sourceSpanEnd="206">
+    <properties key="name" value="cardiomyopathy"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="epinephrine" targetType="Condition" targetId="cardiac-injury" confidence="0.95" evidence="Protective effect of clentiazem against epinephrine-induced cardiac injury in rats." sourceSpanStart="0" sourceSpanEnd="83"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="epinephrine" targetType="Condition" targetId="cardiomyopathy" confidence="0.95" evidence="We investigated the effects of clentiazem, a 1,5-benzothiazepine calcium antagonist, on epinephrine-induced cardiomyopathy in rats." sourceSpanStart="84" sourceSpanEnd="215"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="clentiazem" targetType="Condition" targetId="cardiac-injury" confidence="0.9" evidence="In conclusion, clentiazem attenuated epinephrine-induced cardiac injury, possibly through its effect on the adrenergic pathway." sourceSpanStart="1606" sourceSpanEnd="1733"/>
+</raw:RawExtractionResult>

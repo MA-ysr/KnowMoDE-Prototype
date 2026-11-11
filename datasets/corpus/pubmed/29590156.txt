@@ -1,0 +1,11 @@
+# PubMed 29590156: Factors influencing long-term medication non-adherence among diabetes and hypertensive patients in Ghana: A qualitative investigation.
+
+PloS one (2018), doi:10.1371/journal.pone.0193995
+
+BACKGROUND: Evidence remains limited on why diabetes and hypertensive patients admitted to long-term drug therapy miss doses or discontinue medication taking. We examined this phenomenon from the perspective of diabetes and hypertension patients at a Ghanaian teaching hospital.
+
+METHODS: Between July and December 2015, we conducted a qualitative study targeting caregivers and their patients with chronic diabetes and hypertensive on re-admission at the Korle Bu Teaching Hospital due to non-adherence to prescribed medication. Participants were sampled purposefully and taking through in-depth interviews using an interview guide. Notes and audio recordings of interviews were transcribed, managed and coded for themes guided by the thematic network analysis recommended by Attride-Stirling.
+
+RESULTS: Non-adherence was the result of perceptions that the medications are not effective for managing the conditions. Patients with these perceptions rejected the medications and turned to herbal medicines and spiritual healing as therapeutic alternatives, because of their easy accessibility, perceived efficacy and affordability. Other factors identified to influence non-adherence included polypharmacy practice; tight work schedules; social norms; poor prescription instruction by health providers; and knowledge and experience of medication.
+
+CONCLUSION: Findings suggests the need for health providers to adopt therapeutic approaches that take into account patients' beliefs, values and norms in administering medications. Sensitisation of patients and caregivers during admission on the implication of non-adherence, as well as interventions that monitor and provide feedback mechanisms on patients' medication taking behaviour holds promise for maximising diabetes and hypertensive medication adherence.

@@ -1,0 +1,623 @@
+{
+  "perRule" : {
+    "declared_properties_only" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_confidence_above_threshold" : {
+      "evaluated" : 306,
+      "failed" : 3
+    },
+    "entity_has_id_and_mention" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_provenance_complete" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_type_in_schema" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "max_cardinality_respected" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "mention_grounded_in_source" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "relation_confidence_above_threshold" : {
+      "evaluated" : 183,
+      "failed" : 50
+    },
+    "relation_endpoints_accepted" : {
+      "evaluated" : 183,
+      "failed" : 3
+    },
+    "relation_evidence_grounded_in_source" : {
+      "evaluated" : 183,
+      "failed" : 2
+    },
+    "relation_type_and_endpoints_in_schema" : {
+      "evaluated" : 183,
+      "failed" : 1
+    },
+    "required_properties_present" : {
+      "evaluated" : 306,
+      "failed" : 0
+    }
+  },
+  "policyVersion" : "fb6f554d8cf293dd61695138dc8323047b19348c32494f25d8fe6963e7b8e76f",
+  "rejected" : [ {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/12948256",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers.",
+    "originalId" : "Drug:ethambutol -> Condition:diabetes-mellitus",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/12948256",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers.",
+    "originalId" : "Drug:ethambutol -> Condition:glaucoma",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/12948256",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "A low dose and prompt discontinuation of the drug is recommended particularly in individuals with diabetes mellitus, glaucoma or who are heavy smokers.",
+    "originalId" : "Drug:ethambutol -> Condition:heavy-smoking",
+    "originalType" : "CONTRAINDICATED_IN",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/15096374",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "In 1 patient with eyelid eczema, rosaceiform periocular dermatitis gradually appeared after 3 weeks of treatment.",
+    "originalId" : "Drug:tacrolimus -> Condition:eyelid-eczema",
+    "originalType" : "TREATS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/15096374",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "In 1 patient with atopic dermatitis, telangiectatic and papular rosacea insidiously appeared after 5 months of treatment.",
+    "originalId" : "Drug:tacrolimus -> Condition:atopic-dermatitis",
+    "originalType" : "TREATS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/17028363",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The renal injury was probably aggravated by the concomitant intake of a non-steroidal anti-inflammatory drug, diclofenac.",
+    "originalId" : "Drug:diclofenac -> Condition:acute-renal-failure",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/17346443",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "In our case the therapy with zinc acetate represented an effective treatment for a Wilson's disease patient in which penicillamine-related side effects appeared.",
+    "originalId" : "Drug:penicillamine -> Condition:wilson-disease",
+    "originalType" : "TREATS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/17496739",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "We report a 57-year-old woman with end-stage renal disease receiving continuous ambulatory peritoneal dialysis (CAPD), who developed slurred speech, tremor, bizarre behavior, progressive mental confusion, and 2 episodes of generalized tonic-clonic seizure (GTCS) after 5 doses of piperacillin/tazobactam (2 g/250 mg) were given for bronchiectasis with secondary infection.",
+    "originalId" : "Drug:piperacillin-tazobactam -> Condition:bronchiectasis",
+    "originalType" : "TREATS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/17572393",
+    "failedRule" : "entity_confidence_above_threshold",
+    "kind" : "ENTITY",
+    "mention" : "delayed maturation",
+    "originalId" : "delayed-maturation",
+    "originalType" : "Condition",
+    "rejectionReason" : "Entity confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "bc5cdr/17572393",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "These data suggest that exposure of animals to BCNU during pregnancy leads to delayed maturation of offspring cerebellum",
+    "originalId" : "Drug:carmustine -> Condition:delayed-maturation",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19447152",
+    "failedRule" : "entity_confidence_above_threshold",
+    "kind" : "ENTITY",
+    "mention" : "mania",
+    "originalId" : "mania",
+    "originalType" : "Condition",
+    "rejectionReason" : "Entity confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "bc5cdr/19447152",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Animal model of mania induced by ouabain",
+    "originalId" : "Drug:ouabain -> Condition:mania",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19549709",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Common > or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia.",
+    "originalId" : "Drug:everolimus -> Condition:fatigue",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19549709",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Common > or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia.",
+    "originalId" : "Drug:everolimus -> Condition:dyspnea",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19549709",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Common > or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia.",
+    "originalId" : "Drug:everolimus -> Condition:stomatitis",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19549709",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Common > or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia.",
+    "originalId" : "Drug:everolimus -> Condition:anemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19549709",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Common > or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia.",
+    "originalId" : "Drug:everolimus -> Condition:thrombocytopenia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19815465",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Bilateral visual field constriction was observed in 59% of patients currently taking VGB, 43% of patients who previously took VGB, and 24% of patients with no exposure to VGB.",
+    "originalId" : "Drug:vigabatrin -> Condition:bilateral-visual-field-constriction",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/19815465",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Assessment by conventional static perimetry may neither be sufficiently sensitive nor specific to reliably identify retinal toxicity associated with VGB.",
+    "originalId" : "Drug:vigabatrin -> Condition:retinal-toxicity",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/20589632",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Drug studies using the indirect antiglobulin test were strongly positive with trimethoprim and trimethoprim-sulfamethoxazole but negative with sulfamethoxazole.",
+    "originalId" : "Drug:trimethoprim-sulfamethoxazole -> Condition:immune-hemolytic-anemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/2131034",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Severe polyneuropathy and motor loss after intrathecal thiotepa combination chemotherapy: description of two cases.",
+    "originalId" : "Drug:thiotepa -> Condition:polyneuropathy",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/2131034",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Severe polyneuropathy and motor loss after intrathecal thiotepa combination chemotherapy: description of two cases.",
+    "originalId" : "Drug:thiotepa -> Condition:motor-loss",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/2131034",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity.",
+    "originalId" : "Drug:methotrexate -> Condition:neurotoxicity",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/2131034",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity.",
+    "originalId" : "Drug:cytosine-arabinoside -> Condition:neurotoxicity",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Adverse events were reported in 68.9 % of patients (myelosuppression in 49.4 %)",
+    "originalId" : "Drug:lenalidomide -> Condition:myelosuppression",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Adverse events were reported in 68.9 % of patients (myelosuppression in 49.4 %)",
+    "originalId" : "Drug:dexamethasone -> Condition:myelosuppression",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Peripheral neuropathy was observed only in 2.5 % of patients",
+    "originalId" : "Drug:lenalidomide -> Condition:peripheral-neuropathy",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Peripheral neuropathy was observed only in 2.5 % of patients",
+    "originalId" : "Drug:dexamethasone -> Condition:peripheral-neuropathy",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Peripheral neuropathy was observed only in 2.5 % of patients and deep vein thrombosis in 5.7 %.",
+    "originalId" : "Drug:lenalidomide -> Condition:deep-vein-thrombosis",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/23892921",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Peripheral neuropathy was observed only in 2.5 % of patients and deep vein thrombosis in 5.7 %.",
+    "originalId" : "Drug:dexamethasone -> Condition:deep-vein-thrombosis",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/24055495",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Long-term oral galactose treatment prevents cognitive deficits in male Wistar rats treated intracerebroventricularly with streptozotocin.",
+    "originalId" : "Drug:streptozotocin -> Condition:cognitive-deficits",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/24928523",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Grade 3-4 neutropenia and thrombocytopenia were documented in four and three patients (17 and 13 %), respectively, but drug dose reduction due to cytopenia was not required in any case.",
+    "originalId" : "Drug:bortezomib -> Condition:neutropenia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/24928523",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Grade 3-4 neutropenia and thrombocytopenia were documented in four and three patients (17 and 13 %), respectively, but drug dose reduction due to cytopenia was not required in any case.",
+    "originalId" : "Drug:bortezomib -> Condition:thrombocytopenia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/24928523",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Peripheral neuropathy was common (63 %), but severe grade 3-4 peripheral neuropathy was not observed.",
+    "originalId" : "Drug:bortezomib -> Condition:peripheral-neuropathy",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/25907210",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Kidney cancer (N=94) risks were non-significantly elevated (RRLT days=1.77; 95% CI 0.90 to 3.51; Ptrend=0.09; RRIW days 1.37; 95% CI 0.64 to 2.92; Ptrend=0.50), as were risks for aggressive prostate cancer (N=656).",
+    "originalId" : "Drug:diazinon -> Condition:kidney-cancer",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/25907210",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Kidney cancer (N=94) risks were non-significantly elevated (RRLT days=1.77; 95% CI 0.90 to 3.51; Ptrend=0.09; RRIW days 1.37; 95% CI 0.64 to 2.92; Ptrend=0.50), as were risks for aggressive prostate cancer (N=656).",
+    "originalId" : "Drug:diazinon -> Condition:aggressive-prostate-cancer",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/3084231",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Reversible valproic acid-induced dementia was documented in a 21-year-old man with epilepsy",
+    "originalId" : "Drug:valproic-acid -> Condition:epilepsy",
+    "originalType" : "TREATS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.9",
+    "document" : "bc5cdr/3084231",
+    "failedRule" : "relation_evidence_grounded_in_source",
+    "kind" : "RELATION",
+    "mention" : "Possible pathophysiological mechanisms which may have been operative in this case include: ... an indirect CNS toxic effect mediated through valproic acid-induced hyperammonemia.",
+    "originalId" : "Drug:valproic-acid -> Condition:hyperammonemia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation evidence is not found in the source text at the reported span (possible hallucination)",
+    "ruleType" : "HALLUCINATION_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/3895875",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "The mean plasma lidocaine level of patients on beta-blocking agents was no different from that in patients not on beta blocking agents.",
+    "originalId" : "Drug:lidocaine -> DrugClass:beta-blocking-agents",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/6615679",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops.",
+    "originalId" : "Drug:timolol -> Condition:bradycardia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/6615679",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops.",
+    "originalId" : "Drug:timolol -> Condition:hypotension",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/6615679",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops.",
+    "originalId" : "Drug:pilocarpine -> Condition:bradycardia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/6615679",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops.",
+    "originalId" : "Drug:pilocarpine -> Condition:hypotension",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/6615679",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "It is postulated that this action may have been enhanced during halothane anaesthesia with resultant bradycardia and hypotension.",
+    "originalId" : "Drug:timolol -> Drug:halothane",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/733189",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Two well-documented cases of bilateral retinal artery and choriocapillaris occlusions with blindness following head and neck soft-tissue injection with methylprednisolone acetate in combination with lidocaine, epinephrine, or penicillin are reported.",
+    "originalId" : "Drug:methylprednisolone-acetate -> Condition:bilateral-retinal-artery-and-choriocapillaris-occlusions",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/733189",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Two well-documented cases of bilateral retinal artery and choriocapillaris occlusions with blindness following head and neck soft-tissue injection with methylprednisolone acetate in combination with lidocaine, epinephrine, or penicillin are reported.",
+    "originalId" : "Drug:methylprednisolone-acetate -> Condition:blindness",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/7479194",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP-SMZ (5.2/100,000) and those prescribed trimethoprim alone (3.8/100,000).",
+    "originalId" : "Drug:trimethoprim-sulfamethoxazole -> Condition:liver-disease",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/7479194",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP-SMZ (5.2/100,000) and those prescribed trimethoprim alone (3.8/100,000).",
+    "originalId" : "Drug:trimethoprim -> Condition:liver-disease",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/7479194",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The risk for those prescribed cephalexin was somewhat lower (2.0/100,000).",
+    "originalId" : "Drug:cephalexin -> Condition:liver-disease",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/7479194",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "Only five patients experienced blood disorders, one of whom was exposed to TMP-SMZ",
+    "originalId" : "Drug:trimethoprim-sulfamethoxazole -> Condition:blood-disorders",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/920167",
+    "failedRule" : "entity_confidence_above_threshold",
+    "kind" : "ENTITY",
+    "mention" : "cerebral and pulmonary hemorrhage",
+    "originalId" : "cerebral-and-pulmonary-hemorrhage",
+    "originalType" : "Condition",
+    "rejectionReason" : "Entity confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.7",
+    "document" : "bc5cdr/920167",
+    "failedRule" : "relation_endpoints_accepted",
+    "kind" : "RELATION",
+    "mention" : "Two mothers with heart valve prosthesis were treated with warfarin during pregnancy. ... The baby died of cerebral and pulmonary hemorrhage.",
+    "originalId" : "Drug:warfarin -> Condition:cerebral-and-pulmonary-hemorrhage",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation refers to an entity that was rejected or never extracted",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  }, {
+    "confidence" : "0.7",
+    "document" : "bc5cdr/9323412",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "She had developed a severe acute major depression disorder almost immediately thereafter, possibly related to the use of a serotonin antagonist.",
+    "originalId" : "Drug:ondansetron -> Condition:major-depression-disorder",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/9323412",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "She had developed a severe acute major depression disorder almost immediately thereafter, possibly related to the use of a serotonin antagonist.",
+    "originalId" : "Drug:ondansetron -> DrugClass:serotonin-antagonists",
+    "originalType" : "BELONGS_TO_CLASS",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/9889429",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients.",
+    "originalId" : "Drug:nifedipine -> Condition:gingival-hyperplasia",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  }, {
+    "confidence" : "0.85",
+    "document" : "bc5cdr/9889429",
+    "failedRule" : "relation_confidence_above_threshold",
+    "kind" : "RELATION",
+    "mention" : "The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients.",
+    "originalId" : "Drug:nifedipine -> Condition:increased-blood-urea-nitrogen-levels",
+    "originalType" : "MAY_CAUSE",
+    "rejectionReason" : "Relation confidence is below the policy threshold",
+    "ruleType" : "CONFIDENCE_CHECK"
+  } ],
+  "summary" : {
+    "acceptanceRate" : 0.885,
+    "documents" : 60,
+    "rawEntities" : 306,
+    "rawRelations" : 183,
+    "rejected" : 56,
+    "validEntities" : 303,
+    "validRelations" : 130
+  }
+}

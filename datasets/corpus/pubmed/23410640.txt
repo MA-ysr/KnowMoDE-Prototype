@@ -1,0 +1,5 @@
+# PubMed 23410640: Guidelines for care of the hospitalized patient with hyperglycemia and diabetes.
+
+Critical care nursing clinics of North America (2013), doi:10.1016/j.ccell.2012.11.001
+
+Hyperglycemia and diabetes place hospitalized patients at greater risk for serious complications such as infections, diabetic ketoacidosis, hyperosmolar hyperglycemic state, dehydration, electrolyte imbalances, greater antibiotic use, and lengthened hospitalization. Identification and proper treatment of hyperglycemia and diabetes are therefore essential for prevention of significant morbidity and mortality to the patient and to conserve ever-shrinking health care resources. The author discusses standards for the identification of diabetes and hyperglycemia, provides recommendations for target blood glucose values, and discusses current consensus guidelines on inpatient glycemic management in non-critically ill hospitalized patients.

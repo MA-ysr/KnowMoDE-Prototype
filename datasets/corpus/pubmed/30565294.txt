@@ -1,0 +1,11 @@
+# PubMed 30565294: Implementation of discharge recommendations in type 1 diabetes depends on specialist nurse follow-up.
+
+Acta paediatrica (Oslo, Norway : 1992) (2019), doi:10.1111/apa.14704
+
+AIM: This paper presents an implementation study following previous research including a randomised controlled trial (RCT) of hospital-based home care (HBHC), referring to specialist care in a home-based setting. The aim was to evaluate whether the effects sustained when rolled out into wider practice.
+
+METHODS: In 2013-2014, 42 children newly diagnosed type 1 diabetes were included in the study at a university hospital in Sweden and followed for two years. Measurements of child safety, effects of services, resource use and service quality were included. Descriptive statistics were used to present the results and then discussed in relation to the same intervention of HBHC previously evaluated in an RCT.
+
+RESULTS: Shorter in-hospital stay was partially implemented but increased support after discharge by the diabetes nurse was not. The results indicated that the implemented HBHC was equally effective in terms of child outcomes two years from diagnosis but less effective in terms of parents' outcome. The results furthermore indicated that the quality of services decreased.
+
+CONCLUSION: The suggested overall conclusion was that the implemented HBHC services were safe but had become less effective, at least in relation to the HBHC provided under controlled circumstances.

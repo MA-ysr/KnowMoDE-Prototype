@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40403266.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40403266/" sourceSha256="5a33789a2b8cffc558f98bebb236b3b8004924421623fa62d11197785ad99854" sourceText="# PubMed 40403266: Predictors of Hypoglycemia in Patients with Type 2 Diabetes in Acute Care Settings: A Retrospective Correlational Study.&#10;&#10;The American journal of nursing (2025), doi:10.1097/AJN.0000000000000082&#10;&#10;BACKGROUND: Hypoglycemic episodes are among the most common adverse events experienced by hospitalized patients, occurring in up to half of all inpatients, with or without diabetes. Studies have shown that patients who have episodes of severe hypoglycemia while hospitalized have higher rates of 30-day readmission and postdischarge mortality. The Centers for Medicare and Medicaid Services considers hypoglycemic episodes to be a hospital-acquired condition. The cost burden of poor glycemic control in acute care settings is undeniably substantial.&#10;&#10;PURPOSE: The aim of this study was to identify predictors of hypoglycemia among inpatients with type 2 diabetes.&#10;&#10;METHODS: This retrospective descriptive correlational study involved abstracting data from 2019 to 2021 electronic health records for 600 hospitalized patients. Data were analyzed using descriptive and associative statistics and multivariate logistic regression.&#10;&#10;RESULTS: Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized. The odds of 30-day readmission were significantly lower for patients who received diabetes self-management education, had higher glomerular filtration rates, or were admitted with a diagnosis of bone fracture.&#10;&#10;CONCLUSION: The study findings can be used to help health care institutions design and implement more effective policies and procedures to prevent or mitigate hypoglycemic episodes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:46:08+00:00" xmi:version="2.0">
+  <chunks charEnd="1824"/>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemic episodes" confidence="0.95" sourceSpanStart="227" sourceSpanEnd="248">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="511" sourceSpanEnd="529">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-hypoglycemia" mention="history of hypoglycemia" confidence="0.9" sourceSpanStart="1225" sourceSpanEnd="1248">
+    <properties key="name" value="history of hypoglycemia"/>
+    <properties key="description" value="patient has a prior history of hypoglycemic episodes"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.9" sourceSpanStart="1267" sourceSpanEnd="1274">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="sulfonylurea" mention="sulfonylurea" confidence="0.9" sourceSpanStart="1281" sourceSpanEnd="1293">
+    <properties key="name" value="sulfonylurea"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="RiskFactor" id="diabetes-self-management-education" mention="diabetes self-management education" confidence="0.95" sourceSpanStart="1513" sourceSpanEnd="1547">
+    <properties key="name" value="diabetes self-management education"/>
+    <properties key="description" value="patient received education on managing diabetes"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-glomerular-filtration-rates" mention="higher glomerular filtration rates" confidence="0.9" sourceSpanStart="1553" sourceSpanEnd="1587">
+    <properties key="name" value="higher glomerular filtration rates"/>
+    <properties key="description" value="patient has higher glomerular filtration rates"/>
+  </entities>
+  <entities type="RiskFactor" id="diagnosis-of-bone-fracture" mention="diagnosis of bone fracture" confidence="0.9" sourceSpanStart="1613" sourceSpanEnd="1639">
+    <properties key="name" value="diagnosis of bone fracture"/>
+    <properties key="description" value="patient was admitted with a diagnosis of bone fracture"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-hypoglycemia" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized." sourceSpanStart="1154" sourceSpanEnd="1430"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="insulin" targetType="Condition" targetId="hypoglycemia" confidence="0.85" evidence="Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized." sourceSpanStart="1154" sourceSpanEnd="1430"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="sulfonylurea" targetType="Condition" targetId="hypoglycemia" confidence="0.85" evidence="Data analysis revealed that patients who were Asian or Hispanic, had a history of hypoglycemia, were taking both insulin and a sulfonylurea, or had a podiatric or renal admitting diagnosis had significantly higher odds of experiencing hypoglycemic episodes while hospitalized." sourceSpanStart="1154" sourceSpanEnd="1430"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="diabetes-self-management-education" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.95" evidence="The odds of 30-day readmission were significantly lower for patients who received diabetes self-management education, had higher glomerular filtration rates, or were admitted with a diagnosis of bone fracture." sourceSpanStart="1431" sourceSpanEnd="1640"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="higher-glomerular-filtration-rates" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.95" evidence="The odds of 30-day readmission were significantly lower for patients who received diabetes self-management education, had higher glomerular filtration rates, or were admitted with a diagnosis of bone fracture." sourceSpanStart="1431" sourceSpanEnd="1640"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="diagnosis-of-bone-fracture" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.95" evidence="The odds of 30-day readmission were significantly lower for patients who received diabetes self-management education, had higher glomerular filtration rates, or were admitted with a diagnosis of bone fracture." sourceSpanStart="1431" sourceSpanEnd="1640"/>
+</raw:RawExtractionResult>

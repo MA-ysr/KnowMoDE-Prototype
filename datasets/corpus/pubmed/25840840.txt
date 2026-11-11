@@ -1,0 +1,11 @@
+# PubMed 25840840: Systematic review of the impact of HbA1c on outcomes following surgery in patients with diabetes mellitus.
+
+Clinical nutrition (Edinburgh, Scotland) (2016), doi:10.1016/j.clnu.2015.03.007
+
+BACKGROUND & AIMS: Diabetes is a significant risk factor for surgical complications and also increases the prevalence of comorbidities, thereby increasing surgical risk. The aim of this systematic review was to establish the relationship between long-term preoperative glycemic control as measured by HbA1c and postoperative complications.
+
+METHODS: A systematic search was conducted to source articles published between 1980 and 2014 pertinent to the review. Full-text articles were included if they met the pre-determined criteria as determined by two reviewers. Studies reporting the impact of preoperative HbA1c levels on postoperative outcomes in all disciplines of surgery were included.
+
+RESULTS: Twenty studies, including a total of 19,514 patients with diabetes mellitus from a range of surgical specialties, were suitable for inclusion. Preoperative glycemic control did not have a bearing on 30-day mortality. There were no significant differences in the incidence of stroke, venous thromboembolic disease, hospital readmission and ITU length of stay based on glycemic control. The majority of studies suggested no link between preoperative HbA1c levels and acute kidney injury or need for postoperative dialysis, dysrhythmia, infection not related to the surgical site and total hospital length of stay. The literature was highly variable with regards to myocardial events, surgical site infection and reoperation rates.
+
+CONCLUSIONS: Elevated preoperative HbA1c was not definitively associated with increased postoperative morbidity or mortality in patients with diabetes mellitus. The studies included in this review were relatively heterogeneous, predominantly retrospective, and often contained small patient numbers, suggesting that good quality evidence is necessary.

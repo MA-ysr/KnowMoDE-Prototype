@@ -1,0 +1,11 @@
+# PubMed 33529732: Inpatient Hyperglycemia and Transitions of Care: A Systematic Review.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2021), doi:10.1016/j.eprac.2021.01.016
+
+OBJECTIVE: The transition of diabetes care from home to hospital, within the hospital, and upon discharge is fraught with gaps that can adversely affect patient safety and length of stay. We aimed to highlight the variability in care during these transitions and point out areas where research is needed.
+
+METHODS: A PubMed search was performed with a combination of search terms that pertained to diabetes, hyperglycemia, hospitalization, locations in the hospital, discharge to home or a nursing facility, and diabetes medications. Studies with at least 50 patients that were written in the English language were included.
+
+RESULTS: With the exception of transitioning from intravenous insulin infusion to subcutaneous insulin and perhaps admission to the regular floors, few studies pointedly focused on transitions of care, leading us to extrapolate recommendations based on data from disparate areas of care in the hospital. There is evidence at every stage of care, starting from the entry into the hospital and ending with discharge home or to a facility, that patients benefit from having protocols in place guiding overall care.
+
+CONCLUSION: Pockets of care exist in hospitals where methods of effective diabetes management have been studied and implemented. However, there is no sustained continuum of care. Protocols and care teams that follow patients from one physical location to the other may result in improved clinical outcomes during and following a hospital stay.

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/17346443" sourceUri="https://pubmed.ncbi.nlm.nih.gov/17346443/" sourceSha256="07c841a0eee31b3569694c381c2033ad68982157255c6a7bd20ab69fb3eed1c4" sourceText="Penicillamine-related lichenoid dermatitis and utility of zinc acetate in a Wilson disease patient with hepatic presentation, anxiety and SPECT abnormalities. Wilson's disease is an autosomal recessive disorder of hepatic copper metabolism with consequent copper accumulation and toxicity in many tissues and consequent hepatic, neurologic and psychiatric disorders. We report a case of Wilson's disease with chronic liver disease; moreover, in our patient, presenting also with high levels of state anxiety without depression, 99mTc-ECD-SPECT showed cortical hypoperfusion in frontal lobes, more marked on the left frontal lobe. During the follow-up of our patient, penicillamine was interrupted after the appearance of a lichenoid dermatitis, and zinc acetate permitted to continue the successful treatment of the patient without side-effects. In our case the therapy with zinc acetate represented an effective treatment for a Wilson's disease patient in which penicillamine-related side effects appeared. The safety of the zinc acetate allowed us to avoid other potentially toxic chelating drugs; this observation is in line with the growing evidence on the efficacy of the drug in the treatment of Wilson's disease. Since most of Wilson's disease penicillamine-treated patients do not seem to develop this skin lesion, it could be conceivable that a specific genetic factor is involved in drug response. Further studies are needed for a better clarification of Wilson's disease therapy, and in particular to differentiate specific therapies for different Wilson's disease phenotypes." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:06+00:00" xmi:version="2.0">
+  <chunks charEnd="1587"/>
+  <entities type="Drug" id="penicillamine" mention="penicillamine" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="13">
+    <properties key="name" value="penicillamine"/>
+  </entities>
+  <entities type="Drug" id="zinc-acetate" mention="zinc acetate" confidence="0.95" sourceSpanStart="58" sourceSpanEnd="70">
+    <properties key="name" value="zinc acetate"/>
+  </entities>
+  <entities type="Condition" id="wilson-disease" mention="Wilson disease" confidence="0.98" sourceSpanStart="76" sourceSpanEnd="90">
+    <properties key="name" value="wilson disease"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="lichenoid-dermatitis" mention="lichenoid dermatitis" confidence="0.95" sourceSpanStart="723" sourceSpanEnd="743">
+    <properties key="name" value="lichenoid dermatitis"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="chronic-liver-disease" mention="chronic liver disease" confidence="0.95" sourceSpanStart="409" sourceSpanEnd="430">
+    <properties key="name" value="chronic liver disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="anxiety" mention="anxiety" confidence="0.95" sourceSpanStart="126" sourceSpanEnd="133">
+    <properties key="name" value="anxiety"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="zinc-acetate" targetType="Condition" targetId="wilson-disease" confidence="0.95" evidence="this observation is in line with the growing evidence on the efficacy of the drug in the treatment of Wilson's disease." sourceSpanStart="1100" sourceSpanEnd="1219"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="penicillamine" targetType="Condition" targetId="lichenoid-dermatitis" confidence="0.95" evidence="During the follow-up of our patient, penicillamine was interrupted after the appearance of a lichenoid dermatitis" sourceSpanStart="630" sourceSpanEnd="743"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="penicillamine" targetType="Condition" targetId="wilson-disease" confidence="0.85" evidence="In our case the therapy with zinc acetate represented an effective treatment for a Wilson's disease patient in which penicillamine-related side effects appeared." sourceSpanStart="846" sourceSpanEnd="1007"/>
+</raw:RawExtractionResult>

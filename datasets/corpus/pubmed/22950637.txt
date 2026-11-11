@@ -1,0 +1,11 @@
+# PubMed 22950637: Management of raised glucose, a clinical decision tool to reduce length of stay of patients with hyperglycaemia.
+
+Diabetic medicine : a journal of the British Diabetic Association (2013), doi:10.1111/dme.12006
+
+OBJECTIVE: To assess whether the introduction of a management of raised glucose clinical decision tool could improve assessment of patients with hyperglycaemia by non-specialist physicians, leading to early discharge and improved quality of inpatient care.
+
+METHODS: Participants were adults aged 18 years or over presenting to the Medical Assessment Unit with a capillary blood glucose level > 11.1 mmol/l. Phase 1 of the study (phase 1) evaluated current clinical practice and potential impact of the clinical decision tool. Phase 2 evaluated the effectiveness of the management of raised glucose tool in clinical practice. Primary outcome measures were inpatient length of stay and same-calendar-day discharges. Secondary outcome measures were diabetes specialist input, patient assessment, intravenous insulin infusion use and patient satisfaction.
+
+RESULTS: Implementation of the management of raised glucose clinical decision tool allowed safe, same-calendar-day discharges of 40% of patients with hyperglycaemia as their primary reason for attendance. Median length of stay was lower in the phase 1 than in phase 2 (1.0 vs. 3.5 days, P < 0.01). Early discharge did not result in an increase in readmissions. There was improvement in hyperglycaemia assessment for all patients (P < 0.01), a reduction in the use of intravenous insulin infusions (P < 0.01) and high level of patient satisfaction.
+
+CONCLUSION: The management of raised glucose clinical decision tool resulted in a significant increase in the number of same-calendar-day discharges and reduction in hospital length of stay without adverse impact on readmission rates. Additionally, the tool was associated with improvements in inpatient diabetes care and patient satisfaction.

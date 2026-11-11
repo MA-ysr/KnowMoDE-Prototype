@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/42464180.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/42464180/" sourceSha256="db2f221e8e2b1970a8261c03a8ed41610e7d40eaf163f716e659b4bd3c8c0f97" sourceText="# PubMed 42464180: Evaluation of medication regimen complexity and rehospitalization in older adults with chronic kidney disease: a retrospective cohort study.&#10;&#10;BMC geriatrics (2026), doi:10.1186/s12877-026-07986-7&#10;&#10;BACKGROUND: Polypharmacy is quite common in older adults with chronic kidney disease (CKD), and these patients have complex medication regimens. The medication regimen complexity index (MRCI) is one of the tools most commonly used to assess medication regimen complexity. CKD patients experience recurrent rehospitalization. However, the relationship between the MRCI score and rehospitalization in CKD patients is unclear, and evidence on this subject is limited, particularly in older adults. Therefore, this study aims to evaluate the relationship between the MRCI score and rehospitalization within 30 days and 90 days in older adults with CKD patients.&#10;&#10;METHODS: This retrospective study was conducted in older adults with CKD hospitalized in the nephrology service of Suleyman Demirel University Research and Practice Hospital, Isparta, Turkey, between August 2019 and August 2023. In this study, medication complexity was assessed using the MRCI score and anticholinergic burden was measured with the Anticholinergic Cognitive Burden Scale (ACBS). Multiple linear regression analysis was used to identify factors influencing the MRCI score. Binary logistic regression models were created to determine factors affecting 30-day and 90-day rehospitalization.&#10;&#10;RESULTS: The mean (± SD) MRCI score of the patients was 23.4 ± 13.65. The factors affecting the MRCI score were the ACBS score, diabetes, thyroid diseases, hypertension; and rehospitalization within 90 days as a result of the forward selection method (p &lt; 0.05). According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p &lt; 0.05).&#10;&#10;CONCLUSIONS: In this study, the ACBS score, diabetes, thyroid diseases, hypertension and rehospitalization within 90 days significantly affected the MRCI score. Diabetes and MRCI were factors affecting rehospitalization within 30 days and 90 days. Reducing medication complexity may be a factor that can prevent rehospitalization in older adults with CKD.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:49:43+00:00" xmi:version="2.0">
+  <chunks charEnd="2251"/>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="106" sourceSpanEnd="128">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.98" sourceSpanStart="1608" sourceSpanEnd="1616">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="thyroid-diseases" mention="thyroid diseases" confidence="0.95" sourceSpanStart="1618" sourceSpanEnd="1634">
+    <properties key="name" value="thyroid diseases"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1636" sourceSpanEnd="1648">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="mrci-score" mention="MRCI score" confidence="0.95" sourceSpanStart="1790" sourceSpanEnd="1800">
+    <properties key="name" value="medication regimen complexity index score"/>
+    <properties key="description" value="A score used to assess medication regimen complexity."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="rehospitalization-within-30-days" mention="rehospitalization within 30 days" confidence="0.95" sourceSpanStart="1837" sourceSpanEnd="1869">
+    <properties key="name" value="rehospitalization within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="rehospitalization-within-90-days" mention="rehospitalization within 90 days" confidence="0.95" sourceSpanStart="1984" sourceSpanEnd="2016">
+    <properties key="name" value="rehospitalization within 90 days"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="mrci-score" targetType="ClinicalOutcome" targetId="rehospitalization-within-30-days" confidence="0.9" evidence="According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p &lt; 0.05)." sourceSpanStart="1473" sourceSpanEnd="1605"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="mrci-score" targetType="ClinicalOutcome" targetId="rehospitalization-within-90-days" confidence="0.9" evidence="According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p &lt; 0.05)." sourceSpanStart="1473" sourceSpanEnd="1605"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="rehospitalization-within-30-days" confidence="0.9" evidence="According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p &lt; 0.05)." sourceSpanStart="1473" sourceSpanEnd="1605"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="rehospitalization-within-90-days" confidence="0.9" evidence="According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p &lt; 0.05)." sourceSpanStart="1473" sourceSpanEnd="1605"/>
+</raw:RawExtractionResult>

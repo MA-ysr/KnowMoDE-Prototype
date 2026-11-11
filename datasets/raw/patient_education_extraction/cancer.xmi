@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/cancer.txt" sourceUri="https://medlineplus.gov/cancer.html" sourceSha256="953d843527113a195f747dcdf10d513a5cc02a0f8f639416f682067031e80cc1" sourceText="# MedlinePlus health topic: Cancer&#10;&#10;Also called: Carcinoma, Malignancy, Neoplasms, Oncology, Tumor&#10;&#10;What is cancer?Cancer is not just one disease but many diseases. Cancer begins in your cells, which are the building blocks of your body. Usually, your body forms new cells as needed, replacing old cells that die. Sometimes this process goes wrong. New cells grow even when you don't need them, and old cells don't die when they should. These extra cells can form a mass called a tumor.&#10;&#10;Tumors can be benign or malignant. Benign tumors aren't cancer, while malignant ones are. Cells from malignant tumors can invade nearby tissues. They can also break away and spread to other parts of your body. The spread of cancer from one part of the body to another is called metastasis. Symptoms and treatment depend on the type of cancer and how advanced it is.&#10;&#10;What are the types of cancer?There are more than 100 different types of cancer. Cancer can start almost anywhere in your body. Most cancers are named for where they start. For example, lung cancer starts in the lung, and breast cancer starts in the breast.&#10;&#10;Cancer may also be described by the type of cell that formed it, such as sarcoma if cancer begins in your bone and soft tissue. Carcinoma is the most common type of cancer. It is formed by epithelial cells, the cells that cover the inside and outside surfaces of your body.&#10;&#10;How does cancer develop?Cancer is a genetic disease. That means changes in your genes cause it. Changes in your genes are also called gene variants or mutations. Genes are parts of DNA in your cells that you inherit from your parents. However, only some cancers are caused by genes passed down from your parents.&#10;&#10;Genetic changes can occur to your genes over your lifetime that affect how your cells function. Usually, your body gets rid of damaged cells before they turn cancerous, but this ability goes down as you age. Other factors that may affect your risk of developing cancer can include:&#10;&#10;Exposure to ultraviolet (UV) rays from the sun&#10;&#10;Smoking&#10;&#10;Your diet&#10;&#10;Physical inactivity&#10;&#10;What are the symptoms of cancer?Cancer symptoms depend on the type of cancer. For example, some of the symptoms that cancer may cause can include:&#10;&#10;A lump in your breast&#10;&#10;Blood in your urine (pee) or stool (poop)&#10;&#10;Bleeding or bruising for no known reason&#10;&#10;A sore that doesn't heal&#10;&#10;Trouble swallowing&#10;&#10;A new mole or a change to a mole you already have&#10;&#10;Cancer may cause various symptoms but often doesn't cause pain. Don't wait until you're having pain before seeing your health care provider. See your provider if you have symptoms that don't get better in a few weeks.&#10;&#10;How is cancer diagnosed?There is no single test that can diagnose cancer. The tests ordered are usually based on your symptoms. Your provider may:&#10;&#10;Ask about your medical history&#10;&#10;Ask about your family health history, including relatives who have had cancer&#10;&#10;Do a physical exam&#10;&#10;Do a screening test such as a mammogram, colonoscopy, or a Pap test&#10;&#10;Order blood tests or imaging tests&#10;&#10;To find out if you have cancer, your provider may order a biopsy. A biopsy is the procedure of removing and examining tissue, cells, or fluids from your body.&#10;&#10;What are the treatments for cancer?Treatment depends on the type of cancer and how advanced it is. Most treatment plans may include surgery, radiation, and/or chemotherapy. Some may involve hormone therapy, immunotherapy or other types of biological therapy, or stem cell transplantation.&#10;&#10;Can cancer be prevented?It's usually not possible to know exactly why cancer develops in some people but not others. There are some things that you can't control which may increase or decrease your risk of getting cancer, such as inheriting certain genes or your age. But some lifestyle habits may increase your risk of certain types of cancer. Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use&#10;&#10;Having too much sun exposure&#10;&#10;Drinking too much alcohol&#10;&#10;Not getting enough physical activity&#10;&#10;Having obesity&#10;&#10;NIH: National Cancer Institute&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:19:08+00:00" xmi:version="2.0">
+  <chunks charEnd="3986"/>
+  <chunks index="1" charStart="3868" charEnd="4035"/>
+  <entities type="Condition" id="cancer" mention="Cancer" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="34">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="benign-tumor" mention="benign tumors" confidence="0.9" sourceSpanStart="523" sourceSpanEnd="536">
+    <properties key="name" value="benign tumor"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="malignant-tumor" mention="malignant ones" confidence="0.9" sourceSpanStart="558" sourceSpanEnd="572">
+    <properties key="name" value="malignant tumor"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="metastasis" mention="metastasis" confidence="0.95" sourceSpanStart="766" sourceSpanEnd="776">
+    <properties key="name" value="metastasis"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="lung-cancer" mention="lung cancer" confidence="0.95" sourceSpanStart="1040" sourceSpanEnd="1051">
+    <properties key="name" value="lung cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="breast-cancer" mention="breast cancer" confidence="0.95" sourceSpanStart="1076" sourceSpanEnd="1089">
+    <properties key="name" value="breast cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="sarcoma" mention="sarcoma" confidence="0.95" sourceSpanStart="1186" sourceSpanEnd="1193">
+    <properties key="name" value="sarcoma"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="carcinoma" mention="Carcinoma" confidence="0.95" sourceSpanStart="1241" sourceSpanEnd="1250">
+    <properties key="name" value="carcinoma"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="RiskFactor" id="exposure-to-ultraviolet-rays" mention="Exposure to ultraviolet (UV) rays from the sun" confidence="0.9" sourceSpanStart="1985" sourceSpanEnd="2031">
+    <properties key="name" value="ultraviolet ray exposure"/>
+    <properties key="description" value="Exposure to ultraviolet (UV) rays from the sun"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="Smoking" confidence="0.9" sourceSpanStart="2033" sourceSpanEnd="2040">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="Smoking"/>
+  </entities>
+  <entities type="RiskFactor" id="diet" mention="Your diet" confidence="0.9" sourceSpanStart="2042" sourceSpanEnd="2051">
+    <properties key="name" value="diet"/>
+    <properties key="description" value="Your diet"/>
+  </entities>
+  <entities type="RiskFactor" id="physical-inactivity" mention="Physical inactivity" confidence="0.9" sourceSpanStart="2053" sourceSpanEnd="2072">
+    <properties key="name" value="physical inactivity"/>
+    <properties key="description" value="Physical inactivity"/>
+  </entities>
+  <entities type="RiskFactor" id="age" mention="age" confidence="0.9" sourceSpanStart="3743" sourceSpanEnd="3746">
+    <properties key="name" value="age"/>
+    <properties key="description" value="age"/>
+  </entities>
+  <entities type="RiskFactor" id="tobacco-use" mention="tobacco use" confidence="0.9" sourceSpanStart="3880" sourceSpanEnd="3891">
+    <properties key="name" value="tobacco use"/>
+    <properties key="description" value="tobacco use"/>
+  </entities>
+  <entities type="RiskFactor" id="sun-exposure" mention="Having too much sun exposure" confidence="0.9" sourceSpanStart="3893" sourceSpanEnd="3921">
+    <properties key="name" value="sun exposure"/>
+    <properties key="description" value="Having too much sun exposure"/>
+  </entities>
+  <entities type="RiskFactor" id="drinking-too-much-alcohol" mention="Drinking too much alcohol" confidence="0.9" sourceSpanStart="3923" sourceSpanEnd="3948">
+    <properties key="name" value="alcohol consumption"/>
+    <properties key="description" value="Drinking too much alcohol"/>
+  </entities>
+  <entities type="RiskFactor" id="not-getting-enough-physical-activity" mention="Not getting enough physical activity" confidence="0.9" sourceSpanStart="3950" sourceSpanEnd="3986">
+    <properties key="name" value="physical inactivity"/>
+    <properties key="description" value="Not getting enough physical activity"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking-and-tobacco-use" mention="Smoking and tobacco use" confidence="0.95" sourceSpanStart="3868" sourceSpanEnd="3891" chunkIndex="1">
+    <properties key="name" value="smoking and tobacco use"/>
+    <properties key="description" value="Smoking and tobacco use"/>
+  </entities>
+  <entities type="RiskFactor" id="too-much-sun-exposure" mention="Having too much sun exposure" confidence="0.95" sourceSpanStart="3893" sourceSpanEnd="3921" chunkIndex="1">
+    <properties key="name" value="too much sun exposure"/>
+    <properties key="description" value="Having too much sun exposure"/>
+  </entities>
+  <entities type="RiskFactor" id="drinking-too-much-alcohol" mention="Drinking too much alcohol" confidence="0.95" sourceSpanStart="3923" sourceSpanEnd="3948" chunkIndex="1">
+    <properties key="name" value="drinking too much alcohol"/>
+    <properties key="description" value="Drinking too much alcohol"/>
+  </entities>
+  <entities type="RiskFactor" id="not-getting-enough-physical-activity" mention="Not getting enough physical activity" confidence="0.95" sourceSpanStart="3950" sourceSpanEnd="3986" chunkIndex="1">
+    <properties key="name" value="not getting enough physical activity"/>
+    <properties key="description" value="Not getting enough physical activity"/>
+  </entities>
+  <entities type="RiskFactor" id="having-obesity" mention="Having obesity" confidence="0.95" sourceSpanStart="3988" sourceSpanEnd="4002" chunkIndex="1">
+    <properties key="name" value="having obesity"/>
+    <properties key="description" value="Having obesity"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="exposure-to-ultraviolet-rays" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Other factors that may affect your risk of developing cancer can include:&#10;&#10;Exposure to ultraviolet (UV) rays from the sun" sourceSpanStart="1910" sourceSpanEnd="2031"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="smoking" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Other factors that may affect your risk of developing cancer can include:&#10;&#10;Exposure to ultraviolet (UV) rays from the sun&#10;&#10;Smoking" sourceSpanStart="1910" sourceSpanEnd="2040"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="diet" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Other factors that may affect your risk of developing cancer can include:&#10;&#10;Exposure to ultraviolet (UV) rays from the sun&#10;&#10;Smoking&#10;&#10;Your diet" sourceSpanStart="1910" sourceSpanEnd="2051"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="physical-inactivity" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Other factors that may affect your risk of developing cancer can include:&#10;&#10;Exposure to ultraviolet (UV) rays from the sun&#10;&#10;Smoking&#10;&#10;Your diet&#10;&#10;Physical inactivity" sourceSpanStart="1910" sourceSpanEnd="2072"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="smoking" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use" sourceSpanStart="3825" sourceSpanEnd="3891"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="tobacco-use" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use" sourceSpanStart="3825" sourceSpanEnd="3891"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="sun-exposure" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use&#10;&#10;Having too much sun exposure" sourceSpanStart="3825" sourceSpanEnd="3921"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="drinking-too-much-alcohol" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use&#10;&#10;Having too much sun exposure&#10;&#10;Drinking too much alcohol" sourceSpanStart="3825" sourceSpanEnd="3948"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="not-getting-enough-physical-activity" targetType="Condition" targetId="cancer" confidence="0.9" evidence="Avoid or reduce lifestyle habits such as:&#10;&#10;Smoking and tobacco use&#10;&#10;Having too much sun exposure&#10;&#10;Drinking too much alcohol&#10;&#10;Not getting enough physical activity" sourceSpanStart="3825" sourceSpanEnd="3986"/>
+</raw:RawExtractionResult>

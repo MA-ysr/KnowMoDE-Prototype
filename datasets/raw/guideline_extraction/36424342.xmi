@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36424342.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36424342/" sourceSha256="6d7100e53215736fd1fd868efceb86ecdff54fd7f61709860b2b48d91fb5b2c5" sourceText="# PubMed 36424342: Recommendations for the diagnosis and treatment of hypoglycaemia after bariatric surgery.&#10;&#10;Endocrinologia, diabetes y nutricion (2022), doi:10.1016/j.endien.2021.09.005&#10;&#10;Postprandial hyperinsulinaemic hypoglycaemia is a common complication of bariatric surgery. Although in general its evolution is mild and self-limited, it can lead to neuroglycopaenia and compromise the patient's safety and quality of life. The aim of this document is to offer some recommendations to facilitate the clinical care of these complex patients, reviewing the aetiopathogenesis, its diagnosis and treatment that, sequentially, will include dietary and pharmacological measures and surgery in refractory cases. In the absence of high-quality studies, the diagnostic and therapeutic approach proposed is based on the consensus of experts of the Grupo de Obesidad de la Sociedad Española de Endocrinología y Nutrición [Obesity Group of the Spanish Society of Endocrinology and Nutrition], GOSEEN. Those undergoing bariatric surgery should be informed of the possibility of developing this complication.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:59:14+00:00" xmi:version="2.0">
+  <chunks charEnd="1101"/>
+  <entities type="Condition" id="postprandial-hyperinsulinaemic-hypoglycaemia" mention="Postprandial hyperinsulinaemic hypoglycaemia" confidence="0.95" sourceSpanStart="189" sourceSpanEnd="233">
+    <properties key="name" value="postprandial hyperinsulinaemic hypoglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="bariatric-surgery" mention="bariatric surgery" confidence="0.9" sourceSpanStart="262" sourceSpanEnd="279">
+    <properties key="name" value="bariatric surgery"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="Condition" id="neuroglycopaenia" mention="neuroglycopaenia" confidence="0.9" sourceSpanStart="356" sourceSpanEnd="372">
+    <properties key="name" value="neuroglycopaenia"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Recommendation" id="inform-bariatric-surgery-patients" mention="Those undergoing bariatric surgery should be informed of the possibility of developing this complication." confidence="0.9" sourceSpanStart="995" sourceSpanEnd="1100">
+    <properties key="statement" value="Those undergoing bariatric surgery should be informed of the possibility of developing postprandial hyperinsulinaemic hypoglycaemia."/>
+    <properties key="source" value="Grupo de Obesidad de la Sociedad Espanola de Endocrinologia y Nutricion"/>
+  </entities>
+  <entities type="RiskFactor" id="patient-education" mention="informed" confidence="0.8" sourceSpanStart="1040" sourceSpanEnd="1048">
+    <properties key="name" value="patient education"/>
+    <properties key="description" value="informed of the possibility of developing this complication"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="inform-bariatric-surgery-patients" targetType="Condition" targetId="bariatric-surgery" confidence="0.9" evidence="Those undergoing bariatric surgery should be informed of the possibility of developing this complication." sourceSpanStart="995" sourceSpanEnd="1100"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="inform-bariatric-surgery-patients" targetType="RiskFactor" targetId="patient-education" confidence="0.85" evidence="Those undergoing bariatric surgery should be informed of the possibility of developing this complication." sourceSpanStart="995" sourceSpanEnd="1100"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,23 @@
+# PubMed 25437404: Neighborhood socioeconomic disadvantage and 30-day rehospitalization: a retrospective cohort study.
+
+Annals of internal medicine (2014), doi:10.7326/M13-2946
+
+BACKGROUND: Measures of socioeconomic disadvantage may enable improved targeting of programs to prevent rehospitalizations, but obtaining such information directly from patients can be difficult. Measures of U.S. neighborhood socioeconomic disadvantage are more readily available but are rarely used clinically.
+
+OBJECTIVE: To evaluate the association between neighborhood socioeconomic disadvantage at the census block group level, as measured by the Singh validated area deprivation index (ADI), and 30-day rehospitalization.
+
+DESIGN: Retrospective cohort study.
+
+SETTING: United States.
+
+PATIENTS: Random 5% national sample of Medicare patients discharged with congestive heart failure, pneumonia, or myocardial infarction between 2004 and 2009 (n = 255,744).
+
+MEASUREMENTS: Medicare data were linked to 2000 census data to construct an ADI for each patient's census block group, which were then sorted into percentiles by increasing ADI. Relationships between neighborhood ADI grouping and 30-day rehospitalization were evaluated using multivariate logistic regression models, controlling for patient sociodemographic characteristics, comorbid conditions and severity, and index hospital characteristics.
+
+RESULTS: The 30-day rehospitalization rate did not vary significantly across the least disadvantaged 85% of neighborhoods, which had an average rehospitalization rate of 21%. However, within the most disadvantaged 15% of neighborhoods, rehospitalization rates increased from 22% to 27% with worsening ADI. This relationship persisted after full adjustment, with the most disadvantaged neighborhoods having a rehospitalization risk (adjusted risk ratio, 1.09 [95% CI, 1.05 to 1.12]) similar to that of chronic pulmonary disease (adjusted risk ratio, 1.06 [CI, 1.04 to 1.08]) and greater than that of uncomplicated diabetes (adjusted risk ratio, 0.95 [CI, 0.94 to 0.97]).
+
+LIMITATION: No direct markers of care quality or access.
+
+CONCLUSION: Residence within a disadvantaged U.S. neighborhood is a rehospitalization predictor of magnitude similar to chronic pulmonary disease. Measures of neighborhood disadvantage, such as the ADI, could potentially be used to inform policy and care after hospital discharge.
+
+PRIMARY FUNDING SOURCE: National Institute on Aging and University of Wisconsin School of Medicine and Public Health's Institute for Clinical and Translational Research and Health Innovation Program.

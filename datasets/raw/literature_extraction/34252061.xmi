@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34252061.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34252061/" sourceSha256="bd6f1dc17000c9ee846f41dc328880c5a18fdfc9c6a469f16c67d1abc3e30a2b" sourceText="# PubMed 34252061: Targeting zero preventable trauma readmissions.&#10;&#10;The journal of trauma and acute care surgery (2021), doi:10.1097/TA.0000000000003351&#10;&#10;BACKGROUND: Nearly 1-in-10 trauma patients in the United States are readmitted within 30 days of discharge, with a median hospital cost of more than $8,000 per readmission. There are national efforts to reduce readmissions in trauma care, but we do not yet understand which are potentially preventable. Our study aims to quantify the potentially preventable readmissions (PPRs) in trauma care to serve as the anchor point for ongoing efforts to curb hospital readmissions and ultimately, bring preventable readmissions to zero.&#10;&#10;METHODS: We identified inpatient hospitalizations after trauma and readmissions within 90 days in the 2017 National Readmissions Database (NRD). Potentially preventable readmissions were defined as the Agency for Healthcare Research and Quality-defined Ambulatory Care Sensitive Conditions, in addition to superficial surgical site infection, acute kidney injury/acute renal failure, and aspiration pneumonitis. Mean costs for these admissions were calculated using the NRD. A multivariable logistic regression model was used to characterize the relationship between patient characteristics and PPR.&#10;&#10;RESULTS: A total of 1,320,083 patients were admitted for trauma care in the 2017 NRD, and 137,854 (10.4%) were readmitted within 90 days of discharge. Of these readmissions, 22.7% were potentially preventable. The mean cost was $10,001/PPR, resulting in $313,802,278 in cost to the US health care system. Of readmitted trauma patients younger than 65 years, Medicaid or Medicare patients had 2.7-fold increased odds of PPRs compared with privately insured patients. Patients of any age with congestive heart failure had 2.9 times increased odds of PPR, those with chronic obstructive pulmonary disease or complicated diabetes mellitus had 1.8 times increased odds, and those with chronic kidney disease had 1.7 times increased odds. Furthermore, as the days from discharge increased, the proportion of readmissions due to PPRs increased.&#10;&#10;CONCLUSION: One-in-five trauma readmissions are potentially preventable, which account for more than $300 million annually in health care costs. Improved access to postdischarge ambulatory care may be key to minimizing PPRs, especially for those with certain comorbidities.&#10;&#10;LEVEL OF EVIDENCE: Economic and value-based evaluations, level II.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:42:04+00:00" xmi:version="2.0">
+  <chunks charEnd="2465"/>
+  <entities type="ClinicalOutcome" id="readmitted-within-30-days" mention="readmitted within 30 days" confidence="0.95" sourceSpanStart="222" sourceSpanEnd="247">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmitted-within-90-days" mention="readmitted within 90 days" confidence="0.95" sourceSpanStart="1395" sourceSpanEnd="1420">
+    <properties key="name" value="hospital readmission within 90 days"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1775" sourceSpanEnd="1799">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="chronic obstructive pulmonary disease" confidence="0.95" sourceSpanStart="1848" sourceSpanEnd="1885">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="complicated-diabetes-mellitus" mention="complicated diabetes mellitus" confidence="0.95" sourceSpanStart="1889" sourceSpanEnd="1918">
+    <properties key="name" value="complicated diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1964" sourceSpanEnd="1986">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="pprs" mention="PPR" confidence="0.9" sourceSpanStart="2106" sourceSpanEnd="2109">
+    <properties key="name" value="potentially preventable readmission"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="congestive-heart-failure" targetType="ClinicalOutcome" targetId="pprs" confidence="0.95" evidence="Patients of any age with congestive heart failure had 2.9 times increased odds of PPR, those with chronic obstructive pulmonary disease or complicated diabetes mellitus had 1.8 times increased odds, and those with chronic kidney disease had 1.7 times increased odds." sourceSpanStart="1750" sourceSpanEnd="2016"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-obstructive-pulmonary-disease" targetType="ClinicalOutcome" targetId="pprs" confidence="0.95" evidence="Patients of any age with congestive heart failure had 2.9 times increased odds of PPR, those with chronic obstructive pulmonary disease or complicated diabetes mellitus had 1.8 times increased odds, and those with chronic kidney disease had 1.7 times increased odds." sourceSpanStart="1750" sourceSpanEnd="2016"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="complicated-diabetes-mellitus" targetType="ClinicalOutcome" targetId="pprs" confidence="0.95" evidence="Patients of any age with congestive heart failure had 2.9 times increased odds of PPR, those with chronic obstructive pulmonary disease or complicated diabetes mellitus had 1.8 times increased odds, and those with chronic kidney disease had 1.7 times increased odds." sourceSpanStart="1750" sourceSpanEnd="2016"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="pprs" confidence="0.95" evidence="Patients of any age with congestive heart failure had 2.9 times increased odds of PPR, those with chronic obstructive pulmonary disease or complicated diabetes mellitus had 1.8 times increased odds, and those with chronic kidney disease had 1.7 times increased odds." sourceSpanStart="1750" sourceSpanEnd="2016"/>
+</raw:RawExtractionResult>

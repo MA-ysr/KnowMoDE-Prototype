@@ -1,0 +1,7 @@
+{
+  "id": "M22_actionable_pattern_without_modifiability",
+  "family": "C1",
+  "expectedConstraint": "C1_ActionablePatternFiltersModifiable",
+  "mutatedFile": "kg-schema.xmi",
+  "description": "causal_context is declared actionableOnly without filtering on the modifiability property"
+}

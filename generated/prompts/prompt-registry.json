@@ -1,0 +1,39 @@
+{
+  "generatedAt" : "2026-11-01T19:22:28.693502Z",
+  "prompts" : [ {
+    "llmModel" : "gemini/gemini-3.5-flash-lite",
+    "promptFile" : "drug_label_extraction.txt",
+    "promptHash" : "fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4",
+    "promptId" : "drug_label_extraction@fc3d922aa277",
+    "sidecar" : "drug_label_extraction.json",
+    "task" : "drug_label_extraction"
+  }, {
+    "llmModel" : "gemini/gemini-3.5-flash-lite",
+    "promptFile" : "guideline_extraction.txt",
+    "promptHash" : "9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1",
+    "promptId" : "guideline_extraction@9a20634981a4",
+    "sidecar" : "guideline_extraction.json",
+    "task" : "guideline_extraction"
+  }, {
+    "llmModel" : "gemini/gemini-3.5-flash-lite",
+    "promptFile" : "literature_extraction.txt",
+    "promptHash" : "9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb",
+    "promptId" : "literature_extraction@9b00038fb5d2",
+    "sidecar" : "literature_extraction.json",
+    "task" : "literature_extraction"
+  }, {
+    "llmModel" : "gemini/gemini-3.5-flash-lite",
+    "promptFile" : "patient_education_extraction.txt",
+    "promptHash" : "6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00",
+    "promptId" : "patient_education_extraction@6fb3bf908974",
+    "sidecar" : "patient_education_extraction.json",
+    "task" : "patient_education_extraction"
+  } ],
+  "sourceModels" : {
+    "Decision:decision-bindings.xmi" : "e2113e3aa998712187c683da2cfd67cd34a5c7fee0f7c27c537e74d7b2168fa9",
+    "Explainability:explainability.xmi" : "7e3b3f77ef3ebc17655a71f704cbdddf8b21ae20dc1ae5b6b1628b6dbcb3070b",
+    "Pipeline:extraction-pipeline.xmi" : "e9ad894c5a7f3a4d8c724f75fda08a2456fbd17601e16e0074a759a539f8b413",
+    "Policy:validation-policy.xmi" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+    "Schema:kg-schema.xmi" : "4f85cb83f677044bec61c0f50982e1f7adf4f301f9fa8641a5d81894e718fc4e"
+  }
+}

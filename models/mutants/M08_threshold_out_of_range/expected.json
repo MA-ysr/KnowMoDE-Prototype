@@ -1,0 +1,7 @@
+{
+  "id": "M08_threshold_out_of_range",
+  "family": "C3",
+  "expectedConstraint": "C3_ThresholdInRange",
+  "mutatedFile": "validation-policy.xmi",
+  "description": "confidence threshold 1.5"
+}

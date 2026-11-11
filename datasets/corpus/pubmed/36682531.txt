@@ -1,0 +1,11 @@
+# PubMed 36682531: Risk Factors for Thirty-Day Readmission Following Lumbar Surgery: A Meta-Analysis.
+
+World neurosurgery (2023), doi:10.1016/j.wneu.2023.01.051
+
+OBJECTIVE: Thirty-day readmission is one of the common complications after lumbar surgery. More 30-day readmission increases the total hospitalization, economic burden, and physical pain of patients, delays the progress of postoperative rehabilitation, and even lead to die. Therefore, it is necessary to analyze the risk factors of 30-day readmission following lumbar surgery.
+
+METHODS: We searched for all the clinical trials published from the establishment of the database to May 1, 2022 through the Cochrane Library, Web of Science, Embase, and PubMed. Data including age, American Society of Anesthesiology physical status class, preoperative hematocrit (Hct), diabetes mellitus (DM), current smoker, chronic obstructive pulmonary disease (COPD), length of hospital stay (LHS), operation time, and surgical site infection (SSI) were extracted. We used Review Manager 5.4 for data analysis.
+
+RESULTS: Six studies with 30,989 participants were eligible for this meta-analysis. The analysis revealed that there were statistically significant differences in the age (95% confidence interval [CI]: -3.35-2.90, P < 0.001), preoperative Hct (95% CI: 0.75-1.33, P < 0.001), DM (95% CI: 0.56-0.74, P < 0.001), COPD (95% CI: 0.38-0.58, P < 0.001), operation time (95% CI: -35.54-16.18, P < 0.001), LHS (95% CI: -0.54-0.50, P < 0.001), and SSI (95% CI: 0.02-0.03, P < 0.001) between no readmission and readmission groups. In terms of the American Society of Anesthesiology physical status class and current smoker, there was no significant effect on the 30-day readmission (P = 0.16 and P = 0.35 respectively).
+
+CONCLUSIONS: Age, preoperative Hct, DM, COPD, operation time, LHS, and SSI are the danger factors of 30-day readmission following lumbar surgery.

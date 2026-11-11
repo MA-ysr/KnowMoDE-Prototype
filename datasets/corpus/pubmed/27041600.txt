@@ -1,0 +1,11 @@
+# PubMed 27041600: Weight loss after bariatric surgery: a propensity score analysis.
+
+The Journal of surgical research (2016), doi:10.1016/j.jss.2016.01.041
+
+BACKGROUND: Laparoscopic vertical sleeve gastrectomy (LSG) has replaced laparoscopic Roux-en-Y gastric bypass (LRYGB) as the most commonly performed bariatric surgical procedure in the US for more than the past several years. Identifying which patients will achieve optimal outcomes remains challenging. We compared 90-d and 1-y outcomes between LSG and LRYGB patients and identified predictors of surgery type and excess body weight loss (EBWL).
+
+METHODS: Patient demographics, comorbidities, and weight loss were extracted from electronic health records of patients who underwent LRYGB (n = 270) or LSG (n = 74) from January 2010 through March 2014 at a single institution. Variables hypothesized to be associated with surgery type were included in a multivariable model to generate a propensity score for each patient. Propensity score-adjusted multivariable odds ratios (ORs) for characteristics associated with EBWL >50% were calculated.
+
+RESULTS: Overall 90-d complication rates were similar between the LRYGB and LSG cohorts. LRYGB patients had more frequent emergency department visits (27.1% versus 14.1%; P = 0.029) but similar rates of readmission (12.3% versus 8.5%; P = 0.53). Female sex, presence of gastroesophageal reflux disease, and surgeon age ≥40 were associated with a greater likelihood of undergoing LRYGB. On propensity score-adjusted multivariable analysis, lower body mass index (OR 3.00 [95% confidence interval (CI) 1.66-5.40]), absence of type 2 diabetes (OR 2.55 [95% CI 1.43-4.54]), and undergoing LRYGB (OR 5.29 [95% CI 2.52-11.09]) were associated with EBWL >50%.
+
+CONCLUSIONS: Sleeve gastrectomy patients had similar rates of complications compared with gastric bypass patients. Lower body mass index and absence of type 2 diabetes were associated with optimal weight loss. Incorporating these findings into preoperative discussions may help patients set reasonable postoperative goals.

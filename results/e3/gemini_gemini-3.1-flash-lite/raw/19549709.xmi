@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/19549709" sourceUri="https://pubmed.ncbi.nlm.nih.gov/19549709/" sourceSha256="32c9de1c0c057c4a2d9ad7418239e711f246e40cde91012f7e93ed03a4ff4520" sourceText="Efficacy of everolimus (RAD001) in patients with advanced NSCLC previously treated with chemotherapy alone or with chemotherapy and EGFR inhibitors. BACKGROUND: Treatment options are scarce in pretreated advanced non-small-cell lung cancer (NSCLC) patients. RAD001, an oral inhibitor of the mammalian target of rapamycin (mTOR), has shown phase I efficacy in NSCLC. METHODS: Stage IIIb or IV NSCLC patients, with two or fewer prior chemotherapy regimens, one platinum based (stratum 1) or both chemotherapy and epidermal growth factor receptor tyrosine kinase inhibitors (stratum 2), received RAD001 10 mg/day until progression or unacceptable toxicity. Primary objective was overall response rate (ORR). Analyses of markers associated with the mTOR pathway were carried out on archival tumor from a subgroup using immunohistochemistry (IHC) and direct mutation sequencing. RESULTS: Eighty-five patients were enrolled, 42 in stratum 1 and 43 in stratum. ORR was 4.7% (7.1% stratum 1; 2.3% stratum 2). Overall disease control rate was 47.1%. Median progression-free survivals (PFSs) were 2.6 (stratum 1) and 2.7 months (stratum 2). Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia. Pneumonitis, probably or possibly related, mainly grade 1/2, occurred in 25%. Cox regression analysis of IHC scores found that only phospho AKT (pAKT) was a significant independent predictor of worse PFS. CONCLUSIONS: RAD001 10 mg/day was well tolerated, showing modest clinical activity in pretreated NSCLC. Evaluation of RAD001 plus standard therapy for metastatic NSCLC continues." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:19+00:00" xmi:version="2.0">
+  <chunks charEnd="1607"/>
+  <entities type="Drug" id="everolimus" mention="everolimus" confidence="0.95" sourceSpanStart="12" sourceSpanEnd="22">
+    <properties key="name" value="everolimus"/>
+  </entities>
+  <entities type="Condition" id="nsclc" mention="NSCLC" confidence="0.95" sourceSpanStart="58" sourceSpanEnd="63">
+    <properties key="name" value="nsclc"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="fatigue" mention="fatigue" confidence="0.9" sourceSpanStart="1164" sourceSpanEnd="1171">
+    <properties key="name" value="fatigue"/>
+    <properties key="category" value="systemic"/>
+  </entities>
+  <entities type="Condition" id="dyspnea" mention="dyspnea" confidence="0.9" sourceSpanStart="1173" sourceSpanEnd="1180">
+    <properties key="name" value="dyspnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="stomatitis" mention="stomatitis" confidence="0.9" sourceSpanStart="1182" sourceSpanEnd="1192">
+    <properties key="name" value="stomatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.9" sourceSpanStart="1194" sourceSpanEnd="1200">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="thrombocytopenia" mention="thrombocytopenia" confidence="0.9" sourceSpanStart="1206" sourceSpanEnd="1222">
+    <properties key="name" value="thrombocytopenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="pneumonitis" mention="Pneumonitis" confidence="0.9" sourceSpanStart="1224" sourceSpanEnd="1235">
+    <properties key="name" value="pneumonitis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="nsclc" confidence="0.9" evidence="Efficacy of everolimus (RAD001) in patients with advanced NSCLC previously treated with chemotherapy alone or with chemotherapy and EGFR inhibitors." sourceSpanStart="0" sourceSpanEnd="148"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="fatigue" confidence="0.85" evidence="Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia." sourceSpanStart="1131" sourceSpanEnd="1223"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="dyspnea" confidence="0.85" evidence="Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia." sourceSpanStart="1131" sourceSpanEnd="1223"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="stomatitis" confidence="0.85" evidence="Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia." sourceSpanStart="1131" sourceSpanEnd="1223"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="anemia" confidence="0.85" evidence="Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia." sourceSpanStart="1131" sourceSpanEnd="1223"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="thrombocytopenia" confidence="0.85" evidence="Common &gt; or =grade 3 events were fatigue, dyspnea, stomatitis, anemia, and thrombocytopenia." sourceSpanStart="1131" sourceSpanEnd="1223"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="everolimus" targetType="Condition" targetId="pneumonitis" confidence="0.9" evidence="Pneumonitis, probably or possibly related, mainly grade 1/2, occurred in 25%." sourceSpanStart="1224" sourceSpanEnd="1301"/>
+</raw:RawExtractionResult>

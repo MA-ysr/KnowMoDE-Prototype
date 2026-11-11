@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/21136122.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/21136122/" sourceSha256="8a66bc83ad716af6e856d331729c11925b3fd9ee2af2a9d5d837ea36a6367ef8" sourceText="# PubMed 21136122: Recreational drug abuse in patients hospitalized for diabetic ketosis or diabetic ketoacidosis.&#10;&#10;Acta diabetologica (2013), doi:10.1007/s00592-010-0243-z&#10;&#10;To evaluate the association between recreational drug use and diabetic ketosis (DK) and diabetic ketoacidosis (DKA) in our area. Retrospective examination of records from a 1,450 bed urban teaching hospital in Spain. All adult admissions for DK or DKA from January 1, 2005, to December 31, 2009 in our hospital were included. Demographic, exploratory (blood pressure, heart rate, respiratory rate), and analytical data (glucose, urea, creatinine, corrected Na(+), K(+), pH, HCO3(-) and HbA1c) at admittance were recorded. In 152 patients, 253 episodes of DK or DKA occurred. Screening for drug use was performed in 40.3% of the events; 20.6% of the episodes (n = 52) were shown to be substance abuse. Cocaine, followed by cannabis and alcohol, was the most frequently involved drug. Poly-substance abuse occurred in 67.3% of them. Comorbidities were present in 11.5 and 39.8% of the cases shown and not shown to be related to drug use (P = 0.00). Seventy percent of the patients who were at least once shown to have consumed drugs, and 15.9% of those who were never shown to have done so, were admitted more than once (P = 0.00). The frequency of recent drug misuse in patients presenting with DK or DKA was high. Substance abuse screening was frequently neglected. Adverse profile, most significantly in readmission to hospital, was found in the patients with positive drug findings. History taking in this context should routinely include questions on substance abuse, and toxicology screening may be worthwhile, particularly in those with the history of frequent readmissions.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:25:57+00:00" xmi:version="2.0">
+  <chunks charEnd="1754"/>
+  <entities type="RiskFactor" id="recreational-drug-use" mention="recreational drug use" confidence="0.95" sourceSpanStart="210" sourceSpanEnd="231">
+    <properties key="name" value="recreational drug use"/>
+    <properties key="description" value="use of recreational drugs"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketosis" mention="diabetic ketosis" confidence="0.95" sourceSpanStart="236" sourceSpanEnd="252">
+    <properties key="name" value="diabetic ketosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="262" sourceSpanEnd="283">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="readmission to hospital" confidence="0.95" sourceSpanStart="1479" sourceSpanEnd="1502">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="recreational-drug-use" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Adverse profile, most significantly in readmission to hospital, was found in the patients with positive drug findings." sourceSpanStart="1440" sourceSpanEnd="1558"/>
+</raw:RawExtractionResult>

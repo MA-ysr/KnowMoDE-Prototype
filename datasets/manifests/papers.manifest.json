@@ -1,0 +1,17 @@
+{
+  "dataset": "papers",
+  "updatedAt": "2026-11-01T18:54:46+00:00",
+  "fileCount": 1,
+  "files": {
+    "strack2014.txt": {
+      "uri": "https://doi.org/10.1155/2014/781670",
+      "licence": "CC BY 3.0",
+      "collection": "corpus/papers",
+      "title": "Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records",
+      "retrievedAt": "2026-10-15T11:06:56+00:00",
+      "sha256": "b4bd8c90a5b1777a7ce059cb4e0044e95518c82dc11ca10b75be7ea768b7e104",
+      "bytes": 22480,
+      "pmcid": "PMC3996476"
+    }
+  }
+}

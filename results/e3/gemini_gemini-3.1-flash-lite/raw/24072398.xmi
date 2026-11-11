@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/24072398" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24072398/" sourceSha256="a8b0862cdfafa0714a7a0417a0569b1a5dce65dbaef6732d3542e9e80d1a33ac" sourceText="A single neurotoxic dose of methamphetamine induces a long-lasting depressive-like behaviour in mice. Methamphetamine (METH) triggers a disruption of the monoaminergic system and METH abuse leads to negative emotional states including depressive symptoms during drug withdrawal. However, it is currently unknown if the acute toxic dosage of METH also causes a long-lasting depressive phenotype and persistent monoaminergic deficits. Thus, we now assessed the depressive-like behaviour in mice at early and long-term periods following a single high METH dose (30 mg/kg, i.p.). METH did not alter the motor function and procedural memory of mice as assessed by swimming speed and escape latency to find the platform in a cued version of the water maze task. However, METH significantly increased the immobility time in the tail suspension test at 3 and 49 days post-administration. This depressive-like profile induced by METH was accompanied by a marked depletion of frontostriatal dopaminergic and serotonergic neurotransmission, indicated by a reduction in the levels of dopamine, DOPAC and HVA, tyrosine hydroxylase and serotonin, observed at both 3 and 49 days post-administration. In parallel, another neurochemical feature of depression--astroglial dysfunction--was unaffected in the cortex and the striatal levels of the astrocytic protein marker, glial fibrillary acidic protein, were only transiently increased at 3 days. These findings demonstrate for the first time that a single high dose of METH induces long-lasting depressive-like behaviour in mice associated with a persistent disruption of frontostriatal dopaminergic and serotonergic homoeostasis." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:55:57+00:00" xmi:version="2.0">
+  <chunks charEnd="1664"/>
+  <entities type="Drug" id="methamphetamine" mention="methamphetamine" confidence="1.0" sourceSpanStart="28" sourceSpanEnd="43">
+    <properties key="name" value="methamphetamine"/>
+  </entities>
+  <entities type="Condition" id="depressive-like-behaviour" mention="depressive-like behaviour" confidence="0.95" sourceSpanStart="67" sourceSpanEnd="92">
+    <properties key="name" value="depressive-like behaviour"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="depressive-symptoms" mention="depressive symptoms" confidence="0.95" sourceSpanStart="235" sourceSpanEnd="254">
+    <properties key="name" value="depressive symptoms"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="depression" mention="depression" confidence="0.95" sourceSpanStart="1231" sourceSpanEnd="1241">
+    <properties key="name" value="depression"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methamphetamine" targetType="Condition" targetId="depressive-like-behaviour" confidence="1.0" evidence="A single neurotoxic dose of methamphetamine induces a long-lasting depressive-like behaviour in mice." sourceSpanStart="0" sourceSpanEnd="101"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methamphetamine" targetType="Condition" targetId="depressive-symptoms" confidence="0.95" evidence="Methamphetamine (METH) triggers a disruption of the monoaminergic system and METH abuse leads to negative emotional states including depressive symptoms during drug withdrawal." sourceSpanStart="102" sourceSpanEnd="278"/>
+</raw:RawExtractionResult>

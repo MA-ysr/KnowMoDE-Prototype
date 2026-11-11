@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/38598574.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/38598574/" sourceSha256="8f72fba14671bc4ae1d2138b11724c7e955fc25e230c91b2a85de0fd30a02576" sourceText="# PubMed 38598574: Pragmatic Trial of Hospitalization Rate in Chronic Kidney Disease.&#10;&#10;The New England journal of medicine (2024), doi:10.1056/NEJMoa2311708&#10;&#10;BACKGROUND: Despite the availability of effective therapies for patients with chronic kidney disease, type 2 diabetes, and hypertension (the kidney-dysfunction triad), the results of large-scale trials examining the implementation of guideline-directed therapy to reduce the risk of death and complications in this population are lacking.&#10;&#10;METHODS: In this open-label, cluster-randomized trial, we assigned 11,182 patients with the kidney-dysfunction triad who were being treated at 141 primary care clinics either to receive an intervention that used a personalized algorithm (based on the patient's electronic health record [EHR]) to identify patients and practice facilitators to assist providers in delivering guideline-based interventions or to receive usual care. The primary outcome was hospitalization for any cause at 1 year. Secondary outcomes included emergency department visits, readmissions, cardiovascular events, dialysis, and death.&#10;&#10;RESULTS: We assigned 71 practices (enrolling 5690 patients) to the intervention group and 70 practices (enrolling 5492 patients) to the usual-care group. The hospitalization rate at 1 year was 20.7% (95% confidence interval [CI], 19.7 to 21.8) in the intervention group and 21.1% (95% CI, 20.1 to 22.2) in the usual-care group (between-group difference, 0.4 percentage points; P = 0.58). The risks of emergency department visits, readmissions, cardiovascular events, dialysis, or death from any cause were similar in the two groups. The risk of adverse events was also similar in the trial groups, except for acute kidney injury, which was observed in more patients in the intervention group (12.7% vs. 11.3%).&#10;&#10;CONCLUSIONS: In this pragmatic trial involving patients with the triad of chronic kidney disease, type 2 diabetes, and hypertension, the use of an EHR-based algorithm and practice facilitators embedded in primary care clinics did not translate into reduced hospitalization at 1 year. (Funded by the National Institutes of Health and others; ICD-Pieces ClinicalTrials.gov number, NCT02587936.).&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:43:57+00:00" xmi:version="2.0">
+  <chunks charEnd="2215"/>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="1.0" sourceSpanStart="62" sourceSpanEnd="84">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="1.0" sourceSpanStart="260" sourceSpanEnd="275">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="1.0" sourceSpanStart="281" sourceSpanEnd="293">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="ehr-based-algorithm-and-practice-facilitators" mention="EHR-based algorithm and practice facilitators" confidence="0.95" sourceSpanStart="1968" sourceSpanEnd="2013">
+    <properties key="name" value="ehr-based algorithm and practice facilitators"/>
+    <properties key="description" value="intervention using a personalized algorithm based on the patient's electronic health record and practice facilitators to assist providers"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospitalization-at-1-year" mention="hospitalization at 1 year" confidence="0.95" sourceSpanStart="2078" sourceSpanEnd="2103">
+    <properties key="name" value="hospitalization at 1 year"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="Condition" id="acute-kidney-injury" mention="acute kidney injury" confidence="1.0" sourceSpanStart="1718" sourceSpanEnd="1737">
+    <properties key="name" value="acute kidney injury"/>
+    <properties key="icd9Range" value="584"/>
+    <properties key="category" value="renal"/>
+  </entities>
+</raw:RawExtractionResult>

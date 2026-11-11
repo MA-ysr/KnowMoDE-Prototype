@@ -1,0 +1,11 @@
+# PubMed 30878296: Risk factors for readmission of inpatients with diabetes: A systematic review.
+
+Journal of diabetes and its complications (2019), doi:10.1016/j.jdiacomp.2019.01.004
+
+AIM: We have limited understanding of which risk factors contribute to increased readmission rates amongst people discharged from hospital with diabetes. We aim to complete the first review of its kind, to identify, in a systematic way, known risk factors for hospital readmission amongst people with diabetes, in order to better understand this costly complication.
+
+METHOD: The review was prospectively registered in the PROSPERO database. Risk factors were identified through systematic review of literature in PubMed, EMBASE & SCOPUS databases, performed independently by two authors prior to data extraction, with quality assessment and semi-quantitative synthesis according to PRISMA guidelines.
+
+RESULTS: Eighty-three studies were selected for inclusion, predominantly from the United States, and utilising retrospective analysis of local or regional data sets. 76 distinct statistically significant risk factors were identified across 48 studies. The most commonly identified risk factors were; co-morbidity burden, age, race and insurance type. Few studies conducted power calculations; unstandardized effect sizes were calculated for the majority of statistically significant risk factors.
+
+CONCLUSION: This review is important in assessing the current state of the literature and in supporting development of interventions to reduce readmission risk. Furthermore, it provides an important foundation for development of rigorous, pre-specified risk prediction models.

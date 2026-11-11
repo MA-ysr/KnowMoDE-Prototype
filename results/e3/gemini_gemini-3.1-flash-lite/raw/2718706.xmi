@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/2718706" sourceUri="https://pubmed.ncbi.nlm.nih.gov/2718706/" sourceSha256="a234888e9ae0e48288b2efd8b8209bf4dd410716dd620e307f391b7f9b0c2969" sourceText="Deliberate hypotension induced by labetalol with halothane, enflurane or isoflurane for middle-ear surgery. The feasibility of using labetalol, an alpha- and beta-adrenergic blocking agent, as a hypotensive agent in combination with inhalation anaesthetics (halothane, enflurane or isoflurane) was studied in 23 adult patients undergoing middle-ear surgery. The mean arterial pressure was decreased from 86 +/- 5 (s.e. mean) mmHg to 52 +/- 1 mmHg (11.5 +/- 0.7 to 6.9 +/- 0.1 kPa) for 98 +/- 10 min in the halothane (H) group, from 79 +/- 5 to 53 +/- 1 mmHg (10.5 +/- 0.7 to 7.1 +/- 0.1 kPa) for 129 +/- 11 min in the enflurane (E) group, and from 80 +/- 4 to 49 +/- 1 mmHg (10.7 +/- 0.5 to 6.5 +/- 0.1 kPa) for 135 +/- 15 min in the isoflurane (I) group. The mean H concentration during hypotension in the inspiratory gas was 0.7 +/- 0.1 vol%, the mean E concentration 1.6 +/- 0.2 vol%, and the mean I concentration 1.0 +/- 0.1 vol%. In addition, the patients received fentanyl and d-tubocurarine. The initial dose of labetalol for lowering blood pressure was similar, 0.52-0.59 mg/kg, in all the groups. During hypotension, the heart rate was stable without tachy- or bradycardia. The operating conditions regarding bleeding were estimated in a double-blind manner, and did not differ significantly between the groups. During hypotension, the serum creatinine concentration rose significantly in all groups from the values before hypotension and returned postoperatively to the initial level in the other groups, except the isoflurane group. After hypotension there was no rebound phenomenon in either blood pressure or heart rate. These results indicate that labetalol induces easily adjustable hypotension without compensatory tachycardia and rebound hypertension." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:27+00:00" xmi:version="2.0">
+  <chunks charEnd="1768"/>
+  <entities type="Drug" id="labetalol" mention="labetalol" confidence="0.99" sourceSpanStart="34" sourceSpanEnd="43">
+    <properties key="name" value="labetalol"/>
+  </entities>
+  <entities type="Drug" id="halothane" mention="halothane" confidence="0.99" sourceSpanStart="49" sourceSpanEnd="58">
+    <properties key="name" value="halothane"/>
+  </entities>
+  <entities type="Drug" id="enflurane" mention="enflurane" confidence="0.99" sourceSpanStart="60" sourceSpanEnd="69">
+    <properties key="name" value="enflurane"/>
+  </entities>
+  <entities type="Drug" id="isoflurane" mention="isoflurane" confidence="0.99" sourceSpanStart="73" sourceSpanEnd="83">
+    <properties key="name" value="isoflurane"/>
+  </entities>
+  <entities type="Drug" id="fentanyl" mention="fentanyl" confidence="0.99" sourceSpanStart="970" sourceSpanEnd="978">
+    <properties key="name" value="fentanyl"/>
+  </entities>
+  <entities type="Drug" id="d-tubocurarine" mention="d-tubocurarine" confidence="0.99" sourceSpanStart="983" sourceSpanEnd="997">
+    <properties key="name" value="d-tubocurarine"/>
+  </entities>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="labetalol" targetType="Drug" targetId="halothane" confidence="0.95" evidence="The feasibility of using labetalol, an alpha- and beta-adrenergic blocking agent, as a hypotensive agent in combination with inhalation anaesthetics (halothane, enflurane or isoflurane) was studied in 23 adult patients undergoing middle-ear surgery." sourceSpanStart="108" sourceSpanEnd="357"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="labetalol" targetType="Drug" targetId="enflurane" confidence="0.95" evidence="The feasibility of using labetalol, an alpha- and beta-adrenergic blocking agent, as a hypotensive agent in combination with inhalation anaesthetics (halothane, enflurane or isoflurane) was studied in 23 adult patients undergoing middle-ear surgery." sourceSpanStart="108" sourceSpanEnd="357"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="labetalol" targetType="Drug" targetId="isoflurane" confidence="0.95" evidence="The feasibility of using labetalol, an alpha- and beta-adrenergic blocking agent, as a hypotensive agent in combination with inhalation anaesthetics (halothane, enflurane or isoflurane) was studied in 23 adult patients undergoing middle-ear surgery." sourceSpanStart="108" sourceSpanEnd="357"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,7 @@
+{
+  "id": "M19_configs_disagree_on_schema",
+  "family": "C5",
+  "expectedConstraint": "C5_AllConfigsShareOneSchema",
+  "mutatedFile": "validation-policy.xmi",
+  "description": "validation policy points to a different schema file"
+}

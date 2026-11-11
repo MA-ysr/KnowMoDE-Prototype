@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25712258.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25712258/" sourceSha256="a7cc665e3848f009fd72ad0315357b1d0069f5ab270f73b0713e14927f338b15" sourceText="# PubMed 25712258: Hospital readmission of patients with diabetes.&#10;&#10;Current diabetes reports (2015), doi:10.1007/s11892-015-0584-7&#10;&#10;Hospital readmission is a high-priority health care quality measure and target for cost reduction. Despite broad interest in readmission, relatively little research has focused on patients with diabetes. The burden of diabetes among hospitalized patients, however, is substantial, growing, and costly, and readmissions contribute a significant portion of this burden. Reducing readmission rates of diabetic patients has the potential to greatly reduce health care costs while simultaneously improving care. Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization. Hospitalized patients with diabetes may be at higher risk of readmission than those without diabetes. Potential ways to reduce readmission risk are inpatient education, specialty care, better discharge instructions, coordination of care, and post-discharge support. More studies are needed to test the effect of these interventions on the readmission rates of patients with diabetes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:53+00:00" xmi:version="2.0">
+  <chunks charEnd="1246"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="57" sourceSpanEnd="65">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="Hospital readmission" confidence="0.95" sourceSpanStart="132" sourceSpanEnd="152">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="lower-socioeconomic-status" mention="lower socioeconomic status" confidence="0.95" sourceSpanStart="695" sourceSpanEnd="721">
+    <properties key="name" value="lower socioeconomic status"/>
+    <properties key="description" value="lower socioeconomic status"/>
+  </entities>
+  <entities type="RiskFactor" id="racial-ethnic-minority" mention="racial/ethnic minority" confidence="0.95" sourceSpanStart="723" sourceSpanEnd="745">
+    <properties key="name" value="racial/ethnic minority"/>
+    <properties key="description" value="racial/ethnic minority"/>
+  </entities>
+  <entities type="RiskFactor" id="comorbidity-burden" mention="comorbidity burden" confidence="0.95" sourceSpanStart="747" sourceSpanEnd="765">
+    <properties key="name" value="comorbidity burden"/>
+    <properties key="description" value="comorbidity burden"/>
+  </entities>
+  <entities type="RiskFactor" id="public-insurance" mention="public insurance" confidence="0.95" sourceSpanStart="767" sourceSpanEnd="783">
+    <properties key="name" value="public insurance"/>
+    <properties key="description" value="public insurance"/>
+  </entities>
+  <entities type="RiskFactor" id="emergent-or-urgent-admission" mention="emergent or urgent admission" confidence="0.95" sourceSpanStart="785" sourceSpanEnd="813">
+    <properties key="name" value="emergent or urgent admission"/>
+    <properties key="description" value="emergent or urgent admission"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-recent-prior-hospitalization" mention="history of recent prior hospitalization" confidence="0.95" sourceSpanStart="821" sourceSpanEnd="860">
+    <properties key="name" value="history of recent prior hospitalization"/>
+    <properties key="description" value="history of recent prior hospitalization"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lower-socioeconomic-status" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="racial-ethnic-minority" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="comorbidity-burden" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="public-insurance" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="emergent-or-urgent-admission" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-recent-prior-hospitalization" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Risk factors for readmission in this population include lower socioeconomic status, racial/ethnic minority, comorbidity burden, public insurance, emergent or urgent admission, and a history of recent prior hospitalization." sourceSpanStart="639" sourceSpanEnd="861"/>
+</raw:RawExtractionResult>

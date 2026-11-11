@@ -1,0 +1,11 @@
+# PubMed 31830980: Implementation of machine learning algorithms to create diabetic patient re-admission profiles.
+
+BMC medical informatics and decision making (2019), doi:10.1186/s12911-019-0990-x
+
+BACKGROUND: Machine learning is a branch of Artificial Intelligence that is concerned with the design and development of algorithms, and it enables today's computers to have the property of learning. Machine learning is gradually growing and becoming a critical approach in many domains such as health, education, and business.
+
+METHODS: In this paper, we applied machine learning to the diabetes dataset with the aim of recognizing patterns and combinations of factors that characterizes or explain re-admission among diabetes patients. The classifiers used include Linear Discriminant Analysis, Random Forest, k-Nearest Neighbor, Naïve Bayes, J48 and Support vector machine.
+
+RESULTS: Of the 100,000 cases, 78,363 were diabetic and over 47% were readmitted.Based on the classes that models produced, diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c.
+
+CONCLUSION: Diabetic patients who do not undergo vigorous lab assessments, diagnosis, medications are more likely to be readmitted when discharged without improvements and without receiving insulin administration, especially if they are women, Caucasians, or both.

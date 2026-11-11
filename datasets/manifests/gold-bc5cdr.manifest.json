@@ -1,0 +1,18 @@
+{
+  "dataset": "bc5cdr",
+  "updatedAt": "2026-10-20T10:50:02+00:00",
+  "fileCount": 1,
+  "files": {
+    "bc5cdr.jsonl": {
+      "uri": "https://github.com/JHnlp/BioCreative-V-CDR-Corpus/raw/master/CDR_Data.zip",
+      "licence": "BioCreative V CDR corpus; free for research use (see corpus licence)",
+      "collection": "gold/bc5cdr",
+      "title": "BioCreative V CDR corpus (PubTator), parsed to JSONL",
+      "retrievedAt": "2026-10-20T10:50:02+00:00",
+      "sha256": "4b2ab4b2b7624441cb54062cc387fb3ed8fb0ed1b814be2e27a83602fdeb6c72",
+      "bytes": 4997056,
+      "documents": 1500,
+      "relations": 3116
+    }
+  }
+}

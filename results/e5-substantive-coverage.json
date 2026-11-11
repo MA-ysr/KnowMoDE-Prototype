@@ -1,0 +1,134 @@
+{
+  "serviceModels": {
+    "Decision:decision-bindings.xmi": "e2113e3aa998712187c683da2cfd67cd34a5c7fee0f7c27c537e74d7b2168fa9",
+    "Explainability:explainability.xmi": "7e3b3f77ef3ebc17655a71f704cbdddf8b21ae20dc1ae5b6b1628b6dbcb3070b",
+    "Pipeline:extraction-pipeline.xmi": "e9ad894c5a7f3a4d8c724f75fda08a2456fbd17601e16e0074a759a539f8b413",
+    "Policy:validation-policy.xmi": "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+    "Schema:kg-schema.xmi": "4f85cb83f677044bec61c0f50982e1f7adf4f301f9fa8641a5d81894e718fc4e"
+  },
+  "records": 1574,
+  "perAudienceAndType": [
+    {
+      "audience": "auditor",
+      "explanationType": "AttributionReport",
+      "category": "FEATURE_ATTRIBUTION",
+      "total": 200,
+      "withFacts": 199,
+      "withoutFacts": 1
+    },
+    {
+      "audience": "auditor",
+      "explanationType": "GuidelineCompliance",
+      "category": "RULE_BASED",
+      "total": 200,
+      "withFacts": 92,
+      "withoutFacts": 108
+    },
+    {
+      "audience": "clinician",
+      "explanationType": "AttributionReport",
+      "category": "FEATURE_ATTRIBUTION",
+      "total": 200,
+      "withFacts": 199,
+      "withoutFacts": 1
+    },
+    {
+      "audience": "clinician",
+      "explanationType": "CausalEvidence",
+      "category": "CAUSAL",
+      "total": 200,
+      "withFacts": 199,
+      "withoutFacts": 1
+    },
+    {
+      "audience": "clinician",
+      "explanationType": "ModifiableFactors",
+      "category": "COUNTERFACTUAL",
+      "total": 58,
+      "withFacts": 58,
+      "withoutFacts": 0
+    },
+    {
+      "audience": "patient",
+      "explanationType": "ModifiableFactors",
+      "category": "COUNTERFACTUAL",
+      "total": 58,
+      "withFacts": 58,
+      "withoutFacts": 0
+    },
+    {
+      "audience": "patient",
+      "explanationType": "PlainLanguageContrast",
+      "category": "CONTRASTIVE",
+      "total": 200,
+      "withFacts": 199,
+      "withoutFacts": 1
+    },
+    {
+      "audience": "quality_officer",
+      "explanationType": "CausalEvidence",
+      "category": "CAUSAL",
+      "total": 200,
+      "withFacts": 199,
+      "withoutFacts": 1
+    },
+    {
+      "audience": "quality_officer",
+      "explanationType": "GuidelineCompliance",
+      "category": "RULE_BASED",
+      "total": 200,
+      "withFacts": 92,
+      "withoutFacts": 108
+    },
+    {
+      "audience": "quality_officer",
+      "explanationType": "ModifiableFactors",
+      "category": "COUNTERFACTUAL",
+      "total": 58,
+      "withFacts": 58,
+      "withoutFacts": 0
+    }
+  ],
+  "ruleBased": {
+    "GuidelineCompliance": {
+      "explanations": 400,
+      "nonEmpty": 184,
+      "share": 0.46,
+      "withActiveCondition": 394
+    }
+  },
+  "counterfactualDistinctTexts": {
+    "ModifiableFactors": {
+      "clinician": {
+        "explanations": 58,
+        "distinctTexts": 36,
+        "distinctFactSets": 3,
+        "distinctDecisions": 58
+      },
+      "patient": {
+        "explanations": 58,
+        "distinctTexts": 8,
+        "distinctFactSets": 6,
+        "distinctDecisions": 58
+      },
+      "quality_officer": {
+        "explanations": 58,
+        "distinctTexts": 34,
+        "distinctFactSets": 5,
+        "distinctDecisions": 58
+      }
+    }
+  },
+  "counterfactualNonModifiable": {
+    "explanationsWithNonModifiableFact": 0,
+    "nonModifiableEntityMentions": 0,
+    "factsWithoutActionEntity": 0,
+    "entitiesChecked": 14
+  },
+  "attributionNoneWhileFactsExist": {
+    "pairedDecisions": 200,
+    "factorRows": 1764,
+    "noneWhileAnotherAudienceListsFacts": 0,
+    "noneWhileFactsAvailable": 0
+  }
+}

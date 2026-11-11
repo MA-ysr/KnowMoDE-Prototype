@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/birth-weight.txt" sourceUri="https://medlineplus.gov/birthweight.html" sourceSha256="0dfb6563dc5d13c8938ae5500bb037aaf5ec667909cd4756176044202d306017" sourceText="# MedlinePlus health topic: Birth Weight&#10;&#10;Also called: Large for Gestational Age, Low Birth Weight, Small for Gestational Age&#10;&#10;What is birth weight?Birth weight is the first weight of your baby, taken just after being born. A low birth weight means that the baby is less than 5 pounds, 8 ounces. A high birth weight means that the baby is more than 8 pounds, 13 ounces.&#10;&#10;What can cause low birth weight?A baby with a low birth weight can be born too small, too early (premature), or both. This can happen for many different reasons. They include:&#10;&#10;Health problems in the pregnant parent&#10;&#10;Taking certain medicines during pregnancy&#10;&#10;Substance use during pregnancy&#10;&#10;Infections during pregnancy&#10;&#10;Being pregnant with multiple babies&#10;&#10;Problems with the placenta, the organ that brings oxygen and nutrients to the baby&#10;&#10;Having small parents&#10;&#10;Genetic conditions in the baby&#10;&#10;Birth defects&#10;&#10;What problems can low birth weight cause?Babies with low birth weight may be more at risk of certain health problems. They include immediate problems, such as:&#10;&#10;Breathing problems&#10;&#10;Infections&#10;&#10;Hypoglycemia (low blood sugar)&#10;&#10;Jaundice&#10;&#10;Trouble keeping warm&#10;&#10;There is also a higher risk of longer-term problems, including:&#10;&#10;Delayed motor and social development&#10;&#10;Learning disabilities&#10;&#10;Certain health conditions as an adult, such as heart disease, high blood pressure, diabetes, and obesity&#10;&#10;What can cause high birth weight?Causes of high birth weight can include:&#10;&#10;Having big parents&#10;&#10;Diabetes in the pregnant parent&#10;&#10;Certain genetic conditions&#10;&#10;Too much weight gain during pregnancy&#10;&#10;What problems can high birth weight cause?High birth weight can be a concern because it can make delivery of the baby difficult and raise the risk of birth injuries. The baby is at higher risk of problems with:&#10;&#10;Blood sugar&#10;&#10;Breathing problems&#10;&#10;Jaundice&#10;&#10;Can birth weight problems be prevented?You may be able to prevent some birth weight problems by:&#10;&#10;Getting regular checkups during pregnancy&#10;&#10;Getting the right amount of nutrition and calories during pregnancy&#10;&#10;Controlling your blood sugar if you have diabetes&#10;&#10;Avoiding substance use during pregnancy&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:18:42+00:00" xmi:version="2.0">
+  <chunks charEnd="2122"/>
+  <entities type="Condition" id="low-birth-weight" mention="Low Birth Weight" confidence="0.95" sourceSpanStart="82" sourceSpanEnd="98">
+    <properties key="name" value="low birth weight"/>
+    <properties key="category" value="neonatal"/>
+  </entities>
+  <entities type="LabTest" id="low-birth-weight-value" mention="less than 5 pounds, 8 ounces" confidence="0.95" sourceSpanStart="266" sourceSpanEnd="294">
+    <properties key="name" value="birth weight &lt; 5 pounds 8 ounces"/>
+    <properties key="abnormalThreshold" value="&lt; 5 pounds, 8 ounces"/>
+  </entities>
+  <entities type="LabTest" id="high-birth-weight-value" mention="more than 8 pounds, 13 ounces" confidence="0.95" sourceSpanStart="339" sourceSpanEnd="368">
+    <properties key="name" value="birth weight &gt; 8 pounds 13 ounces"/>
+    <properties key="abnormalThreshold" value="&gt; 8 pounds, 13 ounces"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="1075" sourceSpanEnd="1087">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="1312" sourceSpanEnd="1325">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="1327" sourceSpanEnd="1346">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1348" sourceSpanEnd="1356">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1362" sourceSpanEnd="1369">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

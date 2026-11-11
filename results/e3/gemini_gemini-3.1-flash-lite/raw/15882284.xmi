@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/15882284" sourceUri="https://pubmed.ncbi.nlm.nih.gov/15882284/" sourceSha256="5ff7af0da84cf263eed5404c5b55e069e6038c23e30d4d46041e794bd7ba95db" sourceText="Case-control study of regular analgesic and nonsteroidal anti-inflammatory use and end-stage renal disease. BACKGROUND: Studies on the association between the long-term use of aspirin and other analgesic and nonsteroidal anti-inflammatory drugs (NSAIDs) and end-stage renal disease (ESRD) have given conflicting results. In order to examine this association, a case-control study with incident cases of ESRD was carried out. METHODS: The cases were all patients entering the local dialysis program because of ESRD in the study area between June 1, 1995 and November 30, 1997. They were classified according to the underlying disease, which had presumably led them to ESRD. Controls were patients admitted to the same hospitals from where the cases arose, also matched by age and sex. Odds ratios were calculated using a conditional logistic model, including potential confounding factors, both for the whole study population and for the various underlying diseases. RESULTS: Five hundred and eighty-three cases and 1190 controls were included in the analysis. Long-term use of any analgesic was associated with an overall odds ratio of 1.22 (95% CI, 0.89-1.66). For specific groups of drugs, the risks were 1.56 (1.05-2.30) for aspirin, 1.03 (0.60-1.76) for pyrazolones, 0.80 (0.39-1.63) for paracetamol, and 0.94 (0.57-1.56) for nonaspirin NSAIDs. The risk of ESRD associated with aspirin was related to the cumulated dose and duration of use, and it was particularly high among the subset of patients with vascular nephropathy as underlying disease [2.35 (1.17-4.72)]. CONCLUSION: Our data indicate that long-term use of nonaspirin analgesic drugs and NSAIDs is not associated with an increased risk of ESRD. However, the chronic use of aspirin may increase the risk of ESRD." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:38+00:00" xmi:version="2.0">
+  <chunks charEnd="1777"/>
+  <entities type="Drug" id="aspirin" mention="aspirin" confidence="0.99" sourceSpanStart="176" sourceSpanEnd="183">
+    <properties key="name" value="aspirin"/>
+  </entities>
+  <entities type="DrugClass" id="pyrazolones" mention="pyrazolones" confidence="0.95" sourceSpanStart="1258" sourceSpanEnd="1269">
+    <properties key="name" value="pyrazolones"/>
+  </entities>
+  <entities type="Drug" id="paracetamol" mention="paracetamol" confidence="0.99" sourceSpanStart="1292" sourceSpanEnd="1303">
+    <properties key="name" value="paracetamol"/>
+  </entities>
+  <entities type="DrugClass" id="nonaspirin-nsaids" mention="nonaspirin NSAIDs" confidence="0.95" sourceSpanStart="1330" sourceSpanEnd="1347">
+    <properties key="name" value="nonaspirin nsaids"/>
+  </entities>
+  <entities type="Condition" id="end-stage-renal-disease" mention="end-stage renal disease" confidence="0.98" sourceSpanStart="83" sourceSpanEnd="106">
+    <properties key="name" value="end-stage renal disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="vascular-nephropathy" mention="vascular nephropathy" confidence="0.95" sourceSpanStart="1508" sourceSpanEnd="1528">
+    <properties key="name" value="vascular nephropathy"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="aspirin" targetType="Condition" targetId="end-stage-renal-disease" confidence="0.95" evidence="However, the chronic use of aspirin may increase the risk of ESRD." sourceSpanStart="1711" sourceSpanEnd="1777"/>
+</raw:RawExtractionResult>

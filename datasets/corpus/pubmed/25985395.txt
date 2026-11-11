@@ -1,0 +1,11 @@
+# PubMed 25985395: Impact of a comprehensive pharmacist medication-therapy management service.
+
+Journal of medical economics (2015), doi:10.3111/13696998.2015.1052463
+
+OBJECTIVE: This proof of concept study aimed to determine whether a pharmacist-managed medication therapy management (MTM) program in a private endocrinologist physician's practice reduced healthcare services utilization and related costs 6 months after patients' discharge from an institution with a transition of care service.
+
+METHODS: Patients were included in the study if they were English-speaking, ages >18 years, had type 1 or 2 diabetes, and had a recent transition of care experience (inpatient hospital stay or emergency department/urgent care/paramedic or other acute care visit). The study had a non-randomized design where intervention patients, enrolled July 1, 2012-September 30, 2013, were administered MTM at four visits over 6 months and were compared to historical control patients with available electronic medical records from August 8, 2008 to March 15, 2012. The primary study end-point was the rate of 30-day hospital readmissions, as related to the reason for the index admission. Secondary end-points included the cumulative rate of all-cause hospitalizations, emergency department, paramedic and urgent care visits at 30, 60, 90, and 180 days post-discharge as well as imputed total costs, including prescription medication costs, at 180 days. Propensity score weights were constructed to balance covariate characteristics between the intervention and control groups. Weighted multivariate negative binomial and generalized linear regressions were used to model cumulative utilization rates and log-transformed costs, respectively.
+
+RESULTS: The intervention (n = 28) and control (n = 73) groups had 0% hospital readmissions at 30 days post-discharge. In propensity score weighted multivariate analyses, cumulative utilization rate was not different between the two groups (IRR = 1.61, p = 0.72 at 180 days) while costs in the intervention group were lower but not statistically different (cost ratio = 0.65, p = 0.13 at 180 days).
+
+CONCLUSIONS: Further studies should investigate whether the integration of pharmacists in transition of care models could reduce readmission and healthcare utilization rates post-discharge.

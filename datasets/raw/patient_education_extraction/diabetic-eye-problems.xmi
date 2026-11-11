@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetic-eye-problems.txt" sourceUri="https://medlineplus.gov/diabeticeyeproblems.html" sourceSha256="e83fa1456042c0e8d07f39f5843c2b093b04a82f31bebac28d4ecfad0bb83801" sourceText="# MedlinePlus health topic: Diabetic Eye Problems&#10;&#10;Also called: Diabetic Retinopathy&#10;&#10;What is diabetes?Diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose comes from foods you eat. The cells of your body need glucose for energy. A hormone called insulin helps the glucose get into your cells.&#10;&#10;With type 1 diabetes, your body doesn't make insulin. With type 2 diabetes, your body doesn't make or use insulin well. Without enough insulin, glucose builds up in your blood and causes high blood glucose levels.&#10;&#10;What eye problems can diabetes cause?Over time, high blood glucose may damage the blood vessels and lenses in your eyes. This can lead to serious diabetic eye problems which can harm your vision and sometimes cause blindness. Some common diabetic eye problems include:&#10;&#10;Diabetic retinopathy, which is the leading cause of blindness in American adults. It affects blood vessels in the retina (the light-sensitive layer of tissue in the back of your eye). The blood vessels may swell and leak fluid into your eye. If it's not treated, it can cause serious problems such as vision loss and retinal detachment, where the retina is pulled away from its normal position at the back of your eye.&#10;&#10;Diabetic macular edema (DME), which happens when blood vessels in the retina leak fluid into the macula (the part of the retina needed for sharp, central vision). This usually develops in people who already have other signs of diabetic retinopathy.&#10;&#10;Glaucoma, a group of eye diseases that can damage the optic nerve (the bundle of nerves that connects the eye to the brain). Glaucoma from diabetes happens when the blood vessels in the front of your eye are damaged, and new blood vessels grow near the iris (the colored part of your eye). The blood vessels block the space where fluid drains from your eye. This causes fluid to build up and pressure to increase inside your eye.&#10;&#10;Cataract, which is the leading cause of blindness worldwide. It happens when the clear lens in the front of your eye becomes cloudy. Cataracts are common as people age. But people with diabetes are more likely to develop cataracts younger and faster than people without diabetes. Researchers think that high glucose levels cause deposits to build up in the lenses of your eyes.&#10;&#10;Who is more likely to develop diabetic eye problems?Anyone with diabetes can develop diabetic eye disease. But your risk of developing it is higher if you have diabetes and:&#10;&#10;Have had diabetes for a long time&#10;&#10;Don't have good control over your high blood glucose or high blood pressure&#10;&#10;Are pregnant&#10;&#10;Have high blood cholesterol&#10;&#10;Smoke tobacco&#10;&#10;What are the symptoms of diabetic eye problems?In the early stages, diabetic eye problems usually don't have any symptoms. That's why regular dilated eye exams are so important, even if you think your eyes are healthy.&#10;&#10;You should also watch for sudden changes in your vision that could be signs of an emergency. Call your eye care professional right away if you notice any of these symptoms:&#10;&#10;Many new spots or dark wavy strings floating in your vision (floaters)&#10;&#10;Flashes of light&#10;&#10;A dark shadow over part of your vision, like a curtain&#10;&#10;Vision loss&#10;&#10;Eye pain or redness&#10;&#10;Talk with your eye care professional if you have these symptoms, even if they come and go:&#10;&#10;Spots or dark wavy strings floating in your vision&#10;&#10;Blurry or wavy vision&#10;&#10;Vision that changes a lot&#10;&#10;Trouble seeing colors&#10;&#10;How are diabetic eye problems diagnosed?Eye care professionals do dilated eye exams to diagnose eye problems. A dilated eye exam uses eye drops to open your pupils wide so your eye care professional can look for signs of eye problems and treat them before they harm your vision. They will also test your vision and measure the pressure in your eyes.&#10;&#10;What are the treatments for diabetic eye problems?Treatment for diabetic eye problems depends on the problem and how serious it is. Some of the treatments include:&#10;&#10;Lasers to stop blood vessels from leaking&#10;&#10;Injections (shots) in the eye to stop new, leaky blood vessels from growing&#10;&#10;Surgery to remove blood and scar tissue or replace a cloudy lens&#10;&#10;Eye drops to lower fluid pressure in the eye&#10;&#10;But these treatments aren't cures. Eye problems can come back. That's why your best defense against serious vision loss is to take control of your diabetes and get regular eye exams. It's also important to keep your blood pressure and cholesterol in a healthy range.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:20:48+00:00" xmi:version="2.0">
+  <chunks charEnd="3996"/>
+  <chunks index="1" charStart="3790" charEnd="4525"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="94" sourceSpanEnd="102">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="high-blood-glucose" mention="high blood glucose" confidence="0.95" sourceSpanStart="525" sourceSpanEnd="543">
+    <properties key="name" value="high blood glucose"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.95" sourceSpanStart="343" sourceSpanEnd="358">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="397" sourceSpanEnd="412">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="290" sourceSpanEnd="297">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="diabetic-eye-problems" mention="diabetic eye problems" confidence="0.95" sourceSpanStart="699" sourceSpanEnd="720">
+    <properties key="name" value="diabetic eye problems"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="blindness" mention="blindness" confidence="0.95" sourceSpanStart="768" sourceSpanEnd="777">
+    <properties key="name" value="blindness"/>
+  </entities>
+  <entities type="Condition" id="diabetic-retinopathy" mention="Diabetic retinopathy" confidence="0.98" sourceSpanStart="823" sourceSpanEnd="843">
+    <properties key="name" value="diabetic retinopathy"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="vision-loss" mention="vision loss" confidence="0.95" sourceSpanStart="1124" sourceSpanEnd="1135">
+    <properties key="name" value="vision loss"/>
+  </entities>
+  <entities type="Condition" id="retinal-detachment" mention="retinal detachment" confidence="0.95" sourceSpanStart="1140" sourceSpanEnd="1158">
+    <properties key="name" value="retinal detachment"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-macular-edema" mention="Diabetic macular edema (DME)" confidence="0.95" sourceSpanStart="1243" sourceSpanEnd="1271">
+    <properties key="name" value="diabetic macular edema"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="glaucoma" mention="Glaucoma" confidence="0.95" sourceSpanStart="1493" sourceSpanEnd="1501">
+    <properties key="name" value="glaucoma"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="cataract" mention="Cataract" confidence="0.95" sourceSpanStart="1924" sourceSpanEnd="1932">
+    <properties key="name" value="cataract"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="RiskFactor" id="long-duration-diabetes" mention="Have had diabetes for a long time" confidence="0.9" sourceSpanStart="2478" sourceSpanEnd="2511">
+    <properties key="name" value="long duration of diabetes"/>
+    <properties key="description" value="have had diabetes for a long time"/>
+  </entities>
+  <entities type="RiskFactor" id="poor-glycemic-control" mention="Don't have good control over your high blood glucose or high blood pressure" confidence="0.9" sourceSpanStart="2513" sourceSpanEnd="2588">
+    <properties key="name" value="poor glycemic control"/>
+    <properties key="description" value="don't have good control over your high blood glucose or high blood pressure"/>
+  </entities>
+  <entities type="RiskFactor" id="pregnancy" mention="Are pregnant" confidence="0.9" sourceSpanStart="2590" sourceSpanEnd="2602">
+    <properties key="name" value="pregnancy"/>
+    <properties key="description" value="are pregnant"/>
+  </entities>
+  <entities type="RiskFactor" id="high-blood-cholesterol" mention="Have high blood cholesterol" confidence="0.9" sourceSpanStart="2604" sourceSpanEnd="2631">
+    <properties key="name" value="high blood cholesterol"/>
+    <properties key="description" value="have high blood cholesterol"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="Smoke tobacco" confidence="0.9" sourceSpanStart="2633" sourceSpanEnd="2646">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="smoke tobacco"/>
+  </entities>
+  <entities type="Condition" id="diabetic-eye-problems" mention="diabetic eye problems" confidence="0.95" sourceSpanStart="3818" sourceSpanEnd="3839" chunkIndex="1">
+    <properties key="name" value="diabetic eye problems"/>
+    <properties key="category" value="ophthalmological"/>
+  </entities>
+  <entities type="Condition" id="vision-loss" mention="vision loss" confidence="0.9" sourceSpanStart="4295" sourceSpanEnd="4306" chunkIndex="1">
+    <properties key="name" value="vision loss"/>
+    <properties key="category" value="ophthalmological"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="4334" sourceSpanEnd="4342" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="take-control-of-diabetes" mention="take control of your diabetes" confidence="0.9" sourceSpanStart="4313" sourceSpanEnd="4342" chunkIndex="1">
+    <properties key="statement" value="take control of your diabetes"/>
+    <properties key="source" value="National Institute of Diabetes and Digestive and Kidney Diseases"/>
+  </entities>
+  <entities type="Recommendation" id="regular-eye-exams" mention="get regular eye exams" confidence="0.9" sourceSpanStart="4347" sourceSpanEnd="4368" chunkIndex="1">
+    <properties key="statement" value="get regular eye exams"/>
+    <properties key="source" value="National Institute of Diabetes and Digestive and Kidney Diseases"/>
+  </entities>
+  <entities type="Recommendation" id="keep-blood-pressure-and-cholesterol-healthy" mention="keep your blood pressure and cholesterol in a healthy range" confidence="0.9" sourceSpanStart="4393" sourceSpanEnd="4452" chunkIndex="1">
+    <properties key="statement" value="keep your blood pressure and cholesterol in a healthy range"/>
+    <properties key="source" value="National Institute of Diabetes and Digestive and Kidney Diseases"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetic-eye-problems" targetType="ClinicalOutcome" targetId="blindness" confidence="0.9" evidence="This can lead to serious diabetic eye problems which can harm your vision and sometimes cause blindness." sourceSpanStart="674" sourceSpanEnd="778"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetic-retinopathy" targetType="ClinicalOutcome" targetId="vision-loss" confidence="0.9" evidence="If it's not treated, it can cause serious problems such as vision loss and retinal detachment, where the retina is pulled away from its normal position at the back of your eye." sourceSpanStart="1065" sourceSpanEnd="1241"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetic-retinopathy" targetType="Condition" targetId="retinal-detachment" confidence="0.9" evidence="If it's not treated, it can cause serious problems such as vision loss and retinal detachment, where the retina is pulled away from its normal position at the back of your eye." sourceSpanStart="1065" sourceSpanEnd="1241"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="long-duration-diabetes" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.9" evidence="But your risk of developing it is higher if you have diabetes and: Have had diabetes for a long time" sourceSpanStart="2296" sourceSpanEnd="2354"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="poor-glycemic-control" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.9" evidence="But your risk of developing it is higher if you have diabetes and: Don't have good control over your high blood glucose or high blood pressure" sourceSpanStart="2296" sourceSpanEnd="2435"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="pregnancy" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.9" evidence="But your risk of developing it is higher if you have diabetes and: Are pregnant" sourceSpanStart="2296" sourceSpanEnd="2453"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="high-blood-cholesterol" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.9" evidence="But your risk of developing it is higher if you have diabetes and: Have high blood cholesterol" sourceSpanStart="2296" sourceSpanEnd="2486"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="smoking" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.9" evidence="But your risk of developing it is higher if you have diabetes and: Smoke tobacco" sourceSpanStart="2296" sourceSpanEnd="2505"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="take-control-of-diabetes" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.85" evidence="That's why your best defense against serious vision loss is to take control of your diabetes and get regular eye exams." sourceSpanStart="4250" sourceSpanEnd="4369" chunkIndex="1"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="regular-eye-exams" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.85" evidence="That's why your best defense against serious vision loss is to take control of your diabetes and get regular eye exams." sourceSpanStart="4250" sourceSpanEnd="4369" chunkIndex="1"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="keep-blood-pressure-and-cholesterol-healthy" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.85" evidence="It's also important to keep your blood pressure and cholesterol in a healthy range." sourceSpanStart="4370" sourceSpanEnd="4453" chunkIndex="1"/>
+</raw:RawExtractionResult>

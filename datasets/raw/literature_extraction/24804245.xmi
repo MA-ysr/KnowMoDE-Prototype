@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/24804245.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24804245/" sourceSha256="b240461ab00642d4ddfa43b36fe16d43cdf64da2fb0cb8061b6b267e892d2df2" sourceText="# PubMed 24804245: Impact of HbA1c measurement on hospital readmission rates: analysis of 70,000 clinical database patient records.&#10;&#10;BioMed research international (2014), doi:10.1155/2014/781670&#10;&#10;Management of hyperglycemia in hospitalized patients has a significant bearing on outcome, in terms of both morbidity and mortality. However, there are few national assessments of diabetes care during hospitalization which could serve as a baseline for change. This analysis of a large clinical database (74 million unique encounters corresponding to 17 million unique patients) was undertaken to provide such an assessment and to find future directions which might lead to improvements in patient safety. Almost 70,000 inpatient diabetes encounters were identified with sufficient detail for analysis. Multivariable logistic regression was used to fit the relationship between the measurement of HbA1c and early readmission while controlling for covariates such as demographics, severity and type of the disease, and type of admission. Results show that the measurement of HbA1c was performed infrequently (18.4%) in the inpatient setting. The statistical model suggests that the relationship between the probability of readmission and the HbA1c measurement depends on the primary diagnosis. The data suggest further that the greater attention to diabetes reflected in HbA1c determination may improve patient outcomes and lower cost of inpatient care.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:04+00:00" xmi:version="2.0">
+  <chunks charEnd="1449"/>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="210" sourceSpanEnd="223">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="376" sourceSpanEnd="384">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="measurement-of-hba1c" mention="measurement of HbA1c" confidence="0.9" sourceSpanStart="878" sourceSpanEnd="898">
+    <properties key="name" value="hba1c measurement"/>
+    <properties key="description" value="Measurement of HbA1c during hospitalization"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="early-readmission" mention="early readmission" confidence="0.9" sourceSpanStart="903" sourceSpanEnd="920">
+    <properties key="name" value="early readmission"/>
+  </entities>
+</raw:RawExtractionResult>

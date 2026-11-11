@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/35945801.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/35945801/" sourceSha256="6f74d5c99b115acc7fbd7123afcef9ade9a1a6cf3a902e3503a83e7900f4a8d7" sourceText="# PubMed 35945801: Management of hospitalized patients with mild to moderate diabetic ketoacidosis using a continuous insulin infusion protocol on a medical surgical ward and observation level of care: A retrospective cohort study.&#10;&#10;Medicine (2022), doi:10.1097/MD.0000000000029665&#10;&#10;Although the practice of using rapid-acting subcutaneous insulin for the management of mild-to-moderate diabetic ketoacidosis is becoming increasingly popular, the continuous insulin infusion remains widely utilized, and its real-world applicability and safety on a medical surgical unit (Med Surg) and observation level of care are unclear. We assessed whether a continuous insulin infusion protocol for mild-to-moderate diabetic ketoacidosis on Med Surg/observation level of care over a 6.5-year period was associated with adverse outcomes. A retrospective cohort study of adults hospitalized with mild-to-moderate diabetic ketoacidosis was conducted at 2 community hospitals in Northern California, USA, from January 2014 to May 2020. Demographic and clinical variables were collected using an electronic health record. Admission to Med Surg/observation was compared to intensive care unit admission for the outcomes of 30-day readmission, presence of hypoglycemia, rate of hypoglycemic episodes, in-hospital and 30-day mortality, and length of stay using bivariate analysis. Among 227 hospital encounters (mean age 41 years, 52.9% women, 79.3% type 1 diabetes, 97.4% utilization of continuous insulin infusion), 19.4% were readmitted within 30 days, and 20.7% developed hypoglycemia. For Med Surg/observation encounters compared to the intensive care unit, there were no statistically significant differences in the risk of readmission (RR 1.48, 95% CI, 0.86-2.52), hypoglycemia (RR 1.17, 95% CI, 0.70-1.95), or increased length of stay (RR 0.71, 95% CI, 0.55-1.02); there was a lower risk of hypoglycemic events during hospitalization (RR 0.69, 95% CI, 0.54-0.96). Continuous insulin infusion utilization may be a safe option for treatment of mild-to-moderate diabetic ketoacidosis on Med Surg/observation level of care. Further investigation is needed.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:46:43+00:00" xmi:version="2.0">
+  <chunks charEnd="2142"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="77" sourceSpanEnd="98">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="continuous insulin infusion" confidence="0.95" sourceSpanStart="107" sourceSpanEnd="134">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="30-day readmission" confidence="0.95" sourceSpanStart="1206" sourceSpanEnd="1224">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="1238" sourceSpanEnd="1250">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

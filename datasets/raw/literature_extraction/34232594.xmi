@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34232594.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34232594/" sourceSha256="f4405ebf7903ea16cdff1fcdb45c00772e7ef8fd0fa401c1cc499242cb33be96" sourceText="# PubMed 34232594: Type 2 Diabetes Medication and Cardiovascular Benefits.&#10;&#10;South Dakota medicine : the journal of the South Dakota State Medical Association (2021)&#10;&#10;Diabetes mellitus remains one of the most common and disabling diseases in the world. Patients with diabetes tend to have more cardiovascular complications, regardless of their prior cardiac history. Tight glycemic control has been shown to prevent microvascular complications as it relates to nephropathy and retinopathy; however, it hasn't been proven beneficial in patients with macrovascular diseases, i.e., cardiovascular disease. In fact, two groups of diabetic medications, dual peroxisome-proliferator-activated receptor - agonists and sulfonylurea, are known to worsen cardiovascular disease. Patients using this group of medications have shown increased heart failure readmission rates and increased risk for cardiovascular death. Insulin and Metformin have been the gold standard treatment for diabetes management to prevent worsening cardiac outcomes, and now a newer class of medications have demonstrated similar results. These drug classes includes sodium glucose cotransporter 2(SGLT 2) inhibitors, dipeptidyl peptidase-4 (DPP-4) inhibitors, and glucagon like peptide-1 (GLP 1) analogues.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:55+00:00" xmi:version="2.0">
+  <chunks charEnd="1271"/>
+  <entities type="Drug" id="sulfonylurea" mention="sulfonylurea" confidence="0.95" sourceSpanStart="710" sourceSpanEnd="722">
+    <properties key="name" value="sulfonylurea"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-disease" mention="cardiovascular disease" confidence="0.95" sourceSpanStart="744" sourceSpanEnd="766">
+    <properties key="name" value="cardiovascular disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="heart-failure-readmission-rates" mention="heart failure readmission rates" confidence="0.95" sourceSpanStart="830" sourceSpanEnd="861">
+    <properties key="name" value="heart failure readmission rates"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="907" sourceSpanEnd="914">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.95" sourceSpanStart="919" sourceSpanEnd="928">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="worsening-cardiac-outcomes" mention="worsening cardiac outcomes" confidence="0.95" sourceSpanStart="1002" sourceSpanEnd="1028">
+    <properties key="name" value="worsening cardiac outcomes"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sulfonylurea" targetType="Condition" targetId="cardiovascular-disease" confidence="0.9" evidence="In fact, two groups of diabetic medications, dual peroxisome-proliferator-activated receptor - agonists and sulfonylurea, are known to worsen cardiovascular disease." sourceSpanStart="602" sourceSpanEnd="767"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="sulfonylurea" targetType="ClinicalOutcome" targetId="heart-failure-readmission-rates" confidence="0.9" evidence="Patients using this group of medications have shown increased heart failure readmission rates and increased risk for cardiovascular death." sourceSpanStart="768" sourceSpanEnd="906"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="insulin" targetType="ClinicalOutcome" targetId="worsening-cardiac-outcomes" confidence="0.9" evidence="Insulin and Metformin have been the gold standard treatment for diabetes management to prevent worsening cardiac outcomes, and now a newer class of medications have demonstrated similar results." sourceSpanStart="907" sourceSpanEnd="1101"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="metformin" targetType="ClinicalOutcome" targetId="worsening-cardiac-outcomes" confidence="0.9" evidence="Insulin and Metformin have been the gold standard treatment for diabetes management to prevent worsening cardiac outcomes, and now a newer class of medications have demonstrated similar results." sourceSpanStart="907" sourceSpanEnd="1101"/>
+</raw:RawExtractionResult>

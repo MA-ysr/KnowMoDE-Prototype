@@ -1,0 +1,11 @@
+# PubMed 31365631: Recurrent diabetic ketoacidosis.
+
+Archives of endocrinology and metabolism (2019), doi:10.20945/2359-3997000000158
+
+OBJECTIVE: The purpose of this study is to examine risk factors for recurrence of diabetic ketoacidosis and determine interventions to prevent future admissions.
+
+MATERIALS AND METHODS: Review article.
+
+RESULTS: Recurrent diabetic ketoacidosis is a serious and not uncommon health problem. Diabetic ketoacidosis is associated with severe morbidity and mortality and hospital admissions due to this problem constitute a serious economic burden on the healthcare system. Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis. In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients.
+
+CONCLUSIONS: Identifying high-risk patients during the first diabetic ketoacidosis admission and performing relevant interventions (repeated instructions of insulin use, social help and involvement of family members in medical treatment, collaboration with the patient's primary care physician in order to establish a close and frequent follow up program) may help prevent future admissions. Further studies need to take place to determine whether early interventions with those factors prevent future admissions.

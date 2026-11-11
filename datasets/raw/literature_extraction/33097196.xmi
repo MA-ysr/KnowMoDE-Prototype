@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33097196.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33097196/" sourceSha256="6eb3796a708552a92ab0e2e41282d38329ebdd1f9f6599f308da330133b1f2bf" sourceText="# PubMed 33097196: Diabetic Foot Infection and Select Comorbidities Drive Readmissions in Outpatient Parenteral Antimicrobial Therapy.&#10;&#10;The American journal of the medical sciences (2021), doi:10.1016/j.amjms.2020.08.027&#10;&#10;BACKGROUND: Outpatient parenteral antimicrobial therapy (OPAT) facilitates early patient discharge, but readmissions prior to completion of therapy may offset its advantages. The objective of this study was to evaluate unplanned readmissions of patients undergoing OPAT at our institution and to identify risk factors. We hypothesized that host factors were most relevant.&#10;&#10;METHODS: We retrospectively identified all patients discharged to receive OPAT during 2017 who experienced at least one unplanned readmission to the hospital prior to its completion. We determined the proportion of patients readmitted, and the causes for readmission. Using a control group, we identified risk factors through multivariate logistic regression analysis.&#10;&#10;RESULTS: Out of 684 patients, 17% had an unplanned readmission while receiving OPAT. Causes included worsening infection in 18%, venous access problems in 11%, acute events unrelated to infection in 19%, treatment intolerance in 19%, progression of underlying comorbidity in 20%, and social and other problems in 13%. In multivariate analysis diabetic foot infection (OR 3.24; 95%CI 1.38-8.31; p = 0.01), the presence of chronic kidney disease, decubitus ulcer or heart failure (OR 2.65; 95% CI 1.51-4.70; p &lt; 0.001), and narcotics prescribed at discharge (OR 1.93; 95% CI 1.06-3.60; p = 0.049) were independent risk factors for readmission.&#10;&#10;CONCLUSIONS: Unplanned hospital readmissions were frequent and due to very heterogeneous causes. Diabetic foot infection, selected comorbidities, and discharge on opioids were identified as independent risk factors. In the efforts to decrease readmissions among patients receiving outpatient parenteral antimicrobial a focus on these high-risk groups is a priority.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:39:28+00:00" xmi:version="2.0">
+  <chunks charEnd="1975"/>
+  <entities type="ClinicalOutcome" id="unplanned-readmission" mention="readmission" confidence="0.95" sourceSpanStart="74" sourceSpanEnd="85">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="diabetic-foot-infection" mention="diabetic foot infection" confidence="0.95" sourceSpanStart="1309" sourceSpanEnd="1332">
+    <properties key="name" value="diabetic foot infection"/>
+    <properties key="description" value="diabetic foot infection present as a risk factor for readmission"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1387" sourceSpanEnd="1409">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="decubitus-ulcer" mention="decubitus ulcer" confidence="0.95" sourceSpanStart="1411" sourceSpanEnd="1426">
+    <properties key="name" value="decubitus ulcer"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1430" sourceSpanEnd="1443">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="narcotics-prescribed-at-discharge" mention="narcotics prescribed at discharge" confidence="0.95" sourceSpanStart="1488" sourceSpanEnd="1521">
+    <properties key="name" value="narcotics prescribed at discharge"/>
+    <properties key="description" value="narcotics prescribed at discharge"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="diabetic-foot-infection" targetType="ClinicalOutcome" targetId="unplanned-readmission" confidence="0.9" evidence="In multivariate analysis diabetic foot infection (OR 3.24; 95%CI 1.38-8.31; p = 0.01), the presence of chronic kidney disease, decubitus ulcer or heart failure (OR 2.65; 95% CI 1.51-4.70; p &lt; 0.001), and narcotics prescribed at discharge (OR 1.93; 95% CI 1.06-3.60; p = 0.049) were independent risk factors for readmission." sourceSpanStart="1284" sourceSpanEnd="1607"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="narcotics-prescribed-at-discharge" targetType="ClinicalOutcome" targetId="unplanned-readmission" confidence="0.9" evidence="In multivariate analysis diabetic foot infection (OR 3.24; 95%CI 1.38-8.31; p = 0.01), the presence of chronic kidney disease, decubitus ulcer or heart failure (OR 2.65; 95% CI 1.51-4.70; p &lt; 0.001), and narcotics prescribed at discharge (OR 1.93; 95% CI 1.06-3.60; p = 0.049) were independent risk factors for readmission." sourceSpanStart="1284" sourceSpanEnd="1607"/>
+</raw:RawExtractionResult>

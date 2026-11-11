@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33880952.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33880952/" sourceSha256="76c11829b1a8e8cff122cf1ccc9966f6e3efa3c9dd1416d895bb478e687ac511" sourceText="# PubMed 33880952: Retrospective Quality Improvement Study of Insulin-Induced Hypoglycemia and Implementation of Hospital-Wide Initiatives.&#10;&#10;Journal of diabetes science and technology (2021), doi:10.1177/19322968211008513&#10;&#10;BACKGROUND: Hospitalized patients who are receiving antihyperglycemic agents are at increased risk for hypoglycemia. Inpatient hypoglycemia may lead to increased risk for morbidity, mortality, prolonged hospitalization, and readmission within 30 days of discharge, which in turn may lead to increased costs. Hospital-wide initiatives targeting hypoglycemia are known to be beneficial; however, their impact on patient care and economic measures in community nonteaching hospitals are unknown.&#10;&#10;METHODS: This retrospective quality improvement study examined the effects of hospital-wide hypoglycemia initiatives on the rates of insulin-induced hypoglycemia in a community hospital setting from January 1, 2016, until September 30, 2019. The potential cost of care savings has been calculated.&#10;&#10;RESULTS: Among 49 315 total patient days, 2682 days had an instance of hypoglycemia (5.4%). Mean ± SD hypoglycemic patient days/month was 59.6 ± 16.0. The frequency of hypoglycemia significantly decreased from 7.5% in January 2016 to 3.9% in September 2019 (P = .001). Patients with type 2 diabetes demonstrated a significant decrease in the frequency of hypoglycemia (7.4%-3.8%; P &lt; .0001), while among patients with type 1 diabetes the frequency trended downwards but did not reach statistical significance (18.5%-18.0%; P = 0.08). Based on the reduction of hypoglycemia rates, the hospital had an estimated cost of care savings of $98 635 during the study period.&#10;&#10;CONCLUSIONS: In a community hospital setting, implementation of hospital-wide initiatives targeting hypoglycemia resulted in a significant and sustainable decrease in the rate of insulin-induced hypoglycemia. These high-leverage risk reduction strategies may be translated into considerable cost savings and could be implemented at other community hospitals.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:19+00:00" xmi:version="2.0">
+  <chunks charEnd="2043"/>
+  <entities type="Drug" id="antihyperglycemic-agents" mention="antihyperglycemic agents" confidence="0.95" sourceSpanStart="275" sourceSpanEnd="299">
+    <properties key="name" value="antihyperglycemic agents"/>
+    <properties key="drugClass" value="antihyperglycemic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="326" sourceSpanEnd="338">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="readmission within 30 days of discharge" confidence="0.96" sourceSpanStart="447" sourceSpanEnd="486">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="850" sourceSpanEnd="857">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="insulin-induced-hypoglycemia" mention="insulin-induced hypoglycemia" confidence="0.95" sourceSpanStart="850" sourceSpanEnd="878">
+    <properties key="name" value="insulin-induced hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="antihyperglycemic-agents" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Hospitalized patients who are receiving antihyperglycemic agents are at increased risk for hypoglycemia." sourceSpanStart="235" sourceSpanEnd="339"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypoglycemia" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.9" evidence="Inpatient hypoglycemia may lead to increased risk for morbidity, mortality, prolonged hospitalization, and readmission within 30 days of discharge, which in turn may lead to increased costs." sourceSpanStart="340" sourceSpanEnd="530"/>
+</raw:RawExtractionResult>

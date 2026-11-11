@@ -1,0 +1,11 @@
+# PubMed 38211728: Increased Rate of Complications Following Total Knee Arthroplasty in Patients Who Have Marfan Syndrome.
+
+The Journal of arthroplasty (2024), doi:10.1016/j.arth.2024.01.004
+
+BACKGROUND: Outcomes of Marfan syndrome (MFS) patients after total knee arthroplasty (TKA) are poorly documented in the literature. The purpose of this study was to evaluate MFS as a potential risk factor for complications after TKA.
+
+METHODS: Using a national private payer insurance database from 2010 to 2022, MFS patients undergoing primary TKA were identified and compared to 10:1 matched controls based on age, sex, obesity, diabetes mellitus, and a comorbidity index. A total of 4,092 patients undergoing primary TKA were analyzed, of which 372 had MFS. Multivariable logistic regression analyses were done for medical complications up to 90 days and surgical complications up to 2 years. 90-day emergency department-visits and inpatient readmissions were also documented.
+
+RESULTS: Compared to the matched controls, patients who have MFS displayed elevated rates of surgical complications, including prosthetic instability (1-year, odds ratio (OR) 3.88, 95% confidence interval (CI) [1.58 to 8.66]; 2-year, OR 4.39, 95% CI [2.16 to 8.44]), and revision surgery (2 year, OR 1.79, 95% CI [1.05 to 2.91]). Additionally, patients who have MFS demonstrated significant higher rates of medical complications, including aortic dissection (2.15 versus 0%) and transfusion (OR 2.63, 95% CI [1.31 to 4.90]).
+
+CONCLUSIONS: Patients who have MFS are at higher risks of postoperative complications after TKA, encompassing both medical and surgical complications. Specifically, patients who have MFS have a significantly higher likelihood of experiencing prosthetic instability and requiring revision surgery. Given these results, it is crucial for orthopedic surgeons and patients alike to consider these risks when determining a course of TKA for patients who have MFS.

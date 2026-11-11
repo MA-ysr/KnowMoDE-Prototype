@@ -1,0 +1,11 @@
+# PubMed 32147443: Searching for disease-related malnutrition using Big Data tools.
+
+Endocrinologia, diabetes y nutricion (2020), doi:10.1016/j.endinu.2019.11.009
+
+INTRODUCTION: Disease-related malnutrition (DRM) is underdiagnosed and underreported despite its well-known association with a worse prognosis. The emergence of Big Data and the application of artificial intelligence in Medicine have revolutionized the way knowledge is generated. The aim of this study is to assess whether a Big Data tool could help us detect the amount of DRM in our hospital.
+
+METHODOLOGY: This was a descriptive, retrospective study using the Savana Manager® tool, which allows for automatically analyzing and extracting the relevant clinical information contained in the free text of the electronic medical record. A search was performed using the term "malnutrition", comparing the characteristics of patients with DRM to the population of hospitalized patients between January 2012 and December 2017.
+
+RESULTS: Among the 180,279 hospitalization records with a discharge report in that period, only 4,446 episodes (2.47%) included the diagnosis of malnutrition. The mean age of patients with DRM was 75 years (SD 16), as compared to 59 years (SD 25) for the overall population. There were no sex differences (51% male). In-hospital death occurred in 7.08% of patients with DRM and 2.98% in the overall group. Mean stay was longer in patients with DRM (8 vs. 5 days, P<.0001) and there were no significant differences in the 72-hour readmission rate. The most common diagnoses associated with DRM were heart failure (35%), respiratory infection (23%), urinary infection (20%), and chronic kidney disease (15%).
+
+CONCLUSION: Underdiagnosis of DRM remains a problem. Savana Manager® helps us to better understand the profile of these patients.

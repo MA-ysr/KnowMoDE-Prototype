@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/733189" sourceUri="https://pubmed.ncbi.nlm.nih.gov/733189/" sourceSha256="d98e6f4a0a0516d02f3b2ec93df8f052706634167347eda72c77abcc2e05d3b5" sourceText="Bilateral retinal artery and choriocapillaris occlusion following the injection of long-acting corticosteroid suspensions in combination with other drugs: I. Clinical studies. Two well-documented cases of bilateral retinal artery and choriocapillaris occlusions with blindness following head and neck soft-tissue injection with methylprednisolone acetate in combination with lidocaine, epinephrine, or penicillin are reported. One case had only a unilateral injection. The acute observations included hazy sensorium, superior gaze palsy, pupillary abnormalities, and conjunctival hemorrhages with edema. Follow-up changes showed marked visual loss, constricted visual fields, optic nerve pallor, vascular attenuation, and chorioretinal atrophy. The literature is reviewed, and possible causes are discussed." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:46+00:00" xmi:version="2.0">
+  <chunks charEnd="807"/>
+  <entities type="Drug" id="methylprednisolone-acetate" mention="methylprednisolone acetate" confidence="0.95" sourceSpanStart="328" sourceSpanEnd="354">
+    <properties key="name" value="methylprednisolone acetate"/>
+  </entities>
+  <entities type="Drug" id="lidocaine" mention="lidocaine" confidence="0.95" sourceSpanStart="375" sourceSpanEnd="384">
+    <properties key="name" value="lidocaine"/>
+  </entities>
+  <entities type="Drug" id="epinephrine" mention="epinephrine" confidence="0.95" sourceSpanStart="386" sourceSpanEnd="397">
+    <properties key="name" value="epinephrine"/>
+  </entities>
+  <entities type="Drug" id="penicillin" mention="penicillin" confidence="0.95" sourceSpanStart="402" sourceSpanEnd="412">
+    <properties key="name" value="penicillin"/>
+  </entities>
+  <entities type="Condition" id="bilateral-retinal-artery-and-choriocapillaris-occlusions" mention="bilateral retinal artery and choriocapillaris occlusions" confidence="0.9" sourceSpanStart="205" sourceSpanEnd="261">
+    <properties key="name" value="bilateral retinal artery and choriocapillaris occlusions"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="blindness" mention="blindness" confidence="0.9" sourceSpanStart="267" sourceSpanEnd="276">
+    <properties key="name" value="blindness"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methylprednisolone-acetate" targetType="Condition" targetId="bilateral-retinal-artery-and-choriocapillaris-occlusions" confidence="0.85" evidence="Two well-documented cases of bilateral retinal artery and choriocapillaris occlusions with blindness following head and neck soft-tissue injection with methylprednisolone acetate in combination with lidocaine, epinephrine, or penicillin are reported." sourceSpanStart="176" sourceSpanEnd="426"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methylprednisolone-acetate" targetType="Condition" targetId="blindness" confidence="0.85" evidence="Two well-documented cases of bilateral retinal artery and choriocapillaris occlusions with blindness following head and neck soft-tissue injection with methylprednisolone acetate in combination with lidocaine, epinephrine, or penicillin are reported." sourceSpanStart="176" sourceSpanEnd="426"/>
+</raw:RawExtractionResult>

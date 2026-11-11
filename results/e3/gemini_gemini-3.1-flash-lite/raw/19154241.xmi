@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/19154241" sourceUri="https://pubmed.ncbi.nlm.nih.gov/19154241/" sourceSha256="be9c84af326da06b8db6bcbd10bfd8cd58bd28f83f63c6dad52b310135e11445" sourceText="Long-term lithium therapy leading to hyperparathyroidism: a case report. PURPOSE: This paper reviews the effect of chronic lithium therapy on serum calcium level and parathyroid glands, its pathogenesis, and treatment options. We examined the case of a lithium-treated patient who had recurrent hypercalcemia to better understand the disease process. CONCLUSION: Primary hyperparathyroidism is a rare but potentially life-threatening side effect of long-term lithium therapy. Careful patient selection and long-term follow-up can reduce morbidity. PRACTICAL IMPLICATIONS: As much as 15% of lithium-treated patients become hypercalcemic. By routinely monitoring serum calcium levels, healthcare providers can improve the quality of life of this patient group." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:08+00:00" xmi:version="2.0">
+  <chunks charEnd="758"/>
+  <entities type="Drug" id="lithium" mention="lithium" confidence="0.99" sourceSpanStart="10" sourceSpanEnd="17">
+    <properties key="name" value="lithium"/>
+  </entities>
+  <entities type="Condition" id="hyperparathyroidism" mention="hyperparathyroidism" confidence="0.98" sourceSpanStart="37" sourceSpanEnd="56">
+    <properties key="name" value="hyperparathyroidism"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="hypercalcemia" mention="hypercalcemia" confidence="0.98" sourceSpanStart="295" sourceSpanEnd="308">
+    <properties key="name" value="hypercalcemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lithium" targetType="Condition" targetId="hyperparathyroidism" confidence="0.95" evidence="Long-term lithium therapy leading to hyperparathyroidism: a case report." sourceSpanStart="0" sourceSpanEnd="72"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lithium" targetType="Condition" targetId="hypercalcemia" confidence="0.95" evidence="As much as 15% of lithium-treated patients become hypercalcemic." sourceSpanStart="572" sourceSpanEnd="636"/>
+</raw:RawExtractionResult>

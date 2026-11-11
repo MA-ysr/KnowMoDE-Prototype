@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetic-kidney-problems.txt" sourceUri="https://medlineplus.gov/diabetickidneyproblems.html" sourceSha256="577220eaa66c095453244c5509d23c2ad609b5eeacc3482e58c9b9f399871dc7" sourceText="# MedlinePlus health topic: Diabetic Kidney Problems&#10;&#10;Also called: Diabetic Nephropathy&#10;&#10;If you have diabetes, your blood glucose, or blood sugar, levels are too high. Over time, this can damage your kidneys. Your kidneys clean your blood. If they are damaged, waste and fluids build up in your blood instead of leaving your body.&#10;&#10;Kidney damage from diabetes is called diabetic nephropathy. It begins long before you have symptoms. People with diabetes should get regular screenings for kidney disease. Tests include a urine test to detect protein in your urine and a blood test to show how well your kidneys are working.&#10;&#10;If the damage continues, your kidneys could fail. In fact, diabetes is the most common cause of kidney failure in the United States. People with kidney failure need either dialysis or a kidney transplant.&#10;&#10;You can slow down kidney damage or keep it from getting worse. Controlling your blood sugar and blood pressure, taking your medicines and not eating too much protein can help.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:21:18+00:00" xmi:version="2.0">
+  <chunks charEnd="1077"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="101" sourceSpanEnd="109">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-nephropathy" mention="diabetic nephropathy" confidence="0.99" sourceSpanStart="370" sourceSpanEnd="390">
+    <properties key="name" value="diabetic nephropathy"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="kidney-failure" mention="kidney failure" confidence="0.99" sourceSpanStart="720" sourceSpanEnd="734">
+    <properties key="name" value="kidney failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="LabTest" id="urine-test-protein" mention="urine test to detect protein in your urine" confidence="0.95" sourceSpanStart="520" sourceSpanEnd="562">
+    <properties key="name" value="urine test to detect protein in your urine"/>
+  </entities>
+  <entities type="LabTest" id="blood-test-kidney-function" mention="blood test to show how well your kidneys are working" confidence="0.95" sourceSpanStart="569" sourceSpanEnd="621">
+    <properties key="name" value="blood test to show how well your kidneys are working"/>
+  </entities>
+  <entities type="Recommendation" id="regular-screenings-kidney-disease" mention="People with diabetes should get regular screenings for kidney disease." confidence="0.95" sourceSpanStart="433" sourceSpanEnd="503">
+    <properties key="statement" value="People with diabetes should get regular screenings for kidney disease."/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="regular-screenings-kidney-disease" targetType="Condition" targetId="diabetes" confidence="0.95" evidence="People with diabetes should get regular screenings for kidney disease." sourceSpanStart="433" sourceSpanEnd="503"/>
+</raw:RawExtractionResult>

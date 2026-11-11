@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31401070.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31401070/" sourceSha256="a946e834ecccb78aa10f73b6c1dc2603279df26a23dee902b44f4c0de37e4eac" sourceText="# PubMed 31401070: Bariatric surgery and the perioperative management of type 2 diabetes: Practical guidelines.&#10;&#10;Journal of visceral surgery (2020), doi:10.1016/j.jviscsurg.2019.07.012&#10;&#10;BACKGROUND: Metabolic surgery is now considered as a therapeutic option in type 2 diabetes (T2D). However, few data are available regarding perioperative management of T2D.&#10;&#10;OBJECTIVES: To assess current practice among bariatric teams regarding perioperative management of T2D in order to propose guidelines.&#10;&#10;METHODS: A two-round Delphi method using online surveys was employed among bariatric teams experts (surgeons, diabetologists, anesthetists, nutritionists): first round, 63 questions covering 6 topics (characteristics of experts/teams, characteristics of patients, operative technique, pre/postoperative management, diabetes remission); second round, 44 items needing clarification. They were discussed within national congress of corresponding learned societies. Consensus was defined as ≥66% agreement.&#10;&#10;RESULTS: A total of 170 experts participated. Experts favored gastric bypass to achieve remission (76.7%). Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c&lt;8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively. After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia. DPP-IV inhibitors and metformin are preferred after surgery. Patients should be seen by a diabetologist within one month if on oral antidiabetic agents (71.8% of experts), 2 weeks if on injectable treatments (77.1% of experts), and immediately after surgery if on insulin pump (93.5% of experts). Long-term monitoring of HbA1c is necessary even if diabetes remission (100%).&#10;&#10;CONCLUSION: Rapid postoperative modifications of blood glucose require a close monitoring and a prompt adjustment of diabetes medications.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:57:17+00:00" xmi:version="2.0">
+  <chunks charEnd="1938"/>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.98" sourceSpanStart="73" sourceSpanEnd="88">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="screening-retinopathy-preoperative" mention="Screening for retinopathy... are required in the pre-operative period for 67%" confidence="0.9" sourceSpanStart="578" sourceSpanEnd="681">
+    <properties key="statement" value="screening for retinopathy is required in the pre-operative period"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Recommendation" id="cardiac-ultrasound-preoperative" mention="cardiac ultrasound... are required in the pre-operative period for... 75.3% of experts" confidence="0.9" sourceSpanStart="597" sourceSpanEnd="684">
+    <properties key="statement" value="cardiac ultrasound is required in the pre-operative period"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Recommendation" id="hba1c-target-preoperative" mention="reaching an HbA1c&lt;8% are required in the pre-operative period for... 56.7% of experts" confidence="0.9" sourceSpanStart="609" sourceSpanEnd="686">
+    <properties key="statement" value="reaching an HbA1c &lt; 8% is required in the pre-operative period"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-lt-8" mention="HbA1c&lt;8%" confidence="0.95" sourceSpanStart="1171" sourceSpanEnd="1179">
+    <properties key="name" value="HbA1c &lt; 8%"/>
+    <properties key="abnormalThreshold" value="&gt;= 8%"/>
+  </entities>
+  <entities type="Recommendation" id="insulin-pump-not-stopped" mention="insulin pump should not be stopped" confidence="0.92" sourceSpanStart="1287" sourceSpanEnd="1321">
+    <properties key="statement" value="insulin pump should not be stopped after surgery"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.9" sourceSpanStart="1287" sourceSpanEnd="1294">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="basal-insulin-halved" mention="basal insulin should be halved" confidence="0.92" sourceSpanStart="1323" sourceSpanEnd="1353">
+    <properties key="statement" value="basal insulin should be halved after surgery"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Recommendation" id="bolus-insulin-stopped" mention="bolus insulin should be stopped except if severe hyperglycemia" confidence="0.92" sourceSpanStart="1359" sourceSpanEnd="1421">
+    <properties key="statement" value="bolus insulin should be stopped after surgery except if severe hyperglycemia"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Condition" id="severe-hyperglycemia" mention="severe hyperglycemia" confidence="0.95" sourceSpanStart="1401" sourceSpanEnd="1421">
+    <properties key="name" value="severe hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="dpp-iv-metformin-preferred" mention="DPP-IV inhibitors and metformin are preferred after surgery" confidence="0.92" sourceSpanStart="1423" sourceSpanEnd="1482">
+    <properties key="statement" value="dpp-iv inhibitors and metformin are preferred after surgery"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Drug" id="dpp-iv-inhibitor" mention="DPP-IV inhibitors" confidence="0.9" sourceSpanStart="1423" sourceSpanEnd="1440">
+    <properties key="name" value="dpp-iv inhibitor"/>
+    <properties key="drugClass" value="dpp-iv inhibitor"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="1445" sourceSpanEnd="1454">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="Recommendation" id="diabetologist-follow-up-oral" mention="Patients should be seen by a diabetologist within one month if on oral antidiabetic agents" confidence="0.9" sourceSpanStart="1484" sourceSpanEnd="1574">
+    <properties key="statement" value="patients should be seen by a diabetologist within one month if on oral antidiabetic agents"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="RiskFactor" id="post-discharge-follow-up" mention="seen by a diabetologist" confidence="0.85" sourceSpanStart="1503" sourceSpanEnd="1526">
+    <properties key="name" value="post-discharge follow-up"/>
+    <properties key="description" value="visit with a diabetologist after surgery"/>
+  </entities>
+  <entities type="Recommendation" id="diabetologist-follow-up-injectable" mention="2 weeks if on injectable treatments" confidence="0.9" sourceSpanStart="1595" sourceSpanEnd="1630">
+    <properties key="statement" value="patients should be seen by a diabetologist within 2 weeks if on injectable treatments"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Recommendation" id="diabetologist-follow-up-pump" mention="immediately after surgery if on insulin pump" confidence="0.9" sourceSpanStart="1655" sourceSpanEnd="1699">
+    <properties key="statement" value="patients should be seen by a diabetologist immediately after surgery if on an insulin pump"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <entities type="Recommendation" id="long-term-monitoring-hba1c" mention="Long-term monitoring of HbA1c is necessary even if diabetes remission" confidence="0.95" sourceSpanStart="1720" sourceSpanEnd="1789">
+    <properties key="statement" value="long-term monitoring of HbA1c is necessary even if diabetes remission"/>
+    <properties key="source" value="Journal of visceral surgery"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="screening-retinopathy-preoperative" targetType="Condition" targetId="type-2-diabetes" confidence="0.85" evidence="Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c&lt;8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively." sourceSpanStart="1108" sourceSpanEnd="1271"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="cardiac-ultrasound-preoperative" targetType="Condition" targetId="type-2-diabetes" confidence="0.85" evidence="Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c&lt;8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively." sourceSpanStart="1108" sourceSpanEnd="1271"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="hba1c-target-preoperative" targetType="Condition" targetId="type-2-diabetes" confidence="0.85" evidence="Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c&lt;8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively." sourceSpanStart="1108" sourceSpanEnd="1271"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="hba1c-target-preoperative" targetType="LabTest" targetId="hba1c-lt-8" confidence="0.9" evidence="Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c&lt;8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively." sourceSpanStart="1108" sourceSpanEnd="1271"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="insulin-pump-not-stopped" targetType="Drug" targetId="insulin" confidence="0.85" evidence="After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia." sourceSpanStart="1272" sourceSpanEnd="1422"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="basal-insulin-halved" targetType="Drug" targetId="insulin" confidence="0.9" evidence="After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia." sourceSpanStart="1272" sourceSpanEnd="1422"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="bolus-insulin-stopped" targetType="Drug" targetId="insulin" confidence="0.9" evidence="After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia." sourceSpanStart="1272" sourceSpanEnd="1422"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="bolus-insulin-stopped" targetType="Condition" targetId="severe-hyperglycemia" confidence="0.85" evidence="After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia." sourceSpanStart="1272" sourceSpanEnd="1422"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="dpp-iv-metformin-preferred" targetType="Drug" targetId="dpp-iv-inhibitor" confidence="0.9" evidence="DPP-IV inhibitors and metformin are preferred after surgery." sourceSpanStart="1423" sourceSpanEnd="1483"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="dpp-iv-metformin-preferred" targetType="Drug" targetId="metformin" confidence="0.9" evidence="DPP-IV inhibitors and metformin are preferred after surgery." sourceSpanStart="1423" sourceSpanEnd="1483"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetologist-follow-up-oral" targetType="RiskFactor" targetId="post-discharge-follow-up" confidence="0.85" evidence="Patients should be seen by a diabetologist within one month if on oral antidiabetic agents (71.8% of experts), 2 weeks if on injectable treatments (77.1% of experts), and immediately after surgery if on insulin pump (93.5% of experts)." sourceSpanStart="1484" sourceSpanEnd="1719"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetologist-follow-up-injectable" targetType="RiskFactor" targetId="post-discharge-follow-up" confidence="0.85" evidence="Patients should be seen by a diabetologist within one month if on oral antidiabetic agents (71.8% of experts), 2 weeks if on injectable treatments (77.1% of experts), and immediately after surgery if on insulin pump (93.5% of experts)." sourceSpanStart="1484" sourceSpanEnd="1719"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetologist-follow-up-pump" targetType="RiskFactor" targetId="post-discharge-follow-up" confidence="0.85" evidence="Patients should be seen by a diabetologist within one month if on oral antidiabetic agents (71.8% of experts), 2 weeks if on injectable treatments (77.1% of experts), and immediately after surgery if on insulin pump (93.5% of experts)." sourceSpanStart="1484" sourceSpanEnd="1719"/>
+</raw:RawExtractionResult>

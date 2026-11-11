@@ -1,0 +1,13 @@
+# PubMed 31145236: The Impact of Case Management on Reducing Readmission for Patients Diagnosed With Heart Failure and Diabetes.
+
+Professional case management (2019), doi:10.1097/NCM.0000000000000359
+
+PURPOSE OF THE STUDY: To determine the impact of integrated case management services versus treatment as usual (TAU) for patients diagnosed with diabetes and concomitant heart failure.
+
+PRIMARY SETTING: This medical chart review was conducted at a single-site facility. The retrospective study design can be implemented at other facilities with a similar landscape.
+
+METHODS: A retrospective, descriptive, comparative analysis of integrated case management services compared with TAU from a medical chart review of 68 patients from September 1, 2015, through July 31, 2017. A medical chart review was conducted to generate the study sample for data collection and analysis. The data were organized, cleaned, and prepared and then analyzed. The data were analyzed using SPSS and verified with SAS and R. Applied were descriptive statistics and statistical tests-t test, χ test, Mann-Whitney U test, and Logistic Regression.
+
+RESULTS: For the integrated case management group, there were 18.4% who readmitted whereas 81.6% did not. For the TAU group, there were 52.6% who readmitted and 47.4% who did not. The association between readmission and case management was χ (1, n = 68) = 6.372, p = .012.
+
+NURSING IMPLICATIONS: Integrated case management services were statistically significant in reducing readmission for the sample. Demographics tested in this study were not significant predictors for readmission. Extending length of stay for patients who are not medically ready for discharge should be considered because there is a cost difference, as there is evidence of readmission reduction. Policy and procedural amendments can be obtained from this study.

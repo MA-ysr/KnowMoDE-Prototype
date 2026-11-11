@@ -1,0 +1,11 @@
+# PubMed 34107481: Factors and Outcomes of Intensive Care Unit Readmission in Elderly Patients.
+
+Gerontology (2022), doi:10.1159/000516297
+
+INTRODUCTION: An increase in age has been observed among patients admitted to the intensive care unit (ICU). Age is a well-known risk factor for ICU readmission and mortality. However, clinical characteristics and risk factors of ICU readmission of elderly patients (≥65 years) have not been studied.
+
+METHODS: This retrospective single-center cohort study was conducted in a total of 122-bed ICU of a tertiary care hospital in Seoul, Korea. A total of 85,413 patients were enrolled in this hospital between January 1, 2007, and December 31, 2017. The odds ratio of readmission and in-hospital mortality was calculated by logistic regression analysis.
+
+RESULTS: Totally, 29,503 patients were included in the study group, of which 2,711 (9.2%) had ICU readmissions. Of the 2,711 readmitted patients, 472 patients were readmitted more than once (readmitted 2 or more times to the ICU, 17.4%). In the readmitted patient group, there were more males, higher sequential organ failure assessment (SOFA) scores, and hospitalized for medical reasons. Length of stay (LOS) in ICU and in-hospital were longer, and 28-day and in-hospital mortality was higher in readmitted patients than in nonreadmitted patients. Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS. ICU readmission and age (over 85 years) were independent predictors of in-hospital mortality on multivariable analysis. The delayed ICU readmission group (>72 h) had higher in-hospital mortality than the early readmission group (≤72 h) (20.6 vs. 16.2%, p = 0.005).
+
+CONCLUSIONS: ICU readmissions occurred in 9.2% of elderly patients and were associated with poor prognosis and higher mortality.

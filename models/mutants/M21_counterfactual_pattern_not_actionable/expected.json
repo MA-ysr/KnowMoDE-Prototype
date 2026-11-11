@@ -1,0 +1,7 @@
+{
+  "id": "M21_counterfactual_pattern_not_actionable",
+  "family": "C4",
+  "expectedConstraint": "C4_CounterfactualPatternsActionable",
+  "mutatedFile": "explainability.xmi",
+  "description": "ModifiableFactors (COUNTERFACTUAL) also runs causal_context, which may return non-modifiable risk factors"
+}

@@ -1,0 +1,11 @@
+# PubMed 26246595: Detecting and Managing Diabetes Mellitus and Prediabetes in Patients With Acute Stroke.
+
+The Diabetes educator (2015), doi:10.1177/0145721715599267
+
+PURPOSE: The purpose of the study was to determine the prevalence of undiagnosed diabetes mellitus (DM) and prediabetes (pre-DM) in acute stroke patients, to evaluate recommendations of diabetes treatment and follow-up care in a hospital setting, and to examine 1-year readmission rates based on admission A1C measure.
+
+METHODS: This retrospective study comprised 200 patients randomly selected from 1095 patients admitted with an acute stroke and an A1C measurement during admission. DM and pre-DM prevalence levels were determined per A1C level. Recommendations for diabetes treatment during and after hospitalization were assessed; charts were reviewed for readmission.
+
+RESULTS: Among 200 patients, 43% had known DM, and 0.5% had pre-DM. Among 113 patients without history of DM or pre-DM, 61.9% had A1C 5.7% to 6.4% (39-46 mmol/mol), and 8.8% had A1C ≥6.5% (48 mmol/mol). None of the newly diagnosed pre-DM and 60% of newly diagnosed DM were documented. Only 7 of newly diagnosed DM or pre-DM patients received diabetes education. For patients with known DM and A1C ≥7.0% (53 mmol/mol), 40.5% registered no change of diabetic regimen. Few patients were recommended for diabetes follow-up care. Patients with A1C ≥6.5% or <5.7% were more likely to be readmitted for any reason within 1 year (33.3% and 31.6%, respectively) than patients with A1C levels of 5.7% to 6.4% (16.5%).
+
+CONCLUSIONS: The majority of acutely admitted stroke patients without known DM or pre-DM had A1C ≥5.7%. Newly diagnosed DM or pre-DM patients received inadequate diabetes education and follow-up care. These findings provide significant opportunities for improving acute stroke management.

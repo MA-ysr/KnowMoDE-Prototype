@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/25119790" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25119790/" sourceSha256="5e58afd07d944ecd27defa4c05bc252cb4e2250075131353aecc5d04c6dd14b2" sourceText="Curcumin prevents maleate-induced nephrotoxicity: relation to hemodynamic alterations, oxidative stress, mitochondrial oxygen consumption and activity of respiratory complex I. The potential protective effect of the dietary antioxidant curcumin (120 mg/Kg/day for 6 days) against the renal injury induced by maleate was evaluated. Tubular proteinuria and oxidative stress were induced by a single injection of maleate (400 mg/kg) in rats. Maleate-induced renal injury included increase in renal vascular resistance and in the urinary excretion of total protein, glucose, sodium, neutrophil gelatinase-associated lipocalin (NGAL) and N-acetyl b-D-glucosaminidase (NAG), upregulation of kidney injury molecule (KIM)-1, decrease in renal blood flow and claudin-2 expression besides of necrosis and apoptosis of tubular cells on 24 h. Oxidative stress was determined by measuring the oxidation of lipids and proteins and diminution in renal Nrf2 levels. Studies were also conducted in renal epithelial LLC-PK1 cells and in mitochondria isolated from kidneys of all the experimental groups. Maleate induced cell damage and reactive oxygen species (ROS) production in LLC-PK1 cells in culture. In addition, maleate treatment reduced oxygen consumption in ADP-stimulated mitochondria and diminished respiratory control index when using malate/glutamate as substrate. The activities of both complex I and aconitase were also diminished. All the above-described alterations were prevented by curcumin. It is concluded that curcumin is able to attenuate in vivo maleate-induced nephropathy and in vitro cell damage. The in vivo protection was associated to the prevention of oxidative stress and preservation of mitochondrial oxygen consumption and activity of respiratory complex I, and the in vitro protection was associated to the prevention of ROS production." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:55:49+00:00" xmi:version="2.0">
+  <chunks charEnd="1853"/>
+  <entities type="Drug" id="curcumin" mention="curcumin" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="8">
+    <properties key="name" value="curcumin"/>
+  </entities>
+  <entities type="Drug" id="maleate" mention="maleate" confidence="0.95" sourceSpanStart="18" sourceSpanEnd="25">
+    <properties key="name" value="maleate"/>
+  </entities>
+  <entities type="Condition" id="nephrotoxicity" mention="nephrotoxicity" confidence="0.9" sourceSpanStart="34" sourceSpanEnd="48">
+    <properties key="name" value="nephrotoxicity"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="renal-injury" mention="renal injury" confidence="0.9" sourceSpanStart="284" sourceSpanEnd="296">
+    <properties key="name" value="renal injury"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="tubular-proteinuria" mention="Tubular proteinuria" confidence="0.9" sourceSpanStart="331" sourceSpanEnd="350">
+    <properties key="name" value="tubular proteinuria"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="oxidative-stress" mention="oxidative stress" confidence="0.9" sourceSpanStart="355" sourceSpanEnd="371">
+    <properties key="name" value="oxidative stress"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="maleate" targetType="Condition" targetId="nephrotoxicity" confidence="0.95" evidence="Curcumin prevents maleate-induced nephrotoxicity" sourceSpanStart="0" sourceSpanEnd="48"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="maleate" targetType="Condition" targetId="renal-injury" confidence="0.95" evidence="The potential protective effect of the dietary antioxidant curcumin (120 mg/Kg/day for 6 days) against the renal injury induced by maleate was evaluated." sourceSpanStart="177" sourceSpanEnd="330"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="maleate" targetType="Condition" targetId="tubular-proteinuria" confidence="0.95" evidence="Tubular proteinuria and oxidative stress were induced by a single injection of maleate (400 mg/kg) in rats." sourceSpanStart="331" sourceSpanEnd="438"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="maleate" targetType="Condition" targetId="oxidative-stress" confidence="0.95" evidence="Tubular proteinuria and oxidative stress were induced by a single injection of maleate (400 mg/kg) in rats." sourceSpanStart="331" sourceSpanEnd="438"/>
+</raw:RawExtractionResult>

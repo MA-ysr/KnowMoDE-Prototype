@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetes-complications.txt" sourceUri="https://medlineplus.gov/diabetescomplications.html" sourceSha256="f144e7baee51816eac4fddfa090f3f23a98a888e5de618f6b2a1e5e9563d59ef" sourceText="# MedlinePlus health topic: Diabetes Complications&#10;&#10;Also called: Diabetic complications&#10;&#10;What is diabetes?If you have diabetes, your blood glucose, or blood sugar, levels are too high. Glucose comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy.&#10;&#10;With type 1 diabetes, your body does not make insulin. With type 2 diabetes, your body does not make or use insulin well. Without enough insulin, the glucose stays in your blood.&#10;&#10;What health problems can diabetes cause?Over time, having too much glucose in your blood can cause complications, including:&#10;&#10;Eye disease, due to changes in fluid levels, swelling in the tissues, and damage to the blood vessels in the eyes.&#10;&#10;Foot problems, caused by damage to the nerves and reduced blood flow to your feet.&#10;&#10;Gum disease and other dental problems, because a high amount of glucose in your saliva helps harmful bacteria grow in your mouth. The bacteria combine with food to form a soft, sticky film called plaque. Plaque also comes from eating foods that contain sugars or starches. Some types of plaque cause gum disease and bad breath. Other types cause tooth decay and cavities.&#10;&#10;Heart disease and stroke, caused by damage to your blood vessels and the nerves that control your heart and blood vessels.&#10;&#10;Kidney disease, due to damage to the blood vessels in your kidneys. Many people with diabetes develop high blood pressure. That can also damage your kidneys.&#10;&#10;Nerve problems (diabetic neuropathy), caused by damage to the nerves and the small blood vessels that nourish your nerves with oxygen and nutrients.&#10;&#10;Sexual and bladder problems, caused by damage to the nerves and reduced blood flow in the genitals and bladder.&#10;&#10;Skin conditions, some of which are caused by changes in the small blood vessels and reduced circulation. People with diabetes are also more likely to have infections, including skin infections.&#10;&#10;What other problems can people with diabetes have?If you have diabetes, you need to watch out for blood glucose levels that are too high (hyperglycemia) or too low for you (hypoglycemia). These can happen quickly and can become dangerous. Some of the causes include having another illness or infection and certain medicines. They can also happen if you don't get the right amount of diabetes medicines. To try to prevent these problems, make sure to take your diabetes medicines correctly, follow your diabetic diet, and check your blood glucose regularly.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:19:48+00:00" xmi:version="2.0">
+  <chunks charEnd="2556"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="36">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.99" sourceSpanStart="313" sourceSpanEnd="328">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.99" sourceSpanStart="368" sourceSpanEnd="383">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="eye-disease" mention="Eye disease" confidence="0.95" sourceSpanStart="614" sourceSpanEnd="625">
+    <properties key="name" value="eye disease"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="foot-problems" mention="Foot problems" confidence="0.95" sourceSpanStart="730" sourceSpanEnd="743">
+    <properties key="name" value="foot problems"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="gum-disease" mention="Gum disease" confidence="0.95" sourceSpanStart="814" sourceSpanEnd="825">
+    <properties key="name" value="gum disease"/>
+    <properties key="category" value="dental"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="Heart disease" confidence="0.95" sourceSpanStart="1187" sourceSpanEnd="1200">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="stroke" confidence="0.95" sourceSpanStart="1205" sourceSpanEnd="1211">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="Kidney disease" confidence="0.95" sourceSpanStart="1311" sourceSpanEnd="1325">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="1413" sourceSpanEnd="1432">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="nerve-problems" mention="Nerve problems" confidence="0.95" sourceSpanStart="1470" sourceSpanEnd="1484">
+    <properties key="name" value="nerve problems"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="sexual-and-bladder-problems" mention="Sexual and bladder problems" confidence="0.95" sourceSpanStart="1620" sourceSpanEnd="1647">
+    <properties key="name" value="sexual and bladder problems"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="skin-conditions" mention="Skin conditions" confidence="0.95" sourceSpanStart="1733" sourceSpanEnd="1748">
+    <properties key="name" value="skin conditions"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="infections" mention="infections" confidence="0.95" sourceSpanStart="1888" sourceSpanEnd="1898">
+    <properties key="name" value="infections"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.98" sourceSpanStart="2066" sourceSpanEnd="2079">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="2101" sourceSpanEnd="2113">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="eye-disease" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Eye disease, due to changes in fluid levels, swelling in the tissues, and damage to the blood vessels in the eyes." sourceSpanStart="371" sourceSpanEnd="528"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="foot-problems" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Foot problems, caused by damage to the nerves and reduced blood flow to your feet." sourceSpanStart="371" sourceSpanEnd="603"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="gum-disease" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Gum disease and other dental problems, because a high amount of glucose in your saliva helps harmful bacteria grow in your mouth." sourceSpanStart="371" sourceSpanEnd="801"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="heart-disease" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Heart disease and stroke, caused by damage to your blood vessels and the nerves that control your heart and blood vessels." sourceSpanStart="371" sourceSpanEnd="1093"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="stroke" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Heart disease and stroke, caused by damage to your blood vessels and the nerves that control your heart and blood vessels." sourceSpanStart="371" sourceSpanEnd="1093"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="kidney-disease" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Kidney disease, due to damage to the blood vessels in your kidneys." sourceSpanStart="371" sourceSpanEnd="1157"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="high-blood-pressure" confidence="0.9" evidence="Many people with diabetes develop high blood pressure." sourceSpanStart="1379" sourceSpanEnd="1433"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="nerve-problems" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Nerve problems (diabetic neuropathy), caused by damage to the nerves and the small blood vessels that nourish your nerves with oxygen and nutrients." sourceSpanStart="371" sourceSpanEnd="1389"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="sexual-and-bladder-problems" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Sexual and bladder problems, caused by damage to the nerves and reduced blood flow in the genitals and bladder." sourceSpanStart="371" sourceSpanEnd="1504"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="skin-conditions" confidence="0.9" evidence="Over time, having too much glucose in your blood can cause complications, including: Skin conditions, some of which are caused by changes in the small blood vessels and reduced circulation." sourceSpanStart="371" sourceSpanEnd="1640"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="infections" confidence="0.9" evidence="People with diabetes are also more likely to have infections, including skin infections." sourceSpanStart="1838" sourceSpanEnd="1926"/>
+</raw:RawExtractionResult>

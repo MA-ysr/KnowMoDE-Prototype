@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/42036160.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/42036160/" sourceSha256="d8a58faa4b60c787687658daa0dd2b6b954bd8423940e75c3ee5de2a7f8efe59" sourceText="# PubMed 42036160: Glycemic Emergencies: Diabetic Ketoacidosis, Hyperosmolar Hyperglycemic State, and Hypoglycemia.&#10;&#10;The Medical clinics of North America (2026), doi:10.1016/j.mcna.2025.11.014&#10;&#10;Diabetic Ketoacidosis (DKA), Hyperosmolar Hyperglycemic State (HHS), and Hypoglycemia remain among the most serious acute complications of diabetes mellitus, often leading to hospitalization and increased morbidity. DKA is defined by hyperglycemia, ketosis, and metabolic acidosis, typically resulting from insulin deficiency and excess counterregulatory hormones, and can occur in both type 1 and type 2 diabetes. HHS, by contrast, is characterized by profound hyperglycemia, hyperosmolality, and dehydration with minimal ketosis, most commonly affecting older adults with type 2 diabetes. Hypoglycemia, defined as glucose less than 70 mg/dL, continues to pose a major barrier to optimal glycemic control.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:48:46+00:00" xmi:version="2.0">
+  <chunks charEnd="901"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic Ketoacidosis" confidence="0.95" sourceSpanStart="41" sourceSpanEnd="62">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperosmolar-hyperglycemic-state" mention="Hyperosmolar Hyperglycemic State" confidence="0.95" sourceSpanStart="64" sourceSpanEnd="96">
+    <properties key="name" value="hyperosmolar hyperglycemic state"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="102" sourceSpanEnd="114">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospitalization" mention="hospitalization" confidence="0.9" sourceSpanStart="369" sourceSpanEnd="384">
+    <properties key="name" value="hospitalization"/>
+  </entities>
+  <entities type="LabTest" id="glucose-less-than-70-mg-dl" mention="glucose less than 70 mg/dL" confidence="0.95" sourceSpanStart="810" sourceSpanEnd="836">
+    <properties key="name" value="glucose &lt; 70 mg/dL"/>
+    <properties key="abnormalThreshold" value="&lt; 70 mg/dL"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetic-ketoacidosis" targetType="ClinicalOutcome" targetId="hospitalization" confidence="0.85" evidence="Diabetic Ketoacidosis (DKA), Hyperosmolar Hyperglycemic State (HHS), and Hypoglycemia remain among the most serious acute complications of diabetes mellitus, often leading to hospitalization and increased morbidity." sourceSpanStart="194" sourceSpanEnd="409"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperosmolar-hyperglycemic-state" targetType="ClinicalOutcome" targetId="hospitalization" confidence="0.85" evidence="Diabetic Ketoacidosis (DKA), Hyperosmolar Hyperglycemic State (HHS), and Hypoglycemia remain among the most serious acute complications of diabetes mellitus, often leading to hospitalization and increased morbidity." sourceSpanStart="194" sourceSpanEnd="409"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypoglycemia" targetType="ClinicalOutcome" targetId="hospitalization" confidence="0.85" evidence="Diabetic Ketoacidosis (DKA), Hyperosmolar Hyperglycemic State (HHS), and Hypoglycemia remain among the most serious acute complications of diabetes mellitus, often leading to hospitalization and increased morbidity." sourceSpanStart="194" sourceSpanEnd="409"/>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="glucose-less-than-70-mg-dl" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Hypoglycemia, defined as glucose less than 70 mg/dL, continues to pose a major barrier to optimal glycemic control." sourceSpanStart="785" sourceSpanEnd="900"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/32147443.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/32147443/" sourceSha256="b8fd703a052713db2c600303098f20308fa969018c4fc9e57a274046a0525192" sourceText="# PubMed 32147443: Searching for disease-related malnutrition using Big Data tools.&#10;&#10;Endocrinologia, diabetes y nutricion (2020), doi:10.1016/j.endinu.2019.11.009&#10;&#10;INTRODUCTION: Disease-related malnutrition (DRM) is underdiagnosed and underreported despite its well-known association with a worse prognosis. The emergence of Big Data and the application of artificial intelligence in Medicine have revolutionized the way knowledge is generated. The aim of this study is to assess whether a Big Data tool could help us detect the amount of DRM in our hospital.&#10;&#10;METHODOLOGY: This was a descriptive, retrospective study using the Savana Manager® tool, which allows for automatically analyzing and extracting the relevant clinical information contained in the free text of the electronic medical record. A search was performed using the term &quot;malnutrition&quot;, comparing the characteristics of patients with DRM to the population of hospitalized patients between January 2012 and December 2017.&#10;&#10;RESULTS: Among the 180,279 hospitalization records with a discharge report in that period, only 4,446 episodes (2.47%) included the diagnosis of malnutrition. The mean age of patients with DRM was 75 years (SD 16), as compared to 59 years (SD 25) for the overall population. There were no sex differences (51% male). In-hospital death occurred in 7.08% of patients with DRM and 2.98% in the overall group. Mean stay was longer in patients with DRM (8 vs. 5 days, P&lt;.0001) and there were no significant differences in the 72-hour readmission rate. The most common diagnoses associated with DRM were heart failure (35%), respiratory infection (23%), urinary infection (20%), and chronic kidney disease (15%).&#10;&#10;CONCLUSION: Underdiagnosis of DRM remains a problem. Savana Manager® helps us to better understand the profile of these patients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:49+00:00" xmi:version="2.0">
+  <chunks charEnd="1828"/>
+  <entities type="Condition" id="disease-related-malnutrition" mention="Disease-related malnutrition (DRM)" confidence="0.95" sourceSpanStart="178" sourceSpanEnd="212">
+    <properties key="name" value="disease-related malnutrition"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1588" sourceSpanEnd="1601">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+    <properties key="icd9Range" value="428"/>
+  </entities>
+  <entities type="Condition" id="respiratory-infection" mention="respiratory infection" confidence="0.95" sourceSpanStart="1609" sourceSpanEnd="1630">
+    <properties key="name" value="respiratory infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="urinary-infection" mention="urinary infection" confidence="0.95" sourceSpanStart="1638" sourceSpanEnd="1655">
+    <properties key="name" value="urinary infection"/>
+    <properties key="category" value="genitourinary"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1667" sourceSpanEnd="1689">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+    <properties key="icd9Range" value="585"/>
+  </entities>
+</raw:RawExtractionResult>

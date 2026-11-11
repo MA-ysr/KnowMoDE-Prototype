@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/peripheral-nerve-disorders.txt" sourceUri="https://medlineplus.gov/peripheralnervedisorders.html" sourceSha256="afadc6baf80ebf0c1a690c15cb8eccb3c8be18c9e0fcb56181cd1423f320cc78" sourceText="# MedlinePlus health topic: Peripheral Nerve Disorders&#10;&#10;Also called: Neuropathy, Neuritis, Peripheral neuritis, Peripheral neuropathy&#10;&#10;What are peripheral nerves?Nerves are like wires that carry messages back and forth between your brain and your body. Your peripheral nerves branch off from your brain and spinal cord and connect to all parts of your body, including your muscles and organs. Peripheral nerves carry messages from your brain that control your movement, breathing, heartbeat, digestion, and more. They also carry messages from your body to your brain, so you can feel things, such as pain, heat, and cold.&#10;&#10;What are peripheral nerve disorders?Peripheral nerve disorders happen when one or more peripheral nerves are damaged. Damaged nerves may not carry messages correctly, or they may not work at all. As a result, you may have pain, trouble walking, or a variety of other problems, depending on which nerves are involved.&#10;&#10;Peripheral nerve disorders are very common. There are more than 100 different types.&#10;&#10;What causes peripheral nerve disorders?Many things can damage nerves and lead to peripheral nerve disorders:&#10;&#10;Diabetes is the most common cause of peripheral nerve disorders. Most people with diabetes will develop diabetic nerve problems.&#10;&#10;Physical injury (trauma) that stretches, crushes, squeezes, cuts, or puts pressure on one or more nerves. Some examples of peripheral nerve disorders from physical injury include complex regional pain syndrome and brachial plexus injuries.&#10;&#10;Health conditions, including:&#10;Certain cancers and their treatment (chemotherapy and radiation therapy).&#10;&#10;Infections, such as HIV and Lyme disease.&#10;&#10;Problems with blood or blood vessels.&#10;&#10;Autoimmune diseases, such as rheumatoid arthritis and lupus.&#10;&#10;Kidney or liver disease.&#10;&#10;Certain medicines.&#10;&#10;Contact with certain toxic substances, such as lead or mercury.&#10;&#10;Alcohol use disorder (AUD) and smoking.&#10;&#10;Vitamin imbalances, especially a lack of vitamin B12.&#10;&#10;Your genes, including changes in your genes or conditions that you inherit from your parents, such as Charcot-Marie-Tooth disease.&#10;&#10;In certain cases, the cause of peripheral nerve disorder is not known.&#10;&#10;What are the symptoms of peripheral nerve disorders?The symptoms of peripheral nerve disorders depend on which nerves are affected, what is causing the damage, and how serious it is:&#10;&#10;Types of nervesPossible symptoms of nerve damageMotor nerves control your muscles and all your movement, such as walking, talking, and using your hands.Weak or aching muscles&#10;&#10;Problems with balance, walking, or using your arms and hands&#10;&#10;Cramps or twitching muscles&#10;&#10;Muscle shrinking&#10;&#10;Sensory nerves carry messages to your brain from your senses, including touch, hot and cold, and pain.Tingling, numbness, or pain often in the hands and feet&#10;&#10;Not being able to feel heat, cold, or pain, such as a cut on your foot&#10;&#10;Pain from even light touch&#10;&#10;Autonomic nerves send messages to your organs to control breathing, digestion, and other body functions that happen without thinking about them.A heartbeat that's too fast or too slow&#10;&#10;Trouble swallowing&#10;&#10;Sweating too much or too little&#10;&#10;Vomiting, diarrhea, or constipation&#10;&#10;Problems with urination or sexual function&#10;&#10;Symptoms may range from mild to very strong. They may develop quickly over days or slowly over months and years. But they are rarely life-threatening.&#10;&#10;How are peripheral nerve disorders diagnosed?To find out if you have a peripheral nerve disorder, your provider will:&#10;&#10;Ask about your medical history&#10;&#10;Ask about your family health history&#10;&#10;Do a physical exam&#10;&#10;Order tests, which may include:&#10;Blood tests&#10;&#10;Genetic tests&#10;&#10;Nerve tests that measure:&#10;Electrical activity in your nerves and muscles&#10;&#10;How well your autonomic nerves are working&#10;&#10;A biopsy of nerve or skin tissue&#10;&#10;CT or MRI scan to see what may be pressing on your nerves&#10;&#10;What are the treatments for peripheral nerve disorders?It's important to treat any conditions that are causing nerve damage. In certain cases, that will allow your nerves to heal over time.&#10;&#10;Treatment for symptoms depends on the type of peripheral nerve disorder you have, where it is, and how severe. Treatment options include:&#10;&#10;Braces or splints&#10;&#10;Over-the-counter patches and skin creams&#10;&#10;Prescription medicines&#10;&#10;Non-drug pain management, such as electrical stimulation or relaxation therapy&#10;&#10;Surgery to relieve pressure on a nerve&#10;&#10;Can peripheral nerve disorders be prevented?You can help prevent peripheral nerve disorders by:&#10;&#10;Managing health conditions that may cause nerve damage, especially diabetes&#10;&#10;Preventing falls and accidents&#10;&#10;Avoiding toxic substances&#10;&#10;Being careful to avoid repeated motions and body positions that press on your nerves&#10;&#10;Eating a balanced diet, exercising, limiting alcohol, and not smoking&#10;&#10;NIH: National Institute of Neurological Disorders and Stroke&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:24:37+00:00" xmi:version="2.0">
+  <chunks charEnd="3845"/>
+  <chunks index="1" charStart="3556" charEnd="4833"/>
+  <entities type="Condition" id="peripheral-nerve-disorders" mention="Peripheral nerve disorders" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="54">
+    <properties key="name" value="peripheral nerve disorders"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.95" sourceSpanStart="1137" sourceSpanEnd="1145">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="complex-regional-pain-syndrome" mention="complex regional pain syndrome" confidence="0.9" sourceSpanStart="1446" sourceSpanEnd="1476">
+    <properties key="name" value="complex regional pain syndrome"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="brachial-plexus-injuries" mention="brachial plexus injuries" confidence="0.9" sourceSpanStart="1481" sourceSpanEnd="1505">
+    <properties key="name" value="brachial plexus injuries"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="rheumatoid-arthritis" mention="rheumatoid arthritis" confidence="0.9" sourceSpanStart="1724" sourceSpanEnd="1744">
+    <properties key="name" value="rheumatoid arthritis"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="lupus" mention="lupus" confidence="0.9" sourceSpanStart="1749" sourceSpanEnd="1754">
+    <properties key="name" value="lupus"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="Kidney or liver disease" confidence="0.85" sourceSpanStart="1757" sourceSpanEnd="1780">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="liver-disease" mention="Kidney or liver disease" confidence="0.85" sourceSpanStart="1757" sourceSpanEnd="1780">
+    <properties key="name" value="liver disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="alcohol-use-disorder" mention="Alcohol use disorder (AUD)" confidence="0.9" sourceSpanStart="1868" sourceSpanEnd="1894">
+    <properties key="name" value="alcohol use disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="charcot-marie-tooth-disease" mention="Charcot-Marie-Tooth disease" confidence="0.95" sourceSpanStart="2066" sourceSpanEnd="2093">
+    <properties key="name" value="charcot-marie-tooth disease"/>
+    <properties key="category" value="genetic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-nerve-disorders" mention="peripheral nerve disorders" confidence="0.95" sourceSpanStart="3875" sourceSpanEnd="3901" chunkIndex="1">
+    <properties key="name" value="peripheral nerve disorder"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="nerve-damage" mention="nerve damage" confidence="0.9" sourceSpanStart="3958" sourceSpanEnd="3970" chunkIndex="1">
+    <properties key="name" value="nerve damage"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="4546" sourceSpanEnd="4554" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

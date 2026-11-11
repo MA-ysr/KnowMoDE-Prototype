@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/20513036" sourceUri="https://pubmed.ncbi.nlm.nih.gov/20513036/" sourceSha256="5deb884352f5078da35ec21e2ce01cf7af93fe9522380c54fa396d0ac1a80565" sourceText="Abductor paralysis after botox injection for adductor spasmodic dysphonia. OBJECTIVES/HYPOTHESIS: Botulinum toxin (Botox) injections into the thyroarytenoid muscles are the current standard of care for adductor spasmodic dysphonia (ADSD). Reported adverse effects include a period of breathiness, throat pain, and difficulty with swallowing liquids. Here we report multiple cases of bilateral abductor paralysis following Botox injections for ADSD, a complication previously unreported. STUDY DESIGN: Retrospective case series. METHODS: Patients that received Botox injections for spasmodic dysphonia between January 2000 and October 2009 were evaluated. Patients with ADSD were identified. The number of treatments received and adverse effects were noted. For patients with bilateral abductor paralysis, age, sex, paralytic Botox dose, prior Botox dose, and course following paralysis were noted. RESULTS: From a database of 452 patients receiving Botox, 352 patients had been diagnosed with ADSD. Of these 352 patients, eight patients suffered bilateral abductor paralysis, and two suffered this complication twice. All affected patients were females over the age of 50 years. Most patients had received treatments prior to abductor paralysis and continued receiving after paralysis. Seven patients recovered after a brief period of activity restrictions, and one underwent a tracheotomy. The incidence of abductor paralysis after Botox injection for ADSD was 0.34%. CONCLUSIONS: Bilateral abductor paralysis is a rare complication of Botox injections for ADSD, causing difficulty with breathing upon exertion. The likely mechanism of paralysis is diffusion of Botox around the muscular process of the arytenoid to the posterior cricoarytenoid muscles. The paralysis is temporary, and watchful waiting with restriction of activity is the recommended management." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:16+00:00" xmi:version="2.0">
+  <chunks charEnd="1863"/>
+  <entities type="Drug" id="botulinum-toxin" mention="Botulinum toxin" confidence="0.95" sourceSpanStart="98" sourceSpanEnd="113">
+    <properties key="name" value="botulinum toxin"/>
+  </entities>
+  <entities type="Condition" id="adductor-spasmodic-dysphonia" mention="adductor spasmodic dysphonia" confidence="0.98" sourceSpanStart="202" sourceSpanEnd="230">
+    <properties key="name" value="adductor spasmodic dysphonia"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="breathiness" mention="breathiness" confidence="0.9" sourceSpanStart="284" sourceSpanEnd="295">
+    <properties key="name" value="breathiness"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="throat-pain" mention="throat pain" confidence="0.9" sourceSpanStart="297" sourceSpanEnd="308">
+    <properties key="name" value="throat pain"/>
+    <properties key="category" value="symptom"/>
+  </entities>
+  <entities type="Condition" id="difficulty-with-swallowing-liquids" mention="difficulty with swallowing liquids" confidence="0.9" sourceSpanStart="314" sourceSpanEnd="348">
+    <properties key="name" value="difficulty with swallowing liquids"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="bilateral-abductor-paralysis" mention="bilateral abductor paralysis" confidence="0.95" sourceSpanStart="383" sourceSpanEnd="411">
+    <properties key="name" value="bilateral abductor paralysis"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="botulinum-toxin" targetType="Condition" targetId="adductor-spasmodic-dysphonia" confidence="0.98" evidence="Botulinum toxin (Botox) injections into the thyroarytenoid muscles are the current standard of care for adductor spasmodic dysphonia (ADSD)." sourceSpanStart="98" sourceSpanEnd="238"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="botulinum-toxin" targetType="Condition" targetId="breathiness" confidence="0.9" evidence="Reported adverse effects include a period of breathiness, throat pain, and difficulty with swallowing liquids." sourceSpanStart="239" sourceSpanEnd="349"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="botulinum-toxin" targetType="Condition" targetId="throat-pain" confidence="0.9" evidence="Reported adverse effects include a period of breathiness, throat pain, and difficulty with swallowing liquids." sourceSpanStart="239" sourceSpanEnd="349"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="botulinum-toxin" targetType="Condition" targetId="difficulty-with-swallowing-liquids" confidence="0.9" evidence="Reported adverse effects include a period of breathiness, throat pain, and difficulty with swallowing liquids." sourceSpanStart="239" sourceSpanEnd="349"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="botulinum-toxin" targetType="Condition" targetId="bilateral-abductor-paralysis" confidence="0.95" evidence="Here we report multiple cases of bilateral abductor paralysis following Botox injections for ADSD, a complication previously unreported." sourceSpanStart="350" sourceSpanEnd="486"/>
+</raw:RawExtractionResult>

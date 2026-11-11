@@ -1,0 +1,7 @@
+{
+  "id": "M20_missing_trace_pattern",
+  "family": "C5",
+  "expectedConstraint": "C5_FullProvenanceAudienceHasTracePattern",
+  "mutatedFile": "explainability.xmi",
+  "description": "auditor requires full provenance but no trace pattern is bound"
+}

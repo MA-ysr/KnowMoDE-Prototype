@@ -1,0 +1,11 @@
+# PubMed 33144086: Efficacy and safety of dapagliflozin in acute heart failure: Rationale and design of the DICTATE-AHF trial.
+
+American heart journal (2021), doi:10.1016/j.ahj.2020.10.071
+
+BACKGROUND: Dapagliflozin, a sodium-glucose cotransporter-2 inhibitor, reduces cardiovascular death and worsening heart failure in patients with chronic heart failure and reduced ejection fraction. Early initiation during an acute heart failure (AHF) hospitalization may facilitate decongestion, improve natriuresis, and facilitate safe transition to a beneficial outpatient therapy for both diabetes and heart failure.
+
+OBJECTIVE: The objective is to assess the efficacy and safety of initiating dapagliflozin within the first 24 hours of hospitalization in patients with AHF compared to usual care.
+
+METHODS: DICTATE-AHF is a prospective, multicenter, open-label, randomized trial enrolling a planned 240 patients in the United States. Patients with type 2 diabetes hospitalized with hypervolemic AHF and an estimated glomerular filtration rate of at least 30 mL/min/1.73m2 are eligible for participation. Patients are randomly assigned 1:1 to dapagliflozin 10 mg once daily or structured usual care until day 5 or hospital discharge. Both treatment arms receive protocolized diuretic and insulin therapies. The primary endpoint is diuretic response expressed as the cumulative change in weight per cumulative loop diuretic dose in 40 mg intravenous furosemide equivalents. Secondary and exploratory endpoints include inpatient worsening AHF, 30-day hospital readmission for AHF or diabetic reasons, change in NT-proBNP, and measures of natriuresis. Safety endpoints include the incidence of hyper/hypoglycemia, ketoacidosis, worsening kidney function, hypovolemic hypotension, and inpatient mortality.
+
+CONCLUSIONS: The DICTATE-AHF trial will establish the efficacy and safety of early initiation of dapagliflozin during AHF across both AHF and diabetic outcomes in patients with diabetes.

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37784246.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37784246/" sourceSha256="812256748daf37893c8e9649090b9f0d22926b6151c574932296ed65d5c5f812" sourceText="# PubMed 37784246: Use of Continuous Glucose Monitors Upon Hospital Discharge of People With Diabetes: Promise, Barriers, and Opportunity.&#10;&#10;Journal of diabetes science and technology (2024), doi:10.1177/19322968231200847&#10;&#10;Continuous glucose monitors (CGMs) have increasingly been used in ambulatory and inpatient or hospital settings to improve glycemic outcomes for people with diabetes. Given their capacity to aid individuals in avoiding hypo- and hyperglycemia, they may also be useful when transitioning from hospital to home by reducing rates of hospital readmissions and emergency department visits. Several types of barriers presently exist that make the deployment of CGMs at the time of hospital discharge problematic, including (1) regulatory, (2) behavioral, (3) logistical, (4) technical, (5) staffing, and (6) systemic issues. In this commentary, we review the literature, discuss these barriers, and propose possible solutions to facilitate the use of CGMs in people with diabetes at the time of hospital discharge.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:42:13+00:00" xmi:version="2.0">
+  <chunks charEnd="1031"/>
+  <entities type="RiskFactor" id="cgm-use-at-discharge" mention="use of CGMs in people with diabetes at the time of hospital discharge" confidence="0.95" sourceSpanStart="960" sourceSpanEnd="1029">
+    <properties key="name" value="use of continuous glucose monitors at hospital discharge"/>
+    <properties key="description" value="deployment of continuous glucose monitors at the time of hospital discharge"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmissions" confidence="0.9" sourceSpanStart="552" sourceSpanEnd="573">
+    <properties key="name" value="hospital readmission"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="emergency-department-visits" mention="emergency department visits" confidence="0.9" sourceSpanStart="578" sourceSpanEnd="605">
+    <properties key="name" value="emergency department visits"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="cgm-use-at-discharge" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.85" evidence="Given their capacity to aid individuals in avoiding hypo- and hyperglycemia, they may also be useful when transitioning from hospital to home by reducing rates of hospital readmissions and emergency department visits." sourceSpanStart="389" sourceSpanEnd="606"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="cgm-use-at-discharge" targetType="ClinicalOutcome" targetId="emergency-department-visits" confidence="0.85" evidence="Given their capacity to aid individuals in avoiding hypo- and hyperglycemia, they may also be useful when transitioning from hospital to home by reducing rates of hospital readmissions and emergency department visits." sourceSpanStart="389" sourceSpanEnd="606"/>
+</raw:RawExtractionResult>

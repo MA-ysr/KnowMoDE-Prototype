@@ -1,0 +1,13 @@
+# PubMed 29357807: Prevalence, Correlates and Management of Hyperglycemia in Diabetic Non-critically Ill Patients at a Tertiary Care Center in Lebanon.
+
+Current diabetes reviews (2019), doi:10.2174/1573399814666180119142254
+
+BACKGROUND: Diabetes Mellitus is a chronic metabolic disease that affects 387 million people around the world. Episodes of hyperglycemia in hospitalized diabetic patients are associated with poor clinical outcomes and increased morbidity and mortality. Therefore, prevention of hyperglycemia is critical to decrease the length of hospital stay and to reduce complications and readmissions.
+
+OBJECTIVE: The study aims to examine the prevalence of hyperglycemia and assess the correlates and management of hyperglycemia in diabetic non-critically ill patients.
+
+METHODS: The study was conducted on the medical wards of a tertiary care teaching hospital in Lebanon. A retrospective chart review was conducted from January 2014 until September 2015. Diabetic patients admitted to Internal Medicine floors were identified. Descriptive analysis was first carried out, followed by a multivariable analysis to study the correlates of hyperglycemia occurrence.
+
+RESULTS: A total of 235 medical charts were reviewed. Seventy percent of participants suffered from hyperglycemia during their hospital stay. The identified significant positive correlates for inpatient hyperglycemia, were the use of insulin sliding scale alone (OR=16.438 ± 6.765-39.941, p=0.001) and the low frequency of glucose monitoring. Measuring glucose every 8 hours (OR= 3.583 ± 1.506-8.524, p=0.004) and/or every 12 hours (OR=7.647 ± 0.704-79.231, p=0.0095) was associated with hyperglycemia. The major factor perceived by nurses as a barrier to successful hyperglycemia management was the lack of knowledge about appropriate insulin use (87.5%).
+
+CONCLUSION: Considerable mismanagement of hyperglycemia in diabetic non-critically ill patients exists; indicating a compelling need for the development and implementation of protocol-driven insulin order forms a comprehensive education plan on the appropriate use of insulin.

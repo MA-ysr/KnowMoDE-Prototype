@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/nateglinide.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22nateglinide%22" sourceSha256="1e7a3fbcdbb9a766a72a54662d5479d9736ef9cf9d4090a98e095363d56aca07" sourceText="# FDA prescribing information: nateglinide&#10;&#10;Generic name: NATEGLINIDE&#10;Brand name: Nateglinide&#10;Pharmacologic class: Glinide [EPC]&#10;Label set id: 0ccf9b07-3c21-482d-abeb-a06ceb482c7b, effective 20250224&#10;&#10;## Indications and usage&#10;&#10;1 INDICATIONS AND USAGE Nateglinide is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. Limitations of Use: Nateglinide should not be used in patients with type 1 diabetes mellitus or for the treatment of diabetic ketoacidosis. Nateglinide is a glinide indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. (1) Limitations of Use : Not for treating type 1 diabetes mellitus or diabetes ketoacidosis (1)&#10;&#10;## Contraindications&#10;&#10;4 CONTRAINDICATIONS Nateglinide tablets are contraindicated in patients with a history of hypersensitivity to nateglinide or its inactive ingredients. History of hypersensitivity to nateglinide or its inactive ingredients (4)&#10;&#10;## Warnings and precautions&#10;&#10;5 WARNINGS AND PRECAUTIONS Hypoglycemia: Nateglinide may cause hypoglycemia. Administer before meals to reduce the risk of hypoglycemia. Skip the scheduled dose of nateglinide if a meal is skipped to reduce the risk of hypoglycemia. (5.1) Macrovascular Outcomes: There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with nateglinide. (5.2) 5.1 Hypoglycemia All glinides, including nateglinide, can cause hypoglycemia [see Adverse Reactions (6.1)] . Severe hypoglycemia can cause seizures, may be life-threatening, or cause death. Hypoglycemia can impair concentration ability and reaction time; this may place an individual and others at risk in situations where these abilities are important (e.g., driving or operating other machinery). Hypoglycemia can happen suddenly and symptoms may differ in each individual and change over time in the same individual. Symptomatic awareness of hypoglycemia may be less pronounced in patients with longstanding diabetes, in patients with diabetic neuropathy (nerve disease), in patients using medications that block the sympathetic nervous system (e.g., beta-blockers) [see Drug Interactions (7)] , or in patients who experience recurrent hypoglycemia. Factors which may increase the risk of hypoglycemia include changes in meal pattern (e.g., macronutrient content), changes in level of physical activity, changes to coadministered medication [see Drug Interactions (7)] , and concomitant use with other antidiabetic agents. Patients with renal or hepatic impairment may be at higher risk of hypoglycemia [see Use in Specific Populations (8.6, 8.7), Clinical Pharmacology (12.3)] . Patients should take nateglinide before meals and be instructed to skip the dose of nateglinide if a meal is skipped [see Dosage and Administration (2)] . Patients and caregivers must be educated to recognize and manage hypoglycemia. Self-monitoring of blood glucose plays an essential role in the prevention and management of hypoglycemia. In patients at higher risk for hypoglycemia and patients who have reduced symptomatic awareness of hypoglycemia, increased frequency of blood glucose monitoring is recommended. 5.2 Macrovascular Outcomes There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with nateglinide.&#10;&#10;## Adverse reactions&#10;&#10;6 ADVERSE REACTIONS The following serious adverse reaction is also described elsewhere in the labeling: Hypoglycemia [see Warnings and Precautions (5.1)] Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea. (6.1) To report SUSPECTED ADVERSE REACTIONS, contact Strides Pharma Inc at 1-877-244-9825 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch. 6.1 Clinical Trials Experience Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice. In clinical trials, approximately 2,600 patients with type 2 diabetes mellitus were treated with nateglinide. Of these, approximately 1,335 patients were treated for 6 months or longer and approximately 190 patients for one year or longer. Table 1 shows the most common adverse reactions associated with nateglinide. Table 1: Adverse Reactions other than Hypoglycemia (%) occurring Greater than or Equal to 2% in Nateglinide-Treated Patients from Pool of 12 to 64 week Placebo Controlled Trials Placebo N = 458 Nateglinide N = 1441 Preferred Term Upper Respiratory Infection 8.1 10.5 Back Pain 3.7 4.0 Flu Symptoms 2.6 3.6 Dizziness 2.2 3.6 Arthropathy 2.2 3.3 Diarrhea 3.1 3.2 Accidental Trauma 1.7 2.9 Bronchitis 2.6 2.7 Coughing 2.2 2.4 Hypoglycemia Episodes of severe hypoglycemia (plasma glucose less than 36 mg/dL) were reported in two patients treated with nateglinide. Non-severe hypoglycemia occurred in 2.4 % of nateglinide treated patients and 0.4 % of placebo-treated patients [see Warnings and Precautions (5.1)] . Weight Gain Patients treated with nateglinide had statistically significant mean increases in weight compared to placebo. In clinical trials, the mean weight increases with nateglinide 60 mg (3 times daily) and nateglinide 120 mg (3 times daily) compared to placebo were 1.0 kg and 1.6 kg, respectively. Laboratory Test Increases in Uric Acid: There were increases in mean uric acid levels for patients treated with nateglinide alone, nateglinide in combination with metformin, metformin alone, and glyburide alone. The respective differences from placebo were 0.29 mg/dL, 0.45 mg/dL, 0.28 mg/dL, and 0.19 mg/dL. 6.2 Postmarketing Experience The following adverse reactions have been identified during post-approval use of nateglinide. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Hypersensitivity Reactions: Rash, itching, and urticaria Hepatobiliary Disorders: Jaundice, cholestatic hepatitis, and elevated liver enzymes&#10;&#10;## Drug interactions&#10;&#10;7 DRUG INTERACTIONS Table 2 includes a list of drugs with clinically important drug interactions when concomitantly administered or withdrawn with nateglinide and instructions for managing or preventing them. Table 2: Clinically Significant Drug Interactions with Nateglinide Drugs That May Increase the Blood-Glucose-Lowering Effect of Nateglinide and Susceptibility to Hypoglycemia Drugs: Nonsteroidal anti-inflammatory drugs (NSAIDs), salicylates, monoamine oxidase inhibitors, non-selective beta-adrenergic-blocking agents, anabolic hormones (e.g., methandrostenolone), guanethidine, gymnema sylvestre, glucomannan, thioctic acid, and inhibitors of CYP2C9 (e.g., amiodarone, fluconazole, voriconazole, sulfinpyrazone) or in patients known to be poor metabolizers of CYP2C9 substrates, alcohol. Intervention: Dose reductions and increased frequency of glucose monitoring may be required when nateglinide is coadministered with these drugs. Drugs and Herbals That May Reduce the Blood-Glucose-Lowering Effect of Nateglinide and Increase Susceptibility to Hyperglycemia Drugs: Thiazides, corticosteroids, thyroid products, sympathomimetics, somatropin, somatostatin analogues (e.g., lanreotide, octreotide), and CYP inducers (e.g., rifampin, phenytoin and St John's Wort). Intervention: Dose increases and increased frequency of glucose monitoring may be required when nateglinide is coadministered with these drugs. Drugs That May Blunt Signs and Symptoms of Hypoglycemia Drugs: beta-blockers, clonidine, guanethidine, and reserpine Intervention: Increased frequency of glucose monitoring may be required when nateglinide is coadministered with these drugs. Drugs That May Increase the Potential for Hypoglycemia : Nateglinide dose reductions and increased frequency of glucose monitoring may be required when co-administered (7) Drugs That May Increase the Potential for Hyperglycemia : Nateglinide dose increases and increased frequency of glucose monitoring may be required when co-administered (7) Drugs That May Blunt Signs and Symptoms of Hypoglycemia : Increased frequency of glucose monitoring may be required when co-administered (7)&#10;&#10;## Use in specific populations&#10;&#10;8 USE IN SPECIFIC POPULATIONS Lactation: Nateglinide is not recommended when breastfeeding (8.2) 8.1 Pregnancy Risk Summary The available data from published literature and the applicant's pharmacovigilance with use of nateglinide in pregnant women are insufficient to identify a drug-associated risk of major birth defects, miscarriage or other adverse maternal or fetal outcomes. There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy ( see Clinical Considerations ). Nateglinide should be used during pregnancy only if the potential benefit justifies the potential risk to the fetus. In animal reproduction studies, there was no teratogenicity in rats and rabbits administered oral nateglinide during organogenesis at approximately 27 and 8 times the maximum recommended human dose (MRHD), respectively, based on body surface area (BSA). The estimated background risk of major birth defects is 6% to 10% in women with pre-gestational diabetes with a HbA1c &gt; 7 and has been reported to be as high as 20% to 25% in women with a HbA1c &gt; 10. The estimated background risk of miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20%, respectively. Clinical Considerations Disease-Associated Maternal and/or Embryo/Fetal Risk Poorly controlled diabetes in pregnancy increases the maternal risk for diabetic ketoacidosis, pre-eclampsia, spontaneous abortions, preterm delivery, and delivery complications. Poorly controlled diabetes increases the fetal risk for major birth defects, stillbirth, and macrosomia related morbidity. Data Animal data In embryofetal development studies, nateglinide administered orally during the period of organogenesis was not teratogenic in rats at doses up to 1,000 mg/kg (corresponding to 27 times the MRHD of 120 mg three times per day, based on BSA). In rabbits, embryonic development was adversely affected at 500 mg/kg/day and the incidence of gallbladder agenesis or small gallbladder was increased at a dose of 300 and 500 mg/kg (corresponding to 16 and 27 times the MRHD). No such effects were observed at 150 mg/kg/day (corresponding to 8 times the MRHD). In a pre- and postnatal development study in rats, nateglinide administered by oral gavage at doses of 100, 300, and 1000 mg/kg/day from gestation day 17 to lactation day 21 resulted in lower body weight in offspring of rats administered nateglinide at 1,000 mg/kg/day (corresponding to 27 times the MHRD). 8.2 Lactation Risk summary There are no data on the presence of nateglinide in human milk, the effects on the breastfeeding infant, or the effects on milk production. The drug is present in animal milk. When a drug is present in animal milk, it is likely that the drug will be present in human milk ( see Data ). Because the potential for hypoglycemia in breast-fed infants, advise women that use of nateglinide is not recommended while breastfeeding. Data In rat reproduction studies, nateglinide and its metabolite are excreted in the milk following oral dose (300 mg/kg). The overall milk: plasma (M/P) concentration ratio of the total radioactivity was approximately 1.4 based on AUC 0-48 values. The M/P ratio of unchanged nateglinide was approximately 2.2. 8.4 Pediatric Use The safety and effectiveness of nateglinide have not been established in pediatric patients. 8.5 Geriatric Use 436 patients 65 years and older, and 80 patients 75 years and older were exposed to nateglinide in clinical studies. No differences were observed in safety or efficacy of nateglinide between patients age 65 and over, and those under age 65. However, greater sensitivity of some older individuals to nateglinide therapy cannot be ruled out. 8.6 Renal Impairment No dosage adjustment is recommended in patients with mild to severe renal impairment [see Clinical Pharmacology (12.3)] . 8.7 Hepatic Impairment No dose adjustment is recommended for patients with mild hepatic impairment. Use of nateglinide in patients with moderate-to-severe hepatic impairment has not been studied and therefore, should be used with caution in these patients [see Clinical Pharmacology (12.3)] .&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:15:16+00:00" xmi:version="2.0">
+  <chunks charEnd="3390"/>
+  <chunks index="1" charStart="3370" charEnd="6288"/>
+  <chunks index="2" charStart="6268" charEnd="8466" status="UNPARSEABLE" error="unparseable JSON: Expecting ',' delimiter: line 356 column 6 (char 11075)"/>
+  <chunks index="3" charStart="8436" charEnd="8466"/>
+  <chunks index="4" charStart="8468" charEnd="12468"/>
+  <chunks index="5" charStart="12168" charEnd="12737"/>
+  <entities type="Drug" id="nateglinide" mention="Nateglinide" confidence="0.99" sourceSpanStart="31" sourceSpanEnd="42">
+    <properties key="name" value="nateglinide"/>
+    <properties key="drugClass" value="glinide"/>
+  </entities>
+  <entities type="DrugClass" id="glinides" mention="glinide" confidence="0.95" sourceSpanStart="35" sourceSpanEnd="42">
+    <properties key="name" value="glinides"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.98" sourceSpanStart="354" sourceSpanEnd="378">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus" confidence="0.98" sourceSpanStart="448" sourceSpanEnd="472">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.98" sourceSpanStart="497" sourceSpanEnd="518">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="hypersensitivity" confidence="0.95" sourceSpanStart="868" sourceSpanEnd="884">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.98" sourceSpanStart="1061" sourceSpanEnd="1073">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="beta-blockers" mention="beta-blockers" confidence="0.95" sourceSpanStart="2176" sourceSpanEnd="2189">
+    <properties key="name" value="beta-blockers"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="3496" sourceSpanEnd="3508" chunkIndex="1">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="nateglinide" mention="nateglinide" confidence="0.98" sourceSpanStart="3587" sourceSpanEnd="3598" chunkIndex="1">
+    <properties key="name" value="nateglinide"/>
+  </entities>
+  <entities type="Condition" id="upper-respiratory-tract-infection" mention="upper respiratory tract infection" confidence="0.95" sourceSpanStart="3630" sourceSpanEnd="3663" chunkIndex="1">
+    <properties key="name" value="upper respiratory tract infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="back-pain" mention="back pain" confidence="0.95" sourceSpanStart="3665" sourceSpanEnd="3674" chunkIndex="1">
+    <properties key="name" value="back pain"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="flu-symptoms" mention="flu symptoms" confidence="0.95" sourceSpanStart="3676" sourceSpanEnd="3688" chunkIndex="1">
+    <properties key="name" value="flu symptoms"/>
+    <properties key="category" value="general"/>
+  </entities>
+  <entities type="Condition" id="dizziness" mention="dizziness" confidence="0.95" sourceSpanStart="3690" sourceSpanEnd="3699" chunkIndex="1">
+    <properties key="name" value="dizziness"/>
+    <properties key="category" value="nervous system"/>
+  </entities>
+  <entities type="Condition" id="arthropathy" mention="arthropathy" confidence="0.95" sourceSpanStart="3701" sourceSpanEnd="3712" chunkIndex="1">
+    <properties key="name" value="arthropathy"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="3714" sourceSpanEnd="3722" chunkIndex="1">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="4213" sourceSpanEnd="4237" chunkIndex="1">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="accidental-trauma" mention="Accidental Trauma" confidence="0.95" sourceSpanStart="4837" sourceSpanEnd="4854" chunkIndex="1">
+    <properties key="name" value="accidental trauma"/>
+    <properties key="category" value="injury"/>
+  </entities>
+  <entities type="Condition" id="bronchitis" mention="Bronchitis" confidence="0.95" sourceSpanStart="4863" sourceSpanEnd="4873" chunkIndex="1">
+    <properties key="name" value="bronchitis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="coughing" mention="Coughing" confidence="0.95" sourceSpanStart="4882" sourceSpanEnd="4890" chunkIndex="1">
+    <properties key="name" value="coughing"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.98" sourceSpanStart="5654" sourceSpanEnd="5663" chunkIndex="1">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.98" sourceSpanStart="5686" sourceSpanEnd="5695" chunkIndex="1">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Condition" id="rash" mention="Rash" confidence="0.95" sourceSpanStart="6153" sourceSpanEnd="6157" chunkIndex="1">
+    <properties key="name" value="rash"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="itching" mention="itching" confidence="0.95" sourceSpanStart="6159" sourceSpanEnd="6166" chunkIndex="1">
+    <properties key="name" value="itching"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="urticaria" mention="urticaria" confidence="0.95" sourceSpanStart="6172" sourceSpanEnd="6181" chunkIndex="1">
+    <properties key="name" value="urticaria"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="jaundice" mention="Jaundice" confidence="0.95" sourceSpanStart="6207" sourceSpanEnd="6215" chunkIndex="1">
+    <properties key="name" value="jaundice"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="cholestatic-hepatitis" mention="cholestatic hepatitis" confidence="0.95" sourceSpanStart="6217" sourceSpanEnd="6238" chunkIndex="1">
+    <properties key="name" value="cholestatic hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="elevated-liver-enzymes" mention="elevated liver enzymes" confidence="0.95" sourceSpanStart="6244" sourceSpanEnd="6266" chunkIndex="1">
+    <properties key="name" value="elevated liver enzymes"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Drug" id="nateglinide" mention="Nateglinide" confidence="0.99" sourceSpanStart="8509" sourceSpanEnd="8520" chunkIndex="4">
+    <properties key="name" value="nateglinide"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="8924" sourceSpanEnd="8932" chunkIndex="4">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="9965" sourceSpanEnd="9986" chunkIndex="4">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pre-eclampsia" mention="pre-eclampsia" confidence="0.95" sourceSpanStart="9988" sourceSpanEnd="10001" chunkIndex="4">
+    <properties key="name" value="pre-eclampsia"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="spontaneous-abortions" mention="spontaneous abortions" confidence="0.95" sourceSpanStart="10003" sourceSpanEnd="10024" chunkIndex="4">
+    <properties key="name" value="spontaneous abortions"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="11409" sourceSpanEnd="11421" chunkIndex="4">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="nateglinide" mention="nateglinide" confidence="0.95" sourceSpanStart="12261" sourceSpanEnd="12272" chunkIndex="5">
+    <properties key="name" value="nateglinide"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="mild to severe renal impairment" confidence="0.9" sourceSpanStart="12376" sourceSpanEnd="12407" chunkIndex="5">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="mild hepatic impairment" confidence="0.9" sourceSpanStart="12520" sourceSpanEnd="12543" chunkIndex="5">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="moderate-to-severe-hepatic-impairment" mention="moderate-to-severe hepatic impairment" confidence="0.9" sourceSpanStart="12581" sourceSpanEnd="12618" chunkIndex="5">
+    <properties key="name" value="moderate-to-severe hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="nateglinide" targetType="DrugClass" targetId="glinides" confidence="0.98" evidence="Nateglinide is a glinide indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="520" sourceSpanEnd="658"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.98" evidence="Nateglinide is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="251" sourceSpanEnd="379"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="hypersensitivity" confidence="0.97" evidence="Nateglinide tablets are contraindicated in patients with a history of hypersensitivity to nateglinide or its inactive ingredients." sourceSpanStart="798" sourceSpanEnd="928"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="hypoglycemia" confidence="0.98" evidence="Nateglinide may cause hypoglycemia." sourceSpanStart="1075" sourceSpanEnd="1110"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="The following serious adverse reaction is also described elsewhere in the labeling: Hypoglycemia [see Warnings and Precautions (5.1)]" sourceSpanStart="3412" sourceSpanEnd="3545" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="upper-respiratory-tract-infection" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="back-pain" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="flu-symptoms" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="dizziness" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="arthropathy" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="diarrhea" confidence="0.95" evidence="Common adverse reactions associated with nateglinide (3% or greater incidence) were upper respiratory tract infection, back pain, flu symptoms, dizziness, arthropathy, diarrhea." sourceSpanStart="3546" sourceSpanEnd="3723" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="accidental-trauma" confidence="0.9" evidence="Accidental Trauma 1.7 2.9" sourceSpanStart="4837" sourceSpanEnd="4862" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="bronchitis" confidence="0.9" evidence="Bronchitis 2.6 2.7" sourceSpanStart="4863" sourceSpanEnd="4881" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="coughing" confidence="0.9" evidence="Coughing 2.2 2.4" sourceSpanStart="4882" sourceSpanEnd="4898" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="rash" confidence="0.95" evidence="Hypersensitivity Reactions: Rash, itching, and urticaria" sourceSpanStart="6125" sourceSpanEnd="6181" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="itching" confidence="0.95" evidence="Hypersensitivity Reactions: Rash, itching, and urticaria" sourceSpanStart="6125" sourceSpanEnd="6181" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="urticaria" confidence="0.95" evidence="Hypersensitivity Reactions: Rash, itching, and urticaria" sourceSpanStart="6125" sourceSpanEnd="6181" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="jaundice" confidence="0.95" evidence="Hepatobiliary Disorders: Jaundice, cholestatic hepatitis, and elevated liver enzymes" sourceSpanStart="6182" sourceSpanEnd="6266" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="cholestatic-hepatitis" confidence="0.95" evidence="Hepatobiliary Disorders: Jaundice, cholestatic hepatitis, and elevated liver enzymes" sourceSpanStart="6182" sourceSpanEnd="6266" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="elevated-liver-enzymes" confidence="0.95" evidence="Hepatobiliary Disorders: Jaundice, cholestatic hepatitis, and elevated liver enzymes" sourceSpanStart="6182" sourceSpanEnd="6266" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Because the potential for hypoglycemia in breast-fed infants, advise women that use of nateglinide is not recommended while breastfeeding." sourceSpanStart="11383" sourceSpanEnd="11521" chunkIndex="4"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="nateglinide" targetType="Condition" targetId="moderate-to-severe-hepatic-impairment" confidence="0.8" evidence="Use of nateglinide in patients with moderate-to-severe hepatic impairment has not been studied and therefore, should be used with caution in these patients" sourceSpanStart="12545" sourceSpanEnd="12700" chunkIndex="5"/>
+</raw:RawExtractionResult>

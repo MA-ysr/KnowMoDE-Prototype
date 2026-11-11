@@ -1,0 +1,11 @@
+# PubMed 28118530: Current Risk Adjustment and Comorbidity Index Underperformance in Predicting Post-Acute Utilization and Hospital Readmissions After Joint Replacements: Implications for Comprehensive Care for Joint Replacement Model.
+
+Arthritis care & research (2017), doi:10.1002/acr.23195
+
+OBJECTIVE: To compare the performances of 3 comorbidity indices, the Charlson Comorbidity Index, the Elixhauser Comorbidity Index, and the Centers for Medicare & Medicaid Services (CMS) risk adjustment model, Hierarchical Condition Category (HCC), in predicting post-acute discharge settings and hospital readmission for patients after joint replacement.
+
+METHODS: A retrospective study of Medicare beneficiaries with total knee replacement (TKR) or total hip replacement (THR) discharged from hospitals in 2009-2011 (n = 607,349) was performed. Study outcomes were post-acute discharge setting and unplanned 30-, 60-, and 90-day hospital readmissions. Logistic regression models were built to compare the performance of the 3 comorbidity indices using C statistics. The base model included patient demographics and hospital use. Subsequent models included 1 of the 3 comorbidity indices. Additional multivariable logistic regression models were built to identify individual comorbid conditions associated with high risk of hospital readmissions.
+
+RESULTS: The 30-, 60-, and 90-day unplanned hospital readmission rates were 5.3%, 7.2%, and 8.5%, respectively. Patients were most frequently discharged to home health (46.3%), followed by skilled nursing facility (40.9%) and inpatient rehabilitation facility (12.7%). The C statistics for the base model in predicting post-acute discharge setting and 30-, 60-, and 90-day readmission in TKR and THR were between 0.63 and 0.67. Adding the Charlson Comorbidity Index, the Elixhauser Comorbidity Index, or HCC increased the C statistic minimally from the base model for predicting both discharge settings and hospital readmission. The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease.
+
+CONCLUSION: The comorbidity indices and CMS-HCC demonstrated weak discriminatory ability to predict post-acute discharge settings and hospital readmission following joint replacement.

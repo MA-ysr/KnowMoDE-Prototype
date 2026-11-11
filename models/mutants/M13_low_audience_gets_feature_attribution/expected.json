@@ -1,0 +1,7 @@
+{
+  "id": "M13_low_audience_gets_feature_attribution",
+  "family": "C4",
+  "expectedConstraint": "C4_LowAudienceNoFeatureAttribution",
+  "mutatedFile": "explainability.xmi",
+  "description": "patient (LOW) is added to the FEATURE_ATTRIBUTION type"
+}

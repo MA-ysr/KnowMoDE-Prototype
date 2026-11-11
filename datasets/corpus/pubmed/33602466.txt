@@ -1,0 +1,13 @@
+# PubMed 33602466: Patient Characteristics and Clinical Outcomes of Type 1 Versus Type 2 Myocardial Infarction.
+
+Journal of the American College of Cardiology (2021), doi:10.1016/j.jacc.2020.12.034
+
+BACKGROUND: Type 2 myocardial infarction (MI) patients may have different characteristics and outcomes when compared with type 1 MI.
+
+OBJECTIVES: The purpose of this study was to compare patients with type 1 MI to those with type 2 MI in the United States.
+
+METHODS: Using the Nationwide Readmissions Database, MI patients were categorized over the 3 months following the introduction of an International Classification of Diseases-10th Revision code specific for type 2 MI. Baseline characteristics and inpatient and post-discharge outcomes among both cohorts were compared.
+
+RESULTS: There were 216,657 patients with type 1 MI, 37,765 patients with type 2 MI, and 1,525 patients with both type 1 and 2 MI. Patients with type 2 MI were older (71 years vs. 69 years; p < 0.001), were more likely to be women (47.3% vs. 40%; p < 0.001), and had higher prevalence of heart failure (27.9% vs. 10.9%; p < 0.001), kidney disease (35.7% vs. 25.7%; p < 0.001), and atrial fibrillation (31% vs. 21%; p < 0.001). Rates of coronary angiography (10.9% vs. 57.3%; p < 0.001), percutaneous coronary intervention (1.7% vs. 38.5%; p < 0.001), and coronary artery bypass grafting (0.4% vs. 7.8%; p < 0.001) were lower among type 2 MI patients. Patients with type 2 MI had lower risk of in-hospital mortality (adjusted odds ratio: 0.57 [95% confidence interval: 0.54 to 0.60]) and 30-day MI readmission (adjusted odds ratio: 0.46 [95% confidence interval: 0.35 to 0.59]). There was no difference in risk of 30-day all-cause or heart failure readmission.
+
+CONCLUSIONS: Patients with type 2 MI have a unique cardiovascular phenotype when compared with type 1 MI, and are managed in a heterogenous manner. Validated management strategies for type 2 MI are needed.

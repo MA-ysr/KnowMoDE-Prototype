@@ -1,0 +1,11 @@
+# PubMed 35502490: Infectious complications following contemporary left ventricular assist device implantation.
+
+Journal of cardiac surgery (2022), doi:10.1111/jocs.16545
+
+BACKGROUND: The aim of this study is to evaluate the source of infectious complications following contemporary left ventricular assist device (LVAD) implantation and to determine the impact of infections on patient outcomes.
+
+METHODS: All patients who underwent centrifugal LVAD implantation between 2014 and 2020 at a single center were retrospectively reviewed. Postimplant infections were categorized as VAD-specific, VAD-related, or non-VAD according to previously published definitions. Postoperative survival and freedom from readmission were assessed using Kaplan-Meier analysis. Univariable and multivariable analyses were performed to determine the risk factors for postoperative infectious complications.
+
+RESULTS: A total of 212 patients underwent centrifugal LVAD implantation (70 HeartMate 3, 142 HeartWare HVAD) during the study period. One hundred and two patients (48.1%) developed an infection, including 34 VAD-specific, 11 VAD-related, and 57 non-VAD. Staphylococcus species were the most common source of postoperative infection (n = 57, 33.7%). In multivariable analysis, diabetes significantly impacted overall postoperative infection rate. At 12 and 24 months, respectively, Kaplan-Meier survival was 81.1% and 61.6% in the infection group and 83.4% and 78.1% in the noninfection group (p = 0.006). Within the total cohort, 12- and 24-month freedom from infection were 46.2% and 31.9%, respectively. Patients with infectious complication had significantly lower rate of transplantation (16.4% vs. 43.6%; p < 0.001), increased overall mortality (46.3% vs. 17.3%, p < 0.001), and increased rates of noncardiac readmission (58.2% vs. 37.3%, p = 0.007).
+
+CONCLUSIONS: Infections are common following contemporary LVAD implantation and are most commonly non-VAD related. Patients with postoperative infectious complications have significantly reduced rates of transplantation, survival, and freedom from noncardiac readmission.

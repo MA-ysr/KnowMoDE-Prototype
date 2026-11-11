@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/17496739" sourceUri="https://pubmed.ncbi.nlm.nih.gov/17496739/" sourceSha256="640f37a9a71e8148fef16e90defabd464d3cae5fb74b9a4e20a23e173653838b" sourceText="Piperacillin/tazobactam-induced seizure rapidly reversed by high flux hemodialysis in a patient on peritoneal dialysis. Despite popular use of piperacillin, the dire neurotoxicity associated with piperacillin still goes unrecognized, leading to a delay in appropriate management. We report a 57-year-old woman with end-stage renal disease receiving continuous ambulatory peritoneal dialysis (CAPD), who developed slurred speech, tremor, bizarre behavior, progressive mental confusion, and 2 episodes of generalized tonic-clonic seizure (GTCS) after 5 doses of piperacillin/tazobactam (2 g/250 mg) were given for bronchiectasis with secondary infection. The laboratory data revealed normal plasma electrolyte and ammonia levels but leukocytosis. Neurologic examinations showed dysarthria and bilateral Babinski sign. Computed tomography of brain and electroencephalogram were unremarkable. Despite the use of antiepileptic agents, another GTCS episode recurred after the sixth dose of piperacillin/tazobactam. Brain magnetic resonance imaging did not demonstrate acute infarction and organic brain lesions. Initiation of high-flux hemodialysis rapidly reversed the neurologic symptoms within 4 hours. Piperacillin-induced encephalopathy should be considered in any uremic patients with unexplained neurological manifestations. CAPD is inefficient in removing piperacillin, whereas hemodialysis can rapidly terminate the piperacillin-induced encephalopathy." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:20+00:00" xmi:version="2.0">
+  <chunks charEnd="1455"/>
+  <entities type="Drug" id="piperacillin-tazobactam" mention="piperacillin/tazobactam" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="23">
+    <properties key="name" value="piperacillin/tazobactam"/>
+  </entities>
+  <entities type="Drug" id="piperacillin" mention="piperacillin" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="12">
+    <properties key="name" value="piperacillin"/>
+  </entities>
+  <entities type="Condition" id="seizure" mention="seizure" confidence="0.9" sourceSpanStart="32" sourceSpanEnd="39">
+    <properties key="name" value="seizure"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="neurotoxicity" mention="neurotoxicity" confidence="0.9" sourceSpanStart="166" sourceSpanEnd="179">
+    <properties key="name" value="neurotoxicity"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="end-stage-renal-disease" mention="end-stage renal disease" confidence="0.95" sourceSpanStart="315" sourceSpanEnd="338">
+    <properties key="name" value="end-stage renal disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="bronchiectasis" mention="bronchiectasis" confidence="0.9" sourceSpanStart="612" sourceSpanEnd="626">
+    <properties key="name" value="bronchiectasis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="encephalopathy" mention="encephalopathy" confidence="0.9" sourceSpanStart="1221" sourceSpanEnd="1235">
+    <properties key="name" value="encephalopathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="piperacillin-tazobactam" targetType="Condition" targetId="seizure" confidence="0.95" evidence="Piperacillin/tazobactam-induced seizure rapidly reversed by high flux hemodialysis in a patient on peritoneal dialysis." sourceSpanStart="0" sourceSpanEnd="119"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="piperacillin" targetType="Condition" targetId="neurotoxicity" confidence="0.9" evidence="Despite popular use of piperacillin, the dire neurotoxicity associated with piperacillin still goes unrecognized, leading to a delay in appropriate management." sourceSpanStart="120" sourceSpanEnd="279"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="piperacillin-tazobactam" targetType="Condition" targetId="bronchiectasis" confidence="0.85" evidence="We report a 57-year-old woman with end-stage renal disease receiving continuous ambulatory peritoneal dialysis (CAPD), who developed slurred speech, tremor, bizarre behavior, progressive mental confusion, and 2 episodes of generalized tonic-clonic seizure (GTCS) after 5 doses of piperacillin/tazobactam (2 g/250 mg) were given for bronchiectasis with secondary infection." sourceSpanStart="280" sourceSpanEnd="652"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="piperacillin" targetType="Condition" targetId="encephalopathy" confidence="0.95" evidence="Piperacillin-induced encephalopathy should be considered in any uremic patients with unexplained neurological manifestations." sourceSpanStart="1200" sourceSpanEnd="1325"/>
+</raw:RawExtractionResult>

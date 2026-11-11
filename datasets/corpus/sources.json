@@ -1,0 +1,50 @@
+{
+  "_comment": "Corpus acquisition seeds. Drug names and condition names are NOT listed here: they are read from the decision-bindings model (models/<usecase>/decision-bindings.xmi) so that the corpus covers exactly the entities the explanations will need. This file only holds search terms that have no model counterpart.",
+  "openfda": {
+    "search_overrides": {
+      "insulin": ["insulin human", "insulin glargine", "insulin lispro"],
+      "glyburide and metformin": ["glyburide and metformin hydrochloride", "glyburide and metformin"],
+      "glipizide and metformin": ["glipizide and metformin hydrochloride", "glipizide and metformin"]
+    },
+    "sections": ["boxed_warning", "indications_and_usage", "contraindications", "warnings_and_cautions", "warnings", "precautions", "adverse_reactions", "drug_interactions", "use_in_specific_populations"]
+  },
+  "medlineplus": {
+    "terms": ["diabetes", "diabetes type 2", "diabetes complications", "diabetes medicines", "A1C", "blood sugar", "hypoglycemia", "hyperglycemia", "insulin", "diabetic kidney disease", "diabetic heart disease", "heart failure", "kidney disease", "high blood pressure", "diabetic foot", "diabetic eye problems", "after a hospital stay", "metformin"],
+    "max_topics_per_term": 3
+  },
+  "pubmed": {
+    "_comment": "esearch: (query) [AND (filter)] AND humans[MeSH Terms] AND english[Language] AND min_year:3000[dp] AND hasabstract, sorted by relevance, max_per_query ids per query (a query object may override it and name the collection its results belong to, default corpus/pubmed), union over queries. PubMed relevance ranking is not stable over time: a query that has been run is pinned (its PMIDs are recorded in the manifest and re-fetched exactly); a query new to this file is run once and pinned in turn (--force re-runs every query).",
+    "queries": [
+      "diabetes hospital readmission risk factors",
+      "diabetes 30-day readmission predictors",
+      "HbA1c hospital readmission",
+      "hypoglycemia hospital readmission insulin",
+      "inpatient hyperglycemia readmission",
+      "diabetes readmission discharge skilled nursing facility",
+      "diabetes polypharmacy readmission",
+      "heart failure diabetes readmission",
+      "chronic kidney disease diabetes readmission",
+      "diabetes emergency department visits readmission",
+      {"collection": "corpus/pubmed/guidelines",
+       "topic": "inpatient diabetes management: practice guidelines, consensus statements, standards of care",
+       "query": "(diabet*[ti] OR hyperglyc*[ti] OR hypoglyc*[ti] OR glycemic[ti] OR glycaemic[ti] OR insulin[ti]) AND (hospital*[ti] OR inpatient*[ti] OR in-patient*[ti] OR noncritical*[ti] OR non-critical*[ti] OR perioperative[ti] OR peri-operative[ti] OR surgery[ti] OR \"critically ill\"[ti])",
+       "filter": "guideline[pt] OR practice guideline[pt] OR consensus development conference[pt] OR consensus[ti] OR guideline*[ti] OR recommendation*[ti] OR \"position statement\"[ti] OR \"standards of care\"[ti] OR \"standards of medical care\"[ti]",
+       "max_per_query": 40},
+      {"collection": "corpus/pubmed/guidelines",
+       "topic": "hospital discharge and transitions of care for patients with diabetes: recommendations",
+       "query": "(diabet*[ti] OR hyperglyc*[ti] OR insulin[ti] OR glycemic[ti] OR glycaemic[ti]) AND (discharge*[ti] OR \"transition of care\"[ti] OR \"transitions of care\"[ti] OR \"hospital to home\"[ti] OR post-discharge[ti]) AND (hospital*[tiab] OR inpatient*[tiab])",
+       "filter": "guideline[pt] OR practice guideline[pt] OR consensus development conference[pt] OR review[pt] OR consensus[ti] OR guideline*[ti] OR recommendation*[ti] OR \"position statement\"[ti] OR practical[ti] OR \"best practice\"[ti]",
+       "max_per_query": 30}
+    ],
+    "max_per_query": 40,
+    "min_year": 2005
+  },
+  "papers": [
+    {"id": "strack2014", "doi": "10.1155/2014/781670", "licence": "CC BY 3.0",
+     "title": "Impact of HbA1c Measurement on Hospital Readmission Rates: Analysis of 70,000 Clinical Database Patient Records"}
+  ],
+  "gold": {
+    "bc5cdr_zip": "https://github.com/JHnlp/BioCreative-V-CDR-Corpus/raw/master/CDR_Data.zip",
+    "bc5cdr_licence": "BioCreative V CDR corpus; free for research use (see corpus licence)"
+  }
+}

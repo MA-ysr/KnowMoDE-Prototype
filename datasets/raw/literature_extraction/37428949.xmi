@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37428949.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37428949/" sourceSha256="f64224facaa65ebe651634d985f72077a31a7e16d46bf0b9dcc44f5831932e53" sourceText="# PubMed 37428949: Development of Quality Measures for Inpatient Diabetes Care and Education Specialists: A Call to Action.&#10;&#10;Journal for healthcare quality : official publication of the National Association for Healthcare Quality (2023 Sep-Oct 01), doi:10.1097/JHQ.0000000000000397&#10;&#10;Diabetes and hyperglycemia are associated with an increased risk of in-hospital complications that lead to longer lengths of stay, increased morbidity, higher mortality, and risk of readmission. Diabetes care and education specialists (DCESs) working in hospital settings are uniquely prepared and credentialed to serve as content experts to facilitate change and implement processes and programs to improve glycemic-related outcomes. A recent survey of DCESs explored the topic of productivity and clinical metrics. Outcomes highlighted the need to better evaluate the impact and value of inpatient DCESs, advocate for the role, and to expand diabetes care and education teams to optimize outcomes. The purpose of this article was to recommend strategies and metrics that can be used to quantify the work of inpatient DCESs and describe how such metrics can help to show the value of the inpatient DCES and assist in making a business case for the role.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:28:55+00:00" xmi:version="2.0">
+  <chunks charEnd="1238"/>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.95" sourceSpanStart="65" sourceSpanEnd="73">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="296" sourceSpanEnd="309">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="readmission" confidence="0.9" sourceSpanStart="465" sourceSpanEnd="476">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Diabetes and hyperglycemia are associated with an increased risk of in-hospital complications that lead to longer lengths of stay, increased morbidity, higher mortality, and risk of readmission." sourceSpanStart="283" sourceSpanEnd="477"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperglycemia" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="Diabetes and hyperglycemia are associated with an increased risk of in-hospital complications that lead to longer lengths of stay, increased morbidity, higher mortality, and risk of readmission." sourceSpanStart="283" sourceSpanEnd="477"/>
+</raw:RawExtractionResult>

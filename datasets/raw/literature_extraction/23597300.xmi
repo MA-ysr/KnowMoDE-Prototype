@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/23597300.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/23597300/" sourceSha256="ae7913b807578d304d3bfc660d3546913034781b828a05597d9290cb5b0687b3" sourceText="# PubMed 23597300: Heart failure in the Middle East.&#10;&#10;Current cardiology reviews (2013), doi:10.2174/1573403x11309020009&#10;&#10;The clinical syndrome of heart failure is the final pathway for a myriad of diseases that affect the heart, and is a leading and growing cause of morbidity and mortality worldwide. Evidence-based guidelines have provided clinicians with valuable data for better applying diagnostic and therapeutic tools, particularly the overwhelming new imaging technology and other, often expensive, therapies and devices, in heart failure patients. In the Middle East, progress has recently been made with the development of regional and multi-centre registries to evaluate the quality of care for patients with heart failure. A new heart function clinic recently began operation and has clearly resulted in a reduced readmission rate for heart failure patients. Many Middle Eastern countries have observed increases in the prevalence of the risk factors for the development of heart failure, including diabetes mellitus, obesity, and hypertension, with heart failure in the Middle Eastern population developing earlier than it is in their Western counterparts by at least 10 years. The earlier onset of disease is the result of the earlier onset of coronary artery disease, highlighting the need for Middle Eastern countries to establish prevention programs across all age groups. The health systems across the Middle East need to be modified in order to provide improved evidence-based medical care. Existing registries also need to be expanded to include long-term survey data, and additional funding for heart failure research is warranted.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:26:28+00:00" xmi:version="2.0">
+  <chunks charEnd="1654"/>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="19" sourceSpanEnd="32">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-rate-for-heart-failure" mention="reduced readmission rate for heart failure patients" confidence="0.9" sourceSpanStart="819" sourceSpanEnd="870">
+    <properties key="name" value="readmission rate for heart failure patients"/>
+  </entities>
+  <entities type="RiskFactor" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1012" sourceSpanEnd="1029">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="description" value="risk factor for the development of heart failure"/>
+  </entities>
+  <entities type="RiskFactor" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1031" sourceSpanEnd="1038">
+    <properties key="name" value="obesity"/>
+    <properties key="description" value="risk factor for the development of heart failure"/>
+  </entities>
+  <entities type="RiskFactor" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1044" sourceSpanEnd="1056">
+    <properties key="name" value="hypertension"/>
+    <properties key="description" value="risk factor for the development of heart failure"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="1259" sourceSpanEnd="1282">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmission-rate-for-heart-failure" confidence="0.5" evidence="Many Middle Eastern countries have observed increases in the prevalence of the risk factors for the development of heart failure, including diabetes mellitus, obesity, and hypertension" sourceSpanStart="872" sourceSpanEnd="1056"/>
+</raw:RawExtractionResult>

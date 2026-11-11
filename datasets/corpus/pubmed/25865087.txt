@@ -1,0 +1,11 @@
+# PubMed 25865087: Effectiveness of a multidisciplinary team approach to the prevention of readmission for acute glycaemic events.
+
+Diabetic medicine : a journal of the British Diabetic Association (2015), doi:10.1111/dme.12779
+
+AIMS: To describe the effect of a combined diabetes specialist/mental health team approach to prevent readmissions for acute glycaemic events among patients with diabetes.
+
+METHODS: Consecutive patients with diabetes, readmitted to a single hospital for an acute glycaemic condition, were offered one or more diabetes (including assessment, education, medication, technology use and intensive support) and mental health (including assessment, training and therapies) interventions. The pilot service took place over 11 months, with the preceding 24 months and subsequent 8 months serving as control periods.
+
+RESULTS: Of the 58 patients admitted, 50 had Type 1 diabetes and were from within the hospital catchment area, and were discharged home. Of these, 32 (64%) had a pre-existing mental health issue and 14 (28%) had a complex social situation. In all, 96% of patients were met as an inpatient by a team member, and 94% accepted at least one intervention. The mean ±sd number of admissions per patient/month dropped from 0.12 ± 0.10 to 0.05 ± 0.10 (P < 0.001) during the intervention, increasing, once the intervention ended, to 0.16 ± 0.36 (P = 0.002). The mean ± sd length of stay similarly decreased and increased (0.6 ± 0.9 to 0.2 ± 0.7 days; P < 0.001 to 0.006) to 0.6 ± 1.4 days (P = 0.003) per patient/month) across the three periods, as did the mean ±sd tariff paid per patient/month (₤258.0 ± 374.0 vs ₤92.1 ± 245.0 vs ₤287.3 ± 563.8; P < 0.001 and P = 0.018, respectively). The mean ± sd HbA1c level dropped from 99 ± 22 to 92 ± 24 mmol/mol (11.2 ± 4.2% vs 10.6 ± 4.3%; P = 0.014) but did not increase after the intervention [89 ± 26 mmol/mol (10.4 ± 4.5%)].
+
+CONCLUSIONS: The cost and long-term risks of hospitalization among patients with Type 1 diabetes and recurrent admissions can be reduced by a combined specialist diabetes/mental health team approach.

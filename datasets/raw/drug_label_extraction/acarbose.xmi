@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/acarbose.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22acarbose%22" sourceSha256="969db32a35a5f62da2eecfd0e3c5050c976b3f497babe6bebe7d3f6cb546b60b" sourceText="# FDA prescribing information: acarbose&#10;&#10;Generic name: ACARBOSE&#10;Brand name: Acarbose&#10;Pharmacologic class: alpha-Glucosidase Inhibitor [EPC]&#10;Label set id: 067c0adc-7322-489d-9baa-1d061b37be36, effective 20260716&#10;&#10;## Indications and usage&#10;&#10;INDICATIONS AND USAGE Acarbose tablets, USP are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus.&#10;&#10;## Contraindications&#10;&#10;CONTRAINDICATIONS Acarbose tablets are contraindicated in patients with known hypersensitivity to the drug. Acarbose tablets are contraindicated in patients with diabetic ketoacidosis or cirrhosis. Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction. In addition, acarbose tablets are contraindicated in patients who have chronic intestinal diseases associated with marked disorders of digestion or absorption and in patients who have conditions that may deteriorate as a result of increased gas formation in the intestine.&#10;&#10;## Precautions&#10;&#10;PRECAUTIONS General Macrovascular Outcomes There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with acarbose tablets or any other anti-diabetic drug. Hypoglycemia Because of its mechanism of action, acarbose tablets when administered alone should not cause hypoglycemia in the fasted or postprandial state. Sulfonylurea agents or insulin may cause hypoglycemia. Because acarbose given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the potential for hypoglycemia. Hypoglycemia does not occur in patients receiving metformin alone under usual circumstances of use, and no increased incidence of hypoglycemia was observed in patients when acarbose was added to metformin therapy. Oral glucose (dextrose), whose absorption is not inhibited by acarbose tablets, should be used instead of sucrose (cane sugar) in the treatment of mild to moderate hypoglycemia. Sucrose, whose hydrolysis to glucose and fructose is inhibited by acarbose tablets, is unsuitable for the rapid correction of hypoglycemia. Severe hypoglycemia may require the use of either intravenous glucose infusion or glucagon injection. Elevated Serum Transaminase Levels In long-term studies (up to 12 months, and including acarbose tablets doses up to 300 mg t.i.d.) conducted in the United States, treatment emergent elevations of serum transaminases (AST and/or ALT) above the upper limit of normal (ULN), greater than 1.8 times the ULN, and greater than 3 times the ULN occurred in 14%, 6%, and 3%, respectively, of acarbose-treated patients as compared to 7%, 2%, and 1%, respectively, of placebo-treated patients. Although these differences between treatments were statistically significant, these elevations were asymptomatic, reversible, more common in females, and, in general, were not associated with other evidence of liver dysfunction. In addition, these serum transaminase elevations appeared to be dose related. In US studies including acarbose doses up to the maximum approved dose of 100 mg t.i.d., treatment-emergent elevations of AST and/or ALT at any level of severity were similar between acarbose-treated patients and placebo-treated patients (p ≥ 0.496). In approximately 3 million patient-years of international postmarketing experience with acarbose tablets, 62 cases of serum transaminase elevations &gt; 500 IU/L (29 of which were associated with jaundice) have been reported. Forty-one of these 62 patients received treatment with 100 mg t.i.d. or greater and 33 of 45 patients for whom weight was reported weighed 2.0 mg/dL) have not been conducted. Therefore, treatment of these patients with acarbose tablets is not recommended. Drug Interactions Certain drugs tend to produce hyperglycemia and may lead to loss of blood glucose control. These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control. When such drugs are withdrawn from patients receiving acarbose tablets in combination with sulfonylureas or insulin, patients should be observed closely for any evidence of hypoglycemia. Patients Receiving Sulfonylureas or Insulin: Sulfonylurea agents or insulin may cause hypoglycemia. Acarbose tablets given in combination with a sulfonylurea or insulin may cause a further lowering of blood glucose and may increase the potential for hypoglycemia. If hypoglycemia occurs, appropriate adjustments in the dosage of these agents should be made. Very rarely, individual cases of hypoglycemic shock have been reported in patients receiving acarbose tablets therapy in combination with sulfonylureas and/or insulin. Intestinal adsorbents (for example, charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (for example, amylase, pancreatin) may reduce the effect of acarbose tablets and should not be taken concomitantly. Acarbose tablets has been shown to change the bioavailability of digoxin when they are co administered, which may require digoxin dose adjustment. (See CLINICAL PHARMACOLOGY, Drug-Drug Interactions ). Carcinogenesis, Mutagenesis, and Impairment of Fertility Eight carcinogenicity studies were conducted with acarbose. Six studies were performed in rats (two strains, Sprague-Dawley and Wistar) and two studies were performed in hamsters. In the first rat study, Sprague-Dawley rats received acarbose in feed at high doses (up to approximately 500 mg/kg body weight) for 104 weeks. Acarbose treatment resulted in a significant increase in the incidence of renal tumors (adenomas and adenocarcinomas) and benign Leydig cell tumors. This study was repeated with a similar outcome. Further studies were performed to separate direct carcinogenic effects of acarbose from indirect effects resulting from the carbohydrate malnutrition induced by the large doses of acarbose employed in the studies. In one study using Sprague-Dawley rats, acarbose was mixed with feed but carbohydrate deprivation was prevented by the addition of glucose to the diet. In a 26-month study of Sprague-Dawley rats, acarbose was administered by daily postprandial gavage so as to avoid the pharmacologic effects of the drug. In both of these studies, the increased incidence of renal tumors found in the original studies did not occur. Acarbose was also given in food and by postprandial gavage in two separate studies in Wistar rats. No increased incidence of renal tumors was found in either of these Wistar rat studies. In two feeding studies of hamsters, with and without glucose supplementation, there was also no evidence of carcinogenicity. Acarbose did not induce any DNA damage in vitro in the CHO chromosomal aberration assay, bacterial mutagenesis (Ames) assay, or a DNA binding assay. In vivo , no DNA damage was detected in the dominant lethal test in male mice, or the mouse micronucleus test. Fertility studies conducted in rats after oral administration produced no untoward effect on fertility or on the overall capability to reproduce. Pregnancy Teratogenic Effects: Pregnancy Category B. The safety of acarbose tablets in pregnant women has not been established. Reproduction studies have been performed in rats at doses up to 480 mg/kg (corresponding to 9 times the exposure in humans, based on drug blood levels) and have revealed no evidence of impaired fertility or harm to the fetus due to acarbose. In rabbits, reduced maternal body weight gain, probably the result of the pharmacodynamic activity of high doses of acarbose in the intestines may have been responsible for a slight increase in the number of embryonic losses. However, rabbits given 160 mg/kg acarbose (corresponding to 10 times the dose in man, based on body surface area) showed no evidence of embryotoxicity and there was no evidence of teratogenicity at a dose 32 times the dose in man (based on body surface area). There are, however, no adequate and well-controlled studies of acarbose tablets in pregnant women. Because animal reproduction studies are not always predictive of the human response, this drug should be used during pregnancy only if clearly needed. Because current information strongly suggests that abnormal blood glucose levels during pregnancy are associated with a higher incidence of congenital anomalies as well as increased neonatal morbidity and mortality, most experts recommend that insulin be used during pregnancy to maintain blood glucose levels as close to normal as possible. Nursing Mothers A small amount of radioactivity has been found in the milk of lactating rats after administration of radiolabeled acarbose. It is not known whether this drug is excreted in human milk. Because many drugs are excreted in human milk, acarbose tablets should not be administered to a nursing woman. Pediatric Use Safety and effectiveness of acarbose tablets in pediatric patients have not been established. Geriatric Use Of the total number of subjects in clinical studies of acarbose tablets in the United States, 27 % were 65 and over, while 4 % were 75 and over. No overall differences in safety and effectiveness were observed between these subjects and younger subjects. The mean steady-state area under the curve (AUC) and maximum concentrations of acarbose were approximately 1.5 times higher in elderly compared to young volunteers; however, these differences were not statistically significant.&#10;&#10;## Adverse reactions&#10;&#10;ADVERSE REACTIONS Digestive Tract Gastrointestinal symptoms are the most common reactions to acarbose tablets. In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 19%, 31%, and 74% respectively in 1255 patients treated with acarbose tablets 50-300 mg t.i.d., whereas the corresponding incidences were 9%, 12%, and 29% in 999 placebo-treated patients. In a one-year safety study, during which patients kept diaries of gastrointestinal symptoms, abdominal pain and diarrhea tended to return to pretreatment levels over time, and the frequency and intensity of flatulence tended to abate with time. The increased gastrointestinal tract symptoms in patients treated with acarbose tablets are a manifestation of the mechanism of action of acarbose and are related to the presence of undigested carbohydrate in the lower GI tract. If the prescribed diet is not observed, the intestinal side effects may be intensified. If strongly distressing symptoms develop in spite of adherence to the diabetic diet prescribed, the doctor must be consulted and the dose temporarily or permanently reduced. Elevated Serum Transaminase Levels See PRECAUTIONS . Other Abnormal Laboratory Findings Small reductions in hematocrit occurred more often in acarbose-treated patients than in placebo-treated patients but were not associated with reductions in hemoglobin. Low serum calcium and low plasma vitamin B 6 levels were associated with acarbose tablets therapy but are thought to be either spurious or of no clinical significance. Postmarketing Adverse Event Reports Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS ). Pneumatosis Cystoides Intestinalis There have been rare postmarketing reports of pneumatosis cystoides intestinalis associated with the use of alpha-glucosidase inhibitors, including acarbose tablets.Pneumatosis cystoides intestinalis may present with symptoms of diarrhea, mucus discharge, rectal bleeding, and constipation.Complications may include pneumoperitoneum, volvulus, intestinal obstruction, intussusception, intestinal hemorrhage, and intestinal perforation. If pneumatosis cystoides intestinalis is suspected, discontinue acarbose tablets and perform the appropriate diagnostic imaging. To report SUSPECTED ADVERSE REACTIONS, contact Avet Pharmaceuticals Inc. at 1-866-901-DRUG (3784) or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch.&#10;&#10;## Drug interactions&#10;&#10;Drug Interactions Certain drugs tend to produce hyperglycemia and may lead to loss of blood glucose control. These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control. When such drugs are withdrawn from patients receiving acarbose tablets in combination with sulfonylureas or insulin, patients should be observed closely for any evidence of hypoglycemia. Patients Receiving Sulfonylureas or Insulin: Sulfonylurea agents or insulin may cause hypoglycemia. Acarbose tablets given in combination with a sulfonylurea or insulin may cause a further lowering of blood glucose and may increase the potential for hypoglycemia. If hypoglycemia occurs, appropriate adjustments in the dosage of these agents should be made. Very rarely, individual cases of hypoglycemic shock have been reported in patients receiving acarbose tablets therapy in combination with sulfonylureas and/or insulin. Intestinal adsorbents (for example, charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (for example, amylase, pancreatin) may reduce the effect of acarbose tablets and should not be taken concomitantly. Acarbose tablets has been shown to change the bioavailability of digoxin when they are co administered, which may require digoxin dose adjustment. (See CLINICAL PHARMACOLOGY, Drug-Drug Interactions ).&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:05:09+00:00" xmi:version="2.0">
+  <chunks charEnd="1101"/>
+  <chunks index="1" charStart="1087" charEnd="1101"/>
+  <chunks index="2" charStart="1103" charEnd="5103"/>
+  <chunks index="3" charStart="4803" charEnd="8803"/>
+  <chunks index="4" charStart="8503" charEnd="9762"/>
+  <chunks index="5" charStart="9764" charEnd="12511"/>
+  <chunks index="6" charStart="12491" charEnd="14151"/>
+  <entities type="Drug" id="acarbose" mention="Acarbose" confidence="0.99" sourceSpanStart="31" sourceSpanEnd="39">
+    <properties key="name" value="acarbose"/>
+    <properties key="drugClass" value="alpha-glucosidase inhibitor"/>
+  </entities>
+  <entities type="DrugClass" id="alpha-glucosidase-inhibitors" mention="alpha-Glucosidase Inhibitor" confidence="0.95" sourceSpanStart="106" sourceSpanEnd="133">
+    <properties key="name" value="alpha-glucosidase inhibitors"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.98" sourceSpanStart="374" sourceSpanEnd="398">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="hypersensitivity to the drug" confidence="0.95" sourceSpanStart="501" sourceSpanEnd="529">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.98" sourceSpanStart="585" sourceSpanEnd="606">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="cirrhosis" mention="cirrhosis" confidence="0.98" sourceSpanStart="610" sourceSpanEnd="619">
+    <properties key="name" value="cirrhosis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="inflammatory-bowel-disease" mention="inflammatory bowel disease" confidence="0.98" sourceSpanStart="680" sourceSpanEnd="706">
+    <properties key="name" value="inflammatory bowel disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="colonic-ulceration" mention="colonic ulceration" confidence="0.98" sourceSpanStart="708" sourceSpanEnd="726">
+    <properties key="name" value="colonic ulceration"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="partial-intestinal-obstruction" mention="partial intestinal obstruction" confidence="0.98" sourceSpanStart="728" sourceSpanEnd="758">
+    <properties key="name" value="partial intestinal obstruction"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="intestinal-obstruction" mention="intestinal obstruction" confidence="0.95" sourceSpanStart="736" sourceSpanEnd="758">
+    <properties key="name" value="intestinal obstruction"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="chronic-intestinal-diseases" mention="chronic intestinal diseases associated with marked disorders of digestion or absorption" confidence="0.95" sourceSpanStart="884" sourceSpanEnd="971">
+    <properties key="name" value="chronic intestinal diseases associated with marked disorders of digestion or absorption"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="acarbose" mention="acarbose" confidence="0.99" sourceSpanStart="1252" sourceSpanEnd="1260" chunkIndex="2">
+    <properties key="name" value="acarbose"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.98" sourceSpanStart="1302" sourceSpanEnd="1314" chunkIndex="2">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylurea" confidence="0.95" sourceSpanStart="1459" sourceSpanEnd="1471" chunkIndex="2">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1482" sourceSpanEnd="1489" chunkIndex="2">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="1729" sourceSpanEnd="1738" chunkIndex="2">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="glucagon" mention="glucagon" confidence="0.9" sourceSpanStart="2293" sourceSpanEnd="2301" chunkIndex="2">
+    <properties key="name" value="glucagon"/>
+  </entities>
+  <entities type="DrugClass" id="thiazides" mention="thiazides" confidence="0.95" sourceSpanStart="3967" sourceSpanEnd="3976" chunkIndex="2">
+    <properties key="name" value="thiazides"/>
+  </entities>
+  <entities type="DrugClass" id="diuretics" mention="diuretics" confidence="0.95" sourceSpanStart="3987" sourceSpanEnd="3996" chunkIndex="2">
+    <properties key="name" value="diuretics"/>
+  </entities>
+  <entities type="DrugClass" id="corticosteroids" mention="corticosteroids" confidence="0.95" sourceSpanStart="3998" sourceSpanEnd="4013" chunkIndex="2">
+    <properties key="name" value="corticosteroids"/>
+  </entities>
+  <entities type="DrugClass" id="phenothiazines" mention="phenothiazines" confidence="0.95" sourceSpanStart="4015" sourceSpanEnd="4029" chunkIndex="2">
+    <properties key="name" value="phenothiazines"/>
+  </entities>
+  <entities type="DrugClass" id="thyroid-products" mention="thyroid products" confidence="0.95" sourceSpanStart="4031" sourceSpanEnd="4047" chunkIndex="2">
+    <properties key="name" value="thyroid products"/>
+  </entities>
+  <entities type="DrugClass" id="estrogens" mention="estrogens" confidence="0.95" sourceSpanStart="4049" sourceSpanEnd="4058" chunkIndex="2">
+    <properties key="name" value="estrogens"/>
+  </entities>
+  <entities type="DrugClass" id="oral-contraceptives" mention="oral contraceptives" confidence="0.95" sourceSpanStart="4060" sourceSpanEnd="4079" chunkIndex="2">
+    <properties key="name" value="oral contraceptives"/>
+  </entities>
+  <entities type="Drug" id="phenytoin" mention="phenytoin" confidence="0.95" sourceSpanStart="4081" sourceSpanEnd="4090" chunkIndex="2">
+    <properties key="name" value="phenytoin"/>
+  </entities>
+  <entities type="Drug" id="nicotinic-acid" mention="nicotinic acid" confidence="0.95" sourceSpanStart="4092" sourceSpanEnd="4106" chunkIndex="2">
+    <properties key="name" value="nicotinic acid"/>
+  </entities>
+  <entities type="DrugClass" id="sympathomimetics" mention="sympathomimetics" confidence="0.95" sourceSpanStart="4108" sourceSpanEnd="4124" chunkIndex="2">
+    <properties key="name" value="sympathomimetics"/>
+  </entities>
+  <entities type="DrugClass" id="calcium-channel-blocking-drugs" mention="calcium channel-blocking drugs" confidence="0.95" sourceSpanStart="4126" sourceSpanEnd="4156" chunkIndex="2">
+    <properties key="name" value="calcium channel-blocking drugs"/>
+  </entities>
+  <entities type="Drug" id="isoniazid" mention="isoniazid" confidence="0.95" sourceSpanStart="4162" sourceSpanEnd="4171" chunkIndex="2">
+    <properties key="name" value="isoniazid"/>
+  </entities>
+  <entities type="Drug" id="acarbose" mention="acarbose" confidence="0.99" sourceSpanStart="4959" sourceSpanEnd="4967" chunkIndex="3">
+    <properties key="name" value="acarbose"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.95" sourceSpanStart="5004" sourceSpanEnd="5017" chunkIndex="3">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="5025" sourceSpanEnd="5032" chunkIndex="3">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemic-shock" mention="hypoglycemic shock" confidence="0.95" sourceSpanStart="4899" sourceSpanEnd="4917" chunkIndex="3">
+    <properties key="name" value="hypoglycemic shock"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="charcoal" mention="charcoal" confidence="0.9" sourceSpanStart="5070" sourceSpanEnd="5078" chunkIndex="3">
+    <properties key="name" value="charcoal"/>
+  </entities>
+  <entities type="Drug" id="digoxin" mention="digoxin" confidence="0.95" sourceSpanStart="5337" sourceSpanEnd="5344" chunkIndex="3">
+    <properties key="name" value="digoxin"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="8748" sourceSpanEnd="8755" chunkIndex="4">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="abnormal-blood-glucose-levels" mention="abnormal blood glucose levels" confidence="0.9" sourceSpanStart="8555" sourceSpanEnd="8584" chunkIndex="4">
+    <properties key="name" value="abnormal blood glucose levels"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congenital-anomalies" mention="congenital anomalies" confidence="0.9" sourceSpanStart="8644" sourceSpanEnd="8664" chunkIndex="4">
+    <properties key="name" value="congenital anomalies"/>
+    <properties key="category" value="developmental"/>
+  </entities>
+  <entities type="Condition" id="increased-neonatal-morbidity-and-mortality" mention="increased neonatal morbidity and mortality" confidence="0.9" sourceSpanStart="8676" sourceSpanEnd="8718" chunkIndex="4">
+    <properties key="name" value="increased neonatal morbidity and mortality"/>
+    <properties key="category" value="neonatal"/>
+  </entities>
+  <entities type="Drug" id="acarbose" mention="acarbose" confidence="0.95" sourceSpanStart="8976" sourceSpanEnd="8984" chunkIndex="4">
+    <properties key="name" value="acarbose"/>
+  </entities>
+  <entities type="Drug" id="acarbose" mention="acarbose" confidence="0.99" sourceSpanStart="9879" sourceSpanEnd="9887" chunkIndex="5">
+    <properties key="name" value="acarbose"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="abdominal pain" confidence="0.95" sourceSpanStart="9950" sourceSpanEnd="9964" chunkIndex="5">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="9966" sourceSpanEnd="9974" chunkIndex="5">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="flatulence" mention="flatulence" confidence="0.95" sourceSpanStart="9980" sourceSpanEnd="9990" chunkIndex="5">
+    <properties key="name" value="flatulence"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="fulminant-hepatitis" mention="fulminant hepatitis" confidence="0.95" sourceSpanStart="11463" sourceSpanEnd="11482" chunkIndex="5">
+    <properties key="name" value="fulminant hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="rash" mention="rash" confidence="0.95" sourceSpanStart="11546" sourceSpanEnd="11550" chunkIndex="5">
+    <properties key="name" value="rash"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="erythema" mention="erythema" confidence="0.95" sourceSpanStart="11552" sourceSpanEnd="11560" chunkIndex="5">
+    <properties key="name" value="erythema"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="exanthema" mention="exanthema" confidence="0.95" sourceSpanStart="11562" sourceSpanEnd="11571" chunkIndex="5">
+    <properties key="name" value="exanthema"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="uticaria" mention="uticaria" confidence="0.95" sourceSpanStart="11576" sourceSpanEnd="11584" chunkIndex="5">
+    <properties key="name" value="uticaria"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="edema" mention="edema" confidence="0.95" sourceSpanStart="11587" sourceSpanEnd="11592" chunkIndex="5">
+    <properties key="name" value="edema"/>
+    <properties key="category" value="systemic"/>
+  </entities>
+  <entities type="Condition" id="ileus-subileus" mention="ileus/subileus" confidence="0.95" sourceSpanStart="11594" sourceSpanEnd="11608" chunkIndex="5">
+    <properties key="name" value="ileus/subileus"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="jaundice" mention="jaundice" confidence="0.95" sourceSpanStart="11610" sourceSpanEnd="11618" chunkIndex="5">
+    <properties key="name" value="jaundice"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="hepatitis" mention="hepatitis" confidence="0.95" sourceSpanStart="11626" sourceSpanEnd="11635" chunkIndex="5">
+    <properties key="name" value="hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="thrombocytopenia" mention="thrombocytopenia" confidence="0.95" sourceSpanStart="11665" sourceSpanEnd="11681" chunkIndex="5">
+    <properties key="name" value="thrombocytopenia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="pneumatosis-cystoides-intestinalis" mention="pneumatosis cystoides intestinalis" confidence="0.95" sourceSpanStart="11687" sourceSpanEnd="11721" chunkIndex="5">
+    <properties key="name" value="pneumatosis cystoides intestinalis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="DrugClass" id="alpha-glucosidase-inhibitors" mention="alpha-glucosidase inhibitors" confidence="0.95" sourceSpanStart="11885" sourceSpanEnd="11913" chunkIndex="5">
+    <properties key="name" value="alpha-glucosidase inhibitors"/>
+  </entities>
+  <entities type="Drug" id="acarbose" mention="acarbose" confidence="0.95" sourceSpanStart="12908" sourceSpanEnd="12916" chunkIndex="6">
+    <properties key="name" value="acarbose"/>
+  </entities>
+  <entities type="Drug" id="thiazides" mention="thiazides" confidence="0.9" sourceSpanStart="12646" sourceSpanEnd="12655" chunkIndex="6">
+    <properties key="name" value="thiazides"/>
+  </entities>
+  <entities type="Drug" id="phenytoin" mention="phenytoin" confidence="0.9" sourceSpanStart="12760" sourceSpanEnd="12769" chunkIndex="6">
+    <properties key="name" value="phenytoin"/>
+  </entities>
+  <entities type="Drug" id="nicotinic-acid" mention="nicotinic acid" confidence="0.9" sourceSpanStart="12771" sourceSpanEnd="12785" chunkIndex="6">
+    <properties key="name" value="nicotinic acid"/>
+  </entities>
+  <entities type="Drug" id="isoniazid" mention="isoniazid" confidence="0.9" sourceSpanStart="12841" sourceSpanEnd="12850" chunkIndex="6">
+    <properties key="name" value="isoniazid"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="12561" sourceSpanEnd="12574" chunkIndex="6">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="13173" sourceSpanEnd="13185" chunkIndex="6">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="digoxin" mention="digoxin" confidence="0.95" sourceSpanStart="14073" sourceSpanEnd="14080" chunkIndex="6">
+    <properties key="name" value="digoxin"/>
+  </entities>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="acarbose" targetType="DrugClass" targetId="alpha-glucosidase-inhibitors" confidence="0.95" evidence="Pharmacologic class: alpha-Glucosidase Inhibitor [EPC]" sourceSpanStart="85" sourceSpanEnd="139"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.98" evidence="Acarbose tablets, USP are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="260" sourceSpanEnd="399"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="hypersensitivity" confidence="0.95" evidence="Acarbose tablets are contraindicated in patients with known hypersensitivity to the drug." sourceSpanStart="441" sourceSpanEnd="530"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.98" evidence="Acarbose tablets are contraindicated in patients with diabetic ketoacidosis or cirrhosis." sourceSpanStart="531" sourceSpanEnd="620"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="cirrhosis" confidence="0.98" evidence="Acarbose tablets are contraindicated in patients with diabetic ketoacidosis or cirrhosis." sourceSpanStart="531" sourceSpanEnd="620"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="inflammatory-bowel-disease" confidence="0.98" evidence="Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction." sourceSpanStart="621" sourceSpanEnd="812"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="colonic-ulceration" confidence="0.98" evidence="Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction." sourceSpanStart="621" sourceSpanEnd="812"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="partial-intestinal-obstruction" confidence="0.98" evidence="Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction." sourceSpanStart="621" sourceSpanEnd="812"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="intestinal-obstruction" confidence="0.95" evidence="Acarbose tablets are also contraindicated in patients with inflammatory bowel disease, colonic ulceration, partial intestinal obstruction or in patients predisposed to intestinal obstruction." sourceSpanStart="621" sourceSpanEnd="812"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="chronic-intestinal-diseases" confidence="0.95" evidence="In addition, acarbose tablets are contraindicated in patients who have chronic intestinal diseases associated with marked disorders of digestion or absorption and in patients who have conditions that may deteriorate as a result of increased gas formation in the intestine." sourceSpanStart="813" sourceSpanEnd="1085"/>
+  <relations type="MAY_CAUSE" sourceType="DrugClass" sourceId="sulfonylureas" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Sulfonylurea agents or insulin may cause hypoglycemia." sourceSpanStart="1459" sourceSpanEnd="1513" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="insulin" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Sulfonylurea agents or insulin may cause hypoglycemia." sourceSpanStart="1459" sourceSpanEnd="1513" chunkIndex="2"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="DrugClass" targetId="sulfonylureas" confidence="0.95" evidence="Because acarbose given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the potential for hypoglycemia." sourceSpanStart="1514" sourceSpanEnd="1678" chunkIndex="2"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="insulin" confidence="0.95" evidence="Because acarbose given in combination with a sulfonylurea or insulin will cause a further lowering of blood glucose, it may increase the potential for hypoglycemia." sourceSpanStart="1514" sourceSpanEnd="1678" chunkIndex="2"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="hypoglycemic-shock" confidence="0.9" evidence="Very rarely, individual cases of hypoglycemic shock have been reported in patients receiving acarbose tablets therapy in combination with sulfonylureas and/or insulin." sourceSpanStart="4866" sourceSpanEnd="5033" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="charcoal" confidence="0.9" evidence="Intestinal adsorbents (for example, charcoal) and digestive enzyme preparations containing carbohydrate-splitting enzymes (for example, amylase, pancreatin) may reduce the effect of acarbose tablets and should not be taken concomitantly." sourceSpanStart="5034" sourceSpanEnd="5271" chunkIndex="3"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="digoxin" confidence="0.95" evidence="Acarbose tablets has been shown to change the bioavailability of digoxin when they are co administered, which may require digoxin dose adjustment." sourceSpanStart="5272" sourceSpanEnd="5418" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="abdominal-pain" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 19%, 31%, and 74% respectively in 1255 patients treated with acarbose tablets 50-300 mg t.i.d." sourceSpanStart="9897" sourceSpanEnd="10090" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="diarrhea" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 19%, 31%, and 74% respectively in 1255 patients treated with acarbose tablets 50-300 mg t.i.d." sourceSpanStart="9897" sourceSpanEnd="10090" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="flatulence" confidence="0.95" evidence="In U.S. placebo-controlled trials, the incidences of abdominal pain, diarrhea, and flatulence were 19%, 31%, and 74% respectively in 1255 patients treated with acarbose tablets 50-300 mg t.i.d." sourceSpanStart="9897" sourceSpanEnd="10090" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="fulminant-hepatitis" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="rash" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="erythema" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="exanthema" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="uticaria" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="edema" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="ileus-subileus" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="jaundice" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="hepatitis" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="thrombocytopenia" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="pneumatosis-cystoides-intestinalis" confidence="0.9" evidence="Additional adverse events reported from worldwide postmarketing experience include fulminant hepatitis with fatal outcome, hypersensitive skin reactions (for example rash, erythema, exanthema and uticaria), edema, ileus/subileus, jaundice and/or hepatitis and associated liver damage, thrombocytopenia, and pneumatosis cystoides intestinalis (see PRECAUTIONS )." sourceSpanStart="11380" sourceSpanEnd="11741" chunkIndex="5"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="acarbose" targetType="DrugClass" targetId="alpha-glucosidase-inhibitors" confidence="0.9" evidence="There have been rare postmarketing reports of pneumatosis cystoides intestinalis associated with the use of alpha-glucosidase inhibitors, including acarbose tablets." sourceSpanStart="11777" sourceSpanEnd="11942" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="acarbose" targetType="Condition" targetId="pneumatosis-cystoides-intestinalis" confidence="0.9" evidence="There have been rare postmarketing reports of pneumatosis cystoides intestinalis associated with the use of alpha-glucosidase inhibitors, including acarbose tablets." sourceSpanStart="11777" sourceSpanEnd="11942" chunkIndex="5"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="thiazides" confidence="0.85" evidence="These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control." sourceSpanStart="12622" sourceSpanEnd="12999" chunkIndex="6"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="phenytoin" confidence="0.85" evidence="These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control." sourceSpanStart="12622" sourceSpanEnd="12999" chunkIndex="6"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="nicotinic-acid" confidence="0.85" evidence="These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control." sourceSpanStart="12622" sourceSpanEnd="12999" chunkIndex="6"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="isoniazid" confidence="0.85" evidence="These drugs include the thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel-blocking drugs, and isoniazid. When such drugs are administered to a patient receiving acarbose tablets, the patient should be closely observed for loss of blood glucose control." sourceSpanStart="12622" sourceSpanEnd="12999" chunkIndex="6"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="acarbose" targetType="Drug" targetId="digoxin" confidence="0.95" evidence="Acarbose tablets has been shown to change the bioavailability of digoxin when they are co administered, which may require digoxin dose adjustment." sourceSpanStart="13951" sourceSpanEnd="14097" chunkIndex="6"/>
+</raw:RawExtractionResult>

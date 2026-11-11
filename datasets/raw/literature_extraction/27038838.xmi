@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/27038838.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/27038838/" sourceSha256="777eb152def83d308fb242c5d6e08645572e169de35dcf253e4b02993f59b874" sourceText="# PubMed 27038838: Drivers of readmissions in vascular surgery patients.&#10;&#10;Journal of vascular surgery (2016), doi:10.1016/j.jvs.2016.02.024&#10;&#10;OBJECTIVE: Postoperative readmissions are frequent in vascular surgery patients, but it is not clear which factors are the main drivers of readmissions. Specifically, the relative contributions of patient comorbidities vs those of operative factors and postoperative complications are unknown. We sought to study the multiple potential drivers of readmission and to create a model for predicting the risk of readmission in vascular patients.&#10;&#10;METHODS: The 2012-2013 American College of Surgeons National Surgical Quality Improvement Program data set was queried for unplanned readmissions in 86,238 vascular patients. Multivariable forward selection logistic regression analysis was used to model the relative contributions of patient comorbidities, operative factors, and postoperative complications for readmission.&#10;&#10;RESULTS: The unplanned readmission rate was 9.3%. The preoperative model based on patient demographics and comorbidities predicted readmission risk with a low C index of .67; the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus. The postoperative model using operative factors and postoperative complications predicted readmission risk better (C index, .78); postoperative complications were the most significant predictor of readmission, overpowering patient comorbidities. Importantly, postoperative complications identified before discharge from the hospital were not a strong predictor of readmission as the model using predischarge postoperative complications had a similar C index to our preoperative model (.68). However, the inclusion of complications identified after discharge from the hospital appreciably improved the predictive power of the model (C index, .78). The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis.&#10;&#10;CONCLUSIONS: Readmissions in vascular surgery patients are mainly driven by postoperative complications identified after discharge. Thus, efforts to reduce vascular readmissions focusing on inpatient hospital data may prove ineffective. Our study suggests that interventions to reduce vascular readmissions should focus on prompt identification of modifiable postdischarge complications.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:29:58+00:00" xmi:version="2.0">
+  <chunks charEnd="2594"/>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1295" sourceSpanEnd="1312">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="1404" sourceSpanEnd="1415">
+    <properties key="name" value="readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="dialysis-dependence" mention="dialysis dependence" confidence="0.95" sourceSpanStart="1270" sourceSpanEnd="1289">
+    <properties key="name" value="dialysis dependence"/>
+    <properties key="description" value="patient is dependent on dialysis"/>
+  </entities>
+  <entities type="RiskFactor" id="preoperative-open-wound" mention="preoperative open wound" confidence="0.95" sourceSpanStart="1224" sourceSpanEnd="1247">
+    <properties key="name" value="preoperative open wound"/>
+    <properties key="description" value="open wound present preoperatively"/>
+  </entities>
+  <entities type="RiskFactor" id="inpatient-operation" mention="inpatient operation" confidence="0.95" sourceSpanStart="1249" sourceSpanEnd="1268">
+    <properties key="name" value="inpatient operation"/>
+    <properties key="description" value="operation performed as an inpatient"/>
+  </entities>
+  <entities type="RiskFactor" id="american-society-of-anesthesiologists-class" mention="American Society of Anesthesiologists class" confidence="0.95" sourceSpanStart="1179" sourceSpanEnd="1222">
+    <properties key="name" value="american society of anesthesiologists class"/>
+    <properties key="description" value="ASA physical status classification"/>
+  </entities>
+  <entities type="Condition" id="postdischarge-deep-space-infection" mention="postdischarge deep space infection" confidence="0.95" sourceSpanStart="2087" sourceSpanEnd="2121">
+    <properties key="name" value="postdischarge deep space infection"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="superficial-surgical-site-infection" mention="superficial surgical site infection" confidence="0.95" sourceSpanStart="2123" sourceSpanEnd="2158">
+    <properties key="name" value="superficial surgical site infection"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="pneumonia" confidence="0.95" sourceSpanStart="2160" sourceSpanEnd="2169">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="myocardial-infection" mention="myocardial infection" confidence="0.95" sourceSpanStart="2171" sourceSpanEnd="2191">
+    <properties key="name" value="myocardial infection"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="sepsis" mention="sepsis" confidence="0.95" sourceSpanStart="2197" sourceSpanEnd="2203">
+    <properties key="name" value="sepsis"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus." sourceSpanStart="1135" sourceSpanEnd="1313"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="dialysis-dependence" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus." sourceSpanStart="1135" sourceSpanEnd="1313"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="inpatient-operation" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus." sourceSpanStart="1135" sourceSpanEnd="1313"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="preoperative-open-wound" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus." sourceSpanStart="1135" sourceSpanEnd="1313"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="american-society-of-anesthesiologists-class" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="the top five predictors of readmission were American Society of Anesthesiologists class, preoperative open wound, inpatient operation, dialysis dependence, and diabetes mellitus." sourceSpanStart="1135" sourceSpanEnd="1313"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="postdischarge-deep-space-infection" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis." sourceSpanStart="1961" sourceSpanEnd="2204"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="superficial-surgical-site-infection" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis." sourceSpanStart="1961" sourceSpanEnd="2204"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="pneumonia" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis." sourceSpanStart="1961" sourceSpanEnd="2204"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="myocardial-infection" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis." sourceSpanStart="1961" sourceSpanEnd="2204"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="sepsis" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="The top five predictors of readmission in the final model based on patient comorbidities and postoperative complications were postdischarge deep space infection, superficial surgical site infection, pneumonia, myocardial infection, and sepsis." sourceSpanStart="1961" sourceSpanEnd="2204"/>
+</raw:RawExtractionResult>

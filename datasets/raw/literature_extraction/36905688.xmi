@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36905688.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36905688/" sourceSha256="9d5c917b6dac060e914c739025471c7b1cc6739ff7b79426ed111961376c2471" sourceText="# PubMed 36905688: Acute Coronary Syndrome After Transcatheter Aortic Valve Implantation (Results from Over 40,000 Patients).&#10;&#10;The American journal of cardiology (2023), doi:10.1016/j.amjcard.2023.02.003&#10;&#10;Acute coronary syndrome (ACS) encompasses a broad category of presentations from unstable angina to ST-elevation myocardial infarctions. Most patients undergo coronary angiography upon presentation for diagnosis and treatment. However, the ACS management strategy after transcatheter aortic valve implantation (TAVI) may be complicated because of challenging coronary access. The National Readmission Database was reviewed to identify all patients who were readmitted with ACS within 90 days after TAVI between 2012 and 2018. Their outcomes were described between patients who were readmitted with ACS (ACS group) and without (non-ACS group). A total of 44,653 patients were readmitted within 90 days after TAVI. Among them, 1,416 patients (3.2%) were readmitted with ACS. The ACS group had a higher prevalence of men, diabetes, hypertension, congestive heart failure, peripheral vascular disease, and a history of percutaneous coronary intervention (PCI). In the ACS group, 101 patients (7.1%) developed cardiogenic shock, whereas 120 patients (8.5%) developed ventricular arrhythmias. Overall, 141 patients (9.9%) in the ACS group died during readmissions (vs 3.0% in the non-ACS group, p &lt;0.001). Among the ACS group, PCI was performed in 33 (5.9%), whereas coronary bypass grafting was performed in 12 (0.82%). The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI. Coronary artery bypass grafting was an independent factor related to in-hospital mortality during ACS readmission (odds ratio 11.9, 95% confidence interval 2.18 to 65.4, p = 0.004), whereas PCI was not (odds ratio 0.19, 95% confidence interval 0.03 to 1.44, p = 0.11). In conclusion, patients readmitted with ACS have significantly higher mortality compared with those readmitted without ACS. History of PCI is an independent factor associated with ACS after TAVI.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:27:36+00:00" xmi:version="2.0">
+  <chunks charEnd="2142"/>
+  <entities type="ClinicalOutcome" id="readmitted-with-acs-within-90-days" mention="readmitted with ACS within 90 days after TAVI" confidence="0.95" sourceSpanStart="662" sourceSpanEnd="707">
+    <properties key="name" value="hospital readmission with acute coronary syndrome within 90 days"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1024" sourceSpanEnd="1032">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1048" sourceSpanEnd="1072">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1622" sourceSpanEnd="1644">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-diabetes" mention="history of diabetes" confidence="0.95" sourceSpanStart="1575" sourceSpanEnd="1594">
+    <properties key="name" value="history of diabetes"/>
+    <properties key="description" value="patient has a history of diabetes"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1048" sourceSpanEnd="1072">
+    <properties key="name" value="history of congestive heart failure"/>
+    <properties key="description" value="patient has a history of congestive heart failure"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1622" sourceSpanEnd="1644">
+    <properties key="name" value="history of chronic kidney disease"/>
+    <properties key="description" value="patient has a history of chronic kidney disease"/>
+  </entities>
+  <entities type="RiskFactor" id="history-of-pci" mention="PCI" confidence="0.95" sourceSpanStart="1650" sourceSpanEnd="1653">
+    <properties key="name" value="history of percutaneous coronary intervention"/>
+    <properties key="description" value="patient has a history of percutaneous coronary intervention"/>
+  </entities>
+  <entities type="RiskFactor" id="nonelective-tavi" mention="nonelective TAVI" confidence="0.95" sourceSpanStart="1659" sourceSpanEnd="1675">
+    <properties key="name" value="nonelective tavi"/>
+    <properties key="description" value="nonelective transcatheter aortic valve implantation"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-diabetes" targetType="ClinicalOutcome" targetId="readmitted-with-acs-within-90-days" confidence="0.9" evidence="The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI." sourceSpanStart="1520" sourceSpanEnd="1676"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-congestive-heart-failure" targetType="ClinicalOutcome" targetId="readmitted-with-acs-within-90-days" confidence="0.9" evidence="The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI." sourceSpanStart="1520" sourceSpanEnd="1676"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-chronic-kidney-disease" targetType="ClinicalOutcome" targetId="readmitted-with-acs-within-90-days" confidence="0.9" evidence="The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI." sourceSpanStart="1520" sourceSpanEnd="1676"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="history-of-pci" targetType="ClinicalOutcome" targetId="readmitted-with-acs-within-90-days" confidence="0.9" evidence="The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI." sourceSpanStart="1520" sourceSpanEnd="1676"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="nonelective-tavi" targetType="ClinicalOutcome" targetId="readmitted-with-acs-within-90-days" confidence="0.9" evidence="The factors associated with ACS readmission included a history of diabetes, congestive heart failure, chronic kidney disease, and PCI, and nonelective TAVI." sourceSpanStart="1520" sourceSpanEnd="1676"/>
+</raw:RawExtractionResult>

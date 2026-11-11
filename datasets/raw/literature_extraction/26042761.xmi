@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/26042761.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/26042761/" sourceSha256="d84b4728468684080715d464e3e0fd8877dcab51a239a47f0afb046864d820a9" sourceText="# PubMed 26042761: Preventable Readmission Risk Factors for Patients With Chronic Conditions.&#10;&#10;Journal for healthcare quality : official publication of the National Association for Healthcare Quality (2016), doi:10.1097/01.JHQ.0000462674.09641.72&#10;&#10;Evidence indicates that the largest volume of hospital readmissions occurs among patients with preexisting chronic conditions. Identifying these patients can improve the way hospital care is delivered and prioritize the allocation of interventions. In this retrospective study, we identify factors associated with readmission within 30 days based on claims and administrative data of nine hospitals from 2005 to 2012. We present a data inclusion and exclusion criteria to identify potentially preventable readmissions. Multivariate logistic regression models and a Cox proportional hazards extension are used to estimate the readmission risk for 4 chronic conditions (congestive heart failure [CHF], chronic obstructive pulmonary disease [COPD], acute myocardial infarction, and type 2 diabetes) and pneumonia, known to be related to high readmission rates. Accumulated number of admissions and discharge disposition were identified to be significant factors across most disease groups. Larger odds of readmission were associated with higher severity index for CHF and COPD patients. Different chronic conditions are associated with different patient and case severity factors, suggesting that further studies in readmission should consider studying conditions separately.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:28:33+00:00" xmi:version="2.0">
+  <chunks charEnd="1521"/>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="readmission within 30 days" confidence="0.95" sourceSpanStart="562" sourceSpanEnd="588">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="916" sourceSpanEnd="940">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="chronic obstructive pulmonary disease" confidence="0.95" sourceSpanStart="948" sourceSpanEnd="985">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="acute-myocardial-infarction" mention="acute myocardial infarction" confidence="0.95" sourceSpanStart="994" sourceSpanEnd="1021">
+    <properties key="name" value="acute myocardial infarction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="1027" sourceSpanEnd="1042">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="pneumonia" confidence="0.95" sourceSpanStart="1048" sourceSpanEnd="1057">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="RiskFactor" id="accumulated-number-of-admissions" mention="Accumulated number of admissions" confidence="0.9" sourceSpanStart="1106" sourceSpanEnd="1138">
+    <properties key="name" value="accumulated number of admissions"/>
+    <properties key="description" value="accumulated number of admissions across disease groups"/>
+  </entities>
+  <entities type="RiskFactor" id="discharge-disposition" mention="discharge disposition" confidence="0.9" sourceSpanStart="1143" sourceSpanEnd="1164">
+    <properties key="name" value="discharge disposition"/>
+    <properties key="description" value="discharge disposition across disease groups"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-severity-index" mention="higher severity index" confidence="0.9" sourceSpanStart="1283" sourceSpanEnd="1304">
+    <properties key="name" value="higher severity index"/>
+    <properties key="description" value="higher severity index for CHF and COPD patients"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="accumulated-number-of-admissions" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.85" evidence="In this retrospective study, we identify factors associated with readmission within 30 days based on claims and administrative data of nine hospitals from 2005 to 2012. We present a data inclusion and exclusion criteria to identify potentially preventable readmissions. Multivariate logistic regression models and a Cox proportional hazards extension are used to estimate the readmission risk for 4 chronic conditions (congestive heart failure [CHF], chronic obstructive pulmonary disease [COPD], acute myocardial infarction, and type 2 diabetes) and pneumonia, known to be related to high readmission rates. Accumulated number of admissions and discharge disposition were identified to be significant factors across most disease groups." sourceSpanStart="497" sourceSpanEnd="1234"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="discharge-disposition" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.85" evidence="In this retrospective study, we identify factors associated with readmission within 30 days based on claims and administrative data of nine hospitals from 2005 to 2012. We present a data inclusion and exclusion criteria to identify potentially preventable readmissions. Multivariate logistic regression models and a Cox proportional hazards extension are used to estimate the readmission risk for 4 chronic conditions (congestive heart failure [CHF], chronic obstructive pulmonary disease [COPD], acute myocardial infarction, and type 2 diabetes) and pneumonia, known to be related to high readmission rates. Accumulated number of admissions and discharge disposition were identified to be significant factors across most disease groups." sourceSpanStart="497" sourceSpanEnd="1234"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="higher-severity-index" targetType="ClinicalOutcome" targetId="hospital-readmission-within-30-days" confidence="0.9" evidence="Larger odds of readmission were associated with higher severity index for CHF and COPD patients." sourceSpanStart="1235" sourceSpanEnd="1331"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,74 @@
+{
+  "task" : "drug_label_extraction",
+  "pipeline" : "DiabetesReadmissionExtraction",
+  "targetSchema" : "DiabetesReadmissionKG",
+  "llmModel" : "gemini/gemini-3.5-flash-lite",
+  "temperature" : 0.1,
+  "maxTokens" : 4096,
+  "sourceCollection" : "corpus/openfda",
+  "outputFormat" : "JSON",
+  "chunking" : {
+    "chunkSize" : 4000,
+    "overlap" : 300,
+    "splitter" : "PARAGRAPH"
+  },
+  "targetConcepts" : [ "Drug", "DrugClass", "Condition" ],
+  "requiredProperties" : {
+    "Drug" : [ "name" ],
+    "DrugClass" : [ "name" ],
+    "Condition" : [ "name" ]
+  },
+  "explainableProperties" : {
+    "Drug" : [ "name", "drugClass" ],
+    "DrugClass" : [ "name" ],
+    "Condition" : [ "name", "category" ]
+  },
+  "targetRelations" : [ {
+    "id" : "TREATS",
+    "name" : "TREATS",
+    "source" : "Drug",
+    "target" : "Condition",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "MAY_CAUSE",
+    "name" : "MAY_CAUSE",
+    "source" : "Drug",
+    "target" : "Condition",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "CONTRAINDICATED_IN",
+    "name" : "CONTRAINDICATED_IN",
+    "source" : "Drug",
+    "target" : "Condition",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "INTERACTS_WITH",
+    "name" : "INTERACTS_WITH",
+    "source" : "Drug",
+    "target" : "Drug",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "BELONGS_TO_CLASS",
+    "name" : "BELONGS_TO_CLASS",
+    "source" : "Drug",
+    "target" : "DrugClass",
+    "minCardinality" : 0,
+    "maxCardinality" : 1
+  } ],
+  "fewShotExamples" : 2,
+  "promptFile" : "drug_label_extraction.txt",
+  "promptId" : "drug_label_extraction@fc3d922aa277",
+  "promptHash" : "fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4",
+  "generatedAt" : "2026-11-01T19:22:28.693502Z",
+  "sourceModels" : {
+    "Decision:decision-bindings.xmi" : "e2113e3aa998712187c683da2cfd67cd34a5c7fee0f7c27c537e74d7b2168fa9",
+    "Explainability:explainability.xmi" : "7e3b3f77ef3ebc17655a71f704cbdddf8b21ae20dc1ae5b6b1628b6dbcb3070b",
+    "Pipeline:extraction-pipeline.xmi" : "e9ad894c5a7f3a4d8c724f75fda08a2456fbd17601e16e0074a759a539f8b413",
+    "Policy:validation-policy.xmi" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+    "Schema:kg-schema.xmi" : "4f85cb83f677044bec61c0f50982e1f7adf4f301f9fa8641a5d81894e718fc4e"
+  }
+}

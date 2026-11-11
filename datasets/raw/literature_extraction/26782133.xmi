@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/26782133.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/26782133/" sourceSha256="4803c1a0ec3a6ccba6a1a784960bc1824076cfaa88e8419e8ecab8d7afecd60f" sourceText="# PubMed 26782133: The Burden of Rehospitalization for Patients With Liver Cirrhosis.&#10;&#10;Hospital practice (1995) (2016), doi:10.1080/21548331.2016.1142828&#10;&#10;Advanced liver disease is becoming more prevalent in the United States. This increase has been attributed largely to the growing epidemic of nonalcoholic fatty liver disease and an aging population infected with hepatitis C. Complications of cirrhosis are a major cause of hospital admissions and readmissions. It is important to target efforts for preventing rehospitalization toward patients with cirrhosis who are at the highest risk for readmission, such as those who have high Model for End-Stage Liver Disease scores, are at risk for fluid/electrolyte abnormalities or overt hepatic encephalopathy recurrence, and those who have comorbid conditions (e.g. diabetes). The heart failure management paradigm may provide valuable insights for managing patients with cirrhosis, given the extensive research on preventing hospital readmission and improving health care utilization in this subpopulation. As quality measures related to hospital readmissions for cirrhosis and its complications are adopted by the Centers for Medicare &amp; Medicaid Services and private payers in the future, understanding drivers of hospital readmissions and health care utilization in this vulnerable population are key to improving quality measure performance.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:29:28+00:00" xmi:version="2.0">
+  <chunks charEnd="1396"/>
+  <entities type="Condition" id="liver-cirrhosis" mention="liver cirrhosis" confidence="0.95" sourceSpanStart="69" sourceSpanEnd="84">
+    <properties key="name" value="liver cirrhosis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="readmissions" confidence="0.95" sourceSpanStart="452" sourceSpanEnd="464">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="high-model-for-end-stage-liver-disease-scores" mention="high Model for End-Stage Liver Disease scores" confidence="0.9" sourceSpanStart="632" sourceSpanEnd="677">
+    <properties key="name" value="high model for end-stage liver disease scores"/>
+    <properties key="description" value="high Model for End-Stage Liver Disease scores"/>
+  </entities>
+  <entities type="RiskFactor" id="risk-for-fluid-electrolyte-abnormalities-or-overt-hepatic-encephalopathy-recurrence" mention="at risk for fluid/electrolyte abnormalities or overt hepatic encephalopathy recurrence" confidence="0.9" sourceSpanStart="683" sourceSpanEnd="769">
+    <properties key="name" value="risk for fluid/electrolyte abnormalities or overt hepatic encephalopathy recurrence"/>
+    <properties key="description" value="risk for fluid/electrolyte abnormalities or overt hepatic encephalopathy recurrence"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="816" sourceSpanEnd="824">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/2429800" sourceUri="https://pubmed.ncbi.nlm.nih.gov/2429800/" sourceSha256="177fb1edc6d38c384c855e8e549443948e7be6c8e4e465af0e9c96eba1c0b6e6" sourceText="Histamine antagonists and d-tubocurarine-induced hypotension in cardiac surgical patients. Hemodynamic effects and histamine release by bolus injection of 0.35 mg/kg of d-tubocurarine were studied in 24 patients. H1- and H2-histamine antagonists or placebo were given before dosing with d-tubocurarine in a randomized double-blind fashion to four groups: group 1--placebo; group 2--cimetidine, 4 mg/kg, plus placebo; group 3--chlorpheniramine, 0.1 mg/kg, plus placebo; and group 4--cimetidine plus chlorpheniramine. Histamine release occurred in most patients, the highest level 2 minutes after d-tubocurarine dosing. Group 1 had a moderate negative correlation between plasma histamine change and systemic vascular resistance (r = 0.58; P less than 0.05) not present in group 4. Prior dosing with antagonists partially prevented the fall in systemic vascular resistance. These data demonstrate that the hemodynamic changes associated with d-tubocurarine dosing are only partially explained by histamine release. Thus prior dosing with H1- and H2-antagonists provides only partial protection." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:23+00:00" xmi:version="2.0">
+  <chunks charEnd="1092"/>
+  <entities type="Drug" id="d-tubocurarine" mention="d-tubocurarine" confidence="0.95" sourceSpanStart="26" sourceSpanEnd="40">
+    <properties key="name" value="d-tubocurarine"/>
+  </entities>
+  <entities type="Drug" id="cimetidine" mention="cimetidine" confidence="0.95" sourceSpanStart="382" sourceSpanEnd="392">
+    <properties key="name" value="cimetidine"/>
+  </entities>
+  <entities type="Drug" id="chlorpheniramine" mention="chlorpheniramine" confidence="0.95" sourceSpanStart="426" sourceSpanEnd="442">
+    <properties key="name" value="chlorpheniramine"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.9" sourceSpanStart="49" sourceSpanEnd="60">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="d-tubocurarine" targetType="Condition" targetId="hypotension" confidence="0.9" evidence="Histamine antagonists and d-tubocurarine-induced hypotension in cardiac surgical patients." sourceSpanStart="0" sourceSpanEnd="90"/>
+</raw:RawExtractionResult>

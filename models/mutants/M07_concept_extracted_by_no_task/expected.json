@@ -1,0 +1,7 @@
+{
+  "id": "M07_concept_extracted_by_no_task",
+  "family": "C2",
+  "expectedConstraint": "C2_EveryConceptTargetedBySomeTask",
+  "mutatedFile": "extraction-pipeline.xmi",
+  "description": "the only task that extracts DrugClass stops targeting it (with BELONGS_TO_CLASS and the few-shot items that use them): no task extracts DrugClass any more"
+}

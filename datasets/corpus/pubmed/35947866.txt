@@ -1,0 +1,13 @@
+# PubMed 35947866: Readmission Predictors in Patients With Type II Diabetes.
+
+Journal of nursing care quality (2022 Oct-Dec 01), doi:10.1097/NCQ.0000000000000640
+
+BACKGROUND: In patients with type II diabetes, hospital readmissions occur frequently and contribute significantly to morbidity. Limited research has predicted the factors that contribute to preventable readmission.
+
+PURPOSE: This study identified the predictors of 30-day hospital readmission in patients with type II diabetes.
+
+METHODS: This single-site 400 patients study examined effects of comorbidities, race, endocrinology consultation, diabetes self-management education, and diabetes medications on 30-day hospital readmissions.
+
+RESULTS: Patients with more comorbidities, who were Hispanics, and those who received an endocrinology consultation were more likely to be readmitted. Patients who received diabetes self-management education or were prescribed both oral and insulin medications were less likely to be readmitted.
+
+CONCLUSION: Findings identified the factors related to 30-day readmission in patients with diabetes, emphasizing the need for diabetes self-management education. Understanding why patients are readmitted within 30 days of initial admission will empower nurses to create targeted plans to improve nursing care quality and prevent readmission.

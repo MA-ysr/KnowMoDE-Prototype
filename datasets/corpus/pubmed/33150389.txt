@@ -1,0 +1,11 @@
+# PubMed 33150389: Effects of a Tailored Exercise Intervention in Acutely Hospitalized Oldest Old Diabetic Adults: An Ancillary Analysis.
+
+The Journal of clinical endocrinology and metabolism (2021), doi:10.1210/clinem/dgaa809
+
+OBJECTIVE: To analyze the effects of a tailored exercise intervention in acutely hospitalized elderly diabetic patients.
+
+RESEARCH DESIGN AND METHODS: This is an ancillary analysis of a randomized controlled trial (RCT). A total of 103 acutely hospitalized elderly adults (mean age ~87 years) with type II diabetes were randomized to an intervention (exercise, n = 54) or control group (usual care, n = 49). The primary endpoint was change in functional status from baseline to hospital discharge as assessed with the Barthel Index and the Short Physical Performance Battery (SPPB). Secondary endpoints comprised cognitive function and mood status, quality of life (QoL), incidence of delirium, and handgrip strength. Exercise-related side effects, length of hospital stay, and incidence of falls during hospitalization were also assessed, as well as transfer to nursing homes, hospital readmission, and mortality during a 3-month follow-up.
+
+RESULTS: The median length of stay was 8 days (interquartile range, 4) for both groups. The intervention was safe and provided significant benefits over usual care on SPPB (2.7 [95% confidence interval (CI) 1.8, 3.5]) and Barthel Index (8.5 [95% CI: 3.9, 13.1]), as well as on other secondary endpoints such as cognitive status, depression, QoL, and handgrip strength (all P < 0.05). No significant between-group differences were found for the remainder of secondary endpoints.
+
+CONCLUSIONS: An in-hospital individualized multicomponent exercise intervention was safe and effective for the prevention of functional and cognitive decline in acutely hospitalized elderly diabetic patients, although it had no influence on other endpoints assessed during hospitalization or at the 3-month follow-up after discharge.

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/digestive-diseases.txt" sourceUri="https://medlineplus.gov/digestivediseases.html" sourceSha256="e21d05cb3e1c3f949e64a14e64c521f097273c1c740fd86e6189df7583a110f1" sourceText="# MedlinePlus health topic: Digestive Diseases&#10;&#10;Also called: Gastrointestinal Diseases&#10;&#10;When you eat, your body breaks food down to a form it can use to build and nourish cells and provide energy. This process is called digestion.&#10;&#10;Your digestive system is a series of hollow organs joined in a long, twisting tube. It runs from your mouth to your anus and includes your esophagus, stomach, and small and large intestines. Your liver, gallbladder and pancreas are also involved. They produce juices to help digestion.&#10;&#10;There are many types of digestive disorders. The symptoms vary widely depending on the problem. In general, you should see your doctor if you have:&#10;&#10;Blood in your stool&#10;&#10;Changes in bowel habits&#10;&#10;Severe abdominal pain&#10;&#10;Unintentional weight loss&#10;&#10;Heartburn not relieved by antacids&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:21:20+00:00" xmi:version="2.0">
+  <chunks charEnd="870"/>
+  <entities type="Condition" id="digestive-diseases" mention="Digestive Diseases" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="46">
+    <properties key="name" value="digestive diseases"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="gastrointestinal-diseases" mention="Gastrointestinal Diseases" confidence="0.95" sourceSpanStart="61" sourceSpanEnd="86">
+    <properties key="name" value="gastrointestinal diseases"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="digestive-disorders" mention="digestive disorders" confidence="0.95" sourceSpanStart="543" sourceSpanEnd="562">
+    <properties key="name" value="digestive disorders"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+</raw:RawExtractionResult>

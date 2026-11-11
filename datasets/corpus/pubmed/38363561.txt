@@ -1,0 +1,17 @@
+# PubMed 38363561: Postacute Care for Medicare Advantage Enrollees Who Switched to Traditional Medicare Compared With Those Who Remained in Medicare Advantage.
+
+JAMA health forum (2024), doi:10.1001/jamahealthforum.2023.5325
+
+IMPORTANCE: Medicare Advantage (MA) plans receive capitated per enrollee payments that create financial incentives to provide care more efficiently than traditional Medicare (TM); however, incentives could be associated with MA plans reducing use of beneficial services. Postacute care can improve functional status, but it is costly, and thus may be provided differently to Medicare beneficiaries by MA plans compared with TM.
+
+OBJECTIVE: To estimate the association of MA compared with TM enrollment with postacute care use and postdischarge outcomes.
+
+DESIGN, SETTING, AND PARTICIPANTS: This was a cohort study using Medicare data on 4613 hospitalizations among retired Ohio state employees and 2 comparison groups in 2015 and 2016. The study investigated the association of a policy change with use of postacute care and outcomes. The policy changed state retiree health benefits in Ohio from a mandatory MA plan to subsidies for either supplemental TM coverage or an MA plan. After policy implementation, approximately 75% of retired Ohio state employees switched to TM. Hospitalizations for 3 high-volume conditions that usually require postacute rehabilitation were assessed. Data from the Medicare Provider Analysis and Review files were used to identify all hospitalizations in short-term acute care hospitals. Difference-in-difference regressions were used to estimate changes for retired Ohio state employees compared with other 2015 MA enrollees in Ohio and with Kentucky public retirees who were continuously offered a mandatory MA plan. Data analyses were performed from September 1, 2019, to November 30, 2023.
+
+EXPOSURES: Enrollment in Ohio state retiree health benefits in 2015, after which most members shifted to TM.
+
+MAIN OUTCOMES AND MEASURES: Received care in an inpatient rehabilitation facility, skilled nursing facility, or home health, or any postacute care; the occurrence of any hospital readmission; the number of days in the community during the 30 days after hospital discharge; and mortality.
+
+RESULTS: The study sample included 2373 hospitalizations for Ohio public retirees, 1651 hospitalizations for other Humana MA enrollees in Ohio, and 589 hospitalizations for public retirees in Kentucky. After the 2016 policy implementation, the percentage of hospitalizations covered by MA decreased by 70.1 (95% CI, -74.2 to -65.9) percentage points (pp), inpatient rehabilitation facility admissions increased by 9.7 (95% CI, 4.7 to 14.7) pp, use of only home health or skilled nursing facility care fell by 8.6 (95% CI, -14.6 to -2.6) pp, and days in the community fell by 1.6 (95% CI, -2.9 to -0.3) days for Ohio public retirees compared with other Humana MA enrollees in Ohio. There was no change in 30-day mortality or hospital readmissions; similar results were found by comparisons using Kentucky public retirees as a control group.
+
+CONCLUSIONS AND RELEVANCE: The findings of this cohort study indicate that after a change in retiree health benefits, most Ohio public retirees shifted from MA to TM and received more intensive postacute care with no significant change in measured short-term postdischarge outcomes. Future work should consider additional measures of postacute functional status over a longer follow-up period.

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/27164170.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/27164170/" sourceSha256="98ce78c29699d942a4035dc0f30dd734dcfa75da7ea6b65f3c24ccfd3b4198ae" sourceText="# PubMed 27164170: Examining IV Insulin Practice Guidelines in the Cardiac Surgery Patient: Nurses Evaluating Quality Outcomes.&#10;&#10;Journal of nursing care quality (2016), doi:10.1097/NCQ.0000000000000190&#10;&#10;Recent changes in the Surgical Care Improvement Project guideline require blood glucose values be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery. Our study compares the first group of patients transitioned off IV insulin on postoperative day 1, 24 hours after anesthesia end time, whereas the second group was transitioned off IV insulin on the second day, 48 hours after anesthesia end time. Results show no statistical difference in outcomes between groups.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:56:00+00:00" xmi:version="2.0">
+  <chunks charEnd="699"/>
+  <entities type="Recommendation" id="blood-glucose-target-cardiac-surgery" mention="Recent changes in the Surgical Care Improvement Project guideline require blood glucose values be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery." confidence="0.92" sourceSpanStart="203" sourceSpanEnd="384">
+    <properties key="statement" value="blood glucose values should be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery"/>
+    <properties key="source" value="Surgical Care Improvement Project"/>
+  </entities>
+  <entities type="Condition" id="cardiac-surgery" mention="cardiac surgery" confidence="0.95" sourceSpanStart="368" sourceSpanEnd="383">
+    <properties key="name" value="cardiac surgery"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="LabTest" id="blood-glucose-180" mention="blood glucose values be less than 180 mg/dL" confidence="0.9" sourceSpanStart="277" sourceSpanEnd="320">
+    <properties key="name" value="blood glucose &lt; 180 mg/dL"/>
+    <properties key="abnormalThreshold" value="&gt; 180 mg/dL"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="blood-glucose-target-cardiac-surgery" targetType="Condition" targetId="cardiac-surgery" confidence="0.9" evidence="Recent changes in the Surgical Care Improvement Project guideline require blood glucose values be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery." sourceSpanStart="203" sourceSpanEnd="384"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="blood-glucose-target-cardiac-surgery" targetType="LabTest" targetId="blood-glucose-180" confidence="0.9" evidence="Recent changes in the Surgical Care Improvement Project guideline require blood glucose values be less than 180 mg/dL 18 to 24 hours after anesthesia end time after cardiac surgery." sourceSpanStart="203" sourceSpanEnd="384"/>
+</raw:RawExtractionResult>

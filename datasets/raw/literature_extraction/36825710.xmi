@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36825710.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36825710/" sourceSha256="e08b90f56527e41888cd5d5c8b87ef485976e1479b4652eb9341c05c16bafba2" sourceText="# PubMed 36825710: Discharge Planning for People with Inpatient Hyperglycaemia: A Review on Pharmacological Management.&#10;&#10;Current diabetes reviews (2023), doi:10.2174/1573399819666230224123707&#10;&#10;Inadequate glycaemic control post-discharge is the root cause of readmission in people with diabetes mellitus (DM) and is often linked to improper discharge planning (DP). A structured DP plays a crucial role in ensuring continuing home care and avoiding readmissions. DP should help patients in self-care and provide appropriate guidance to maintain optimal glycaemic control. There is a scarcity of reports and recommendations on the proper DP for people with DM on insulin therapy. The present review provides important consideration based on experts' opinions from the National Insulin and Incretin summit (NIIS), focusing on the effective treatment strategies at the time of discharge, especially for insulin therapy. A review of literature from PubMed and Embase was conducted. The consensus was derived, and recommendations were made on effective DP for patients with DM. Recommendations were drawn at the NIIS for post-discharge treatment for medical and surgical cases, stress-induced hyperglycaemia, elderly, pregnant women, and coronavirus disease 2019 (COVID-19) cases. The committee also recommended a comprehensive checklist to assist the physicians during discharge.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:27:11+00:00" xmi:version="2.0">
+  <chunks charEnd="1375"/>
+  <entities type="Condition" id="inadequate-glycaemic-control" mention="Inadequate glycaemic control" confidence="0.95" sourceSpanStart="193" sourceSpanEnd="221">
+    <properties key="name" value="inadequate glycaemic control"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.95" sourceSpanStart="258" sourceSpanEnd="269">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="285" sourceSpanEnd="302">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.9" sourceSpanStart="661" sourceSpanEnd="668">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="inadequate-glycaemic-control" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Inadequate glycaemic control post-discharge is the root cause of readmission in people with diabetes mellitus (DM) and is often linked to improper discharge planning (DP)." sourceSpanStart="193" sourceSpanEnd="364"/>
+</raw:RawExtractionResult>

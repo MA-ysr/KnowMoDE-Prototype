@@ -1,0 +1,11 @@
+# PubMed 30559010: Routine Postoperative Laboratory Tests Are Not Necessary After Primary Total Hip Arthroplasty.
+
+The Journal of arthroplasty (2019), doi:10.1016/j.arth.2018.11.037
+
+BACKGROUND: Postoperative laboratory testing has been used routinely for patients undergoing total hip arthroplasty (THA). However, with modern-day improvements in perioperative care pathways, it is unclear whether this practice remains justified. The purpose of this study was to assess the utility of routine postoperative laboratory tests in primary THA.
+
+METHODS: The electronic medical records of 351 patients who underwent primary, unilateral THA between 2015 and 2017 were retrospectively reviewed. The primary outcomes were the rates of acute blood loss anemia requiring transfusion, acute kidney injury (AKI), electrolyte abnormalities, and 90-day emergency department visits or readmissions. Multivariate logistic regression analysis was also performed to identify the risk factors associated with abnormal laboratory values.
+
+RESULTS: Seventy-four patients (21%) had abnormal postoperative laboratory results, of which 82.4% were exclusively due to electrolyte (sodium or potassium) abnormalities. Factors associated with electrolyte abnormalities were abnormal baseline electrolyte levels (P < .001 and P = .013 for sodium and potassium, respectively), diabetes (P = .007), and lack of tranexamic acid use (P < .01). The rates of AKI and blood transfusion were 2.0% and 2.3%, respectively. Factors associated with blood transfusion were higher American Society of Anesthesiologists class and intraoperative blood loss ≥250 mL combined with either preoperative anemia or lack of tranexamic acid use. Factors associated with AKI were higher American Society of Anesthesiologists class and diabetes. Laboratory results did not change the standard course of care in 338 of 351 patients (96%). Abnormal laboratory values were not associated with increased length of stay (P = .228) or emergency department visits/readmissions (P = .21).
+
+CONCLUSION: This study provides evidence that routine postoperative laboratory testing is not necessary in modern-day primary, unilateral THA. Instead, the decision to obtain laboratory tests after surgery should be driven by patients' risk factors.

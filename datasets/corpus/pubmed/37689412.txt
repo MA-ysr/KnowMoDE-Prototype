@@ -1,0 +1,13 @@
+# PubMed 37689412: Subcutaneous Insulin Versus Traditional Intravenous Insulin Infusion in Treatment of Mild to Moderate Diabetic Ketoacidosis.
+
+The Journal of emergency medicine (2023), doi:10.1016/j.jemermed.2023.06.004
+
+BACKGROUND: Intravenous (IV) insulin infusions are the current standard of care for treatment of diabetic ketoacidosis (DKA). Subcutaneous (SQ) insulin, however, may also be a safe and effective alternative.
+
+OBJECTIVE: The purpose of this study was to compare patient-centered outcomes related to the treatment of mild to moderate DKA using two different protocols: an SQ insulin protocol and an IV insulin infusion protocol with an initial bolus (IVB) or without a bolus (IVNB).
+
+METHODS: We retrospectively conducted a multicenter cohort study evaluating SQ vs. IV insulin for the treatment of mild to moderate DKA. The primary outcome was time to DKA resolution. Secondary outcomes included time to glucose correction, hospital length of stay (LOS), intensive care unit LOS, hypoglycemia events, readmission rates, and IV insulin use.
+
+RESULTS: Within the study time frame, 257 patients were included in the multivariate Cox proportional hazards regression analysis. There was no significant difference in the time to DKA resolution between the IVB (p = 0.603) or IVNB (p = 0.269) groups compared with the population who received SQ insulin only. Hospital LOS was significantly longer when comparing the SQ group with the IVNB group (p < 0.001), but not when comparing it with the IVB group (p = 0.259). The IV protocols had significantly more hypoglycemic events compared with the SQ protocol (IVB vs. SQ, p < 0.001; IVNB vs. SQ, p = 0.001).
+
+CONCLUSIONS: SQ insulin may be an effective alternative option for treating mild to moderate DKA with fewer hypoglycemic effects.

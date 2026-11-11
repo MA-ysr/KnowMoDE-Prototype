@@ -1,0 +1,11 @@
+# PubMed 40844475: Factors Associated With Readmission and Reoperation After Total Shoulder Arthroplasty.
+
+Orthopedics (2025), doi:10.3928/01477447-20250730-02
+
+BACKGROUND: This study assessed risk factors related to 30-day unplanned readmission and reoperation after anatomic or reverse total shoulder arthroplasties (TSA). This study intends to enhance decision making for patients undergoing TSA and inform perioperative risk by identifying patient demographics, comorbidities, and procedural features linked to these outcomes.
+
+MATERIALS AND METHODS: Patients who had a primary anatomic or reverse TSA were identified using data from the American College of Surgeons National Surgical Quality Improvement Program database from 2013 to 2023 using the current procedural terminology code 23472. After categorization by 30-day unplanned readmission and reoperation, perioperative variables were compared between groups using Wilcoxon rank sum and chi-square tests, followed by multivariable logistic regression.
+
+RESULTS: The study identified 45,893 patients who underwent a primary TSA between 2013 to 2023 with 1,259 (2.74%) readmissions and 599 (1.31%) reoperations. Readmission was associated with older age, longer operative time, longer hospital stay, inpatient status, American Society of Anesthesiology classification of 4, White or Black race, dependent functional status, smoking, congestive heart failure, steroid use, bleeding disorders, insulin-dependent diabetes mellitus, and anemia. Reoperation was associated with male sex, higher body mass index, longer operative time, longer hospital stay, inpatient status, dependent functional status, smoking, and anemia.
+
+CONCLUSION: This study identified potential patient variables that can increase the risk of unplanned readmission and/or reoperation after a primary TSA. Understanding the factors that can influence these adverse events can play an important role in clinical decision making and help identify patients who may require additional postoperative monitoring.

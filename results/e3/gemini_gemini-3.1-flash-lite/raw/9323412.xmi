@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/9323412" sourceUri="https://pubmed.ncbi.nlm.nih.gov/9323412/" sourceSha256="74ac9f07765bfb36f072358b4a8b116a7b6b9f9bac6edb9d971ae74ceedfb393" sourceText="Acute severe depression following peri-operative ondansetron. A 41-year-old woman with a strong history of postoperative nausea and vomiting presented for abdominal hysterectomy 3 months after a previous anaesthetic where ondansetron prophylaxis had been used. She had developed a severe acute major depression disorder almost immediately thereafter, possibly related to the use of a serotonin antagonist. Nine years before she had experienced a self-limited puerperal depressive episode. Anaesthesia with a propofol infusion and avoidance of serotonin antagonists provided a nausea-free postoperative course without exacerbation of the depression disorder." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:02+00:00" xmi:version="2.0">
+  <chunks charEnd="657"/>
+  <entities type="Drug" id="ondansetron" mention="ondansetron" confidence="0.95" sourceSpanStart="49" sourceSpanEnd="60">
+    <properties key="name" value="ondansetron"/>
+  </entities>
+  <entities type="Condition" id="major-depression-disorder" mention="major depression disorder" confidence="0.9" sourceSpanStart="294" sourceSpanEnd="319">
+    <properties key="name" value="major depression disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="DrugClass" id="serotonin-antagonists" mention="serotonin antagonist" confidence="0.9" sourceSpanStart="384" sourceSpanEnd="404">
+    <properties key="name" value="serotonin antagonists"/>
+  </entities>
+  <entities type="Drug" id="propofol" mention="propofol" confidence="0.95" sourceSpanStart="508" sourceSpanEnd="516">
+    <properties key="name" value="propofol"/>
+  </entities>
+  <entities type="Condition" id="postoperative-nausea-and-vomiting" mention="postoperative nausea and vomiting" confidence="0.9" sourceSpanStart="107" sourceSpanEnd="140">
+    <properties key="name" value="postoperative nausea and vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="ondansetron" targetType="Condition" targetId="major-depression-disorder" confidence="0.7" evidence="She had developed a severe acute major depression disorder almost immediately thereafter, possibly related to the use of a serotonin antagonist." sourceSpanStart="261" sourceSpanEnd="405"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="ondansetron" targetType="DrugClass" targetId="serotonin-antagonists" confidence="0.8" evidence="She had developed a severe acute major depression disorder almost immediately thereafter, possibly related to the use of a serotonin antagonist." sourceSpanStart="261" sourceSpanEnd="405"/>
+</raw:RawExtractionResult>

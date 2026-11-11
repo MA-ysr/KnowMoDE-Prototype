@@ -1,0 +1,15 @@
+# PubMed 34474452: Postoperative Glycemic Variability as a Predictor of Adverse Outcomes Following Lumbar Fusion.
+
+Spine (2022), doi:10.1097/BRS.0000000000004214
+
+STUDY DESIGN: A retrospective cross-sectional study.
+
+OBJECTIVE: This study aims to evaluate the effect size of postoperative glycemic variability on surgical outcomes among patients who have undergone one- to three-level lumbar fusion.
+
+SUMMARY OF BACKGROUND DATA: While numerous patient characteristics have been associated with surgical outcomes after lumbar fusion, recent studies have described the measuring of postoperative glycemic variability as another promising marker.
+
+METHODS: A total of 850 patients were stratified into tertiles (low, moderate, high) based on degree of postoperative glycemic variability defined by coefficient of variation (CV). Surgical site infections were determined via chart review based on the Centers for Disease Control and Prevention definition. Demographic factors, surgical characteristics, inpatient complications, readmissions, and reoperations were determined by chart review and telephone encounters.
+
+RESULTS: Overall, a statistically significant difference in 90-day adverse outcomes was observed when stratified by postoperative glycemic variability. In particular, patients with high CV had a higher odds ratio (OR) of readmission (OR = 2.19 [1.17, 4.09]; P = 0.01), experiencing a surgical site infection (OR = 3.22 [1.39, 7.45]; P = 0.01), and undergoing reoperations (OR = 2.65 [1.34, 5.23]; P = 0.01) compared with patients with low CV. No significant association was seen between low and moderate CV groups. Higher CV patients were more likely to experience longer hospital stays (β: 1.03; P = 0.01). Among the three groups, high CV group experienced the highest proportion of complications.
+
+CONCLUSION: Our study establishes a significant relationship between postoperative glycemic variability and inpatient complications, length of stay, and 90-day adverse outcomes. While HbA1c has classically been used as the principal marker to assess blood glucose control, our results show CV to be a strong predictor of postoperative adverse outcomes. Future high-quality, prospective studies are necessary to explore the true effect of CV, as well as its practicality in clinical practice. Nevertheless, fluctuations in blood glucose levels during the inpatient stay should be limited to improve patient results.Level of Evidence: 4.

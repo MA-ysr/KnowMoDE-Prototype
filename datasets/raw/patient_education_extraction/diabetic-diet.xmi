@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetic-diet.txt" sourceUri="https://medlineplus.gov/diabeticdiet.html" sourceSha256="3a5e96fbb49b7bfb8ee99564e612111c6c60ba09f8272649d673108470735c30" sourceText="# MedlinePlus health topic: Diabetic Diet&#10;&#10;Also called: Diabetic meal plan&#10;&#10;What is diabetes?If you have diabetes, your blood glucose, or blood sugar, levels are too high. Glucose comes from foods you eat. The cells of your body need glucose for energy. A hormone called insulin helps glucose get into your cells.&#10;&#10;With type 1 diabetes, your body doesn't make insulin. With type 2 diabetes, your body doesn't make or use insulin well. Without enough insulin, glucose builds up in your blood and causes high blood glucose levels.&#10;&#10;Prediabetes means that your blood glucose levels are higher than normal but not high enough to be called diabetes. If you have prediabetes, you are more likely to develop type 2 diabetes.&#10;&#10;How do the foods I eat affect my blood glucose levels?The glucose in your blood comes from certain foods called carbohydrates, or &quot;carbs.&quot; Foods that are high in carbs include candy and sweets, sodas, breads, tortillas, and white rice. The more carbs you eat, the higher your blood glucose level will be. Some, but not all people with diabetes, may need to count the amount of carbs eaten in drinks and meals.&#10;&#10;Whether you have type 1 or type 2 diabetes, making the right food choices is an important way to keep your blood glucose at a level that is healthy for you. When you control your blood glucose, you lower your chance of having serious health problems from diabetes, such as vision loss and heart problems.&#10;&#10;And if you have prediabetes or are at risk for diabetes, eating foods that keep your blood glucose levels healthy may help prevent type 2 diabetes later on.&#10;&#10;What's the best diet for diabetes?There isn't a specific diet or meal plan that works for everybody. Your health care provider may have you see a registered dietician (RD) or a diabetes educator who can help design the best eating plan for you. The plan will consider:&#10;&#10;Any medicines that you take&#10;&#10;Your weight&#10;&#10;Any other health conditions you have&#10;&#10;Your lifestyle and tastes&#10;&#10;Your goals&#10;&#10;All eating plans for diabetes have a few things in common, including eating the right foods in the right amounts at the right times.&#10;&#10;What foods should I eat if I have diabetes?Eating the right foods for diabetes means eating a variety of healthy foods from all the food groups:&#10;&#10;Fruits and vegetables&#10;&#10;Whole grains, such as whole wheat, brown rice, barley, quinoa, and oats&#10;&#10;Proteins, such as lean meats, chicken, turkey, fish, eggs, nuts, beans, lentils, and tofu&#10;&#10;Nonfat or low-fat dairy, such as milk, yogurt, and cheese&#10;&#10;What foods should I limit to control my blood glucose?To keep your blood glucose under control, you may need to cut back on certain foods and drinks. This doesn't mean that you can never enjoy them. But you should have them less often or in smaller amounts.&#10;&#10;The foods and drinks you should limit include:&#10;&#10;High-carb foods and drinks, such as:&#10;Sugary foods, such as candy, cookies, cake, ice cream, sweetened cereals, and canned fruits with added sugar&#10;&#10;Drinks with added sugars, such as juice, regular soda, and regular sports or energy drinks&#10;&#10;White rice, tortillas, breads, and pasta - especially those made with white flour&#10;&#10;Starchy vegetables, such as white potatoes, corn, and peas&#10;&#10;Fried foods and other foods high in saturated and trans fats.&#10;&#10;Foods high in sodium (salt).&#10;&#10;Alcohol. If you do drink, you should drink moderately. This means no more than one standard drink a day if you're a woman or two standard drinks a day if you're a man.&#10;&#10;What else do I need to know about diabetic diets?If you have diabetes, it's important to eat the right amount of food every day. Your eating plan will include how much to eat, and help you choose the types of food for each meal or snack. If you take insulin, you may need to learn how to count carbs to help you know how much insulin to take.&#10;&#10;Eating at the right times is also important. You will want to plan for regular, balanced meals to avoid blood glucose levels that are too high or too low for you. Eating about the same amount of carbs at each meal can be helpful.&#10;&#10;Your eating plan will also teach you how to stick with your plan at home and when you eat out.&#10;&#10;Eating healthy to control your blood glucose does take some effort. But the reward is a chance to live your healthiest life with diabetes.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:20:34+00:00" xmi:version="2.0">
+  <chunks charEnd="3802"/>
+  <chunks index="1" charStart="3804" charEnd="4341"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="84" sourceSpanEnd="92">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="high-blood-glucose" mention="high blood glucose levels" confidence="0.95" sourceSpanStart="502" sourceSpanEnd="527">
+    <properties key="name" value="high blood glucose"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.98" sourceSpanStart="320" sourceSpanEnd="335">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.98" sourceSpanStart="701" sourceSpanEnd="716">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="prediabetes" mention="Prediabetes" confidence="0.98" sourceSpanStart="1452" sourceSpanEnd="1463">
+    <properties key="name" value="prediabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="vision-loss" mention="vision loss" confidence="0.95" sourceSpanStart="1403" sourceSpanEnd="1414">
+    <properties key="name" value="vision loss"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="heart-problems" mention="heart problems" confidence="0.95" sourceSpanStart="1419" sourceSpanEnd="1433">
+    <properties key="name" value="heart problems"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.99" sourceSpanStart="3710" sourceSpanEnd="3717">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="4260" sourceSpanEnd="4268" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="prediabetes" targetType="Condition" targetId="type-2-diabetes" confidence="0.95" evidence="If you have prediabetes, you are more likely to develop type 2 diabetes." sourceSpanStart="645" sourceSpanEnd="717"/>
+</raw:RawExtractionResult>

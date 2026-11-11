@@ -1,0 +1,7 @@
+{
+  "id": "M10_rule_without_expression",
+  "family": "C3",
+  "expectedConstraint": "C3_RuleHasExpression",
+  "mutatedFile": "validation-policy.xmi",
+  "description": "entity_confidence_above_threshold loses its expression"
+}

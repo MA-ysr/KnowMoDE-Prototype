@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/16731636" sourceUri="https://pubmed.ncbi.nlm.nih.gov/16731636/" sourceSha256="cdc906f671767835733216f1d8db5cbcfc757677ce0ab6de42cf527b959db968" sourceText="Enhanced isoproterenol-induced cardiac hypertrophy in transgenic rats with low brain angiotensinogen. We have previously shown that a permanent deficiency in the brain renin-angiotensin system (RAS) may increase the sensitivity of the baroreflex control of heart rate. In this study we aimed at studying the involvement of the brain RAS in the cardiac reactivity to the beta-adrenoceptor (beta-AR) agonist isoproterenol (Iso). Transgenic rats with low brain angiotensinogen (TGR) were used. In isolated hearts, Iso induced a significantly greater increase in left ventricular (LV) pressure and maximal contraction (+dP/dt(max)) in the TGR than in the Sprague-Dawley (SD) rats. LV hypertrophy induced by Iso treatment was significantly higher in TGR than in SD rats (in g LV wt/100 g body wt, 0.28 +/- 0.004 vs. 0.24 +/- 0.004, respectively). The greater LV hypertrophy in TGR rats was associated with more pronounced downregulation of beta-AR and upregulation of LV beta-AR kinase-1 mRNA levels compared with those in SD rats. The decrease in the heart rate (HR) induced by the beta-AR antagonist metoprolol in conscious rats was significantly attenuated in TGR compared with SD rats (-9.9 +/- 1.7% vs. -18.1 +/- 1.5%), whereas the effect of parasympathetic blockade by atropine on HR was similar in both strains. These results indicate that TGR are more sensitive to beta-AR agonist-induced cardiac inotropic response and hypertrophy, possibly due to chronically low sympathetic outflow directed to the heart." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:37+00:00" xmi:version="2.0">
+  <chunks charEnd="1510"/>
+  <entities type="Drug" id="isoproterenol" mention="isoproterenol" confidence="0.95" sourceSpanStart="9" sourceSpanEnd="22">
+    <properties key="name" value="isoproterenol"/>
+  </entities>
+  <entities type="Drug" id="metoprolol" mention="metoprolol" confidence="0.95" sourceSpanStart="1097" sourceSpanEnd="1107">
+    <properties key="name" value="metoprolol"/>
+  </entities>
+  <entities type="Drug" id="atropine" mention="atropine" confidence="0.95" sourceSpanStart="1270" sourceSpanEnd="1278">
+    <properties key="name" value="atropine"/>
+  </entities>
+  <entities type="Condition" id="cardiac-hypertrophy" mention="cardiac hypertrophy" confidence="0.9" sourceSpanStart="31" sourceSpanEnd="50">
+    <properties key="name" value="cardiac hypertrophy"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="isoproterenol" targetType="Condition" targetId="cardiac-hypertrophy" confidence="0.9" evidence="Enhanced isoproterenol-induced cardiac hypertrophy in transgenic rats with low brain angiotensinogen." sourceSpanStart="0" sourceSpanEnd="101"/>
+</raw:RawExtractionResult>

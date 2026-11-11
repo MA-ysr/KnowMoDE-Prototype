@@ -1,0 +1,11 @@
+# PubMed 36315558: Metabolic disorders and post-acute hospitalization in black/mixed-race patients with long COVID in Brazil: A cross-sectional analysis.
+
+PloS one (2022), doi:10.1371/journal.pone.0276771
+
+BACKGROUND: Although low-middle income countries have been disproportionately affected by the COVID-19 pandemic, there is scarce information about the impact of long COVID on their population. This study aimed to evaluate long COVID symptomatology, complications (hospital readmission and metabolic disorders), and main clinical features that impact Quality of Life (QoL).
+
+METHODS: This cross-sectional study provides a detailed clinical and laboratory picture of individuals who presented residual symptoms after mild to severe acute COVID-19. Between Aug-2020 to Sep-2021, long COVID patients were evaluated in a reference center for long COVID in Bahia State, Brazil. The EQ-5D-5L questionnaire accessed QoL.
+
+RESULTS: A total of 1164 (52 ±13.4 years, 57% female, 88% black/mixed-race) were evaluated 2.3 [IQR = 1.6-3.7] months after mild (n = 351, 30.2%), moderate (338, 29.0%) or severe (475, 40.8%) acute illness. Dyspnea (790, 67.9%), fatigue (738, 63.5%), and chest pain (525, 42.9%) were the most frequent residual symptoms regardless of acute severity, affecting the QoL of 88.9% of patients (n/N-826/925), mainly the domains of anxiety/depression and pain/discomfort. High levels of HbA1c were detected for 175 out of 664 patients (26.6%), 40% of them without a previous diagnosis of diabetes mellitus. Of note, hospital admission one-to-three months after the acute phase of disease was required for 51 (4.4%) patients.
+
+CONCLUSION: In this majority-black/mixed-race population, long COVID was associated with post-acute hospitalization, newly diagnosed diabetes mellitus, and decreased QoL, particularly in women and regardless of disease severity of acute infection, suggesting important implications for health care system.

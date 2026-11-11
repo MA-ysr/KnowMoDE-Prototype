@@ -1,0 +1,68 @@
+{
+  "baselineArtefacts": 26,
+  "scenarios": {
+    "S1_add_concept_and_relation": {
+      "description": "Add concept Procedure (name, cptCode) and relation UNDERGOES (Condition -> Procedure); target both in the literature task.",
+      "modelEdits": 4,
+      "manualEditsToGeneratedArtefacts": 0,
+      "checkPassed": true,
+      "warnings": 0,
+      "artefactsChanged": [
+        "graph-schema.xmi",
+        "prompts/literature_extraction.json",
+        "prompts/literature_extraction.txt",
+        "schema.cypher"
+      ],
+      "artefactsAdded": [],
+      "changedCount": 4,
+      "incompleteEditCaughtByConstraints": null
+    },
+    "S2_rename_relation": {
+      "description": "Rename relation MAY_CAUSE to HAS_ADVERSE_EFFECT (name attribute); few-shot examples updated in the same model.",
+      "modelEdits": 2,
+      "manualEditsToGeneratedArtefacts": 0,
+      "checkPassed": true,
+      "warnings": 0,
+      "artefactsChanged": [
+        "graph-schema.xmi",
+        "prompts/drug_label_extraction.json",
+        "prompts/drug_label_extraction.txt",
+        "prompts/literature_extraction.json",
+        "prompts/literature_extraction.txt",
+        "prompts/patient_education_extraction.json",
+        "prompts/patient_education_extraction.txt",
+        "schema.cypher"
+      ],
+      "artefactsAdded": [],
+      "changedCount": 8,
+      "incompleteEditCaughtByConstraints": {
+        "blocked": true,
+        "constraints": [
+          "C2_FewShotOutputsMentionOnlyTargetedTypes"
+        ]
+      }
+    },
+    "S3_mark_property_explainable": {
+      "description": "Mark Condition.icd9Range as explainable.",
+      "modelEdits": 1,
+      "manualEditsToGeneratedArtefacts": 0,
+      "checkPassed": true,
+      "warnings": 0,
+      "artefactsChanged": [
+        "graph-schema.xmi",
+        "prompts/drug_label_extraction.json",
+        "prompts/drug_label_extraction.txt",
+        "prompts/guideline_extraction.json",
+        "prompts/guideline_extraction.txt",
+        "prompts/literature_extraction.json",
+        "prompts/literature_extraction.txt",
+        "prompts/patient_education_extraction.json",
+        "prompts/patient_education_extraction.txt",
+        "schema.cypher"
+      ],
+      "artefactsAdded": [],
+      "changedCount": 10,
+      "incompleteEditCaughtByConstraints": null
+    }
+  }
+}

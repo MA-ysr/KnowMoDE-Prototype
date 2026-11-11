@@ -1,0 +1,15 @@
+# PubMed 36629297: In-hospital management of type 2 diabetes in Denmark is inconsistent with international guidelines.
+
+Danish medical journal (2022)
+
+INTRODUCTION: Insulin is the preferred treatment for hyperglycaemia in hospitalised patients with type 2 diabetes mellitus (T2DM). However, which insulin regimen to prefer is debated. We described Danish regional guidelines on the management of non-critically ill hospitalised patients with T2DM and compared them with international guidelines.
+
+METHODS: The Danish regional guidelines have been obtained via Danish regional web portals and by request to the regions. The guidelines were reviewed independently by the authors of this article to ensure uniformity in the interpretation of their contents.
+
+RESULTS: The recommended treatment of in-hospital hyperglycaemia is sliding scale insulin (SSI) in all five Danish regions. Insulin dosing by SSI is adjusted to bodyweight in two of the five regions. The recommended number of daily glucose point-of-care tests ranges from 4-8 to reach glucose levels of 5-10 mmol/l (90-180 mg/dl). In all regions, continuation of out-hospital insulin and non-insulin antidiabetic drugs is recommended; however, the latter is paused on wide indications.
+
+CONCLUSIONS: In-hospital hyperglycaemia for non-critically ill hospitalised patients with T2DM is treated by SSI, based on short-acting insulin, in all five Danish regions. International guidelines recommend a basal-bolus or basal-plus regimen based on both short- and long-acting insulin for most hospitalised non-critically ill patients with diabetes and discourage SSI. Danish regions should consider replacing SSI with a basal-bolus or basal-plus regimen.
+
+FUNDING: none.
+
+TRIAL REGISTRATION: not relevant.

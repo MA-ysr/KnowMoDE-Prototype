@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/2131034" sourceUri="https://pubmed.ncbi.nlm.nih.gov/2131034/" sourceSha256="30af0068392f26aa7dbe2007b13aaff3eb9dcafe993fe613fe58c12dc1b2f915" sourceText="Severe polyneuropathy and motor loss after intrathecal thiotepa combination chemotherapy: description of two cases. Two cases of severe delayed neurologic toxicity related to the administration of intrathecal (IT) combination chemotherapy including thiotepa (TSPA) are presented. Both cases developed axonal neuropathy with motor predominance in the lower extremities 1 and 6 months after IT chemotherapy was administered. Neurologic toxicities have been described with IT-methotrexate, IT-cytosine arabinoside and IT-TSPA. To our knowledge, however, axonal neuropathy following administration of these three agents has not been previously described. In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity. This unexpected complication indicates the need for further toxicology research on IT-TSPA." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:24+00:00" xmi:version="2.0">
+  <chunks charEnd="878"/>
+  <entities type="Drug" id="thiotepa" mention="thiotepa" confidence="0.95" sourceSpanStart="55" sourceSpanEnd="63">
+    <properties key="name" value="thiotepa"/>
+  </entities>
+  <entities type="Drug" id="methotrexate" mention="methotrexate" confidence="0.95" sourceSpanStart="473" sourceSpanEnd="485">
+    <properties key="name" value="methotrexate"/>
+  </entities>
+  <entities type="Drug" id="cytosine-arabinoside" mention="cytosine arabinoside" confidence="0.95" sourceSpanStart="490" sourceSpanEnd="510">
+    <properties key="name" value="cytosine arabinoside"/>
+  </entities>
+  <entities type="Condition" id="polyneuropathy" mention="polyneuropathy" confidence="0.9" sourceSpanStart="7" sourceSpanEnd="21">
+    <properties key="name" value="polyneuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="motor-loss" mention="motor loss" confidence="0.9" sourceSpanStart="26" sourceSpanEnd="36">
+    <properties key="name" value="motor loss"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="axonal-neuropathy" mention="axonal neuropathy" confidence="0.95" sourceSpanStart="551" sourceSpanEnd="568">
+    <properties key="name" value="axonal neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="neurotoxicity" mention="neurotoxicity" confidence="0.9" sourceSpanStart="772" sourceSpanEnd="785">
+    <properties key="name" value="neurotoxicity"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thiotepa" targetType="Condition" targetId="polyneuropathy" confidence="0.85" evidence="Severe polyneuropathy and motor loss after intrathecal thiotepa combination chemotherapy: description of two cases." sourceSpanStart="0" sourceSpanEnd="115"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thiotepa" targetType="Condition" targetId="motor-loss" confidence="0.85" evidence="Severe polyneuropathy and motor loss after intrathecal thiotepa combination chemotherapy: description of two cases." sourceSpanStart="0" sourceSpanEnd="115"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thiotepa" targetType="Condition" targetId="axonal-neuropathy" confidence="0.9" evidence="Two cases of severe delayed neurologic toxicity related to the administration of intrathecal (IT) combination chemotherapy including thiotepa (TSPA) are presented. Both cases developed axonal neuropathy with motor predominance in the lower extremities 1 and 6 months after IT chemotherapy was administered." sourceSpanStart="116" sourceSpanEnd="422"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="thiotepa" targetType="Condition" targetId="neurotoxicity" confidence="0.9" evidence="In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity." sourceSpanStart="651" sourceSpanEnd="786"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="methotrexate" targetType="Condition" targetId="neurotoxicity" confidence="0.8" evidence="In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity." sourceSpanStart="651" sourceSpanEnd="786"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="cytosine-arabinoside" targetType="Condition" targetId="neurotoxicity" confidence="0.8" evidence="In spite of the fact that TSPA is a useful IT agent, its combination with MTX, ara-C and radiotherapy could cause severe neurotoxicity." sourceSpanStart="651" sourceSpanEnd="786"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 29550098: Evaluating the Emergency Department Observation Unit for the management of hyperglycemia in adults.
+
+The American journal of emergency medicine (2018), doi:10.1016/j.ajem.2018.02.027
+
+OBJECTIVE: To determine whether hyperglycemic patients can be successfully managed in the Emergency Department Observation Unit (EDOU), as determined by the frequency of inpatient admission following their EDOU stay.
+
+METHODS: This was a retrospective chart review of patients≥18years presenting to an academic tertiary care ED between May 1, 2014 and May 31, 2016, found to have a glucose≥300mg/dL, and selected for EDOU admission. Patient demographic information, lab results including an HbA1c, disposition, and hospital revisits within 30days of discharge were recorded.
+
+RESULTS: There were 124 EDOU patients meeting criteria. A total of 98/124 (79.0%) had a history of type 1 or 2 diabetes, and 26/124 (21.0%) were newly diagnosed with diabetes in the EDOU. The mean initial ED serum glucose was 467±126mg/dL. Of the 119 patients with HbA1c analyzed, the mean value was 12.1±2.2% (109±24mmol/mol) and in 112/119 (94.1%) the level was ≥9.0% (75mmol/mol). Overall, 104/124 (83.9%) were discharged from the EDOU, 18/124 (14.5%) were admitted to the inpatient service, and 2/124 (1.6%) left the EDOU against medical advice. A total of 7/124 (5.6%) patients returned to the ED within 30days of discharge with hypoglycemia, hyperglycemia, or diabetic ketoacidosis, 6/7 (85.7%) of whom had been discharged from the EDOU.
+
+CONCLUSIONS: Results suggest hyperglycemic patients selected by ED physicians can be managed in the EDOU setting. Nearly all patients managed in the EDOU for hyperglycemia had an HbA1c≥9.0%, suggesting unrecognized or poorly controlled chronic diabetes as the basis for hyperglycemia.

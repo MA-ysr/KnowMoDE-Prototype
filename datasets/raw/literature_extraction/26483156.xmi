@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/26483156.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/26483156/" sourceSha256="0ea82ec12a83ead6438ffa7f915e2c46bc1430754750d64ae27cd322fa981f9a" sourceText="# PubMed 26483156: Hospital Readmission after Intracerebral Hemorrhage.&#10;&#10;Journal of stroke and cerebrovascular diseases : the official journal of National Stroke Association (2016), doi:10.1016/j.jstrokecerebrovasdis.2015.09.009&#10;&#10;BACKGROUND: Intracerebral hemorrhage (ICH) is the most severe form of stroke, but limited literature exists on readmission after ICH. We aimed to assess frequencies, causes, and predictors of early and late readmissions within 1 year after ICH.&#10;&#10;METHODS: All patients admitted to the Department of Neurology at Haukeland University Hospital with acute stroke were prospectively included in the Bergen Norwegian Stroke Research Registry (NORSTROKE) registry. Surviving patients diagnosed with ICH were followed by medical chart reviews for 1 year. The first unplanned readmission was used as final outcome, and readmitted patients were defined as early readmitted (≤90 days) and late readmitted (91-365 days). Logistic regression was performed to assess predictors for early and late readmission.&#10;&#10;RESULTS: Of 121 patients discharged alive, 27 were early readmitted, and 17 were late readmitted. Within 1 year, 40.6% had at least 1 unplanned readmission. The most frequent cause of early readmission was infection, and the most frequent causes for late readmission were recurrent stroke and cardiovascular disease. Nursing home discharge was the only independent predictor of early readmission. Diabetes mellitus and increased length of the index admission were independent predictors of late readmission. Early readmitted patients were older and had more severe stroke and lower levels of fibrinogen on index admission compared with patients who were readmitted late.&#10;&#10;CONCLUSIONS: Readmission after ICH is frequent, and many patients are early readmitted. Early and late readmissions differed in both causes and predictors for readmission, reflecting different underlying mechanisms for readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:29:04+00:00" xmi:version="2.0">
+  <chunks charEnd="1931"/>
+  <entities type="Condition" id="diabetes-mellitus" mention="Diabetes mellitus" confidence="0.95" sourceSpanStart="1424" sourceSpanEnd="1441">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="increased-length-of-the-index-admission" mention="increased length of the index admission" confidence="0.9" sourceSpanStart="1446" sourceSpanEnd="1485">
+    <properties key="name" value="increased length of index admission"/>
+    <properties key="description" value="longer duration of the initial hospital stay"/>
+  </entities>
+  <entities type="RiskFactor" id="nursing-home-discharge" mention="Nursing home discharge" confidence="0.9" sourceSpanStart="1344" sourceSpanEnd="1366">
+    <properties key="name" value="nursing home discharge"/>
+    <properties key="description" value="patient discharged to a nursing home"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="early-readmission" mention="early readmission" confidence="0.9" sourceSpanStart="1211" sourceSpanEnd="1228">
+    <properties key="name" value="early readmission"/>
+    <properties key="timeWindow" value="&lt;=90 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="late-readmission" mention="late readmission" confidence="0.9" sourceSpanStart="1517" sourceSpanEnd="1533">
+    <properties key="name" value="late readmission"/>
+    <properties key="timeWindow" value="91-365 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="nursing-home-discharge" targetType="ClinicalOutcome" targetId="early-readmission" confidence="0.9" evidence="Nursing home discharge was the only independent predictor of early readmission." sourceSpanStart="1344" sourceSpanEnd="1423"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="late-readmission" confidence="0.95" evidence="Diabetes mellitus and increased length of the index admission were independent predictors of late readmission." sourceSpanStart="1424" sourceSpanEnd="1534"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="increased-length-of-the-index-admission" targetType="ClinicalOutcome" targetId="late-readmission" confidence="0.95" evidence="Diabetes mellitus and increased length of the index admission were independent predictors of late readmission." sourceSpanStart="1424" sourceSpanEnd="1534"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36370077.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36370077/" sourceSha256="f25d144f47a70b6a8c2716b2720f52527f51855841a41021b064dd4cb2a45d15" sourceText="# PubMed 36370077: Management of Hyperosmolar Hyperglycaemic State (HHS) in Adults: An updated guideline from the Joint British Diabetes Societies (JBDS) for Inpatient Care Group.&#10;&#10;Diabetic medicine : a journal of the British Diabetic Association (2023), doi:10.1111/dme.15005&#10;&#10;Hyperosmolar Hyperglycaemic State (HHS) is a medical emergency associated with high mortality. It occurs less frequently than diabetic ketoacidosis (DKA), affects those with pre-existing/new type 2 diabetes mellitus and increasingly affecting children/younger adults. Mixed DKA/HHS may occur. The JBDS HHS care pathway consists of 3 themes (clinical assessment and monitoring, interventions, assessments and prevention of harm) and 5 phases of therapy (0-60 min, 1-6, 6-12, 12-24 and 24-72 h). Clinical features of HHS include marked hypovolaemia, osmolality ≥320 mOsm/kg using [(2×Na+ ) + glucose+urea], marked hyperglycaemia ≥30 mmol/L, without significant ketonaemia (≤3.0 mmol/L), without significant acidosis (pH &gt;7.3) and bicarbonate ≥15 mmol/L. Aims of the therapy are to improve clinical status/replace fluid losses by 24 h, gradual decline in osmolality (3.0-8.0 mOsm/kg/h to minimise the risk of neurological complications), blood glucose 10-15 mmol/L in the first 24 h, prevent hypoglycaemia/hypokalaemia and prevent harm (VTE, osmotic demyelination, fluid overload, foot ulceration). Underlying precipitants must be identified and treated. Interventions include: (1) intravenous (IV) 0.9% sodium chloride to restore circulating volume (fluid losses 100-220 ml/kg, caution in elderly), (2) fixed rate intravenous insulin infusion (FRIII) should be commenced once osmolality stops falling with fluid replacement unless there is ketonaemia (FRIII should be commenced at the same time as IV fluids). (3) glucose infusion (5% or 10%) should be started once glucose &lt;14 mmol/L and (4) potassium replacement according to potassium levels. HHS resolution criteria are: osmolality &lt;300 mOsm/kg, hypovolaemia corrected (urine output ≥0.5 ml/kg/h), cognitive status returned to pre-morbid state and blood glucose &lt;15 mmol/L.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:59:03+00:00" xmi:version="2.0">
+  <chunks charEnd="2104"/>
+  <entities type="Condition" id="hyperosmolar-hyperglycaemic-state" mention="Hyperosmolar Hyperglycaemic State (HHS)" confidence="0.98" sourceSpanStart="33" sourceSpanEnd="72">
+    <properties key="name" value="hyperosmolar hyperglycaemic state"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="469" sourceSpanEnd="493">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="iv-sodium-chloride-hhs" mention="intravenous (IV) 0.9% sodium chloride to restore circulating volume" confidence="0.95" sourceSpanStart="1457" sourceSpanEnd="1524">
+    <properties key="statement" value="administer intravenous 0.9% sodium chloride to restore circulating volume in patients with hyperosmolar hyperglycaemic state"/>
+    <properties key="source" value="Joint British Diabetes Societies (JBDS) for Inpatient Care Group"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="Drug" id="sodium-chloride" mention="0.9% sodium chloride" confidence="0.95" sourceSpanStart="1474" sourceSpanEnd="1494">
+    <properties key="name" value="sodium chloride"/>
+    <properties key="drugClass" value="electrolyte replacement"/>
+  </entities>
+  <entities type="Recommendation" id="friii-hhs" mention="fixed rate intravenous insulin infusion (FRIII) should be commenced once osmolality stops falling with fluid replacement unless there is ketonaemia" confidence="0.94" sourceSpanStart="1579" sourceSpanEnd="1726">
+    <properties key="statement" value="commence fixed rate intravenous insulin infusion once osmolality stops falling with fluid replacement unless there is ketonaemia"/>
+    <properties key="source" value="Joint British Diabetes Societies (JBDS) for Inpatient Care Group"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1602" sourceSpanEnd="1609">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Recommendation" id="glucose-infusion-hhs" mention="glucose infusion (5% or 10%) should be started once glucose &lt;14 mmol/L" confidence="0.94" sourceSpanStart="1709" sourceSpanEnd="1781">
+    <properties key="statement" value="start glucose infusion (5% or 10%) once blood glucose drops below 14 mmol/L"/>
+    <properties key="source" value="Joint British Diabetes Societies (JBDS) for Inpatient Care Group"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="Drug" id="glucose" mention="glucose" confidence="0.9" sourceSpanStart="1790" sourceSpanEnd="1797">
+    <properties key="name" value="glucose"/>
+    <properties key="drugClass" value="carbohydrate"/>
+  </entities>
+  <entities type="Recommendation" id="potassium-replacement-hhs" mention="potassium replacement according to potassium levels" confidence="0.94" sourceSpanStart="1869" sourceSpanEnd="1920">
+    <properties key="statement" value="provide potassium replacement according to potassium levels"/>
+    <properties key="source" value="Joint British Diabetes Societies (JBDS) for Inpatient Care Group"/>
+    <properties key="strength" value="recommended"/>
+  </entities>
+  <entities type="Drug" id="potassium" mention="potassium" confidence="0.9" sourceSpanStart="1869" sourceSpanEnd="1878">
+    <properties key="name" value="potassium"/>
+    <properties key="drugClass" value="electrolyte"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="iv-sodium-chloride-hhs" targetType="Condition" targetId="hyperosmolar-hyperglycaemic-state" confidence="0.9" evidence="Interventions include: (1) intravenous (IV) 0.9% sodium chloride to restore circulating volume (fluid losses 100-220 ml/kg, caution in elderly)," sourceSpanStart="1362" sourceSpanEnd="1500"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="iv-sodium-chloride-hhs" targetType="Drug" targetId="sodium-chloride" confidence="0.95" evidence="Interventions include: (1) intravenous (IV) 0.9% sodium chloride to restore circulating volume (fluid losses 100-220 ml/kg, caution in elderly)," sourceSpanStart="1362" sourceSpanEnd="1500"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="friii-hhs" targetType="Condition" targetId="hyperosmolar-hyperglycaemic-state" confidence="0.9" evidence="(2) fixed rate intravenous insulin infusion (FRIII) should be commenced once osmolality stops falling with fluid replacement unless there is ketonaemia (FRIII should be commenced at the same time as IV fluids)." sourceSpanStart="1575" sourceSpanEnd="1785"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="friii-hhs" targetType="Drug" targetId="insulin" confidence="0.95" evidence="(2) fixed rate intravenous insulin infusion (FRIII) should be commenced once osmolality stops falling with fluid replacement unless there is ketonaemia (FRIII should be commenced at the same time as IV fluids)." sourceSpanStart="1575" sourceSpanEnd="1785"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="glucose-infusion-hhs" targetType="Condition" targetId="hyperosmolar-hyperglycaemic-state" confidence="0.9" evidence="(3) glucose infusion (5% or 10%) should be started once glucose &lt;14 mmol/L and" sourceSpanStart="1709" sourceSpanEnd="1788"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="glucose-infusion-hhs" targetType="Drug" targetId="glucose" confidence="0.9" evidence="(3) glucose infusion (5% or 10%) should be started once glucose &lt;14 mmol/L and" sourceSpanStart="1709" sourceSpanEnd="1788"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="potassium-replacement-hhs" targetType="Condition" targetId="hyperosmolar-hyperglycaemic-state" confidence="0.9" evidence="(4) potassium replacement according to potassium levels." sourceSpanStart="1865" sourceSpanEnd="1921"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="potassium-replacement-hhs" targetType="Drug" targetId="potassium" confidence="0.9" evidence="(4) potassium replacement according to potassium levels." sourceSpanStart="1865" sourceSpanEnd="1921"/>
+</raw:RawExtractionResult>

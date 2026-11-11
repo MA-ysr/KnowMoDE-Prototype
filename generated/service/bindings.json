@@ -1,0 +1,114 @@
+{
+  "name": "DiabetesReadmissionDecisions",
+  "targetSchema": "DiabetesReadmissionKG",
+  "aiModel": {"name": "readmission_gbm", "version": "0.1.0", "taskType": "binary_classification",
+              "trainingDataset": "datasets/tabular/uci-296-diabetes-130-us-hospitals", "attributionMethod": "SHAP",
+              "features": ["age", "time_in_hospital", "num_lab_procedures", "num_procedures", "num_medications", "number_outpatient", "number_emergency", "number_inpatient", "number_diagnoses", "admission_type_id", "discharge_disposition_id", "admission_source_id", "max_glu_serum", "A1Cresult", "diag_1", "diag_2", "diag_3", "metformin", "repaglinide", "nateglinide", "chlorpropamide", "glimepiride", "glipizide", "glyburide", "pioglitazone", "rosiglitazone", "acarbose", "miglitol", "insulin", "glyburide-metformin", "glipizide-metformin", "change", "diabetesMed"]},
+  "decisionClasses": [
+{"name": "HighReadmissionRisk", "label": "high risk of readmission within 30 days", "positive": true, "predictedOutcome": "hospital readmission within 30 days",
+     "threshold": 0.5, "explanationTypes": ["PlainLanguageContrast", "CausalEvidence", "ModifiableFactors", "GuidelineCompliance", "AttributionReport"]}
+,{"name": "LowReadmissionRisk", "label": "low risk of readmission within 30 days", "positive": false, "predictedOutcome": "hospital readmission within 30 days",
+     "threshold": 0.5, "explanationTypes": ["PlainLanguageContrast", "CausalEvidence", "GuidelineCompliance", "AttributionReport"]}
+  ],
+  "featureBindings": [
+{"feature": "metformin", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "metformin", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "repaglinide", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "repaglinide", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "nateglinide", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "nateglinide", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "chlorpropamide", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "chlorpropamide", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "glimepiride", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "glimepiride", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "glipizide", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "glipizide", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "glyburide", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "glyburide", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "pioglitazone", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "pioglitazone", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "rosiglitazone", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "rosiglitazone", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "acarbose", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "acarbose", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "miglitol", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "miglitol", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "insulin", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "insulin", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "glyburide-metformin", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "glyburide and metformin", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "glipizide-metformin", "kind": "ENTITY", "concept": "Drug",
+     "entityName": "glipizide and metformin", "valueMap": null,
+     "activeWhen": "value != 'No'"}
+,{"feature": "A1Cresult", "kind": "LAB_LEVEL", "concept": "LabTest",
+     "entityName": null, "valueMap": "{\">8\": \"HbA1c > 8%\", \">7\": \"HbA1c > 7%\", \"Norm\": \"HbA1c normal\", \"None\": null}",
+     "activeWhen": "value in ('>8', '>7', 'Norm')"}
+,{"feature": "max_glu_serum", "kind": "LAB_LEVEL", "concept": "LabTest",
+     "entityName": null, "valueMap": "{\">300\": \"serum glucose > 300 mg/dL\", \">200\": \"serum glucose > 200 mg/dL\", \"Norm\": \"serum glucose normal\", \"None\": null}",
+     "activeWhen": "value in ('>300', '>200', 'Norm')"}
+,{"feature": "number_inpatient", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "prior inpatient admissions", "valueMap": null,
+     "activeWhen": "value >= 1"}
+,{"feature": "number_emergency", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "prior emergency visits", "valueMap": null,
+     "activeWhen": "value >= 1"}
+,{"feature": "number_outpatient", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "prior outpatient visits", "valueMap": null,
+     "activeWhen": "value >= 1"}
+,{"feature": "time_in_hospital", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "length of hospital stay", "valueMap": null,
+     "activeWhen": "value >= 7"}
+,{"feature": "num_medications", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "polypharmacy", "valueMap": null,
+     "activeWhen": "value >= 10"}
+,{"feature": "number_diagnoses", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "multiple comorbidities", "valueMap": null,
+     "activeWhen": "value >= 7"}
+,{"feature": "num_lab_procedures", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "high number of laboratory procedures", "valueMap": null,
+     "activeWhen": "value >= 60"}
+,{"feature": "num_procedures", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "inpatient procedures", "valueMap": null,
+     "activeWhen": "value >= 1"}
+,{"feature": "age", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "older age", "valueMap": null,
+     "activeWhen": "value in ('[70-80)', '[80-90)', '[90-100)')"}
+,{"feature": "discharge_disposition_id", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "discharge to a skilled nursing facility", "valueMap": null,
+     "activeWhen": "value in (3, 4, 5, 22, 23, 24)"}
+,{"feature": "admission_type_id", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "emergency admission", "valueMap": null,
+     "activeWhen": "value == 1"}
+,{"feature": "admission_source_id", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "admission from the emergency room", "valueMap": null,
+     "activeWhen": "value == 7"}
+,{"feature": "change", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "change of diabetes medication", "valueMap": null,
+     "activeWhen": "value == 'Ch'"}
+,{"feature": "diabetesMed", "kind": "RISK_FACTOR", "concept": "RiskFactor",
+     "entityName": "diabetes medication prescribed", "valueMap": null,
+     "activeWhen": "value == 'Yes'"}
+,{"feature": "diag_1", "kind": "ICD9_GROUP", "concept": "Condition",
+     "entityName": null, "valueMap": "{\"390-459,785\": \"circulatory disease\", \"428\": \"heart failure\", \"460-519,786\": \"respiratory disease\", \"520-579,787\": \"digestive disease\", \"250\": \"diabetes\", \"800-999\": \"injury and poisoning\", \"710-739\": \"musculoskeletal disease\", \"580-629,788\": \"genitourinary disease\", \"585\": \"chronic kidney disease\", \"140-239\": \"neoplasm\"}",
+     "activeWhen": "value not in ('?', None)"}
+,{"feature": "diag_2", "kind": "ICD9_GROUP", "concept": "Condition",
+     "entityName": null, "valueMap": "{\"390-459,785\": \"circulatory disease\", \"428\": \"heart failure\", \"460-519,786\": \"respiratory disease\", \"520-579,787\": \"digestive disease\", \"250\": \"diabetes\", \"800-999\": \"injury and poisoning\", \"710-739\": \"musculoskeletal disease\", \"580-629,788\": \"genitourinary disease\", \"585\": \"chronic kidney disease\", \"140-239\": \"neoplasm\"}",
+     "activeWhen": "value not in ('?', None)"}
+,{"feature": "diag_3", "kind": "ICD9_GROUP", "concept": "Condition",
+     "entityName": null, "valueMap": "{\"390-459,785\": \"circulatory disease\", \"428\": \"heart failure\", \"460-519,786\": \"respiratory disease\", \"520-579,787\": \"digestive disease\", \"250\": \"diabetes\", \"800-999\": \"injury and poisoning\", \"710-739\": \"musculoskeletal disease\", \"580-629,788\": \"genitourinary disease\", \"585\": \"chronic kidney disease\", \"140-239\": \"neoplasm\"}",
+     "activeWhen": "value not in ('?', None)"}
+  ]
+}

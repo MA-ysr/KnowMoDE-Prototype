@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29107164.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29107164/" sourceSha256="07725d535ec2bbc0ab5417a1b2158cdc6ab9eb7436236a0e49133a9e471e77fb" sourceText="# PubMed 29107164: Subarachnoid Hemorrhage and Readmissions: National Rates, Causes, Risk Factors, and Outcomes in 16,001 Hospitalized Patients.&#10;&#10;World neurosurgery (2018), doi:10.1016/j.wneu.2017.10.089&#10;&#10;INTRODUCTION: The acute complications of aneurysmal subarachnoid hemorrhage (aSAH) often lead to readmissions, which are linked to hospital reimbursement. The national rates, causes, risk factors, and outcomes associated with 30-day and 90-day readmission after aSAH have not previously been reported.&#10;&#10;METHODS: The Nationwide Readmissions Database was queried from January to September 2013 for all patients (age ≥18 years) with a diagnosis of aSAH. Data points included demographics, comorbidities, complications, and discharge outcomes. Causes and risk factors for 30-day and 90-day readmission were identified in univariate and multivariable analysis.&#10;&#10;RESULTS: In 12,777 patients discharged alive after hospitalization for aSAH, 962 (7.5%) were readmitted within 30 days and 2153 (16.7%) within 90 days. Common causes of readmission included stroke, hydrocephalus, septicemia, and headache. At 30-day and 90-day readmission, 39.7% and 51.2% of patients with diagnosis of hydrocephalus underwent ventriculoperitoneal shunt placement, respectively. In multivariable analysis, cannabis use and diabetes were predictors of both 30-day and 90-day readmission and older patients were uniquely susceptible to 30-day readmissions. Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema. Average cost and length of stay were calculated at 30-day ($16.647, 7.1 days) and 90-day readmission ($17,926, 6.7 days). Mortality was 2.8% within 30 days and 3.8% within 90 days.&#10;&#10;CONCLUSIONS: Many readmissions occur outside the 30-day follow-up period in patients subarachnoid hemorrhage and possess unique risk factors, which may help identify high-risk patients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:31:56+00:00" xmi:version="2.0">
+  <chunks charEnd="2042"/>
+  <entities type="ClinicalOutcome" id="readmission-within-30-days" mention="30-day" confidence="0.95" sourceSpanStart="431" sourceSpanEnd="437">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-within-90-days" mention="90-day" confidence="0.95" sourceSpanStart="442" sourceSpanEnd="448">
+    <properties key="name" value="hospital readmission within 90 days"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="RiskFactor" id="cannabis-use" mention="cannabis use" confidence="0.9" sourceSpanStart="1284" sourceSpanEnd="1296">
+    <properties key="name" value="cannabis use"/>
+    <properties key="description" value="cannabis use"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1301" sourceSpanEnd="1309">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="medicare-insurance" mention="Medicare insurance" confidence="0.9" sourceSpanStart="1478" sourceSpanEnd="1496">
+    <properties key="name" value="medicare insurance"/>
+    <properties key="description" value="Medicare insurance"/>
+  </entities>
+  <entities type="Condition" id="hypothyroidism" mention="hypothyroidism" confidence="0.95" sourceSpanStart="1498" sourceSpanEnd="1512">
+    <properties key="name" value="hypothyroidism"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="RiskFactor" id="initial-discharge-to-skilled-nursing-facility" mention="initial discharge to skilled nursing facility" confidence="0.9" sourceSpanStart="1514" sourceSpanEnd="1559">
+    <properties key="name" value="initial discharge to skilled nursing facility"/>
+    <properties key="description" value="initial discharge to skilled nursing facility"/>
+  </entities>
+  <entities type="Condition" id="bowel-obstruction" mention="bowel obstruction" confidence="0.9" sourceSpanStart="1603" sourceSpanEnd="1620">
+    <properties key="name" value="bowel obstruction"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="acute-lung-injury" mention="acute lung injury" confidence="0.9" sourceSpanStart="1635" sourceSpanEnd="1652">
+    <properties key="name" value="acute lung injury"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="cerebral-edema" mention="cerebral edema" confidence="0.9" sourceSpanStart="1658" sourceSpanEnd="1672">
+    <properties key="name" value="cerebral edema"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="cannabis-use" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="In multivariable analysis, cannabis use and diabetes were predictors of both 30-day and 90-day readmission and older patients were uniquely susceptible to 30-day readmissions." sourceSpanStart="1257" sourceSpanEnd="1432"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="cannabis-use" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="In multivariable analysis, cannabis use and diabetes were predictors of both 30-day and 90-day readmission and older patients were uniquely susceptible to 30-day readmissions." sourceSpanStart="1257" sourceSpanEnd="1432"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="In multivariable analysis, cannabis use and diabetes were predictors of both 30-day and 90-day readmission and older patients were uniquely susceptible to 30-day readmissions." sourceSpanStart="1257" sourceSpanEnd="1432"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="In multivariable analysis, cannabis use and diabetes were predictors of both 30-day and 90-day readmission and older patients were uniquely susceptible to 30-day readmissions." sourceSpanStart="1257" sourceSpanEnd="1432"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="medicare-insurance" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypothyroidism" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="initial-discharge-to-skilled-nursing-facility" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="bowel-obstruction" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="acute-lung-injury" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-edema" targetType="ClinicalOutcome" targetId="readmission-within-90-days" confidence="0.9" evidence="Risk factors for 90-day readmission included Medicare insurance, hypothyroidism, initial discharge to skilled nursing facility, and several index complications including bowel obstruction, gastrostomy, acute lung injury, and cerebral edema." sourceSpanStart="1433" sourceSpanEnd="1673"/>
+</raw:RawExtractionResult>

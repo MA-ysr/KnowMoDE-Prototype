@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/kidney-diseases.txt" sourceUri="https://medlineplus.gov/kidneydiseases.html" sourceSha256="c8912282e9003b637c0a75c874ac323a7d97d793c79e5413ab2713f53cf0f2cc" sourceText="# MedlinePlus health topic: Kidney Diseases&#10;&#10;Also called: Nephritis, Renal Diseases&#10;&#10;You have two kidneys, each about the size of your fist. They are near the middle of your back, just below the rib cage. Inside each kidney there are about a million tiny structures called nephrons. They filter your blood. They remove wastes and extra water, which become urine. The urine flows through tubes called ureters. It goes to your bladder, which stores the urine until you go to the bathroom.&#10;&#10;Most kidney diseases attack the nephrons. This damage may leave kidneys unable to remove wastes. Causes can include genetic problems, injuries, or medicines. You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease. Chronic kidney disease damages the nephrons slowly over several years. Other kidney problems include:&#10;&#10;Cancer&#10;&#10;Cysts&#10;&#10;Stones&#10;&#10;Infections&#10;&#10;Your doctor can do blood and urine tests to check if you have kidney disease. If your kidneys fail, you will need dialysis or a kidney transplant.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:23:36+00:00" xmi:version="2.0">
+  <chunks charEnd="1132"/>
+  <entities type="Condition" id="kidney-diseases" mention="Kidney Diseases" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="43">
+    <properties key="name" value="kidney diseases"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="nephritis" mention="Nephritis" confidence="0.9" sourceSpanStart="58" sourceSpanEnd="67">
+    <properties key="name" value="nephritis"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="renal-diseases" mention="Renal Diseases" confidence="0.9" sourceSpanStart="69" sourceSpanEnd="83">
+    <properties key="name" value="renal diseases"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="699" sourceSpanEnd="707">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="709" sourceSpanEnd="728">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="Chronic kidney disease" confidence="0.95" sourceSpanStart="776" sourceSpanEnd="798">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="close-family-member-with-kidney-disease" mention="close family member with kidney disease" confidence="0.9" sourceSpanStart="735" sourceSpanEnd="774">
+    <properties key="name" value="family history of kidney disease"/>
+    <properties key="description" value="having a close family member with kidney disease"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="kidney-diseases" confidence="0.9" evidence="You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease." sourceSpanStart="646" sourceSpanEnd="775"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="high-blood-pressure" targetType="Condition" targetId="kidney-diseases" confidence="0.9" evidence="You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease." sourceSpanStart="646" sourceSpanEnd="775"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="close-family-member-with-kidney-disease" targetType="Condition" targetId="kidney-diseases" confidence="0.9" evidence="You have a higher risk of kidney disease if you have diabetes, high blood pressure, or a close family member with kidney disease." sourceSpanStart="646" sourceSpanEnd="775"/>
+</raw:RawExtractionResult>

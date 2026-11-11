@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40516666.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40516666/" sourceSha256="45f89cfd5c0c17813436daddb1f73028bbd3c1b777f6e64d7c72d30904c76a87" sourceText="# PubMed 40516666: Cardiovascular disease in patients with limited English proficiency: A narrative review.&#10;&#10;Current problems in cardiology (2025), doi:10.1016/j.cpcardiol.2025.103107&#10;&#10;Patients with Limited English Proficiency (LEP) form a large proportion of the population and experience significant differences in care. A multitude of studies have explored care differences in patients with LEP and cardiovascular disease (CVD). This review covers several key areas in CVD care including coronary artery disease, acute coronary syndrome, heart failure, and several CVD risk factors. While there are no significant differences seen in door to balloon time between LEP and English speakers, important differences exist in coronary artery disease awareness and symptom recognition among LEP patients. Additionally, LEP patients with heart failure experienced higher rates of hospital readmissions and emergency department visits. Mixed evidence exists regarding CVD risk factors control such as diabetes, hypertension, and hyperlipidemia based on language preference. Employing key interventions that target multiple domains in health care delivery can address some of the care disparities seen among LEP patients with CVD.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:46:56+00:00" xmi:version="2.0">
+  <chunks charEnd="1224"/>
+  <entities type="RiskFactor" id="limited-english-proficiency" mention="Limited English Proficiency (LEP)" confidence="0.95" sourceSpanStart="199" sourceSpanEnd="232">
+    <properties key="name" value="limited english proficiency"/>
+    <properties key="description" value="Patients with limited English proficiency form a large proportion of the population and experience significant differences in care."/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.98" sourceSpanStart="541" sourceSpanEnd="554">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmissions" mention="hospital readmissions" confidence="0.95" sourceSpanStart="875" sourceSpanEnd="896">
+    <properties key="name" value="hospital readmissions"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="limited-english-proficiency" targetType="ClinicalOutcome" targetId="hospital-readmissions" confidence="0.9" evidence="Additionally, LEP patients with heart failure experienced higher rates of hospital readmissions and emergency department visits." sourceSpanStart="801" sourceSpanEnd="929"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="hospital-readmissions" confidence="0.9" evidence="Additionally, LEP patients with heart failure experienced higher rates of hospital readmissions and emergency department visits." sourceSpanStart="801" sourceSpanEnd="929"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,19 @@
+# PubMed 35257839: Optimal hemoglobin A1C target in diabetics undergoing elective cervical spine surgery.
+
+The spine journal : official journal of the North American Spine Society (2022), doi:10.1016/j.spinee.2022.02.014
+
+BACKGROUND CONTEXT: Diabetes mellitus (DM) is a well-established risk factor for suboptimal outcomes following cervical spine surgery. Hemoglobin A1C (HbA1c), a surrogate for long-term glycemic control, is a valuable assessment tool in diabetic patients.
+
+PURPOSE: In patients undergoing elective cervical spine surgery, we sought to identify optimal HbA1c levels to: (1) maximize 1-year postoperative patient-reported outcomes (PROs), and (2) predict the occurrence of medical and surgical complications.
+
+STUDY DESIGN/SETTING: A retrospective cohort study using prospectively collected data was performed in a single academic center.
+
+PATIENT SAMPLE: Diabetic patients undergoing elective anterior cervical fusion and posterior cervical laminectomy and fusion (PCLF) between October 2010-March 2021 were included.
+
+OUTCOME MEASURES: Primary outcomes included Numeric Rating Scale (NRS)-Neck pain, NRS-Arm pain, and Neck Disability Index (NDI). Secondary outcomes included surgical site infection (SSI), complications, readmissions, and reoperations within 90-days postoperatively.
+
+METHODS: HbA1c, demographic, comorbidity, and perioperative variables were gathered in diabetic patients only. PROs were analyzed as continuous variables and minimum clinically difference (MCID) was set at 30% improvement from baseline.
+
+RESULTS: Of 1992 registry patients undergoing cervical surgery, 408 diabetic patients underwent cervical fusion surgery. Anterior: A total of 259 diabetic patients underwent anterior cervical fusion, 141 of which had an available HbA1c level within one year prior to surgery. Mean age was 55.8±10.1, and mean HbA1c value was 7.2±1.4. HbA1c levels above 6.1 were associated with failure to achieve MCID for NDI (AUC=0.77, 95%CI 0.70-0.84, p<.001), and HbA1c levels above 6.8 may be associated with increased odds of reoperation (AUC=0.61, 95%CI 0.52-0.69, p=.078). Posterior: A total of 149 diabetic patients underwent PCLF, 65 of which had an available HbA1c level within 1 year. Mean age was 63.6±9.2, and mean HbA1c value was 7.2±1.5. Despite a low AUC for NRS-Arm pain and readmission, HbA1c levels above 6.8 may be associated with failure to achieve MCID for NRS-Arm pain (AUC=0.61, 95%CI 0.49-0.73, p=.094), and HbA1c levels above 7.6 may be associated with higher readmission rate (AUC=0.63, 95%CI 0.50-0.75, p=.185).
+
+CONCLUSIONS: In a cohort of diabetic patients undergoing elective cervical spine surgery, HbA1c levels above 6.1 were associated with decreased odds of achieving MCID for NDI in anterior cervical fusion surgery. Though only moderate associations were seen for the select outcomes of reoperation (6.8), readmission (7.6), and MCID for NRS-Arm pain (6.8), preoperative optimization of HbA1c using these levels as benchmarks should be considered to reduce the risk of complications and maximize PROs for patients undergoing elective cervical spine surgery.

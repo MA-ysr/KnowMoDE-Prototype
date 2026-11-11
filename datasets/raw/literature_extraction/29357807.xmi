@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29357807.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29357807/" sourceSha256="aa1b27ebf993af409412003925e813a6cc5fd027d71de7bfd2cd27ffc5a5f036" sourceText="# PubMed 29357807: Prevalence, Correlates and Management of Hyperglycemia in Diabetic Non-critically Ill Patients at a Tertiary Care Center in Lebanon.&#10;&#10;Current diabetes reviews (2019), doi:10.2174/1573399814666180119142254&#10;&#10;BACKGROUND: Diabetes Mellitus is a chronic metabolic disease that affects 387 million people around the world. Episodes of hyperglycemia in hospitalized diabetic patients are associated with poor clinical outcomes and increased morbidity and mortality. Therefore, prevention of hyperglycemia is critical to decrease the length of hospital stay and to reduce complications and readmissions.&#10;&#10;OBJECTIVE: The study aims to examine the prevalence of hyperglycemia and assess the correlates and management of hyperglycemia in diabetic non-critically ill patients.&#10;&#10;METHODS: The study was conducted on the medical wards of a tertiary care teaching hospital in Lebanon. A retrospective chart review was conducted from January 2014 until September 2015. Diabetic patients admitted to Internal Medicine floors were identified. Descriptive analysis was first carried out, followed by a multivariable analysis to study the correlates of hyperglycemia occurrence.&#10;&#10;RESULTS: A total of 235 medical charts were reviewed. Seventy percent of participants suffered from hyperglycemia during their hospital stay. The identified significant positive correlates for inpatient hyperglycemia, were the use of insulin sliding scale alone (OR=16.438 ± 6.765-39.941, p=0.001) and the low frequency of glucose monitoring. Measuring glucose every 8 hours (OR= 3.583 ± 1.506-8.524, p=0.004) and/or every 12 hours (OR=7.647 ± 0.704-79.231, p=0.0095) was associated with hyperglycemia. The major factor perceived by nurses as a barrier to successful hyperglycemia management was the lack of knowledge about appropriate insulin use (87.5%).&#10;&#10;CONCLUSION: Considerable mismanagement of hyperglycemia in diabetic non-critically ill patients exists; indicating a compelling need for the development and implementation of protocol-driven insulin order forms a comprehensive education plan on the appropriate use of insulin.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:32:22+00:00" xmi:version="2.0">
+  <chunks charEnd="2113"/>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="60" sourceSpanEnd="73">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin-sliding-scale-alone" mention="insulin sliding scale alone" confidence="0.9" sourceSpanStart="1412" sourceSpanEnd="1439">
+    <properties key="name" value="insulin sliding scale"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="inpatient-hyperglycemia" mention="inpatient hyperglycemia" confidence="0.9" sourceSpanStart="1371" sourceSpanEnd="1394">
+    <properties key="name" value="inpatient hyperglycemia"/>
+  </entities>
+  <entities type="RiskFactor" id="low-frequency-of-glucose-monitoring" mention="low frequency of glucose monitoring" confidence="0.9" sourceSpanStart="1484" sourceSpanEnd="1519">
+    <properties key="name" value="low frequency of glucose monitoring"/>
+    <properties key="description" value="low frequency of glucose monitoring"/>
+  </entities>
+  <entities type="RiskFactor" id="measuring-glucose-every-8-hours" mention="Measuring glucose every 8 hours" confidence="0.9" sourceSpanStart="1521" sourceSpanEnd="1552">
+    <properties key="name" value="measuring glucose every 8 hours"/>
+    <properties key="description" value="measuring glucose every 8 hours"/>
+  </entities>
+  <entities type="RiskFactor" id="measuring-glucose-every-12-hours" mention="every 12 hours" confidence="0.9" sourceSpanStart="1595" sourceSpanEnd="1609">
+    <properties key="name" value="measuring glucose every 12 hours"/>
+    <properties key="description" value="measuring glucose every 12 hours"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="insulin-sliding-scale-alone" targetType="ClinicalOutcome" targetId="inpatient-hyperglycemia" confidence="0.9" evidence="The identified significant positive correlates for inpatient hyperglycemia, were the use of insulin sliding scale alone (OR=16.438 ± 6.765-39.941, p=0.001) and the low frequency of glucose monitoring." sourceSpanStart="1320" sourceSpanEnd="1520"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="low-frequency-of-glucose-monitoring" targetType="ClinicalOutcome" targetId="inpatient-hyperglycemia" confidence="0.9" evidence="The identified significant positive correlates for inpatient hyperglycemia, were the use of insulin sliding scale alone (OR=16.438 ± 6.765-39.941, p=0.001) and the low frequency of glucose monitoring." sourceSpanStart="1320" sourceSpanEnd="1520"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="measuring-glucose-every-8-hours" targetType="ClinicalOutcome" targetId="inpatient-hyperglycemia" confidence="0.9" evidence="Measuring glucose every 8 hours (OR= 3.583 ± 1.506-8.524, p=0.004) and/or every 12 hours (OR=7.647 ± 0.704-79.231, p=0.0095) was associated with hyperglycemia." sourceSpanStart="1521" sourceSpanEnd="1680"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="measuring-glucose-every-12-hours" targetType="ClinicalOutcome" targetId="inpatient-hyperglycemia" confidence="0.9" evidence="Measuring glucose every 8 hours (OR= 3.583 ± 1.506-8.524, p=0.004) and/or every 12 hours (OR=7.647 ± 0.704-79.231, p=0.0095) was associated with hyperglycemia." sourceSpanStart="1521" sourceSpanEnd="1680"/>
+</raw:RawExtractionResult>

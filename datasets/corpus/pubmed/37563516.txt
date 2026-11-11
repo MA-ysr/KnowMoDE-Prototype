@@ -1,0 +1,11 @@
+# PubMed 37563516: A Prospective Study on the Diagnoses for Abdominal Pain After Bariatric Surgery: The OPERATE Study.
+
+Obesity surgery (2023), doi:10.1007/s11695-023-06756-3
+
+PURPOSE: Long-term follow-up after bariatric surgery (BS) reveals high numbers of patients with abdominal pain that often remains unexplained. The aim of this prospective study was to give an overview of diagnoses for abdominal pain, percentage of unexplained complaints, number and yield of follow-up visits, and time to establish a diagnosis.
+
+MATERIALS AND METHODS: Patients who visited the Spaarne Gasthuis Hospital, The Netherlands, between December 2020 and December 2021 for abdominal pain after BS, were eligible and followed throughout the entire episode of abdominal pain. Distinction was made between presumed and definitive diagnoses.
+
+RESULTS: The study comprised 441 patients with abdominal pain; 401 (90.9%) females, 380 (87.7%) had Roux-en-Y gastric bypass, mean (SD) % total weight loss was 31.4 (10.5), and median (IQR) time after BS was 37.0 (11.0-66.0) months. Most patients had 1-5 follow-up visits. Readmissions and reoperations were present in 212 (48.1%) and 164 (37.2%) patients. At the end of the episode, 88 (20.0%) patients had a presumed diagnosis, 183 (41.5%) a definitive diagnosis, and 170 (38.5%) unexplained complaints. Most common definitive diagnoses were cholelithiasis, ulcers, internal herniations, and presumed diagnoses irritable bowel syndrome (IBS), anterior cutaneous nerve entrapment syndrome, and constipation. Median (IQR) time to presumed diagnoses, definitive diagnoses, or unexplained complaints was 16.0 (3.8-44.5), 2.0 (0.0-31.5), and 13.5 (1.0-53.8) days (p < 0.001). Patients with IBS more often had unexplained complaints (OR 95%CI: 4.457 [1.455-13.654], p = 0.009). At the end, 71 patients (16.1%) still experienced abdominal pain.
+
+CONCLUSION: Over a third of abdominal complaints after BS remains unexplained. Most common diagnoses were cholelithiasis, ulcers, and internal herniations.

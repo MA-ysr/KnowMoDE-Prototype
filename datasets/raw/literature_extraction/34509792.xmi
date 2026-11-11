@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34509792.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34509792/" sourceSha256="785c2f720bdd4c6175f9c8fa89b870fba7d821f6c0368894dc22d1cabc73ab36" sourceText="# PubMed 34509792: Predictors and outcomes of recurrent diabetic ketoacidosis in Israeli adults.&#10;&#10;Diabetes &amp; metabolic syndrome (2021), doi:10.1016/j.dsx.2021.102276&#10;&#10;AIMS: To identify risk factors for recurrent episodes of DKA that may allow the development of an effective prevention strategies.&#10;&#10;METHODS: Retrospective analysis of admissions for DKA in adult patients between 2004, and 2017 in a tertiary hospital. The clinical characteristics and outcomes of DKA of patients were stratified into an isolated episode of DKA (group 1) and recurrent episodes (group 2).&#10;&#10;RESULTS: 385 patients were included in the study, 281 had a single admission of DKA, and 104 had recurrent admissions. There were no statistically significant differences between the two groups in demographic or clinical variables. Patients in the recurrent DKA group had a younger age at diabetes diagnosis, 32.1 ± 17.08 vs. 36.13 ± 19.52 (p = 0.05). Patients with A1C greater than 9.0% were associated with recurrent DKA in cox regression analysis (HR 2.023; 95% Cl 1.112-3.679; p = 0.021). Recurrent DKA was a significant predictor of one-year mortality in cox regression analysis (HR 0.172; 95% CI 0.04-0.742; p = 0.018).&#10;&#10;CONCLUSION: High A1C levels, which account for poorly controlled diabetes, was identified as the strongest predictor of recurrent DKA. This patient population warrants particular attention and the development of intervention strategies in further studies.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:42:47+00:00" xmi:version="2.0">
+  <chunks charEnd="1455"/>
+  <entities type="LabTest" id="a1c-greater-than-9-0" mention="A1C greater than 9.0%" confidence="0.95" sourceSpanStart="938" sourceSpanEnd="959">
+    <properties key="name" value="A1C &gt; 9.0%"/>
+    <properties key="abnormalThreshold" value="&gt; 9.0%"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="recurrent-dka" mention="recurrent DKA" confidence="0.95" sourceSpanStart="981" sourceSpanEnd="994">
+    <properties key="name" value="recurrent diabetic ketoacidosis"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="one-year-mortality" mention="one-year mortality" confidence="0.95" sourceSpanStart="1110" sourceSpanEnd="1128">
+    <properties key="name" value="mortality within one year"/>
+    <properties key="timeWindow" value="one year"/>
+  </entities>
+  <entities type="RiskFactor" id="recurrent-dka-factor" mention="Recurrent DKA" confidence="0.9" sourceSpanStart="1319" sourceSpanEnd="1332">
+    <properties key="name" value="recurrent diabetic ketoacidosis"/>
+    <properties key="description" value="recurrent episodes of diabetic ketoacidosis"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="recurrent-dka-factor" targetType="ClinicalOutcome" targetId="one-year-mortality" confidence="0.8" evidence="Recurrent DKA was a significant predictor of one-year mortality in cox regression analysis (HR 0.172; 95% CI 0.04-0.742; p = 0.018)." sourceSpanStart="1065" sourceSpanEnd="1197"/>
+</raw:RawExtractionResult>

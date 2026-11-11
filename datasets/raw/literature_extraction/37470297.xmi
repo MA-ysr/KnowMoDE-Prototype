@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37470297.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37470297/" sourceSha256="d4d0321635c276e2b6ef592fa7fd73b613efe9fa2066c05cd92179bcdfa12e2e" sourceText="# PubMed 37470297: The Impact of Diabetes on Morbidity and Mortality Following Thyroidectomy.&#10;&#10;The Laryngoscope (2023), doi:10.1002/lary.30902&#10;&#10;OBJECTIVES: To explore the association between diabetes and outcomes in thyroidectomy patients.&#10;&#10;METHODS: This retrospective cohort analysis used the 2015-2017 American College of Surgeons National Surgery Quality Improvement Program database. Current Procedural Terminology (CPT) codes were used to identify thyroidectomy cases (60210, 60212, 60220, 60225, 60240, 60252, 60254, 60260, 60270, and 60271). Demographics, comorbidities, and complication incidences were compared between diabetic and nondiabetic patients using Pearson's chi-square test/Fisher's exact test as appropriate. The independent effect of diabetes on outcomes was analyzed using binary logistic regression.&#10;&#10;RESULTS: A total of 47,776 (95.4%) nondiabetic and 2307 (4.6%) diabetic patients undergoing thyroidectomy were identified from 2015 to 2017. Chi-square analysis demonstrated that diabetic patients had higher incidences of obesity (55.2% vs. 33.2%; p &lt; 0.001), dyspnea (12.7% vs. 4.8%; p &lt; 0.001), poor functional status (1.9% vs. 0.4%; p &lt; 0.001), ventilator dependence (0.6% vs. 0.1%; p &lt; 0.001), chronic obstructive pulmonary disease (COPD; 6.8% vs. 2.2%; p &lt; 0.001), congestive heart failure (1.1% vs. 0.3%; p &lt; 0.001), acute renal failure (0.3% vs. 0.0%; p &lt; 0.001), hypertension (79.2% vs. 32.4%; p &lt; 0.001), dialysis (2.0% vs. 0.4%; p &lt; 0.001), open wound (1.1% vs. 0.1%; p &lt; 0.001), steroid use (5.3% vs. 2.3%; p &lt; 0.001), bleeding disorders (3.6% vs. 0.9%; p &lt; 0.001), preoperative blood transfusions (0.2% vs. 0.0%; p = 0.001), and systemic sepsis (1.0% vs. 0.3%; p &lt; 0.001). Demographic characteristics were significantly different between the cohorts including gender (p &lt; 0.001), age (p &lt; 0.001), race (p &lt; 0.001), and Hispanic ethnicity (p = 0.033). After adjusting for these factors, logistic regression analyses showed that diabetes was associated with acute renal failure (OR: 5.836; 95% CI: 1.060-32.134; p = 0.043), wound disruption (OR: 6.194; 95% CI: 1.752-21.900; p = 0.005), prolonged length of stay (OR: 1.430; 95% CI: 1.261-1.622; p &lt; 0.001), unplanned readmission (OR: 1.380; 95% CI: 1.096-1.737; p = 0.006), superficial incisional surgical site infections (OR: 0.240; 95% CI: 0.058-0.995; p = 0.049), urinary tract infection occurrences (OR: 2.173; 95% CI: 1.186-3.980; p = 0.012), organ space surgical site infection occurrences (OR: 3.322; 95% CI: 1.016-10.864; p = 0.047), pneumonia occurrences (OR: 2.091; 95% CI: 1.125-3.884; p = 0.020), any medical complication (OR: 1.697; 95% CI: 1.246-2.313; p = 0.001), and any complication (OR: 1.495; 95% CI: 1.136-1.968; p = 0.004).&#10;&#10;CONCLUSION: Diabetes mellitus is a significant factor associated with increased odds of complications following thyroidectomy.&#10;&#10;LEVEL OF EVIDENCE: 3 Laryngoscope, 133:3628-3632, 2023.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:38:27+00:00" xmi:version="2.0">
+  <chunks charEnd="2915"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.99" sourceSpanStart="33" sourceSpanEnd="41">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="acute renal failure" confidence="0.95" sourceSpanStart="1348" sourceSpanEnd="1367">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="wound-disruption" mention="wound disruption" confidence="0.95" sourceSpanStart="2059" sourceSpanEnd="2075">
+    <properties key="name" value="wound disruption"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="prolonged-length-of-stay" mention="prolonged length of stay" confidence="0.95" sourceSpanStart="2122" sourceSpanEnd="2146">
+    <properties key="name" value="prolonged length of stay"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="unplanned-readmission" mention="unplanned readmission" confidence="0.95" sourceSpanStart="2192" sourceSpanEnd="2213">
+    <properties key="name" value="unplanned readmission"/>
+  </entities>
+  <entities type="Condition" id="superficial-incisional-surgical-site-infections" mention="superficial incisional surgical site infections" confidence="0.95" sourceSpanStart="2259" sourceSpanEnd="2306">
+    <properties key="name" value="superficial incisional surgical site infections"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="Condition" id="urinary-tract-infection" mention="urinary tract infection" confidence="0.95" sourceSpanStart="2352" sourceSpanEnd="2375">
+    <properties key="name" value="urinary tract infection"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="organ-space-surgical-site-infection" mention="organ space surgical site infection" confidence="0.95" sourceSpanStart="2433" sourceSpanEnd="2468">
+    <properties key="name" value="organ space surgical site infection"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="pneumonia" confidence="0.95" sourceSpanStart="2527" sourceSpanEnd="2536">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="any-medical-complication" mention="any medical complication" confidence="0.95" sourceSpanStart="2594" sourceSpanEnd="2618">
+    <properties key="name" value="any medical complication"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="any-complication" mention="any complication" confidence="0.95" sourceSpanStart="2668" sourceSpanEnd="2684">
+    <properties key="name" value="any complication"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="acute-renal-failure" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with acute renal failure (OR: 5.836; 95% CI: 1.060-32.134; p = 0.043)" sourceSpanStart="1888" sourceSpanEnd="2057"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="wound-disruption" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... wound disruption (OR: 6.194; 95% CI: 1.752-21.900; p = 0.005)" sourceSpanStart="1332" sourceSpanEnd="1515"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="prolonged-length-of-stay" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... prolonged length of stay (OR: 1.430; 95% CI: 1.261-1.622; p &lt; 0.001)" sourceSpanStart="1332" sourceSpanEnd="1569"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="unplanned-readmission" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... unplanned readmission (OR: 1.380; 95% CI: 1.096-1.737; p = 0.006)" sourceSpanStart="1332" sourceSpanEnd="1629"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="superficial-incisional-surgical-site-infections" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... superficial incisional surgical site infections (OR: 0.240; 95% CI: 0.058-0.995; p = 0.049)" sourceSpanStart="1332" sourceSpanEnd="1704"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="urinary-tract-infection" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... urinary tract infection occurrences (OR: 2.173; 95% CI: 1.186-3.980; p = 0.012)" sourceSpanStart="1332" sourceSpanEnd="1761"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="organ-space-surgical-site-infection" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... organ space surgical site infection occurrences (OR: 3.322; 95% CI: 1.016-10.864; p = 0.047)" sourceSpanStart="1332" sourceSpanEnd="1836"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="Condition" targetId="pneumonia" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... pneumonia occurrences (OR: 2.091; 95% CI: 1.125-3.884; p = 0.020)" sourceSpanStart="1332" sourceSpanEnd="1898"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="any-medical-complication" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... any medical complication (OR: 1.697; 95% CI: 1.246-2.313; p = 0.001)" sourceSpanStart="1332" sourceSpanEnd="1963"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="any-complication" confidence="0.9" evidence="After adjusting for these factors, logistic regression analyses showed that diabetes was associated with ... and any complication (OR: 1.495; 95% CI: 1.136-1.968; p = 0.004)." sourceSpanStart="1332" sourceSpanEnd="2013"/>
+</raw:RawExtractionResult>

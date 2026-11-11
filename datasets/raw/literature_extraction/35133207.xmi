@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/35133207.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/35133207/" sourceSha256="55e10e7621676ff008399d9564871fceef26514daf1997c6a9768742af780a89" sourceText="# PubMed 35133207: The palliative management of non-islet cell tumour hypoglycaemia with glucocorticoids and somatostatin analogues in an unresectable hepatocellular carcinoma.&#10;&#10;Annals of the Royal College of Surgeons of England (2022), doi:10.1308/rcsann.2021.0269&#10;&#10;Non-islet cell tumour hypoglycaemia (NICTH) results from paraneoplastic insulin-like growth factor-II (IGF-II) secretion and its potent insulin-like effect. It causes recurrent, often severe, hypoglycaemic episodes, which is detrimental to quality of life. There is limited evidence regarding best supportive care in unresectable tumours. A 76-year-old woman presented with hypoglycaemic collapse. A new diagnosis of unresectable hepatocellular carcinoma (HCC) was made. The IGF-II:IGF-I ratio was 11.0, which confirmed NICTH. The octreoscan showed avid disease. The main problem was symptomatic nocturnal hypoglycaemia. Curative treatment options were not possible in this case and treatment focused on preventing symptomatic hypoglycaemia. Inpatient treatment was with high carbohydrate nasogastric (NG) feeds, prednisolone and somatostatin analogue (octreotide) infusion. Once stabilised, the patient was discharged with NG feeds, prednisolone and a long-acting somatostatin analogue (sandostatin). The patient received successful end-of-life care with her family as per her wishes, without requiring readmission. The treatments were well-tolerated and effective in preventing symptomatic hypoglycaemic episodes. The combination of high carbohydrate NG feed with prednisolone and somatostatin analogues was effective in preventing symptomatic hypoglycaemia. Somatostatin analogues had a useful steroid sparing role. Larger case series are warranted to clarify the management of NICTH patients with placebo-controlled studies to determine the role of somatostatin analogues.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:45:05+00:00" xmi:version="2.0">
+  <chunks charEnd="1844"/>
+  <entities type="Condition" id="non-islet-cell-tumour-hypoglycaemia" mention="Non-islet cell tumour hypoglycaemia (NICTH)" confidence="0.95" sourceSpanStart="267" sourceSpanEnd="310">
+    <properties key="name" value="non-islet cell tumour hypoglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycaemic-episodes" mention="hypoglycaemic episodes" confidence="0.9" sourceSpanStart="459" sourceSpanEnd="481">
+    <properties key="name" value="hypoglycaemic episodes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycaemia" mention="hypoglycaemia" confidence="0.95" sourceSpanStart="873" sourceSpanEnd="886">
+    <properties key="name" value="hypoglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="prednisolone" mention="prednisolone" confidence="0.95" sourceSpanStart="1080" sourceSpanEnd="1092">
+    <properties key="name" value="prednisolone"/>
+    <properties key="drugClass" value="glucocorticoid"/>
+  </entities>
+  <entities type="Drug" id="somatostatin-analogue" mention="somatostatin analogue" confidence="0.95" sourceSpanStart="1097" sourceSpanEnd="1118">
+    <properties key="name" value="somatostatin analogue"/>
+    <properties key="drugClass" value="somatostatin analogue"/>
+  </entities>
+</raw:RawExtractionResult>

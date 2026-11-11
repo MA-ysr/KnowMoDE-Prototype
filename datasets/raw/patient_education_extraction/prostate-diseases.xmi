@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/prostate-diseases.txt" sourceUri="https://medlineplus.gov/prostatediseases.html" sourceSha256="536add78722d80ade6d36961c44924fb4264b7516976c1234fbc469392394fe0" sourceText="# MedlinePlus health topic: Prostate Diseases&#10;&#10;What is the prostate?The prostate is a gland in the male reproductive system. It lies just below the bladder. It makes fluid that is part of semen.&#10;&#10;What are prostate diseases?There are many types of prostate diseases:&#10;&#10;Prostatitis is inflammation (swelling and pain) in the prostate gland. It's the most common type of prostate problem in people under than age 50. There are different types:&#10;Chronic prostatitis is also called chronic pelvic pain syndrome. It's the most common type of prostatitis.&#10;&#10;Acute bacterial prostatitis starts suddenly from a bacterial infection and is treated with antibiotics. It is not common.&#10;&#10;Chronic bacterial prostatitis happens when a bacterial infection keeps coming back. The symptoms usually start slowly. It may take longer to treat than acute bacterial prostatitis.&#10;&#10;Asymptomatic prostatitis has no symptoms and usually doesn't need treatment. You may learn you have it after having tests for other health problems.&#10;&#10;Enlarged prostate is also called benign prostatic hyperplasia (BPH). The prostate gland tends to grow larger with age. That's why enlarged prostate is very common in older people and rare in those who are under age 40. When the prostate grows larger, it may press on your urethra and cause problems with urination.&#10;&#10;Prostate cancer happens when cancer cells form in the prostate gland. Prostate cancer is a common type of cancer in those aged 50 and older. Most prostate cancers grow slowly and may never cause health problems. But certain prostate cancers are serious.&#10;&#10;Who is more likely to develop prostate diseases?Anyone with a prostate can develop prostate problems. But some people are at higher risk.&#10;&#10;You may be more likely to develop prostatitis if you have:&#10;&#10;A lower urinary tract infection, also called a UTI. An infection in your lower urinary tract (bladder and urethra) may lead to acute or chronic bacterial prostatitis.&#10;&#10;Nerve damage in your lower urinary tract from surgery or an injury. This may lead to chronic prostatitis.&#10;&#10;Emotional stress, which can lead to chronic prostatitis.&#10;&#10;You may be more likely to develop an enlarged prostate (BPH) if you:&#10;&#10;Are age 40 or older.&#10;&#10;Have family members who have had BPH.&#10;&#10;Have certain health conditions such as:&#10;Obesity.&#10;&#10;Heart disease and problems with blood circulation.&#10;&#10;Type 2 diabetes.&#10;&#10;Don't get enough physical activity.&#10;&#10;You may be more likely to develop prostate cancer if you:&#10;&#10;Are older than age 50.&#10;&#10;Have a parent, sibling, or child who has or had prostate cancer.&#10;&#10;Are African American.&#10;&#10;What are the symptoms of prostate diseases?The symptoms of prostate problems include:&#10;&#10;Needing to urinate a lot.&#10;&#10;Needing to rush to the bathroom, but not being able to urinate or only going a little.&#10;&#10;Leaking or dribbling urine.&#10;&#10;Having a weak urine stream.&#10;&#10;Other symptoms depend on the type of prostate problem you have and may include:&#10;&#10;Not being able to urinate at all. This is a medical emergency.&#10;&#10;Any problems, starting or controlling urine flow.&#10;&#10;Waking up often to urinate.&#10;&#10;Blood in your urine or urine that has an unusual smell or color.&#10;&#10;Fever, chills, or body aches.&#10;&#10;Great discomfort or pain:&#10;While urinating or after ejaculation.&#10;&#10;In your abdomen (belly), between your scrotum and anus, or in your scrotum or penis.&#10;&#10;Contact your provider if you have any of these symptoms.&#10;&#10;How are prostate diseases diagnosed?To find out if you have a prostate problem, your provider will:&#10;&#10;Ask about your medical history and symptoms.&#10;&#10;Ask about your family health history.&#10;&#10;Do a physical exam. The exam may include a digital rectal exam (DRE) of your prostate. In a DRE, your provider inserts a gloved finger into your rectum to feel the general size and condition of your prostate.&#10;&#10;Order tests, if needed. Tests may include:&#10;Blood and urine tests to look for infection.&#10;&#10;Urodynamic testing to see how well you can hold and release urine.&#10;&#10;Cystoscopy to look inside your urethra and bladder.&#10;&#10;Ultrasound pictures of your prostate and urinary tract.&#10;&#10;A PSA blood test (prostate-specific antigen test).&#10;&#10;Prostate biopsy to diagnose or rule out cancer.&#10;&#10;Treatment depends on what prostate disease you have and which symptoms bother you most.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:25:00+00:00" xmi:version="2.0">
+  <chunks charEnd="3961"/>
+  <chunks index="1" charStart="3753" charEnd="4280"/>
+  <entities type="Condition" id="prostatitis" mention="Prostatitis" confidence="0.95" sourceSpanStart="267" sourceSpanEnd="278">
+    <properties key="name" value="prostatitis"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="chronic-prostatitis" mention="Chronic prostatitis" confidence="0.95" sourceSpanStart="440" sourceSpanEnd="459">
+    <properties key="name" value="chronic prostatitis"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="acute-bacterial-prostatitis" mention="Acute bacterial prostatitis" confidence="0.95" sourceSpanStart="548" sourceSpanEnd="575">
+    <properties key="name" value="acute bacterial prostatitis"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="chronic-bacterial-prostatitis" mention="Chronic bacterial prostatitis" confidence="0.95" sourceSpanStart="671" sourceSpanEnd="700">
+    <properties key="name" value="chronic bacterial prostatitis"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="asymptomatic-prostatitis" mention="Asymptomatic prostatitis" confidence="0.95" sourceSpanStart="853" sourceSpanEnd="877">
+    <properties key="name" value="asymptomatic prostatitis"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="benign-prostatic-hyperplasia" mention="benign prostatic hyperplasia (BPH)" confidence="0.95" sourceSpanStart="1036" sourceSpanEnd="1070">
+    <properties key="name" value="benign prostatic hyperplasia"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="prostate-cancer" mention="Prostate cancer" confidence="0.95" sourceSpanStart="1319" sourceSpanEnd="1334">
+    <properties key="name" value="prostate cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="lower-urinary-tract-infection" mention="lower urinary tract infection" confidence="0.95" sourceSpanStart="1775" sourceSpanEnd="1804">
+    <properties key="name" value="lower urinary tract infection"/>
+    <properties key="category" value="urological"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="Obesity" confidence="0.95" sourceSpanStart="2277" sourceSpanEnd="2284">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="Heart disease" confidence="0.95" sourceSpanStart="2287" sourceSpanEnd="2300">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="Type 2 diabetes" confidence="0.95" sourceSpanStart="2339" sourceSpanEnd="2354">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="cancer" mention="cancer" confidence="0.9" sourceSpanStart="4112" sourceSpanEnd="4118" chunkIndex="1">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="infection" mention="infection" confidence="0.9" sourceSpanStart="3830" sourceSpanEnd="3839" chunkIndex="1">
+    <properties key="name" value="infection"/>
+    <properties key="category" value="urological"/>
+  </entities>
+</raw:RawExtractionResult>

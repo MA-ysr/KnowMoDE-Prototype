@@ -1,0 +1,11 @@
+# PubMed 42464180: Evaluation of medication regimen complexity and rehospitalization in older adults with chronic kidney disease: a retrospective cohort study.
+
+BMC geriatrics (2026), doi:10.1186/s12877-026-07986-7
+
+BACKGROUND: Polypharmacy is quite common in older adults with chronic kidney disease (CKD), and these patients have complex medication regimens. The medication regimen complexity index (MRCI) is one of the tools most commonly used to assess medication regimen complexity. CKD patients experience recurrent rehospitalization. However, the relationship between the MRCI score and rehospitalization in CKD patients is unclear, and evidence on this subject is limited, particularly in older adults. Therefore, this study aims to evaluate the relationship between the MRCI score and rehospitalization within 30 days and 90 days in older adults with CKD patients.
+
+METHODS: This retrospective study was conducted in older adults with CKD hospitalized in the nephrology service of Suleyman Demirel University Research and Practice Hospital, Isparta, Turkey, between August 2019 and August 2023. In this study, medication complexity was assessed using the MRCI score and anticholinergic burden was measured with the Anticholinergic Cognitive Burden Scale (ACBS). Multiple linear regression analysis was used to identify factors influencing the MRCI score. Binary logistic regression models were created to determine factors affecting 30-day and 90-day rehospitalization.
+
+RESULTS: The mean (± SD) MRCI score of the patients was 23.4 ± 13.65. The factors affecting the MRCI score were the ACBS score, diabetes, thyroid diseases, hypertension; and rehospitalization within 90 days as a result of the forward selection method (p < 0.05). According to logistic regression analysis, the MRCI score and diabetes significantly affected rehospitalization within 30 days and 90 days (p < 0.05).
+
+CONCLUSIONS: In this study, the ACBS score, diabetes, thyroid diseases, hypertension and rehospitalization within 90 days significantly affected the MRCI score. Diabetes and MRCI were factors affecting rehospitalization within 30 days and 90 days. Reducing medication complexity may be a factor that can prevent rehospitalization in older adults with CKD.

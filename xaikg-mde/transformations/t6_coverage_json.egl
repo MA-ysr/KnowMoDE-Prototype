@@ -1,0 +1,13 @@
+[% var j = ids; %]
+{
+  "audiences": [[%=c.audiences.collect(a | j.json(a.role)).concat(", ")%]],
+  "explanationTypes": [[%=c.explanationTypes.collect(t | j.json(t.name)).concat(", ")%]],
+  "matrix": {
+[% var first = true; for (a in c.audiences) { %]
+    [% if (not first) { %],[% } %][%=j.json(a.role)%]: {[%=c.explanationTypes.collect(t | j.json(t.name) + ": " + (t.audiences.includes(a) ? "true" : "false")).concat(", ")%]}
+[% first = false; } %]
+  },
+  "endpointsPerAudience": {[%=c.audiences.collect(a | j.json(a.role) + ": " + (c.explanationTypes.select(t | t.audiences.includes(a)).size() + (a.requiresFullProvenance ? 1 : 0))).concat(", ")%]},
+  "totalEndpoints": [%=c.explanationTypes.collect(t | t.audiences.size()).sum() + (c.audiences.exists(a | a.requiresFullProvenance) ? 1 : 0)%],
+  "uncoveredAudiences": [[%=c.audiences.select(a | not c.explanationTypes.exists(t | t.audiences.includes(a))).collect(a | j.json(a.role)).concat(", ")%]]
+}

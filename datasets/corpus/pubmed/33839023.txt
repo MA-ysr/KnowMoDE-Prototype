@@ -1,0 +1,11 @@
+# PubMed 33839023: The Association of Diabetes and Hyperglycemia on Inpatient Readmissions.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2021), doi:10.1016/j.eprac.2021.01.008
+
+OBJECTIVE: To evaluate the association between inpatient glycemic control and readmission in individuals with diabetes and hyperglycemia (DM/HG).
+
+METHODS: Two data sets were analyzed from fiscal years 2011 to 2013: hospital data using the International Classification of Diseases, Ninth Revision (ICD-9) codes for DM/HG and point of care (POC) glucose monitoring. The variables analyzed included gender, age, mean, minimum and maximum glucose, along with 4 measures of glycemic variability (GV), standard deviation, coefficient of variation, mean amplitude of glucose excursions, and average daily risk range.
+
+RESULTS: Of 66 518 discharges in FY 2011-2013, 28.4% had DM/HG based on ICD-9 codes and 53% received POC monitoring. The overall readmission rate was 13.9%, although the rates for individuals with DM/HG were higher at 18.9% and 20.6% using ICD-9 codes and POC data, respectively. The readmitted group had higher mean glucose (169 ± 47 mg/dL vs 158 ± 46 mg/dL, P < .001). Individuals with severe hypoglycemia and hyperglycemia had the highest readmission rates. All 4 GV measures were consistent and higher in the readmitted group.
+
+CONCLUSION: Individuals with DM/HG have higher 30-day readmission rates than those without. Those readmitted had higher mean glucose, more extreme glucose values, and higher GV. To our knowledge, this is the first report of multiple metrics of inpatient glycemic control, including GV, and their associations with readmission.

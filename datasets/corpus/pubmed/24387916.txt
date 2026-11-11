@@ -1,0 +1,11 @@
+# PubMed 24387916: Pilot trial of diabetes self-management education in the hospital setting.
+
+Primary care diabetes (2014), doi:10.1016/j.pcd.2013.11.008
+
+AIMS: Diabetes self-management education (DSME) is recommended for all patients with diabetes. Current estimates indicate that <50% of patients receive DSME, increasing risk for hospitalization which occurs more frequently with diabetes. Hospitalization presents opportunities to provide DSME, potentially decreasing readmissions. To address this, we investigated the feasibility of providing DSME to inpatients with diabetes.
+
+METHODS: Patients hospitalized on four medicine units were randomized to receive DSME (Education Group) (n=9) prescribed by a certified diabetes educator and delivered by a registered nurse, or Usual Care (n=12). Participants completed Diabetes Knowledge Tests (DKT), Medical Outcomes Short Form (SF-36), Diabetes Treatment Satisfaction Questionnaire (DTSQ), and the DTSQ-inpatient (DTSQ-IP). Bedside capillary blood glucoses (CBG) on day of admission, randomization and discharge were compared.
+
+RESULTS: There were no group differences in demographics, diabetes treatment, admission CBG (186±93 mg/dL vs. 219±84 mg/dL, p=0.40), DKT scores (Education vs. Usual Care 48±25 vs. 68±19, p=0.09), SF-36, and DTSQ scores (28±6 vs. 25±7, p=0.41). Patients receiving education reported more satisfaction with inpatient treatment (83±13 vs. 65±19, p=0.03), less hyperglycemia prior to (2.7±4.5 vs. 4.5±1.4, p=0.03) and during hospitalization (3.9±1.9 vs. 5.5±1.2, p=0.04); and had lower mean discharge CBG (159±38 mg/dL vs. 211±67 mg/dL, p=0.02).
+
+CONCLUSIONS: Inpatient diabetes education has potential to improve treatment satisfaction, and reduce CBG.

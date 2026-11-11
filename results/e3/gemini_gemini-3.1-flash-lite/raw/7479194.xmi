@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/7479194" sourceUri="https://pubmed.ncbi.nlm.nih.gov/7479194/" sourceSha256="113ca4c48d38bcca1b6f750954c4e23619c07820a122b8a9fc3a071175990167" sourceText="A large population-based follow-up study of trimethoprim-sulfamethoxazole, trimethoprim, and cephalexin for uncommon serious drug toxicity. We conducted a population-based 45-day follow-up study of 232,390 people who were prescribed trimethoprim-sulfamethoxazole (TMP-SMZ), 266,951 prescribed trimethoprim alone, and 196,397 prescribed cephalexin, to estimate the risk of serious liver, blood, skin, and renal disorders resulting in referral or hospitalization associated with these drugs. The results were based on information recorded on office computers by selected general practitioners in the United Kingdom, together with a review of clinical records. The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP-SMZ (5.2/100,000) and those prescribed trimethoprim alone (3.8/100,000). The risk for those prescribed cephalexin was somewhat lower (2.0/100,000). Only five patients experienced blood disorders, one of whom was exposed to TMP-SMZ; of seven with erythema multiforme and Stevens-Johnson syndrome, four were exposed to TMP-SMZ. The one case of toxic epidermal necrolysis occurred in a patient who took cephalexin. Finally, only five cases of acute parenchymal renal disease occurred, none likely to be caused by a study drug. We conclude that the risk of the serious diseases studied is small for the three agents, and compares reasonably with the risk for many other antibiotics." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:49+00:00" xmi:version="2.0">
+  <chunks charEnd="1433"/>
+  <entities type="Drug" id="trimethoprim-sulfamethoxazole" mention="trimethoprim-sulfamethoxazole" confidence="0.99" sourceSpanStart="44" sourceSpanEnd="73">
+    <properties key="name" value="trimethoprim-sulfamethoxazole"/>
+  </entities>
+  <entities type="Drug" id="trimethoprim" mention="trimethoprim" confidence="0.99" sourceSpanStart="44" sourceSpanEnd="56">
+    <properties key="name" value="trimethoprim"/>
+  </entities>
+  <entities type="Drug" id="cephalexin" mention="cephalexin" confidence="0.99" sourceSpanStart="93" sourceSpanEnd="103">
+    <properties key="name" value="cephalexin"/>
+  </entities>
+  <entities type="Condition" id="liver-disease" mention="idiopathic liver disease" confidence="0.95" sourceSpanStart="691" sourceSpanEnd="715">
+    <properties key="name" value="idiopathic liver disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="blood-disorders" mention="blood disorders" confidence="0.95" sourceSpanStart="934" sourceSpanEnd="949">
+    <properties key="name" value="blood disorders"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="erythema-multiforme" mention="erythema multiforme" confidence="0.95" sourceSpanStart="1001" sourceSpanEnd="1020">
+    <properties key="name" value="erythema multiforme"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="stevens-johnson-syndrome" mention="Stevens-Johnson syndrome" confidence="0.95" sourceSpanStart="1025" sourceSpanEnd="1049">
+    <properties key="name" value="stevens-johnson syndrome"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="toxic-epidermal-necrolysis" mention="toxic epidermal necrolysis" confidence="0.95" sourceSpanStart="1097" sourceSpanEnd="1123">
+    <properties key="name" value="toxic epidermal necrolysis"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim-sulfamethoxazole" targetType="Condition" targetId="liver-disease" confidence="0.85" evidence="The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP-SMZ (5.2/100,000) and those prescribed trimethoprim alone (3.8/100,000)." sourceSpanStart="658" sourceSpanEnd="827"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim" targetType="Condition" targetId="liver-disease" confidence="0.85" evidence="The risk of clinically important idiopathic liver disease was similar for persons prescribed TMP-SMZ (5.2/100,000) and those prescribed trimethoprim alone (3.8/100,000)." sourceSpanStart="658" sourceSpanEnd="827"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="cephalexin" targetType="Condition" targetId="liver-disease" confidence="0.8" evidence="The risk for those prescribed cephalexin was somewhat lower (2.0/100,000)." sourceSpanStart="828" sourceSpanEnd="902"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim-sulfamethoxazole" targetType="Condition" targetId="blood-disorders" confidence="0.8" evidence="Only five patients experienced blood disorders, one of whom was exposed to TMP-SMZ" sourceSpanStart="903" sourceSpanEnd="985"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim-sulfamethoxazole" targetType="Condition" targetId="erythema-multiforme" confidence="0.9" evidence="of seven with erythema multiforme and Stevens-Johnson syndrome, four were exposed to TMP-SMZ." sourceSpanStart="987" sourceSpanEnd="1080"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim-sulfamethoxazole" targetType="Condition" targetId="stevens-johnson-syndrome" confidence="0.9" evidence="of seven with erythema multiforme and Stevens-Johnson syndrome, four were exposed to TMP-SMZ." sourceSpanStart="987" sourceSpanEnd="1080"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="cephalexin" targetType="Condition" targetId="toxic-epidermal-necrolysis" confidence="0.9" evidence="The one case of toxic epidermal necrolysis occurred in a patient who took cephalexin." sourceSpanStart="1081" sourceSpanEnd="1166"/>
+</raw:RawExtractionResult>

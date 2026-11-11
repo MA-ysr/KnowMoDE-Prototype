@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33258395.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33258395/" sourceSha256="e58c7cd137e44acd248627581d21d0e611863c3d3bace0583c0f66aceb3b6c54" sourceText="# PubMed 33258395: Quantifying the difference in risk of adverse events by induction treatment regimen in pediatric acute lymphoblastic leukemia.&#10;&#10;Leukemia &amp; lymphoma (2021), doi:10.1080/10428194.2020.1852471&#10;&#10;The differences in overall morbidity by induction treatment regimen for pediatric acute lymphoblastic leukemia (ALL) are unknown. We examined a cohort of children with ALL who received induction chemotherapy between January 2010 and May 2018. We evaluated 20 clinically relevant adverse events (AEs) and readmission and ICU admission rates. Outcomes were compared between standard 3- and 4-drug treatment regimens in multivariate analyses using Cox proportional hazard ratios. Among 486 eligible patients, the risks of sepsis (HR = 2.16, 95% CI = 1.11-4.19), hypoxia (HR = 2.08, 95% CI = 1.03-4.18), hyperbilirubinemia (HR = 2.48, 95% CI = 1.07-5.74), hyperglycemia (HR = 2.65, 95% CI = 1.29-5.42), thromboembolic event (HR = 4.50, 95% CI = 1.30-15.6), and hyponatremia (HR = 7.88, 95% CI = 1.26-49.4) were significantly higher during 4-drug induction. Despite no differences in readmission or ICU admission rates, 4-drug induction patients had greater total inpatient days (12 vs. 4 days; p&lt;.0001). In conclusion, pediatric patients receiving 4-drug induction for ALL experience higher morbidity. These results inform care practices and patient guidance during induction therapy.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:39:57+00:00" xmi:version="2.0">
+  <chunks charEnd="1391"/>
+  <entities type="Condition" id="sepsis" mention="sepsis" confidence="0.95" sourceSpanStart="729" sourceSpanEnd="735">
+    <properties key="name" value="sepsis"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="hypoxia" mention="hypoxia" confidence="0.95" sourceSpanStart="769" sourceSpanEnd="776">
+    <properties key="name" value="hypoxia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="hyperbilirubinemia" mention="hyperbilirubinemia" confidence="0.95" sourceSpanStart="810" sourceSpanEnd="828">
+    <properties key="name" value="hyperbilirubinemia"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="862" sourceSpanEnd="875">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="thromboembolic-event" mention="thromboembolic event" confidence="0.95" sourceSpanStart="909" sourceSpanEnd="929">
+    <properties key="name" value="thromboembolic event"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hyponatremia" mention="hyponatremia" confidence="0.95" sourceSpanStart="967" sourceSpanEnd="979">
+    <properties key="name" value="hyponatremia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

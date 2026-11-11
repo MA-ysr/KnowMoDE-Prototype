@@ -1,0 +1,44 @@
+[*
+  T3 (paper, Phase 3, M2T): Graph Schema model -> Cypher DDL for Neo4j 5.
+  Input model alias: Graph. Output: one .cypher script (constraints + indexes), idempotent.
+  The header with input fingerprints is prepended by the CLI.
+*]
+[%
+var g = Graph!GraphSchema.all.first();
+out.println("// Database ........ " + g.databaseName);
+out.println("// Derived from .... KG schema \"" + g.sourceSchema + "\" (T1 -> T3, consistent with the schema by construction)");
+out.println("// Node labels ..... " + g.nodeLabels.size() + "   Relationship types: " + g.relationshipTypes.size());
+out.println("// Constraints ..... " + g.constraints.size() + "   Indexes: " + g.indexes.size());
+out.print("\n");
+out.println("// ---- Node labels (documentation; Neo4j creates labels on first use) ----");
+for (l in g.nodeLabels) {
+  out.println("//   (:" + l.name + ")" + (l.sourceConcept.isDefined() ? "  <- " + l.sourceConcept : ""));
+  for (p in l.properties) {
+    out.println("//       ." + p.name + " : " + p.dataType + (p.isRequired ? " REQUIRED" : "") + (p.isExplainable ? " EXPLAINABLE" : ""));
+  }
+}
+out.print("\n");
+out.println("// ---- Relationship types (documentation) ----");
+for (t in g.relationshipTypes) {
+  var card = "[" + t.minCardinality + ".." + ((t.maxCardinality = -1) ? "*" : t.maxCardinality) + "]";
+  out.println("//   (:" + t.sourceLabel + ")-[:" + t.name + "]->(:" + t.targetLabel + ")  " + card + (t.semantics.isDefined() ? "  " + t.semantics : ""));
+}
+out.print("\n");
+out.println("// ---- Uniqueness constraints (one per concept: its identifying property) ----");
+for (c in g.constraints) {
+  out.println("CREATE CONSTRAINT " + c.name + " IF NOT EXISTS");
+  out.println("  FOR (n:" + c.label + ") REQUIRE n." + c.property + " IS UNIQUE;");
+}
+out.print("\n");
+out.println("// ---- Indexes on explainable properties (fast lookups during explanation queries) ----");
+for (i in g.indexes) {
+  out.println("CREATE " + ((i.indexType = "TEXT") ? "TEXT INDEX " : "INDEX ") + i.name + " IF NOT EXISTS");
+  out.println("  FOR (n:" + i.label + ") ON (n." + i.property + ");");
+}
+out.print("\n");
+out.println("// ---- Provenance lookups used by the /trace endpoint (fact id on every domain relationship) ----");
+for (n in g.relationshipTypes.select(t | t.sourceRelationId <> "(provenance)").collect(t | t.name).asSet().asSequence().sortBy(n | n)) {
+  out.println("CREATE INDEX " + n.toLowerCase() + "_prov_fact_id_idx IF NOT EXISTS");
+  out.println("  FOR ()-[r:" + n + "]-() ON (r._prov_fact_id);");
+}
+%]

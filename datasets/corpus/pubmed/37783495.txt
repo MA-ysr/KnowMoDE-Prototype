@@ -1,0 +1,5 @@
+# PubMed 37783495: Inpatient glycemic management in noncritically ill patients: Updated guidelines.
+
+Cleveland Clinic journal of medicine (2023), doi:10.3949/ccjm.90a.23049
+
+Hyperglycemia is common in hospitalized patients and is traditionally managed with scheduled and correctional doses of insulin. The authors present an overview of the latest (2022) guidelines from the Endocrine Society on inpatient hyperglycemia management in noncritically ill patients, which includes a role for newer diabetes technologies and nontraditional insulin and noninsulin therapies.

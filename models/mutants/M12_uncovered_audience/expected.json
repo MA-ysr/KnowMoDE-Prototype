@@ -1,0 +1,7 @@
+{
+  "id": "M12_uncovered_audience",
+  "family": "C4",
+  "expectedConstraint": "C4_AudienceCovered",
+  "mutatedFile": "explainability.xmi",
+  "description": "auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there"
+}

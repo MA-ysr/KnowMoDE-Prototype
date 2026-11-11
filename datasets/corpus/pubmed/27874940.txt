@@ -1,0 +1,11 @@
+# PubMed 27874940: Hospital readmissions to internal medicine departments: a higher risk for females?
+
+European review for medical and pharmacological sciences (2016)
+
+OBJECTIVE: Readmissions to hospital after discharge are considered adverse, serious and costly outcomes. In the last years, two new scores have been proposed to identify patients at high risk of hospital readmission, the HOSPITAL and the Elders Risk Assessment (ERA) indexes. The aim of this study was to evaluate these two scores and the risk of death among internal medicine readmitted patients.
+
+PATIENTS AND METHODS: During a 30-month period, we identified 613 readmitted patients out of 13,237 admissions. Age, sex, length-of-hospital stay (LOS), and deaths were retrospectively analyzed. Readmissions with diagnosis coincident with the index hospitalization were classified as avoidable, whilst those with a different diagnosis were defined as non-avoidable. HOSPITAL score for 30-day potentially avoidable readmission and ERA indexes were calculated.
+
+RESULTS: Readmitted patients (56.6% women), were aged 79±10.4 years. The incidence of 30-day readmission was 20.4 patients/month. Re-hospitalization could be classified as avoidable in 286 cases (46.7%), and death at the end of follow-up was recorded in 366 (59.7%). HOSPITAL score ≥ 7 and ERA score ≥ 16, both able to identify high risk patients for readmission, were present in 108 (17.6%) and 385 (64.4%) of cases, respectively. Patients with non-avoidable readmissions were older, more frequently female, diabetic, and had higher ERA score than subjects with avoidable readmission. Multivariate logistic regression analysis showed that non-avoidable readmissions were independently associated with female gender (OR 1.410 [95% CI 1.012-1.964], p=0.042), and age (OR 1.025 [95% CI 1.006-1.043], p=0.01), while only age (OR 1.034 [95% CI 1.015-1.054], p<0.001) and ERA score (OR 1.047 [95% CI 1.001-1.095], p=0.047) were independently associated with death at the end of follow-up.
+
+CONCLUSIONS: Although re-hospitalization represents frequent phenomenon related to age, non-avoidable readmissions mainly involve female patients. ERA score appears to be an useful practical tool, able to identify high risk patients.

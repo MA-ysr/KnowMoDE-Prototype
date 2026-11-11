@@ -1,0 +1,11 @@
+# PubMed 33295194: Enhanced Recovery After Surgery Protocols. Does Frailty Play a Role?
+
+The American surgeon (2021), doi:10.1177/0003134820956357
+
+INTRODUCTION: The 5-modified frailty index (mFI) is a valid predictor of 30-day mortality after surgery. With the wide implementation of enhanced recovery after surgery (ERAS) protocols in colorectal patients, the predictive power of frailty and its contribution to morbidity and length of stay (LOS) can be underestimated.
+
+METHODS: We reviewed all colectomy patients undergoing ERAS protocol at a single, tertiary care institution from January 2016-January 2019. The 5-mFI score was calculated based on the presence of 5 comorbidities: Congestive heart failure (CHF), diabetes mellitus, chronic obstructive pulmonary disease, functional status, and hypertension (HTN). Multivariate analysis was used to assess the impact of 5-mFI score on morbidity, emergency department (ED) visits, readmissions, and LOS.
+
+RESULTS: 360 patients were evaluated including 163 elderly patients. Frailer patients had a higher rate of ED visits (P = .024), readmissions (P = .029), and LOS (P < .001). Patients with CHF had a higher chance of prolonged LOS, whereas patients with HTN had a higher chance of ED. Elderly patients with an mFI score of 3 and 4 were likely to have longer LOS (P = .01, P = .07, respectively). Elderly patients with an mFI score of 4 were 15 times more likely to visit ED and 22 times more likely to be readmitted than patients with an mFI score of 0.
+
+DISCUSSION: An increase in 5-mFI for elderly patients undergoing colorectal procedures increases ED visits or readmissions, and it correlates to a higher LOS, especially in elderly patients. This instrument should be used in the assessment of frail, elderly patients undergoing colorectal procedures.

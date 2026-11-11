@@ -1,0 +1,39 @@
+# Neo4j 5 Community for the XAI-KG artefact.
+# Run with Finch (Amazon's Docker-compatible runtime) or Docker:
+#   finch compose up -d      |   docker compose up -d
+#   finch compose down       |   docker compose down
+# Browser: http://localhost:7474   Bolt: bolt://localhost:7687
+# Credentials come from .env (copy .env.example to .env). Never commit .env.
+services:
+  neo4j:
+    image: public.ecr.aws/docker/library/neo4j:5.26-community
+    container_name: xaikg-neo4j
+    # Published on loopback only: the database is reachable from this machine, never from the network.
+    # Anyone needing it from another host uses an SSH local port-forward, not a wider publish.
+    ports:
+      - "127.0.0.1:7474:7474"   # HTTP (browser)
+      - "127.0.0.1:7687:7687"   # Bolt (drivers)
+    environment:
+      # Fail fast if the password is not provided via .env (no literal credential in this file).
+      NEO4J_AUTH: "neo4j/${NEO4J_PASSWORD:?set NEO4J_PASSWORD in .env}"
+      # Accept the community licence non-interactively.
+      NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
+      # Modest heap for a laptop; the KG is small (tens of thousands of nodes).
+      NEO4J_server_memory_heap_initial__size: "512m"
+      NEO4J_server_memory_heap_max__size: "1g"
+      NEO4J_server_memory_pagecache_size: "512m"
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+      # Generated Cypher scripts (T3 DDL, T5 loader) are mounted read-only so
+      # they can be applied with cypher-shell from inside the container.
+      - ./generated:/generated:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:7474 >/dev/null 2>&1 || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  neo4j-data:
+  neo4j-logs:

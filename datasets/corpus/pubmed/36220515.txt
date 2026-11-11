@@ -1,0 +1,11 @@
+# PubMed 36220515: Predicting readmission due to severe hyperglycemia after a hyperglycemic crisis episode.
+
+Diabetes research and clinical practice (2022), doi:10.1016/j.diabres.2022.110115
+
+AIM: This study aimed to investigate the readmission pattern and risk factors for patients who experienced a hyperglycemic crisis.
+
+METHODS: Patients admitted to MacKay Memorial Hospital for diabetic ketoacidosis (DKA) or hyperglycemic hyperosmolar state (HHS) between January 2016 and April 2019 were studied. The timing of the first readmission for hyperglycemia and other causes was recorded. Kaplan-Meier analysis was used to compare patients with hyperglycemia and all-cause readmissions. Cox regression was used to identify independent predictors for hyperglycemia and all-cause readmission post-discharge.
+
+RESULTS: The study cohort included 410 patients, and 15.3 % and 46.3 % of them had hyperglycemia and all-cause readmissions, respectively. The DKA and HHS group showed a similar incidence for hyperglycemia, with the latter group showing a higher incidence of all-cause readmissions. The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group.
+
+CONCLUSIONS: Patients who experienced DKA and HHS had similar hyperglycemia readmission rates; however, predictors in the DKA group were not applicable to the HHS group. Designing different strategies for different types of hyperglycemic crisis is necessary for preventing readmission.

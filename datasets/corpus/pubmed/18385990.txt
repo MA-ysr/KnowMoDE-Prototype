@@ -1,0 +1,11 @@
+# PubMed 18385990: Factors predicting hospital readmissions related to adverse drug reactions.
+
+European journal of clinical pharmacology (2008), doi:10.1007/s00228-008-0473-y
+
+OBJECTIVE: To analyse the contribution of adverse drug reactions (ADR) to hospital readmissions.
+
+METHODS: This was a case-control study in which unscheduled admissions of patients who had been admitted to the hospital during the two previous months were assessed during a 21-month period. The patient was considered a case when the main diagnosis of readmission complied with the World Health Organisation's definition of an ADR. For each case, two controls were selected from those patients that had been admitted for ADR without readmission (n = 177). Information on drugs and other risk factors was obtained from cases by interview and from controls by clinical record review.
+
+RESULTS: There were 26,559 unscheduled admissions of which 81 were readmissions associated with ADR (4.5% of the unscheduled readmissions). There were no statistically significant correlations with sex, age or medical history, with the exception of arterial hypertension. The main drug products causing readmission were acenocoumarol (15, 18.5%), antihypertensive-diuretics (14, 17.3%), anticancer drugs (11, 13.6%) and digoxin (seven, 8.6%). In the multivariate logistic analysis, the variables predicting readmission were acenocoumarol [odds ratio (OR) 12.2, 95% confidence interval (CI) 3.8-38.3, P < 0.0001], a record of diabetes mellitus (OR 2.6, 95% CI 1.3-5.5, P < 0.01), the number of drugs taken at the moment of ADR (OR 1.2, 95% CI 1.1-1.4, P < 0.001) and high blood pressure (OR 0.3, 95% CI 0.2-0.6, P < 0.001) even though the latter was a negative predictor, preventing readmission. Of the 81 readmissions associated with ADR, 28 (34.6%) were preventable.
+
+CONCLUSION: A medical record of diabetes mellitus, polypharmacy and acenocoumarol treatment were risk factors predicting hospital readmission related to ADR.

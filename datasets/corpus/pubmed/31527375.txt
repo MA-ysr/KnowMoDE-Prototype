@@ -1,0 +1,13 @@
+# PubMed 31527375: Prognostic Impact of Atrial Fibrillation in Electrical Storm.
+
+Cardiology (2019), doi:10.1159/000500262
+
+BACKGROUND: Data regarding the prognostic impact of atrial fibrillation (AF) in patients with electrical storm (ES) is rare.
+
+OBJECTIVES: This study sought to assess the prognostic impact of AF in patients with ES on mortality, rehospitalization, major adverse cardiovascular events (MACE) and recurrence of ES (ES-R).
+
+METHODS: All consecutive implantable cardioverter defibrillator (ICD) patients presenting with ES were included retrospectively from 2002 to 2016. Patients with AF were compared to non-AF patients. The primary prognostic endpoint was all-cause mortality. Secondary endpoints were in-hospital mortality, rehospitalization rates, MACE and ES-R.
+
+RESULTS: A total of 87 ES patients with ICD were included and followed up to 2.5 years; 43% suffered from AF. The presence of AF was associated with increased all-cause mortality (47 vs. 29%, log-rank p = 0.052; hazard ratio [HR] 1.969, 95% confidence interval [CI] 0.981-3.952, p = 0.057), which was no longer present after multivariable adjustment for age, diabetes and dilated cardiomyopathy. Furthermore, AF was associated with increased rates of overall rehospitalization (61 vs. 31%, log-rank p = 0.013; HR 2.381, 95% CI 1.247-4.547, p = 0.009), especially due to AF (14 vs. 0%, p = 0.001) and acute heart failure (AHF) (28 vs. 10%, p = 0.018; HR 3.754, 95% CI 1.277-11.038, p = 0.016). Notably, AF was not associated with differences in MACE (55 vs. 37%, log rank p = 0.339) and ES-R (28 vs. 25%, log rank p = 0.704).
+
+CONCLUSION: In ES patients, presence of AF was univariably associated with increased rates of all-cause mortality at 2.5 years. Furthermore, AF was multivariably associated with overall rehospitalization, especially due to AF and AHF.

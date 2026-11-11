@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37348179.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37348179/" sourceSha256="39b90828ef7fb149b1a2e4de752bd247bee5c3ea5e0a7d1305497352ade9424d" sourceText="# PubMed 37348179: Poor adherence to clinical practice guidelines: A call to action for increased albuminuria testing in patients with type 2 diabetes.&#10;&#10;Journal of diabetes and its complications (2023), doi:10.1016/j.jdiacomp.2023.108548&#10;&#10;We describe the substantial shortfall in adherence to guideline-recommended albumin-to-creatinine ratio (uACR) testing for people in the United States with type 2 diabetes. Poor compliance with current guidelines leads to delays in diagnosis-and treatment- of chronic kidney disease, which adversely affects clinical outcomes and contributes to incremental economic burden.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T19:00:00+00:00" xmi:version="2.0">
+  <chunks charEnd="613"/>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="135" sourceSpanEnd="150">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="499" sourceSpanEnd="521">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+</raw:RawExtractionResult>

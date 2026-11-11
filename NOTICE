@@ -1,0 +1,7 @@
+KnowMoDE artifact (companion of the paper "KnowMoDE: A Model-Driven Framework for LLM-Assisted Knowledge Graph Construction in Explainable AI-Based Information Systems").
+
+Copyright 2026 The authors (anonymised currently for double-blind review).
+
+The source code, metamodels, constraints, transformations and models in this repository are licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The datasets under datasets/ are third-party data redistributed under their own licences and terms of use; they are NOT covered by the Apache License. See docs/datasets.md for the source, link and licence of every dataset.

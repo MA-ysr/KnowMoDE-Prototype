@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37922214.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37922214/" sourceSha256="afea9d35233a7c7b812c74d56459fc45b47003bb81b071c5c8dbb25e7a0320e9" sourceText="# PubMed 37922214: Diabetes mellitus and blood glucose variability increases the 30-day readmission rate after kidney transplantation.&#10;&#10;Clinical transplantation (2024), doi:10.1111/ctr.15177&#10;&#10;INTRODUCTION: Inpatient hyperglycemia is an established independent risk factor among several patient cohorts for hospital readmission. This has not been studied after kidney transplantation. Nearly one-third of patients who have undergone a kidney transplant reportedly experience 30-day readmission.&#10;&#10;METHODS: Data on first-time solitary kidney transplantations were retrieved between September 2015 and December 2018. Information was linked to the electronic health records to determine diagnosis of diabetes mellitus and extract glucometric and insulin therapy data. Univariate logistic regression analysis and the XGBoost algorithm were used to predict 30-day readmission. We report the average performance of the models on the testing set on bootstrapped partitions of the data to ensure statistical significance.&#10;&#10;RESULTS: The cohort included 1036 patients who received kidney transplantation; 224 (22%) experienced 30-day readmission. The machine learning algorithm was able to predict 30-day readmission with an average area under the receiver operator curve (AUC) of 78% with (76.1%, 79.9%) 95% confidence interval (CI). We observed statistically significant differences in the presence of pretransplant diabetes, inpatient-hyperglycemia, inpatient-hypoglycemia, minimum and maximum glucose values among those with higher 30-day readmission rates. The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission. Additionally, significant variations in the therapeutic management of blood glucose by providers were observed.&#10;&#10;CONCLUSIONS: Suboptimal glucose metrics during hospitalization after kidney transplantation are associated with an increased risk for 30-day hospital readmission. Optimizing hospital blood glucose management, a modifiable factor, after kidney transplantation may reduce the risk of 30-day readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:42:41+00:00" xmi:version="2.0">
+  <chunks charEnd="2242"/>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="19" sourceSpanEnd="36">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="inpatient-hyperglycemia" mention="inpatient-hyperglycemia" confidence="0.95" sourceSpanStart="1416" sourceSpanEnd="1439">
+    <properties key="name" value="inpatient hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="inpatient-hypoglycemia" mention="inpatient-hypoglycemia" confidence="0.95" sourceSpanStart="1441" sourceSpanEnd="1463">
+    <properties key="name" value="inpatient hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.98" sourceSpanStart="1524" sourceSpanEnd="1542">
+    <properties key="name" value="30-day readmission"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="index-admission-length-of-stay" mention="index admission length of stay" confidence="0.9" sourceSpanStart="1583" sourceSpanEnd="1613">
+    <properties key="name" value="index admission length of stay"/>
+    <properties key="description" value="duration of the initial hospital stay"/>
+  </entities>
+  <entities type="RiskFactor" id="recipient-and-donor-bmi" mention="recipient and donor body mass index (BMI) values" confidence="0.9" sourceSpanStart="1656" sourceSpanEnd="1704">
+    <properties key="name" value="recipient and donor body mass index"/>
+    <properties key="description" value="body mass index values of the recipient and donor"/>
+  </entities>
+  <entities type="RiskFactor" id="delayed-graft-function" mention="delayed graft function" confidence="0.9" sourceSpanStart="1718" sourceSpanEnd="1740">
+    <properties key="name" value="delayed graft function"/>
+    <properties key="description" value="presence of delayed graft function"/>
+  </entities>
+  <entities type="RiskFactor" id="african-american-race" mention="African American race" confidence="0.9" sourceSpanStart="1746" sourceSpanEnd="1767">
+    <properties key="name" value="african american race"/>
+    <properties key="description" value="patient race"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="inpatient-hyperglycemia" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="inpatient-hypoglycemia" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="index-admission-length-of-stay" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="recipient-and-donor-bmi" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="delayed-graft-function" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="african-american-race" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission." sourceSpanStart="1550" sourceSpanEnd="1826"/>
+</raw:RawExtractionResult>

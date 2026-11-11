@@ -1,0 +1,19 @@
+# PubMed 40117466: Management of Diabetes and Hyperglycemia in the Hospital: A Systematic Review of Clinical Practice Guidelines.
+
+Diabetes care (2025), doi:10.2337/dc24-2510
+
+BACKGROUND: Inpatient hyperglycemia is common among adults, and management varies.
+
+PURPOSE: To systematically identify guidelines on inpatient hyperglycemia management.
+
+DATA SOURCES: MEDLINE, Guidelines International Network, and specialty society websites were searched from 1 January 2010 to 14 August 2024.
+
+STUDY SELECTION: Clinical practice guidelines pertaining to blood glucose management in hospitalized adults were included.
+
+DATA EXTRACTION: Two authors screened articles and extracted data, and three assessed guideline quality. Recommendations on inpatient monitoring, treatment targets, medications, and care transitions were collected.
+
+DATA SYNTHESIS: Guidelines from 10 organizations met inclusion criteria, and 5 were assessed to be of high quality per the Appraisal of Guidelines for REsearch & Evaluation II (AGREE II) instrument. All guidelines recommended monitoring blood glucose for patients with diabetes and nine for admission hyperglycemia. Eight guidelines recommended an upper blood glucose target of 180 mg/dL, five with a lower limit of 100 mg/dL and three of 140 mg/dL. Guidelines were in agreement on using capillary blood glucose monitoring, and three guidelines included discussion of continuous monitoring. Hyperglycemia treatment with basal-bolus insulin alone (n = 3) or with correction (n = 5) was most commonly recommended, while sliding scale insulin was advised against (n = 5). Guidance on use of oral diabetes medications was inconsistent. Five guidelines included discussion of transitioning to home medications. Recommendations for hypoglycemia management and diabetes management in older adults were largely limited to outpatient guidance.
+
+LIMITATIONS: Non-English-language guidelines were excluded.
+
+CONCLUSIONS: While there is consensus on inpatient blood glucose monitoring and use of basal-bolus insulin, there is disagreement on treatment targets and use of home medications and little guidance on how to transition treatment at discharge.

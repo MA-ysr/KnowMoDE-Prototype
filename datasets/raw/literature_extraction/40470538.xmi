@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40470538.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40470538/" sourceSha256="2a9a5f0c19ad955b38f7df462c711dcc9079a0ad5367798e9fee4255ce11f375" sourceText="# PubMed 40470538: The Association of Continuous Glucose Monitoring Metrics with Hospital-Related Clinical Outcomes in Nonintensive Care Units.&#10;&#10;Diabetes technology &amp; therapeutics (2025), doi:10.1089/dia.2024.0628&#10;&#10;Aims: We investigated the association between continuous glucose monitoring (CGM) metrics and clinical outcomes in the nonintensive care unit (non-ICU) setting. Methods: In this observational cohort study, patients on non-ICU floors wore blinded Dexcom G6 Pro CGM. CGM metrics and occurrence of CGM-detected severe hypoglycemia were measured. Clinical data, including infection, diabetic ketoacidosis, renal replacement therapy, thrombosis, and 30-day post-discharge readmissions and emergency department (ED) visits were identified from the medical record and participant phone interview. Multivariate regression assessed predictors of CGM-detected severe hypoglycemia and the associations between CGM metrics and clinical outcomes. Regression models using CGM data or reference glucose data were compared with receiver operating characteristic (ROC) curves. Results: A total of 326 hospitalized adults were enrolled with median % time in range 70-180 mg/dL 44.5% (17.1, 70.2%), % time above range &gt;180 mg/dL 54.8% (28.8, 82.3%), and % time below range 0.6% (0, 0.2%). Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay. Regression analyses demonstrated an association of 30-day ED visits with increased %TAR (P = 0.01). ROC curves showed models using CGM data or reference data predicted clinical outcomes similarly. Conclusions: CGM can be useful in identifying patients at risk of inpatient hypoglycemia and 30-day ED visits.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:46:33+00:00" xmi:version="2.0">
+  <chunks charEnd="1733"/>
+  <entities type="ClinicalOutcome" id="severe-hypoglycemia" mention="severe hypoglycemia" confidence="0.95" sourceSpanStart="523" sourceSpanEnd="542">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="timeWindow" value="inpatient"/>
+  </entities>
+  <entities type="RiskFactor" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.98" sourceSpanStart="1328" sourceSpanEnd="1343">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="description" value="patient has type 1 diabetes"/>
+  </entities>
+  <entities type="RiskFactor" id="female-gender" mention="female gender" confidence="0.98" sourceSpanStart="1345" sourceSpanEnd="1358">
+    <properties key="name" value="female gender"/>
+    <properties key="description" value="patient is female"/>
+  </entities>
+  <entities type="RiskFactor" id="lower-admission-hemoglobin" mention="lower admission hemoglobin" confidence="0.95" sourceSpanStart="1360" sourceSpanEnd="1386">
+    <properties key="name" value="lower admission hemoglobin"/>
+    <properties key="description" value="hemoglobin level at admission is lower"/>
+  </entities>
+  <entities type="RiskFactor" id="lower-a1c" mention="lower A1c" confidence="0.95" sourceSpanStart="1388" sourceSpanEnd="1397">
+    <properties key="name" value="lower a1c"/>
+    <properties key="description" value="A1c level is lower"/>
+  </entities>
+  <entities type="RiskFactor" id="longer-hospital-stay" mention="longer hospital stay" confidence="0.95" sourceSpanStart="1403" sourceSpanEnd="1423">
+    <properties key="name" value="longer hospital stay"/>
+    <properties key="description" value="duration of hospital stay is longer"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-ed-visits" mention="30-day ED visits" confidence="0.95" sourceSpanStart="1476" sourceSpanEnd="1492">
+    <properties key="name" value="30-day ED visits"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="increased-tar" mention="increased %TAR" confidence="0.95" sourceSpanStart="1498" sourceSpanEnd="1512">
+    <properties key="name" value="increased %TAR"/>
+    <properties key="description" value="percentage of time above range &gt;180 mg/dL is increased"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="type-1-diabetes" targetType="ClinicalOutcome" targetId="severe-hypoglycemia" confidence="0.95" evidence="Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay." sourceSpanStart="1285" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="female-gender" targetType="ClinicalOutcome" targetId="severe-hypoglycemia" confidence="0.95" evidence="Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay." sourceSpanStart="1285" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lower-admission-hemoglobin" targetType="ClinicalOutcome" targetId="severe-hypoglycemia" confidence="0.95" evidence="Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay." sourceSpanStart="1285" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lower-a1c" targetType="ClinicalOutcome" targetId="severe-hypoglycemia" confidence="0.95" evidence="Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay." sourceSpanStart="1285" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="longer-hospital-stay" targetType="ClinicalOutcome" targetId="severe-hypoglycemia" confidence="0.95" evidence="Predictors of severe hypoglycemia included type 1 diabetes, female gender, lower admission hemoglobin, lower A1c, and longer hospital stay." sourceSpanStart="1285" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="increased-tar" targetType="ClinicalOutcome" targetId="30-day-ed-visits" confidence="0.95" evidence="Regression analyses demonstrated an association of 30-day ED visits with increased %TAR (P = 0.01)." sourceSpanStart="1425" sourceSpanEnd="1524"/>
+</raw:RawExtractionResult>

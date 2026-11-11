@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/whooping-cough.txt" sourceUri="https://medlineplus.gov/whoopingcough.html" sourceSha256="1f1238716a5239718538a07e6b8d93d683a20eaa980298a097f28115076ec019" sourceText="# MedlinePlus health topic: Whooping Cough&#10;&#10;Also called: Pertussis&#10;&#10;What is whooping cough?Whooping cough, or pertussis, is a respiratory infection that can cause coughing fits. In serious cases, the coughing can become violent and rapid. You may cough so hard that you vomit. The name of the disease comes from the whooping noise you might make when you try to breathe in after coughing.&#10;&#10;Whooping cough is very contagious and can affect anyone. But it can be especially serious in babies who did not yet get the vaccine. About half of babies under age one who get whooping cough need care in the hospital.&#10;&#10;What causes whooping cough?Whooping cough is caused by a type of bacteria called Bordetella pertussis. It spreads from person to person. People who have pertussis usually spread it through coughing, sneezing, or breathing very close to someone. It can also sometimes be spread by touching an infected surface and then touching your nose or mouth.&#10;&#10;If you get pertussis, you are contagious for about 2 weeks after you start coughing. Antibiotics may shorten the time that you are contagious.&#10;&#10;What are the symptoms of whooping cough?The symptoms of pertussis usually start within 5 to 10 days after you are exposed. But sometimes you may not get symptoms until up to 3 weeks later.&#10;&#10;Whooping cough usually starts with cold-like symptoms. They may last for 1 to 2 weeks and can include:&#10;&#10;Runny nose&#10;&#10;Mild fever&#10;&#10;Mild, occasional cough&#10;&#10;The early symptoms in babies can be different. They may only cough a little bit, or they may not cough at all. Babies may have apnea, which means that there is a pause in breathing. They may start to turn blue. If this happens, get medical care for your baby right away.&#10;&#10;As whopping cough gets worse, the symptoms may include:&#10;&#10;Fits of many, rapid coughs followed by a high-pitched &quot;whoop&quot; sound&#10;&#10;Vomiting during or after coughing fits&#10;&#10;Exhaustion after coughing fits&#10;&#10;The coughing fits get worse and start happening more often, especially at night. You may have them for up to 10 weeks or more.&#10;&#10;Recovery from this can happen slowly. Your cough gets milder and happens less often. The coughing fits can come back if you have another respiratory infection, even months after you first got whooping cough.&#10;&#10;How is whooping cough diagnosed?Your health care provider may use many tools to diagnose whooping cough:&#10;&#10;A medical history, which includes asking about your symptoms&#10;&#10;A physical exam&#10;&#10;A lab test which involves taking a sample of mucus from the back of the throat through the nose. This may be done with a swab or syringe filled with saline. The sample is tested for the bacteria that causes whooping cough.&#10;&#10;Blood test&#10;&#10;Chest x-ray&#10;&#10;What are the treatments for whooping cough?The treatment for whooping cough is usually antibiotics. Early treatment is very important. It may make your infection less serious and can also help prevent spreading the disease to others.&#10;&#10;Treatment after you have been sick for 3 weeks or longer may not help. The bacteria are gone from your body by then, even though you usually still have symptoms. This is because the bacteria have already done damage to your body.&#10;&#10;Whooping cough can sometimes be very serious and require treatment in the hospital.&#10;&#10;Can whooping cough be prevented?Vaccines are the best way to prevent whooping cough. There are two vaccines in the United States that can help prevent whooping cough: DTaP and Tdap. These vaccines also provide protection against tetanus and diphtheria.&#10;&#10;Babies and other people at high risk serious disease should be kept away from people who have whooping cough.&#10;&#10;Sometimes health care providers give antibiotics to family members of people who have had whooping cough or people who have been exposed to it. The antibiotics may prevent them from getting the disease.&#10;&#10;You may also help prevent the spread of whooping cough (and other respiratory diseases) by:&#10;&#10;Washing your hands often with soap and water. You can use an alcohol-based hand rub if soap and water are not available.&#10;&#10;Avoiding touching your face with unwashed hands&#10;&#10;Cleaning and disinfecting surfaces that you frequently touch, including toys&#10;&#10;Covering coughs and sneezes with a tissue or upper shirt sleeve, not hands&#10;&#10;Staying home when sick&#10;&#10;Avoiding close contact with people who are sick&#10;&#10;Centers for Disease Control and Prevention&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:25:47+00:00" xmi:version="2.0">
+  <chunks charEnd="3895"/>
+  <chunks index="1" charStart="3600" charEnd="4338"/>
+  <entities type="Condition" id="whooping-cough" mention="Whooping cough" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="42">
+    <properties key="name" value="whooping cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="pertussis" mention="pertussis" confidence="0.99" sourceSpanStart="57" sourceSpanEnd="66">
+    <properties key="name" value="pertussis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="respiratory-infection" mention="respiratory infection" confidence="0.95" sourceSpanStart="126" sourceSpanEnd="147">
+    <properties key="name" value="respiratory infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-care" mention="care in the hospital" confidence="0.9" sourceSpanStart="586" sourceSpanEnd="606">
+    <properties key="name" value="hospital care"/>
+  </entities>
+  <entities type="Drug" id="antibiotics" mention="Antibiotics" confidence="0.9" sourceSpanStart="1042" sourceSpanEnd="1053">
+    <properties key="name" value="antibiotics"/>
+    <properties key="drugClass" value="antibiotic"/>
+  </entities>
+  <entities type="Condition" id="apnea" mention="apnea" confidence="0.95" sourceSpanStart="1570" sourceSpanEnd="1575">
+    <properties key="name" value="apnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Drug" id="dtap" mention="DTaP" confidence="0.95" sourceSpanStart="3402" sourceSpanEnd="3406">
+    <properties key="name" value="dtap"/>
+    <properties key="drugClass" value="vaccine"/>
+  </entities>
+  <entities type="Drug" id="tdap" mention="Tdap" confidence="0.95" sourceSpanStart="3411" sourceSpanEnd="3415">
+    <properties key="name" value="tdap"/>
+    <properties key="drugClass" value="vaccine"/>
+  </entities>
+  <entities type="Condition" id="whooping-cough" mention="whooping cough" confidence="0.95" sourceSpanStart="3690" sourceSpanEnd="3704" chunkIndex="1">
+    <properties key="name" value="whooping cough"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Recommendation" id="antibiotics-family-exposure" mention="health care providers give antibiotics to family members of people who have had whooping cough or people who have been exposed to it" confidence="0.9" sourceSpanStart="3610" sourceSpanEnd="3742" chunkIndex="1">
+    <properties key="statement" value="give antibiotics to family members of people who have had whooping cough or people who have been exposed to it"/>
+    <properties key="source" value="Centers for Disease Control and Prevention"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="antibiotics-family-exposure" targetType="Condition" targetId="whooping-cough" confidence="0.9" evidence="Sometimes health care providers give antibiotics to family members of people who have had whooping cough or people who have been exposed to it." sourceSpanStart="3600" sourceSpanEnd="3743" chunkIndex="1"/>
+</raw:RawExtractionResult>

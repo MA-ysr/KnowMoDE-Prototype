@@ -1,0 +1,21 @@
+# PubMed 32173107: Multidisciplinary Medication Therapy Management and Hospital Readmission in Patients Undergoing Maintenance Dialysis: A Retrospective Cohort Study.
+
+American journal of kidney diseases : the official journal of the National Kidney Foundation (2020), doi:10.1053/j.ajkd.2019.12.002
+
+RATIONALE & OBJECTIVES: Dialysis patients frequently experience medication-related problems. We studied the association of a multidisciplinary medication therapy management (MTM) with 30-day readmission rates.
+
+STUDY DESIGN: Retrospective cohort study.
+
+SETTING & PARTICIPANTS: Maintenance dialysis patients discharged home from acute-care hospitals between May 2016 and April 2017 who returned to End-Stage Renal Disease Seamless Care Organization dialysis clinics after discharge were eligible. Patients who were readmitted within 3 days, died, or entered hospice within 30 days were excluded.
+
+EXPOSURE: MTM consisting of nurse medication reconciliation, pharmacist medication review, and nephrologist oversight was categorized into 3 levels of intensity: no MTM, partial MTM (defined as an incomplete MTM process), or full MTM (defined as a complete MTM process).
+
+OUTCOME: The primary outcome was 30-day readmission.
+
+ANALYTICAL APPROACH: Time-varying Prentice, Williams, and Peterson total time hazards models explored associations between MTM and time to readmission after adjusting for age, race, sex, diabetes comorbidity, albumin level, vascular access type, kidney failure cause, dialysis vintage and modality, marital status, home medications, frequent prior hospitalizations, length of stay, discharge diagnoses, hierarchical condition category, and facility standardized hospitalization rates. Propensity score matching was performed to examine the robustness of the associations in a comparison between the full- and no-MTM exposure groups on time to readmission.
+
+RESULTS: Among 1,452 discharges, 586 received no MTM, 704 received partial MTM, and 162 received full MTM; 30-day readmission rates were 29%, 19%, and 11%, respectively (P < 0.001). Compared with no MTM, discharges with full MTM had the lowest time-varying risk for readmission within 30 days (HR, 0.26; 95% CI, 0.15-0.45); discharges with partial MTM also had lower readmission risk (HR, 0.50; 95% CI, 0.37-0.68). In propensity score-matched sensitivity analysis, full MTM was associated with lower 30-day readmission risk (HR, 0.20; 95% CI, 0.06-0.69).
+
+LIMITATIONS: Reliance on observational data. Residual bias and confounding.
+
+CONCLUSIONS: MTM services following hospital discharge were associated with fewer 30-day readmissions in dialysis patients. Randomized controlled studies evaluating different MTM delivery models and cost-effectiveness in dialysis populations are warranted.

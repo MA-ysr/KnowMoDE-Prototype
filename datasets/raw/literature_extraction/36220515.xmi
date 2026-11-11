@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36220515.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36220515/" sourceSha256="915220bbaaf8df81e4c7a5fcf1a79787799117894ddfe4dc902b0e6a30562f03" sourceText="# PubMed 36220515: Predicting readmission due to severe hyperglycemia after a hyperglycemic crisis episode.&#10;&#10;Diabetes research and clinical practice (2022), doi:10.1016/j.diabres.2022.110115&#10;&#10;AIM: This study aimed to investigate the readmission pattern and risk factors for patients who experienced a hyperglycemic crisis.&#10;&#10;METHODS: Patients admitted to MacKay Memorial Hospital for diabetic ketoacidosis (DKA) or hyperglycemic hyperosmolar state (HHS) between January 2016 and April 2019 were studied. The timing of the first readmission for hyperglycemia and other causes was recorded. Kaplan-Meier analysis was used to compare patients with hyperglycemia and all-cause readmissions. Cox regression was used to identify independent predictors for hyperglycemia and all-cause readmission post-discharge.&#10;&#10;RESULTS: The study cohort included 410 patients, and 15.3 % and 46.3 % of them had hyperglycemia and all-cause readmissions, respectively. The DKA and HHS group showed a similar incidence for hyperglycemia, with the latter group showing a higher incidence of all-cause readmissions. The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group.&#10;&#10;CONCLUSIONS: Patients who experienced DKA and HHS had similar hyperglycemia readmission rates; however, predictors in the DKA group were not applicable to the HHS group. Designing different strategies for different types of hyperglycemic crisis is necessary for preventing readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:48:23+00:00" xmi:version="2.0">
+  <chunks charEnd="1597"/>
+  <entities type="ClinicalOutcome" id="hyperglycemia-readmissions" mention="hyperglycemia readmissions" confidence="0.95" sourceSpanStart="1119" sourceSpanEnd="1145">
+    <properties key="name" value="hyperglycemia readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="young-age" mention="young age" confidence="0.9" sourceSpanStart="1155" sourceSpanEnd="1164">
+    <properties key="name" value="young age"/>
+    <properties key="description" value="young age in the DKA group"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="smoking" confidence="0.9" sourceSpanStart="1166" sourceSpanEnd="1173">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="smoking in the DKA group"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="1175" sourceSpanEnd="1187">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-effective-osmolality" mention="higher effective osmolality" confidence="0.9" sourceSpanStart="1189" sourceSpanEnd="1216">
+    <properties key="name" value="higher effective osmolality"/>
+    <properties key="description" value="higher effective osmolality in the DKA group"/>
+  </entities>
+  <entities type="Condition" id="hyperthyroidism" mention="hyperthyroidism" confidence="0.95" sourceSpanStart="1222" sourceSpanEnd="1237">
+    <properties key="name" value="hyperthyroidism"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="LabTest" id="higher-glycated-hemoglobin-level" mention="higher glycated hemoglobin level" confidence="0.9" sourceSpanStart="1259" sourceSpanEnd="1291">
+    <properties key="name" value="higher glycated hemoglobin level"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="young-age" targetType="ClinicalOutcome" targetId="hyperglycemia-readmissions" confidence="0.9" evidence="The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group." sourceSpanStart="1089" sourceSpanEnd="1309"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="smoking" targetType="ClinicalOutcome" targetId="hyperglycemia-readmissions" confidence="0.9" evidence="The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group." sourceSpanStart="1089" sourceSpanEnd="1309"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypoglycemia" targetType="ClinicalOutcome" targetId="hyperglycemia-readmissions" confidence="0.9" evidence="The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group." sourceSpanStart="1089" sourceSpanEnd="1309"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="higher-effective-osmolality" targetType="ClinicalOutcome" targetId="hyperglycemia-readmissions" confidence="0.9" evidence="The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group." sourceSpanStart="1089" sourceSpanEnd="1309"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperthyroidism" targetType="ClinicalOutcome" targetId="hyperglycemia-readmissions" confidence="0.9" evidence="The significant predictors of hyperglycemia readmissions included young age, smoking, hypoglycemia, higher effective osmolality, and hyperthyroidism in the DKA group and higher glycated hemoglobin level in the HHS group." sourceSpanStart="1089" sourceSpanEnd="1309"/>
+</raw:RawExtractionResult>

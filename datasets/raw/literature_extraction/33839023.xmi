@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33839023.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33839023/" sourceSha256="d7af8a2a67ff5f62290d29422e65ab6ca1cde4d05c822692d49b54b866f5933f" sourceText="# PubMed 33839023: The Association of Diabetes and Hyperglycemia on Inpatient Readmissions.&#10;&#10;Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2021), doi:10.1016/j.eprac.2021.01.008&#10;&#10;OBJECTIVE: To evaluate the association between inpatient glycemic control and readmission in individuals with diabetes and hyperglycemia (DM/HG).&#10;&#10;METHODS: Two data sets were analyzed from fiscal years 2011 to 2013: hospital data using the International Classification of Diseases, Ninth Revision (ICD-9) codes for DM/HG and point of care (POC) glucose monitoring. The variables analyzed included gender, age, mean, minimum and maximum glucose, along with 4 measures of glycemic variability (GV), standard deviation, coefficient of variation, mean amplitude of glucose excursions, and average daily risk range.&#10;&#10;RESULTS: Of 66 518 discharges in FY 2011-2013, 28.4% had DM/HG based on ICD-9 codes and 53% received POC monitoring. The overall readmission rate was 13.9%, although the rates for individuals with DM/HG were higher at 18.9% and 20.6% using ICD-9 codes and POC data, respectively. The readmitted group had higher mean glucose (169 ± 47 mg/dL vs 158 ± 46 mg/dL, P &lt; .001). Individuals with severe hypoglycemia and hyperglycemia had the highest readmission rates. All 4 GV measures were consistent and higher in the readmitted group.&#10;&#10;CONCLUSION: Individuals with DM/HG have higher 30-day readmission rates than those without. Those readmitted had higher mean glucose, more extreme glucose values, and higher GV. To our knowledge, this is the first report of multiple metrics of inpatient glycemic control, including GV, and their associations with readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:17+00:00" xmi:version="2.0">
+  <chunks charEnd="1742"/>
+  <entities type="Condition" id="dm-hg" mention="DM/HG" confidence="0.95" sourceSpanStart="409" sourceSpanEnd="414">
+    <properties key="name" value="diabetes and hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="1012" sourceSpanEnd="1023">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="Condition" id="severe-hypoglycemia" mention="severe hypoglycemia" confidence="0.95" sourceSpanStart="1271" sourceSpanEnd="1290">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="1295" sourceSpanEnd="1308">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-within-30-days" mention="30-day readmission" confidence="0.95" sourceSpanStart="1462" sourceSpanEnd="1480">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="dm-hg" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.95" evidence="Individuals with DM/HG have higher 30-day readmission rates than those without." sourceSpanStart="1427" sourceSpanEnd="1506"/>
+</raw:RawExtractionResult>

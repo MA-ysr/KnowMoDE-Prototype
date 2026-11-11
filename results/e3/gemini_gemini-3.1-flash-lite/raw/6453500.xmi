@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/6453500" sourceUri="https://pubmed.ncbi.nlm.nih.gov/6453500/" sourceSha256="56f92ec3f562594278d536db6987999b5d8677f4f6daea025ba05d60ff163497" sourceText="Toxic hepatitis induced by disulfiram in a non-alcoholic. A reversible toxic liver damage was observed in a non-alcoholic woman treated with disulfiram. The causative relationship was proven by challenge." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:01+00:00" xmi:version="2.0">
+  <chunks charEnd="204"/>
+  <entities type="Drug" id="disulfiram" mention="disulfiram" confidence="1.0" sourceSpanStart="27" sourceSpanEnd="37">
+    <properties key="name" value="disulfiram"/>
+  </entities>
+  <entities type="Condition" id="toxic-hepatitis" mention="Toxic hepatitis" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="15">
+    <properties key="name" value="toxic hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="disulfiram" targetType="Condition" targetId="toxic-hepatitis" confidence="1.0" evidence="Toxic hepatitis induced by disulfiram in a non-alcoholic." sourceSpanStart="0" sourceSpanEnd="57"/>
+</raw:RawExtractionResult>

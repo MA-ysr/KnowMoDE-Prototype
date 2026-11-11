@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25302732.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25302732/" sourceSha256="c8148cc3420a73b71ebabadbe9d397600f9b8ab40bb4e37fdbbb4741eb0e0207" sourceText="# PubMed 25302732: Admission blood glucose helps predict 1 year, but not 2 years, mortality in an unselected cohort of acute general medical admissions.&#10;&#10;International journal of clinical practice (2015), doi:10.1111/ijcp.12574&#10;&#10;AIM: We previously showed that hyperglycaemia in newly hospitalised medical inpatients is associated with longer length of hospital stay, higher 28-day readmission rates and increased 28-day mortality. We aimed to assess whether a single blood glucose measurement taken at the time of admission could help to predict 1 and 2 years mortality.&#10;&#10;METHODS: We retrospectively reviewed data from all 1502 patients admitted to our Acute Medical Unit during February 2010.&#10;&#10;RESULTS: By using a blood glucose range of 6.5-7.0 mmol/l as the comparator, an admission blood glucose between 9.1 and 20 mmol/l was associated with an increased risk of death at 1 year (p &lt; 0.05). In addition, those people with admission glucose readings of &lt; 6.5 mmol/l showed a strong trend towards a higher mortality (p = 0.053) at 1 year.&#10;&#10;CONCLUSION: Thus admission blood glucose can be used to help predict the risk of 1 year mortality in an unselected cohort of general medical admissions.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:27:24+00:00" xmi:version="2.0">
+  <chunks charEnd="1194"/>
+  <entities type="Condition" id="hyperglycaemia" mention="hyperglycaemia" confidence="0.95" sourceSpanStart="260" sourceSpanEnd="274">
+    <properties key="name" value="hyperglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="28-day-readmission" mention="28-day readmission rates" confidence="0.95" sourceSpanStart="374" sourceSpanEnd="398">
+    <properties key="name" value="hospital readmission within 28 days"/>
+    <properties key="timeWindow" value="28 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="28-day-mortality" mention="28-day mortality" confidence="0.95" sourceSpanStart="413" sourceSpanEnd="429">
+    <properties key="name" value="mortality within 28 days"/>
+    <properties key="timeWindow" value="28 days"/>
+  </entities>
+  <entities type="LabTest" id="admission-blood-glucose-9-1-20-mmol-l" mention="admission blood glucose between 9.1 and 20 mmol/l" confidence="0.9" sourceSpanStart="775" sourceSpanEnd="824">
+    <properties key="name" value="admission blood glucose between 9.1 and 20 mmol/l"/>
+    <properties key="abnormalThreshold" value="9.1 - 20 mmol/l"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="1-year-mortality" mention="death at 1 year" confidence="0.95" sourceSpanStart="866" sourceSpanEnd="881">
+    <properties key="name" value="mortality within 1 year"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperglycaemia" targetType="ClinicalOutcome" targetId="28-day-readmission" confidence="0.9" evidence="We previously showed that hyperglycaemia in newly hospitalised medical inpatients is associated with longer length of hospital stay, higher 28-day readmission rates and increased 28-day mortality." sourceSpanStart="234" sourceSpanEnd="430"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperglycaemia" targetType="ClinicalOutcome" targetId="28-day-mortality" confidence="0.9" evidence="We previously showed that hyperglycaemia in newly hospitalised medical inpatients is associated with longer length of hospital stay, higher 28-day readmission rates and increased 28-day mortality." sourceSpanStart="234" sourceSpanEnd="430"/>
+</raw:RawExtractionResult>

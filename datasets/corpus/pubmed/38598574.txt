@@ -1,0 +1,11 @@
+# PubMed 38598574: Pragmatic Trial of Hospitalization Rate in Chronic Kidney Disease.
+
+The New England journal of medicine (2024), doi:10.1056/NEJMoa2311708
+
+BACKGROUND: Despite the availability of effective therapies for patients with chronic kidney disease, type 2 diabetes, and hypertension (the kidney-dysfunction triad), the results of large-scale trials examining the implementation of guideline-directed therapy to reduce the risk of death and complications in this population are lacking.
+
+METHODS: In this open-label, cluster-randomized trial, we assigned 11,182 patients with the kidney-dysfunction triad who were being treated at 141 primary care clinics either to receive an intervention that used a personalized algorithm (based on the patient's electronic health record [EHR]) to identify patients and practice facilitators to assist providers in delivering guideline-based interventions or to receive usual care. The primary outcome was hospitalization for any cause at 1 year. Secondary outcomes included emergency department visits, readmissions, cardiovascular events, dialysis, and death.
+
+RESULTS: We assigned 71 practices (enrolling 5690 patients) to the intervention group and 70 practices (enrolling 5492 patients) to the usual-care group. The hospitalization rate at 1 year was 20.7% (95% confidence interval [CI], 19.7 to 21.8) in the intervention group and 21.1% (95% CI, 20.1 to 22.2) in the usual-care group (between-group difference, 0.4 percentage points; P = 0.58). The risks of emergency department visits, readmissions, cardiovascular events, dialysis, or death from any cause were similar in the two groups. The risk of adverse events was also similar in the trial groups, except for acute kidney injury, which was observed in more patients in the intervention group (12.7% vs. 11.3%).
+
+CONCLUSIONS: In this pragmatic trial involving patients with the triad of chronic kidney disease, type 2 diabetes, and hypertension, the use of an EHR-based algorithm and practice facilitators embedded in primary care clinics did not translate into reduced hospitalization at 1 year. (Funded by the National Institutes of Health and others; ICD-Pieces ClinicalTrials.gov number, NCT02587936.).

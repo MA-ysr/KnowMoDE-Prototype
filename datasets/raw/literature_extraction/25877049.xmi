@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25877049.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25877049/" sourceSha256="084e82f4f3592029fef4898bf72cbc3f4ff599e9acfe968d93fb84f67c8013dc" sourceText="# PubMed 25877049: Treating the most vulnerable and costly in diabetes.&#10;&#10;Current diabetes reports (2015), doi:10.1007/s11892-015-0606-5&#10;&#10;Diabetic ketoacidosis (DKA) is associated with negative health outcomes and high costs for patients, families, and communities. Interventions developed to effectively reduce DKA and related costs should target the multiple risk factors associated with DKA and adherence difficulties. Certain demographic, psychological, and family factors are associated with increased risk for adherence problems and DKA. Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA. Although several different interventions have demonstrated promise in improving adherence and/or decreasing the risk of DKA, the generalizability of treatment results to those individuals most vulnerable to DKA is limited. Approaches which include multiple evidence-based components of care, are flexible in treatment delivery (e.g., home- and community-based, utilize technology), and target the multiple risk factors across relevant systems (e.g., individual, family, school, medical) are warranted to effectively reduce DKA in vulnerable populations.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:28:24+00:00" xmi:version="2.0">
+  <chunks charEnd="1262"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic ketoacidosis (DKA)" confidence="0.98" sourceSpanStart="137" sourceSpanEnd="164">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="negative-health-outcomes" mention="negative health outcomes" confidence="0.95" sourceSpanStart="184" sourceSpanEnd="208">
+    <properties key="name" value="negative health outcomes"/>
+  </entities>
+  <entities type="RiskFactor" id="multiple-risk-factors" mention="multiple risk factors associated with DKA and adherence difficulties" confidence="0.9" sourceSpanStart="351" sourceSpanEnd="419">
+    <properties key="name" value="multiple risk factors"/>
+    <properties key="description" value="multiple risk factors associated with DKA and adherence difficulties"/>
+  </entities>
+  <entities type="RiskFactor" id="mental-health-problems" mention="mental health problems" confidence="0.95" sourceSpanStart="597" sourceSpanEnd="619">
+    <properties key="name" value="mental health problems"/>
+    <properties key="description" value="mental health problems"/>
+  </entities>
+  <entities type="RiskFactor" id="low-socioeconomic-status" mention="low socioeconomic status" confidence="0.95" sourceSpanStart="621" sourceSpanEnd="645">
+    <properties key="name" value="low socioeconomic status"/>
+    <properties key="description" value="low socioeconomic status"/>
+  </entities>
+  <entities type="RiskFactor" id="high-family-conflict" mention="high family conflict" confidence="0.95" sourceSpanStart="647" sourceSpanEnd="667">
+    <properties key="name" value="high family conflict"/>
+    <properties key="description" value="high family conflict"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetic-ketoacidosis" targetType="ClinicalOutcome" targetId="negative-health-outcomes" confidence="0.92" evidence="Diabetic ketoacidosis (DKA) is associated with negative health outcomes and high costs for patients, families, and communities." sourceSpanStart="137" sourceSpanEnd="264"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="mental-health-problems" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.88" evidence="Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA." sourceSpanStart="543" sourceSpanEnd="707"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="low-socioeconomic-status" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.88" evidence="Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA." sourceSpanStart="543" sourceSpanEnd="707"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="high-family-conflict" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.88" evidence="Individuals with a combination of risk factors (e.g., mental health problems, low socioeconomic status, high family conflict) may be particularly vulnerable to DKA." sourceSpanStart="543" sourceSpanEnd="707"/>
+</raw:RawExtractionResult>

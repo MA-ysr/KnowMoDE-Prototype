@@ -1,0 +1,87 @@
+[*
+  T4 prompt template. `t` is the ExtractionTask being transformed (bound by t4_prompts.egx).
+  Everything schema-related below is READ FROM THE MODELS: concepts, properties, relations,
+  cardinalities, semantics and few-shot examples. Nothing is hand-written per domain.
+  Lines are emitted with out.println so that layout is deterministic (EGL swallows the newline
+  after a tag that ends a line).
+*]
+[%
+var pt = t.promptTemplate;
+var nl = "\n";
+
+out.println(pt.systemInstruction.trim());
+out.print("\n");
+out.println("You receive one chunk of text from the document collection \"" + t.sourceCollection + "\".");
+out.println("Extract knowledge-graph facts from it, STRICTLY limited to the entity types and relation types");
+out.println("declared below. This schema is the only source of truth; anything outside it is a hallucination");
+out.println("and will be rejected by the validator.");
+out.print("\n");
+out.println("=== ENTITY TYPES ===");
+for (c in pt.targetConcepts) {
+  out.print("\n");
+  out.println("## " + c.name);
+  if (c.description.isDefined()) { out.println(c.description.trim()); }
+  out.println("Properties:");
+  for (p in c.properties) {
+    var line = "  - " + p.name + " (" + p.dataType.name.toLowerCase() + ")";
+    if (p.isRequired) { line = line + " REQUIRED"; }
+    if (p.isExplainable) { line = line + " [shown to users in explanations: be precise]"; }
+    if (p.description.isDefined()) { line = line + " : " + p.description.trim(); }
+    out.println(line);
+  }
+}
+out.print("\n");
+out.println("=== RELATION TYPES ===");
+for (r in pt.targetRelations) {
+  var card = r.minCardinality + ".." + ((r.maxCardinality = -1) ? "*" : r.maxCardinality);
+  out.println("  - " + r.name + ": " + r.source.name + " -> " + r.target.name + "  (cardinality " + card + ")");
+  if (r.semantics.isDefined()) { out.println("      meaning: " + r.semantics.trim()); }
+}
+out.print("\n");
+out.println("=== OUTPUT FORMAT (" + pt.outputFormat.name + ") ===");
+out.println("Respond with ONE " + pt.outputFormat.name + " object and nothing else (no markdown fences, no commentary):");
+%]
+{
+  "entities": [
+    {
+      "type": "<one of the entity types above>",
+      "id": "<stable id: lowercase, words joined by '-', e.g. 'metformin'>",
+      "mention": "<the exact text span, copied verbatim from the chunk>",
+      "span": {"start": <int, character offset of the mention in the chunk>, "end": <int>},
+      "properties": {"<property name>": "<value>"},
+      "confidence": <0.0-1.0>
+    }
+  ],
+  "relations": [
+    {
+      "type": "<one of the relation types above>",
+      "source": {"type": "<entity type>", "id": "<entity id>"},
+      "target": {"type": "<entity type>", "id": "<entity id>"},
+      "evidence": "<the sentence from the chunk that states this relation, verbatim>",
+      "span": {"start": <int>, "end": <int>},
+      "confidence": <0.0-1.0>
+    }
+  ]
+}
+[%
+out.print("\n");
+out.println("=== RULES ===");
+out.println("1. Use ONLY the " + pt.targetConcepts.size() + " entity types and " + pt.targetRelations.size() + " relation types listed above, with exactly these names.");
+out.println("2. A relation is valid only if its source and target entity types match its declaration.");
+out.println("3. \"mention\" and \"evidence\" must be copied verbatim from the chunk; \"span\" gives their character offsets in the chunk. Never paraphrase.");
+out.println("4. Extract only what the text states. Do not use outside knowledge. When the text is ambiguous, lower \"confidence\".");
+out.println("5. Fill every REQUIRED property; omit a property you cannot ground in the text rather than guessing.");
+out.println("6. Reuse the same \"id\" for the same real-world entity within the chunk.");
+out.println("7. If the chunk contains no relevant fact, return {\"entities\": [], \"relations\": []}.");
+if (pt.fewShotExamples.notEmpty()) {
+  out.print("\n");
+  out.println("=== EXAMPLES ===");
+  for (ex in pt.fewShotExamples) {
+    out.println("--- Example input" + (ex.name.isDefined() ? " (" + ex.name + ")" : "") + " ---");
+    out.println(ex.inputText.trim());
+    out.println("--- Example output ---");
+    out.println(ex.expectedOutput.trim());
+    out.print("\n");
+  }
+}
+%]

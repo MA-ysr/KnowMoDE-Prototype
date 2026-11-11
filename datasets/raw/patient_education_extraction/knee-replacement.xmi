@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/knee-replacement.txt" sourceUri="https://medlineplus.gov/kneereplacement.html" sourceSha256="7d366d645ba689481c1603004934edfe492f43ee4a3198f02d81d6100f4dd125" sourceText="# MedlinePlus health topic: Knee Replacement&#10;&#10;Also called: Arthroplasty, Knee arthroplasty&#10;&#10;What is knee replacement surgery?Knee replacement surgery is a surgery to replace parts of your knee joint with new, artificial parts. You may need a knee replacement if you have knee damage that causes severe pain and difficulty doing daily activities, such as walking and climbing stairs. It is usually done when other treatments for knee pain haven't helped enough. The goal of a knee replacement is to relieve pain and help you move better.&#10;&#10;People of all ages may have knee replacement surgery. But it is more common in older people. The decision whether to have surgery is based on your overall health and how much your knee bothers you.&#10;&#10;What conditions does knee replacement surgery treat?Knee replacement surgery treats conditions that cause the cartilage of the knee joint to wear away. These include:&#10;&#10;Knee osteoarthritis. This is the most common reason for knee replacement surgery. It usually develops over time after an injury or with aging.&#10;&#10;Knee damage from other types of arthritis.&#10;&#10;Problems from knee joints that aren't formed correctly.&#10;&#10;What happens during knee replacement surgery?During the surgery, a surgeon removes damaged cartilage and some bone from the surfaces of your knee joint. Cartilage is tissue that covers your bones where they meet. Healthy cartilage is smooth and helps the bones glide over each other when you move. When cartilage becomes rough and wears away, the bones rub against each other, causing pain.&#10;&#10;After removing the damaged knee cartilage and bone, the surgeon attaches the artificial parts to your bones. The artificial parts are made of metal and plastic. They will give your knee new, smooth surfaces.&#10;&#10;Knee replacement surgery may replace all the damaged parts of your knee (total knee replacement) or just part of your knee (partial knee replacement). In a total knee replacement, the surgeon replaces 3 surfaces:&#10;&#10;The end of the shinbone&#10;&#10;The end of the thighbone&#10;&#10;The back of the kneecap&#10;&#10;What happens after knee replacement surgery?Some people go home the same day they have surgery. Other people will stay in the hospital a few days. To help prevent blood clots, you'll most likely take blood thinners and wear special socks or coverings on your legs for a short time after surgery.&#10;&#10;The success of your surgery depends a lot on what you do at home to help yourself recover. A physical therapist will teach you exercises to make your knee stronger and help it bend. It is important to do these exercises regularly. You may need to use a cane or walker for several weeks after the surgery. It will probably also be several weeks before you can drive. Your doctor will tell you when you can start driving again.&#10;&#10;Most people who follow their recovery instructions can get back to nearly all of their normal daily activities within 3 to 6 weeks after surgery.&#10;&#10;What is life like after a knee replacement?After recovering from surgery, most people can move better with less pain than before surgery. But having an artificial knee is not the same as having a normal, healthy knee.&#10;&#10;You need to protect your new knee by:&#10;&#10;Staying at a healthy weight.&#10;&#10;Getting regular physical activity.&#10;&#10;Not doing any high-impact activities, such as jogging, running, and jumping. Instead, you can try low-impact activities that are good for your knee, such as walking, biking, and swimming&#10;&#10;What are the risks of knee replacement surgery?The chance of having problems after knee replacement surgery is low. But there are risks after any surgery. Possible problems after knee replacement surgery include:&#10;&#10;Infection&#10;&#10;Blood clots&#10;&#10;Heart attack&#10;&#10;Stroke&#10;&#10;Nerve damage&#10;&#10;Scarring that limits how far you can bend your knee&#10;&#10;Your age, general health, and how active you are can all affect your risk of having a problem after knee replacement surgery.&#10;&#10;How long does a knee replacement last?A knee replacement doesn't last forever. After 15 to 20 years, the artificial knee parts may become loose or worn. If that happens, you may need another surgery on the same knee.&#10;&#10;If you're thinking about having knee replacement surgery, talk to your doctor about the risks and benefits. Together you can decide if a knee replacement is right for you.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:23:45+00:00" xmi:version="2.0">
+  <chunks charEnd="3876"/>
+  <chunks index="1" charStart="3638" charEnd="4268"/>
+  <entities type="Condition" id="knee-osteoarthritis" mention="Knee osteoarthritis" confidence="0.95" sourceSpanStart="905" sourceSpanEnd="924">
+    <properties key="name" value="knee osteoarthritis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="blood-clots" mention="blood clots" confidence="0.95" sourceSpanStart="2204" sourceSpanEnd="2215">
+    <properties key="name" value="blood clots"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="infection" mention="Infection" confidence="0.95" sourceSpanStart="3638" sourceSpanEnd="3647">
+    <properties key="name" value="infection"/>
+    <properties key="category" value="immunology"/>
+  </entities>
+  <entities type="Condition" id="heart-attack" mention="Heart attack" confidence="0.95" sourceSpanStart="3662" sourceSpanEnd="3674">
+    <properties key="name" value="heart attack"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="Stroke" confidence="0.95" sourceSpanStart="3676" sourceSpanEnd="3682">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="nerve-damage" mention="Nerve damage" confidence="0.95" sourceSpanStart="3684" sourceSpanEnd="3696">
+    <properties key="name" value="nerve damage"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="infection" mention="Infection" confidence="0.95" sourceSpanStart="3638" sourceSpanEnd="3647" chunkIndex="1">
+    <properties key="name" value="infection"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="Condition" id="blood-clots" mention="Blood clots" confidence="0.95" sourceSpanStart="3649" sourceSpanEnd="3660" chunkIndex="1">
+    <properties key="name" value="blood clots"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-attack" mention="Heart attack" confidence="0.95" sourceSpanStart="3662" sourceSpanEnd="3674" chunkIndex="1">
+    <properties key="name" value="heart attack"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="Stroke" confidence="0.95" sourceSpanStart="3676" sourceSpanEnd="3682" chunkIndex="1">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="nerve-damage" mention="Nerve damage" confidence="0.95" sourceSpanStart="3684" sourceSpanEnd="3696" chunkIndex="1">
+    <properties key="name" value="nerve damage"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="scarring-that-limits-how-far-you-can-bend-your-knee" mention="Scarring that limits how far you can bend your knee" confidence="0.95" sourceSpanStart="3698" sourceSpanEnd="3749" chunkIndex="1">
+    <properties key="name" value="scarring that limits knee flexion"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="RiskFactor" id="age-general-health-and-activity" mention="Your age, general health, and how active you are" confidence="0.95" sourceSpanStart="3751" sourceSpanEnd="3799" chunkIndex="1">
+    <properties key="name" value="age, general health, and activity level"/>
+    <properties key="description" value="Your age, general health, and how active you are can all affect your risk of having a problem after knee replacement surgery."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="problem-after-knee-replacement-surgery" mention="having a problem after knee replacement surgery" confidence="0.9" sourceSpanStart="3828" sourceSpanEnd="3875" chunkIndex="1">
+    <properties key="name" value="problem after knee replacement surgery"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="age-general-health-and-activity" targetType="ClinicalOutcome" targetId="problem-after-knee-replacement-surgery" confidence="0.9" evidence="Your age, general health, and how active you are can all affect your risk of having a problem after knee replacement surgery." sourceSpanStart="3751" sourceSpanEnd="3876" chunkIndex="1"/>
+</raw:RawExtractionResult>

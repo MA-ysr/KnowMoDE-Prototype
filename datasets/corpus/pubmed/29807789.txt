@@ -1,0 +1,11 @@
+# PubMed 29807789: Modifiable Risk Factors in Primary Joint Arthroplasty Increase 90-Day Cost of Care.
+
+The Journal of arthroplasty (2018), doi:10.1016/j.arth.2018.04.018
+
+BACKGROUND: Risk factors in demographics and health status have been identified that increase the risk of complications after joint arthroplasty, necessitating additional care and incurring additional charges. The purpose of this study was to identify the number of patients in a hospital network database who had one or more predefined modifiable risk factors and determine their impact on average length of stay, need for additional care during the 90-day postoperative period, and the 90-day charges for care.
+
+METHODS: An electronic hospital record query of 6968 lower extremity joint arthroplasty procedures under Diagnosis-Related Group 469/470 performed in 2014-2015 was reviewed, and total 90-day charges were calculated. The case mean was compared to charges for patients with modifiable risk factors: anemia (Hgb < 10 g/dL), malnutrition (albumin < 3.4 g/dL), obesity (body mass index > 45 kg/m2), uncontrolled diabetes (random glucose >180 mg/dL or A1C > 8), narcotic use (prescription filled), and tobacco use (documented within 30 days before surgery). Length of stay, emergency room visits, and hospital readmission were compared.
+
+RESULTS: Mean 90-day charges for Diagnosis-Related Group 469/470 were $36,647. Risk factors were associated with a significant increase in 90-day charges: anemia (+$ 15,869/126 patients), malnutrition (+$9270/592), obesity (+$2048/445), diabetes (+$5074/291), narcotic use (+$1801/1943), and tobacco use (+$2034/1882). Intensive care unit admission rate, emergency department visits, and hospital readmission were significantly increased for patients with each risk factor. Length of stay was higher in patients with anemia, malnutrition, diabetes, and tobacco use. When separated by elective vs fracture admission, 90-day charges were significantly higher for each risk factor.
+
+CONCLUSIONS: Medical strategies to optimize patients before joint arthroplasty are warranted to improve postoperative outcomes.

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/20589632" sourceUri="https://pubmed.ncbi.nlm.nih.gov/20589632/" sourceSha256="bf78af5956928369f2417a26d133bf29a3887feadb3df7a727dffb346f59c76b" sourceText="Trimethoprim-induced immune hemolytic anemia in a pediatric oncology patient presenting as an acute hemolytic transfusion reaction. A 10-year-old male with acute leukemia presented with post-chemotherapy anemia. During red cell transfusion, he developed hemoglobinuria. Transfusion reaction workup was negative. Drug-induced immune hemolytic anemia was suspected because of positive direct antiglobulin test, negative eluate, and microspherocytes on smear pre- and post-transfusion. Drug studies using the indirect antiglobulin test were strongly positive with trimethoprim and trimethoprim-sulfamethoxazole but negative with sulfamethoxazole. The patient recovered after discontinuing the drug, with no recurrence in 2 years. Other causes of anemia should be considered in patients with worse-than-expected anemia after chemotherapy. Furthermore, hemolysis during transfusion is not always a transfusion reaction." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:57+00:00" xmi:version="2.0">
+  <chunks charEnd="914"/>
+  <entities type="Drug" id="trimethoprim" mention="trimethoprim" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="12">
+    <properties key="name" value="trimethoprim"/>
+  </entities>
+  <entities type="Drug" id="trimethoprim-sulfamethoxazole" mention="trimethoprim-sulfamethoxazole" confidence="0.95" sourceSpanStart="578" sourceSpanEnd="607">
+    <properties key="name" value="trimethoprim-sulfamethoxazole"/>
+  </entities>
+  <entities type="Drug" id="sulfamethoxazole" mention="sulfamethoxazole" confidence="0.95" sourceSpanStart="591" sourceSpanEnd="607">
+    <properties key="name" value="sulfamethoxazole"/>
+  </entities>
+  <entities type="Condition" id="immune-hemolytic-anemia" mention="immune hemolytic anemia" confidence="0.9" sourceSpanStart="21" sourceSpanEnd="44">
+    <properties key="name" value="immune hemolytic anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="acute-leukemia" mention="acute leukemia" confidence="0.95" sourceSpanStart="156" sourceSpanEnd="170">
+    <properties key="name" value="acute leukemia"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.9" sourceSpanStart="743" sourceSpanEnd="749">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="hemoglobinuria" mention="hemoglobinuria" confidence="0.9" sourceSpanStart="254" sourceSpanEnd="268">
+    <properties key="name" value="hemoglobinuria"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim" targetType="Condition" targetId="immune-hemolytic-anemia" confidence="0.9" evidence="Trimethoprim-induced immune hemolytic anemia in a pediatric oncology patient presenting as an acute hemolytic transfusion reaction." sourceSpanStart="0" sourceSpanEnd="131"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="trimethoprim-sulfamethoxazole" targetType="Condition" targetId="immune-hemolytic-anemia" confidence="0.85" evidence="Drug studies using the indirect antiglobulin test were strongly positive with trimethoprim and trimethoprim-sulfamethoxazole but negative with sulfamethoxazole." sourceSpanStart="483" sourceSpanEnd="643"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,13 @@
+# PubMed 26496096: Trauma patient readmissions: Why do they come back for more?
+
+The journal of trauma and acute care surgery (2015), doi:10.1097/TA.0000000000000844
+
+BACKGROUND: Hospital readmissions are a frequent challenge. Speculation exists that rates of readmission following traumatic injury will be publicly disclosed. The primary aim of this study was to characterize and model 1-year readmission patterns to multiple institutions among patients originally admitted to a single, urban Level I trauma center. Additional analyses within the superutilizers subgroup identified predictors of 30-day readmissions as well as patient loyalty for readmission to their index hospital. We hypothesized that hospital readmission among trauma patients would be associated with socioeconomic, demographic, and clinical features and superutilizers would be identifiable during initial hospitalization.
+
+METHODS: Data were retrospectively gathered for 2,411 unique trauma patients admitted to a Level I American College of Surgeons-certified trauma center over 1 year, with readmissions identified 1 year after index admission. A regional hospital database was queried for readmissions. Outcomes of all readmission encounters were analyzed using a binary logistic regression model including demographic, diagnoses, Injury Severity Score (ISS), procedures, Elixhauser comorbidities, insurance, and disposition data. Subset analysis of superutilizers was also performed to examine patterns among superutilizers.
+
+RESULTS: A total of 434 patients (21%) were readmitted during the study period, accounting for 720 readmission encounters. Sixty-three patients accounting for 269 encounters were identified as superutilizers (3+ readmissions). A total of 136 patients (6%) were readmitted within 30 days of initial discharge. Fifty-seven percent of readmissions returned to the originating hospital.
+
+CONCLUSION: Complications including comorbid disease (diabetes and congestive heart failure), septicemia, weight loss, and trauma recidivism distinguish the superutilizer trauma patient. Having Medicaid funding increased the odds of readmission by 274%. It is imperative that interventions be developed and targeted toward those at high risk of superutilization of health care resources to curb spending. These results strongly support continuation of longitudinal readmission research in trauma patients conducted in multicenter settings.
+
+LEVEL OF EVIDENCE: Epidemiologic study, level III.

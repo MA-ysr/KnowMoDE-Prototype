@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40117466.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40117466/" sourceSha256="4569dfd3bd88c6677f39943ea80b521bc59c1868cbd67763b1abe8b5a5e6b74c" sourceText="# PubMed 40117466: Management of Diabetes and Hyperglycemia in the Hospital: A Systematic Review of Clinical Practice Guidelines.&#10;&#10;Diabetes care (2025), doi:10.2337/dc24-2510&#10;&#10;BACKGROUND: Inpatient hyperglycemia is common among adults, and management varies.&#10;&#10;PURPOSE: To systematically identify guidelines on inpatient hyperglycemia management.&#10;&#10;DATA SOURCES: MEDLINE, Guidelines International Network, and specialty society websites were searched from 1 January 2010 to 14 August 2024.&#10;&#10;STUDY SELECTION: Clinical practice guidelines pertaining to blood glucose management in hospitalized adults were included.&#10;&#10;DATA EXTRACTION: Two authors screened articles and extracted data, and three assessed guideline quality. Recommendations on inpatient monitoring, treatment targets, medications, and care transitions were collected.&#10;&#10;DATA SYNTHESIS: Guidelines from 10 organizations met inclusion criteria, and 5 were assessed to be of high quality per the Appraisal of Guidelines for REsearch &amp; Evaluation II (AGREE II) instrument. All guidelines recommended monitoring blood glucose for patients with diabetes and nine for admission hyperglycemia. Eight guidelines recommended an upper blood glucose target of 180 mg/dL, five with a lower limit of 100 mg/dL and three of 140 mg/dL. Guidelines were in agreement on using capillary blood glucose monitoring, and three guidelines included discussion of continuous monitoring. Hyperglycemia treatment with basal-bolus insulin alone (n = 3) or with correction (n = 5) was most commonly recommended, while sliding scale insulin was advised against (n = 5). Guidance on use of oral diabetes medications was inconsistent. Five guidelines included discussion of transitioning to home medications. Recommendations for hypoglycemia management and diabetes management in older adults were largely limited to outpatient guidance.&#10;&#10;LIMITATIONS: Non-English-language guidelines were excluded.&#10;&#10;CONCLUSIONS: While there is consensus on inpatient blood glucose monitoring and use of basal-bolus insulin, there is disagreement on treatment targets and use of home medications and little guidance on how to transition treatment at discharge.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T19:01:44+00:00" xmi:version="2.0">
+  <chunks charEnd="2170"/>
+  <entities type="Recommendation" id="monitor-blood-glucose" mention="All guidelines recommended monitoring blood glucose for patients with diabetes and nine for admission hyperglycemia" confidence="0.9" sourceSpanStart="1028" sourceSpanEnd="1143">
+    <properties key="statement" value="monitor blood glucose for patients with diabetes and admission hyperglycemia"/>
+    <properties key="source" value="clinical practice guidelines"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1098" sourceSpanEnd="1106">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="admission-hyperglycemia" mention="admission hyperglycemia" confidence="0.9" sourceSpanStart="1120" sourceSpanEnd="1143">
+    <properties key="name" value="admission hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="upper-blood-glucose-target-180" mention="Eight guidelines recommended an upper blood glucose target of 180 mg/dL" confidence="0.9" sourceSpanStart="1145" sourceSpanEnd="1216">
+    <properties key="statement" value="target an upper blood glucose of 180 mg/dL"/>
+    <properties key="source" value="clinical practice guidelines"/>
+  </entities>
+  <entities type="LabTest" id="blood-glucose-180" mention="blood glucose target of 180 mg/dL" confidence="0.9" sourceSpanStart="1183" sourceSpanEnd="1216">
+    <properties key="name" value="blood glucose &gt; 180 mg/dL"/>
+    <properties key="abnormalThreshold" value="&gt; 180 mg/dL"/>
+  </entities>
+  <entities type="Recommendation" id="basal-bolus-insulin-treatment" mention="Hyperglycemia treatment with basal-bolus insulin alone (n = 3) or with correction (n = 5) was most commonly recommended" confidence="0.9" sourceSpanStart="1420" sourceSpanEnd="1539">
+    <properties key="statement" value="treat hyperglycemia with basal-bolus insulin alone or with correction"/>
+    <properties key="source" value="clinical practice guidelines"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="Hyperglycemia" confidence="0.95" sourceSpanStart="1420" sourceSpanEnd="1433">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.9" sourceSpanStart="1461" sourceSpanEnd="1468">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="monitor-blood-glucose" targetType="Condition" targetId="diabetes" confidence="0.9" evidence="All guidelines recommended monitoring blood glucose for patients with diabetes and nine for admission hyperglycemia." sourceSpanStart="1028" sourceSpanEnd="1144"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="monitor-blood-glucose" targetType="Condition" targetId="admission-hyperglycemia" confidence="0.9" evidence="All guidelines recommended monitoring blood glucose for patients with diabetes and nine for admission hyperglycemia." sourceSpanStart="1028" sourceSpanEnd="1144"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="upper-blood-glucose-target-180" targetType="LabTest" targetId="blood-glucose-180" confidence="0.9" evidence="Eight guidelines recommended an upper blood glucose target of 180 mg/dL, five with a lower limit of 100 mg/dL and three of 140 mg/dL." sourceSpanStart="1145" sourceSpanEnd="1278"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="basal-bolus-insulin-treatment" targetType="Condition" targetId="hyperglycemia" confidence="0.9" evidence="Hyperglycemia treatment with basal-bolus insulin alone (n = 3) or with correction (n = 5) was most commonly recommended, while sliding scale insulin was advised against (n = 5)." sourceSpanStart="1420" sourceSpanEnd="1597"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="basal-bolus-insulin-treatment" targetType="Drug" targetId="insulin" confidence="0.9" evidence="Hyperglycemia treatment with basal-bolus insulin alone (n = 3) or with correction (n = 5) was most commonly recommended, while sliding scale insulin was advised against (n = 5)." sourceSpanStart="1420" sourceSpanEnd="1597"/>
+</raw:RawExtractionResult>

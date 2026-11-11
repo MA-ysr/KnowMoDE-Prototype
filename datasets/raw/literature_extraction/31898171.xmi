@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31898171.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31898171/" sourceSha256="49bf6004e971b0a1ef76ed16e43a1aab391760216af2fffafe2ed6fe0294e655" sourceText="# PubMed 31898171: Frailty and diabetes status in older patients with cancer: impact on mortality in the ANCRAGE cohort.&#10;&#10;Aging clinical and experimental research (2020), doi:10.1007/s40520-019-01362-9&#10;&#10;BACKGROUND: Frailty, diabetes and cancer are associated with aging, but the relationship between these conditions is not well defined.&#10;&#10;AIMS: We studied older patients with cancer from the prospective single-center cohort ANCRAGE (ANalyses of CanceR in AGEd) aiming to determine the impact of type 2 diabetes (T2D) and its vascular complications (VC) on frailty and adverse outcomes (mortality, unplanned readmission) during follow-up.&#10;&#10;METHODS: Analysis of cohort patients ≥ 75 years, included between 2009 and 2017, who underwent a comprehensive geriatric assessment (CGA). Variables of interest were history of T2D and VC, tumor site and metastatic status, CGA including eight domains (social environment, functional status, mobility, nutrition, mood, cognition, polypharmacy and comorbidities) and frailty.&#10;&#10;RESULTS: Among 1092 patients (47% female, mean age 82 ± 5 years), 219 (20%) had a reported diagnosis of T2D at baseline including 152 (69%) with VC. The most common tumor sites were prostate (15%), breast (15%), skin (12%), and colorectum (11%); 29% of patients had a metastatic disease. Frailty was highly prevalent (84%). During follow-up (median of 15.3 months), 653 (60%) patients died (60% no T2D, 43% T2D without VC, 66% with VC). After adjustment for age, gender and metastatic status, diabetics with VC had a higher risk of all-cause death (aHR1.89, 1.24-2.86, p = 0.004). Death was more frequently due to a non-cancer cause (p &lt; 0.001). No difference in unplanned readmissions was observed in the three groups. Frailty was an independent risk factor for mortality and unplanned readmissions (p &lt; 0.001 both).&#10;&#10;CONCLUSION: In older cancer patients from the prospective ANCRAGE cohort, all-cause mortality was significantly higher in frail patients and those with complicated T2D, a finding questioning the quality of care management in such vulnerable patients, and stimulating further research in this multidisciplinary field.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:33+00:00" xmi:version="2.0">
+  <chunks charEnd="2151"/>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes (T2D)" confidence="0.95" sourceSpanStart="496" sourceSpanEnd="517">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="vascular-complications-of-type-2-diabetes" mention="vascular complications (VC)" confidence="0.9" sourceSpanStart="526" sourceSpanEnd="553">
+    <properties key="name" value="vascular complications of type 2 diabetes"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.95" sourceSpanStart="587" sourceSpanEnd="596">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="unplanned-readmission" mention="unplanned readmission" confidence="0.95" sourceSpanStart="598" sourceSpanEnd="619">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="frailty" mention="Frailty" confidence="0.95" sourceSpanStart="1005" sourceSpanEnd="1012">
+    <properties key="name" value="frailty"/>
+    <properties key="description" value="frailty status in older patients"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality-outcome" mention="mortality" confidence="0.95" sourceSpanStart="1778" sourceSpanEnd="1787">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="unplanned-readmissions-outcome" mention="unplanned readmissions" confidence="0.95" sourceSpanStart="1792" sourceSpanEnd="1814">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="mortality-outcome" confidence="0.95" evidence="Frailty was an independent risk factor for mortality and unplanned readmissions (p &lt; 0.001 both)." sourceSpanStart="1391" sourceSpanEnd="1478"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="unplanned-readmissions-outcome" confidence="0.95" evidence="Frailty was an independent risk factor for mortality and unplanned readmissions (p &lt; 0.001 both)." sourceSpanStart="1391" sourceSpanEnd="1478"/>
+</raw:RawExtractionResult>

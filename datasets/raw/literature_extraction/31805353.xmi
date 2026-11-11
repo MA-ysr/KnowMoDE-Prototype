@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31805353.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31805353/" sourceSha256="0952f9aa4a7842a6c7a66a3af73f93aff784b9327514037136ffc4514c0b58a5" sourceText="# PubMed 31805353: Characteristics of diabetes diagnosis and control in toddlers and preschoolers from families with limited resources: A single center experience.&#10;&#10;Diabetes research and clinical practice (2020), doi:10.1016/j.diabres.2019.107966&#10;&#10;AIM: To describe the characteristics of diabetes diagnosis, insulin therapy regarding type, dose and frequency also the degree of glycemic control achieved in toddlers and preschoolers coming from families with limited resources.&#10;&#10;METHODS: Over one year, 69 toddlers and preschoolers clinically diagnosed as type 1 diabetes were included. Data related to presentation at diagnosis, insulin therapy and glycemic control was reviewed from patients' care givers and medical records.&#10;&#10;RESULTS: Diabetic ketoacidosis (DKA) was recorded in 71% of the children at initial diagnosis. The mean time since diabetes diagnosis was 2 ± 1 years. Most of children (65/69, 94%) were on basal-bolus regimen while four (6%) were on basal insulin only. NPH and long acting analogues were used as basal insulin in (74%) and (26%). Regular insulin and rapid acting analogues were used as bolus insulin (27%) and (73%).The mean frequency of daily self monitoring of blood glucose was (2.9 ± 1). The arithmetic mean of HbA1c done over past 6 months to one year before inclusion in the study was 8.2 ± 1.5% (66 ± 12 mmol/mol) with 65% having HbA1c ≥ 7.5% (≥58 mmol/mol).&#10;&#10;CONCLUSION: Toddlers and preschoolers with diabetes coming from families with limited resources frequently present with DKA at diagnosis and have suboptimal self-monitoring of blood glucose and glycemic control. NPH is more commonly used in this age group, combined with postprandial rapid analogues and less commonly preprandial regular insulin and that yields more favorable HbA1c but with a greater risk of hypoglycemia. The most common cause of hospital readmission was ketoacidosis and uncontrolled hyperglycemia.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:36:54+00:00" xmi:version="2.0">
+  <chunks charEnd="1915"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic ketoacidosis (DKA)" confidence="0.95" sourceSpanStart="738" sourceSpanEnd="765">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="ketoacidosis" mention="ketoacidosis" confidence="0.95" sourceSpanStart="747" sourceSpanEnd="759">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="uncontrolled-hyperglycemia" mention="uncontrolled hyperglycemia" confidence="0.95" sourceSpanStart="1887" sourceSpanEnd="1913">
+    <properties key="name" value="uncontrolled hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmission" confidence="0.95" sourceSpanStart="1845" sourceSpanEnd="1865">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="ketoacidosis" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The most common cause of hospital readmission was ketoacidosis and uncontrolled hyperglycemia." sourceSpanStart="1820" sourceSpanEnd="1914"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="uncontrolled-hyperglycemia" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The most common cause of hospital readmission was ketoacidosis and uncontrolled hyperglycemia." sourceSpanStart="1820" sourceSpanEnd="1914"/>
+</raw:RawExtractionResult>

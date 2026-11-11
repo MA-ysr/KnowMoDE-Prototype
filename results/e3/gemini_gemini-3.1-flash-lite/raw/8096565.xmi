@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/8096565" sourceUri="https://pubmed.ncbi.nlm.nih.gov/8096565/" sourceSha256="2347158955be281df992810bcd3fad7015a3fc616cfd1e1723ecb0e5203fa506" sourceText="Transmural myocardial infarction with sumatriptan. For sumatriptan, tightness in the chest caused by an unknown mechanism has been reported in 3-5% of users. We describe a 47-year-old woman with an acute myocardial infarction after administration of sumatriptan 6 mg subcutaneously for cluster headache. The patient had no history of underlying ischaemic heart disease or Prinzmetal's angina. She recovered without complications." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:52+00:00" xmi:version="2.0">
+  <chunks charEnd="429"/>
+  <entities type="Drug" id="sumatriptan" mention="sumatriptan" confidence="1.0" sourceSpanStart="38" sourceSpanEnd="49">
+    <properties key="name" value="sumatriptan"/>
+  </entities>
+  <entities type="Condition" id="transmural-myocardial-infarction" mention="Transmural myocardial infarction" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="32">
+    <properties key="name" value="transmural myocardial infarction"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="tightness-in-the-chest" mention="tightness in the chest" confidence="0.95" sourceSpanStart="68" sourceSpanEnd="90">
+    <properties key="name" value="tightness in the chest"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="acute-myocardial-infarction" mention="acute myocardial infarction" confidence="0.95" sourceSpanStart="198" sourceSpanEnd="225">
+    <properties key="name" value="acute myocardial infarction"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="cluster-headache" mention="cluster headache" confidence="0.95" sourceSpanStart="286" sourceSpanEnd="302">
+    <properties key="name" value="cluster headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="ischaemic-heart-disease" mention="ischaemic heart disease" confidence="0.95" sourceSpanStart="345" sourceSpanEnd="368">
+    <properties key="name" value="ischaemic heart disease"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="prinzmetals-angina" mention="Prinzmetal's angina" confidence="0.95" sourceSpanStart="372" sourceSpanEnd="391">
+    <properties key="name" value="prinzmetal's angina"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sumatriptan" targetType="Condition" targetId="transmural-myocardial-infarction" confidence="0.9" evidence="Transmural myocardial infarction with sumatriptan." sourceSpanStart="0" sourceSpanEnd="50"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sumatriptan" targetType="Condition" targetId="tightness-in-the-chest" confidence="0.95" evidence="For sumatriptan, tightness in the chest caused by an unknown mechanism has been reported in 3-5% of users." sourceSpanStart="51" sourceSpanEnd="157"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sumatriptan" targetType="Condition" targetId="acute-myocardial-infarction" confidence="0.9" evidence="We describe a 47-year-old woman with an acute myocardial infarction after administration of sumatriptan 6 mg subcutaneously for cluster headache." sourceSpanStart="158" sourceSpanEnd="303"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="sumatriptan" targetType="Condition" targetId="cluster-headache" confidence="0.9" evidence="We describe a 47-year-old woman with an acute myocardial infarction after administration of sumatriptan 6 mg subcutaneously for cluster headache." sourceSpanStart="158" sourceSpanEnd="303"/>
+</raw:RawExtractionResult>

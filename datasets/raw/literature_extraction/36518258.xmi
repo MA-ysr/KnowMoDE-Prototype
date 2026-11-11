@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36518258.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36518258/" sourceSha256="2a463edfe8e45cea37a9d8737c701aee60c7770c09bbdc9b7989b94dc7f28a40" sourceText="# PubMed 36518258: Exploring risk factors of short-term readmission in heart failure patients: A cohort study.&#10;&#10;Frontiers in endocrinology (2022), doi:10.3389/fendo.2022.1024759&#10;&#10;BACKGROUND: The risk of all-cause mortality in patients with heart failure (HF) has been studied previously. Readmission risk of HF patients was rarely explored. Thus, we aimed to explore early warning factors that may influence short-term readmission of HF patients.&#10;&#10;METHODS: The data of this study came from an HF database in China. It was a retrospective single-center observational study that collected characteristic data on Chinese HF patients by integrating electronic medical records and follow-up outcome data. Eventually, 1,727 patients with HF were finally included in our study.&#10;&#10;RESULTS: In our study, the proportion of HF patients with New York Heart Association (NYHA) class II, III, and IV HF were 17.20%, 52.69%, and 30.11%, respectively. The proportion of patients with readmission within 6 months and readmission within 3 months was 38.33% and 24.20%, respectively. Multivariate logistic regression showed that NYHA class (p III = 0.028, p IV &lt; 0.001), diabetes (p = 0.002), Cr (p = 0.003), and RDW-SD (p = 0.039) were risk factors for readmission within 6 months of HF patients. NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients.&#10;&#10;CONCLUSIONS: Our study implied risk factors of short-term readmission risk in patients with HF, which may provide policy guidance for the prognosis of patients with HF.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:49:28+00:00" xmi:version="2.0">
+  <chunks charEnd="1625"/>
+  <entities type="ClinicalOutcome" id="readmission-within-6-months" mention="readmission within 6 months" confidence="0.95" sourceSpanStart="968" sourceSpanEnd="995">
+    <properties key="name" value="readmission within 6 months"/>
+    <properties key="timeWindow" value="6 months"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission-within-3-months" mention="readmission within 3 months" confidence="0.95" sourceSpanStart="1000" sourceSpanEnd="1027">
+    <properties key="name" value="readmission within 3 months"/>
+    <properties key="timeWindow" value="3 months"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1152" sourceSpanEnd="1160">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="nyha-class" mention="NYHA class" confidence="0.9" sourceSpanStart="1279" sourceSpanEnd="1289">
+    <properties key="name" value="nyha class"/>
+    <properties key="description" value="New York Heart Association class"/>
+  </entities>
+  <entities type="RiskFactor" id="cr" mention="Cr" confidence="0.9" sourceSpanStart="1338" sourceSpanEnd="1340">
+    <properties key="name" value="cr"/>
+    <properties key="description" value="creatinine level"/>
+  </entities>
+  <entities type="RiskFactor" id="rdw-sd" mention="RDW-SD" confidence="0.9" sourceSpanStart="1194" sourceSpanEnd="1200">
+    <properties key="name" value="rdw-sd"/>
+    <properties key="description" value="red cell distribution width standard deviation"/>
+  </entities>
+  <entities type="RiskFactor" id="cci" mention="CCI" confidence="0.9" sourceSpanStart="1321" sourceSpanEnd="1324">
+    <properties key="name" value="cci"/>
+    <properties key="description" value="Charlson Comorbidity Index"/>
+  </entities>
+  <entities type="RiskFactor" id="ua" mention="UA" confidence="0.9" sourceSpanStart="1354" sourceSpanEnd="1356">
+    <properties key="name" value="ua"/>
+    <properties key="description" value="uric acid"/>
+  </entities>
+  <entities type="RiskFactor" id="na" mention="Na" confidence="0.9" sourceSpanStart="1374" sourceSpanEnd="1376">
+    <properties key="name" value="na"/>
+    <properties key="description" value="sodium"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="readmission-within-6-months" confidence="0.9" evidence="Multivariate logistic regression showed that NYHA class (p III = 0.028, p IV &lt; 0.001), diabetes (p = 0.002), Cr (p = 0.003), and RDW-SD (p = 0.039) were risk factors for readmission within 6 months of HF patients." sourceSpanStart="1065" sourceSpanEnd="1278"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="nyha-class" targetType="ClinicalOutcome" targetId="readmission-within-6-months" confidence="0.9" evidence="Multivariate logistic regression showed that NYHA class (p III = 0.028, p IV &lt; 0.001), diabetes (p = 0.002), Cr (p = 0.003), and RDW-SD (p = 0.039) were risk factors for readmission within 6 months of HF patients." sourceSpanStart="1065" sourceSpanEnd="1278"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="cr" targetType="ClinicalOutcome" targetId="readmission-within-6-months" confidence="0.9" evidence="Multivariate logistic regression showed that NYHA class (p III = 0.028, p IV &lt; 0.001), diabetes (p = 0.002), Cr (p = 0.003), and RDW-SD (p = 0.039) were risk factors for readmission within 6 months of HF patients." sourceSpanStart="1065" sourceSpanEnd="1278"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="rdw-sd" targetType="ClinicalOutcome" targetId="readmission-within-6-months" confidence="0.9" evidence="Multivariate logistic regression showed that NYHA class (p III = 0.028, p IV &lt; 0.001), diabetes (p = 0.002), Cr (p = 0.003), and RDW-SD (p = 0.039) were risk factors for readmission within 6 months of HF patients." sourceSpanStart="1065" sourceSpanEnd="1278"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="nyha-class" targetType="ClinicalOutcome" targetId="readmission-within-3-months" confidence="0.9" evidence="NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients." sourceSpanStart="1279" sourceSpanEnd="1454"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="cci" targetType="ClinicalOutcome" targetId="readmission-within-3-months" confidence="0.9" evidence="NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients." sourceSpanStart="1279" sourceSpanEnd="1454"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="cr" targetType="ClinicalOutcome" targetId="readmission-within-3-months" confidence="0.9" evidence="NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients." sourceSpanStart="1279" sourceSpanEnd="1454"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="ua" targetType="ClinicalOutcome" targetId="readmission-within-3-months" confidence="0.9" evidence="NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients." sourceSpanStart="1279" sourceSpanEnd="1454"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="na" targetType="ClinicalOutcome" targetId="readmission-within-3-months" confidence="0.9" evidence="NYHA class (p III = 0.038, p IV &lt; 0.001), CCI (p = 0.033), Cr (p = 0.012), UA (p = 0.042), and Na (p = 0.026) were risk factors for readmission within 3 months of HF patients." sourceSpanStart="1279" sourceSpanEnd="1454"/>
+</raw:RawExtractionResult>

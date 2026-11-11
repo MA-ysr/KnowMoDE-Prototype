@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/30878296.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/30878296/" sourceSha256="c577d0cb52139e6b415b6e9aec4ff4bb488d6394b289560ea73a45dd5b8a13e9" sourceText="# PubMed 30878296: Risk factors for readmission of inpatients with diabetes: A systematic review.&#10;&#10;Journal of diabetes and its complications (2019), doi:10.1016/j.jdiacomp.2019.01.004&#10;&#10;AIM: We have limited understanding of which risk factors contribute to increased readmission rates amongst people discharged from hospital with diabetes. We aim to complete the first review of its kind, to identify, in a systematic way, known risk factors for hospital readmission amongst people with diabetes, in order to better understand this costly complication.&#10;&#10;METHOD: The review was prospectively registered in the PROSPERO database. Risk factors were identified through systematic review of literature in PubMed, EMBASE &amp; SCOPUS databases, performed independently by two authors prior to data extraction, with quality assessment and semi-quantitative synthesis according to PRISMA guidelines.&#10;&#10;RESULTS: Eighty-three studies were selected for inclusion, predominantly from the United States, and utilising retrospective analysis of local or regional data sets. 76 distinct statistically significant risk factors were identified across 48 studies. The most commonly identified risk factors were; co-morbidity burden, age, race and insurance type. Few studies conducted power calculations; unstandardized effect sizes were calculated for the majority of statistically significant risk factors.&#10;&#10;CONCLUSION: This review is important in assessing the current state of the literature and in supporting development of interventions to reduce readmission risk. Furthermore, it provides an important foundation for development of rigorous, pre-specified risk prediction models.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:35:01+00:00" xmi:version="2.0">
+  <chunks charEnd="1663"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="67" sourceSpanEnd="75">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="readmission" confidence="0.9" sourceSpanStart="266" sourceSpanEnd="277">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="co-morbidity-burden" mention="co-morbidity burden" confidence="0.9" sourceSpanStart="1188" sourceSpanEnd="1207">
+    <properties key="name" value="co-morbidity burden"/>
+    <properties key="description" value="burden of co-morbidities"/>
+  </entities>
+  <entities type="RiskFactor" id="age" mention="age" confidence="0.9" sourceSpanStart="1209" sourceSpanEnd="1212">
+    <properties key="name" value="age"/>
+    <properties key="description" value="patient age"/>
+  </entities>
+  <entities type="RiskFactor" id="race" mention="race" confidence="0.9" sourceSpanStart="1214" sourceSpanEnd="1218">
+    <properties key="name" value="race"/>
+    <properties key="description" value="patient race"/>
+  </entities>
+  <entities type="RiskFactor" id="insurance-type" mention="insurance type" confidence="0.9" sourceSpanStart="1223" sourceSpanEnd="1237">
+    <properties key="name" value="insurance type"/>
+    <properties key="description" value="patient insurance type"/>
+  </entities>
+</raw:RawExtractionResult>

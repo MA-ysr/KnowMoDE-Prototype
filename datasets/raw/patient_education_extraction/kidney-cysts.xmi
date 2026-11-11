@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/kidney-cysts.txt" sourceUri="https://medlineplus.gov/kidneycysts.html" sourceSha256="f26497c75ce3553b2e5777d240c86fc64c2fb2290e4cbdbd3bb6524f746c9a35" sourceText="# MedlinePlus health topic: Kidney Cysts&#10;&#10;Also called: Cystic Kidney Diseases, Polycystic Kidney Disease&#10;&#10;A cyst is a fluid-filled sac. You may get simple kidney cysts as you age; they are usually harmless. There are also some diseases which cause kidney cysts. One type is polycystic kidney disease (PKD). It runs in families. In PKD, many cysts grow in the kidneys. This can enlarge the kidneys and make them work poorly. About half of people with the most common type of PKD end up with kidney failure. PKD also causes cysts in other parts of the body, such as the liver.&#10;&#10;Often, there are no symptoms at first. Later, symptoms include:&#10;&#10;Pain in the back and lower sides&#10;&#10;Headaches&#10;&#10;Blood in the urine&#10;&#10;Doctors diagnose PKD with imaging tests and family history. There is no cure. Treatments can help with symptoms and complications. They include medicines and lifestyle changes, and if there is kidney failure, dialysis or kidney transplants.&#10;&#10;Acquired cystic kidney disease (ACKD) happens in people who have chronic kidney disease, especially if they are on dialysis. Unlike PKD, the kidneys are normal sized, and cysts do not form in other parts of the body. ACKD often has no symptoms. Usually, the cysts are harmless and do not need treatment. If they do cause complications, treatments include medicines, draining the cysts, or surgery.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:23:33+00:00" xmi:version="2.0">
+  <chunks charEnd="1417"/>
+  <entities type="Condition" id="kidney-cysts" mention="kidney cysts" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="40">
+    <properties key="name" value="kidney cysts"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="polycystic-kidney-disease" mention="polycystic kidney disease" confidence="0.98" sourceSpanStart="79" sourceSpanEnd="104">
+    <properties key="name" value="polycystic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="kidney-failure" mention="kidney failure" confidence="0.95" sourceSpanStart="490" sourceSpanEnd="504">
+    <properties key="name" value="kidney failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.98" sourceSpanStart="1013" sourceSpanEnd="1035">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="acquired-cystic-kidney-disease" mention="Acquired cystic kidney disease (ACKD)" confidence="0.98" sourceSpanStart="948" sourceSpanEnd="985">
+    <properties key="name" value="acquired cystic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="polycystic-kidney-disease" targetType="Condition" targetId="kidney-failure" confidence="0.95" evidence="About half of people with the most common type of PKD end up with kidney failure." sourceSpanStart="424" sourceSpanEnd="505"/>
+</raw:RawExtractionResult>

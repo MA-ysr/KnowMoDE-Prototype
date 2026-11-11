@@ -1,0 +1,11 @@
+# PubMed 37632725: Modified Frailty Index Predicts Postoperative Complications Following Parastomal Hernia Repair.
+
+The American surgeon (2024), doi:10.1177/00031348231198102
+
+BACKGROUND: The 5-factor frailty index (5-mFI), validated frailty index with Spearmen rho correlation of .95 and C statistic >.7 for predicting postoperative complications, can be preoperatively used to stratify patients prior to parastomal hernia repairs.
+
+METHODS: Retrospective review of the American College of Surgeons National Surgical Quality Improvement Program (ACS-NSQIP) database identified patients from 2015 to 2020. 5-mFI scores were calculated by adding one point for each comorbidity present: diabetes mellitus, congestive heart failure (CHF), hypertension requiring medication, severe chronic obstructive pulmonary disease (COPD), non-independent functional status. Primary endpoint was 30-day overall complications; secondary endpoints were 30-day readmission, reoperation, and discharge to care facility.
+
+RESULTS: 2924 (52.2% female) patients underwent elective parastomal hernia repair. Univariate analysis showed 5-mFI > 2 had higher rates of overall (P = .008), pulmonary (P = .002), cardiovascular (P = .003)), hematologic (P = .003), and renal (P = .002) complications and higher rates of readmission (P = .009), reoperation (P = .001), discharge to care facility (P < .001), and death (P < .001). Multivariate analysis identified a 5-mFI of 2 or more as an independent risk factor for overall complications [OR: 1.40, 1.03-1.78; P = .032], pulmonary complications [2.97, 1.63-5.39; P < .001], hematological complications [1.60, 1.03-2.47; P = .035], renal complications [2.04, 1.19-3.46; P = .009], readmission [1.54, 1.19-1.99; P < .001], and discharge to facility [2.50, 1.66-3.77; P < .001]. Reoperation was not signification on multivariate analysis.
+
+CONCLUSIONS: Parastomal hernia repair patients with 5-mFI score of >2 had higher risk of renal, cardiovascular, pulmonary, and hematologic complications, readmissions, longer hospitalization, discharge to care facility, and mortality, and can be useful during preoperative risk stratification.

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/body-weight.txt" sourceUri="https://medlineplus.gov/bodyweight.html" sourceSha256="4939efdabaa6e98643163ead7b51c82d769fe962a0298ba00ce378c5c307b73e" sourceText="# MedlinePlus health topic: Body Weight&#10;&#10;Also called: BMI, Overweight, Underweight&#10;&#10;What is body weight?Body weight is the total mass of your body. Keeping track of your weight is one way to check for changes in your health, but it can't tell you the whole story. That's because your weight includes muscle, bone, fat, and water. Also, everyday factors can play a role in your weight, such as your:&#10;&#10;Diet&#10;&#10;Activity level&#10;&#10;Stress level&#10;&#10;Sleep habits&#10;&#10;Family history and genetics&#10;&#10;Age&#10;&#10;What factors help determine a healthy body weight?A healthy weight is more than just a number on the scale. It's about feeling good, having energy, and lowering your risk of disease. Your health care provider can help you determine a healthy body weight based on several factors. These include your:&#10;&#10;Body Mass Index (BMI). BMI is a measure of how much you weigh compared to how tall you are. The higher your BMI, the higher your risk for certain diseases. BMI does not distinguish between fat, muscle, and bone mass. It also may overestimate body fat in athletes or those with a muscular build, or underestimate body fat in older persons or others who have lost muscle.&#10;&#10;Waist circumference. If most of your body fat is around your abdomen (belly) rather than your hips, you may be at a higher risk for heart disease and type 2 diabetes.&#10;&#10;Health history. Your health care provider will likely consider your risk factors for diseases and health conditions, such as having high cholesterol, in determining your healthy body weight.&#10;&#10;What are body weight ranges?Having a healthy body weight may lower your chance of developing certain health problems. Carrying too much or too little weight can affect your health. Ranges of body weight include:&#10;&#10;Underweight. Your weight is lower than it should be for your health.&#10;&#10;Normal. Your weight is within a healthy range.&#10;&#10;Overweight. Your weight is greater than it should be for your health.&#10;&#10;Obese. Your body fat is greater than it should be for your health.&#10;&#10;Body weight needs can be different at different ages. For children, weight and growth are tracked over time based on their age. For older adults, keeping muscle and strength is key, and sudden weight loss should always be checked by your provider.&#10;&#10;What if I have a sudden gain or loss of weight?Talk to your provider if you're losing or gaining weight without trying. A sudden, unexpected change in weight can be a sign of a medical problem.&#10;&#10;Causes for sudden weight loss can include:&#10;&#10;Thyroid problems&#10;&#10;Cancer&#10;&#10;Infectious diseases&#10;&#10;Digestive diseases&#10;&#10;Certain medicines&#10;&#10;Causes for sudden weight gain can include:&#10;&#10;Certain medicines&#10;&#10;Thyroid problems&#10;&#10;Heart failure&#10;&#10;Kidney disease&#10;&#10;Liver disease&#10;&#10;How can I maintain a healthy body weight?Maintaining a healthy body weight can improve energy, sleep, and overall wellbeing. Talk to your provider about what a healthy weight would be for you. If they recommend that you gain or lose weight, they might refer you to a dietician for support. A dietician is a professional who has special training to help you learn the best way to eat.&#10;&#10;Good nutrition and exercise can help in losing weight. Even a small change in weight can lower your risk of developing certain diseases.&#10;&#10;Eating extra calories within a well-balanced diet and treating any underlying medical problems can help you gain weight.&#10;&#10;Focus on your health, not just the number on the scale. With daily healthy habits and self-compassion, you can support lasting improvements in your overall wellbeing.&#10;&#10;NIH: National Heart, Lung, and Blood Institute&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:18:58+00:00" xmi:version="2.0">
+  <chunks charEnd="3547"/>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="1288" sourceSpanEnd="1301">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="1306" sourceSpanEnd="1321">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="high-cholesterol" mention="high cholesterol" confidence="0.9" sourceSpanStart="1456" sourceSpanEnd="1472">
+    <properties key="name" value="high cholesterol"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="underweight" mention="Underweight" confidence="0.9" sourceSpanStart="1729" sourceSpanEnd="1740">
+    <properties key="name" value="underweight"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="overweight" mention="Overweight" confidence="0.9" sourceSpanStart="1847" sourceSpanEnd="1857">
+    <properties key="name" value="overweight"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="obese" mention="Obese" confidence="0.9" sourceSpanStart="1918" sourceSpanEnd="1923">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="thyroid-problems" mention="Thyroid problems" confidence="0.9" sourceSpanStart="2474" sourceSpanEnd="2490">
+    <properties key="name" value="thyroid disease"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="cancer" mention="Cancer" confidence="0.9" sourceSpanStart="2492" sourceSpanEnd="2498">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="infectious-diseases" mention="Infectious diseases" confidence="0.9" sourceSpanStart="2500" sourceSpanEnd="2519">
+    <properties key="name" value="infectious disease"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="digestive-diseases" mention="Digestive diseases" confidence="0.9" sourceSpanStart="2521" sourceSpanEnd="2539">
+    <properties key="name" value="digestive disease"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="Heart failure" confidence="0.95" sourceSpanStart="2641" sourceSpanEnd="2654">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="Kidney disease" confidence="0.95" sourceSpanStart="2656" sourceSpanEnd="2670">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="liver-disease" mention="Liver disease" confidence="0.95" sourceSpanStart="2672" sourceSpanEnd="2685">
+    <properties key="name" value="liver disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+</raw:RawExtractionResult>

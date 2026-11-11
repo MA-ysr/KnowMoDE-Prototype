@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/iron.txt" sourceUri="https://medlineplus.gov/iron.html" sourceSha256="ce08820d732327556710a3571348621eb0bb714e803f4f53ccedf23a001efdc2" sourceText="# MedlinePlus health topic: Iron&#10;&#10;Also called: Ferritin&#10;&#10;What is iron?Iron is a mineral that our bodies need for growth and development. Your body uses iron to make hemoglobin, a protein in red blood cells. Hemoglobin carries oxygen from the lungs to all parts of the body. Iron is also important for healthy muscles, bone marrow, and organ function. Your body also needs iron to make some hormones.&#10;&#10;How do you get iron?Iron is found naturally in many foods and is added to some fortified food products. Foods that are high in iron include:&#10;&#10;Lean meat, seafood, and poultry&#10;&#10;Iron-fortified breakfast cereals and breads&#10;&#10;White beans, lentils, spinach, kidney beans, and peas&#10;&#10;Nuts and some dried fruits, such as raisins&#10;&#10;Iron is available in supplements, either on its own or as part of many multivitamin/mineral supplements.&#10;&#10;What causes low iron?Most people in the United States get enough iron. The amount that you need each day depends on your age, your sex, and whether you consume a mostly plant-based diet.&#10;&#10;Sometimes people can have trouble getting enough iron. There can be many causes, including blood loss, a poor diet, or a problem absorbing enough iron from foods. Those who are more likely to have low iron include people who:&#10;&#10;Have heavy periods&#10;&#10;Are pregnant or breastfeeding&#10;&#10;Are infants (especially if they were born premature or low birth weight)&#10;&#10;Are frequent blood donors&#10;&#10;Have cancer, certain digestive diseases, or heart failure&#10;&#10;Are on kidney dialysis&#10;&#10;Have trouble absorbing iron because they:&#10;Have a digestive condition such as celiac disease, ulcerative colitis, Crohn's disease, or Helicobacter pylori infection&#10;&#10;Had weight loss surgery&#10;&#10;What happens if you don't get enough iron?If you have too little iron, you may develop iron-deficiency anemia. It may not cause symptoms at first, but over time, it can cause fatigue, shortness of breath, and trouble with memory and concentration. Treatment for low iron and iron-deficiency anemia is usually with iron supplements.&#10;&#10;What happens if you get too much iron?Too much iron can damage your body. For example, if you are healthy and take too many iron supplements, you may have symptoms such as constipation, nausea and vomiting, abdominal (belly) pain, and diarrhea. Higher iron levels can cause ulcers. Extremely high levels can lead to organ damage, coma, and death.&#10;&#10;A disease called hemochromatosis can cause too much iron to build up in the body. Hemochromatosis is inherited (passed down through families). It is usually treated by removing blood (and iron) from your body on a regular basis.&#10;&#10;NIH: National Institutes of Health, Office of Dietary Supplements&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:23:26+00:00" xmi:version="2.0">
+  <chunks charEnd="2643"/>
+  <entities type="Condition" id="iron-deficiency-anemia" mention="iron-deficiency anemia" confidence="0.95" sourceSpanStart="1753" sourceSpanEnd="1775">
+    <properties key="name" value="iron-deficiency anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="hemochromatosis" mention="hemochromatosis" confidence="0.95" sourceSpanStart="2364" sourceSpanEnd="2379">
+    <properties key="name" value="hemochromatosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="organ-damage" mention="organ damage" confidence="0.9" sourceSpanStart="2315" sourceSpanEnd="2327">
+    <properties key="name" value="organ damage"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="coma" mention="coma" confidence="0.9" sourceSpanStart="2329" sourceSpanEnd="2333">
+    <properties key="name" value="coma"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="death" mention="death" confidence="0.9" sourceSpanStart="2339" sourceSpanEnd="2344">
+    <properties key="name" value="death"/>
+  </entities>
+  <entities type="Drug" id="iron-supplements" mention="iron supplements" confidence="0.9" sourceSpanStart="1980" sourceSpanEnd="1996">
+    <properties key="name" value="iron supplements"/>
+  </entities>
+</raw:RawExtractionResult>

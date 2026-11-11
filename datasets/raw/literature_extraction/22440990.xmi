@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/22440990.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/22440990/" sourceSha256="69180e819371a1902a2b2f55a4f5b409327e67d7e1cdde7a4e3cb35ef94c037c" sourceText="# PubMed 22440990: Outcomes associated with insulin therapy disruption after hospital discharge among patients with type 2 diabetes mellitus who had used insulin before and during hospitalization.&#10;&#10;Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2012), doi:10.4158/EP11314.OR&#10;&#10;OBJECTIVE: To evaluate outcomes associated with insulin therapy disruption after hospital discharge in patients with type 2 diabetes mellitus who had used insulin before and during hospitalization.&#10;&#10;METHODS: In this observational, retrospective analysis of medical records obtained from a coordinated health system in the United States, patients with type 2 diabetes mellitus who had used insulin 30 days before and during hospitalization were included. Clinical and cost outcomes were compared between patients who continued insulin therapy and those who had disrupted insulin therapy after hospital discharge.&#10;&#10;RESULTS: In total, 2160 records were analyzed (851 patients with continued insulin therapy and 1309 patients with disrupted insulin therapy). Mean baseline glycated hemoglobin A1c levels were 8.56% and 7.73% in patients who continued insulin therapy and patients who disrupted insulin therapy, respectively (P&lt;.001), suggesting that patients who discontinued insulin therapy had better glycemic control at baseline. Continued insulin therapy was associated with an expected greater reduction in glycated hemoglobin A1c (P&lt;.001); similar hypoglycemia rates; lower risks of all-cause hospital readmission, diabetes-related readmission, and all-cause emergency department visits; and improved survival. Continued insulin therapy was associated with $3432 lower total medical service costs than disrupted therapy over the 6-month postdischarge period.&#10;&#10;CONCLUSION: Ensuring adherence to insulin therapy in patients who require insulin therapy after hospitalization should be a priority for postdischarge patient care programs. However, the clinical implications of this study are limited by the fact that it could not be determined whether all patients required insulin therapy after hospital discharge.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:26:03+00:00" xmi:version="2.0">
+  <chunks charEnd="2180"/>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="44" sourceSpanEnd="51">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="116" sourceSpanEnd="140">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="disrupted-insulin-therapy" mention="disrupted insulin therapy" confidence="0.92" sourceSpanStart="927" sourceSpanEnd="952">
+    <properties key="name" value="disrupted insulin therapy"/>
+    <properties key="description" value="insulin therapy disruption after hospital discharge"/>
+  </entities>
+  <entities type="RiskFactor" id="continued-insulin-therapy" mention="Continued insulin therapy" confidence="0.92" sourceSpanStart="1045" sourceSpanEnd="1070">
+    <properties key="name" value="continued insulin therapy"/>
+    <properties key="description" value="continued insulin therapy after hospital discharge"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-hospital-readmission" mention="all-cause hospital readmission" confidence="0.95" sourceSpanStart="1552" sourceSpanEnd="1582">
+    <properties key="name" value="all-cause hospital readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="diabetes-related-readmission" mention="diabetes-related readmission" confidence="0.95" sourceSpanStart="1584" sourceSpanEnd="1612">
+    <properties key="name" value="diabetes-related readmission"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="continued-insulin-therapy" targetType="ClinicalOutcome" targetId="all-cause-hospital-readmission" confidence="0.9" evidence="Continued insulin therapy was associated with an expected greater reduction in glycated hemoglobin A1c (P&lt;.001); similar hypoglycemia rates; lower risks of all-cause hospital readmission, diabetes-related readmission, and all-cause emergency department visits; and improved survival." sourceSpanStart="1396" sourceSpanEnd="1679"/>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="continued-insulin-therapy" targetType="ClinicalOutcome" targetId="diabetes-related-readmission" confidence="0.9" evidence="Continued insulin therapy was associated with an expected greater reduction in glycated hemoglobin A1c (P&lt;.001); similar hypoglycemia rates; lower risks of all-cause hospital readmission, diabetes-related readmission, and all-cause emergency department visits; and improved survival." sourceSpanStart="1396" sourceSpanEnd="1679"/>
+</raw:RawExtractionResult>

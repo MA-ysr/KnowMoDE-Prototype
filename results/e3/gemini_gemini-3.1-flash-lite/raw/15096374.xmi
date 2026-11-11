@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/15096374" sourceUri="https://pubmed.ncbi.nlm.nih.gov/15096374/" sourceSha256="2e0d70600c474c8744812cb2eb70b6112df9a7dd503a02ed84e36695618cd9bf" sourceText="Induction of rosaceiform dermatitis during treatment of facial inflammatory dermatoses with tacrolimus ointment. BACKGROUND: Tacrolimus ointment is increasingly used for anti-inflammatory treatment of sensitive areas such as the face, and recent observations indicate that the treatment is effective in steroid-aggravated rosacea and perioral dermatitis. We report on rosaceiform dermatitis as a complication of treatment with tacrolimus ointment. OBSERVATIONS: Six adult patients with inflammatory facial dermatoses were treated with tacrolimus ointment because of the ineffectiveness of standard treatments. Within 2 to 3 weeks of initially effective and well-tolerated treatment, 3 patients with a history of rosacea and 1 with a history of acne experienced sudden worsening with pustular rosaceiform lesions. Biopsy revealed an abundance of Demodex mites in 2 of these patients. In 1 patient with eyelid eczema, rosaceiform periocular dermatitis gradually appeared after 3 weeks of treatment. In 1 patient with atopic dermatitis, telangiectatic and papular rosacea insidiously appeared after 5 months of treatment. CONCLUSIONS: Our observations suggest that the spectrum of rosaceiform dermatitis as a complication of treatment with tacrolimus ointment is heterogeneous. A variety of factors, such as vasoactive properties of tacrolimus, proliferation of Demodex due to local immunosuppression, and the occlusive properties of the ointment, may be involved in the observed phenomena. Future studies are needed to identify individual risk factors." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:52+00:00" xmi:version="2.0">
+  <chunks charEnd="1550"/>
+  <entities type="Drug" id="tacrolimus" mention="tacrolimus ointment" confidence="0.95" sourceSpanStart="92" sourceSpanEnd="111">
+    <properties key="name" value="tacrolimus"/>
+  </entities>
+  <entities type="Condition" id="rosaceiform-dermatitis" mention="rosaceiform dermatitis" confidence="0.95" sourceSpanStart="368" sourceSpanEnd="390">
+    <properties key="name" value="rosaceiform dermatitis"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="facial-inflammatory-dermatoses" mention="facial inflammatory dermatoses" confidence="0.9" sourceSpanStart="56" sourceSpanEnd="86">
+    <properties key="name" value="facial inflammatory dermatoses"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="steroid-aggravated-rosacea" mention="steroid-aggravated rosacea" confidence="0.9" sourceSpanStart="303" sourceSpanEnd="329">
+    <properties key="name" value="steroid-aggravated rosacea"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="perioral-dermatitis" mention="perioral dermatitis" confidence="0.9" sourceSpanStart="334" sourceSpanEnd="353">
+    <properties key="name" value="perioral dermatitis"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="rosacea" mention="rosacea" confidence="0.9" sourceSpanStart="712" sourceSpanEnd="719">
+    <properties key="name" value="rosacea"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="acne" mention="acne" confidence="0.9" sourceSpanStart="744" sourceSpanEnd="748">
+    <properties key="name" value="acne"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="eyelid-eczema" mention="eyelid eczema" confidence="0.9" sourceSpanStart="901" sourceSpanEnd="914">
+    <properties key="name" value="eyelid eczema"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="atopic-dermatitis" mention="atopic dermatitis" confidence="0.9" sourceSpanStart="1015" sourceSpanEnd="1032">
+    <properties key="name" value="atopic dermatitis"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="rosaceiform-dermatitis" confidence="0.95" evidence="We report on rosaceiform dermatitis as a complication of treatment with tacrolimus ointment." sourceSpanStart="355" sourceSpanEnd="447"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="facial-inflammatory-dermatoses" confidence="0.9" evidence="Induction of rosaceiform dermatitis during treatment of facial inflammatory dermatoses with tacrolimus ointment." sourceSpanStart="0" sourceSpanEnd="112"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="steroid-aggravated-rosacea" confidence="0.9" evidence="Tacrolimus ointment is increasingly used for anti-inflammatory treatment of sensitive areas such as the face, and recent observations indicate that the treatment is effective in steroid-aggravated rosacea and perioral dermatitis." sourceSpanStart="125" sourceSpanEnd="354"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="perioral-dermatitis" confidence="0.9" evidence="Tacrolimus ointment is increasingly used for anti-inflammatory treatment of sensitive areas such as the face, and recent observations indicate that the treatment is effective in steroid-aggravated rosacea and perioral dermatitis." sourceSpanStart="125" sourceSpanEnd="354"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="eyelid-eczema" confidence="0.85" evidence="In 1 patient with eyelid eczema, rosaceiform periocular dermatitis gradually appeared after 3 weeks of treatment." sourceSpanStart="883" sourceSpanEnd="996"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="tacrolimus" targetType="Condition" targetId="atopic-dermatitis" confidence="0.85" evidence="In 1 patient with atopic dermatitis, telangiectatic and papular rosacea insidiously appeared after 5 months of treatment." sourceSpanStart="997" sourceSpanEnd="1118"/>
+</raw:RawExtractionResult>

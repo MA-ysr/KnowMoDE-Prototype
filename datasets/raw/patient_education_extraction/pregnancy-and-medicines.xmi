@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/pregnancy-and-medicines.txt" sourceUri="https://medlineplus.gov/pregnancyandmedicines.html" sourceSha256="db6b6a56f91ef5f2ca920340aef310460764a2b764bb1e4cecfa6b2cf66a26cf" sourceText="# MedlinePlus health topic: Pregnancy and Medicines&#10;&#10;Also called: Medicines and Pregnancy&#10;&#10;Is it safe to take medicine during pregnancy?Some medicines are safe to take during pregnancy, but many are not. If you're pregnant, check with your health care provider before taking any medicine. Some medicines can harm your developing fetus. This includes:&#10;&#10;Prescription drugs&#10;&#10;Over-the-counter medicines&#10;&#10;Herbs and supplements&#10;&#10;Should I stop taking my medicine during pregnancy?Always talk to your provider before you stop or start any medicine. You may take medicine to treat a health problem you had before pregnancy. Not using the medicine that you need may be more harmful to you and your fetus than using the medicine. For example, many pregnant women take prescription medicines for health problems like diabetes, asthma, seizures, and heartburn. The decision about whether to take a certain medicine should depend on the risks and benefits that go with it. You and your provider should make this choice together.&#10;&#10;Can I take vitamins during pregnancy?If you're pregnant, you shouldn't take regular vitamins. They may have too much or too little of the vitamins you need. For example, everyone needs folic acid, a type of B vitamin. But if you're trying to get pregnant, it's really important. Getting enough folic acid before and during pregnancy can prevent birth defects of the brain or spine. During your prenatal care visits, your provider will talk about prenatal vitamins. These are a special kind of vitamin to take during pregnancy.&#10;&#10;Food and Drug Administration&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:24:54+00:00" xmi:version="2.0">
+  <chunks charEnd="1573"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="805" sourceSpanEnd="813">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="asthma" mention="asthma" confidence="0.95" sourceSpanStart="815" sourceSpanEnd="821">
+    <properties key="name" value="asthma"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="seizures" mention="seizures" confidence="0.95" sourceSpanStart="823" sourceSpanEnd="831">
+    <properties key="name" value="seizures"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="heartburn" mention="heartburn" confidence="0.95" sourceSpanStart="837" sourceSpanEnd="846">
+    <properties key="name" value="heartburn"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+</raw:RawExtractionResult>

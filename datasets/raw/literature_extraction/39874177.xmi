@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39874177.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39874177/" sourceSha256="0a0bfba3e5ad2a9a283eb9a9c78f9658a31e625dc662b067967629344a96b5bb" sourceText="# PubMed 39874177: Incident heart failure and recurrent coronary events following acute myocardial infarction.&#10;&#10;European heart journal (2025), doi:10.1093/eurheartj/ehae885&#10;&#10;BACKGROUND AND AIMS: Recurrent myocardial infarction (MI) and incident heart failure (HF) are major post-MI complications. Herein, contemporary post-MI risks for recurrent MI and HF are described.&#10;&#10;METHODS: A total of 6804 patients with a primary discharge diagnosis of MI at 28 Baylor Scott &amp; White Health hospitals (January 2015 to December 2021) were studied. Patient characteristics, treatment, and outcomes, including incident HF, recurrent MI, all-cause death, and all-cause and cardiovascular rehospitalizations, were assessed. Landmark approach anchored at 3 months post-discharge was used to assess 1-year outcomes.&#10;&#10;RESULTS: Median age was 69 years, 59.7% were male, and 76.7% had non-ST-elevation MI. Comorbidities included hypertension (89%), dyslipidaemia (87%), Type 2 diabetes (48%), and chronic kidney disease (34%); 17% had a history of MI and 23% of HF; 63% underwent percutaneous/surgical revascularization. In landmark-anchored 1-year outcomes (N = 6210), 413 (6.7%) patients died, 1730 (27.9%) had all-cause and 735 (11.8%) cardiovascular hospitalizations, 234 (3.8%) had recurrent MI. Of patients without history of HF, 1160 (23.8%) developed incident HF [42.2%, 26.7%, and 31.1% with ejection fraction (EF) &lt; 40%, 41-49%, and &gt;50%, respectively) within 3 months of discharge. Patients who developed HF had higher risk of death and hospitalizations (all P &lt; .001), irrespective of EF. Of 2179 patients with EF &gt; 50% without prevalent HF or HF during index hospitalization, 257 (11.8%) developed HF and 77 (3.5%) recurrent MI within 1 year.&#10;&#10;CONCLUSIONS: In a contemporary post-MI cohort, the risk for incident HF was greater than recurrent MI, even among those with normal EF and no HF at discharge.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:45:47+00:00" xmi:version="2.0">
+  <chunks charEnd="1896"/>
+  <entities type="Condition" id="heart-failure" mention="incident heart failure" confidence="0.95" sourceSpanStart="19" sourceSpanEnd="41">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="recurrent-myocardial-infarction" mention="recurrent myocardial infarction" confidence="0.95" sourceSpanStart="195" sourceSpanEnd="226">
+    <properties key="name" value="recurrent myocardial infarction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-rehospitalizations" mention="all-cause ... rehospitalizations" confidence="0.9" sourceSpanStart="444" sourceSpanEnd="476">
+    <properties key="name" value="all-cause rehospitalizations"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="cardiovascular-rehospitalizations" mention="cardiovascular rehospitalizations" confidence="0.9" sourceSpanStart="659" sourceSpanEnd="692">
+    <properties key="name" value="cardiovascular rehospitalizations"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="death" mention="death" confidence="0.9" sourceSpanStart="1518" sourceSpanEnd="1523">
+    <properties key="name" value="death"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="death" confidence="0.95" evidence="Patients who developed HF had higher risk of death and hospitalizations (all P &lt; .001), irrespective of EF." sourceSpanStart="1473" sourceSpanEnd="1580"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="all-cause-rehospitalizations" confidence="0.95" evidence="Patients who developed HF had higher risk of death and hospitalizations (all P &lt; .001), irrespective of EF." sourceSpanStart="1473" sourceSpanEnd="1580"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="cardiovascular-rehospitalizations" confidence="0.95" evidence="Patients who developed HF had higher risk of death and hospitalizations (all P &lt; .001), irrespective of EF." sourceSpanStart="1473" sourceSpanEnd="1580"/>
+</raw:RawExtractionResult>

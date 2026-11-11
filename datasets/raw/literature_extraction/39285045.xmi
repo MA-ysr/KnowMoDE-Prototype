@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39285045.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39285045/" sourceSha256="7c0d4344788ccd7b1bf82233bacd929137f69c795e8b9c7a2277332d8c3d87f7" sourceText="# PubMed 39285045: Unplanned hospital readmission after cholecystectomy in adults with cerebral palsy.&#10;&#10;Surgical endoscopy (2024), doi:10.1007/s00464-024-11224-9&#10;&#10;BACKGROUND: Adults with cerebral palsy (CP) are a largely understudied, growing population with unique health care requirements. We sought to establish a deeper understanding of the surgical risk in adults with CP undergoing a common general surgical procedure: cholecystectomy.&#10;&#10;METHODS: Data were obtained from the State Inpatient Database developed for the Healthcare Cost and Utilization Project. Inclusion criteria included patients ≥ 18 years with CP and a primary ICD-9 procedure code indicating open or laparoscopic cholecystectomy. Demographics, procedure-related factors, and comorbid conditions were analyzed, and unplanned 30 and 90 day readmission rates calculated for each variable. Reasons for readmission based on ICD-9 diagnosis codes were grouped into relevant categories. Univariate analysis identified factors significantly associated with readmission rates.&#10;&#10;RESULTS: A total of 802 patients with CP met the inclusion criteria. Unplanned 30 and 90 day readmission rates after laparoscopic cholecystectomy were 11.4% and 18.1%, respectively. Average length of stay (LOS) after laparoscopic cholecystectomy was 7.1 days. After open cholecystectomy, 30 and 90 day readmission rates were 16.9% and 30.3% with an average LOS of 14.6 days. Infection was the most common cause for 30 and 90 day readmission. Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition. Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition.&#10;&#10;CONCLUSION: Unplanned readmission rates after open and laparoscopic cholecystectomy in adult patients with CP are much higher than previously demonstrated rates in the general population. These patients frequently suffer multiple comorbid conditions that significantly complicate their surgical care. As more and more of these patients live longer into adulthood, further study is warranted to grasp the perioperative risk of simple and complex surgical procedures.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:45:19+00:00" xmi:version="2.0">
+  <chunks charEnd="2305"/>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30 day readmission" confidence="0.95" sourceSpanStart="1509" sourceSpanEnd="1527">
+    <properties key="name" value="unplanned 30 day readmission"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="90-day-readmission" mention="90 day readmission" confidence="0.95" sourceSpanStart="1670" sourceSpanEnd="1688">
+    <properties key="name" value="unplanned 90 day readmission"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="RiskFactor" id="type-of-cholecystectomy" mention="type of cholecystectomy" confidence="0.9" sourceSpanStart="1698" sourceSpanEnd="1721">
+    <properties key="name" value="type of cholecystectomy"/>
+    <properties key="description" value="open or laparoscopic cholecystectomy"/>
+  </entities>
+  <entities type="RiskFactor" id="length-of-stay" mention="LOS" confidence="0.9" sourceSpanStart="1723" sourceSpanEnd="1726">
+    <properties key="name" value="length of stay"/>
+    <properties key="description" value="average length of stay after cholecystectomy"/>
+  </entities>
+  <entities type="RiskFactor" id="discharge-to-skilled-nursing-facility" mention="discharge to skilled nursing facility" confidence="0.95" sourceSpanStart="1728" sourceSpanEnd="1765">
+    <properties key="name" value="discharge to skilled nursing facility"/>
+    <properties key="description" value="patient discharged to a skilled nursing facility"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1619" sourceSpanEnd="1627">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="malnutrition" mention="malnutrition" confidence="0.95" sourceSpanStart="1824" sourceSpanEnd="1836">
+    <properties key="name" value="malnutrition"/>
+    <properties key="category" value="nutritional"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1780" sourceSpanEnd="1793">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="renal-disease" mention="renal disease" confidence="0.95" sourceSpanStart="1795" sourceSpanEnd="1808">
+    <properties key="name" value="renal disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.95" sourceSpanStart="1810" sourceSpanEnd="1818">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="type-of-cholecystectomy" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition." sourceSpanStart="1485" sourceSpanEnd="1645"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="length-of-stay" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition." sourceSpanStart="1485" sourceSpanEnd="1645"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="discharge-to-skilled-nursing-facility" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition." sourceSpanStart="1485" sourceSpanEnd="1645"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition." sourceSpanStart="1485" sourceSpanEnd="1645"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="malnutrition" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Factors associated with 30 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid diabetes and malnutrition." sourceSpanStart="1485" sourceSpanEnd="1645"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="type-of-cholecystectomy" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="length-of-stay" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="discharge-to-skilled-nursing-facility" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="renal-disease" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="epilepsy" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="malnutrition" targetType="ClinicalOutcome" targetId="90-day-readmission" confidence="0.9" evidence="Factors associated with 90 day readmission included type of cholecystectomy, LOS, discharge to skilled nursing facility, and comorbid heart failure, renal disease, epilepsy, and malnutrition." sourceSpanStart="1646" sourceSpanEnd="1837"/>
+</raw:RawExtractionResult>

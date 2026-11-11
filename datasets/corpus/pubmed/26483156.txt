@@ -1,0 +1,11 @@
+# PubMed 26483156: Hospital Readmission after Intracerebral Hemorrhage.
+
+Journal of stroke and cerebrovascular diseases : the official journal of National Stroke Association (2016), doi:10.1016/j.jstrokecerebrovasdis.2015.09.009
+
+BACKGROUND: Intracerebral hemorrhage (ICH) is the most severe form of stroke, but limited literature exists on readmission after ICH. We aimed to assess frequencies, causes, and predictors of early and late readmissions within 1 year after ICH.
+
+METHODS: All patients admitted to the Department of Neurology at Haukeland University Hospital with acute stroke were prospectively included in the Bergen Norwegian Stroke Research Registry (NORSTROKE) registry. Surviving patients diagnosed with ICH were followed by medical chart reviews for 1 year. The first unplanned readmission was used as final outcome, and readmitted patients were defined as early readmitted (≤90 days) and late readmitted (91-365 days). Logistic regression was performed to assess predictors for early and late readmission.
+
+RESULTS: Of 121 patients discharged alive, 27 were early readmitted, and 17 were late readmitted. Within 1 year, 40.6% had at least 1 unplanned readmission. The most frequent cause of early readmission was infection, and the most frequent causes for late readmission were recurrent stroke and cardiovascular disease. Nursing home discharge was the only independent predictor of early readmission. Diabetes mellitus and increased length of the index admission were independent predictors of late readmission. Early readmitted patients were older and had more severe stroke and lower levels of fibrinogen on index admission compared with patients who were readmitted late.
+
+CONCLUSIONS: Readmission after ICH is frequent, and many patients are early readmitted. Early and late readmissions differed in both causes and predictors for readmission, reflecting different underlying mechanisms for readmission.

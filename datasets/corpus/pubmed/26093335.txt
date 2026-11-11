@@ -1,0 +1,9 @@
+# PubMed 26093335: Use of Post-acute Care Services and Readmissions After Left Ventricular Assist Device Implantation in Privately Insured Patients.
+
+Journal of cardiac failure (2015), doi:10.1016/j.cardfail.2015.06.012
+
+BACKGROUND: Very little is known about health care resource utilization, including post-acute care use and hospital readmissions, after left ventricular assist device (LVAD) implantation.
+
+METHODS AND RESULTS: Administrative claims from a database of multiple United States health plans were used to identify patients that received an LVAD (ICD-9 code 37.66) and survived to hospital discharge from January 1-2006, through September 30-2013. Post-acute care use was defined as a skilled nursing facility or rehabilitation stay within 90 days after hospital discharge. Patients were censored at heart transplantation or end of coverage through December 31-2013. Of 583 patients (mean age 55 years, 77% male), 223 (38.3%) used post-acute care services, more commonly in patients with diabetes, who required hemodialysis, and who had LVADs implanted at hospitals in more populated areas, with more beds, and in the northeast region (P < .05 for each). The most common reasons for readmission were device complications, heart failure, and arrhythmia. Readmission risk was higher in patients who had diabetes, peripheral vascular disease, and longer hospital length of stay, but it did not differ by post-acute care use.
+
+CONCLUSIONS: Use of post-acute care services varies based on hospital characteristics. We found no association between post-acute care use and readmission risk after LVAD implantation.

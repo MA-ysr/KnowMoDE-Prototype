@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33602466.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33602466/" sourceSha256="c4bd23bcc05e0bdd8fb4b896006c45f10ba3f169e783d4dabcc5a52e7aeaa1db" sourceText="# PubMed 33602466: Patient Characteristics and Clinical Outcomes of Type 1 Versus Type 2 Myocardial Infarction.&#10;&#10;Journal of the American College of Cardiology (2021), doi:10.1016/j.jacc.2020.12.034&#10;&#10;BACKGROUND: Type 2 myocardial infarction (MI) patients may have different characteristics and outcomes when compared with type 1 MI.&#10;&#10;OBJECTIVES: The purpose of this study was to compare patients with type 1 MI to those with type 2 MI in the United States.&#10;&#10;METHODS: Using the Nationwide Readmissions Database, MI patients were categorized over the 3 months following the introduction of an International Classification of Diseases-10th Revision code specific for type 2 MI. Baseline characteristics and inpatient and post-discharge outcomes among both cohorts were compared.&#10;&#10;RESULTS: There were 216,657 patients with type 1 MI, 37,765 patients with type 2 MI, and 1,525 patients with both type 1 and 2 MI. Patients with type 2 MI were older (71 years vs. 69 years; p &lt; 0.001), were more likely to be women (47.3% vs. 40%; p &lt; 0.001), and had higher prevalence of heart failure (27.9% vs. 10.9%; p &lt; 0.001), kidney disease (35.7% vs. 25.7%; p &lt; 0.001), and atrial fibrillation (31% vs. 21%; p &lt; 0.001). Rates of coronary angiography (10.9% vs. 57.3%; p &lt; 0.001), percutaneous coronary intervention (1.7% vs. 38.5%; p &lt; 0.001), and coronary artery bypass grafting (0.4% vs. 7.8%; p &lt; 0.001) were lower among type 2 MI patients. Patients with type 2 MI had lower risk of in-hospital mortality (adjusted odds ratio: 0.57 [95% confidence interval: 0.54 to 0.60]) and 30-day MI readmission (adjusted odds ratio: 0.46 [95% confidence interval: 0.35 to 0.59]). There was no difference in risk of 30-day all-cause or heart failure readmission.&#10;&#10;CONCLUSIONS: Patients with type 2 MI have a unique cardiovascular phenotype when compared with type 1 MI, and are managed in a heterogenous manner. Validated management strategies for type 2 MI are needed.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:42+00:00" xmi:version="2.0">
+  <chunks charEnd="1943"/>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1064" sourceSpanEnd="1077">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="kidney disease" confidence="0.95" sourceSpanStart="1108" sourceSpanEnd="1122">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="1157" sourceSpanEnd="1176">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="in-hospital-mortality" mention="in-hospital mortality" confidence="0.95" sourceSpanStart="1469" sourceSpanEnd="1490">
+    <properties key="name" value="in-hospital mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-mi-readmission" mention="30-day MI readmission" confidence="0.95" sourceSpanStart="1563" sourceSpanEnd="1584">
+    <properties key="name" value="30-day myocardial infarction readmission"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-heart-failure-readmission" mention="heart failure readmission" confidence="0.95" sourceSpanStart="1709" sourceSpanEnd="1734">
+    <properties key="name" value="heart failure readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+</raw:RawExtractionResult>

@@ -1,0 +1,5 @@
+# PubMed 42036164: Transition of Care: Diabetes Management after Hospital Discharge.
+
+The Medical clinics of North America (2026), doi:10.1016/j.mcna.2026.01.004
+
+Effective discharge planning for patients with diabetes requires a comprehensive, individualized approach. Patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia. Medication recommendations must be tailored to the patient's cognitive status, functional ability, co-morbid conditions, and overall capacity to implement the treatment regimen. Particular caution is required in older adults, in whom polypharmacy, frailty, and hypoglycemia risk are heightened. The type of diabetes will dictate appropriate pharmacologic options. Clear communication with both patient and outpatient providers is essential to ensure continuity of care and to promote a safe and effective transition.

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36644890.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36644890/" sourceSha256="132ee05261fbed79e522c20d54d8fb1a14cd8617ce1cd9bb6cade8d91d5ee75b" sourceText="# PubMed 36644890: Acute heart failure after non-cardiac surgery: incidence, phenotypes, determinants and outcomes.&#10;&#10;European journal of heart failure (2023), doi:10.1002/ejhf.2773&#10;&#10;AIMS: Primary acute heart failure (AHF) is a common cause of hospitalization. AHF may also develop postoperatively (pAHF). The aim of this study was to assess the incidence, phenotypes, determinants and outcomes of pAHF following non-cardiac surgery.&#10;&#10;METHODS AND RESULTS: A total of 9164 consecutive high-risk patients undergoing 11 262 non-cardiac inpatient surgeries were prospectively included. The incidence, phenotypes, determinants and outcome of pAHF, centrally adjudicated by independent cardiologists, were determined. The incidence of pAHF was 2.5% (95% confidence interval [CI] 2.2-2.8%); 51% of pAHF occurred in patients without known heart failure (de novo pAHF), and 49% in patients with chronic heart failure. Among patients with chronic heart failure, 10% developed pAHF, and among patients without a history of heart failure, 1.5% developed pAHF. Chronic heart failure, diabetes, urgent/emergent surgery, atrial fibrillation, cardiac troponin elevations above the 99th percentile, chronic obstructive pulmonary disease, anaemia, peripheral artery disease, coronary artery disease, and age, were independent predictors of pAHF in the logistic regression model. Patients with pAHF had significantly higher all-cause mortality (44% vs. 11%, p &lt; 0.001) and AHF readmission (15% vs. 2%, p &lt; 0.001) within 1 year than patients without pAHF. After Cox regression analysis, pAHF was an independent predictor of all-cause mortality (adjusted hazard ratio [aHR] 1.7 [95% CI 1.3-2.2]; p &lt; 0.001) and AHF readmission (aHR 2.3 [95% CI 1.5-3.7]; p &lt; 0.001). Findings were confirmed in an external validation cohort using a prospective multicentre cohort of 1250 patients (incidence of pAHF 2.4% [95% CI 1.6-3.3%]).&#10;&#10;CONCLUSIONS: Postoperative AHF frequently developed following non-cardiac surgery, being de novo in half of cases, and associated with a very high mortality.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:49:47+00:00" xmi:version="2.0">
+  <chunks charEnd="2060"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1070" sourceSpanEnd="1078">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-heart-failure" mention="Chronic heart failure" confidence="0.95" sourceSpanStart="885" sourceSpanEnd="906">
+    <properties key="name" value="chronic heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="1105" sourceSpanEnd="1124">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="chronic obstructive pulmonary disease" confidence="0.95" sourceSpanStart="1181" sourceSpanEnd="1218">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="anaemia" mention="anaemia" confidence="0.95" sourceSpanStart="1220" sourceSpanEnd="1227">
+    <properties key="name" value="anaemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="peripheral-artery-disease" mention="peripheral artery disease" confidence="0.95" sourceSpanStart="1229" sourceSpanEnd="1254">
+    <properties key="name" value="peripheral artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="1256" sourceSpanEnd="1279">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="ahf-readmission-within-1-year" mention="AHF readmission" confidence="0.95" sourceSpanStart="1453" sourceSpanEnd="1468">
+    <properties key="name" value="ahf readmission within 1 year"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-mortality" mention="all-cause mortality" confidence="0.95" sourceSpanStart="1603" sourceSpanEnd="1622">
+    <properties key="name" value="all-cause mortality"/>
+  </entities>
+  <entities type="Condition" id="postoperative-acute-heart-failure" mention="pAHF" confidence="0.95" sourceSpanStart="1871" sourceSpanEnd="1875">
+    <properties key="name" value="postoperative acute heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="postoperative-acute-heart-failure" targetType="ClinicalOutcome" targetId="all-cause-mortality" confidence="0.95" evidence="After Cox regression analysis, pAHF was an independent predictor of all-cause mortality (adjusted hazard ratio [aHR] 1.7 [95% CI 1.3-2.2]; p &lt; 0.001)" sourceSpanStart="1114" sourceSpanEnd="1222"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="postoperative-acute-heart-failure" targetType="ClinicalOutcome" targetId="ahf-readmission-within-1-year" confidence="0.95" evidence="After Cox regression analysis, pAHF was an independent predictor of all-cause mortality (adjusted hazard ratio [aHR] 1.7 [95% CI 1.3-2.2]; p &lt; 0.001) and AHF readmission (aHR 2.3 [95% CI 1.5-3.7]; p &lt; 0.001)." sourceSpanStart="1114" sourceSpanEnd="1283"/>
+</raw:RawExtractionResult>

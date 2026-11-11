@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/6893265" sourceUri="https://pubmed.ncbi.nlm.nih.gov/6893265/" sourceSha256="61482167014735f64d1eb9cbc0eada2d409583320cc83f716229bf59617849b7" sourceText="Propylthiouracil-induced hepatic damage. Two cases of propylthiouracil-induced liver damage have been observed. The first case is of an acute type of damage, proven by rechallenge; the second presents a clinical and histologic picture resembling chronic active hepatitis, with spontaneous remission." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:13+00:00" xmi:version="2.0">
+  <chunks charEnd="299"/>
+  <entities type="Drug" id="propylthiouracil" mention="Propylthiouracil" confidence="1.0" sourceSpanStart="0" sourceSpanEnd="16">
+    <properties key="name" value="propylthiouracil"/>
+  </entities>
+  <entities type="Condition" id="hepatic-damage" mention="hepatic damage" confidence="0.95" sourceSpanStart="25" sourceSpanEnd="39">
+    <properties key="name" value="hepatic damage"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="liver-damage" mention="liver damage" confidence="0.95" sourceSpanStart="79" sourceSpanEnd="91">
+    <properties key="name" value="liver damage"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="acute-type-of-damage" mention="acute type of damage" confidence="0.9" sourceSpanStart="136" sourceSpanEnd="156">
+    <properties key="name" value="acute type of damage"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="chronic-active-hepatitis" mention="chronic active hepatitis" confidence="0.95" sourceSpanStart="246" sourceSpanEnd="270">
+    <properties key="name" value="chronic active hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="propylthiouracil" targetType="Condition" targetId="hepatic-damage" confidence="0.95" evidence="Propylthiouracil-induced hepatic damage." sourceSpanStart="0" sourceSpanEnd="40"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="propylthiouracil" targetType="Condition" targetId="liver-damage" confidence="0.95" evidence="Two cases of propylthiouracil-induced liver damage have been observed." sourceSpanStart="41" sourceSpanEnd="111"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="propylthiouracil" targetType="Condition" targetId="acute-type-of-damage" confidence="0.9" evidence="The first case is of an acute type of damage, proven by rechallenge" sourceSpanStart="112" sourceSpanEnd="179"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="propylthiouracil" targetType="Condition" targetId="chronic-active-hepatitis" confidence="0.9" evidence="the second presents a clinical and histologic picture resembling chronic active hepatitis, with spontaneous remission." sourceSpanStart="181" sourceSpanEnd="299"/>
+</raw:RawExtractionResult>

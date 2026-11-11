@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetes-type-2.txt" sourceUri="https://medlineplus.gov/diabetestype2.html" sourceSha256="4290fbd103fdacf568fb2fabb47a371faa40537c59e2dbe8b72976a4887349ea" sourceText="# MedlinePlus health topic: Diabetes Type 2&#10;&#10;Also called: Non-Insulin Dependent Diabetes Mellitus, Sugar Diabetes, Type II Diabetes, Type 2 Diabetes&#10;&#10;What is type 2 diabetes?Type 2 diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose is your main source of energy. It comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. If you have diabetes, your body doesn't make enough insulin or doesn't use insulin well. The glucose then stays in your blood and not enough goes into your cells.&#10;&#10;Over time, having too much glucose in your blood can cause health problems. But you can take steps to manage your diabetes and try to prevent these health problems.&#10;&#10;What causes type 2 diabetes?Type 2 diabetes may be caused by a combination of factors:&#10;&#10;Being overweight or having obesity&#10;&#10;Not being physically active&#10;&#10;Genetics and family history&#10;&#10;Type 2 diabetes usually starts with insulin resistance. This is a condition in which your cells don't respond normally to insulin. As a result, your body needs more insulin to help the glucose enter your cells. At first, your body makes more insulin to try to get cells to respond. But over time, your body can't make enough insulin, and your blood glucose levels rise.&#10;&#10;Who is at risk for type 2 diabetes?You are at higher risk of developing type 2 diabetes if you:&#10;&#10;Are over age 45. Children, teenagers, and younger adults can get type 2 diabetes, but it is more common in middle-aged and older people.&#10;&#10;Have prediabetes, which means that your blood glucose is high for you but not high enough to be called diabetes&#10;&#10;Had diabetes in pregnancy or gave birth to a baby weighing 9 pounds or more.&#10;&#10;Have a family history of diabetes&#10;&#10;Are overweight or have obesity&#10;&#10;Are Black or African American, Hispanic/Latino, American Indian, Asian American, or Pacific Islander&#10;&#10;Are not physically active&#10;&#10;Have other conditions such as high blood pressure, heart disease, stroke, polycystic ovary syndrome (PCOS), or depression&#10;&#10;Have low HDL (good) cholesterol and high triglycerides&#10;&#10;Have acanthosis nigricans - dark, thick, and velvety skin around your neck or armpits&#10;&#10;What are the symptoms of type 2 diabetes?Many people with type 2 diabetes have no symptoms at all. If you do have them, the symptoms develop slowly over several years. They might be so mild that you do not notice them. The symptoms can include:&#10;&#10;Increased thirst and urination&#10;&#10;Increased hunger&#10;&#10;Feeling tired&#10;&#10;Blurred vision&#10;&#10;Numbness or tingling in the feet or hands&#10;&#10;Sores that do not heal&#10;&#10;Unexplained weight loss&#10;&#10;How is type 2 diabetes diagnosed?Your provider will use blood tests to diagnose type 2 diabetes. The blood tests include:&#10;&#10;A1C test, which measures your average blood glucose level over the past 3 months.&#10;&#10;Fasting plasma glucose (FPG) test, which measures your current blood glucose level. You need to fast (not eat or drink anything except water) for at least 8 hours before the test.&#10;&#10;Random plasma glucose (RPG) test, which measures your current blood glucose level. This test is used when you have diabetes symptoms and the provider does not want to wait for you to fast before having the test.&#10;&#10;What are the treatments for type 2 diabetes?Treatment for type 2 diabetes involves managing your blood glucose levels. Many people are able to do this by living a healthy lifestyle. Some people may also need to take medicine:&#10;&#10;A healthy lifestyle includes following a healthy eating plan and getting regular physical activity. You need to learn how to balance what you eat and drink with physical activity and diabetes medicine, if you take any.&#10;&#10;Medicines for diabetes include oral medicines, insulin, and other injectable medicines. Over time, some people will need to take more than one type of medicine to control their diabetes.&#10;&#10;You will need to check your blood glucose regularly. Your provider will tell you how often you need to do it.&#10;&#10;It's also important to keep your blood pressure and cholesterol levels close to the targets your provider sets for you. Make sure to get your screening tests regularly.&#10;&#10;Can type 2 diabetes be prevented?You can take steps to help prevent or delay type 2 diabetes by losing weight if you are overweight, eating fewer calories, and being more physically active. If you have a condition which raises your risk for type 2 diabetes, managing that condition may lower your risk of getting type 2 diabetes.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:20:13+00:00" xmi:version="2.0">
+  <chunks charEnd="3959"/>
+  <chunks index="1" charStart="3662" charEnd="4532"/>
+  <entities type="Condition" id="type-2-diabetes" mention="Type 2 diabetes" confidence="0.99" sourceSpanStart="133" sourceSpanEnd="148">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="insulin-resistance" mention="insulin resistance" confidence="0.95" sourceSpanStart="973" sourceSpanEnd="991">
+    <properties key="name" value="insulin resistance"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="prediabetes" mention="prediabetes" confidence="0.95" sourceSpanStart="1548" sourceSpanEnd="1559">
+    <properties key="name" value="prediabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="1960" sourceSpanEnd="1979">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="1981" sourceSpanEnd="1994">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="stroke" confidence="0.95" sourceSpanStart="1996" sourceSpanEnd="2002">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="polycystic-ovary-syndrome" mention="polycystic ovary syndrome (PCOS)" confidence="0.95" sourceSpanStart="2004" sourceSpanEnd="2036">
+    <properties key="name" value="polycystic ovary syndrome"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="depression" mention="depression" confidence="0.95" sourceSpanStart="2041" sourceSpanEnd="2051">
+    <properties key="name" value="depression"/>
+    <properties key="category" value="mental health"/>
+  </entities>
+  <entities type="Condition" id="acanthosis-nigricans" mention="acanthosis nigricans" confidence="0.95" sourceSpanStart="2114" sourceSpanEnd="2134">
+    <properties key="name" value="acanthosis nigricans"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="RiskFactor" id="overweight-or-obesity" mention="Being overweight or having obesity" confidence="0.95" sourceSpanStart="843" sourceSpanEnd="877">
+    <properties key="name" value="overweight or obesity"/>
+    <properties key="description" value="Being overweight or having obesity"/>
+  </entities>
+  <entities type="RiskFactor" id="not-being-physically-active" mention="Not being physically active" confidence="0.95" sourceSpanStart="879" sourceSpanEnd="906">
+    <properties key="name" value="not being physically active"/>
+    <properties key="description" value="Not being physically active"/>
+  </entities>
+  <entities type="RiskFactor" id="genetics-and-family-history" mention="Genetics and family history" confidence="0.95" sourceSpanStart="908" sourceSpanEnd="935">
+    <properties key="name" value="genetics and family history"/>
+    <properties key="description" value="Genetics and family history"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="3709" sourceSpanEnd="3716">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="3709" sourceSpanEnd="3716" chunkIndex="1">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="3839" sourceSpanEnd="3847" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="4135" sourceSpanEnd="4150" chunkIndex="1">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

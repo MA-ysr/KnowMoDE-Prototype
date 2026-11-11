@@ -1,0 +1,10 @@
+**Guideline statements applying to this encounter** (patient conditions: {% for a in decision.active if a.concept == 'Condition' %}{{ a.entity }}{% if not loop.last %}, {% endif %}{% else %}none recorded{% endfor %})
+
+{% if facts %}
+| Condition | Recommendation | Source | Strength | Recommends | Provenance |
+|---|---|---|---|---|---|
+{% for f in facts[:audience.budget.maxFacts] %}| {{ f.condition }} | {{ f.recommendation }} | {{ f.guidelineSource }} | {{ f.strength or '-' }} | {{ f.recommends | join(', ') if f.recommends else '-' }} | {{ f.sourceDocument }} (fact {{ f.factId }}, conf. {{ '%.2f' | format(f.confidence) }}) |
+{% endfor %}
+{% else %}
+No guideline statement in the knowledge graph applies to these conditions.
+{% endif %}

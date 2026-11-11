@@ -1,0 +1,15 @@
+**Prediction:** {{ decision.label }} (p = {{ '%.2f' | format(decision.probability) }})
+
+**Attributed factors** (top {{ decision.factors | length }}): {% for a in decision.factors %}{{ a.feature }} = {{ a.value }} ({{ '%+.3f' | format(a.attribution) }}){% if not loop.last %}, {% endif %}{% endfor %}
+
+**Knowledge-graph evidence**
+{% for f in facts[:audience.budget.maxFacts] %}
+{{ loop.index }}. {% if f.drug %}{{ f.drug }} MAY_CAUSE {{ f.condition }} INCREASES_RISK_OF {{ f.outcome }}{% elif f.labTest %}{{ f.labTest }} INDICATES {{ f.condition }} INCREASES_RISK_OF {{ f.outcome }}{% else %}{{ f.factorType }} "{{ f.factor }}" {{ f.relation }} {{ f.outcome }}{% endif %}
+   evidence: {{ f.sourceDocument or f.source1 }}{% if f.charStart is defined and f.charStart is not none %} [chars {{ f.charStart }}-{{ f.charEnd }}]{% endif %}, confidence {{ '%.2f' | format(f.confidence or f.confidence1) }}, fact {{ f.factId or f.factId1 }}
+{% else %}
+No validated evidence path from the attributed factors to the outcome.
+{% endfor %}
+{% set omitted = (available_facts.values() | sum) - (facts | selectattr('factorKey') | list | length) %}
+{% if omitted > 0 %}
+({{ omitted }} further fact(s) for these factors omitted by the presentation budget.)
+{% endif %}

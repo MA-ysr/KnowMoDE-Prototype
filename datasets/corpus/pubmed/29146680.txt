@@ -1,0 +1,17 @@
+# PubMed 29146680: The association between patient experience factors and likelihood of 30-day readmission: a prospective cohort study.
+
+BMJ quality & safety (2018), doi:10.1136/bmjqs-2017-007184
+
+OBJECTIVE: Hospital care comprises nearly a third of US healthcare expenditures. Fifteen to 20 per cent of this spending is considered to be potentially preventable. Risk prediction models have suboptimal accuracy and typically exclude patient experience data. No studies have explored patient perceptions of the likelihood of readmission during index admission. Our objective was to examine associations between patient perceptions of care during index hospital admission and 30-day readmission.
+
+DESIGN: Prospective cohort study.
+
+SETTING: Two inpatient adult medicine units at Massachusetts General Hospital, Boston, Massachusetts.
+
+PARTICIPANTS: Eight hundred and forty-six patients admitted to study units between January 2012 and January 2016 who met eligibility criteria and consented to enrolment.
+
+MAIN OUTCOME: Odds of 30-day readmission.
+
+RESULTS: Of 1754 eligible participants, 846 (48%) were enrolled and 201 (23.8%) were readmitted within 30 days. Readmitted participants were less likely to have a high school diploma/GED (44.3% not readmitted vs 53.5% readmitted, P=0.02). In multivariable models adjusting for baseline differences, respondents who reported being 'very satisfied' with the care received during the index hospitalisation were less likely to be readmitted (adjusted OR 0.61, 95% CI 0.43 to 0.88, P=0.007). Participants reporting doctors 'always listened to them carefully' were less likely to be readmitted (adjusted OR 0.68, 95% CI 0.48 to 0.97, P=0.03). Participants reporting they were 'very likely' to be readmitted were not more likely to be readmitted (adjusted OR 1.35, 95% CI 0.83 to 2.19, P=0.22).
+
+CONCLUSION: Participants reporting high satisfaction and good provider communication were less likely to be readmitted. Rates of readmission were increased among participants stating they were very likely to be readmitted though this association was not statistically significant. Incorporating patient-reported measures during index hospitalisations may improve readmission prediction.

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  M1 model 4/5: Explainability of the diabetes readmission use case (conforms to xaikg::explainability).
+  The explicit explanation contract (R5): which audience receives which explanation type, backed by
+  which query patterns of the KG schema, rendered with which template and within which budget.
+  T6 generates one endpoint per (explanation type, audience) pair, plus /trace for audiences that
+  require full provenance.
+
+  Templates are Jinja2 bodies. Variables available at render time:
+    decision         {id, label, probability, positive, model, attributionMethod,
+                      factors: [{feature, value, entity, concept, key, attribution}]   (attributed, bound)
+                      active:  [{feature, value, entity, concept, key}]}               (every active binding)
+    facts            rows returned by the query patterns (keys as in the Cypher RETURN clauses), after the
+                     presentation budget was spent on them with the audience's allocation
+    available_facts  {entity: number of candidate facts for that attributed factor before the budget}
+    audience         {role, technicalLevel, budget}
+-->
+<explainability:ExplainabilityConfig
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:explainability="http://www.xaikg.org/1.0/explainability"
+    name="DiabetesReadmissionExplainability" retrievalLimit="100"
+    description="Audience-specific explanations of 30-day readmission risk predictions, grounded in the clinical KG.">
+  <targetSchema href="kg-schema.xmi#DiabetesReadmissionKG"/>
+
+  <!-- ============================ Audiences ============================ -->
+  <audiences role="patient" technicalLevel="LOW" requiresFullProvenance="false"
+      informationNeeds="Why am I considered at risk of coming back to the hospital, and what can I do about it?">
+    <presentationBudget maxFacts="3" maxWords="120" allowCodes="false" plainLanguage="true" allocation="ROUND_ROBIN"/>
+  </audiences>
+
+  <audiences role="clinician" technicalLevel="HIGH" requiresFullProvenance="false"
+      informationNeeds="Which factors drive this prediction, what is the clinical evidence, which factors are modifiable?">
+    <presentationBudget maxFacts="10" maxWords="0" allowCodes="true" plainLanguage="false" allocation="ROUND_ROBIN"/>
+  </audiences>
+
+  <audiences role="quality_officer" technicalLevel="MEDIUM" requiresFullProvenance="false"
+      informationNeeds="Which guideline recommendations apply to this patient and which care-process factors could lower readmissions?">
+    <presentationBudget maxFacts="6" maxWords="0" allowCodes="true" plainLanguage="false" allocation="ROUND_ROBIN"/>
+  </audiences>
+
+  <audiences role="auditor" technicalLevel="HIGH" requiresFullProvenance="true"
+      informationNeeds="For every fact shown to any user: which source, which prompt version, which LLM, which validation decision, which model elements?">
+    <presentationBudget maxFacts="50" maxWords="0" allowCodes="true" plainLanguage="false" allocation="ROUND_ROBIN"/>
+  </audiences>
+
+  <!-- ============================ Explanation types ============================ -->
+  <explanationTypes name="PlainLanguageContrast" category="CONTRASTIVE"
+      description="Tells a patient which of their factors differ from similar patients who were not readmitted, in plain language, with one source per fact."
+      queryPatterns="kg-schema.xmi#contrastive_difference kg-schema.xmi#causal_context"
+      audiences="patient" template="tpl_plain_contrast"/>
+
+  <explanationTypes name="CausalEvidence" category="CAUSAL"
+      description="Evidence paths from the attributed factors to the outcome, including drug-adverse-effect and lab-indication chains."
+      queryPatterns="kg-schema.xmi#causal_context kg-schema.xmi#drug_adverse_chain kg-schema.xmi#lab_indication_chain"
+      audiences="clinician quality_officer" template="tpl_causal_evidence"/>
+
+  <explanationTypes name="ModifiableFactors" category="COUNTERFACTUAL"
+      description="What could change the predicted outcome: guideline recommendations on modifiable treatments for the conditions of the encounter, and modifiable protective factors reported in the literature, ranked by their relation to the encounter's active entities. Only entities declared modifiable in the vocabulary are advised on."
+      queryPatterns="kg-schema.xmi#counterfactual_recommendations kg-schema.xmi#protective_factors"
+      audiences="patient clinician quality_officer" template="tpl_modifiable_factors"/>
+
+  <explanationTypes name="GuidelineCompliance" category="RULE_BASED"
+      description="All guideline statements applying to the patient's conditions, for care-quality review and compliance."
+      queryPatterns="kg-schema.xmi#guideline_rules"
+      audiences="quality_officer auditor" template="tpl_guideline_rules"/>
+
+  <explanationTypes name="AttributionReport" category="FEATURE_ATTRIBUTION"
+      description="The model's feature attributions (SHAP) with each attributed feature grounded in KG evidence and provenance."
+      queryPatterns="kg-schema.xmi#causal_context"
+      audiences="clinician auditor" template="tpl_attribution_report"/>
+
+  <!-- ============================ Templates ============================ -->
+  <templates name="tpl_plain_contrast" format="TEXT">
+    <templatePattern>{% if decision.positive %}Your care team's risk tool estimates that you have a higher chance than similar patients of needing to come back to the hospital within 30 days. The main reasons, according to published medical sources:{% else %}Your care team's risk tool estimates that your chance of needing to come back to the hospital within 30 days is not higher than for similar patients. The factors it weighed most, according to published medical sources:{% endif %}
+
+{% for factor, group in (facts | groupby('factor'))[:audience.budget.maxFacts] %}
+- {{ (group[0].factorLabel or factor) | plain }}: linked to a higher chance of returning to the hospital (source: {{ group[0].sourceDocument | source_title }}).
+{% else %}
+- The published sources available to the tool do not describe the factors behind this estimate.
+{% endfor %}
+This is not a diagnosis. Your doctor or nurse can explain what these factors mean for you and what you can do about them.</templatePattern>
+  </templates>
+
+  <templates name="tpl_causal_evidence" format="MARKDOWN">
+    <templatePattern>**Prediction:** {{ decision.label }} (p = {{ '%.2f' | format(decision.probability) }})
+
+**Attributed factors** (top {{ decision.factors | length }}): {% for a in decision.factors %}{{ a.feature }} = {{ a.value }} ({{ '%+.3f' | format(a.attribution) }}){% if not loop.last %}, {% endif %}{% endfor %}
+
+**Knowledge-graph evidence**
+{% for f in facts[:audience.budget.maxFacts] %}
+{{ loop.index }}. {% if f.drug %}{{ f.drug }} MAY_CAUSE {{ f.condition }} INCREASES_RISK_OF {{ f.outcome }}{% elif f.labTest %}{{ f.labTest }} INDICATES {{ f.condition }} INCREASES_RISK_OF {{ f.outcome }}{% else %}{{ f.factorType }} "{{ f.factor }}" {{ f.relation }} {{ f.outcome }}{% endif %}
+   evidence: {{ f.sourceDocument or f.source1 }}{% if f.charStart is defined and f.charStart is not none %} [chars {{ f.charStart }}-{{ f.charEnd }}]{% endif %}, confidence {{ '%.2f' | format(f.confidence or f.confidence1) }}, fact {{ f.factId or f.factId1 }}
+{% else %}
+No validated evidence path from the attributed factors to the outcome.
+{% endfor %}
+{% set omitted = (available_facts.values() | sum) - (facts | selectattr('factorKey') | list | length) %}
+{% if omitted > 0 %}
+({{ omitted }} further fact(s) for these factors omitted by the presentation budget.)
+{% endif %}</templatePattern>
+  </templates>
+
+  <templates name="tpl_modifiable_factors" format="MARKDOWN">
+    <templatePattern>**What could lower this risk** ({{ audience.role }} view)
+{% set ns = namespace(said=[]) %}
+{% for f in facts %}
+{% if audience.budget.plainLanguage %}{% set line = ('A guideline (' ~ f.guidelineSource ~ ') recommends ' ~ (f.recommendsLabel | join(', ')) ~ ' for people with ' ~ (f.conditionLabel or f.condition) ~ '. Your care team can discuss it with you') if f.recommendation else (((f.protectiveLabel or f.protectiveFactor) | plain) ~ ': linked to a lower chance of returning to the hospital') %}{% else %}{% set line = (f.recommendation ~ ' (' ~ f.guidelineSource ~ ((', ' ~ f.strength) if f.strength else '') ~ '; applies to ' ~ f.condition ~ '; concerns: ' ~ (f.recommends | join(', ')) ~ ')') if f.recommendation else (f.protectiveFactor ~ ' (' ~ f.factorType ~ ') is associated with a lower risk of ' ~ f.outcome ~ ' (' ~ f.sources ~ ' source' ~ ('s' if f.sources > 1 else '') ~ ')' ~ (("; related to this encounter's " ~ (f.relatedTo | join(', '))) if f.relatedTo else '')) %}{% endif %}
+{% if line not in ns.said %}{% set ns.said = ns.said + [line] %}
+- {{ line }}{% if audience.budget.plainLanguage %} (source: {{ f.sourceDocument | source_title }}).{% else %} [source: {{ f.sourceDocument }}, confidence {{ '%.2f' | format(f.confidence) }}, fact {{ f.factId }}]{% endif %}{{ '\n' }}
+{%- endif %}
+{% else %}
+No modifiable factor with evidence in the knowledge graph applies to this decision.{{ '\n' }}
+{%- endfor %}</templatePattern>
+  </templates>
+
+  <templates name="tpl_guideline_rules" format="MARKDOWN">
+    <templatePattern>**Guideline statements applying to this encounter** (patient conditions: {% for a in decision.active if a.concept == 'Condition' %}{{ a.entity }}{% if not loop.last %}, {% endif %}{% else %}none recorded{% endfor %})
+
+{% if facts %}
+| Condition | Recommendation | Source | Strength | Recommends | Provenance |
+|---|---|---|---|---|---|
+{% for f in facts[:audience.budget.maxFacts] %}| {{ f.condition }} | {{ f.recommendation }} | {{ f.guidelineSource }} | {{ f.strength or '-' }} | {{ f.recommends | join(', ') if f.recommends else '-' }} | {{ f.sourceDocument }} (fact {{ f.factId }}, conf. {{ '%.2f' | format(f.confidence) }}) |
+{% endfor %}
+{% else %}
+No guideline statement in the knowledge graph applies to these conditions.
+{% endif %}</templatePattern>
+  </templates>
+
+  <templates name="tpl_attribution_report" format="MARKDOWN">
+    <templatePattern>**Feature attribution report** - model {{ decision.model }} ({{ decision.attributionMethod }}), prediction {{ decision.label }} p = {{ '%.3f' | format(decision.probability) }}
+
+| Feature | Value | Attribution | KG entity | Grounded evidence |
+|---|---|---|---|---|
+{% for a in decision.factors %}| {{ a.feature }} | {{ a.value }} | {{ '%+.4f' | format(a.attribution) }} | {{ a.entity or '(unbound)' }} | {% set ev = facts | selectattr('factorKey', 'equalto', a.key) | list %}{% set n = available_facts.get(a.entity, 0) %}{% if n == 0 %}none{% elif not ev %}{{ n }} fact(s) omitted (budget){% else %}{{ ev | length }} fact(s): {% for f in ev %}{{ f.factId }} ({{ f.sourceDocument }}){% if not loop.last %}; {% endif %}{% endfor %}{% if n > ev | length %} + {{ n - ev | length }} omitted (budget){% endif %}{% endif %} |
+{% endfor %}
+
+"none" means the knowledge graph holds no validated evidence for the factor; facts that exist but do not fit the presentation budget are reported as omitted. Nothing is invented to fill the table.</templatePattern>
+  </templates>
+
+</explainability:ExplainabilityConfig>

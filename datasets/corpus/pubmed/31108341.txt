@@ -1,0 +1,11 @@
+# PubMed 31108341: Prediction of post-operative delayed hyponatremia after endoscopic transsphenoidal surgery.
+
+Clinical neurology and neurosurgery (2019), doi:10.1016/j.clineuro.2019.05.007
+
+OBJECTIVES: Delayed symptomatic hyponatremia is a known phenomenon occurring > 3 days after transsphenoidal surgery. This is a significant cause of post-operative emergency room visits and re-admissions. We describe and characterize post-operative hyponatremia in patients undergoing endoscopic transsphenoidal surgery, identify predictive factors, and create a clinical tool for predicting high risk patients.
+
+PATIENTS & METHODS: We retrospectively reviewed a series of over 300 consecutive patients undergoing endoscopic transsphenoidal surgery and identified patients with delayed hyponatremia as well as patient, tumor, and surgical characteristics. In addition, we recorded inpatient post-operative sodium and specific gravity values as well as treatment upond discharge. Univariate and multivariate analyses were carried out to identify predictors of delayed hyponatremia and stratify patients into risk groups.
+
+RESULTS: We found that 15% of patients developed delayed hyponatremia and that this occurred most commonly on post-operative day 7. This accounted for more than half of re-admissions after this type of surgery. Female patients and patients needing fluid restriction or fludrocortisone upon discharge were more likely to develop delayed hyponatremia. Patients with post-operative diabetes insipidus were less likely to develop delayed hyponatremia. Using ROC analysis we developed a score which reliably could stratify patients at risk for delayed hyponatremia.
+
+CONCLUSIONS: We confirm the risk of delayed hyponatremia after transphenoidal surgery and identify factors that are revealed before discharge to identify patients at higher risk of delayed hyponatremia. These data may help identify patients who require treatment upon discharge and short interval follow up to avoid significant costs of re-admission.

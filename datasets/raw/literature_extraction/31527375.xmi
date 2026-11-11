@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31527375.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31527375/" sourceSha256="82dec3793ee2431c7a4240fe784c167e7d3c47072fa7f64e08ac2c6eb9bc2253" sourceText="# PubMed 31527375: Prognostic Impact of Atrial Fibrillation in Electrical Storm.&#10;&#10;Cardiology (2019), doi:10.1159/000500262&#10;&#10;BACKGROUND: Data regarding the prognostic impact of atrial fibrillation (AF) in patients with electrical storm (ES) is rare.&#10;&#10;OBJECTIVES: This study sought to assess the prognostic impact of AF in patients with ES on mortality, rehospitalization, major adverse cardiovascular events (MACE) and recurrence of ES (ES-R).&#10;&#10;METHODS: All consecutive implantable cardioverter defibrillator (ICD) patients presenting with ES were included retrospectively from 2002 to 2016. Patients with AF were compared to non-AF patients. The primary prognostic endpoint was all-cause mortality. Secondary endpoints were in-hospital mortality, rehospitalization rates, MACE and ES-R.&#10;&#10;RESULTS: A total of 87 ES patients with ICD were included and followed up to 2.5 years; 43% suffered from AF. The presence of AF was associated with increased all-cause mortality (47 vs. 29%, log-rank p = 0.052; hazard ratio [HR] 1.969, 95% confidence interval [CI] 0.981-3.952, p = 0.057), which was no longer present after multivariable adjustment for age, diabetes and dilated cardiomyopathy. Furthermore, AF was associated with increased rates of overall rehospitalization (61 vs. 31%, log-rank p = 0.013; HR 2.381, 95% CI 1.247-4.547, p = 0.009), especially due to AF (14 vs. 0%, p = 0.001) and acute heart failure (AHF) (28 vs. 10%, p = 0.018; HR 3.754, 95% CI 1.277-11.038, p = 0.016). Notably, AF was not associated with differences in MACE (55 vs. 37%, log rank p = 0.339) and ES-R (28 vs. 25%, log rank p = 0.704).&#10;&#10;CONCLUSION: In ES patients, presence of AF was univariably associated with increased rates of all-cause mortality at 2.5 years. Furthermore, AF was multivariably associated with overall rehospitalization, especially due to AF and AHF.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:36:14+00:00" xmi:version="2.0">
+  <chunks charEnd="1849"/>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation (AF)" confidence="0.95" sourceSpanStart="176" sourceSpanEnd="200">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="electrical-storm" mention="electrical storm (ES)" confidence="0.95" sourceSpanStart="218" sourceSpanEnd="239">
+    <properties key="name" value="electrical storm"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="all-cause-mortality" mention="all-cause mortality" confidence="0.95" sourceSpanStart="678" sourceSpanEnd="697">
+    <properties key="name" value="all-cause mortality"/>
+    <properties key="timeWindow" value="2.5 years"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="rehospitalization" mention="rehospitalization rates" confidence="0.95" sourceSpanStart="747" sourceSpanEnd="770">
+    <properties key="name" value="rehospitalization"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="overall-rehospitalization" mention="overall rehospitalization" confidence="0.95" sourceSpanStart="1239" sourceSpanEnd="1264">
+    <properties key="name" value="overall rehospitalization"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="atrial-fibrillation" targetType="ClinicalOutcome" targetId="all-cause-mortality" confidence="0.8" evidence="The presence of AF was associated with increased all-cause mortality (47 vs. 29%, log-rank p = 0.052; hazard ratio [HR] 1.969, 95% confidence interval [CI] 0.981-3.952, p = 0.057)" sourceSpanStart="898" sourceSpanEnd="1077"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="atrial-fibrillation" targetType="ClinicalOutcome" targetId="overall-rehospitalization" confidence="0.95" evidence="Furthermore, AF was associated with increased rates of overall rehospitalization (61 vs. 31%, log-rank p = 0.013; HR 2.381, 95% CI 1.247-4.547, p = 0.009)" sourceSpanStart="1184" sourceSpanEnd="1338"/>
+</raw:RawExtractionResult>

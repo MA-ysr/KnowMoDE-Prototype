@@ -1,0 +1,19 @@
+/*
+ * T4 (paper, Phase 3, M2T): KG Schema + LLM Pipeline models -> one schema-aware prompt per
+ * extraction task, plus a machine-readable side-car (targets, chunking, model) that the Python
+ * pipeline reads instead of interpreting the models itself.
+ *
+ * Model aliases: Schema, Pipeline. Output root: generated/ (set by the CLI).
+ */
+
+rule TaskPrompt
+  transform t : Pipeline!ExtractionTask {
+  template : "t4_prompt.egl"
+  target : "prompts/" + t.name + ".txt"
+}
+
+rule TaskPromptSidecar
+  transform t : Pipeline!ExtractionTask {
+  template : "t4_prompt_json.egl"
+  target : "prompts/" + t.name + ".json"
+}

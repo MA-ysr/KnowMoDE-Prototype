@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31461001.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31461001/" sourceSha256="296a384d7a37f88d282c34e620c2db602def95bd739c19955819b10ea95c21d5" sourceText="# PubMed 31461001: Are 30-Day Outcomes Enough? Late Infectious Readmissions following Prosthetic-Based Breast Reconstruction.&#10;&#10;Plastic and reconstructive surgery (2019), doi:10.1097/PRS.0000000000005903&#10;&#10;BACKGROUND: Surgical-site infection is a major concern in prosthetic-based breast reconstruction. Thirty-day postoperative readmission rates are a common quality metric, but little is known about readmission rates for later infections.&#10;&#10;METHODS: Using the 2013 to 2014 Nationwide Readmissions Database, the authors identified breast cancer patients undergoing breast reconstruction with implants and tissue expanders who had an infectious readmission. The authors used univariate and multivariate logistic regression models to identify predictors of infectious readmission and explantation within the early (0 to 30 days) and late (31 to 90 days) postoperative periods.&#10;&#10;RESULTS: In the weighted sample, the authors identified 18,338 patients undergoing prosthetic-based breast reconstruction. The overall infectious readmission rate was 4.1 percent (n = 759): 49.3 percent occurred early and 50.7 percent occurred late. Of the infectious readmissions, 39.5 percent required explantation, 55.1 percent of which occurred during a late infectious readmission. Seventy-five percent of these infectious readmissions and explantations occurred within 49 days of initial surgery. Median annual household income less than $40,000 (p = 0.035), diabetes (p = 0.038), and obesity (p = 0.004) were independent predictors of infectious readmission. Diabetes (p = 0.049) and hypertension (p = 0.011) were independent predictors of early readmission. Median annual household income less than $40,000 (p = 0.049), obesity (p = 0.006), and increasing length of stay during the index procedure (p = 0.028) were independent predictors of late readmission. No statistically significant independent predictors for explantation were identified.&#10;&#10;CONCLUSIONS: Traditional 30-day readmission rates are not an adequate quality metric for breast reconstruction given the number of late postoperative readmissions, many of which lead to explantation. Early and late infectious readmissions have different predictors. Interventions targeting these predictors may decrease the number of readmissions, thus reducing cost and improving quality.&#10;&#10;CLINICAL QUESTION/LEVEL OF EVIDENCE: Risk, III.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:36:04+00:00" xmi:version="2.0">
+  <chunks charEnd="2368"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1440" sourceSpanEnd="1448">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1466" sourceSpanEnd="1473">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="infectious-readmission" mention="infectious readmission" confidence="0.9" sourceSpanStart="1517" sourceSpanEnd="1539">
+    <properties key="name" value="infectious readmission"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1566" sourceSpanEnd="1578">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="early-readmission" mention="early readmission" confidence="0.9" sourceSpanStart="1622" sourceSpanEnd="1639">
+    <properties key="name" value="early readmission"/>
+    <properties key="timeWindow" value="0 to 30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="late-readmission" mention="late readmission" confidence="0.9" sourceSpanStart="1824" sourceSpanEnd="1840">
+    <properties key="name" value="late readmission"/>
+    <properties key="timeWindow" value="31 to 90 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="infectious-readmission" confidence="0.9" evidence="Median annual household income less than $40,000 (p = 0.035), diabetes (p = 0.038), and obesity (p = 0.004) were independent predictors of infectious readmission." sourceSpanStart="1378" sourceSpanEnd="1540"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="obesity" targetType="ClinicalOutcome" targetId="infectious-readmission" confidence="0.9" evidence="Median annual household income less than $40,000 (p = 0.035), diabetes (p = 0.038), and obesity (p = 0.004) were independent predictors of infectious readmission." sourceSpanStart="1378" sourceSpanEnd="1540"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="early-readmission" confidence="0.9" evidence="Diabetes (p = 0.049) and hypertension (p = 0.011) were independent predictors of early readmission." sourceSpanStart="1541" sourceSpanEnd="1640"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypertension" targetType="ClinicalOutcome" targetId="early-readmission" confidence="0.9" evidence="Diabetes (p = 0.049) and hypertension (p = 0.011) were independent predictors of early readmission." sourceSpanStart="1541" sourceSpanEnd="1640"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="obesity" targetType="ClinicalOutcome" targetId="late-readmission" confidence="0.9" evidence="Median annual household income less than $40,000 (p = 0.049), obesity (p = 0.006), and increasing length of stay during the index procedure (p = 0.028) were independent predictors of late readmission." sourceSpanStart="1641" sourceSpanEnd="1841"/>
+</raw:RawExtractionResult>

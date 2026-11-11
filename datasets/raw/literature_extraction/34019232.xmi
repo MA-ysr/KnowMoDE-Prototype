@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34019232.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34019232/" sourceSha256="18240399c1a8e4983d1f01283ac956a9ecf3d585e67307edff784522d4ed4d90" sourceText="# PubMed 34019232: Acute-care hospital reencounters in COVID-19 patients.&#10;&#10;GeroScience (2021), doi:10.1007/s11357-021-00378-2&#10;&#10;Acute-care hospital reencounters (ACHEs)-encompassing emergency department visits, observation stays, and hospital readmissions-following COVID-19 hospitalization may exacerbate health care system strain and impair recovery from illness. We sought to characterize these reencounters and factors associated with reencounters. We identified the first consecutive 509 patients hospitalized for COVID-19 within an IL hospital network, and examined ACHEs, experienced within 30 days and 4 months of index hospitalization. We identified independent predictors of reencounter using binary logistic regression. Of 509 patients, 466 (91.6%) were discharged alive from index COVID-19 hospitalization. Within 30 days and 4 months, 12.4% and 21.5% of patients, respectively, experienced ACHEs. The median time to first ACHE was 24.2 (IQR 6.5, 55) days. COVID-19 symptom exacerbation was the leading reason for early ACHE (44.8%). Reencounters, both within 30 days and 4 months, were associated with a history of a neurological disorder before COVID-19 (OR 2.78 [95% CI 1.53, 5.03] and OR 2.75 [95% CI 1.67, 4.53], respectively). Older patients and those with diabetes mellitus, chronic obstructive pulmonary disease, or organ transplantation tended towards more frequent ACHEs. Steroid treatment during COVID-19 hospitalization demonstrated reduced odds of 30-day reencounter (OR 0.31 [95% CI 0.091, 0.79]). Forty-nine patients had repeat SARS-CoV-2 nasopharyngeal testing during a reencounter; twelve (24.5%) patients had positive reencounter tests and experienced more frequent reencounters than those testing negative. COVID-19 symptom exacerbation is a leading cause of early ACHE after COVID-19 hospitalization, and steroid use during index hospitalization may reduce early reencounters. Neurologic illness before COVID-19 predicts ACHEs.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:27+00:00" xmi:version="2.0">
+  <chunks charEnd="1959"/>
+  <entities type="ClinicalOutcome" id="acute-care-hospital-reencounters" mention="ACHEs" confidence="0.95" sourceSpanStart="161" sourceSpanEnd="166">
+    <properties key="name" value="acute-care hospital reencounter"/>
+    <properties key="timeWindow" value="30 days and 4 months"/>
+  </entities>
+  <entities type="Condition" id="neurological-disorder" mention="neurological disorder" confidence="0.9" sourceSpanStart="1129" sourceSpanEnd="1150">
+    <properties key="name" value="neurological disorder"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1274" sourceSpanEnd="1291">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="chronic obstructive pulmonary disease" confidence="0.95" sourceSpanStart="1293" sourceSpanEnd="1330">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Drug" id="steroid" mention="Steroid" confidence="0.9" sourceSpanStart="1393" sourceSpanEnd="1400">
+    <properties key="name" value="steroid"/>
+    <properties key="drugClass" value="corticosteroid"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="neurological-disorder" targetType="ClinicalOutcome" targetId="acute-care-hospital-reencounters" confidence="0.9" evidence="Reencounters, both within 30 days and 4 months, were associated with a history of a neurological disorder before COVID-19 (OR 2.78 [95% CI 1.53, 5.03] and OR 2.75 [95% CI 1.67, 4.53], respectively)." sourceSpanStart="1045" sourceSpanEnd="1243"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="acute-care-hospital-reencounters" confidence="0.85" evidence="Older patients and those with diabetes mellitus, chronic obstructive pulmonary disease, or organ transplantation tended towards more frequent ACHEs." sourceSpanStart="1244" sourceSpanEnd="1392"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-obstructive-pulmonary-disease" targetType="ClinicalOutcome" targetId="acute-care-hospital-reencounters" confidence="0.85" evidence="Older patients and those with diabetes mellitus, chronic obstructive pulmonary disease, or organ transplantation tended towards more frequent ACHEs." sourceSpanStart="1244" sourceSpanEnd="1392"/>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="steroid" targetType="ClinicalOutcome" targetId="acute-care-hospital-reencounters" confidence="0.9" evidence="Steroid treatment during COVID-19 hospitalization demonstrated reduced odds of 30-day reencounter (OR 0.31 [95% CI 0.091, 0.79])." sourceSpanStart="1393" sourceSpanEnd="1522"/>
+</raw:RawExtractionResult>

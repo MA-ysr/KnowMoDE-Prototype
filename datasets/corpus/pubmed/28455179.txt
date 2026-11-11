@@ -1,0 +1,11 @@
+# PubMed 28455179: Nonelective Primary Total Hip Arthroplasty: The Effect of Discharge Destination on Postdischarge Outcomes.
+
+The Journal of arthroplasty (2017), doi:10.1016/j.arth.2017.03.042
+
+BACKGROUND: Medicare has enacted a mandatory bundled payment program for primary total joint arthroplasty that includes nonelective primary total hip arthroplasty (THA). Efficient postacute care management has been identified as an opportunity to improve value for patients. We aimed to identify risk factors for and compare rates of complications by discharge destination and then use those factors to risk-stratify non-elective THA patients.
+
+METHODS: Patients who underwent nonelective primary THA from 2011 to 2014 were identified in the American College of Surgeons National Surgical Quality Improvement Program database and categorized into those discharged to skilled nursing facility or inpatient rehabilitation facility vs home self-managed/home health (HHH). Bivariate and multivariate analyses of risk factors for postdischarge adverse events were performed using patient characteristics and intraoperative variables.
+
+RESULTS: In bivariate analysis, skilled nursing facility or inpatient rehabilitation facility patients compared with HHH patients, had lower rates of postdischarge severe adverse events (SAEs; 49% vs 58%; P < .001) and unplanned 30-day readmissions (71% vs 83%; P < .001). HHH discharged patients with 1 or more of risk factors had a 1.85-6.18 times odds of complications within the first 14 days.
+
+CONCLUSION: The most important risk factors for predicting postdischarge SAE and readmission are predischarge SAE, dependent functional status, body mass index >40 kg/m2, smoking, diabetes, chronic steroid use, and American Society of Anesthesiologists class 3/4. Nonelective THA patients without these risk factors may be safely discharged to home after THA. Orthopedic surgeons and their nonelective THA patients must agree on the most appropriate discharge destination through a shared decision-making process that takes into account these significant risk factors and other psychosocial factors.

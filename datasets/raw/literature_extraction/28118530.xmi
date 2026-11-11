@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/28118530.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/28118530/" sourceSha256="af8be1e7f1262fffced5bd3d279cb8654a6b3663352c0ba1c97874c2d7947178" sourceText="# PubMed 28118530: Current Risk Adjustment and Comorbidity Index Underperformance in Predicting Post-Acute Utilization and Hospital Readmissions After Joint Replacements: Implications for Comprehensive Care for Joint Replacement Model.&#10;&#10;Arthritis care &amp; research (2017), doi:10.1002/acr.23195&#10;&#10;OBJECTIVE: To compare the performances of 3 comorbidity indices, the Charlson Comorbidity Index, the Elixhauser Comorbidity Index, and the Centers for Medicare &amp; Medicaid Services (CMS) risk adjustment model, Hierarchical Condition Category (HCC), in predicting post-acute discharge settings and hospital readmission for patients after joint replacement.&#10;&#10;METHODS: A retrospective study of Medicare beneficiaries with total knee replacement (TKR) or total hip replacement (THR) discharged from hospitals in 2009-2011 (n = 607,349) was performed. Study outcomes were post-acute discharge setting and unplanned 30-, 60-, and 90-day hospital readmissions. Logistic regression models were built to compare the performance of the 3 comorbidity indices using C statistics. The base model included patient demographics and hospital use. Subsequent models included 1 of the 3 comorbidity indices. Additional multivariable logistic regression models were built to identify individual comorbid conditions associated with high risk of hospital readmissions.&#10;&#10;RESULTS: The 30-, 60-, and 90-day unplanned hospital readmission rates were 5.3%, 7.2%, and 8.5%, respectively. Patients were most frequently discharged to home health (46.3%), followed by skilled nursing facility (40.9%) and inpatient rehabilitation facility (12.7%). The C statistics for the base model in predicting post-acute discharge setting and 30-, 60-, and 90-day readmission in TKR and THR were between 0.63 and 0.67. Adding the Charlson Comorbidity Index, the Elixhauser Comorbidity Index, or HCC increased the C statistic minimally from the base model for predicting both discharge settings and hospital readmission. The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease.&#10;&#10;CONCLUSION: The comorbidity indices and CMS-HCC demonstrated weak discriminatory ability to predict post-acute discharge settings and hospital readmission following joint replacement.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:31:11+00:00" xmi:version="2.0">
+  <chunks charEnd="2306"/>
+  <entities type="ClinicalOutcome" id="unplanned-30-day-hospital-readmission" mention="30- day hospital readmission" confidence="0.95" sourceSpanStart="546" sourceSpanEnd="574">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.98" sourceSpanStart="2051" sourceSpanEnd="2068">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pulmonary-disease" mention="pulmonary disease" confidence="0.95" sourceSpanStart="2070" sourceSpanEnd="2087">
+    <properties key="name" value="pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="arrhythmias" mention="arrhythmias" confidence="0.95" sourceSpanStart="2089" sourceSpanEnd="2100">
+    <properties key="name" value="arrhythmias"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="2106" sourceSpanEnd="2119">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmission" confidence="0.95" sourceSpanStart="2256" sourceSpanEnd="2276">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease." sourceSpanStart="1971" sourceSpanEnd="2120"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="pulmonary-disease" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease." sourceSpanStart="1971" sourceSpanEnd="2120"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="arrhythmias" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease." sourceSpanStart="1971" sourceSpanEnd="2120"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-disease" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="The health conditions most frequently associated with hospital readmission were diabetes mellitus, pulmonary disease, arrhythmias, and heart disease." sourceSpanStart="1971" sourceSpanEnd="2120"/>
+</raw:RawExtractionResult>

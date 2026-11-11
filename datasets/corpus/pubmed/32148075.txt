@@ -1,0 +1,11 @@
+# PubMed 32148075: Insights into hospital readmission patterns of atrial fibrillation patients.
+
+European journal of cardiovascular nursing (2020), doi:10.1177/1474515120911607
+
+INTRODUCTION: Patients admitted to the hospital with atrial fibrillation have associated morbidity and mortality and incur significant costs. Data characterizing atrial fibrillation patients at high risk for readmission are scarce. We sought to inform this area by characterizing and categorizing unplanned readmissions of atrial fibrillation patients.
+
+METHODS: Retrospective data were abstracted from the charts of patients discharged from 2008 to 2012 after an index hospitalization for atrial fibrillation and referred to the nurse practitioner-led transitional care program, Bridging the Discharge Gap Effectively. Unplanned readmissions were dichotomized as early (⩽30 days) or late (31-180 days) and further classified as either "atrial fibrillation/atrial fibrillation-related" (AF/AF-related), "Cardiac; not AF/AF-related," or "Not cardiac-related." Case classifications were adjudicated by a senior cardiologist. Patient demographics and readmission characteristics were then compared.
+
+RESULTS: Of 255 patients, 97 (38.0%) had unplanned readmissions within 180 days of discharge; 45 (46.4%) were early and 52 (53.6%) were late. Atrial fibrillation and cardiac causes accounted for 68.9% (n=31) of early readmissions and 65.4% (n=34) of late. Patients with late readmissions were more likely to have diabetes (32.7% vs. 17.7%, p=.022) and higher CHA2DS2VASc scores (3.63 vs. 2.98, p=0.026) than those not readmitted. No other differences in baseline characteristics were seen within or between groups. The 30-day all-cause readmission rate in this sample was 17.6% (n=45).
+
+CONCLUSION: Readmissions following hospital discharge for atrial fibrillation are common; approximately 50% of these readmissions are for reasons unrelated to atrial fibrillation. In order to reduce atrial fibrillation-related readmissions, further research is needed to characterize predictors of readmission and to develop effective transitional care interventions.

@@ -1,0 +1,13 @@
+# PubMed 33532624: The impact of diabetology consultations on length of stay in hospitalized patients with diabetes.
+
+Endocrinology, diabetes & metabolism (2021), doi:10.1002/edm2.199
+
+INTRODUCTION: Both hyperglycaemia and hypoglycaemia in hospitalized patients have been shown to be associated with a longer length of stay, higher readmission rates, and higher rates of morbidity and mortality. With 25%-30% of all hospitalized patients carrying a diagnosis of diabetes, it is important to optimize glycaemic control. Current guidelines for care of inpatients with diabetes now suggest consulting a specialized diabetes team for all patients when possible.
+
+AIM: This study was a retrospective cohort study to evaluate the impact of an inpatient diabetology consult within 48 hours of admission on patients' length of stay.
+
+METHODS: All patients admitted to the general medicine service between 2013 and 2018 with a diagnosis of diabetes in their medical record were included, which consisted of 11 477 inpatient stays. We looked at the effect of an inpatient diabetology consultation within the first 48 hours on length of stay, complications and 30-day readmission rates.
+
+RESULTS: We found that patients whose care included a diabetology consult within 48 hours of admission had a statistically significant shorter length of stay by 1.56 days compared to the remainder of the group. There was no difference in complications or 30-day readmission rates between the groups.
+
+CONCLUSION: Among general medicine patients with a diagnosis of diabetes, timely diabetology consultations reduced patients' length of stay and have the potential to improve their care and lessen the economic impact.

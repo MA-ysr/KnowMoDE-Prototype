@@ -1,0 +1,17 @@
+# PubMed 33710153: Predictors of Postoperative Complications in Vestibular Schwannoma Surgery-A Population-Based Study.
+
+Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology (2021), doi:10.1097/MAO.0000000000003107
+
+OBJECTIVE: To investigate preoperative patient demographics and comorbidities in relation with postsurgical complications following vestibular schwannoma surgery.
+
+STUDY DESIGN: Retrospective population-based cohort study.
+
+SETTING: All hospitals in the Canadian province of Ontario.
+
+PATIENTS: This study includes 1,456 patients who underwent vestibular schwannoma surgery from April 1, 2002 to March 31, 2018 in Ontario, Canada.
+
+INTERVENTION/OUTCOME MEASURES: For all surgical patients, the demographic data, preoperative comorbidities, and postoperative complications were evaluated. Postoperative complications were examined immediately following surgery in the hospital as well as 1 year following the hospital discharge.
+
+RESULTS: The most common comorbidities in this cohort were hypertension (30.22%), diabetes (9.48%), asthma (13.53%), and chronic obstructive pulmonary disease (6.73%). Diabetes was the most impactful comorbidity and was associated with higher risk of myocardial infarction (RR = 4.58, p < 0.01), pneumonia (RR = 1.80, p = 0.02), dysphagia (RR = 1.58, p < 0.01), and meningitis (RR = 3.62, p < 0.01). Analysis of surgical approaches revealed that the translabyrinthine approach, compared with the open craniotomy approach, was negatively associated with postoperative complications including pneumonia (RR = 0.43, p < 0.01), urinary tract infection (RR = 0.55, p = 0.01), dysphagia (RR = 0.66, p < 0.01), and readmission (RR = 0.45, p < 0.01).
+
+CONCLUSION: This study examines patient demographics, preoperative comorbidities, and postoperative complications in patients who have undergone vestibular schwannoma surgery. The results highlight associations between patient characteristics and postoperative outcomes that can aid in preoperative decision-making and counselling.

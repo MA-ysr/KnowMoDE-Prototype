@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/19815465" sourceUri="https://pubmed.ncbi.nlm.nih.gov/19815465/" sourceSha256="b48ff16c225d901960c9caa8c3696f6d9e762e6eed97584b7b3a7c3bc78236e4" sourceText="Binasal visual field defects are not specific to vigabatrin. This study investigated the visual defects associated with the antiepileptic drug vigabatrin (VGB). Two hundred four people with epilepsy were grouped on the basis of antiepileptic drug therapy (current, previous, or no exposure to VGB). Groups were matched with respect to age, gender, and seizure frequency. All patients underwent objective assessment of electrophysiological function (wide-field multifocal electroretinography) and conventional visual field testing (static perimetry). Bilateral visual field constriction was observed in 59% of patients currently taking VGB, 43% of patients who previously took VGB, and 24% of patients with no exposure to VGB. Assessment of retinal function revealed abnormal responses in 48% of current VGB users and 22% of prior VGB users, but in none of the patients without previous exposure to VGB. Bilateral visual field abnormalities are common in the treated epilepsy population, irrespective of drug history. Assessment by conventional static perimetry may neither be sufficiently sensitive nor specific to reliably identify retinal toxicity associated with VGB." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:04+00:00" xmi:version="2.0">
+  <chunks charEnd="1170"/>
+  <entities type="Drug" id="vigabatrin" mention="vigabatrin" confidence="0.95" sourceSpanStart="49" sourceSpanEnd="59">
+    <properties key="name" value="vigabatrin"/>
+  </entities>
+  <entities type="Condition" id="binasal-visual-field-defects" mention="Binasal visual field defects" confidence="0.9" sourceSpanStart="0" sourceSpanEnd="28">
+    <properties key="name" value="binasal visual field defects"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.95" sourceSpanStart="190" sourceSpanEnd="198">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="bilateral-visual-field-constriction" mention="Bilateral visual field constriction" confidence="0.95" sourceSpanStart="550" sourceSpanEnd="585">
+    <properties key="name" value="bilateral visual field constriction"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="Condition" id="retinal-toxicity" mention="retinal toxicity" confidence="0.9" sourceSpanStart="1133" sourceSpanEnd="1149">
+    <properties key="name" value="retinal toxicity"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="vigabatrin" targetType="Condition" targetId="epilepsy" confidence="0.9" evidence="This study investigated the visual defects associated with the antiepileptic drug vigabatrin (VGB)." sourceSpanStart="61" sourceSpanEnd="160"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="vigabatrin" targetType="Condition" targetId="bilateral-visual-field-constriction" confidence="0.85" evidence="Bilateral visual field constriction was observed in 59% of patients currently taking VGB, 43% of patients who previously took VGB, and 24% of patients with no exposure to VGB." sourceSpanStart="550" sourceSpanEnd="725"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="vigabatrin" targetType="Condition" targetId="retinal-toxicity" confidence="0.85" evidence="Assessment by conventional static perimetry may neither be sufficiently sensitive nor specific to reliably identify retinal toxicity associated with VGB." sourceSpanStart="1017" sourceSpanEnd="1170"/>
+</raw:RawExtractionResult>

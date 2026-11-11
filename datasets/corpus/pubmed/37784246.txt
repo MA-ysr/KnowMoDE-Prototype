@@ -1,0 +1,5 @@
+# PubMed 37784246: Use of Continuous Glucose Monitors Upon Hospital Discharge of People With Diabetes: Promise, Barriers, and Opportunity.
+
+Journal of diabetes science and technology (2024), doi:10.1177/19322968231200847
+
+Continuous glucose monitors (CGMs) have increasingly been used in ambulatory and inpatient or hospital settings to improve glycemic outcomes for people with diabetes. Given their capacity to aid individuals in avoiding hypo- and hyperglycemia, they may also be useful when transitioning from hospital to home by reducing rates of hospital readmissions and emergency department visits. Several types of barriers presently exist that make the deployment of CGMs at the time of hospital discharge problematic, including (1) regulatory, (2) behavioral, (3) logistical, (4) technical, (5) staffing, and (6) systemic issues. In this commentary, we review the literature, discuss these barriers, and propose possible solutions to facilitate the use of CGMs in people with diabetes at the time of hospital discharge.

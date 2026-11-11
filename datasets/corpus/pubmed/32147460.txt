@@ -1,0 +1,11 @@
+# PubMed 32147460: PharmValCalc: A calculator tool to forecast population health pharmacist impact.
+
+Research in social & administrative pharmacy : RSAP (2020), doi:10.1016/j.sapharm.2019.12.012
+
+OBJECTIVE: (1) Describe the development of a population health pharmacist (PHP) value calculator to forecast pharmacist staffing, care quality impact, and ROI; (2) exemplify PHP value through ACO stakeholder perspectives; and (3) discuss the use of the pharmacist value calculator to engage pharmacy, clinical, administrative, and financial leaders in discussions to initiate or expand pharmacist integration within population health (PH) initiatives.
+
+TOOL DESCRIPTION: The role of the pharmacist in population health (PH) is evolving as healthcare payment moves towards population-based, value-driven care. However, a challenge remains to identify the optimal use of the pharmacist in PH initiatives to maximize quality and cost performance. PharmValCalc was developed to demonstrate the value proposition for PHP interventions. PharmValCalc can be used to forecast PHP impact to: (1) reduce preventable, medication-related 30-day all cause hospital readmissions and emergency department (ED) visits for elderly patients, and (2) improve medication-related quality performance for uncontrolled patients with diabetes and hypertension. PharmValCalc forecasts the required PHP full-time equivalents (FTE), care quality performance goal improvement, and return on investment (ROI).
+
+PRACTICE INNOVATION: While other pharmacist impact calculators have been developed, PharmValCalc is uniquely designed for the 4 common PHP interventions listed above. In addition, provider executives verified that the estimated calculator outputs for each outcome (i.e., PHP FTE, care quality goal performance, and ROI) are within acceptable ranges to justify new or expanded PHP interventions in different ACO settings.
+
+CONCLUSION: PharmValCalc is a pragmatic tool for pharmacists and pharmacy leaders in value-based organizations to use when planning the initiation or expansion of PHP interventions with executive-level medical or administrative decision-makers.

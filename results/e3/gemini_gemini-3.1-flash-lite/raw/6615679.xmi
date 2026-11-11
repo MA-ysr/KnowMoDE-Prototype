@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/6615679" sourceUri="https://pubmed.ncbi.nlm.nih.gov/6615679/" sourceSha256="ab794781609d726cb70aeaf21e0213342b4adffbd81080feabc92680a3d581f4" sourceText="Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops. A 69-yr-old man, who was concurrently being treated with pilocarpine nitrate and timolol maleate eye drops, developed a bradycardia and became hypotensive during halothane anaesthesia. Both timolol and pilocarpine were subsequently identified in a 24-h collection of urine. Timolol (but not pilocarpine) was detected in a sample of plasma removed during surgery; the plasma concentration of timolol (2.6 ng ml-1) was consistent with partial beta-adrenoceptor blockade. It is postulated that this action may have been enhanced during halothane anaesthesia with resultant bradycardia and hypotension. Pilocarpine may have had a contributory effect." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:56:32+00:00" xmi:version="2.0">
+  <chunks charEnd="740"/>
+  <entities type="Drug" id="timolol" mention="timolol" confidence="0.95" sourceSpanStart="59" sourceSpanEnd="66">
+    <properties key="name" value="timolol"/>
+  </entities>
+  <entities type="Drug" id="pilocarpine" mention="pilocarpine" confidence="0.95" sourceSpanStart="71" sourceSpanEnd="82">
+    <properties key="name" value="pilocarpine"/>
+  </entities>
+  <entities type="Drug" id="halothane" mention="halothane" confidence="0.95" sourceSpanStart="256" sourceSpanEnd="265">
+    <properties key="name" value="halothane"/>
+  </entities>
+  <entities type="Condition" id="bradycardia" mention="bradycardia" confidence="0.95" sourceSpanStart="15" sourceSpanEnd="26">
+    <properties key="name" value="bradycardia"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.95" sourceSpanStart="31" sourceSpanEnd="42">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="timolol" targetType="Condition" targetId="bradycardia" confidence="0.85" evidence="Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops." sourceSpanStart="0" sourceSpanEnd="93"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="timolol" targetType="Condition" targetId="hypotension" confidence="0.85" evidence="Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops." sourceSpanStart="0" sourceSpanEnd="93"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="pilocarpine" targetType="Condition" targetId="bradycardia" confidence="0.85" evidence="Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops." sourceSpanStart="0" sourceSpanEnd="93"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="pilocarpine" targetType="Condition" targetId="hypotension" confidence="0.85" evidence="Intraoperative bradycardia and hypotension associated with timolol and pilocarpine eye drops." sourceSpanStart="0" sourceSpanEnd="93"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="timolol" targetType="Drug" targetId="halothane" confidence="0.8" evidence="It is postulated that this action may have been enhanced during halothane anaesthesia with resultant bradycardia and hypotension." sourceSpanStart="563" sourceSpanEnd="692"/>
+</raw:RawExtractionResult>

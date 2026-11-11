@@ -1,0 +1,11 @@
+# PubMed 39874177: Incident heart failure and recurrent coronary events following acute myocardial infarction.
+
+European heart journal (2025), doi:10.1093/eurheartj/ehae885
+
+BACKGROUND AND AIMS: Recurrent myocardial infarction (MI) and incident heart failure (HF) are major post-MI complications. Herein, contemporary post-MI risks for recurrent MI and HF are described.
+
+METHODS: A total of 6804 patients with a primary discharge diagnosis of MI at 28 Baylor Scott & White Health hospitals (January 2015 to December 2021) were studied. Patient characteristics, treatment, and outcomes, including incident HF, recurrent MI, all-cause death, and all-cause and cardiovascular rehospitalizations, were assessed. Landmark approach anchored at 3 months post-discharge was used to assess 1-year outcomes.
+
+RESULTS: Median age was 69 years, 59.7% were male, and 76.7% had non-ST-elevation MI. Comorbidities included hypertension (89%), dyslipidaemia (87%), Type 2 diabetes (48%), and chronic kidney disease (34%); 17% had a history of MI and 23% of HF; 63% underwent percutaneous/surgical revascularization. In landmark-anchored 1-year outcomes (N = 6210), 413 (6.7%) patients died, 1730 (27.9%) had all-cause and 735 (11.8%) cardiovascular hospitalizations, 234 (3.8%) had recurrent MI. Of patients without history of HF, 1160 (23.8%) developed incident HF [42.2%, 26.7%, and 31.1% with ejection fraction (EF) < 40%, 41-49%, and >50%, respectively) within 3 months of discharge. Patients who developed HF had higher risk of death and hospitalizations (all P < .001), irrespective of EF. Of 2179 patients with EF > 50% without prevalent HF or HF during index hospitalization, 257 (11.8%) developed HF and 77 (3.5%) recurrent MI within 1 year.
+
+CONCLUSIONS: In a contemporary post-MI cohort, the risk for incident HF was greater than recurrent MI, even among those with normal EF and no HF at discharge.

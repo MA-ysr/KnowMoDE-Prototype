@@ -1,0 +1,73 @@
+{
+  "perRule" : {
+    "declared_properties_only" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_confidence_above_threshold" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_has_id_and_mention" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_provenance_complete" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "entity_type_in_schema" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "max_cardinality_respected" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "mention_grounded_in_source" : {
+      "evaluated" : 306,
+      "failed" : 0
+    },
+    "relation_confidence_above_threshold" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "relation_endpoints_accepted" : {
+      "evaluated" : 183,
+      "failed" : 0
+    },
+    "relation_evidence_grounded_in_source" : {
+      "evaluated" : 183,
+      "failed" : 2
+    },
+    "relation_type_and_endpoints_in_schema" : {
+      "evaluated" : 183,
+      "failed" : 1
+    },
+    "required_properties_present" : {
+      "evaluated" : 306,
+      "failed" : 0
+    }
+  },
+  "policyVersion" : "89a1b436221d351ed601d417d6480b27278b342894512bec60a0652c83383041",
+  "rejected" : [ {
+    "confidence" : "0.8",
+    "document" : "bc5cdr/3895875",
+    "failedRule" : "relation_type_and_endpoints_in_schema",
+    "kind" : "RELATION",
+    "mention" : "The mean plasma lidocaine level of patients on beta-blocking agents was no different from that in patients not on beta blocking agents.",
+    "originalId" : "Drug:lidocaine -> DrugClass:beta-blocking-agents",
+    "originalType" : "INTERACTS_WITH",
+    "rejectionReason" : "Relation type or its endpoint types are not declared in the KG schema",
+    "ruleType" : "SCHEMA_CONFORMANCE"
+  } ],
+  "summary" : {
+    "acceptanceRate" : 0.998,
+    "documents" : 60,
+    "rawEntities" : 306,
+    "rawRelations" : 183,
+    "rejected" : 1,
+    "validEntities" : 306,
+    "validRelations" : 182
+  }
+}

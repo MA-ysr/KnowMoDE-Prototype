@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37126811.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37126811/" sourceSha256="5471e2ff3b298a956f3ab0a505432f1ae644a2c8f75950b13d3ae7a2a79eb48a" sourceText="# PubMed 37126811: KDIGO provided recommendations on SGLT2 inhibitors and nonsteroidal MRAs in patients with diabetes and CKD.&#10;&#10;Annals of internal medicine (2023), doi:10.7326/J23-0023&#10;&#10;Navaneethan SD, Zoungas S, Caramori ML, et al. Diabetes management in chronic kidney disease: synopsis of the KDIGO 2022 clinical practice guideline update. Ann Intern Med. 2023;176:381-387. 36623286.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:59:40+00:00" xmi:version="2.0">
+  <chunks charEnd="387"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="109" sourceSpanEnd="117">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="ckd" mention="CKD" confidence="0.95" sourceSpanStart="122" sourceSpanEnd="125">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Drug" id="sglt2-inhibitors" mention="SGLT2 inhibitors" confidence="0.95" sourceSpanStart="53" sourceSpanEnd="69">
+    <properties key="name" value="sglt2 inhibitors"/>
+    <properties key="drugClass" value="sodium-glucose cotransporter-2 inhibitors"/>
+  </entities>
+  <entities type="Drug" id="nonsteroidal-mras" mention="nonsteroidal MRAs" confidence="0.9" sourceSpanStart="74" sourceSpanEnd="91">
+    <properties key="name" value="nonsteroidal mineralocorticoid receptor antagonists"/>
+    <properties key="drugClass" value="mineralocorticoid receptor antagonist"/>
+  </entities>
+</raw:RawExtractionResult>

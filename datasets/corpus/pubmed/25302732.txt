@@ -1,0 +1,11 @@
+# PubMed 25302732: Admission blood glucose helps predict 1 year, but not 2 years, mortality in an unselected cohort of acute general medical admissions.
+
+International journal of clinical practice (2015), doi:10.1111/ijcp.12574
+
+AIM: We previously showed that hyperglycaemia in newly hospitalised medical inpatients is associated with longer length of hospital stay, higher 28-day readmission rates and increased 28-day mortality. We aimed to assess whether a single blood glucose measurement taken at the time of admission could help to predict 1 and 2 years mortality.
+
+METHODS: We retrospectively reviewed data from all 1502 patients admitted to our Acute Medical Unit during February 2010.
+
+RESULTS: By using a blood glucose range of 6.5-7.0 mmol/l as the comparator, an admission blood glucose between 9.1 and 20 mmol/l was associated with an increased risk of death at 1 year (p < 0.05). In addition, those people with admission glucose readings of < 6.5 mmol/l showed a strong trend towards a higher mortality (p = 0.053) at 1 year.
+
+CONCLUSION: Thus admission blood glucose can be used to help predict the risk of 1 year mortality in an unselected cohort of general medical admissions.

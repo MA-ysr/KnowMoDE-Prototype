@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/41191374.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/41191374/" sourceSha256="11b67bb72f87a3c44f4b078fbc21590fbd254f025ab82976c0c375ce9bcaf7b5" sourceText="# PubMed 41191374: Preoperative Hemoglobin A1C, Glycemic Status, and Postoperative Outcomes in General Surgery.&#10;&#10;JAMA surgery (2026), doi:10.1001/jamasurg.2025.4706&#10;&#10;IMPORTANCE: Dysglycemia is increasingly recognized as a major contributor to adverse surgical outcomes. However, the clinical utility of preoperative hemoglobin A1C (HbA1c) screening in general surgery remains unclear.&#10;&#10;OBJECTIVE: To determine whether elevated HbA1c is associated with increased 30-day postoperative complications, readmissions, and mortality in patients undergoing general surgery procedures.&#10;&#10;DESIGN, SETTING, AND PARTICIPANTS: This retrospective cohort study used the American College of Surgeons National Surgical Quality Improvement Program database from 2021 to 2023. Multivariable logistic regression was used to evaluate associations between glycemic status and complications within 30 days after surgery. The multicenter database comprised more than 700 participating institutions worldwide, predominantly in the US. Participants included adult patients (18 years or older) undergoing general surgery procedures with available HbA1c data.&#10;&#10;EXPOSURES: Glycemic status categorized by documented diabetes diagnosis and HbA1c levels, ranging from normoglycemia to very poor glycemic control. Patients without a diagnosis but HbA1c levels higher than 6.4% (to convert to proportion of total hemoglobin, multiply by 0.01) were considered to have undiagnosed diabetes.&#10;&#10;MAIN OUTCOMES AND MEASURES: Main outcomes included occurrence of any, surgical, and medical complications, as well as readmissions, reoperations, and mortality within 30 days after surgery.&#10;&#10;RESULTS: Among 282 131 patients (mean [SD] age, 60 [15] years), 36% had diagnosed diabetes, whereas 6.4% had HbA1c values in the diabetes range but no diagnosis. In those patients with diabetes, risk of any complication increased progressively from near normal (HbA1c level &lt;6.0%; odds ratio [OR], 1.06; 95% CI, 1.00-1.11) to very poor glycemic control (HbA1c level &gt;9.0%; OR, 1.32; 95% CI, 1.25-1.39). Undiagnosed diabetes was also associated with higher risks of medical complications (OR, 1.11; 95% CI, 1.04-1.18) and mortality (OR, 1.24; 95% CI, 1.07-1.42).&#10;&#10;CONCLUSIONS AND RELEVANCE: Dysglycemia-both diagnosed and undiagnosed-is highly prevalent among general surgery patients and independently associated with increased risks of complications, readmissions, or mortality. A significant proportion of patients had HbA1c levels in the diabetes range, despite lacking a diabetes diagnosis. These findings support routine preoperative HbA1c screening and the adoption of individualized glycemic management strategies to optimize surgical risk assessment, reduce complications, and improve perioperative outcomes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:48:05+00:00" xmi:version="2.0">
+  <chunks charEnd="2763"/>
+  <entities type="LabTest" id="hba1c-greater-than-9-percent" mention="HbA1c level &gt;9.0%" confidence="0.95" sourceSpanStart="2000" sourceSpanEnd="2017">
+    <properties key="name" value="HbA1c &gt; 9.0%"/>
+    <properties key="abnormalThreshold" value="&gt; 9.0%"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-less-than-6-percent" mention="HbA1c level &lt;6.0%" confidence="0.95" sourceSpanStart="1908" sourceSpanEnd="1925">
+    <properties key="name" value="HbA1c &lt; 6.0%"/>
+    <properties key="abnormalThreshold" value="&lt; 6.0%"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="2061" sourceSpanEnd="2069">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="undiagnosed-diabetes" mention="Undiagnosed diabetes" confidence="0.95" sourceSpanStart="1432" sourceSpanEnd="1452">
+    <properties key="name" value="undiagnosed diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="any-complication" mention="any complication" confidence="0.9" sourceSpanStart="1849" sourceSpanEnd="1865">
+    <properties key="name" value="any complication"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="medical-complications" mention="medical complications" confidence="0.9" sourceSpanStart="2111" sourceSpanEnd="2132">
+    <properties key="name" value="medical complications"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.9" sourceSpanStart="2167" sourceSpanEnd="2176">
+    <properties key="name" value="mortality"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="hba1c-less-than-6-percent" targetType="Condition" targetId="diabetes" confidence="0.85" evidence="In those patients with diabetes, risk of any complication increased progressively from near normal (HbA1c level &lt;6.0%; odds ratio [OR], 1.06; 95% CI, 1.00-1.11) to very poor glycemic control (HbA1c level &gt;9.0%; OR, 1.32; 95% CI, 1.25-1.39)." sourceSpanStart="1808" sourceSpanEnd="2048"/>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="hba1c-greater-than-9-percent" targetType="Condition" targetId="diabetes" confidence="0.85" evidence="In those patients with diabetes, risk of any complication increased progressively from near normal (HbA1c level &lt;6.0%; odds ratio [OR], 1.06; 95% CI, 1.00-1.11) to very poor glycemic control (HbA1c level &gt;9.0%; OR, 1.32; 95% CI, 1.25-1.39)." sourceSpanStart="1808" sourceSpanEnd="2048"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="any-complication" confidence="0.9" evidence="In those patients with diabetes, risk of any complication increased progressively from near normal (HbA1c level &lt;6.0%; odds ratio [OR], 1.06; 95% CI, 1.00-1.11) to very poor glycemic control (HbA1c level &gt;9.0%; OR, 1.32; 95% CI, 1.25-1.39)." sourceSpanStart="1808" sourceSpanEnd="2048"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="undiagnosed-diabetes" targetType="ClinicalOutcome" targetId="medical-complications" confidence="0.95" evidence="Undiagnosed diabetes was also associated with higher risks of medical complications (OR, 1.11; 95% CI, 1.04-1.18) and mortality (OR, 1.24; 95% CI, 1.07-1.42)." sourceSpanStart="2049" sourceSpanEnd="2207"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="undiagnosed-diabetes" targetType="ClinicalOutcome" targetId="mortality" confidence="0.95" evidence="Undiagnosed diabetes was also associated with higher risks of medical complications (OR, 1.11; 95% CI, 1.04-1.18) and mortality (OR, 1.24; 95% CI, 1.07-1.42)." sourceSpanStart="2049" sourceSpanEnd="2207"/>
+</raw:RawExtractionResult>

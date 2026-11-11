@@ -1,0 +1,11 @@
+# PubMed 30763752: Posterior Cervical Decompression and Fusion: Assessing Risk Factors for Nonhome Discharge and the Impact of Disposition on Postdischarge Outcomes.
+
+World neurosurgery (2019), doi:10.1016/j.wneu.2019.01.214
+
+BACKGROUND: The purpose of this study was to identify predictors for postacute care facility discharge for patients undergoing posterior cervical decompression and fusion (PCDF) and to determine if discharge placement impacts postdischarge outcomes.
+
+METHODS: Patients undergoing PCDF from 2012 to 2015 were queried from the NSQIP database (n = 8743) and separated by discharge placement. Outcomes included nonhome discharge, unplanned 30-day readmission, and adverse events (AEs), both before and after discharge. Demographics and comorbidities were analyzed using bivariate analysis. Multivariate logistic regression was used to identify predictors for nonhome discharge, readmission, and severe AE after discharge.
+
+RESULTS: Patients with nonhome discharges were significantly older (67.4 vs. 58.6 years; P < 0.001), sicker (82% vs. 54% American Society of Anesthesiologists >2; P < 0.001), and more functionally dependent (16% vs. 3.4%; P < 0.001), with a greater comorbidity burden. Patients with PCDF had an increased likelihood of nonhome discharge if they had a dependent functional status (odds ratio [OR], 2.99; 95% confidence interval [CI], 2.33-3.82; P < 0.001), diabetes (OR, 1.32; 95% CI, 1.13-1.55; P = 0.0007), and an American Society of Anesthesiologists >2 (OR, 1.75; 95% CI, 1.5-2.05; P < 0.001), as well as if they were older (OR, 1.06; 95% CI, 1.05-1.06; P < 0.001) and female (OR, 1.31; 95% CI, 1.14-1.5; P = 0.0002). Patients with PCDF with nonhome discharges had an increased likelihood of having a severe postdischarge AE (OR, 1.71; 95% CI, 1.26-2.33; P = 0.0006) and an unplanned readmission (OR, 1.45; 95% CI, 1.15-1.82; P = 0.002).
+
+CONCLUSIONS: Results of this cross-sectional study suggest that patients with PCDF discharged to a postacute care facility have a higher likelihood of having a severe AE after discharge as well as a higher likelihood of being readmitted.

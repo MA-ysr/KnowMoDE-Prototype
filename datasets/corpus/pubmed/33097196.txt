@@ -1,0 +1,11 @@
+# PubMed 33097196: Diabetic Foot Infection and Select Comorbidities Drive Readmissions in Outpatient Parenteral Antimicrobial Therapy.
+
+The American journal of the medical sciences (2021), doi:10.1016/j.amjms.2020.08.027
+
+BACKGROUND: Outpatient parenteral antimicrobial therapy (OPAT) facilitates early patient discharge, but readmissions prior to completion of therapy may offset its advantages. The objective of this study was to evaluate unplanned readmissions of patients undergoing OPAT at our institution and to identify risk factors. We hypothesized that host factors were most relevant.
+
+METHODS: We retrospectively identified all patients discharged to receive OPAT during 2017 who experienced at least one unplanned readmission to the hospital prior to its completion. We determined the proportion of patients readmitted, and the causes for readmission. Using a control group, we identified risk factors through multivariate logistic regression analysis.
+
+RESULTS: Out of 684 patients, 17% had an unplanned readmission while receiving OPAT. Causes included worsening infection in 18%, venous access problems in 11%, acute events unrelated to infection in 19%, treatment intolerance in 19%, progression of underlying comorbidity in 20%, and social and other problems in 13%. In multivariate analysis diabetic foot infection (OR 3.24; 95%CI 1.38-8.31; p = 0.01), the presence of chronic kidney disease, decubitus ulcer or heart failure (OR 2.65; 95% CI 1.51-4.70; p < 0.001), and narcotics prescribed at discharge (OR 1.93; 95% CI 1.06-3.60; p = 0.049) were independent risk factors for readmission.
+
+CONCLUSIONS: Unplanned hospital readmissions were frequent and due to very heterogeneous causes. Diabetic foot infection, selected comorbidities, and discharge on opioids were identified as independent risk factors. In the efforts to decrease readmissions among patients receiving outpatient parenteral antimicrobial a focus on these high-risk groups is a priority.

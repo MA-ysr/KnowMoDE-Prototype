@@ -1,0 +1,7 @@
+{
+  "id": "M15_decision_class_misses_audience",
+  "family": "C4",
+  "expectedConstraint": "C4_DecisionClassCoversEveryAudience",
+  "mutatedFile": "decision-bindings.xmi",
+  "description": "LowReadmissionRisk no longer offers anything to the patient"
+}

@@ -1,0 +1,19 @@
+# PubMed 31680269: Routine glucose assessment in the emergency department for detecting unrecognised diabetes: a cluster randomised trial.
+
+The Medical journal of Australia (2019), doi:10.5694/mja2.50394
+
+OBJECTIVE: To determine whether routine blood glucose assessment of patients admitted to hospital from emergency departments (EDs) results in higher rates of new diagnoses of diabetes and documentation of follow-up plans.
+
+DESIGN, SETTING: Cluster randomised trial in 18 New South Wales public district and tertiary hospitals, 31 May 2011 - 31 December 2012; outcomes follow-up to 31 March 2016.
+
+PARTICIPANTS: Patients aged 18 years or more admitted to hospital from EDs.
+
+INTERVENTION: Routine blood glucose assessment at control and intervention hospitals; automatic requests for glycated haemoglobin (HbA1c ) assessment and notification of diabetes services about patients at intervention hospitals with blood glucose levels of 14 mmol/L or more.
+
+MAIN OUTCOME MEASURE: New diagnoses of diabetes and documented follow-up plans for patients with admission blood glucose levels of 14 mmol/L or more.
+
+RESULTS: Blood glucose was measured in 133 837 patients admitted to hospital from an ED. The numbers of new diabetes diagnoses with documented follow-up plans for patients with blood glucose levels of 14 mmol/L or more were similar in intervention (83/506 patients, 16%) and control hospitals (73/278, 26%; adjusted odds ratio [aOR], 0.83; 95% CI 0.42-1.7; P = 0.61), as were new diabetes diagnoses with or without plans (intervention, 157/506, 31%; control, 86/278, 31%; aOR, 1.51; 95% CI, 0.83-2.80; P = 0.18). 30-day re-admission (31% v 22%; aOR, 1.34; 95% CI, 0.86-2.09; P = 0.21) and post-hospital mortality rates (24% v 22%; aOR, 1.07; 95% CI, 0.74-1.55; P = 0.72) were also similar for patients in intervention and control hospitals.
+
+CONCLUSION: Glucose and HbA1c screening of patients admitted to hospital from EDs does not alone increase detection of previously unidentified diabetes. Adequate resourcing and effective management pathways for patients with newly detected hyperglycaemia and diabetes are needed.
+
+TRIAL REGISTRATION: Australian New Zealand Clinical Trials Registry, ACTRN12611001007921.

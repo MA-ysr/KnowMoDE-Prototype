@@ -1,0 +1,11 @@
+# PubMed 34363511: Readmission, healthcare consumption, and mortality in Clostridioides difficile infection hospitalizations: a nationwide cohort study.
+
+International journal of colorectal disease (2021), doi:10.1007/s00384-021-04001-w
+
+OBJECTIVE: Despite being the most common healthcare-related infection in the US, nationwide data on readmission, healthcare consumption, and mortality in Clostridioides difficile infection (CDI) remain limited. We examined these outcomes in a US-based cohort of patients with CDI.
+
+METHODS: We queried the 2017 Nationwide Readmission Database using ICD-10-CM codes to identify all adult patients admitted with a principal diagnosis of CDI. Primary outcomes were 30- and 90-day readmission rates. Secondary outcomes included mortality rates and healthcare consumption.
+
+RESULTS: Of the 83,865 patients discharged from an index hospitalization for CDI, 22.37% were readmitted within 30 days, and an additional 15.01% were readmitted within 90 days. Recurrent CDI was responsible for more than 30% of readmissions at both 30 and 90 days. Compared to the index hospitalization, readmissions were characterized by higher mortality (1.41% index vs. 4.86% 30-day vs. 4.40% 90-day) and increased hospital length of stay and charges. Medicaid insurance (HR 1.16), cirrhosis (HR 1.31), Type 1 diabetes mellitus (HR 1.38), and end-stage renal disease (HR 1.36) were independently associated with 30-day readmission (all p < 0.01), with similar findings in 90-day readmissions.
+
+CONCLUSIONS: In a large cohort of patients hospitalized for CDI, we found that approximately 1 in 5 were readmitted within 30-days, and more than 1 in 3 within 90-days. Readmission was characterized by increased mortality and greater healthcare consumption. Additionally, we found independent associations for readmission that may help identify patients at high-risk. Prospective investigation is needed to identify means to reduce the healthcare consumption and mortality in CDI.

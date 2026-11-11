@@ -1,0 +1,15 @@
+# PubMed 33306614: Predictors of Readmission and Prolonged Length of Stay After Cervical Disc Arthroplasty.
+
+Spine (2021), doi:10.1097/BRS.0000000000003839
+
+STUDY DESIGN: Retrospective cohort study.
+
+OBJECTIVE: The aim of the study was to assess which factors increase risk of readmission within 30 days of surgery or prolonged length of stay (LOS) (≥2 days) after cervical disc arthroplasty (CDA).
+
+SUMMARY OF BACKGROUND DATA: Several studies have shown noninferiority at mid- and long-term outcomes after cervical disc arthroplasty (CDA) compared to anterior cervical discectomy and fusion ACDF, but few have evaluated short-term outcomes regarding risk of readmission or prolonged LOS after surgery.
+
+METHODS: Demographics, comorbidities, operative details, postoperative complications, and perioperative outcomes were collected for patients undergoing single level CDA in the National Surgical Quality Improvement Program (NSQIP) database. Patients with prolonged LOS, defined as >2 days, and readmission within 30 days following CDA were identified. Univariable and multivariable logistic regression models were used to identify risk factors for prolonged LOS and readmission.
+
+RESULTS: A total of 3221 patients underwent single level CDA. Average age was 45.6 years (range 19-82) and 53% of patients were male. A total of 472 (14.7%) experienced a prolonged LOS and 36 (1.1%) patients were readmitted within 30 days following surgery. Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P < 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02). Female sex (OR = 1.76, P < 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P < 0.01), and operative time (OR = 1.01, P < 0.001) were significantly associated with prolonged LOS.
+
+CONCLUSION: From a nationwide database analysis of 3221 patients, wound complications are predictors of both prolonged LOS and readmission. Patient comorbidities, including diabetes, higher ASA classification, female sex, and higher BMI also increased risk of prolonged LOS or readmission.Level of Evidence: 3.

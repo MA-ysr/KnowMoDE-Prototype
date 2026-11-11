@@ -1,0 +1,8 @@
+{% if decision.positive %}Your care team's risk tool estimates that you have a higher chance than similar patients of needing to come back to the hospital within 30 days. The main reasons, according to published medical sources:{% else %}Your care team's risk tool estimates that your chance of needing to come back to the hospital within 30 days is not higher than for similar patients. The factors it weighed most, according to published medical sources:{% endif %}
+
+{% for factor, group in (facts | groupby('factor'))[:audience.budget.maxFacts] %}
+- {{ (group[0].factorLabel or factor) | plain }}: linked to a higher chance of returning to the hospital (source: {{ group[0].sourceDocument | source_title }}).
+{% else %}
+- The published sources available to the tool do not describe the factors behind this estimate.
+{% endfor %}
+This is not a diagnosis. Your doctor or nurse can explain what these factors mean for you and what you can do about them.

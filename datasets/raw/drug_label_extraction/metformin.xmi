@@ -1,0 +1,855 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/metformin.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22metformin%22" sourceSha256="6ead7da0bcee46329d04b9a2b930a83107e5e9e20421b116729f99f2bcf17256" sourceText="# FDA prescribing information: metformin&#10;&#10;Generic name: SITAGLIPTIN AND METFORMIN HYDROCHLORIDE&#10;Brand name: ZITUVIMET&#10;Pharmacologic class: Dipeptidyl Peptidase 4 Inhibitor [EPC]&#10;Label set id: 0098dec4-f0e5-45d5-8aa4-5d0faf9ab142, effective 20260812&#10;&#10;## Boxed warning&#10;&#10;WARNING: LACTIC ACIDOSIS WARNING: LACTIC ACIDOSIS See full prescribing information for complete boxed warning . Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias. Symptoms included malaise, myalgias, respiratory distress, somnolence, and abdominal pain. Laboratory abnormalities included elevated blood lactate levels, anion gap acidosis, increased lactate/pyruvate ratio, and metformin plasma levels generally &gt;5 mcg/mL. ( 5.1 ) Risk factors include renal impairment, concomitant use of certain drugs, age ≥65 years old, radiological studies with contrast, surgery and other procedures, hypoxic states, excessive alcohol intake, hepatic impairment, mitochondrial diseases. Steps to reduce the risk of and manage metformin-associated lactic acidosis in these high-risk groups are provided in the Full Prescribing Information. ( 5.1 ) If lactic acidosis is suspected, discontinue ZITUVIMET and institute general supportive measures in a hospital setting. Prompt hemodialysis is recommended. ( 5.1 ) Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias. The onset of metformin-associated lactic acidosis is often subtle, accompanied only by nonspecific symptoms such as malaise, myalgias, respiratory distress, somnolence, and abdominal pain. Metformin-associated lactic acidosis was characterized by elevated blood lactate levels (&gt;5 mmol/Liter), anion gap acidosis (without evidence of ketonuria or ketonemia), an increased lactate/pyruvate ratio, and metformin plasma levels generally &gt;5 mcg/mL [see Warnings and Precautions ( 5.1 )] . Risk factors for metformin-associated lactic acidosis include renal impairment, concomitant use of certain drugs (e.g., carbonic anhydrase inhibitors such as topiramate), age 65 years old or greater, having a radiological study with contrast, surgery and other procedures, hypoxic states (e.g., acute congestive heart failure), excessive alcohol intake, hepatic impairment and mitochondrial diseases [see Warnings and Precautions (5.1)] . Steps to reduce the risk of and manage metformin-associated lactic acidosis in these high risk groups are provided in the full prescribing information [see Dosage and Administration ( 2.2 )&gt;, Contraindications ( 4 ), Warnings and Precautions ( 5.1 ), Drug Interactions ( 7 ), and Use in Specific Populations ( 8.6 , 8.7 )] . If metformin-associated lactic acidosis is suspected, immediately discontinue ZITUVIMET and institute general supportive measures in a hospital setting. Prompt hemodialysis is recommended [see Warnings and Precautions ( 5.1 )] .&#10;&#10;## Indications and usage&#10;&#10;1 INDICATIONS AND USAGE ZITUVIMET is a combination of sitagliptin, a dipeptidyl peptidase-4 (DPP-4) inhibitor, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. ( 1 ) Limitations of Use: ZITUVIMET is not recommended in patients with type 1 diabetes mellitus. ( 1 ) ZITUVIMET has not been studied in patients with a history of pancreatitis. ( 1 ) ZITUVIMET is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. Limitations of Use ZITUVIMET is not recommended in patients with type 1 diabetes mellitus. ZITUVIMET has not been studied in patients with a history of pancreatitis. It is unknown whether patients with a history of pancreatitis are at increased risk for the development of pancreatitis while using ZITUVIMET. [see Warnings and Precautions ( 5.2 )].&#10;&#10;## Contraindications&#10;&#10;4 CONTRAINDICATIONS Severe renal impairment: (eGFR below 30 mL/min/1.73 m 2 ) ( 4) Metabolic acidosis, including diabetic ketoacidosis. ( 4 ) History of a serious hypersensitivity reaction to ZITUVIMET, sitagliptin, or metformin, such as anaphylaxis or angioedema. (4) ZITUVIMET is contraindicated in patients with: Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) [see Warnings and Precautions ( 5.1 )]. Acute or chronic metabolic acidosis, including diabetic ketoacidosis. History of a serious hypersensitivity reaction to sitagliptin, metformin, or any of the excipients in ZITUVIMET. Serious hypersensitivity reactions including anaphylaxis or angioedema have been reported. [see Warnings and Precautions ( 5.7 ) and Adverse Reactions ( 6.2 )].&#10;&#10;## Warnings and precautions&#10;&#10;5 WARNINGS AND PRECAUTIONS Lactic Acidosis: See boxed warning . ( 5.1 ) Pancreatitis: There have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis. If pancreatitis is suspected, promptly discontinue ZITUVIMET. ( 5.2 ) Heart Failure : Has been observed with two other members of the DPP-4 inhibitor class. Consider risks and benefits of ZITUVIMET in patients who have known risk factors for heart failure. Monitor patients for signs and symptoms. ( 5.3 ) Acute Renal Failure: Has been reported postmarketing, sometimes requiring dialysis. Before initiating ZITUVIMET and at least annually thereafter, assess renal function. ( 5.4 ) Vitamin B 12 Deficiency: Metformin may lower vitamin B 12 levels. Measure hematologic parameters annually and vitamin B 12 at 2 to 3 year intervals and manage any abnormalities. ( 5.5 ) Hypoglycemia with Concomitant Use with Insulin or Insulin Secretagogues: Increased risk of hypoglycemia when used in combination with insulin and/or an insulin secretagogue. A lower dose of insulin or insulin secretagogue may be required. ( 5.6 ) Hypersensitivity Reactions: There have been postmarketing reports of serious allergic and hypersensitivity reactions in patients treated with sitagliptin such as anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome. Promptly stop ZITUVIMET, assess for other potential causes, institute appropriate monitoring and treatment. ( 5.7 ) Severe and Disabling Arthralgia: Has been reported in patients taking DPP-4 inhibitors. Consider as a possible cause for severe joint pain and discontinue drug if appropriate. ( 5.8 ) Bullous Pemphigoid: There have been postmarketing reports requiring hospitalization in patients taking DPP-4 inhibitors. Tell patients to report development of blisters or erosions. If bullous pemphigoid is suspected, discontinue ZITUVIMET. ( 5.9 ) 5.1 Lactic Acidosis There have been postmarketing cases of metformin-associated lactic acidosis, including fatal cases. These cases had a subtle onset and were accompanied by nonspecific symptoms such as malaise, myalgias, abdominal pain, respiratory distress, or increased somnolence; however, hypothermia, hypotension and resistant bradyarrhythmias have occurred with severe acidosis. Metformin-associated lactic acidosis was characterized by elevated blood lactate concentrations (&gt;5 mmol/Liter), anion gap acidosis (without evidence of ketonuria or ketonemia), and an increased lactate/pyruvate ratio; metformin plasma levels were generally &gt;5 mcg/mL. Metformin decreases liver uptake of lactate increasing lactate blood levels which may increase the risk of lactic acidosis, especially in patients at risk. If metformin-associated lactic acidosis is suspected, general supportive measures should be instituted promptly in a hospital setting, along with immediate discontinuation of ZITUVIMET. In ZITUVIMET treated patients with a diagnosis or strong suspicion of lactic acidosis, prompt hemodialysis is recommended to correct the acidosis and remove accumulated metformin (metformin HCl is dialyzable, with a clearance of up to 170 mL/min under good hemodynamic conditions). Hemodialysis has often resulted in reversal of symptoms and recovery. Educate patients and their families about the symptoms of lactic acidosis and if these symptoms occur instruct them to discontinue ZITUVIMET and report these symptoms to their health care provider. For each of the known and possible risk factors for metformin-associated lactic acidosis, recommendations to reduce the risk of and manage metformin-associated lactic acidosis are provided below: Renal Impairment The postmarketing metformin-associated lactic acidosis cases primarily occurred in patients with significant renal impairment. The risk of metformin accumulation and metformin-associated lactic acidosis increases with the severity of renal impairment because metformin is substantially excreted by the kidney. Clinical recommendations based upon the patient's renal function include [see Dosage and Administration ( 2.2 ) and Clinical Pharmacology ( 12.3 )]: Before initiating ZITUVIMET, obtain an estimated glomerular filtration rate (eGFR). ZITUVIMET is contraindicated in patients with an eGFR below 30 mL/min/1.73 m 2 [see Contraindications ( 4 )]. ZITUVIMET is not recommended in patients with an eGFR between 30 and less than 45 mL/min/1.73 m 2 because these patients require a lower dosage of sitagliptin than what is available in the fixed combination ZITUVIMET product. Obtain an eGFR at least annually in all patients taking ZITUVIMET. In patients at increased risk for the development of renal impairment (e.g., the elderly), renal function should be assessed more frequently. Drug Interactions The concomitant use of ZITUVIMET with specific drugs may increase the risk of metformin-associated lactic acidosis: those that impair renal function, result in significant hemodynamic change, interfere with acid-base balance or increase metformin accumulation [see Drug Interactions ( 7 )]. Therefore, consider more frequent monitoring of patients. Age 65 or Greater The risk of metformin-associated lactic acidosis increases with the patient's age because elderly patients have a greater likelihood of having hepatic, renal, or cardiac impairment than younger patients. Assess renal function more frequently in elderly patients [see Use in Specific Populations ( 8.5 )]. Radiological Studies with Contrast Administration of intravascular iodinated contrast agents in metformin-treated patients has led to an acute decrease in renal function and the occurrence of lactic acidosis. Stop ZITUVIMET at the time of, or prior to, an iodinated contrast imaging procedure in patients with an eGFR between 30 and 60 mL/min/1.73 m 2 ; in patients with a history of hepatic impairment, alcoholism, or heart failure; or in patients who will be administered intra-arterial iodinated contrast. Re-evaluate eGFR 48 hours after the imaging procedure, and restart ZITUVIMET if renal function is stable. Surgery and Other Procedures Withholding of food and fluids during surgical or other procedures may increase the risk for volume depletion, hypotension and renal impairment. ZITUVIMET should be temporarily discontinued while patients have restricted food and fluid intake. Hypoxic States Several of the postmarketing cases of metformin-associated lactic acidosis occurred in the setting of acute congestive heart failure (particularly when accompanied by hypoperfusion and hypoxemia). Cardiovascular collapse (shock), acute myocardial infarction, sepsis, and other conditions associated with hypoxemia have been associated with lactic acidosis and may also cause prerenal azotemia. When such events occur, discontinue ZITUVIMET. Excessive Alcohol Intake Alcohol potentiates the effect of metformin on lactate metabolism and this may increase the risk of metformin-associated lactic acidosis. Warn patients against excessive alcohol intake while receiving ZITUVIMET. Hepatic Impairment Patients with hepatic impairment have developed with cases of metformin-associated lactic acidosis. This may be due to impaired lactate clearance resulting in higher lactate blood levels. Therefore, avoid use of ZITUVIMET in patients with clinical or laboratory evidence of hepatic disease. Mitochondrial Diseases: Metformin may increase the risk of lactic acidosis in patients with mitochondrial diseases such as mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome and maternally inherited diabetes and deafness (MIDD). ZITUVIMET is not recommended in patients with mitochondrial diseases such as MELAS syndrome and MIDD. . If a patient taking ZITUVIMET develops elevated lactic acid levels (with or without accompanying neurologic signs and symptoms), discontinue ZITUVIMET. Depending on the clinical context, consider evaluating the patient for MELAS, MIDD, or other mitochondrial disease. 5.2 Pancreatitis There have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis, in patients taking ZITUVIMET. After initiation of ZITUVIMET, patients should be observed carefully for signs and symptoms of pancreatitis. If pancreatitis is suspected, sitagliptin should promptly be discontinued and appropriate management should be initiated. It is unknown whether patients with a history of pancreatitis are at increased risk for the development of pancreatitis while using ZITUVIMET. 5.3 Heart Failure An association between DPP-4 inhibitor treatment and heart failure has been observed in cardiovascular outcomes trials for two other members of the DPP-4 inhibitor class. These trials evaluated patients with type 2 diabetes mellitus and atherosclerotic cardiovascular disease. Consider the risks and benefits of ZITUVIMET prior to initiating treatment in patients at risk for heart failure, such as those with a prior history of heart failure and a history of renal impairment, and observe these patients for signs and symptoms of heart failure during therapy. Advise patients of the characteristic symptoms of heart failure and to immediately report such symptoms. If heart failure develops, evaluate and manage according to current standards of care and consider discontinuation of ZITUVIMET. 5.4 Acute Renal Failure There have been postmarketing reports of worsening renal function, including acute renal failure, sometimes requiring dialysis. Before initiation of therapy with ZITUVIMET and at least annually thereafter, renal function should be assessed. In patients in whom development of renal dysfunction is anticipated, particularly in elderly patients, renal function should be assessed more frequently and ZITUVIMET discontinued if evidence of renal impairment is present. ZITUVIMET is contraindicated in patients with severe renal impairment [see Contraindications ( 4 ) and Warnings and Precautions ( 5.1 )]. 5.5 Vitamin B12 Deficiency In controlled clinical trials of metformin of 29 weeks duration, a decrease to subnormal levels of previously normal serum vitamin B 12 levels was observed in approximately 7% of patients. Such decrease, possibly due to interference with B 12 absorption from the B 12 -intrinsic factor complex, may be associated with anemia but appears to be rapidly reversible with discontinuation of metformin or vitamin B 12 supplementation. Certain individuals (those with inadequate vitamin B 12 or calcium intake or absorption) appear to be predisposed to developing subnormal vitamin B 12 levels. Measure hematologic parameters on an annual basis and vitamin B 12 measurements at 2- to 3-year intervals in patients on ZITUVIMET and manage any abnormalities [see Adverse Reactions ( 6.1 )]. 5.6 Hypoglycemia with Concomitant Use with Insulin or Insulin Secretagogues ZITUVIMET may increase the risk of hypoglycemia when combined with insulin and/or an insulin secretagogue (e.g., sulfonylurea) [see Adverse Reactions ( 6 )]. A lower dose of insulin or insulin secretagogue may be required to minimize the risk of hypoglycemia when used in combination with ZITUVIMET [see Drug Interactions ( 7 )]. 5.7 Hypersensitivity Reactions There have been postmarketing reports of serious hypersensitivity reactions in patients treated with sitagliptin, one of the components of ZITUVIMET. These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome. Onset of these reactions occurred within the first 3 months after initiation of treatment with sitagliptin, with some reports occurring after the first dose. If a hypersensitivity reaction is suspected, discontinue ZITUVIMET, assess for other potential causes for the event, and institute alternative treatment for diabetes. [see Adverse Reactions ( 6.2 )]. Angioedema has also been reported with other DPP-4 inhibitors. Use caution in a patient with a history of angioedema with another DPP-4 inhibitor because it is unknown whether such patients will be predisposed to angioedema with ZITUVIMET. 5.8 Severe and Disabling Arthralgia There have been postmarketing reports of severe and disabling arthralgia in patients taking DPP-4 inhibitors. The time to onset of symptoms following initiation of drug therapy varied from one day to years. Patients experienced relief of symptoms upon discontinuation of the medication. A subset of patients experienced a recurrence of symptoms when restarting the same drug or a different DPP-4 inhibitor. Consider DPP-4 inhibitors as a possible cause for severe joint pain and discontinue drug if appropriate. 5.9 Bullous Pemphigoid Postmarketing cases of bullous pemphigoid requiring hospitalization have been reported with DPP- 4 inhibitor use. In reported cases, patients typically recovered with topical or systemic immunosuppressive treatment and discontinuation of the DPP-4 inhibitor. Tell patients to report development of blisters or erosions while receiving ZITUVIMET. If bullous pemphigoid is suspected, ZITUVIMET should be discontinued and referral to a dermatologist should be considered for diagnosis and appropriate treatment.&#10;&#10;## Adverse reactions&#10;&#10;6 ADVERSE REACTIONS The following adverse reactions are also discussed elsewhere in the prescribing information: Lactic Acidosis [see Warnings and Precautions ( 5.1 )] Pancreatitis [see Warnings and Precautions ( 5.2 )] Heart Failure [see Warnings and Precautions ( 5.3 )] Acute Renal Failure [see Warnings and Precautions ( 5.4 )] Vitamin B12 Deficiency [see Warnings and Precautions ( 5.5 )] Hypoglycemia with Concomitant Use with Insulin or Insulin Secretagogues [see Warnings and Precautions ( 5.6 )] Hypersensitivity Reactions [see Warnings and Precautions ( 5.7 )] Severe and Disabling Arthralgia [see Warnings and Precautions ( 5.8 )] Bullous Pemphigoid [see Warnings and Precautions ( 5.9 )] Most common adverse reactions (incidence ≥5% of patients simultaneously started on sitagliptin and metformin and more commonly than in patients treated with placebo were diarrhea, upper respiratory tract infection, and headache. ( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Zydus Pharmaceuticals (USA) Inc. at 1-877-993-8779 or FDA at 1-800-FDA-1088 or www.fda.gov/medwatch. 6.1 Clinical Trials Experience Because clinical trials are conducted under widely varying conditions, adverse reaction rates observed in the clinical trials of a drug cannot be directly compared to rates in the clinical trials of another drug and may not reflect the rates observed in practice. Common Adverse Reactions Sitagliptin and Metformin Coadministration in Patients with Type 2 Diabetes Mellitus Inadequately Controlled on Diet and Exercise Table 1 summarizes the most common (≥5% of patients) adverse reactions reported in a 24-week placebo-controlled factorial trial in which sitagliptin and metformin were coadministered to patients with type 2 diabetes mellitus inadequately controlled on diet and exercise. Table 1: Sitagliptin and Metformin Coadministered to Patients with Type 2 Diabetes Mellitus Inadequately Controlled on Diet and Exercise: Adverse Reactions Reported in ≥5% of Patients Receiving Combination Therapy (and Greater than in Patients Receiving Placebo) Intent-to-treat population. Number of Patients (%) Placebo Sitagliptin 100 mg once daily Metformin HCl 500 mg/ Metformin HCl 1,000 mg twice daily Data pooled for the patients given the lower and higher doses of metformin. Sitagliptin 50 mg twice daily + Metformin HCl 500 mg/ Metformin HCl 1,000 mg twice daily N = 176 N = 179 N = 364 N = 372 Diarrhea 7 (4) 5 (2.8) 28 (7.7) 28 (7.5) Upper Respiratory Tract Infection 9 (5.1) 8 (4.5) 19 (5.2) 23 (6.2) Headache 5 (2.8) 2 (1.1) 14 (3.8) 22 (5.9) Sitagliptin Add-on Therapy in Patients with Type 2 Diabetes Mellitus Inadequately Controlled on Metformin Alone In a 24-week placebo-controlled trial of sitagliptin 100 mg administered once daily added to a twice daily metformin regimen, there were no adverse reactions in ≥5% of patients and more commonly than in patients given placebo. Discontinuation of therapy due to clinical adverse reactions was similar to the placebo treatment group (sitagliptin and metformin, 1.9%; placebo and metformin, 2.5%). Gastrointestinal Adverse Reactions The incidences of pre-selected gastrointestinal adverse experiences in patients treated with sitagliptin and metformin were similar to those reported for patients treated with metformin alone. See Table 2. Table 2: Pre-selected Gastrointestinal Adverse Reactions Reported in Patients with Type 2 Diabetes Mellitus Receiving Sitagliptin and Metformin Number of Patients (%) Trial of Sitagliptin and Metformin in Patients Inadequately Controlled on Diet and Exercise Trial of Sitagliptin Add-on in Patients Inadequately Controlled on Metformin Alone Placebo Sitagliptin 100 mg once daily Metformin HCl 500 mg/ Metformin HCl 1,000 mg twice daily Data pooled for the patients given the lower and higher doses of metformin. Sitagliptin 50 mg twice daily + Metformin HCl 500 mg/ Metformin HCl 1,000 mg twice daily Placebo and Metformin HCl ≥1,500 mg daily Sitagliptin 100 mg once daily and Metformin HCl ≥1,500 mg daily N = 176 N = 179 N = 364 N = 372 N = 237 N = 464 Diarrhea 7 (4) 5 (2.8) 28 (7.7) 28 (7.5) 6 (2.5) 11 (2.4) Nausea 2 (1.1) 2 (1.1) 20 (5.5) 18 (4.8) 2 (0.8) 6 (1.3) Vomiting 1 (0.6) 0 (0) 2 (0.5) 8 (2.2) 2 (0.8) 5 (1.1) Abdominal Pain Abdominal discomfort was included in the analysis of abdominal pain in the trial of initial therapy. 4 (2.3) 6 (3.4) 14 (3.8) 11 (3) 9 (3.8) 10 (2.2) Sitagliptin in Combination with Metformin and Glimepiride In a 24-week placebo-controlled trial of sitagliptin 100 mg as add-on therapy in patients with type 2 diabetes mellitus inadequately controlled on metformin and glimepiride (sitagliptin, N=116; placebo, N=113), the adverse reactions reported in ≥5% of patients treated with sitagliptin and more commonly than in patients treated with placebo were: hypoglycemia ( see Table 3) and headache (6.9%, 2.7%). Sitagliptin in Combination with Metformin and Rosiglitazone In a placebo-controlled trial of sitagliptin 100 mg as add-on therapy in patients with type 2 diabetes mellitus inadequately controlled on metformin and rosiglitazone (sitagliptin, N=181; placebo, N=97), the adverse reactions reported through Week 18 in ≥5% of patients treated with sitagliptin and more commonly than in patients treated with placebo were: upper respiratory tract infection (sitagliptin, 5.5%; placebo, 5.2%) and nasopharyngitis (6.1%, 4.1%). Through Week 54, the adverse reactions reported in ≥5% of patients treated with sitagliptin and more commonly than in patients treated with placebo were: upper respiratory tract infection (sitagliptin, 15.5%; placebo, 6.2%), nasopharyngitis (11%, 9.3%), peripheral edema (8.3%, 5.2%), and headache (5.5%, 4.1%). Sitagliptin in Combination with Metformin and Insulin In a 24-week placebo-controlled trial of sitagliptin 100 mg as add-on therapy in patients with type 2 diabetes mellitus inadequately controlled on metformin and insulin (sitagliptin, N=229; placebo, N=233), the only adverse reaction reported in ≥5% of patients treated with sitagliptin and more commonly than in patients treated with placebo was hypoglycemia (Table 3). Hypoglycemia In the above trials (N=5), adverse reactions of hypoglycemia were based on all reports of symptomatic hypoglycemia; a concurrent glucose measurement was not required although most (77%) reports of hypoglycemia were accompanied by a blood glucose measurement ≤70 mg/dL. When the combination of sitagliptin and metformin was coadministered with a sulfonylurea or with insulin, the percentage of patients reporting at least one adverse reaction of hypoglycemia was higher than that observed with placebo and metformin coadministered with a sulfonylurea or with insulin (Table 3). Table 3: Incidence and Rate of Hypoglycemia Adverse reactions of hypoglycemia were based on all reports of symptomatic hypoglycemia; a concurrent glucose measurement was not required: Intent-to-treat population. in Placebo-Controlled Clinical Trials of Sitagliptin in Combination with Metformin Coadministered with Glimepiride or Insulin Add-On to Glimepiride + Metformin (24 weeks) Sitagliptin 100 mg + Metformin + Glimepiride Placebo + Metformin + Glimepiride N = 116 N = 113 Overall (%) 19 (16.4) 1 (0.9) Rate (episodes/patient-year) Based on total number of events (i.e., a single patient may have had multiple events). 0.82 0.02 Severe (%) Severe events of hypoglycemia were defined as those events requiring medical assistance or exhibiting depressed level/loss of consciousness or seizure. 0 (0) 0 (0) Add-On to Insulin + Metformin (24 weeks) Sitagliptin 100 mg + Metformin + Insulin Placebo + Metformin + Insulin N = 229 N = 233 Overall (%) 35 (15.3) 19 (8.2) Rate (episodes/patient-year) 0.98 0.61 Severe (%) 1 (0.4) 1 (0.4) The overall incidence of reported adverse reactions of hypoglycemia in patients with type 2 diabetes mellitus inadequately controlled on diet and exercise was 0.6% in patients given placebo, 0.6% in patients given sitagliptin alone, 0.8% in patients given metformin alone, and 1.6% in patients given sitagliptin in combination with metformin. In patients with type 2 diabetes mellitus inadequately controlled on metformin alone, the overall incidence of adverse reactions of hypoglycemia was 1.3% in patients given add-on sitagliptin and 2.1% in patients given add-on placebo. In the trial of sitagliptin and add-on combination therapy with metformin and rosiglitazone, the overall incidence of hypoglycemia was 2.2% in patients given add-on sitagliptin and 0% in patients given add-on placebo through Week 18. Through Week 54, the overall incidence of hypoglycemia was 3.9% in patients given add-on sitagliptin and 1% in patients given add-on placebo. In an additional, 30-week placebo-controlled, trial of patients with type 2 diabetes mellitus inadequately controlled with metformin comparing the maintenance of sitagliptin 100 mg versus withdrawal of sitagliptin when initiating basal insulin therapy, the event rate and incidence of documented symptomatic hypoglycemia (blood glucose measurement ≤70 mg/dL) did not differ between the sitagliptin and placebo groups. Vital Signs and Electrocardiograms With the combination of sitagliptin and metformin, no clinically meaningful changes in vital signs or in ECG (including in QTc interval) were observed. Pancreatitis In a pooled analysis of 19 double-blind clinical trials that included data from 10,246 patients randomized to receive sitagliptin 100 mg/day (N=5,429) or corresponding (active or placebo) control (N=4,817), the incidence of acute pancreatitis was 0.1 per 100 patient-years in each group (4 patients with an event in 4,708 patient-years for sitagliptin and 4 patients with an event in 3,942 patient-years for control). Sitagliptin The most common adverse experience in sitagliptin monotherapy reported in ≥5% of patients and more commonly than in patients given placebo was nasopharyngitis. Metformin The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache. Laboratory Tests Sitagliptin The incidence of laboratory adverse reactions was similar in patients treated with sitagliptin and metformin (7.6%) compared to patients treated with placebo and metformin (8.7%). In most but not all trials, a small increase in white blood cell count (approximately 200 cells/microL difference in WBC vs placebo; mean baseline WBC approximately 6,600 cells/microL) was observed due to a small increase in neutrophils. This change in laboratory parameters is not considered to be clinically relevant. Metformin In controlled clinical trials of metformin of 29 weeks duration, a decrease to subnormal levels of previously normal serum vitamin B 12 levels, without clinical manifestations, was observed in approximately 7% of patients. Such decrease, possibly due to interference with B 12 absorption from the B 12 -intrinsic factor complex, is, however, very rarely associated with anemia and appears to be rapidly reversible with discontinuation of metformin or vitamin B 12 supplementation. 6.2 Postmarketing Experience Additional adverse reactions have been identified during postapproval use of ZITUVIMET, sitagliptin, or metformin. Because these reactions are reported voluntarily from a population of uncertain size, it is generally not possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Skin and subcutaneous tissue disorders: hypersensitivity reactions including anaphylaxis, angioedema, rash, urticaria, cutaneous vasculitis, and exfoliative skin conditions including Stevens-Johnson syndrome; bullous pemphigoid; Respiratory, thoracic and mediastinal disorders: upper respiratory tract infection; Hepatobiliary disorders: hepatic enzyme elevations; cholestatic, hepatocellular, and mixed hepatocellular liver injury; Gastrointestinal disorders: acute pancreatitis, including fatal and non-fatal hemorrhagic and necrotizing pancreatitis [see Indications and Usage (1)]; constipation; vomiting; mouth ulceration; stomatitis; Renal and urinary disorders: worsening renal function, including acute renal failure (sometimes requiring dialysis) and tubulointerstitial nephritis; Musculoskeletal and connective tissue disorders: severe and disabling arthralgia; myalgia; pain in extremity; back pain; pruritus; rhabdomyolysis; Nervous system disorders : headache.&#10;&#10;## Drug interactions&#10;&#10;7 DRUG INTERACTIONS Table 4 presents clinically significant drug interactions with ZITUVIMET: Table 4: Clinically Significant Drug Interactions with ZITUVIMET Carbonic Anhydrase Inhibitors Clinical Impact: Carbonic anhydrase inhibitors frequently cause a decrease in serum bicarbonate and induce non-anion gap, hyperchloremic metabolic acidosis. Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide. Drugs that Reduce Metformin Clearance Clinical Impact: Concomitant use of drugs that interfere with common renal tubular transport systems involved in the renal elimination of metformin (e.g., organic cationic transporter-2 [OCT 2 ] / multidrug and toxin extrusion [MATE] inhibitors) could increase systemic exposure to metformin and may increase the risk for lactic acidosis [see Clinical Pharmacology ( 12.3 )]. Intervention: Consider the benefits and risks of concomitant use with ZITUVIMET. Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine. Alcohol Clinical Impact: Alcohol is known to potentiate the effect of metformin on lactate metabolism. Intervention: Warn patients against alcohol intake while receiving ZITUVIMET. Insulin Secretagogues or Insulin Clinical Impact: Coadministration of ZITUVIMET with an insulin secretagogue (e.g., sulfonylurea) or insulin may increase the risk of hypoglycemia. Intervention: Patients receiving an insulin secretagogue or insulin may require lower doses of the insulin secretagogue or insulin. Drugs Affecting Glycemic Control Clinical Impact: Certain drugs tend to produce hyperglycemia and may lead to loss of glycemic control. Intervention: When such drugs are administered to a patient receiving ZITUVIMET, observe the patient closely for loss of blood glucose control. When such drugs are withdrawn from a patient receiving ZITUVIMET, observe the patient closely for hypoglycemia. Examples: Thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel blockers, and isoniazid. Carbonic anhydrase inhibitors may increase risk of lactic acidosis. Consider more frequent monitoring. ( 7 ) Drugs that reduce metformin clearance (such as ranolazine, vandetanib, dolutegravir, and cimetidine) may increase the accumulation of metformin. Consider the benefits and risks of concomitant use. ( 7 ) Alcohol can potentiate the effect of metformin on lactate metabolism. Warn patients against excessive alcohol intake. ( 7 )&#10;&#10;## Use in specific populations&#10;&#10;8 USE IN SPECIFIC POPULATIONS Females and Males of Reproductive Potential: Advise premenopausal females of the potential for an unintended pregnancy. ( 8.3 ) Geriatric Use: Assess renal function more frequently. ( 8.5 ) Hepatic Impairment: Avoid use in patients with hepatic impairment. ( 8.7 ) 8.1 Pregnancy Risk Summary Available data with ZITUVIMET and sitagliptin use in pregnant women are not sufficient to inform a ZITUVIMET-associated or sitagliptin-associated risk for major birth defects and miscarriage. Published studies with metformin use during pregnancy have not reported a clear association with metformin and major birth defect or miscarriage risk [see Data]. There are risks to the mother and fetus associated with poorly controlled diabetes in pregnancy [see Clinical Considerations]. No adverse developmental effects were observed when sitagliptin was administered to pregnant rats and rabbits during organogenesis at oral doses up to 30-times and 20-times, respectively, the 100 mg clinical dose, based on AUC. No adverse developmental effects were observed when metformin was administered to pregnant Sprague Dawley rats and rabbits during organogenesis at doses up to 2- and 6-times, respectively, a 2,000 mg clinical dose, based on body surface area [see Data]. The estimated background risk of major birth defects is 6 to 10% in women with pre-gestational diabetes with a hemoglobin A1c (A1C) &gt;7% and has been reported to be as high as 20% to 25% in women with a A1C &gt;10%. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2% to 4% and 15% to 20% respectively. Clinical Considerations Disease-Associated Maternal and/or Embryo/Fetal Risk Poorly controlled diabetes in pregnancy increases the maternal risk for diabetic ketoacidosis, preeclampsia, spontaneous abortions, preterm delivery, and delivery complications. Poorly controlled diabetes increases the fetal risk for major birth defects, still birth, and macrosomia related morbidity. Data Human Data Published data from post-marketing studies do not report a clear association with metformin and major birth defects, miscarriage, or adverse maternal or fetal outcomes when metformin is used during pregnancy. However, these studies cannot definitely establish the absence of any risk because of methodological limitations, including small sample size and inconsistent comparator groups. Animal Data Sitagliptin and Metformin No animal reproduction studies were conducted with the coadministration of sitagliptin and metformin. Sitagliptin In embryo-fetal development studies, sitagliptin administered to pregnant rats and rabbits during organogenesis (gestation day 6 to 20) did not adversely affect developmental outcomes at oral doses up to 250 mg/kg (30-times the 100 mg clinical dose) and 125 mg/kg (20-times the 100 mg clinical dose), respectively, based on AUC. Higher doses in rats associated with maternal toxicity increased the incidence of rib malformations in offspring at 1,000 mg/kg, or approximately 100-times the clinical dose, based on AUC. Placental transfer of sitagliptin was observed in pregnant rats and rabbits. Sitagliptin administered to female rats from gestation day 6 to lactation day 21 caused no functional or behavioral toxicity in offspring of rats at doses up to 1,000 mg/kg. Metformin Metformin did not cause adverse developmental effects when administered to pregnant Sprague Dawley rats and rabbits up to 600 mg/kg/day during the period of organogenesis. This represents an exposure of about 2- and 6-times a 2,000 mg clinical dose based on body surface area (mg/m 2 ) for rats and rabbits, respectively. 8.2 Lactation Risk Summary There is no information regarding the presence of ZITUVIMET in human milk, the effects on the breastfed infant, or the effects on milk production. Limited published studies report that metformin is present in human milk [see Data]. There are no reports of adverse effects on breastfed infants exposed to metformin. There is no information on the effects of metformin on milk production. Sitagliptin is present in rat milk and therefore possibly present in human milk [see Data]. The developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for ZITUVIMET and any potential adverse effects on the breastfed infant from ZITUVIMET or from the underlying maternal condition. Data Sitagliptin Sitagliptin is secreted in the milk of lactating rats at a milk to plasma ratio of 4:1. Metformin Published clinical lactation studies report that metformin is present in human milk, which resulted in infant doses approximately 0.11% to 1% of the maternal weight-adjusted dosage and a milk/plasma ratio ranging between 0.13 and 1. However, the studies were not designed to definitely establish the risk of use of metformin during lactation because of small sample size and limited adverse event data collected in infants. 8.3 Females and Males of Reproductive Potential Discuss the potential for unintended pregnancy with premenopausal women as therapy with metformin may result in ovulation in some anovulatory women. 8.4 Pediatric Use The safety and effectiveness of ZITUVIMET have not been established in pediatric patients. Pediatric information describing clinical studies in which efficacy was not demonstrated is approved for Merck Sharp and Dohme's JANUMET (sitagliptin and metformin hydrochloride) tablets. However, due to Merck Sharp and Dohme's marketing exclusivity rights, this drug product is not labeled with that information. 8.5 Geriatric Use ZITUVIMET In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy and the higher risk of lactic acidosis. Renal function should be assessed more frequently in elderly patients. [See Contraindications ( 4 ); Warnings and Precautions ( 5.1 , 5.4 ) and Clinical Pharmacology ( 12.3 ).] Sitagliptin Of the total number of subjects (N=3,884) in clinical studies of sitagliptin, 725 patients were 65 years and over, while 61 patients were 75 years and over. No overall differences in safety or effectiveness of sitagliptin have been observed between subjects 65 years and over and younger patients. Metformin Controlled clinical studies of metformin did not include sufficient numbers of elderly patients to determine whether they respond differently from younger patients, although other reported clinical experience has not identified differences in responses between the elderly and young patients. 8.6 Renal Impairment ZITUVIMET ZITUVIMET is not recommended in patients with an eGFR between 30 and less than 45 mL/min/1.73 m 2 because these patients require a lower dosage of sitagliptin than what is available in the fixed dose combination ZITUVIMET product. ZITUVIMET is contraindicated in severe renal impairment, patients with an eGFR below 30 mL/min/1.73 m 2 [see Dosage and Administration ( 2.2 ) &gt;, Contraindications ( 4 )&gt;, Warnings and Precautions ( 5.1 )&gt; and Clinical Pharmacology ( 12.3 )]. Sitagliptin Sitagliptin is excreted by the kidney, and sitagliptin exposure is increased in patients with renal impairment. [see Clinical Pharmacology ( 12.3 )]. Metformin Metformin is substantially excreted by the kidney, and the risk of metformin accumulation and lactic acidosis increases with the degree of renal impairment. 8.7 Hepatic Impairment Use of metformin in patients with hepatic impairment has been associated with some cases of lactic acidosis. ZITUVIMET is not recommended in patients with hepatic impairment. [see Warnings and Precautions ( 5.1 )].&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:13:04+00:00" xmi:version="2.0">
+  <chunks charEnd="3959"/>
+  <chunks index="1" charStart="3939" charEnd="4746"/>
+  <chunks index="2" charStart="4719" charEnd="4746"/>
+  <chunks index="3" charStart="4748" charEnd="8748"/>
+  <chunks index="4" charStart="8448" charEnd="12448"/>
+  <chunks index="5" charStart="12148" charEnd="16148"/>
+  <chunks index="6" charStart="15848" charEnd="17944"/>
+  <chunks index="7" charStart="17946" charEnd="17966"/>
+  <chunks index="8" charStart="17968" charEnd="21968"/>
+  <chunks index="9" charStart="21668" charEnd="25668"/>
+  <chunks index="10" charStart="25368" charEnd="29368"/>
+  <chunks index="11" charStart="29068" charEnd="30417"/>
+  <chunks index="12" charStart="30419" charEnd="33133"/>
+  <chunks index="13" charStart="33103" charEnd="33133"/>
+  <chunks index="14" charStart="33135" charEnd="37135"/>
+  <chunks index="15" charStart="36835" charEnd="40835"/>
+  <chunks index="16" charStart="40535" charEnd="40939"/>
+  <entities type="Drug" id="sitagliptin-and-metformin-hydrochloride" mention="SITAGLIPTIN AND METFORMIN HYDROCHLORIDE" confidence="0.98" sourceSpanStart="56" sourceSpanEnd="95">
+    <properties key="name" value="sitagliptin and metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.98" sourceSpanStart="108" sourceSpanEnd="117">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="DrugClass" id="dipeptidyl-peptidase-4-inhibitors" mention="Dipeptidyl Peptidase 4 Inhibitor" confidence="0.95" sourceSpanStart="139" sourceSpanEnd="171">
+    <properties key="name" value="dipeptidyl peptidase 4 inhibitors"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="403" sourceSpanEnd="412">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="LACTIC ACIDOSIS" confidence="0.98" sourceSpanStart="424" sourceSpanEnd="439">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="death" mention="death" confidence="0.9" sourceSpanStart="457" sourceSpanEnd="462">
+    <properties key="name" value="death"/>
+  </entities>
+  <entities type="Condition" id="hypothermia" mention="hypothermia" confidence="0.9" sourceSpanStart="464" sourceSpanEnd="475">
+    <properties key="name" value="hypothermia"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.9" sourceSpanStart="477" sourceSpanEnd="488">
+    <properties key="name" value="hypotension"/>
+  </entities>
+  <entities type="Condition" id="resistant-bradyarrhythmias" mention="resistant bradyarrhythmias" confidence="0.9" sourceSpanStart="494" sourceSpanEnd="520">
+    <properties key="name" value="resistant bradyarrhythmias"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="malaise" mention="malaise" confidence="0.9" sourceSpanStart="540" sourceSpanEnd="547">
+    <properties key="name" value="malaise"/>
+  </entities>
+  <entities type="Condition" id="myalgias" mention="myalgias" confidence="0.9" sourceSpanStart="549" sourceSpanEnd="557">
+    <properties key="name" value="myalgias"/>
+  </entities>
+  <entities type="Condition" id="respiratory-distress" mention="respiratory distress" confidence="0.9" sourceSpanStart="559" sourceSpanEnd="579">
+    <properties key="name" value="respiratory distress"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="somnolence" mention="somnolence" confidence="0.9" sourceSpanStart="581" sourceSpanEnd="591">
+    <properties key="name" value="somnolence"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="abdominal pain" confidence="0.9" sourceSpanStart="597" sourceSpanEnd="611">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="3058" sourceSpanEnd="3069">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="DrugClass" id="dipeptidyl-peptidase-4-inhibitors" mention="dipeptidyl peptidase-4 (DPP-4) inhibitor" confidence="0.95" sourceSpanStart="3073" sourceSpanEnd="3113">
+    <properties key="name" value="dipeptidyl peptidase-4 inhibitors"/>
+  </entities>
+  <entities type="Drug" id="metformin-hydrochloride" mention="metformin hydrochloride (HCl)" confidence="0.95" sourceSpanStart="3119" sourceSpanEnd="3148">
+    <properties key="name" value="metformin hydrochloride"/>
+  </entities>
+  <entities type="DrugClass" id="biguanides" mention="biguanide" confidence="0.95" sourceSpanStart="3152" sourceSpanEnd="3161">
+    <properties key="name" value="biguanides"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.98" sourceSpanStart="3251" sourceSpanEnd="3275">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus" confidence="0.98" sourceSpanStart="3349" sourceSpanEnd="3373">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pancreatitis" mention="pancreatitis" confidence="0.95" sourceSpanStart="3442" sourceSpanEnd="3454">
+    <properties key="name" value="pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="severe-renal-impairment" mention="Severe renal impairment" confidence="0.95" sourceSpanStart="3981" sourceSpanEnd="4004" chunkIndex="1">
+    <properties key="name" value="severe renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="metabolic-acidosis" mention="Metabolic acidosis" confidence="0.95" sourceSpanStart="4044" sourceSpanEnd="4062" chunkIndex="1">
+    <properties key="name" value="metabolic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="4074" sourceSpanEnd="4095" chunkIndex="1">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="4153" sourceSpanEnd="4162" chunkIndex="1">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="4164" sourceSpanEnd="4175" chunkIndex="1">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="4180" sourceSpanEnd="4189" chunkIndex="1">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.95" sourceSpanStart="4199" sourceSpanEnd="4210" chunkIndex="1">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="angioedema" confidence="0.95" sourceSpanStart="4214" sourceSpanEnd="4224" chunkIndex="1">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="serious-hypersensitivity-reaction" mention="serious hypersensitivity reaction" confidence="0.95" sourceSpanStart="4457" sourceSpanEnd="4490" chunkIndex="1">
+    <properties key="name" value="serious hypersensitivity reaction"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.9" sourceSpanStart="5017" sourceSpanEnd="5026" chunkIndex="3">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="Lactic Acidosis" confidence="0.95" sourceSpanStart="6690" sourceSpanEnd="6705" chunkIndex="3">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="acute-pancreatitis" mention="acute pancreatitis" confidence="0.95" sourceSpanStart="4875" sourceSpanEnd="4893" chunkIndex="3">
+    <properties key="name" value="acute pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="Heart Failure" confidence="0.95" sourceSpanStart="5036" sourceSpanEnd="5049" chunkIndex="3">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="Acute Renal Failure" confidence="0.95" sourceSpanStart="5272" sourceSpanEnd="5291" chunkIndex="3">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.95" sourceSpanStart="6745" sourceSpanEnd="6754" chunkIndex="3">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="vitamin-b12-deficiency" mention="Vitamin B 12 Deficiency" confidence="0.95" sourceSpanStart="5449" sourceSpanEnd="5472" chunkIndex="3">
+    <properties key="name" value="vitamin b 12 deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="5635" sourceSpanEnd="5647" chunkIndex="3">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="5674" sourceSpanEnd="5681" chunkIndex="3">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="Hypersensitivity Reactions" confidence="0.95" sourceSpanStart="5882" sourceSpanEnd="5908" chunkIndex="3">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="6024" sourceSpanEnd="6035" chunkIndex="3">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.95" sourceSpanStart="6044" sourceSpanEnd="6055" chunkIndex="3">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="angioedema" confidence="0.95" sourceSpanStart="6057" sourceSpanEnd="6067" chunkIndex="3">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="stevens-johnson-syndrome" mention="Stevens-Johnson syndrome" confidence="0.95" sourceSpanStart="6111" sourceSpanEnd="6135" chunkIndex="3">
+    <properties key="name" value="stevens-johnson syndrome"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="severe-and-disabling-arthralgia" mention="Severe and Disabling Arthralgia" confidence="0.95" sourceSpanStart="6253" sourceSpanEnd="6284" chunkIndex="3">
+    <properties key="name" value="severe and disabling arthralgia"/>
+    <properties key="category" value=" musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="bullous-pemphigoid" mention="Bullous Pemphigoid" confidence="0.95" sourceSpanStart="6437" sourceSpanEnd="6455" chunkIndex="3">
+    <properties key="name" value="bullous pemphigoid"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="8465" sourceSpanEnd="8474" chunkIndex="4">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="8486" sourceSpanEnd="8501" chunkIndex="4">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="significant-renal-impairment" mention="significant renal impairment" confidence="0.9" sourceSpanStart="8544" sourceSpanEnd="8572" chunkIndex="4">
+    <properties key="name" value="significant renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="8924" sourceSpanEnd="8933" chunkIndex="4">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="9247" sourceSpanEnd="9258" chunkIndex="4">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.9" sourceSpanStart="9446" sourceSpanEnd="9462" chunkIndex="4">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.9" sourceSpanStart="10609" sourceSpanEnd="10627" chunkIndex="4">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.9" sourceSpanStart="10644" sourceSpanEnd="10657" chunkIndex="4">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="volume-depletion" mention="volume depletion" confidence="0.9" sourceSpanStart="10962" sourceSpanEnd="10978" chunkIndex="4">
+    <properties key="name" value="volume depletion"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.9" sourceSpanStart="10980" sourceSpanEnd="10991" chunkIndex="4">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="acute-congestive-heart-failure" mention="acute congestive heart failure" confidence="0.95" sourceSpanStart="11230" sourceSpanEnd="11260" chunkIndex="4">
+    <properties key="name" value="acute congestive heart failure"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="acute-myocardial-infarction" mention="acute myocardial infarction" confidence="0.95" sourceSpanStart="11358" sourceSpanEnd="11385" chunkIndex="4">
+    <properties key="name" value="acute myocardial infarction"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="sepsis" mention="sepsis" confidence="0.95" sourceSpanStart="11387" sourceSpanEnd="11393" chunkIndex="4">
+    <properties key="name" value="sepsis"/>
+    <properties key="category" value="systemic"/>
+  </entities>
+  <entities type="Condition" id="prerenal-azotemia" mention="prerenal azotemia" confidence="0.9" sourceSpanStart="11503" sourceSpanEnd="11520" chunkIndex="4">
+    <properties key="name" value="prerenal azotemia"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-disease" mention="hepatic disease" confidence="0.9" sourceSpanStart="12099" sourceSpanEnd="12114" chunkIndex="4">
+    <properties key="name" value="hepatic disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="mitochondrial-diseases" mention="mitochondrial diseases" confidence="0.95" sourceSpanStart="12116" sourceSpanEnd="12138" chunkIndex="4">
+    <properties key="name" value="mitochondrial diseases"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="melas-syndrome" mention="mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome" confidence="0.95" sourceSpanStart="12239" sourceSpanEnd="12334" chunkIndex="4">
+    <properties key="name" value="mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (melas) syndrome"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="maternally-inherited-diabetes-and-deafness" mention="maternally inherited diabetes and deafness (MIDD)" confidence="0.95" sourceSpanStart="12339" sourceSpanEnd="12388" chunkIndex="4">
+    <properties key="name" value="maternally inherited diabetes and deafness (midd)"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="12390" sourceSpanEnd="12399" chunkIndex="5">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="12175" sourceSpanEnd="12190" chunkIndex="5">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="mitochondrial-diseases" mention="mitochondrial diseases" confidence="0.9" sourceSpanStart="12436" sourceSpanEnd="12458" chunkIndex="5">
+    <properties key="name" value="mitochondrial diseases"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="mitochondrial-encephalomyopathy-with-lactic-acidosis-and-stroke-like-episodes-melas-syndrome" mention="mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome" confidence="0.95" sourceSpanStart="12239" sourceSpanEnd="12334" chunkIndex="5">
+    <properties key="name" value="mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (melas) syndrome"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="maternally-inherited-diabetes-and-deafness-midd" mention="maternally inherited diabetes and deafness (MIDD)" confidence="0.95" sourceSpanStart="12339" sourceSpanEnd="12388" chunkIndex="5">
+    <properties key="name" value="maternally inherited diabetes and deafness (midd)"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="acute-pancreatitis" mention="acute pancreatitis" confidence="0.95" sourceSpanStart="12820" sourceSpanEnd="12838" chunkIndex="5">
+    <properties key="name" value="acute pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="13319" sourceSpanEnd="13332" chunkIndex="5">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="13541" sourceSpanEnd="13565" chunkIndex="5">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="atherosclerotic-cardiovascular-disease" mention="atherosclerotic cardiovascular disease" confidence="0.95" sourceSpanStart="13570" sourceSpanEnd="13608" chunkIndex="5">
+    <properties key="name" value="atherosclerotic cardiovascular disease"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="13793" sourceSpanEnd="13809" chunkIndex="5">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="acute renal failure" confidence="0.95" sourceSpanStart="14132" sourceSpanEnd="14151" chunkIndex="5">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="severe-renal-impairment" mention="severe renal impairment" confidence="0.95" sourceSpanStart="14663" sourceSpanEnd="14686" chunkIndex="5">
+    <properties key="name" value="severe renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.9" sourceSpanStart="15100" sourceSpanEnd="15106" chunkIndex="5">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="15168" sourceSpanEnd="15177" chunkIndex="5">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="15567" sourceSpanEnd="15579" chunkIndex="5">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="15606" sourceSpanEnd="15613" chunkIndex="5">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylurea" confidence="0.9" sourceSpanStart="15752" sourceSpanEnd="15764" chunkIndex="5">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="16101" sourceSpanEnd="16112" chunkIndex="5">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="15885" sourceSpanEnd="15897" chunkIndex="6">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="15928" sourceSpanEnd="15937" chunkIndex="6">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="16101" sourceSpanEnd="16112" chunkIndex="6">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="serious-hypersensitivity-reactions" mention="serious hypersensitivity reactions" confidence="0.9" sourceSpanStart="16041" sourceSpanEnd="16075" chunkIndex="6">
+    <properties key="name" value="serious hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.95" sourceSpanStart="16174" sourceSpanEnd="16185" chunkIndex="6">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="angioedema" confidence="0.95" sourceSpanStart="16187" sourceSpanEnd="16197" chunkIndex="6">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="stevens-johnson-syndrome" mention="Stevens-Johnson syndrome" confidence="0.95" sourceSpanStart="16241" sourceSpanEnd="16265" chunkIndex="6">
+    <properties key="name" value="stevens-johnson syndrome"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="DrugClass" id="dpp-4-inhibitors" mention="DPP-4 inhibitors" confidence="0.95" sourceSpanStart="16670" sourceSpanEnd="16686" chunkIndex="6">
+    <properties key="name" value="dpp-4 inhibitors"/>
+  </entities>
+  <entities type="Condition" id="severe-and-disabling-arthralgia" mention="severe and disabling arthralgia" confidence="0.95" sourceSpanStart="16869" sourceSpanEnd="16900" chunkIndex="6">
+    <properties key="name" value="severe and disabling arthralgia"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="bullous-pemphigoid" mention="bullous pemphigoid" confidence="0.95" sourceSpanStart="17417" sourceSpanEnd="17435" chunkIndex="6">
+    <properties key="name" value="bullous pemphigoid"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.98" sourceSpanStart="18767" sourceSpanEnd="18776" chunkIndex="8">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="Lactic Acidosis" confidence="0.95" sourceSpanStart="18081" sourceSpanEnd="18096" chunkIndex="8">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pancreatitis" mention="Pancreatitis" confidence="0.95" sourceSpanStart="18136" sourceSpanEnd="18148" chunkIndex="8">
+    <properties key="name" value="pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="Heart Failure" confidence="0.95" sourceSpanStart="18188" sourceSpanEnd="18201" chunkIndex="8">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="Acute Renal Failure" confidence="0.95" sourceSpanStart="18241" sourceSpanEnd="18260" chunkIndex="8">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="vitamin-b12-deficiency" mention="Vitamin B12 Deficiency" confidence="0.95" sourceSpanStart="18300" sourceSpanEnd="18322" chunkIndex="8">
+    <properties key="name" value="vitamin b12 deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="18362" sourceSpanEnd="18374" chunkIndex="8">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="18401" sourceSpanEnd="18408" chunkIndex="8">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="Hypersensitivity Reactions" confidence="0.95" sourceSpanStart="18473" sourceSpanEnd="18499" chunkIndex="8">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="severe-and-disabling-arthralgia" mention="Severe and Disabling Arthralgia" confidence="0.95" sourceSpanStart="18539" sourceSpanEnd="18570" chunkIndex="8">
+    <properties key="name" value="severe and disabling arthralgia"/>
+    <properties key="category" value=" musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="bullous-pemphigoid" mention="Bullous Pemphigoid" confidence="0.95" sourceSpanStart="18610" sourceSpanEnd="18628" chunkIndex="8">
+    <properties key="name" value="bullous pemphigoid"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="19373" sourceSpanEnd="19384" chunkIndex="8">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="20380" sourceSpanEnd="20388" chunkIndex="8">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="upper-respiratory-tract-infection" mention="upper respiratory tract infection" confidence="0.95" sourceSpanStart="20421" sourceSpanEnd="20454" chunkIndex="8">
+    <properties key="name" value="upper respiratory tract infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.95" sourceSpanStart="20489" sourceSpanEnd="20497" chunkIndex="8">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="20576" sourceSpanEnd="20600" chunkIndex="8">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.9" sourceSpanStart="21682" sourceSpanEnd="21691" chunkIndex="9">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="Sitagliptin" confidence="0.9" sourceSpanStart="21793" sourceSpanEnd="21804" chunkIndex="9">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="Diarrhea" confidence="0.9" sourceSpanStart="22036" sourceSpanEnd="22044" chunkIndex="9">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="nausea" mention="Nausea" confidence="0.9" sourceSpanStart="22094" sourceSpanEnd="22100" chunkIndex="9">
+    <properties key="name" value="nausea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="vomiting" mention="Vomiting" confidence="0.9" sourceSpanStart="22151" sourceSpanEnd="22159" chunkIndex="9">
+    <properties key="name" value="vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="Abdominal Pain" confidence="0.9" sourceSpanStart="22206" sourceSpanEnd="22220" chunkIndex="9">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-discomfort" mention="Abdominal discomfort" confidence="0.9" sourceSpanStart="22221" sourceSpanEnd="22241" chunkIndex="9">
+    <properties key="name" value="abdominal discomfort"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="Glimepiride" confidence="0.9" sourceSpanStart="22417" sourceSpanEnd="22428" chunkIndex="9">
+    <properties key="name" value="glimepiride"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="22524" sourceSpanEnd="22548" chunkIndex="9">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="22777" sourceSpanEnd="22789" chunkIndex="9">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.9" sourceSpanStart="22809" sourceSpanEnd="22817" chunkIndex="9">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Drug" id="rosiglitazone" mention="Rosiglitazone" confidence="0.9" sourceSpanStart="22878" sourceSpanEnd="22891" chunkIndex="9">
+    <properties key="name" value="rosiglitazone"/>
+  </entities>
+  <entities type="Condition" id="upper-respiratory-tract-infection" mention="upper respiratory tract infection" confidence="0.9" sourceSpanStart="23249" sourceSpanEnd="23282" chunkIndex="9">
+    <properties key="name" value="upper respiratory tract infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="nasopharyngitis" mention="nasopharyngitis" confidence="0.9" sourceSpanStart="23322" sourceSpanEnd="23337" chunkIndex="9">
+    <properties key="name" value="nasopharyngitis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="peripheral-edema" mention="peripheral edema" confidence="0.9" sourceSpanStart="23606" sourceSpanEnd="23622" chunkIndex="9">
+    <properties key="name" value="peripheral edema"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.9" sourceSpanStart="23710" sourceSpanEnd="23717" chunkIndex="9">
+    <properties key="name" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="25497" sourceSpanEnd="25504" chunkIndex="10">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.98" sourceSpanStart="25507" sourceSpanEnd="25516" chunkIndex="10">
+    <properties key="name" value="metformin"/>
+    <properties key="drugClass" value="biguanide"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="Sitagliptin" confidence="0.98" sourceSpanStart="25528" sourceSpanEnd="25539" chunkIndex="10">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="25767" sourceSpanEnd="25779" chunkIndex="10">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.97" sourceSpanStart="25797" sourceSpanEnd="25821" chunkIndex="10">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="rosiglitazone" mention="rosiglitazone" confidence="0.95" sourceSpanStart="26367" sourceSpanEnd="26380" chunkIndex="10">
+    <properties key="name" value="rosiglitazone"/>
+  </entities>
+  <entities type="Condition" id="acute-pancreatitis" mention="acute pancreatitis" confidence="0.95" sourceSpanStart="27507" sourceSpanEnd="27525" chunkIndex="10">
+    <properties key="name" value="acute pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="nasopharyngitis" mention="nasopharyngitis" confidence="0.95" sourceSpanStart="27856" sourceSpanEnd="27871" chunkIndex="10">
+    <properties key="name" value="nasopharyngitis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="27978" sourceSpanEnd="27986" chunkIndex="10">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="nausea-vomiting" mention="nausea/vomiting" confidence="0.95" sourceSpanStart="27988" sourceSpanEnd="28003" chunkIndex="10">
+    <properties key="name" value="nausea/vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="flatulence" mention="flatulence" confidence="0.95" sourceSpanStart="28005" sourceSpanEnd="28015" chunkIndex="10">
+    <properties key="name" value="flatulence"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-discomfort" mention="abdominal discomfort" confidence="0.95" sourceSpanStart="28017" sourceSpanEnd="28037" chunkIndex="10">
+    <properties key="name" value="abdominal discomfort"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="indigestion" mention="indigestion" confidence="0.95" sourceSpanStart="28039" sourceSpanEnd="28050" chunkIndex="10">
+    <properties key="name" value="indigestion"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="asthenia" mention="asthenia" confidence="0.95" sourceSpanStart="28052" sourceSpanEnd="28060" chunkIndex="10">
+    <properties key="name" value="asthenia"/>
+    <properties key="category" value="general"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.95" sourceSpanStart="28066" sourceSpanEnd="28074" chunkIndex="10">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.95" sourceSpanStart="28985" sourceSpanEnd="28991" chunkIndex="10">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="29202" sourceSpanEnd="29211" chunkIndex="10">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="29202" sourceSpanEnd="29211" chunkIndex="11">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="29213" sourceSpanEnd="29224" chunkIndex="11">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="29229" sourceSpanEnd="29238" chunkIndex="11">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity-reactions" mention="hypersensitivity reactions" confidence="0.9" sourceSpanStart="29485" sourceSpanEnd="29511" chunkIndex="11">
+    <properties key="name" value="hypersensitivity reactions"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="anaphylaxis" mention="anaphylaxis" confidence="0.9" sourceSpanStart="29522" sourceSpanEnd="29533" chunkIndex="11">
+    <properties key="name" value="anaphylaxis"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="angioedema" confidence="0.9" sourceSpanStart="29535" sourceSpanEnd="29545" chunkIndex="11">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immune"/>
+  </entities>
+  <entities type="Condition" id="rash" mention="rash" confidence="0.9" sourceSpanStart="29547" sourceSpanEnd="29551" chunkIndex="11">
+    <properties key="name" value="rash"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="urticaria" mention="urticaria" confidence="0.9" sourceSpanStart="29553" sourceSpanEnd="29562" chunkIndex="11">
+    <properties key="name" value="urticaria"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="cutaneous-vasculitis" mention="cutaneous vasculitis" confidence="0.9" sourceSpanStart="29564" sourceSpanEnd="29584" chunkIndex="11">
+    <properties key="name" value="cutaneous vasculitis"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="stevens-johnson-syndrome" mention="Stevens-Johnson syndrome" confidence="0.9" sourceSpanStart="29628" sourceSpanEnd="29652" chunkIndex="11">
+    <properties key="name" value="stevens-johnson syndrome"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="bullous-pemphigoid" mention="bullous pemphigoid" confidence="0.9" sourceSpanStart="29654" sourceSpanEnd="29672" chunkIndex="11">
+    <properties key="name" value="bullous pemphigoid"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="upper-respiratory-tract-infection" mention="upper respiratory tract infection" confidence="0.9" sourceSpanStart="29723" sourceSpanEnd="29756" chunkIndex="11">
+    <properties key="name" value="upper respiratory tract infection"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="hepatic-enzyme-elevations" mention="hepatic enzyme elevations" confidence="0.9" sourceSpanStart="29783" sourceSpanEnd="29808" chunkIndex="11">
+    <properties key="name" value="hepatic enzyme elevations"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="liver-injury" mention="cholestatic, hepatocellular, and mixed hepatocellular liver injury" confidence="0.9" sourceSpanStart="29810" sourceSpanEnd="29876" chunkIndex="11">
+    <properties key="name" value="liver injury"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="acute-pancreatitis" mention="acute pancreatitis" confidence="0.9" sourceSpanStart="29906" sourceSpanEnd="29924" chunkIndex="11">
+    <properties key="name" value="acute pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="hemorrhagic-and-necrotizing-pancreatitis" mention="hemorrhagic and necrotizing pancreatitis" confidence="0.9" sourceSpanStart="29956" sourceSpanEnd="29996" chunkIndex="11">
+    <properties key="name" value="hemorrhagic and necrotizing pancreatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="constipation" mention="constipation" confidence="0.9" sourceSpanStart="30030" sourceSpanEnd="30042" chunkIndex="11">
+    <properties key="name" value="constipation"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="vomiting" mention="vomiting" confidence="0.9" sourceSpanStart="30044" sourceSpanEnd="30052" chunkIndex="11">
+    <properties key="name" value="vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="mouth-ulceration" mention="mouth ulceration" confidence="0.9" sourceSpanStart="30054" sourceSpanEnd="30070" chunkIndex="11">
+    <properties key="name" value="mouth ulceration"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="stomatitis" mention="stomatitis" confidence="0.9" sourceSpanStart="30072" sourceSpanEnd="30082" chunkIndex="11">
+    <properties key="name" value="stomatitis"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="worsening-renal-function" mention="worsening renal function" confidence="0.9" sourceSpanStart="30113" sourceSpanEnd="30137" chunkIndex="11">
+    <properties key="name" value="worsening renal function"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="acute renal failure" confidence="0.9" sourceSpanStart="30149" sourceSpanEnd="30168" chunkIndex="11">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="tubulointerstitial-nephritis" mention="tubulointerstitial nephritis" confidence="0.9" sourceSpanStart="30204" sourceSpanEnd="30232" chunkIndex="11">
+    <properties key="name" value="tubulointerstitial nephritis"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="arthralgia" mention="severe and disabling arthralgia" confidence="0.9" sourceSpanStart="30283" sourceSpanEnd="30314" chunkIndex="11">
+    <properties key="name" value="arthralgia"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="myalgia" mention="myalgia" confidence="0.9" sourceSpanStart="30316" sourceSpanEnd="30323" chunkIndex="11">
+    <properties key="name" value="myalgia"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="pain-in-extremity" mention="pain in extremity" confidence="0.9" sourceSpanStart="30325" sourceSpanEnd="30342" chunkIndex="11">
+    <properties key="name" value="pain in extremity"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="back-pain" mention="back pain" confidence="0.9" sourceSpanStart="30344" sourceSpanEnd="30353" chunkIndex="11">
+    <properties key="name" value="back pain"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="pruritus" mention="pruritus" confidence="0.9" sourceSpanStart="30355" sourceSpanEnd="30363" chunkIndex="11">
+    <properties key="name" value="pruritus"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="rhabdomyolysis" mention="rhabdomyolysis" confidence="0.9" sourceSpanStart="30365" sourceSpanEnd="30379" chunkIndex="11">
+    <properties key="name" value="rhabdomyolysis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.9" sourceSpanStart="30408" sourceSpanEnd="30416" chunkIndex="11">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="nervous system"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="30524" sourceSpanEnd="30533" chunkIndex="12">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="topiramate" mention="Topiramate" confidence="0.95" sourceSpanStart="30953" sourceSpanEnd="30963" chunkIndex="12">
+    <properties key="name" value="topiramate"/>
+  </entities>
+  <entities type="Drug" id="zonisamide" mention="zonisamide" confidence="0.95" sourceSpanStart="30965" sourceSpanEnd="30975" chunkIndex="12">
+    <properties key="name" value="zonisamide"/>
+  </entities>
+  <entities type="Drug" id="acetazolamide" mention="acetazolamide" confidence="0.95" sourceSpanStart="30977" sourceSpanEnd="30990" chunkIndex="12">
+    <properties key="name" value="acetazolamide"/>
+  </entities>
+  <entities type="Drug" id="dichlorphenamide" mention="dichlorphenamide" confidence="0.95" sourceSpanStart="30994" sourceSpanEnd="31010" chunkIndex="12">
+    <properties key="name" value="dichlorphenamide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="31030" sourceSpanEnd="31039" chunkIndex="12">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="ranolazine" mention="Ranolazine" confidence="0.95" sourceSpanStart="31517" sourceSpanEnd="31527" chunkIndex="12">
+    <properties key="name" value="ranolazine"/>
+  </entities>
+  <entities type="Drug" id="vandetanib" mention="vandetanib" confidence="0.95" sourceSpanStart="31529" sourceSpanEnd="31539" chunkIndex="12">
+    <properties key="name" value="vandetanib"/>
+  </entities>
+  <entities type="Drug" id="dolutegravir" mention="dolutegravir" confidence="0.95" sourceSpanStart="31541" sourceSpanEnd="31553" chunkIndex="12">
+    <properties key="name" value="dolutegravir"/>
+  </entities>
+  <entities type="Drug" id="cimetidine" mention="cimetidine" confidence="0.95" sourceSpanStart="31559" sourceSpanEnd="31569" chunkIndex="12">
+    <properties key="name" value="cimetidine"/>
+  </entities>
+  <entities type="Drug" id="alcohol" mention="Alcohol" confidence="0.95" sourceSpanStart="31571" sourceSpanEnd="31578" chunkIndex="12">
+    <properties key="name" value="alcohol"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="32717" sourceSpanEnd="32732" chunkIndex="12">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="31918" sourceSpanEnd="31930" chunkIndex="12">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="32144" sourceSpanEnd="32157" chunkIndex="12">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="33477" sourceSpanEnd="33486" chunkIndex="14">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="sitagliptin" confidence="0.95" sourceSpanStart="33491" sourceSpanEnd="33502" chunkIndex="14">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="33672" sourceSpanEnd="33681" chunkIndex="14">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.9" sourceSpanStart="33355" sourceSpanEnd="33373" chunkIndex="14">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.9" sourceSpanStart="33885" sourceSpanEnd="33893" chunkIndex="14">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="34960" sourceSpanEnd="34981" chunkIndex="14">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="preeclampsia" mention="preeclampsia" confidence="0.95" sourceSpanStart="34983" sourceSpanEnd="34995" chunkIndex="14">
+    <properties key="name" value="preeclampsia"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="spontaneous-abortions" mention="spontaneous abortions" confidence="0.95" sourceSpanStart="34997" sourceSpanEnd="35018" chunkIndex="14">
+    <properties key="name" value="spontaneous abortions"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="preterm-delivery" mention="preterm delivery" confidence="0.95" sourceSpanStart="35020" sourceSpanEnd="35036" chunkIndex="14">
+    <properties key="name" value="preterm delivery"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="36923" sourceSpanEnd="36932" chunkIndex="15">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.98" sourceSpanStart="37058" sourceSpanEnd="37067" chunkIndex="15">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="sitagliptin" mention="Sitagliptin" confidence="0.98" sourceSpanStart="37260" sourceSpanEnd="37271" chunkIndex="15">
+    <properties key="name" value="sitagliptin"/>
+  </entities>
+  <entities type="Drug" id="janumet" mention="JANUMET" confidence="0.95" sourceSpanStart="38570" sourceSpanEnd="38577" chunkIndex="15">
+    <properties key="name" value="janumet"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="39061" sourceSpanEnd="39076" chunkIndex="15">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="severe-renal-impairment" mention="severe renal impairment" confidence="0.95" sourceSpanStart="40162" sourceSpanEnd="40185" chunkIndex="15">
+    <properties key="name" value="severe renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="40169" sourceSpanEnd="40185" chunkIndex="15">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="40706" sourceSpanEnd="40724" chunkIndex="15">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="40817" sourceSpanEnd="40832" chunkIndex="15">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.98" sourceSpanStart="40535" sourceSpanEnd="40544" chunkIndex="16">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="40639" sourceSpanEnd="40654" chunkIndex="16">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="40684" sourceSpanEnd="40700" chunkIndex="16">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="40706" sourceSpanEnd="40724" chunkIndex="16">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Drug" id="zituvimet" mention="ZITUVIMET" confidence="0.95" sourceSpanStart="40834" sourceSpanEnd="40843" chunkIndex="16">
+    <properties key="name" value="zituvimet"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.95" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="380" sourceSpanEnd="521"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="death" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="380" sourceSpanEnd="521"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypothermia" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="380" sourceSpanEnd="521"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypotension" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="380" sourceSpanEnd="521"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="resistant-bradyarrhythmias" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="380" sourceSpanEnd="521"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="sitagliptin" targetType="DrugClass" targetId="dipeptidyl-peptidase-4-inhibitors" confidence="0.95" evidence="ZITUVIMET is a combination of sitagliptin, a dipeptidyl peptidase-4 (DPP-4) inhibitor, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3028" sourceSpanEnd="3276"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="metformin-hydrochloride" targetType="DrugClass" targetId="biguanides" confidence="0.95" evidence="ZITUVIMET is a combination of sitagliptin, a dipeptidyl peptidase-4 (DPP-4) inhibitor, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3028" sourceSpanEnd="3276"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.98" evidence="ZITUVIMET is indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3462" sourceSpanEnd="3588"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="severe-renal-impairment" confidence="0.95" evidence="ZITUVIMET is contraindicated in patients with: Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) [see Warnings and Precautions ( 5.1 )]." sourceSpanStart="4230" sourceSpanEnd="4373" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="metabolic-acidosis" confidence="0.95" evidence="Acute or chronic metabolic acidosis, including diabetic ketoacidosis." sourceSpanStart="4374" sourceSpanEnd="4443" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.95" evidence="Acute or chronic metabolic acidosis, including diabetic ketoacidosis." sourceSpanStart="4374" sourceSpanEnd="4443" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="serious-hypersensitivity-reaction" confidence="0.95" evidence="History of a serious hypersensitivity reaction to sitagliptin, metformin, or any of the excipients in ZITUVIMET." sourceSpanStart="4444" sourceSpanEnd="4556" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="acute-pancreatitis" confidence="0.9" evidence="There have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis." sourceSpanStart="4834" sourceSpanEnd="4965" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="vitamin-b12-deficiency" confidence="0.95" evidence="Metformin may lower vitamin B 12 levels." sourceSpanStart="5474" sourceSpanEnd="5514" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="There have been postmarketing cases of metformin-associated lactic acidosis, including fatal cases." sourceSpanStart="6706" sourceSpanEnd="6805" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="he postmarketing metformin-associated lactic acidosis cases primarily occurred in patients with significant renal impairment." sourceSpanStart="8448" sourceSpanEnd="8573" chunkIndex="4"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="significant-renal-impairment" confidence="0.9" evidence="ZITUVIMET is contraindicated in patients with an eGFR below 30 mL/min/1.73 m 2 [see Contraindications ( 4 )]." sourceSpanStart="8990" sourceSpanEnd="9099" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Metformin may increase the risk of lactic acidosis in patients with mitochondrial diseases such as mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome and maternally inherited diabetes and deafness (MIDD)." sourceSpanStart="12140" sourceSpanEnd="12389" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="lactic-acidosis" confidence="0.85" evidence="n may increase the risk of lactic acidosis in patients with mitochondrial diseases such as mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome and maternally inherited diabetes and deafness (MIDD)." sourceSpanStart="12148" sourceSpanEnd="12389" chunkIndex="5"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="severe-renal-impairment" confidence="0.95" evidence="ZITUVIMET is contraindicated in patients with severe renal impairment [see Contraindications ( 4 ) and Warnings and Precautions ( 5.1 )]." sourceSpanStart="14617" sourceSpanEnd="14754" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="acute-pancreatitis" confidence="0.9" evidence="There have been postmarketing reports of acute pancreatitis, including fatal and non-fatal hemorrhagic or necrotizing pancreatitis, in patients taking ZITUVIMET." sourceSpanStart="12779" sourceSpanEnd="12940" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="acute-renal-failure" confidence="0.9" evidence="There have been postmarketing reports of worsening renal function, including acute renal failure, sometimes requiring dialysis." sourceSpanStart="14152" sourceSpanEnd="14279" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="ZITUVIMET may increase the risk of hypoglycemia when combined with insulin and/or an insulin secretagogue (e.g., sulfonylurea) [see Adverse Reactions ( 6 )]." sourceSpanStart="15639" sourceSpanEnd="15796" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="serious-hypersensitivity-reactions" confidence="0.9" evidence="There have been postmarketing reports of serious hypersensitivity reactions in patients treated with sitagliptin, one of the components of ZITUVIMET." sourceSpanStart="16000" sourceSpanEnd="16149" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="serious-hypersensitivity-reactions" confidence="0.9" evidence="There have been postmarketing reports of serious hypersensitivity reactions in patients treated with sitagliptin, one of the components of ZITUVIMET." sourceSpanStart="16000" sourceSpanEnd="16149" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="anaphylaxis" confidence="0.9" evidence="These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." sourceSpanStart="16150" sourceSpanEnd="16266" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="angioedema" confidence="0.9" evidence="These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." sourceSpanStart="16150" sourceSpanEnd="16266" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="stevens-johnson-syndrome" confidence="0.9" evidence="These reactions include anaphylaxis, angioedema, and exfoliative skin conditions including Stevens-Johnson syndrome." sourceSpanStart="16150" sourceSpanEnd="16266" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Lactic Acidosis [see Warnings and Precautions ( 5.1 )]" sourceSpanStart="18081" sourceSpanEnd="18135" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="pancreatitis" confidence="0.9" evidence="Pancreatitis [see Warnings and Precautions ( 5.2 )]" sourceSpanStart="18136" sourceSpanEnd="18187" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="heart-failure" confidence="0.9" evidence="Heart Failure [see Warnings and Precautions ( 5.3 )]" sourceSpanStart="18188" sourceSpanEnd="18240" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="acute-renal-failure" confidence="0.9" evidence="Acute Renal Failure [see Warnings and Precautions ( 5.4 )]" sourceSpanStart="18241" sourceSpanEnd="18299" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="vitamin-b12-deficiency" confidence="0.9" evidence="Vitamin B12 Deficiency [see Warnings and Precautions ( 5.5 )]" sourceSpanStart="18300" sourceSpanEnd="18361" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Hypoglycemia with Concomitant Use with Insulin or Insulin Secretagogues [see Warnings and Precautions ( 5.6 )]" sourceSpanStart="18362" sourceSpanEnd="18472" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypersensitivity-reactions" confidence="0.9" evidence="Hypersensitivity Reactions [see Warnings and Precautions ( 5.7 )]" sourceSpanStart="18473" sourceSpanEnd="18538" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="severe-and-disabling-arthralgia" confidence="0.9" evidence="Severe and Disabling Arthralgia [see Warnings and Precautions ( 5.8 )]" sourceSpanStart="18539" sourceSpanEnd="18609" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="bullous-pemphigoid" confidence="0.9" evidence="Bullous Pemphigoid [see Warnings and Precautions ( 5.9 )]" sourceSpanStart="18610" sourceSpanEnd="18667" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="metformin" targetType="Drug" targetId="insulin" confidence="0.8" evidence="Hypoglycemia with Concomitant Use with Insulin or Insulin Secretagogues [see Warnings and Precautions ( 5.6 )]" sourceSpanStart="18362" sourceSpanEnd="18472" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="diarrhea" confidence="0.9" evidence="Most common adverse reactions (incidence ≥5% of patients simultaneously started on sitagliptin and metformin and more commonly than in patients treated with placebo were diarrhea, upper respiratory tract infection, and headache." sourceSpanStart="18668" sourceSpanEnd="18896" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="upper-respiratory-tract-infection" confidence="0.9" evidence="Most common adverse reactions (incidence ≥5% of patients simultaneously started on sitagliptin and metformin and more commonly than in patients treated with placebo were diarrhea, upper respiratory tract infection, and headache." sourceSpanStart="18668" sourceSpanEnd="18896" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="headache" confidence="0.9" evidence="Most common adverse reactions (incidence ≥5% of patients simultaneously started on sitagliptin and metformin and more commonly than in patients treated with placebo were diarrhea, upper respiratory tract infection, and headache." sourceSpanStart="18668" sourceSpanEnd="18896" chunkIndex="8"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="sitagliptin" targetType="Drug" targetId="metformin" confidence="0.9" evidence="Most common adverse reactions (incidence ≥5% of patients simultaneously started on sitagliptin and metformin and more commonly than in patients treated with placebo were diarrhea, upper respiratory tract infection, and headache." sourceSpanStart="18668" sourceSpanEnd="18896" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="The overall incidence of reported adverse reactions of hypoglycemia in patients with type 2 diabetes mellitus inadequately controlled on diet and exercise was 0.6% in patients given placebo, 0.6% in patients given sitagliptin alone, 0.8% in patients given metformin alone, and 1.6% in patients given sitagliptin in combination with metformin." sourceSpanStart="25712" sourceSpanEnd="26054" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="The overall incidence of reported adverse reactions of hypoglycemia in patients with type 2 diabetes mellitus inadequately controlled on diet and exercise was 0.6% in patients given placebo, 0.6% in patients given sitagliptin alone, 0.8% in patients given metformin alone, and 1.6% in patients given sitagliptin in combination with metformin." sourceSpanStart="25712" sourceSpanEnd="26054" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="acute-pancreatitis" confidence="0.85" evidence="In a pooled analysis of 19 double-blind clinical trials that included data from 10,246 patients randomized to receive sitagliptin 100 mg/day (N=5,429) or corresponding (active or placebo) control (N=4,817), the incidence of acute pancreatitis was 0.1 per 100 patient-years in each group" sourceSpanStart="27283" sourceSpanEnd="27569" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="nasopharyngitis" confidence="0.95" evidence="The most common adverse experience in sitagliptin monotherapy reported in ≥5% of patients and more commonly than in patients given placebo was nasopharyngitis." sourceSpanStart="27713" sourceSpanEnd="27872" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="diarrhea" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="nausea-vomiting" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="flatulence" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="abdominal-discomfort" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="indigestion" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="asthenia" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="headache" confidence="0.95" evidence="The most common (&gt;5%) established adverse reactions due to initiation of metformin therapy are diarrhea, nausea/vomiting, flatulence, abdominal discomfort, indigestion, asthenia, and headache." sourceSpanStart="27883" sourceSpanEnd="28075" chunkIndex="10"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sitagliptin" targetType="Condition" targetId="hypersensitivity-reactions" confidence="0.8" evidence="Additional adverse reactions have been identified during postapproval use of ZITUVIMET, sitagliptin, or metformin. Skin and subcutaneous tissue disorders: hypersensitivity reactions including anaphylaxis, angioedema, rash, urticaria, cutaneous vasculitis, and exfoliative skin conditions including Stevens-Johnson syndrome;" sourceSpanStart="29107" sourceSpanEnd="29557" chunkIndex="11"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="topiramate" confidence="0.9" evidence="Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide." sourceSpanStart="30787" sourceSpanEnd="31011" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="zonisamide" confidence="0.9" evidence="Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide." sourceSpanStart="30787" sourceSpanEnd="31011" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="acetazolamide" confidence="0.9" evidence="Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide." sourceSpanStart="30787" sourceSpanEnd="31011" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="dichlorphenamide" confidence="0.9" evidence="Concomitant use of these drugs with ZITUVIMET may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide or dichlorphenamide." sourceSpanStart="30787" sourceSpanEnd="31011" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="ranolazine" confidence="0.9" evidence="Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine." sourceSpanStart="31507" sourceSpanEnd="31570" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="vandetanib" confidence="0.9" evidence="Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine." sourceSpanStart="31507" sourceSpanEnd="31570" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="dolutegravir" confidence="0.9" evidence="Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine." sourceSpanStart="31507" sourceSpanEnd="31570" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="cimetidine" confidence="0.9" evidence="Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine." sourceSpanStart="31507" sourceSpanEnd="31570" chunkIndex="12"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="zituvimet" targetType="Drug" targetId="alcohol" confidence="0.9" evidence="Intervention: Warn patients against alcohol intake while receiving ZITUVIMET." sourceSpanStart="31674" sourceSpanEnd="31751" chunkIndex="12"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hepatic-impairment" confidence="0.85" evidence="Hepatic Impairment: Avoid use in patients with hepatic impairment." sourceSpanStart="33355" sourceSpanEnd="33421" chunkIndex="14"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="severe-renal-impairment" confidence="0.9" evidence="ZITUVIMET is contraindicated in severe renal impairment, patients with an eGFR below 30 mL/min/1.73 m 2 [see Dosage and Administration ( 2.2 ) &gt;, Contraindications ( 4 )&gt;, Warnings and Precautions ( 5.1 )&gt; and Clinical Pharmacology ( 12.3 )]." sourceSpanStart="40130" sourceSpanEnd="40372" chunkIndex="15"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.8" evidence="Use of metformin in patients with hepatic impairment has been associated with some cases of lactic acidosis." sourceSpanStart="40725" sourceSpanEnd="40833" chunkIndex="15"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Metformin is substantially excreted by the kidney, and the risk of metformin accumulation and lactic acidosis increases with the degree of renal impairment." sourceSpanStart="40545" sourceSpanEnd="40701" chunkIndex="16"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Use of metformin in patients with hepatic impairment has been associated with some cases of lactic acidosis." sourceSpanStart="40725" sourceSpanEnd="40833" chunkIndex="16"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="zituvimet" targetType="Condition" targetId="hepatic-impairment" confidence="0.9" evidence="ZITUVIMET is not recommended in patients with hepatic impairment." sourceSpanStart="40834" sourceSpanEnd="40899" chunkIndex="16"/>
+</raw:RawExtractionResult>

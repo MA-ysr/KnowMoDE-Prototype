@@ -1,0 +1,11 @@
+# PubMed 34273282: Cardiac Transitional Care Effectiveness: Does Overall Comorbidity Burden Matter?
+
+The American journal of medicine (2021), doi:10.1016/j.amjmed.2021.06.018
+
+BACKGROUND: Cardiovascular disease is the most common cause of mortality and hospitalization in the United States. Transitional care initiatives can improve outcomes for cardiac patients, but it is unclear whether patients with different baseline comorbidity burden benefit equally. We evaluated the effectiveness of the Bridging the Discharge Gap Effectively (BRIDGE) program, a nurse-practitioner-led transitional care clinic, in mitigating adverse clinical outcomes in cardiac patients with varying Charlson comorbidity index (CCI).
+
+METHODS: We studied patients referred to BRIDGE between 2008 and 2017 postdischarge for a cardiac condition. Using proportional hazards regression models, we evaluated associations between attendance at BRIDGE and hospital readmission, emergency department (ED) visit, and a composite outcome consisting of readmission, ED visit, or mortality, and assessed interaction between BRIDGE attendance and CCI.
+
+RESULTS: Of 4559 patients, 3256 (71.4%) attended BRIDGE. In patients with low CCI, attendance at BRIDGE was inversely associated with hospital readmission (adjusted hazard ratio = 0.82, 95% confidence interval [CI]: 0.69, 0.97, P = .02) and the composite endpoint (adjusted hazard ratio = 0.84, 95% CI: 0.72, 0.98, P = .02). Associations of BRIDGE attendance with both readmission and ED visit were significantly weaker in patients with high CCI (adjusted P, interaction = .007 and .03, respectively). Overall, BRIDGE attendance was associated with an 11% lower hazard of developing the composite endpoint (95% CI: 2%, 19%, P = .01).
+
+CONCLUSIONS: Attendance at a transitional care clinic is inversely associated with risk of readmission and a composite endpoint in cardiac patients with low CCI. Future research should investigate modified transitional care programs in patients with varying comorbidity burden.

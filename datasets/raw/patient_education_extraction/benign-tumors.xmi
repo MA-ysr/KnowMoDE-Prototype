@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/benign-tumors.txt" sourceUri="https://medlineplus.gov/benigntumors.html" sourceSha256="96b19ba86268bd6a6bdedb7fe2b374144c9aec4c46d070c0c613c5048980a1b7" sourceText="# MedlinePlus health topic: Benign Tumors&#10;&#10;Also called: Adenoma, Hemangioma, Tumors, Benign, Benign neoplasms, Noncancerous tumors&#10;&#10;Tumors are abnormal growths in your body. They can be either benign or malignant. Benign tumors aren't cancer. Malignant ones are. Benign tumors grow only in one place. They cannot spread or invade other parts of your body. Even so, they can be dangerous if they press on vital organs, such as your brain.&#10;&#10;Tumors are made up of extra cells. Normally, cells grow and divide to form new cells as your body needs them. When cells grow old, they die, and new cells take their place. Sometimes, this process goes wrong. New cells form when your body does not need them, and old cells do not die when they should. These extra cells can divide without stopping and may form a tumor.&#10;&#10;Treatment often involves surgery. Benign tumors usually don't grow back.&#10;&#10;NIH: National Cancer Institute&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:18:38+00:00" xmi:version="2.0">
+  <chunks charEnd="915"/>
+  <entities type="Condition" id="benign-tumors" mention="Benign tumors" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="41">
+    <properties key="name" value="benign tumors"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+  <entities type="Condition" id="malignant-tumors" mention="malignant" confidence="0.9" sourceSpanStart="203" sourceSpanEnd="212">
+    <properties key="name" value="malignant tumors"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+</raw:RawExtractionResult>

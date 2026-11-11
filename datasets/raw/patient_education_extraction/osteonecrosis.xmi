@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/osteonecrosis.txt" sourceUri="https://medlineplus.gov/osteonecrosis.html" sourceSha256="73a628fad047c35c22b0251bfaf647b029802a41e72c499744a926321826c8e1" sourceText="# MedlinePlus health topic: Osteonecrosis&#10;&#10;Also called: Aseptic Necrosis, Avascular Necrosis, Legg-Calve-Perthes Disease, Ischemic necrosis&#10;&#10;Osteonecrosis is a disease caused by reduced blood flow to bones in the joints. In people with healthy bones, new bone is always replacing old bone. In osteonecrosis, the lack of blood causes the bone to break down faster than the body can make enough new bone. The bone starts to die and may break down.&#10;&#10;You can have osteonecrosis in one or several bones. It is most common in the upper leg. Other common sites are your upper arm and your knees, shoulders and ankles. The disease can affect men and women of any age, but it usually strikes in your thirties, forties or fifties.&#10;&#10;At first, you might not have any symptoms. As the disease gets worse, you will probably have joint pain that becomes more severe. You may not be able to bend or move the affected joint very well.&#10;&#10;No one is sure what causes the disease. Risk factors include :&#10;&#10;Long-term steroid treatment&#10;&#10;Alcohol misuse&#10;&#10;Joint injuries&#10;&#10;Having certain diseases, including arthritis and cancer&#10;&#10;Doctors use imaging tests and other tests to diagnose osteonecrosis. Treatments include medicines, using crutches, limiting activities that put weight on the affected joints, electrical stimulation and surgery.&#10;&#10;NIH: National Institute of Arthritis and Musculoskeletal and Skin Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:24:15+00:00" xmi:version="2.0">
+  <chunks charEnd="1388"/>
+  <entities type="Condition" id="osteonecrosis" mention="Osteonecrosis" confidence="0.99" sourceSpanStart="28" sourceSpanEnd="41">
+    <properties key="name" value="osteonecrosis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="RiskFactor" id="long-term-steroid-treatment" mention="Long-term steroid treatment" confidence="0.95" sourceSpanStart="983" sourceSpanEnd="1010">
+    <properties key="name" value="long-term steroid treatment"/>
+    <properties key="description" value="Long-term steroid treatment"/>
+  </entities>
+  <entities type="RiskFactor" id="alcohol-misuse" mention="Alcohol misuse" confidence="0.95" sourceSpanStart="1012" sourceSpanEnd="1026">
+    <properties key="name" value="alcohol misuse"/>
+    <properties key="description" value="Alcohol misuse"/>
+  </entities>
+  <entities type="RiskFactor" id="joint-injuries" mention="Joint injuries" confidence="0.95" sourceSpanStart="1028" sourceSpanEnd="1042">
+    <properties key="name" value="joint injuries"/>
+    <properties key="description" value="Joint injuries"/>
+  </entities>
+  <entities type="RiskFactor" id="arthritis" mention="arthritis" confidence="0.9" sourceSpanStart="1079" sourceSpanEnd="1088">
+    <properties key="name" value="arthritis"/>
+    <properties key="description" value="Having certain diseases, including arthritis and cancer"/>
+  </entities>
+  <entities type="RiskFactor" id="cancer" mention="cancer" confidence="0.9" sourceSpanStart="1093" sourceSpanEnd="1099">
+    <properties key="name" value="cancer"/>
+    <properties key="description" value="Having certain diseases, including arthritis and cancer"/>
+  </entities>
+</raw:RawExtractionResult>

@@ -1,0 +1,13 @@
+# PubMed 38862821: Acute kidney injury after colorectal surgery with prophylactic ureteral stents.
+
+Surgical endoscopy (2024), doi:10.1007/s00464-024-10941-5
+
+BACKGROUND: After colorectal surgery, acute kidney injury (AKI) results from a complex interplay of multiple independent causes and preventive measures that occur during the hospitalization. Prophylactic stenting for ureter identification has been identified as a potential cause, but the evidence is conflicting, possibly because of differing baseline characteristics and procedure-related approaches.
+
+OBJECTIVE: This retrospective cohort study assesses the role of stents in the etiology of AKI after determining the independent predictors of AKI.
+
+METHODS: From a population of 1224 consecutive colorectal patients (from 8/1/2016 through 12/31/2021), 382 (31.2%) received ureteral stents, and propensity score matching was used to create stented and control groups. Emergent cases and patients with sepsis were excluded from the analysis. Previously identified independent predictors of AKI, minimally invasive procedures, and a history of diabetes mellitus were used as criteria to create two balanced groups.
+
+RESULTS: Baseline demographic characteristics and procedure-related factors baseline factors were similar between the groups. There was no difference in the rate of AKI between stented patients and controls (P = 0.82), nor was there any difference in postoperative complications, such as chronic renal insufficiency (CRI, P = 0.49), average postoperative creatinine (P = 0.67), urinary tract infections (UTI, P = 0.82), any postoperative infection (P = 0.48), in-hospital complications (P = 1.00), length of stay (LOS, P = 0.15), and 30-day readmissions (P = 0.79).
+
+CONCLUSIONS: In a population of patients where stenting was frequently employed, ureter stents placed for identification did not appear to cause AKI or AKI-related complications.

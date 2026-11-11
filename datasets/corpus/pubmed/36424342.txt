@@ -1,0 +1,5 @@
+# PubMed 36424342: Recommendations for the diagnosis and treatment of hypoglycaemia after bariatric surgery.
+
+Endocrinologia, diabetes y nutricion (2022), doi:10.1016/j.endien.2021.09.005
+
+Postprandial hyperinsulinaemic hypoglycaemia is a common complication of bariatric surgery. Although in general its evolution is mild and self-limited, it can lead to neuroglycopaenia and compromise the patient's safety and quality of life. The aim of this document is to offer some recommendations to facilitate the clinical care of these complex patients, reviewing the aetiopathogenesis, its diagnosis and treatment that, sequentially, will include dietary and pharmacological measures and surgery in refractory cases. In the absence of high-quality studies, the diagnostic and therapeutic approach proposed is based on the consensus of experts of the Grupo de Obesidad de la Sociedad Española de Endocrinología y Nutrición [Obesity Group of the Spanish Society of Endocrinology and Nutrition], GOSEEN. Those undergoing bariatric surgery should be informed of the possibility of developing this complication.

@@ -1,0 +1,11 @@
+# PubMed 34695277: The outcomes of Clostridioides difficile infection in inpatient liver transplant population.
+
+Transplant infectious disease : an official journal of the Transplantation Society (2022), doi:10.1111/tid.13750
+
+BACKGROUND: Chronic immunosuppression is a known cause of Clostridioides difficile, which presents with colon infection. It is associated with increased mortality and morbidity. Our aim is to determine the inpatient outcomes of liver transplant patients with Clostridioides difficile infection (CDI) and trends in the last few years.
+
+METHODS: We utilized the national re-admission data (2010-2017) to study the outcomes of CDI in liver transplant patients. Association of C. difficile with re-admission was computed in a multivariable model adjusted for age, sex, gastrointestinal bleeding, hypertension, diabetes, hyperlipidemia, congestive heart failure, cerebrovascular disease, obesity, cancer, insurance, chronic kidney disease, chronic obstructive pulmonary disease, dementia, peripheral vascular disease, smoking, hospital location, and teaching status.
+
+RESULTS: During 2010-2017, there were 310 222 liver transplant patients hospitalized. Out of these, 9826 had CDI. CDI infection in liver transplant patients was associated with higher 30-day re-admission (14.3% vs. 11.21%, hazard ratio [HR]: 1.14, 95% confidence interval [CI]: 1.01-1.28, p = .02) and in-hospital mortality (odds ratio [OR]: 1.36, 95% CI: 1.14-1.61, p < .001). The most common causes of re-admission in the CDI group were recurrent CDI (41.1%), liver transplant complications (16.5%), and sepsis (11.6%). The median cost for liver transplant patients with C. difficile was significantly higher, $53 064 (IQR $24 970-$134 830) compared to patients that did not have C. difficile, $35 703 ($18 793-$73 871) (p < .001). The median length of stay was also longer for patients with CDI, 6 days (4-14) vs. 4 days (2-7) (p < .001).
+
+CONCLUSION: CDI in post-liver transplant patients was associated with higher mortality, re-admission, health care cost, and longer length of stay. The most common cause of re-admission was recurrent CDI, which raises the question of the efficacy of standard first-line therapy.

@@ -1,0 +1,587 @@
+{
+  "dataset": "medlineplus",
+  "updatedAt": "2026-11-01T18:54:41+00:00",
+  "fileCount": 58,
+  "files": {
+    "a1c.txt": {
+      "uri": "https://medlineplus.gov/a1c.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "A1C",
+      "retrievedAt": "2026-10-15T11:05:51+00:00",
+      "sha256": "8c8a5abfbe4f543009930bee24542754767eb314cc1708abb07dd1530b987112",
+      "bytes": 1186,
+      "searchTerm": "A1C"
+    },
+    "angioplasty.txt": {
+      "uri": "https://medlineplus.gov/angioplasty.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Angioplasty",
+      "retrievedAt": "2026-10-15T11:06:15+00:00",
+      "sha256": "bec74296473a9165946db174cf87f08b4d571c9f074f0ec8c4b770d27524c6a5",
+      "bytes": 3288,
+      "searchTerm": "after a hospital stay"
+    },
+    "atrial-fibrillation.txt": {
+      "uri": "https://medlineplus.gov/atrialfibrillation.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Atrial Fibrillation",
+      "retrievedAt": "2026-10-15T11:06:05+00:00",
+      "sha256": "9f252a0e022294465cb0299700c08c361e89cbef1dc089cbfcf929ef6781ab9e",
+      "bytes": 5735,
+      "searchTerm": "heart failure"
+    },
+    "benign-tumors.txt": {
+      "uri": "https://medlineplus.gov/benigntumors.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Benign Tumors",
+      "retrievedAt": "2026-10-15T11:06:30+00:00",
+      "sha256": "96b19ba86268bd6a6bdedb7fe2b374144c9aec4c46d070c0c613c5048980a1b7",
+      "bytes": 915,
+      "searchTerm": "neoplasm"
+    },
+    "birth-weight.txt": {
+      "uri": "https://medlineplus.gov/birthweight.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Birth Weight",
+      "retrievedAt": "2026-10-15T11:05:55+00:00",
+      "sha256": "0dfb6563dc5d13c8938ae5500bb037aaf5ec667909cd4756176044202d306017",
+      "bytes": 2122,
+      "searchTerm": "hypoglycemia"
+    },
+    "blood-glucose.txt": {
+      "uri": "https://medlineplus.gov/bloodglucose.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Blood Glucose",
+      "retrievedAt": "2026-10-15T11:05:46+00:00",
+      "sha256": "8fcf2bed6c7543d2309ef9c383e23cb37b5413d16c66239057baa80ed6b9aac8",
+      "bytes": 4696,
+      "searchTerm": "diabetes complications"
+    },
+    "body-weight.txt": {
+      "uri": "https://medlineplus.gov/bodyweight.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Body Weight",
+      "retrievedAt": "2026-10-15T11:06:22+00:00",
+      "sha256": "4939efdabaa6e98643163ead7b51c82d769fe962a0298ba00ce378c5c307b73e",
+      "bytes": 3547,
+      "searchTerm": "digestive disease"
+    },
+    "bone-marrow-diseases.txt": {
+      "uri": "https://medlineplus.gov/bonemarrowdiseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Bone Marrow Diseases",
+      "retrievedAt": "2026-10-15T11:06:30+00:00",
+      "sha256": "b90986f46c7eed7a61a864e5ed24aaf2d9656966d1a9e2c36508ad101719579a",
+      "bytes": 1102,
+      "searchTerm": "neoplasm"
+    },
+    "cancer.txt": {
+      "uri": "https://medlineplus.gov/cancer.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Cancer",
+      "retrievedAt": "2026-10-15T11:06:30+00:00",
+      "sha256": "953d843527113a195f747dcdf10d513a5cc02a0f8f639416f682067031e80cc1",
+      "bytes": 4035,
+      "searchTerm": "neoplasm"
+    },
+    "chronic-kidney-disease.txt": {
+      "uri": "https://medlineplus.gov/chronickidneydisease.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Chronic Kidney Disease",
+      "retrievedAt": "2026-10-15T11:06:07+00:00",
+      "sha256": "5d2a43973f752b68d7e2a21fffe7d453c69ff1a3884cfe7acee07c455f3c9306",
+      "bytes": 1677,
+      "searchTerm": "kidney disease"
+    },
+    "colonoscopy.txt": {
+      "uri": "https://medlineplus.gov/colonoscopy.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Colonoscopy",
+      "retrievedAt": "2026-10-15T11:06:15+00:00",
+      "sha256": "8eaffc10a3e98b4729c8918d363f71d08de5759e76887c4890f4dedd762b7211",
+      "bytes": 6347,
+      "searchTerm": "after a hospital stay"
+    },
+    "diabetes-and-pregnancy.txt": {
+      "uri": "https://medlineplus.gov/diabetesandpregnancy.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes and Pregnancy",
+      "retrievedAt": "2026-10-15T11:06:17+00:00",
+      "sha256": "d255aac12e2706bc750b6709c9468d7b34d2f21ac12cd43b03f1f4e8f768ee43",
+      "bytes": 5188,
+      "searchTerm": "metformin"
+    },
+    "diabetes-complications.txt": {
+      "uri": "https://medlineplus.gov/diabetescomplications.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes Complications",
+      "retrievedAt": "2026-10-15T11:05:46+00:00",
+      "sha256": "f144e7baee51816eac4fddfa090f3f23a98a888e5de618f6b2a1e5e9563d59ef",
+      "bytes": 2556,
+      "searchTerm": "diabetes complications"
+    },
+    "diabetes-in-children-and-teens.txt": {
+      "uri": "https://medlineplus.gov/diabetesinchildrenandteens.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes in Children and Teens",
+      "retrievedAt": "2026-10-15T11:05:44+00:00",
+      "sha256": "b22840780256a25005e1065b293bc0158c54304971f31ee19edd64bd83cf5e99",
+      "bytes": 1452,
+      "searchTerm": "diabetes type 2"
+    },
+    "diabetes-medicines.txt": {
+      "uri": "https://medlineplus.gov/diabetesmedicines.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes Medicines",
+      "retrievedAt": "2026-10-15T11:05:49+00:00",
+      "sha256": "0a6e904da1e931222faf2e117a28208e04e672544ff8c4c3da97fd02d46647e8",
+      "bytes": 3908,
+      "searchTerm": "diabetes medicines"
+    },
+    "diabetes-type-1.txt": {
+      "uri": "https://medlineplus.gov/diabetestype1.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes Type 1",
+      "retrievedAt": "2026-10-15T11:05:42+00:00",
+      "sha256": "4c2a87edc1d4898af48ba9d488ec9deef1a9d1748d8afb43a021cbb1a23082ac",
+      "bytes": 2941,
+      "searchTerm": "diabetes"
+    },
+    "diabetes-type-2.txt": {
+      "uri": "https://medlineplus.gov/diabetestype2.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes Type 2",
+      "retrievedAt": "2026-10-15T11:05:42+00:00",
+      "sha256": "4290fbd103fdacf568fb2fabb47a371faa40537c59e2dbe8b72976a4887349ea",
+      "bytes": 4532,
+      "searchTerm": "diabetes"
+    },
+    "diabetes.txt": {
+      "uri": "https://medlineplus.gov/diabetes.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetes",
+      "retrievedAt": "2026-10-15T11:05:42+00:00",
+      "sha256": "162a1c78261fd09f4328fc47d35107397d6b9f6719840bb45db44f1e034222d8",
+      "bytes": 5898,
+      "searchTerm": "diabetes"
+    },
+    "diabetic-diet.txt": {
+      "uri": "https://medlineplus.gov/diabeticdiet.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetic Diet",
+      "retrievedAt": "2026-10-15T11:06:01+00:00",
+      "sha256": "3a5e96fbb49b7bfb8ee99564e612111c6c60ba09f8272649d673108470735c30",
+      "bytes": 4341,
+      "searchTerm": "diabetic kidney disease"
+    },
+    "diabetic-eye-problems.txt": {
+      "uri": "https://medlineplus.gov/diabeticeyeproblems.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetic Eye Problems",
+      "retrievedAt": "2026-10-15T11:06:13+00:00",
+      "sha256": "e83fa1456042c0e8d07f39f5843c2b093b04a82f31bebac28d4ecfad0bb83801",
+      "bytes": 4525,
+      "searchTerm": "diabetic eye problems"
+    },
+    "diabetic-foot.txt": {
+      "uri": "https://medlineplus.gov/diabeticfoot.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetic Foot",
+      "retrievedAt": "2026-10-15T11:06:12+00:00",
+      "sha256": "278652851c199db80656f3399e36d4b9c58238a2cad650533ba95a2bc4a8e79e",
+      "bytes": 4280,
+      "searchTerm": "diabetic foot"
+    },
+    "diabetic-heart-disease.txt": {
+      "uri": "https://medlineplus.gov/diabeticheartdisease.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetic Heart Disease",
+      "retrievedAt": "2026-10-15T11:06:01+00:00",
+      "sha256": "8e43182d7e56a50a00931c76f254be8f38af6b5c44a3954c2589eddeb403a492",
+      "bytes": 3950,
+      "searchTerm": "diabetic kidney disease"
+    },
+    "diabetic-kidney-problems.txt": {
+      "uri": "https://medlineplus.gov/diabetickidneyproblems.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Diabetic Kidney Problems",
+      "retrievedAt": "2026-10-15T11:06:01+00:00",
+      "sha256": "577220eaa66c095453244c5509d23c2ad609b5eeacc3482e58c9b9f399871dc7",
+      "bytes": 1077,
+      "searchTerm": "diabetic kidney disease"
+    },
+    "digestive-diseases.txt": {
+      "uri": "https://medlineplus.gov/digestivediseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Digestive Diseases",
+      "retrievedAt": "2026-10-15T11:06:22+00:00",
+      "sha256": "e21d05cb3e1c3f949e64a14e64c521f097273c1c740fd86e6189df7583a110f1",
+      "bytes": 870,
+      "searchTerm": "digestive disease"
+    },
+    "eye-care.txt": {
+      "uri": "https://medlineplus.gov/eyecare.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Eye Care",
+      "retrievedAt": "2026-10-15T11:06:13+00:00",
+      "sha256": "3e1d879ae0cc45ec5cec1ce3a84092785e764ac55d84a3185727bccf60f69c56",
+      "bytes": 5836,
+      "searchTerm": "diabetic eye problems"
+    },
+    "eye-diseases.txt": {
+      "uri": "https://medlineplus.gov/eyediseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Eye Diseases",
+      "retrievedAt": "2026-10-15T11:06:13+00:00",
+      "sha256": "5fbebb1f04e7cf899577e4fea530ef0f911d62e96ed5f6582f9658f0e6082fd6",
+      "bytes": 3126,
+      "searchTerm": "diabetic eye problems"
+    },
+    "fistulas.txt": {
+      "uri": "https://medlineplus.gov/fistulas.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Fistulas",
+      "retrievedAt": "2026-10-15T11:06:28+00:00",
+      "sha256": "9456612c42ff79359478fbde3c7446e82ac91d6da7e1dec3cab6da2ff0c90a5e",
+      "bytes": 704,
+      "searchTerm": "genitourinary disease"
+    },
+    "gangrene.txt": {
+      "uri": "https://medlineplus.gov/gangrene.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Gangrene",
+      "retrievedAt": "2026-10-15T11:06:18+00:00",
+      "sha256": "444f3c392473a6890f20f038a93007d613a7c95ce53854c93db32e3d837c44a1",
+      "bytes": 813,
+      "searchTerm": "circulatory disease"
+    },
+    "heart-failure.txt": {
+      "uri": "https://medlineplus.gov/heartfailure.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Heart Failure",
+      "retrievedAt": "2026-10-15T11:06:05+00:00",
+      "sha256": "7a06e1e19eb8a89e5c1b9fb9a83c3e56c24101ee180015337e36cd0386c21f58",
+      "bytes": 6913,
+      "searchTerm": "heart failure"
+    },
+    "heart-health-tests.txt": {
+      "uri": "https://medlineplus.gov/hearthealthtests.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Heart Health Tests",
+      "retrievedAt": "2026-10-15T11:06:05+00:00",
+      "sha256": "ab4814f664a054d9646af93e0692bcc25b596c954c3bba065dfc960b4dae179a",
+      "bytes": 6450,
+      "searchTerm": "heart failure"
+    },
+    "high-blood-pressure-in-pregnancy.txt": {
+      "uri": "https://medlineplus.gov/highbloodpressureinpregnancy.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "High Blood Pressure in Pregnancy",
+      "retrievedAt": "2026-10-15T11:06:10+00:00",
+      "sha256": "9ee26605180199c6021ab4d02e39fbdeb877ce7a0dc805ae0a738ed5b62991e2",
+      "bytes": 6295,
+      "searchTerm": "high blood pressure"
+    },
+    "high-blood-pressure.txt": {
+      "uri": "https://medlineplus.gov/highbloodpressure.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "High Blood Pressure",
+      "retrievedAt": "2026-10-15T11:06:10+00:00",
+      "sha256": "f9b8f7fa58371849b88ec296474e8841d8425ede71415244f5e6c1478a49a53f",
+      "bytes": 3137,
+      "searchTerm": "high blood pressure"
+    },
+    "how-to-prevent-diabetes.txt": {
+      "uri": "https://medlineplus.gov/howtopreventdiabetes.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "How to Prevent Diabetes",
+      "retrievedAt": "2026-10-15T11:06:17+00:00",
+      "sha256": "d6137ee3bafe3f7ddec9882b66130de8de859ffe290642617490ca7d5c7389fd",
+      "bytes": 4166,
+      "searchTerm": "metformin"
+    },
+    "how-to-prevent-heart-disease.txt": {
+      "uri": "https://medlineplus.gov/howtopreventheartdisease.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "How to Prevent Heart Disease",
+      "retrievedAt": "2026-10-15T11:06:03+00:00",
+      "sha256": "be9bd909d24bd3da26667431adac32b31b21b2b638e378291ab5c5c36aef2685",
+      "bytes": 6003,
+      "searchTerm": "diabetic heart disease"
+    },
+    "how-to-prevent-high-blood-pressure.txt": {
+      "uri": "https://medlineplus.gov/howtopreventhighbloodpressure.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "How to Prevent High Blood Pressure",
+      "retrievedAt": "2026-10-15T11:06:10+00:00",
+      "sha256": "0595e029f308c700536baa1261bef1dbcbefa2893d34c155fd85d83c4be1e9fc",
+      "bytes": 5744,
+      "searchTerm": "high blood pressure"
+    },
+    "hyperglycemia.txt": {
+      "uri": "https://medlineplus.gov/hyperglycemia.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Hyperglycemia",
+      "retrievedAt": "2026-10-15T11:05:54+00:00",
+      "sha256": "6d81995cbb58a0126b0191b4fa436ca35059f21cda11c795ad88932537b1418d",
+      "bytes": 4482,
+      "searchTerm": "blood sugar"
+    },
+    "hypoglycemia.txt": {
+      "uri": "https://medlineplus.gov/hypoglycemia.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Hypoglycemia",
+      "retrievedAt": "2026-10-15T11:05:54+00:00",
+      "sha256": "ecc12a589dcf5f1813330d35ff36658520944d47d69763c97a2c6c5b58a803d2",
+      "bytes": 4360,
+      "searchTerm": "blood sugar"
+    },
+    "indoor-air-pollution.txt": {
+      "uri": "https://medlineplus.gov/indoorairpollution.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Indoor Air Pollution",
+      "retrievedAt": "2026-10-15T11:06:20+00:00",
+      "sha256": "45d9e1aa4c4abbc27fa8a52d9c3d2ed7b90eaaa4d6d67e502abdad3ade9b52e3",
+      "bytes": 1065,
+      "searchTerm": "respiratory disease"
+    },
+    "iron.txt": {
+      "uri": "https://medlineplus.gov/iron.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Iron",
+      "retrievedAt": "2026-10-15T11:06:22+00:00",
+      "sha256": "ce08820d732327556710a3571348621eb0bb714e803f4f53ccedf23a001efdc2",
+      "bytes": 2643,
+      "searchTerm": "digestive disease"
+    },
+    "kidney-cysts.txt": {
+      "uri": "https://medlineplus.gov/kidneycysts.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Kidney Cysts",
+      "retrievedAt": "2026-10-15T11:06:07+00:00",
+      "sha256": "f26497c75ce3553b2e5777d240c86fc64c2fb2290e4cbdbd3bb6524f746c9a35",
+      "bytes": 1417,
+      "searchTerm": "kidney disease"
+    },
+    "kidney-diseases.txt": {
+      "uri": "https://medlineplus.gov/kidneydiseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Kidney Diseases",
+      "retrievedAt": "2026-10-15T11:06:07+00:00",
+      "sha256": "c8912282e9003b637c0a75c874ac323a7d97d793c79e5413ab2713f53cf0f2cc",
+      "bytes": 1132,
+      "searchTerm": "kidney disease"
+    },
+    "kidney-failure.txt": {
+      "uri": "https://medlineplus.gov/kidneyfailure.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Kidney Failure",
+      "retrievedAt": "2026-10-15T11:06:32+00:00",
+      "sha256": "3fc6fc1f1cd4c57a33e70eedefd0f5acc192ac6e66ddc60c54273754b12931eb",
+      "bytes": 1007,
+      "searchTerm": "chronic kidney disease"
+    },
+    "knee-replacement.txt": {
+      "uri": "https://medlineplus.gov/kneereplacement.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Knee Replacement",
+      "retrievedAt": "2026-10-15T11:06:15+00:00",
+      "sha256": "7d366d645ba689481c1603004934edfe492f43ee4a3198f02d81d6100f4dd125",
+      "bytes": 4268,
+      "searchTerm": "after a hospital stay"
+    },
+    "limb-loss.txt": {
+      "uri": "https://medlineplus.gov/limbloss.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Limb Loss",
+      "retrievedAt": "2026-10-15T11:06:12+00:00",
+      "sha256": "9c12fe2b060df6379a80baa40fd0f2e691d9d781fee17ad2256ec18e8b19e193",
+      "bytes": 937,
+      "searchTerm": "diabetic foot"
+    },
+    "lung-diseases.txt": {
+      "uri": "https://medlineplus.gov/lungdiseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Lung Diseases",
+      "retrievedAt": "2026-10-15T11:06:20+00:00",
+      "sha256": "8453a97a7b5cf7994c112b4115cbc7a9b6cc4e730babe2d77888991de4818980",
+      "bytes": 788,
+      "searchTerm": "respiratory disease"
+    },
+    "metabolic-syndrome.txt": {
+      "uri": "https://medlineplus.gov/metabolicsyndrome.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Metabolic Syndrome",
+      "retrievedAt": "2026-10-15T11:05:59+00:00",
+      "sha256": "e9c6eb88b2bf8ca418cec105517f1ba721ec262ead954ae2fb714d039c9e3991",
+      "bytes": 4119,
+      "searchTerm": "insulin"
+    },
+    "osteonecrosis.txt": {
+      "uri": "https://medlineplus.gov/osteonecrosis.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Osteonecrosis",
+      "retrievedAt": "2026-10-15T11:06:26+00:00",
+      "sha256": "73a628fad047c35c22b0251bfaf647b029802a41e72c499744a926321826c8e1",
+      "bytes": 1388,
+      "searchTerm": "musculoskeletal disease"
+    },
+    "oxygen-therapy.txt": {
+      "uri": "https://medlineplus.gov/oxygentherapy.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Oxygen Therapy",
+      "retrievedAt": "2026-10-15T11:06:24+00:00",
+      "sha256": "6f0749fb6ca4cc8f98ab4cedc540d495841f8f70e8400f859ad65866ddc33f28",
+      "bytes": 3010,
+      "searchTerm": "injury and poisoning"
+    },
+    "paget-s-disease-of-bone.txt": {
+      "uri": "https://medlineplus.gov/pagetsdiseaseofbone.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Paget's Disease of Bone",
+      "retrievedAt": "2026-10-15T11:06:26+00:00",
+      "sha256": "33f10f4a0cf7b39e0ce481ca39e5b2d66f2c1eb968f203f1a51c54cfa1d81556",
+      "bytes": 4415,
+      "searchTerm": "musculoskeletal disease"
+    },
+    "peripheral-nerve-disorders.txt": {
+      "uri": "https://medlineplus.gov/peripheralnervedisorders.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Peripheral Nerve Disorders",
+      "retrievedAt": "2026-10-15T11:06:12+00:00",
+      "sha256": "afadc6baf80ebf0c1a690c15cb8eccb3c8be18c9e0fcb56181cd1423f320cc78",
+      "bytes": 4833,
+      "searchTerm": "diabetic foot"
+    },
+    "prediabetes.txt": {
+      "uri": "https://medlineplus.gov/prediabetes.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Prediabetes",
+      "retrievedAt": "2026-10-15T11:05:46+00:00",
+      "sha256": "875c5513555f1afdd8835b4f14ecd07e844dd85a65a23460360491c1ae08bb56",
+      "bytes": 3430,
+      "searchTerm": "diabetes complications"
+    },
+    "pregnancy-and-medicines.txt": {
+      "uri": "https://medlineplus.gov/pregnancyandmedicines.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Pregnancy and Medicines",
+      "retrievedAt": "2026-10-15T11:06:17+00:00",
+      "sha256": "db6b6a56f91ef5f2ca920340aef310460764a2b764bb1e4cecfa6b2cf66a26cf",
+      "bytes": 1573,
+      "searchTerm": "metformin"
+    },
+    "prostate-diseases.txt": {
+      "uri": "https://medlineplus.gov/prostatediseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Prostate Diseases",
+      "retrievedAt": "2026-10-15T11:06:18+00:00",
+      "sha256": "536add78722d80ade6d36961c44924fb4264b7516976c1234fbc469392394fe0",
+      "bytes": 4280,
+      "searchTerm": "circulatory disease"
+    },
+    "radiation-exposure.txt": {
+      "uri": "https://medlineplus.gov/radiationexposure.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Radiation Exposure",
+      "retrievedAt": "2026-10-15T11:06:24+00:00",
+      "sha256": "328b11e4add5aac4e112b6be126727662b8e40eaa2f2cdb04d1974e38ce11f3d",
+      "bytes": 4550,
+      "searchTerm": "injury and poisoning"
+    },
+    "rheumatoid-arthritis.txt": {
+      "uri": "https://medlineplus.gov/rheumatoidarthritis.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Rheumatoid Arthritis",
+      "retrievedAt": "2026-10-15T11:06:26+00:00",
+      "sha256": "35a0a5b94331515dead670cf45a01af09091b0b9a6f78ace7533bbf37d990ec2",
+      "bytes": 4794,
+      "searchTerm": "musculoskeletal disease"
+    },
+    "tremor.txt": {
+      "uri": "https://medlineplus.gov/tremor.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Tremor",
+      "retrievedAt": "2026-10-15T11:06:24+00:00",
+      "sha256": "fb4310d0cd76120d1011c2dc0dca63e3d994c93d961886c39f9c98abba50fa2f",
+      "bytes": 4732,
+      "searchTerm": "injury and poisoning"
+    },
+    "vascular-diseases.txt": {
+      "uri": "https://medlineplus.gov/vasculardiseases.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Vascular Diseases",
+      "retrievedAt": "2026-10-15T11:06:18+00:00",
+      "sha256": "d9df5896c458e3f3214568b379141ae4528edc7c92ec30b3759300307bb0a6b0",
+      "bytes": 3774,
+      "searchTerm": "circulatory disease"
+    },
+    "whooping-cough.txt": {
+      "uri": "https://medlineplus.gov/whoopingcough.html",
+      "licence": "MedlinePlus health topic summary (NLM), public domain; attribution: MedlinePlus.gov",
+      "collection": "corpus/medlineplus",
+      "title": "Whooping Cough",
+      "retrievedAt": "2026-10-15T11:06:20+00:00",
+      "sha256": "1f1238716a5239718538a07e6b8d93d683a20eaa980298a097f28115076ec019",
+      "bytes": 4338,
+      "searchTerm": "respiratory disease"
+    }
+  }
+}

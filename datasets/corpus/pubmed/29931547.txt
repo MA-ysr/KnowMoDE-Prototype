@@ -1,0 +1,7 @@
+# PubMed 29931547: Strategies to Prevent Readmission in High-Risk Patients with Diabetes: the Importance of an Interdisciplinary Approach.
+
+Current diabetes reports (2018), doi:10.1007/s11892-018-1027-z
+
+PURPOSE OF REVIEW: Patients with diabetes are known to have higher 30-day readmission rates compared to the general inpatient population. A number of strategies have been shown to be effective in lowering readmission rates.
+
+RECENT FINDINGS: A review of the current literature revealed several strategies that have been associated with a decreased risk of readmission in high-risk patients with diabetes. These strategies include inpatient diabetes survival skills education and medication reconciliation prior to discharge to send the patient home with the "right" medications. Other key strategies include scheduling a follow-up phone call soon after discharge and an office visit to adjust the diabetes regimen. The authors identified the most successful strategies to reduce readmissions as well as some institutional barriers to following a transitional care program. Recent studies have identified risk factors in the diabetes population that are associated with an increased risk of readmission as well as interventions to lower this risk. A standardized transitional care program that focuses on providing interventions while reducing barriers to implementation can contribute to a decreased risk of readmission.

@@ -1,0 +1,11 @@
+# PubMed 37922214: Diabetes mellitus and blood glucose variability increases the 30-day readmission rate after kidney transplantation.
+
+Clinical transplantation (2024), doi:10.1111/ctr.15177
+
+INTRODUCTION: Inpatient hyperglycemia is an established independent risk factor among several patient cohorts for hospital readmission. This has not been studied after kidney transplantation. Nearly one-third of patients who have undergone a kidney transplant reportedly experience 30-day readmission.
+
+METHODS: Data on first-time solitary kidney transplantations were retrieved between September 2015 and December 2018. Information was linked to the electronic health records to determine diagnosis of diabetes mellitus and extract glucometric and insulin therapy data. Univariate logistic regression analysis and the XGBoost algorithm were used to predict 30-day readmission. We report the average performance of the models on the testing set on bootstrapped partitions of the data to ensure statistical significance.
+
+RESULTS: The cohort included 1036 patients who received kidney transplantation; 224 (22%) experienced 30-day readmission. The machine learning algorithm was able to predict 30-day readmission with an average area under the receiver operator curve (AUC) of 78% with (76.1%, 79.9%) 95% confidence interval (CI). We observed statistically significant differences in the presence of pretransplant diabetes, inpatient-hyperglycemia, inpatient-hypoglycemia, minimum and maximum glucose values among those with higher 30-day readmission rates. The XGBoost model identified the index admission length of stay, presence of hyper- and hypoglycemia, the recipient and donor body mass index (BMI) values, presence of delayed graft function, and African American race as the most predictive risk factors of 30-day readmission. Additionally, significant variations in the therapeutic management of blood glucose by providers were observed.
+
+CONCLUSIONS: Suboptimal glucose metrics during hospitalization after kidney transplantation are associated with an increased risk for 30-day hospital readmission. Optimizing hospital blood glucose management, a modifiable factor, after kidney transplantation may reduce the risk of 30-day readmission.

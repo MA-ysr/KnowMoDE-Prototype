@@ -1,0 +1,11 @@
+# PubMed 34400473: Analysis of outcome of 6-month readmissions after percutaneous left atrial appendage occlusion.
+
+Heart (British Cardiac Society) (2022), doi:10.1136/heartjnl-2021-319345
+
+OBJECTIVE: Percutaneous left atrial appendage occlusion (LAAO) is an alternative strategy for prevention of thromboembolic events in patients with atrial fibrillation and unsuitable for long-term oral anticoagulation. The study aimed to evaluate the causes and timing of readmissions within 6 months following percutaneous LAAO in a real-world setting.
+
+METHODS: We conducted a retrospective cohort study of percutaneous LAAO performed in the USA between January and June of 2016-2018 using the Nationwide Readmissions Database.
+
+RESULTS: Overall, 12 446 patients who underwent LAAO were included in the analyses and 3477 patients (28%) were readmitted within 6 months following the interventions. Readmitted patients were more often women (p=0.001). The index hospitalisation was characterised by longer duration of hospital stay (p<0.001) and complicated with acute kidney injury (p<0.001) among readmitted patients compared with those without readmissions. Readmissions within 6 months following the index intervention were mainly due to heart failure (13%) and gastrointestinal bleeding (12%). Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84) and chronic kidney disease (HR 1.42; 95% CI 1.03 to 1.94). Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81) and previous anaemia (HR 2.41; 95% CI 1.54 to 3.77).
+
+CONCLUSIONS: After percutaneous LAAO, over a quarter of the patients in the USA required rehospitalisation within 6 months, mainly due to heart failure and gastrointestinal bleeding.

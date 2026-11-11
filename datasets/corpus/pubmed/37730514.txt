@@ -1,0 +1,11 @@
+# PubMed 37730514: Outcome comparison between primary and revisional bariatric surgery: A propensity-matched analysis.
+
+Surgery (2024), doi:10.1016/j.surg.2023.07.027
+
+BACKGROUND: Revisional bariatric procedures for weight recurrence are rising but are considered higher risk and less effective than primary bariatric procedures. This study aimed to compare clinical outcomes between primary and revisional bariatric surgery for weight recurrence.
+
+METHODS: Prospectively collected data from adult patients who underwent revisional or primary bariatric surgery from 2016 to 2020 in an academic institution were reviewed. Roux-en-Y gastric bypass and sleeve gastrectomy were performed primarily or as conversion procedures after laparoscopic adjustable gastric band, vertical banded gastroplasty, and sleeve gastrectomy. 1:1 propensity score matching was performed between revisional bariatric surgery and primary bariatric surgery, and logistic regression analysis was used to compare up to 2-year weight loss and comorbidity resolution outcomes.
+
+RESULTS: A total of172 cases (86 revisional bariatric surgery versus 86 primary bariatric surgery) were included. Groups were matched for age, sex, preoperative body mass index, bariatric procedure, diabetes, hypertension, and obstructive sleep apnea. Procedure duration (203 ± 78 vs 154 ± 69 minutes; P < .001) and length of stay (2.3 ± 2.1 vs 1.7 ± 1 days; P = .02) were longer for revisional bariatric surgery versus primary bariatric surgery, respectively. Total weight loss was less in revisional bariatric surgery compared with primary bariatric surgery at 1 year (23 ± 10% vs 32 ± 9%; P < .001) and 2 years (21 ± 12.% vs 32 ± 10%; P < .001) of follow-up; however, no differences were detected in postoperative occurrences, emergency department visits, readmissions, reintervention and reoperation rates, and comorbidity resolution.
+
+CONCLUSION: Although revisional bariatric surgery was associated with longer operation times, prolonged hospitalization, and lower weight loss than primary bariatric surgery, it was accomplished safely and led to substantial weight loss and comorbidity resolution. This information can guide patient counseling before revisional surgery for weight recurrence.

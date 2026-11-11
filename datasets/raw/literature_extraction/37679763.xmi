@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37679763.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37679763/" sourceSha256="cb02f1631e59c26dab551b42a3f3c9d96499061854046ca638f34cbbefa71be5" sourceText="# PubMed 37679763: Triglyceride-glucose index and heart failure: a systematic review and meta-analysis.&#10;&#10;Cardiovascular diabetology (2023), doi:10.1186/s12933-023-01973-7&#10;&#10;BACKGROUND: Insulin resistance (IR) is a major metabolic disorder observed in heart failure (HF) and is tightly associated with patients' poor prognosis. The triglyceride-glucose index (TyG) has been proposed as a surrogate marker of IR in HF. Yet, whether TyG is a reliable clinical marker is still under debate. Hence, we aimed to respond to this relevant question via a systematic review and meta-analysis of existing studies.&#10;&#10;METHODS: A systematic search was conducted in PubMed, Embase, Scopus, and Web of Science to find studies investigating the TyG index in patients with HF or its association with the incidence of HF. Adjusted hazard ratios (HR) and 95% confidence intervals (CI) were pooled through random-effect meta-analysis. HRs were calculated using TyG as a continuous variable (1 unit increase) and by comparing the group with the highest TyG to the lowest TyG group.&#10;&#10;RESULTS: Thirty studies, involving 772,809 participants, were included in this systematic review. Meta-analysis of seven studies comparing the highest-TyG to the lowest-TyG group showed a significantly increased risk of HF in the former group (HR 1.21, 95% CI 1.14 to 1.29, P &lt; 0.01). The same result was found when pooling the HRs for a one-unit increase in the TyG index (HR 1.17, 95% CI 1.08 to 1.26). Similarly, a more elevated TyG index was associated with a higher incidence of HF in patients with type 2 diabetes or coronary artery disease. Additionally, the incidence of adverse events (readmission and mortality) in patients with HF was associated with TyG.&#10;&#10;CONCLUSION: Our findings support the TyG index as a valuable marker to assess the risk of HF incidence in different populations and as a prognostic marker in patients with HF. Further studies should be conducted to confirm these associations and investigate the clinical utility of the TyG index.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:41:35+00:00" xmi:version="2.0">
+  <chunks charEnd="2024"/>
+  <entities type="Condition" id="insulin-resistance" mention="Insulin resistance" confidence="0.95" sourceSpanStart="184" sourceSpanEnd="202">
+    <properties key="name" value="insulin resistance"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.98" sourceSpanStart="250" sourceSpanEnd="263">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="triglyceride-glucose-index" mention="Triglyceride-glucose index (TyG)" confidence="0.95" sourceSpanStart="330" sourceSpanEnd="362">
+    <properties key="name" value="triglyceride-glucose index"/>
+    <properties key="description" value="A surrogate marker of insulin resistance"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="heart-failure-incidence" mention="incidence of HF" confidence="0.9" sourceSpanStart="784" sourceSpanEnd="799">
+    <properties key="name" value="incidence of heart failure"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="1654" sourceSpanEnd="1665">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.9" sourceSpanStart="1670" sourceSpanEnd="1679">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="triglyceride-glucose-index" targetType="ClinicalOutcome" targetId="heart-failure-incidence" confidence="0.95" evidence="Meta-analysis of seven studies comparing the highest-TyG to the lowest-TyG group showed a significantly increased risk of HF in the former group" sourceSpanStart="1157" sourceSpanEnd="1301"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="triglyceride-glucose-index" targetType="ClinicalOutcome" targetId="readmission" confidence="0.85" evidence="Additionally, the incidence of adverse events (readmission and mortality) in patients with HF was associated with TyG." sourceSpanStart="1607" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="triglyceride-glucose-index" targetType="ClinicalOutcome" targetId="mortality" confidence="0.85" evidence="Additionally, the incidence of adverse events (readmission and mortality) in patients with HF was associated with TyG." sourceSpanStart="1607" sourceSpanEnd="1725"/>
+</raw:RawExtractionResult>

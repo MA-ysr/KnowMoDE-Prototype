@@ -1,0 +1,11 @@
+# PubMed 25100371: An individualized inpatient diabetes education and hospital transition program for poorly controlled hospitalized patients with diabetes.
+
+Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2014), doi:10.4158/EP14061.OR
+
+OBJECTIVE: To evaluate predictors of outcomes associated with an inpatient diabetes education and discharge support program for hospitalized patients with poorly controlled diabetes (glycated hemoglobin [HbA1c]>9%).
+
+METHODS: Patients participated in individualized diabetes education conducted by a certified diabetes educator (CDE) that included an exploration of barriers and goal setting during hospitalization with telephone follow-up and communication with primary providers at discharge. Predictors of HbA1c reduction, successful follow-up, and readmission were analyzed.
+
+RESULTS: There were 82 subjects, and 48% were insulin naïve. Patients with type 2 diabetes (T2D, n = 58) had a significant decrease in HbA1c at follow-up (-2.8%, P<.0001), while those with type 1 diabetes (T1D, n = 19) did not (+0.02%, P = .96). However, after adjustment for other factors, only increasing age, higher baseline HbA1c, earlier education, and initiation of basal insulin were significant predictors of reduction in HbA1c. Higher area level income and empowerment and earlier education were significant predictors of outpatient follow-up within 30 days. While 28% were admitted for severe hyperglycemia, only 1 patient was readmitted with severe hyperglycemia. Successful phone contact was 77% and 57% with and without the support of non-CDE assistants respectively, but all outcomes were similar.
+
+CONCLUSION: The study suggests that an individualized inpatient diabetes education and transition program is associated with a significant reduction in HbA1c that is dependent on baseline HbA1c, older age, initiation of insulin, and earlier enrollment. Additional interventions are needed to ensure better continuity of care.

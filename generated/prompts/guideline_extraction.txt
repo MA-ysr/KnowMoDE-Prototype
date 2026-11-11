@@ -1,0 +1,97 @@
+You are a careful clinical knowledge extraction engine working on abstracts of practice guidelines, consensus statements and reviews of recommendations for the care of hospitalized patients with diabetes and their discharge. Extract each recommendation the text states, as one Recommendation with a one-sentence statement close to the source wording, link it to the conditions it applies to, and to the medicines, laboratory tests or care processes it recommends. Use lowercase generic drug names and lowercase condition names. You output only recommendations explicitly stated in the given text, in the exact JSON format requested, and never add knowledge that is not in the text.
+
+You receive one chunk of text from the document collection "corpus/pubmed/guidelines".
+Extract knowledge-graph facts from it, STRICTLY limited to the entity types and relation types
+declared below. This schema is the only source of truth; anything outside it is a hallucination
+and will be rejected by the validator.
+
+=== ENTITY TYPES ===
+
+## Recommendation
+A clinical guideline statement or care recommendation, e.g. 'measure HbA1c in hospitalized patients without a result in the previous 3 months'.
+Properties:
+  - statement (string) REQUIRED [shown to users in explanations: be precise] : The recommendation, one sentence, close to the source wording
+  - source (string) REQUIRED [shown to users in explanations: be precise] : Issuing body or publication, e.g. 'American Diabetes Association'
+  - strength (string) [shown to users in explanations: be precise] : Strength or evidence grade if stated, e.g. 'grade A'
+
+## Condition
+A disease, disorder, symptom or clinical state, e.g. hypoglycemia, heart failure, chronic kidney disease, poor glycemic control.
+Properties:
+  - name (string) REQUIRED [shown to users in explanations: be precise] : Condition name in lowercase, e.g. 'hypoglycemia'
+  - icd9Range (string) : ICD-9-CM code or range if stated, e.g. '428' or '390-459'
+  - category (string) [shown to users in explanations: be precise] : Body system or category, e.g. 'circulatory', 'metabolic', 'renal'
+
+## Drug
+A medication, identified by its generic (INN) name, e.g. metformin, insulin glargine, glipizide.
+Properties:
+  - name (string) REQUIRED [shown to users in explanations: be precise] : Generic name in lowercase, e.g. 'metformin'
+  - drugClass (string) [shown to users in explanations: be precise] : Pharmacological class, e.g. 'biguanide', 'sulfonylurea', 'insulin'
+  - rxnormCui (string) : RxNorm concept identifier if stated
+
+## LabTest
+A laboratory measurement with a clinically meaningful level, e.g. 'HbA1c > 8%', 'serum glucose > 300 mg/dL'.
+Properties:
+  - name (string) REQUIRED [shown to users in explanations: be precise] : Test and level, e.g. 'HbA1c > 8%'
+  - abnormalThreshold (string) [shown to users in explanations: be precise] : Threshold that makes the result abnormal, e.g. '> 7%'
+
+## RiskFactor
+A patient-level or utilisation factor that changes the probability of a clinical outcome, e.g. prior inpatient admissions, number of emergency visits, insulin dose change, discharge to a nursing facility.
+Properties:
+  - name (string) REQUIRED [shown to users in explanations: be precise] : Short factor name in lowercase, e.g. 'prior inpatient admissions'
+  - description (string) [shown to users in explanations: be precise] : One sentence, as stated in the source
+
+=== RELATION TYPES ===
+  - APPLIES_TO: Recommendation -> Condition  (cardinality 1..*)
+      meaning: the recommendation concerns patients with the condition
+  - RECOMMENDS: Recommendation -> Drug  (cardinality 0..*)
+      meaning: the recommendation advises using the drug
+  - RECOMMENDS: Recommendation -> LabTest  (cardinality 0..*)
+      meaning: the recommendation advises performing or targeting the test level
+  - RECOMMENDS: Recommendation -> RiskFactor  (cardinality 0..*)
+      meaning: the recommendation advises a care process or a change of a modifiable factor, e.g. diabetes education, follow-up after discharge, medication reconciliation
+
+=== OUTPUT FORMAT (JSON) ===
+Respond with ONE JSON object and nothing else (no markdown fences, no commentary):
+{
+  "entities": [
+    {
+      "type": "<one of the entity types above>",
+      "id": "<stable id: lowercase, words joined by '-', e.g. 'metformin'>",
+      "mention": "<the exact text span, copied verbatim from the chunk>",
+      "span": {"start": <int, character offset of the mention in the chunk>, "end": <int>},
+      "properties": {"<property name>": "<value>"},
+      "confidence": <0.0-1.0>
+    }
+  ],
+  "relations": [
+    {
+      "type": "<one of the relation types above>",
+      "source": {"type": "<entity type>", "id": "<entity id>"},
+      "target": {"type": "<entity type>", "id": "<entity id>"},
+      "evidence": "<the sentence from the chunk that states this relation, verbatim>",
+      "span": {"start": <int>, "end": <int>},
+      "confidence": <0.0-1.0>
+    }
+  ]
+}
+
+=== RULES ===
+1. Use ONLY the 5 entity types and 4 relation types listed above, with exactly these names.
+2. A relation is valid only if its source and target entity types match its declaration.
+3. "mention" and "evidence" must be copied verbatim from the chunk; "span" gives their character offsets in the chunk. Never paraphrase.
+4. Extract only what the text states. Do not use outside knowledge. When the text is ambiguous, lower "confidence".
+5. Fill every REQUIRED property; omit a property you cannot ground in the text rather than guessing.
+6. Reuse the same "id" for the same real-world entity within the chunk.
+7. If the chunk contains no relevant fact, return {"entities": [], "relations": []}.
+
+=== EXAMPLES ===
+--- Example input (guideline_inpatient) ---
+For hospitalized patients with diabetes, we recommend measuring HbA1c on admission if no result from the previous 3 months is available. Scheduled basal insulin is recommended for most patients with persistent hyperglycemia, and sliding-scale insulin alone should be avoided. Patients with heart failure and diabetes should continue or start an SGLT2 inhibitor when clinically stable.
+--- Example output ---
+{"entities": [{"type": "Recommendation", "id": "measure-hba1c-on-admission", "mention": "we recommend measuring HbA1c on admission if no result from the previous 3 months is available", "span": {"start": 41, "end": 135}, "properties": {"statement": "measure HbA1c on admission in hospitalized patients with diabetes if no result from the previous 3 months is available", "source": "inpatient diabetes guideline", "strength": "recommended"}, "confidence": 0.93}, {"type": "Condition", "id": "diabetes", "mention": "diabetes", "span": {"start": 31, "end": 39}, "properties": {"name": "diabetes", "category": "metabolic"}, "confidence": 0.96}, {"type": "RiskFactor", "id": "hba1c-measured-during-admission", "mention": "measuring HbA1c on admission", "span": {"start": 54, "end": 82}, "properties": {"name": "HbA1c measured during admission", "description": "HbA1c test performed at hospital admission"}, "confidence": 0.9}, {"type": "Recommendation", "id": "scheduled-basal-insulin", "mention": "Scheduled basal insulin is recommended for most patients with persistent hyperglycemia", "span": {"start": 137, "end": 223}, "properties": {"statement": "use scheduled basal insulin rather than sliding-scale insulin alone for persistent inpatient hyperglycemia", "source": "inpatient diabetes guideline", "strength": "recommended"}, "confidence": 0.92}, {"type": "Condition", "id": "hyperglycemia", "mention": "hyperglycemia", "span": {"start": 210, "end": 223}, "properties": {"name": "hyperglycemia", "category": "metabolic"}, "confidence": 0.95}, {"type": "Drug", "id": "insulin", "mention": "basal insulin", "span": {"start": 147, "end": 160}, "properties": {"name": "insulin", "drugClass": "insulin"}, "confidence": 0.92}, {"type": "Recommendation", "id": "sglt2i-in-heart-failure", "mention": "Patients with heart failure and diabetes should continue or start an SGLT2 inhibitor when clinically stable", "span": {"start": 276, "end": 383}, "properties": {"statement": "continue or start an SGLT2 inhibitor in clinically stable patients with heart failure and diabetes", "source": "inpatient diabetes guideline"}, "confidence": 0.9}, {"type": "Condition", "id": "heart-failure", "mention": "heart failure", "span": {"start": 290, "end": 303}, "properties": {"name": "heart failure", "category": "circulatory"}, "confidence": 0.96}, {"type": "Drug", "id": "sglt2-inhibitor", "mention": "SGLT2 inhibitor", "span": {"start": 345, "end": 360}, "properties": {"name": "sglt2 inhibitors", "drugClass": "sodium-glucose cotransporter-2 inhibitors"}, "confidence": 0.9}], "relations": [{"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "measure-hba1c-on-admission"}, "target": {"type": "Condition", "id": "diabetes"}, "evidence": "For hospitalized patients with diabetes, we recommend measuring HbA1c on admission if no result from the previous 3 months is available.", "span": {"start": 0, "end": 136}, "confidence": 0.92}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "measure-hba1c-on-admission"}, "target": {"type": "RiskFactor", "id": "hba1c-measured-during-admission"}, "evidence": "For hospitalized patients with diabetes, we recommend measuring HbA1c on admission if no result from the previous 3 months is available.", "span": {"start": 0, "end": 136}, "confidence": 0.9}, {"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "scheduled-basal-insulin"}, "target": {"type": "Condition", "id": "hyperglycemia"}, "evidence": "Scheduled basal insulin is recommended for most patients with persistent hyperglycemia, and sliding-scale insulin alone should be avoided.", "span": {"start": 137, "end": 275}, "confidence": 0.9}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "scheduled-basal-insulin"}, "target": {"type": "Drug", "id": "insulin"}, "evidence": "Scheduled basal insulin is recommended for most patients with persistent hyperglycemia, and sliding-scale insulin alone should be avoided.", "span": {"start": 137, "end": 275}, "confidence": 0.9}, {"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "sglt2i-in-heart-failure"}, "target": {"type": "Condition", "id": "heart-failure"}, "evidence": "Patients with heart failure and diabetes should continue or start an SGLT2 inhibitor when clinically stable.", "span": {"start": 276, "end": 384}, "confidence": 0.9}, {"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "sglt2i-in-heart-failure"}, "target": {"type": "Condition", "id": "diabetes"}, "evidence": "Patients with heart failure and diabetes should continue or start an SGLT2 inhibitor when clinically stable.", "span": {"start": 276, "end": 384}, "confidence": 0.88}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "sglt2i-in-heart-failure"}, "target": {"type": "Drug", "id": "sglt2-inhibitor"}, "evidence": "Patients with heart failure and diabetes should continue or start an SGLT2 inhibitor when clinically stable.", "span": {"start": 276, "end": 384}, "confidence": 0.9}]}
+
+--- Example input (guideline_discharge) ---
+Discharge planning should begin at admission. Before discharge, medication reconciliation should be performed and patients with diabetes should receive diabetes self-management education. A follow-up visit within 1 to 2 weeks after discharge is recommended for patients with diabetes whose glucose-lowering treatment was changed.
+--- Example output ---
+{"entities": [{"type": "Recommendation", "id": "medication-reconciliation-before-discharge", "mention": "Before discharge, medication reconciliation should be performed", "span": {"start": 46, "end": 109}, "properties": {"statement": "perform medication reconciliation before discharge", "source": "transition of care recommendations"}, "confidence": 0.9}, {"type": "RiskFactor", "id": "medication-reconciliation", "mention": "medication reconciliation", "span": {"start": 64, "end": 89}, "properties": {"name": "medication reconciliation", "description": "review of all medications at discharge"}, "confidence": 0.9}, {"type": "Recommendation", "id": "diabetes-education-before-discharge", "mention": "patients with diabetes should receive diabetes self-management education", "span": {"start": 114, "end": 186}, "properties": {"statement": "provide diabetes self-management education before discharge", "source": "transition of care recommendations"}, "confidence": 0.9}, {"type": "Condition", "id": "diabetes", "mention": "diabetes", "span": {"start": 128, "end": 136}, "properties": {"name": "diabetes", "category": "metabolic"}, "confidence": 0.95}, {"type": "RiskFactor", "id": "diabetes-education", "mention": "diabetes self-management education", "span": {"start": 152, "end": 186}, "properties": {"name": "diabetes education", "description": "diabetes self-management education before discharge"}, "confidence": 0.92}, {"type": "Recommendation", "id": "follow-up-after-discharge", "mention": "A follow-up visit within 1 to 2 weeks after discharge is recommended", "span": {"start": 188, "end": 256}, "properties": {"statement": "schedule a follow-up visit within 1 to 2 weeks after discharge when glucose-lowering treatment was changed", "source": "transition of care recommendations", "strength": "recommended"}, "confidence": 0.92}, {"type": "RiskFactor", "id": "post-discharge-follow-up", "mention": "follow-up visit within 1 to 2 weeks after discharge", "span": {"start": 190, "end": 241}, "properties": {"name": "post-discharge follow-up", "description": "follow-up visit within 1 to 2 weeks after discharge"}, "confidence": 0.9}], "relations": [{"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "medication-reconciliation-before-discharge"}, "target": {"type": "Condition", "id": "diabetes"}, "evidence": "Before discharge, medication reconciliation should be performed and patients with diabetes should receive diabetes self-management education.", "span": {"start": 46, "end": 187}, "confidence": 0.85}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "medication-reconciliation-before-discharge"}, "target": {"type": "RiskFactor", "id": "medication-reconciliation"}, "evidence": "Before discharge, medication reconciliation should be performed and patients with diabetes should receive diabetes self-management education.", "span": {"start": 46, "end": 187}, "confidence": 0.9}, {"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "diabetes-education-before-discharge"}, "target": {"type": "Condition", "id": "diabetes"}, "evidence": "Before discharge, medication reconciliation should be performed and patients with diabetes should receive diabetes self-management education.", "span": {"start": 46, "end": 187}, "confidence": 0.9}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "diabetes-education-before-discharge"}, "target": {"type": "RiskFactor", "id": "diabetes-education"}, "evidence": "Before discharge, medication reconciliation should be performed and patients with diabetes should receive diabetes self-management education.", "span": {"start": 46, "end": 187}, "confidence": 0.9}, {"type": "APPLIES_TO", "source": {"type": "Recommendation", "id": "follow-up-after-discharge"}, "target": {"type": "Condition", "id": "diabetes"}, "evidence": "A follow-up visit within 1 to 2 weeks after discharge is recommended for patients with diabetes whose glucose-lowering treatment was changed.", "span": {"start": 188, "end": 329}, "confidence": 0.9}, {"type": "RECOMMENDS", "source": {"type": "Recommendation", "id": "follow-up-after-discharge"}, "target": {"type": "RiskFactor", "id": "post-discharge-follow-up"}, "evidence": "A follow-up visit within 1 to 2 weeks after discharge is recommended for patients with diabetes whose glucose-lowering treatment was changed.", "span": {"start": 188, "end": 329}, "confidence": 0.9}]}
+

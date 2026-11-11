@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/26496096.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/26496096/" sourceSha256="92d531fb089568106f312cec9f7229a749aca2dccc930219127440866705101d" sourceText="# PubMed 26496096: Trauma patient readmissions: Why do they come back for more?&#10;&#10;The journal of trauma and acute care surgery (2015), doi:10.1097/TA.0000000000000844&#10;&#10;BACKGROUND: Hospital readmissions are a frequent challenge. Speculation exists that rates of readmission following traumatic injury will be publicly disclosed. The primary aim of this study was to characterize and model 1-year readmission patterns to multiple institutions among patients originally admitted to a single, urban Level I trauma center. Additional analyses within the superutilizers subgroup identified predictors of 30-day readmissions as well as patient loyalty for readmission to their index hospital. We hypothesized that hospital readmission among trauma patients would be associated with socioeconomic, demographic, and clinical features and superutilizers would be identifiable during initial hospitalization.&#10;&#10;METHODS: Data were retrospectively gathered for 2,411 unique trauma patients admitted to a Level I American College of Surgeons-certified trauma center over 1 year, with readmissions identified 1 year after index admission. A regional hospital database was queried for readmissions. Outcomes of all readmission encounters were analyzed using a binary logistic regression model including demographic, diagnoses, Injury Severity Score (ISS), procedures, Elixhauser comorbidities, insurance, and disposition data. Subset analysis of superutilizers was also performed to examine patterns among superutilizers.&#10;&#10;RESULTS: A total of 434 patients (21%) were readmitted during the study period, accounting for 720 readmission encounters. Sixty-three patients accounting for 269 encounters were identified as superutilizers (3+ readmissions). A total of 136 patients (6%) were readmitted within 30 days of initial discharge. Fifty-seven percent of readmissions returned to the originating hospital.&#10;&#10;CONCLUSION: Complications including comorbid disease (diabetes and congestive heart failure), septicemia, weight loss, and trauma recidivism distinguish the superutilizer trauma patient. Having Medicaid funding increased the odds of readmission by 274%. It is imperative that interventions be developed and targeted toward those at high risk of superutilization of health care resources to curb spending. These results strongly support continuation of longitudinal readmission research in trauma patients conducted in multicenter settings.&#10;&#10;LEVEL OF EVIDENCE: Epidemiologic study, level III.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:29:11+00:00" xmi:version="2.0">
+  <chunks charEnd="2481"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1943" sourceSpanEnd="1951">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1956" sourceSpanEnd="1980">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="septicemia" mention="septicemia" confidence="0.95" sourceSpanStart="1983" sourceSpanEnd="1993">
+    <properties key="name" value="septicemia"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="weight-loss" mention="weight loss" confidence="0.95" sourceSpanStart="1995" sourceSpanEnd="2006">
+    <properties key="name" value="weight loss"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="trauma-recidivism" mention="trauma recidivism" confidence="0.95" sourceSpanStart="2012" sourceSpanEnd="2029">
+    <properties key="name" value="trauma recidivism"/>
+    <properties key="category" value="injury"/>
+  </entities>
+  <entities type="RiskFactor" id="medicaid-funding" mention="Medicaid funding" confidence="0.95" sourceSpanStart="2083" sourceSpanEnd="2099">
+    <properties key="name" value="medicaid funding"/>
+    <properties key="description" value="Having Medicaid funding"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.9" sourceSpanStart="2122" sourceSpanEnd="2133">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="medicaid-funding" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Having Medicaid funding increased the odds of readmission by 274%." sourceSpanStart="2076" sourceSpanEnd="2142"/>
+</raw:RawExtractionResult>

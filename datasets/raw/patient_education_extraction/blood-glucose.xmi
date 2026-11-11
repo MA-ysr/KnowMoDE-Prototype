@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/blood-glucose.txt" sourceUri="https://medlineplus.gov/bloodglucose.html" sourceSha256="8fcf2bed6c7543d2309ef9c383e23cb37b5413d16c66239057baa80ed6b9aac8" sourceText="# MedlinePlus health topic: Blood Glucose&#10;&#10;Also called: Blood Sugar, Continuous Glucose Monitoring, Glucose&#10;&#10;What is blood glucose?Blood glucose, or blood sugar, is the main sugar found in your blood. It is your body's primary source of energy. It comes from the food you eat. Your body breaks down most of that food into glucose and releases it into your bloodstream. When your blood glucose goes up, it signals your pancreas to release insulin. Insulin is a hormone that helps the glucose get into your cells to be used for energy.&#10;&#10;What is diabetes?Diabetes is a disease in which your blood glucose levels are too high. When you have diabetes, your body doesn't make enough insulin, can't use it as well as it should, or both. Too much glucose stays in your blood and doesn't reach your cells. Over time, having too much glucose in your blood can cause serious health problems (diabetes complications). So if you have diabetes, it's important to keep your blood glucose levels within your target range.&#10;&#10;What are blood glucose targets?If you have diabetes, your blood glucose target is the range you try to reach as much as possible. The typical targets are:&#10;&#10;Before a meal: 80 to 130 mg/dL&#10;&#10;Two hours after the start of a meal: Less than 180 mg/dL&#10;&#10;Your blood glucose targets may be different, depending on your age, any additional health problems you have, and other factors. Talk with your health care team about the best target range for you.&#10;&#10;When and how should I check my blood glucose?If you have diabetes, you'll likely need to check your blood glucose every day to make sure that your blood glucose numbers are in your target range. Some people may need to check their blood glucose several times a day. Ask your health care team how often you need to check it.&#10;&#10;The most common way to check your blood glucose level at home is with a blood glucose meter. A blood glucose meter measures the amount of glucose in a small sample of blood, usually from your fingertip.&#10;&#10;Continuous glucose monitoring (CGM) is another way to check your glucose levels. Most CGM systems use a tiny sensor that is inserted under your skin. The sensor measures your glucose level every few minutes. It can show changes in your glucose level throughout the day and night. A CGM system is especially useful for people who take insulin and have problems with low blood glucose.&#10;&#10;Your provider will also check your blood glucose with a blood test called an A1C. It checks your average blood glucose level over the past three months. People with diabetes usually have an A1C test at least twice a year. But you may need the test more often if you aren't meeting your diabetes treatment goals.&#10;&#10;What happens if my blood glucose level becomes too high?High blood glucose is called hyperglycemia. Symptoms that your blood glucose levels may be too high include:&#10;&#10;Feeling thirsty&#10;&#10;Feeling tired or weak&#10;&#10;Headaches&#10;&#10;Urinating (peeing) often&#10;&#10;Blurred vision&#10;&#10;If you often have high blood glucose levels or symptoms of high blood glucose, talk with your health care team. You may need a change in your diabetes meal plan, physical activity plan, or diabetes medicines.&#10;&#10;High blood glucose may also be caused by other conditions that can affect insulin or glucose levels in your blood. These conditions include problems with your pancreas or adrenal glands.&#10;&#10;What happens if my blood glucose level becomes low for me?Hypoglycemia, also called low blood glucose, happens when your blood glucose level drops below what is healthy for you. For many people with diabetes, this means a blood glucose reading lower than 70 mg/dL. Your number might be different, so check with your health care team to find out what blood glucose level is low for you.&#10;&#10;Symptoms of low blood glucose tend to come on quickly. The symptoms can be different for everyone, but they may include:&#10;&#10;Shaking&#10;&#10;Sweating&#10;&#10;Nervousness or anxiety&#10;&#10;Irritability or confusion&#10;&#10;Dizziness&#10;&#10;Hunger&#10;&#10;Low blood glucose levels can be common in people with type 1 diabetes and people with type 2 diabetes who take certain diabetes medicines. If you think you may have low blood glucose, check your level, even if you don't have symptoms. Low blood glucose can be dangerous and should be treated as soon as possible.&#10;&#10;Although it's rare, you can still get low blood glucose without having diabetes. The causes can include conditions such as liver disease, kidney disease, and hormone deficiencies (lack of certain hormones). Some medicines, such as certain heart medicines and antibiotics, can also cause it. See your provider to find out the cause of your low blood glucose and how to treat it.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:18:48+00:00" xmi:version="2.0">
+  <chunks charEnd="3931"/>
+  <chunks index="1" charStart="3722" charEnd="4696"/>
+  <entities type="Condition" id="diabetes" mention="Diabetes" confidence="0.98" sourceSpanStart="543" sourceSpanEnd="551">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="High blood glucose" confidence="0.95" sourceSpanStart="2734" sourceSpanEnd="2752">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.98" sourceSpanStart="3393" sourceSpanEnd="3405">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="LabTest" id="a1c-test" mention="A1C" confidence="0.9" sourceSpanStart="2442" sourceSpanEnd="2445">
+    <properties key="name" value="A1C test"/>
+  </entities>
+  <entities type="Recommendation" id="a1c-twice-a-year" mention="People with diabetes usually have an A1C test at least twice a year." confidence="0.9" sourceSpanStart="2518" sourceSpanEnd="2586">
+    <properties key="statement" value="People with diabetes usually have an A1C test at least twice a year."/>
+    <properties key="source" value="MedlinePlus"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="low blood glucose" confidence="0.95" sourceSpanStart="3734" sourceSpanEnd="3751" chunkIndex="1">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.95" sourceSpanStart="3987" sourceSpanEnd="4002" chunkIndex="1">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="4019" sourceSpanEnd="4034" chunkIndex="1">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="liver-disease" mention="liver disease" confidence="0.95" sourceSpanStart="4370" sourceSpanEnd="4383" chunkIndex="1">
+    <properties key="name" value="liver disease"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="kidney disease" confidence="0.95" sourceSpanStart="4385" sourceSpanEnd="4399" chunkIndex="1">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hormone-deficiencies" mention="hormone deficiencies" confidence="0.95" sourceSpanStart="4405" sourceSpanEnd="4425" chunkIndex="1">
+    <properties key="name" value="hormone deficiencies"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="a1c-twice-a-year" targetType="Condition" targetId="diabetes" confidence="0.9" evidence="People with diabetes usually have an A1C test at least twice a year." sourceSpanStart="2518" sourceSpanEnd="2586"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="a1c-twice-a-year" targetType="LabTest" targetId="a1c-test" confidence="0.9" evidence="People with diabetes usually have an A1C test at least twice a year." sourceSpanStart="2518" sourceSpanEnd="2586"/>
+</raw:RawExtractionResult>

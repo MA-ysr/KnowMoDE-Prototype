@@ -1,0 +1,5 @@
+# PubMed 42036160: Glycemic Emergencies: Diabetic Ketoacidosis, Hyperosmolar Hyperglycemic State, and Hypoglycemia.
+
+The Medical clinics of North America (2026), doi:10.1016/j.mcna.2025.11.014
+
+Diabetic Ketoacidosis (DKA), Hyperosmolar Hyperglycemic State (HHS), and Hypoglycemia remain among the most serious acute complications of diabetes mellitus, often leading to hospitalization and increased morbidity. DKA is defined by hyperglycemia, ketosis, and metabolic acidosis, typically resulting from insulin deficiency and excess counterregulatory hormones, and can occur in both type 1 and type 2 diabetes. HHS, by contrast, is characterized by profound hyperglycemia, hyperosmolality, and dehydration with minimal ketosis, most commonly affecting older adults with type 2 diabetes. Hypoglycemia, defined as glucose less than 70 mg/dL, continues to pose a major barrier to optimal glycemic control.

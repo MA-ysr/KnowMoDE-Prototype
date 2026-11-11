@@ -1,0 +1,11 @@
+# PubMed 39781571: Elective peri-operative management of adults taking glucagon-like peptide-1 receptor agonists, glucose-dependent insulinotropic peptide agonists and sodium-glucose cotransporter-2 inhibitors: a multidisciplinary consensus statement: A consensus statement from the Association of Anaesthetists, Association of British Clinical Diabetologists, British Obesity and Metabolic Surgery Society, Centre for Perioperative Care, Joint British Diabetes Societies for Inpatient Care, Royal College of Anaesthetists, Society for Obesity and Bariatric Anaesthesia and UK Clinical Pharmacy Association.
+
+Anaesthesia (2025), doi:10.1111/anae.16541
+
+INTRODUCTION: Glucagon-like peptide-1 receptor agonists, dual glucose-dependent insulinotropic peptide receptor agonists and sodium-glucose cotransporter-2 inhibitors are used increasingly in patients receiving peri-operative care. These drugs may be associated with risks of peri-operative pulmonary aspiration or euglycaemic ketoacidosis. We produced a consensus statement for the peri-operative management of adults taking these drugs.
+
+METHODS: This multidisciplinary consensus statement included surgeons, anaesthetists, physicians, pharmacists and people with lived experience relevant to these guidelines. Following the directed literature review, a three-round modified Delphi process was conducted to generate and ratify recommendations.
+
+RESULTS: Patients taking glucagon-like peptide-1 receptor agonists and dual glucose-dependent insulinotropic peptide receptor agonists should: continue these drugs before surgery; have full risk assessment and stratification; and receive peri-operative techniques that may mitigate risk of pulmonary aspiration before, during and after sedation or general anaesthesia. Patients taking sodium-glucose cotransporter-2 inhibitors should omit them the day before and the day of a procedure. All patients should have risks and mitigation strategies discussed with a shared decision-making approach.
+
+DISCUSSION: Until more evidence becomes available, this pragmatic, multidisciplinary consensus statement aims to support shared decision-making and improve safety for patients taking glucagon-like peptide-1 receptor agonists, dual glucose-dependent insulinotropic peptide receptor agonists and sodium-glucose cotransporter-2 inhibitors during the peri-operative period.

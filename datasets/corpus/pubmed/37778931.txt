@@ -1,0 +1,13 @@
+# PubMed 37778931: Importance of Frailty in Kidney Transplant Recipients.
+
+Transplantation proceedings (2023), doi:10.1016/j.transproceed.2023.08.028
+
+BACKGROUND: Frailty is a persistent chronic inflammatory syndrome present in many patients with chronic kidney disease. After kidney transplant (KT), it has been associated with complications such as delayed graft function, hospital readmission, or poorer KT survival.
+
+PURPOSE: To assess the impact of frailty on the results of KT.
+
+METHODS: Longitudinal prospective study of 65 patients included on the waiting list (WL) between October 2019 and October 2021. We used the FRAIL scale and recorded clinical characteristics, including demographic, dependency scales, and analytical parameters at the moment of the inclusion on the WL and at months 3 and 12 after KT.
+
+RESULTS: The mean age was 58 years old, and 70% of KT were men. The comorbidity burden was 26% diabetes, 83% hypertension, and 12% ischemic heart disease. Forty patients (61.5%) presented ≥1 point on the FRAIL scale, and 25 (38.4%) were robust. Frail patients (FRAIL score≥3) had a higher Charlson comorbidity index at the time of KT, a lower Barthel index, and a lower quality of life measured by KDQOL-36. No significant differences were observed in other variables, such as days of admission, surgical complications, or delayed graft function. There were 3 graft losses censored for death and 4 deaths, all in frail or prefrail patients. These patients had lower graft survival (P = .164) and patient survival (P = .096). At 12 months post KT, frailty improved in 67% of patients evaluated.
+
+CONCLUSION: Frailty is a common condition among patients on the WL, leading to poorer quality of life, greater dependency, and a higher risk of graft loss and mortality. Frailty conditions can be reversed in many patients after KT.

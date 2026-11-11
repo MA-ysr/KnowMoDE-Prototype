@@ -1,0 +1,13 @@
+# PubMed 34708486: Standardized hospital management of pediatric diabetic ketoacidosis reduces frequency of low blood glucose episodes.
+
+Pediatric diabetes (2022), doi:10.1111/pedi.13275
+
+OBJECTIVE: In patients treated for DKA, decrease the rate of visits experiencing one or more BG < 80 mg/dl by 10% within 24 months.
+
+RESEARCH DESIGN AND METHODS: Plan-do-study-act cycles tested interventions linked to key drivers including: standardized DKA guidelines incorporating a two-bag fluid system, efficient ordering process, and care team education. Inclusion criterion: treatment for DKA with a bicarbonate value (HCO3 ) <15 mEq/L.
+
+PRIMARY OUTCOME: the percent of patient visits experiencing a BG < 80 mg/dl while undergoing treatment for DKA. Process measures included: order panel and order set utilization rates. Balancing measures included: emergency department and hospital lengths of stay, time to acidosis resolution (time to HCO3  ≥ 17 mEq/L), and admission rates. Outcomes were analyzed using statistical process control charts.
+
+RESULTS: From January 2017 through May 2021, our institution treated 288 different patients during 557 visits for suspected DKA. Following our interventions, the overall percent of patient visits for DKA with a BG < 80 mg/dl improved from 32% to 5%. The team did see small improvements in emergency department and hospital lengths of stay; otherwise, there was no significant change in our balancing measures.
+
+CONCLUSIONS: Use of quality improvement methodology and standardized DKA management resulted in a significant reduction of BG < 80 mg/dl in patients treated for DKA.

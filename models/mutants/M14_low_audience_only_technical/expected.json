@@ -1,0 +1,7 @@
+{
+  "id": "M14_low_audience_only_technical",
+  "family": "C4",
+  "expectedConstraint": "C4_LowAudienceGetsAccessibleExplanation",
+  "mutatedFile": "explainability.xmi",
+  "description": "patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there"
+}

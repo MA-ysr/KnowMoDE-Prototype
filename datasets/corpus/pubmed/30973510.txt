@@ -1,0 +1,17 @@
+# PubMed 30973510: Short-term Outcomes Following Cervical Laminoplasty and Decompression and Fusion With Instrumentation.
+
+Spine (2019), doi:10.1097/BRS.0000000000003057
+
+STUDY DESIGN: Retrospective review of the American College of Surgeons National Surgical Quality Improvement Program (ACS-NSQIP) database years 2010 to 2015.
+
+OBJECTIVE: Investigate which short-term outcomes differ for cervical laminoplasty and laminectomy and fusion surgeries.
+
+SUMMARY OF BACKGROUND DATA: Conflicting reports exist in spine literature regarding short-term outcomes following cervical laminoplasty and posterior laminectomy and fusion. The objective of this study was to compare the 30-day outcomes for these two treatment groups for multilevel cervical pathology.
+
+METHODS: Patients who underwent cervical laminoplasty or posterior laminectomy and fusion were identified in National Surgical Quality Improvement Program (NSQIP) based on Current Procedural Terminology (CPT) code: laminoplasty 63,050 and 63,051, posterior cervical laminectomy 63,015 and 63,045, and instrumentation 22,842. Propensity-adjusted multivariate regressions assessed differences in postoperative length of stay, adverse events, discharge disposition, and readmission.
+
+RESULTS: Three thousand seven hundred ninety-six patients were included: 2397 (63%) underwent cervical laminectomy and fusion and 1399 (37%) underwent cervical laminoplasty. Both groups were similar in age, sex, body mass index (BMI), American Society of Anesthesiologist Classification (ASA), Charleston Comorbidity Index (CCI), and had similar rates of malnutrition, chronic kidney disease, diabetes, chronic obstructive pulmonary disease, and history for steroid use. Age more than 70 and age less than 50 were not associated with one treatment group over the other (P > 0.05). Compared with laminoplasty patients, laminectomy and fusion patients had increased lengths of stay (LOS) (4.5 vs. 3.7 d, P < 0.01) and increased rates of adverse events (41.7% vs. 35.9%, P < 0.01), discharge to rehab (16.4% vs. 8.6%, P < 0.01), and skilled nursing facilities (12.2% vs. 9.7%, P = 0.02), and readmission (6.2% vs. 4.5%, P = 0.05). Both groups experienced similar rates of death, pulmonary embolus, deep vein thrombosis, deep and superficial surgical site infection, and reoperation (P > 0.05 for all).
+
+CONCLUSION: Posterior cervical laminectomy and fusion patients were found to have increased LOS, readmissions, and complications despite having similar pre-op demographics and comorbidities. Patients and surgeons should consider these risks when considering surgical treatment for cervical pathology.
+
+LEVEL OF EVIDENCE: 3.

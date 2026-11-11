@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37291604.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37291604/" sourceSha256="64bb37a4251d8fa39c6681203eecbccdb9b5e0623455ba39871959088c6b0996" sourceText="# PubMed 37291604: The treatment of obesity in children and adolescents: consensus position statement of the Italian society of pediatric endocrinology and diabetology, Italian Society of Pediatrics and Italian Society of Pediatric Surgery.&#10;&#10;Italian journal of pediatrics (2023), doi:10.1186/s13052-023-01458-z&#10;&#10;This Position Statement updates the different components of the therapy of obesity (lifestyle intervention, drugs, and surgery) in children and adolescents, previously reported in the consensus position statement on pediatric obesity of the Italian Society of Pediatric Endocrinology and Diabetology and the Italian Society of Pediatrics. Lifestyle intervention is the first step of treatment. In children older than 12 years, pharmacotherapy is the second step, and bariatric surgery is the third one, in selected cases. Novelties are available in the field of the medical treatment of obesity. In particular, new drugs demonstrated their efficacy and safety and have been approved in adolescents. Moreover, several randomized control trials with other drugs are in process and it is likely that some of them will become available in the future. The increase of the portfolio of treatment options for obesity in children and adolescents is promising for a more effective treatment of this disorder.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:59:48+00:00" xmi:version="2.0">
+  <chunks charEnd="1312"/>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.98" sourceSpanStart="36" sourceSpanEnd="43">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="lifestyle-intervention-first-step" mention="Lifestyle intervention is the first step of treatment" confidence="0.95" sourceSpanStart="651" sourceSpanEnd="704">
+    <properties key="statement" value="lifestyle intervention is the first step of treatment for obesity"/>
+    <properties key="source" value="Italian society of pediatric endocrinology and diabetology, Italian Society of Pediatrics and Italian Society of Pediatric Surgery"/>
+  </entities>
+  <entities type="RiskFactor" id="lifestyle-intervention" mention="Lifestyle intervention" confidence="0.95" sourceSpanStart="651" sourceSpanEnd="673">
+    <properties key="name" value="lifestyle intervention"/>
+    <properties key="description" value="lifestyle intervention as the first step of treatment for obesity"/>
+  </entities>
+  <entities type="Recommendation" id="pharmacotherapy-second-step" mention="In children older than 12 years, pharmacotherapy is the second step" confidence="0.94" sourceSpanStart="706" sourceSpanEnd="773">
+    <properties key="statement" value="pharmacotherapy is the second step in children older than 12 years"/>
+    <properties key="source" value="Italian society of pediatric endocrinology and diabetology, Italian Society of Pediatrics and Italian Society of Pediatric Surgery"/>
+  </entities>
+  <entities type="RiskFactor" id="pharmacotherapy" mention="pharmacotherapy" confidence="0.92" sourceSpanStart="739" sourceSpanEnd="754">
+    <properties key="name" value="pharmacotherapy"/>
+    <properties key="description" value="pharmacotherapy for obesity in children older than 12 years"/>
+  </entities>
+  <entities type="Recommendation" id="bariatric-surgery-third-step" mention="bariatric surgery is the third one, in selected cases" confidence="0.94" sourceSpanStart="779" sourceSpanEnd="832">
+    <properties key="statement" value="bariatric surgery is the third step in selected cases"/>
+    <properties key="source" value="Italian society of pediatric endocrinology and diabetology, Italian Society of Pediatrics and Italian Society of Pediatric Surgery"/>
+  </entities>
+  <entities type="RiskFactor" id="bariatric-surgery" mention="bariatric surgery" confidence="0.95" sourceSpanStart="779" sourceSpanEnd="796">
+    <properties key="name" value="bariatric surgery"/>
+    <properties key="description" value="bariatric surgery in selected cases of obesity"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="lifestyle-intervention-first-step" targetType="Condition" targetId="obesity" confidence="0.95" evidence="Lifestyle intervention is the first step of treatment." sourceSpanStart="651" sourceSpanEnd="705"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="lifestyle-intervention-first-step" targetType="RiskFactor" targetId="lifestyle-intervention" confidence="0.95" evidence="Lifestyle intervention is the first step of treatment." sourceSpanStart="651" sourceSpanEnd="705"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="pharmacotherapy-second-step" targetType="Condition" targetId="obesity" confidence="0.93" evidence="In children older than 12 years, pharmacotherapy is the second step, and bariatric surgery is the third one, in selected cases." sourceSpanStart="706" sourceSpanEnd="833"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="pharmacotherapy-second-step" targetType="RiskFactor" targetId="pharmacotherapy" confidence="0.92" evidence="In children older than 12 years, pharmacotherapy is the second step, and bariatric surgery is the third one, in selected cases." sourceSpanStart="706" sourceSpanEnd="833"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="bariatric-surgery-third-step" targetType="Condition" targetId="obesity" confidence="0.93" evidence="In children older than 12 years, pharmacotherapy is the second step, and bariatric surgery is the third one, in selected cases." sourceSpanStart="706" sourceSpanEnd="833"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="bariatric-surgery-third-step" targetType="RiskFactor" targetId="bariatric-surgery" confidence="0.94" evidence="In children older than 12 years, pharmacotherapy is the second step, and bariatric surgery is the third one, in selected cases." sourceSpanStart="706" sourceSpanEnd="833"/>
+</raw:RawExtractionResult>

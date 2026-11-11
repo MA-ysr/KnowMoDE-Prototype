@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31365631.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31365631/" sourceSha256="b9544d05b50fe46241757b42198457bcdf87b3e12dc731a7d84b77b45b8f4670" sourceText="# PubMed 31365631: Recurrent diabetic ketoacidosis.&#10;&#10;Archives of endocrinology and metabolism (2019), doi:10.20945/2359-3997000000158&#10;&#10;OBJECTIVE: The purpose of this study is to examine risk factors for recurrence of diabetic ketoacidosis and determine interventions to prevent future admissions.&#10;&#10;MATERIALS AND METHODS: Review article.&#10;&#10;RESULTS: Recurrent diabetic ketoacidosis is a serious and not uncommon health problem. Diabetic ketoacidosis is associated with severe morbidity and mortality and hospital admissions due to this problem constitute a serious economic burden on the healthcare system. Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis. In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients.&#10;&#10;CONCLUSIONS: Identifying high-risk patients during the first diabetic ketoacidosis admission and performing relevant interventions (repeated instructions of insulin use, social help and involvement of family members in medical treatment, collaboration with the patient's primary care physician in order to establish a close and frequent follow up program) may help prevent future admissions. Further studies need to take place to determine whether early interventions with those factors prevent future admissions.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:35:49+00:00" xmi:version="2.0">
+  <chunks charEnd="1719"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.99" sourceSpanStart="29" sourceSpanEnd="50">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="poor-baseline-glycemic-control" mention="poor baseline glycemic control" confidence="0.95" sourceSpanStart="648" sourceSpanEnd="678">
+    <properties key="name" value="poor baseline glycemic control"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="LabTest" id="elevated-hba1c" mention="elevated HbA1C" confidence="0.95" sourceSpanStart="683" sourceSpanEnd="697">
+    <properties key="name" value="elevated HbA1C"/>
+  </entities>
+  <entities type="RiskFactor" id="younger-age-at-diabetic-ketoacidosis-onset" mention="Younger age at diabetic ketoacidosis onset" confidence="0.95" sourceSpanStart="604" sourceSpanEnd="646">
+    <properties key="name" value="younger age at diabetic ketoacidosis onset"/>
+    <properties key="description" value="Younger age at diabetic ketoacidosis onset"/>
+  </entities>
+  <entities type="RiskFactor" id="depression" mention="depression" confidence="0.95" sourceSpanStart="722" sourceSpanEnd="732">
+    <properties key="name" value="depression"/>
+    <properties key="description" value="depression"/>
+  </entities>
+  <entities type="RiskFactor" id="alcohol-or-substance-abuse" mention="alcohol or substance abuse" confidence="0.95" sourceSpanStart="734" sourceSpanEnd="760">
+    <properties key="name" value="alcohol or substance abuse"/>
+    <properties key="description" value="alcohol or substance abuse"/>
+  </entities>
+  <entities type="RiskFactor" id="active-cocaine-use" mention="active cocaine use" confidence="0.95" sourceSpanStart="775" sourceSpanEnd="793">
+    <properties key="name" value="active cocaine use"/>
+    <properties key="description" value="active cocaine use"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="recurrent-diabetic-ketoacidosis" mention="recurrent diabetic ketoacidosis" confidence="0.95" sourceSpanStart="821" sourceSpanEnd="852">
+    <properties key="name" value="recurrent diabetic ketoacidosis"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.95" sourceSpanStart="1154" sourceSpanEnd="1165">
+    <properties key="name" value="readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="ethnic-minority-status" mention="ethnic minority status" confidence="0.95" sourceSpanStart="898" sourceSpanEnd="920">
+    <properties key="name" value="ethnic minority status"/>
+    <properties key="description" value="ethnic minority status"/>
+  </entities>
+  <entities type="RiskFactor" id="use-of-public-health-insurance" mention="use of public health insurance" confidence="0.95" sourceSpanStart="922" sourceSpanEnd="952">
+    <properties key="name" value="use of public health insurance"/>
+    <properties key="description" value="use of public health insurance"/>
+  </entities>
+  <entities type="RiskFactor" id="underinsurance" mention="underinsurance" confidence="0.95" sourceSpanStart="957" sourceSpanEnd="971">
+    <properties key="name" value="underinsurance"/>
+    <properties key="description" value="underinsurance"/>
+  </entities>
+  <entities type="RiskFactor" id="financial-constraint" mention="financial constraint" confidence="0.95" sourceSpanStart="1032" sourceSpanEnd="1052">
+    <properties key="name" value="financial constraint"/>
+    <properties key="description" value="financial constraint"/>
+  </entities>
+  <entities type="RiskFactor" id="stretching-a-limited-insulin-supply" mention="stretching a limited insulin supply" confidence="0.95" sourceSpanStart="1054" sourceSpanEnd="1089">
+    <properties key="name" value="stretching a limited insulin supply"/>
+    <properties key="description" value="stretching a limited insulin supply"/>
+  </entities>
+  <entities type="RiskFactor" id="homelessness" mention="homelessness" confidence="0.95" sourceSpanStart="1095" sourceSpanEnd="1107">
+    <properties key="name" value="homelessness"/>
+    <properties key="description" value="homelessness"/>
+  </entities>
+  <relations type="INDICATES" sourceType="LabTest" sourceId="elevated-hba1c" targetType="Condition" targetId="poor-baseline-glycemic-control" confidence="0.9" evidence="poor baseline glycemic control and elevated HbA1C" sourceSpanStart="648" sourceSpanEnd="697"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="younger-age-at-diabetic-ketoacidosis-onset" targetType="ClinicalOutcome" targetId="recurrent-diabetic-ketoacidosis" confidence="0.9" evidence="Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis." sourceSpanStart="604" sourceSpanEnd="853"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="poor-baseline-glycemic-control" targetType="ClinicalOutcome" targetId="recurrent-diabetic-ketoacidosis" confidence="0.9" evidence="Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis." sourceSpanStart="604" sourceSpanEnd="853"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="depression" targetType="ClinicalOutcome" targetId="recurrent-diabetic-ketoacidosis" confidence="0.9" evidence="Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis." sourceSpanStart="604" sourceSpanEnd="853"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="alcohol-or-substance-abuse" targetType="ClinicalOutcome" targetId="recurrent-diabetic-ketoacidosis" confidence="0.9" evidence="Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis." sourceSpanStart="604" sourceSpanEnd="853"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="active-cocaine-use" targetType="ClinicalOutcome" targetId="recurrent-diabetic-ketoacidosis" confidence="0.9" evidence="Younger age at diabetic ketoacidosis onset, poor baseline glycemic control and elevated HbA1C, patient comorbidities, depression, alcohol or substance abuse, particularly active cocaine use, have been associated with recurrent diabetic ketoacidosis." sourceSpanStart="604" sourceSpanEnd="853"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="ethnic-minority-status" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="use-of-public-health-insurance" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="underinsurance" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="financial-constraint" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="stretching-a-limited-insulin-supply" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="homelessness" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="In addition, socioeconomic factors (such as ethnic minority status, use of public health insurance and underinsurance), psychosocial, economic, and behavioral factors (including financial constraint, stretching a limited insulin supply, and homelessness) have been all reported to be associated with readmission among diabetic ketoacidosis patients." sourceSpanStart="854" sourceSpanEnd="1203"/>
+</raw:RawExtractionResult>

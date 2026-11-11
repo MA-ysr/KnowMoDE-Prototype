@@ -1,0 +1,5 @@
+# PubMed 39652876: Management of Hyperglycemia in Hospitalized Patients.
+
+Annals of internal medicine (2024), doi:10.7326/ANNALS-24-02754
+
+People with diabetes account for 25% of hospitalizations, or 8 million admissions annually. Poor glycemic control in the hospital is associated with increased morbidity, mortality, length of stay, and readmissions. Key considerations of inpatient diabetes management include initiation of appropriate insulin or medication regimens and frequent dose adjustments based on patient-specific factors. Inpatient diabetes management teams and new technologies are increasingly prevalent and can assist in achieving glycemic targets in the hospital. At discharge, standardized checklists should be used to ensure successful transitions of care.

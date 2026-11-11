@@ -1,0 +1,7 @@
+{
+  "id": "M17_binding_feature_not_in_model",
+  "family": "C5",
+  "expectedConstraint": "C5_BindingFeatureExistsInModel",
+  "mutatedFile": "decision-bindings.xmi",
+  "description": "a feature binding refers to a feature the model does not have"
+}

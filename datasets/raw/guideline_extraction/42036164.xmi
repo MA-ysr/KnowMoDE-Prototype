@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/42036164.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/42036164/" sourceSha256="407760eec277c0ddd5f30e107a5a4b427de4f68586918fd9d9adaca7ce4c3353" sourceText="# PubMed 42036164: Transition of Care: Diabetes Management after Hospital Discharge.&#10;&#10;The Medical clinics of North America (2026), doi:10.1016/j.mcna.2026.01.004&#10;&#10;Effective discharge planning for patients with diabetes requires a comprehensive, individualized approach. Patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia. Medication recommendations must be tailored to the patient's cognitive status, functional ability, co-morbid conditions, and overall capacity to implement the treatment regimen. Particular caution is required in older adults, in whom polypharmacy, frailty, and hypoglycemia risk are heightened. The type of diabetes will dictate appropriate pharmacologic options. Clear communication with both patient and outpatient providers is essential to ensure continuity of care and to promote a safe and effective transition.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T19:02:19+00:00" xmi:version="2.0">
+  <chunks charEnd="933"/>
+  <entities type="Recommendation" id="structured-education-discharge" mention="Patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia." confidence="0.9" sourceSpanStart="270" sourceSpanEnd="415">
+    <properties key="statement" value="patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia"/>
+    <properties key="source" value="The Medical clinics of North America"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="723" sourceSpanEnd="731">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="402" sourceSpanEnd="414">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="structured-education" mention="structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia" confidence="0.9" sourceSpanStart="294" sourceSpanEnd="414">
+    <properties key="name" value="structured education"/>
+    <properties key="description" value="structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="structured-education-discharge" targetType="Condition" targetId="diabetes" confidence="0.88" evidence="Effective discharge planning for patients with diabetes requires a comprehensive, individualized approach. Patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia." sourceSpanStart="163" sourceSpanEnd="415"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="structured-education-discharge" targetType="RiskFactor" targetId="structured-education" confidence="0.9" evidence="Patients should receive structured education on blood glucose monitoring, nutritional strategies, and recognition and management of hypoglycemia." sourceSpanStart="270" sourceSpanEnd="415"/>
+</raw:RawExtractionResult>

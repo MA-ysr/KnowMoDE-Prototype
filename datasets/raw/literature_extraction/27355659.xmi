@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/27355659.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/27355659/" sourceSha256="740e93c0f0d71d76409cfaa097870bb91e719914f188d2e8c5f0b7bc8bbfd272" sourceText="# PubMed 27355659: Admission Hyperglycemia Predicts Infectious Complications After Burns.&#10;&#10;Journal of burn care &amp; research : official publication of the American Burn Association (2017), doi:10.1097/BCR.0000000000000381&#10;&#10;Inflammation and hypermetabolism post burn predisposes to hyperglycemia and insulin resistance. The authors hypothesize that admission hyperglycemia predicts infectious outcomes. A retrospective review of all patients greater than 20 years of age admitted for initial burn management from January 2008 to December 2013 was conducted. Nonthermal injuries, transfers, and those without admission glucose or histories were excluded. Hyperglycemia was defined as admission glucose ≥150 mg/dl. Patients were grouped as follows: euglycemic without diabetes (control), euglycemic with diabetes (-H+D), hyperglycemic without diabetes (+H-D), and hyperglycemic with diabetes (+H+D). Outcomes included infection, mortality, length of stay, and disposition. Comparisons were made using Fisher's exact test and multiple logistic regression. A total of 411 patients were analyzed. No significant differences between any of the groups and controls were noted in race, inhalation injury, or obesity. All three groups had higher mortality compared with controls. Longer hospital stays were noted only in +H-D. +H-D and +H+D were less likely to be discharged home than controls. +H-D had higher rates of bacteremia, +H-D and +H+D had higher rates of pneumonia, and -H+D and +H-D had higher rates of urinary tract infection. Regression for infection and mortality outcomes with TBSA, age, diabetes, hyperglycemia, obesity, race, gender, and inhalation injury as covariates was performed. Hyperglycemia was the only independent predictor of bacteremia (area under curve [AUC] = 0.736). Hyperglycemia was also a predictor of pneumonia and urinary tract infection (AUC = 0.766 and 0.802, respectively). The only independent predictors of mortality were age, TBSA, and inhalation injury (AUC = 0.892). Acute glucose dysregulation may be more important than diabetes in predicting infectious outcomes after burns. Therefore, admission glucose may have prognostic value.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:30:06+00:00" xmi:version="2.0">
+  <chunks charEnd="2168"/>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="29" sourceSpanEnd="42">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="admission-hyperglycemia" mention="admission hyperglycemia" confidence="0.95" sourceSpanStart="346" sourceSpanEnd="369">
+    <properties key="name" value="admission hyperglycemia"/>
+    <properties key="description" value="admission glucose &gt;=150 mg/dl"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="infectious-complications" mention="infectious outcomes" confidence="0.9" sourceSpanStart="379" sourceSpanEnd="398">
+    <properties key="name" value="infectious outcomes"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.95" sourceSpanStart="924" sourceSpanEnd="933">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="bacteremia" mention="bacteremia" confidence="0.95" sourceSpanStart="1408" sourceSpanEnd="1418">
+    <properties key="name" value="bacteremia"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="pneumonia" mention="pneumonia" confidence="0.95" sourceSpanStart="1454" sourceSpanEnd="1463">
+    <properties key="name" value="pneumonia"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="urinary-tract-infection" mention="urinary tract infection" confidence="0.95" sourceSpanStart="1503" sourceSpanEnd="1526">
+    <properties key="name" value="urinary tract infection"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="admission-hyperglycemia" targetType="ClinicalOutcome" targetId="bacteremia" confidence="0.9" evidence="+H-D had higher rates of bacteremia" sourceSpanStart="1383" sourceSpanEnd="1418"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="admission-hyperglycemia" targetType="ClinicalOutcome" targetId="pneumonia" confidence="0.9" evidence="+H-D and +H+D had higher rates of pneumonia" sourceSpanStart="1420" sourceSpanEnd="1463"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="admission-hyperglycemia" targetType="ClinicalOutcome" targetId="urinary-tract-infection" confidence="0.9" evidence="-H+D and +H-D had higher rates of urinary tract infection" sourceSpanStart="1469" sourceSpanEnd="1526"/>
+</raw:RawExtractionResult>

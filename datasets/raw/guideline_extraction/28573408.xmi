@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/28573408.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/28573408/" sourceSha256="6a0b26522f2032020f7a616a6f8dfb59e722b452e6f4ecdc59c47448b854189e" sourceText="# PubMed 28573408: Practical Recommendations for Transitioning Patients with Type 2 Diabetes from Hospital to Home.&#10;&#10;Current diabetes reports (2017), doi:10.1007/s11892-017-0876-1&#10;&#10;PURPOSE OF REVIEW: The purpose of this review is to provide practical evidence-based recommendations for transitioning hospitalized patients with type 2 diabetes (T2DM) to home.&#10;&#10;RECENT FINDINGS: Hospitalized patients who have newly diagnosed or poorly controlled T2DM require initiation or intensification of their outpatient diabetes regimen. Potential barriers to medication access and continuity of care should be identified early in the hospitalization. Throughout hospitalization, patients should receive diabetes education focused on basic survival skills and tailored to learning needs. Patients should leave the hospital with personalized discharge instructions that include a list of all medications and follow-up appointments with both the outpatient diabetes provider and a diabetes educator whenever possible. An approach to transitioning patients with T2DM from hospital to home that focuses on optimizing the patient's discharge diabetes regimen, anticipating patients' needs during the immediate post-discharge period, providing survival skills education, and ensuring continuation of diabetes care and education following hospital discharge has the potential to improve glycemic control and reduce emergency department visits and hospital readmissions.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:56:17+00:00" xmi:version="2.0">
+  <chunks charEnd="1451"/>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.99" sourceSpanStart="77" sourceSpanEnd="92">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="poorly-controlled-t2dm" mention="poorly controlled T2dm" confidence="0.95" sourceSpanStart="427" sourceSpanEnd="449">
+    <properties key="name" value="poorly controlled type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Recommendation" id="initiation-intensification-regimen" mention="Hospitalized patients who have newly diagnosed or poorly controlled T2DM require initiation or intensification of their outpatient diabetes regimen." confidence="0.92" sourceSpanStart="377" sourceSpanEnd="525">
+    <properties key="statement" value="initiate or intensify outpatient diabetes regimen in hospitalized patients with newly diagnosed or poorly controlled type 2 diabetes"/>
+    <properties key="source" value="Current diabetes reports"/>
+  </entities>
+  <entities type="Recommendation" id="identify-barriers" mention="Potential barriers to medication access and continuity of care should be identified early in the hospitalization." confidence="0.92" sourceSpanStart="526" sourceSpanEnd="639">
+    <properties key="statement" value="identify potential barriers to medication access and continuity of care early in the hospitalization"/>
+    <properties key="source" value="Current diabetes reports"/>
+  </entities>
+  <entities type="RiskFactor" id="medication-access-barriers" mention="barriers to medication access" confidence="0.9" sourceSpanStart="536" sourceSpanEnd="565">
+    <properties key="name" value="barriers to medication access"/>
+    <properties key="description" value="potential barriers to medication access and continuity of care"/>
+  </entities>
+  <entities type="Recommendation" id="diabetes-education-hospitalization" mention="Throughout hospitalization, patients should receive diabetes education focused on basic survival skills and tailored to learning needs." confidence="0.95" sourceSpanStart="640" sourceSpanEnd="775">
+    <properties key="statement" value="provide diabetes education focused on basic survival skills and tailored to learning needs throughout hospitalization"/>
+    <properties key="source" value="Current diabetes reports"/>
+  </entities>
+  <entities type="RiskFactor" id="diabetes-education" mention="diabetes education" confidence="0.92" sourceSpanStart="692" sourceSpanEnd="710">
+    <properties key="name" value="diabetes education"/>
+    <properties key="description" value="diabetes education focused on basic survival skills and tailored to learning needs"/>
+  </entities>
+  <entities type="Recommendation" id="personalized-discharge-instructions" mention="Patients should leave the hospital with personalized discharge instructions that include a list of all medications and follow-up appointments with both the outpatient diabetes provider and a diabetes educator whenever possible." confidence="0.94" sourceSpanStart="776" sourceSpanEnd="1003">
+    <properties key="statement" value="provide personalized discharge instructions including a list of all medications and follow-up appointments with outpatient diabetes provider and diabetes educator"/>
+    <properties key="source" value="Current diabetes reports"/>
+  </entities>
+  <entities type="RiskFactor" id="follow-up-appointments" mention="follow-up appointments" confidence="0.9" sourceSpanStart="895" sourceSpanEnd="917">
+    <properties key="name" value="follow-up appointments"/>
+    <properties key="description" value="follow-up appointments with outpatient diabetes provider and diabetes educator"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="initiation-intensification-regimen" targetType="Condition" targetId="type-2-diabetes" confidence="0.9" evidence="Hospitalized patients who have newly diagnosed or poorly controlled T2DM require initiation or intensification of their outpatient diabetes regimen." sourceSpanStart="377" sourceSpanEnd="525"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="initiation-intensification-regimen" targetType="Condition" targetId="poorly-controlled-t2dm" confidence="0.9" evidence="Hospitalized patients who have newly diagnosed or poorly controlled T2DM require initiation or intensification of their outpatient diabetes regimen." sourceSpanStart="377" sourceSpanEnd="525"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="identify-barriers" targetType="RiskFactor" targetId="medication-access-barriers" confidence="0.9" evidence="Potential barriers to medication access and continuity of care should be identified early in the hospitalization." sourceSpanStart="526" sourceSpanEnd="639"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetes-education-hospitalization" targetType="RiskFactor" targetId="diabetes-education" confidence="0.92" evidence="Throughout hospitalization, patients should receive diabetes education focused on basic survival skills and tailored to learning needs." sourceSpanStart="640" sourceSpanEnd="775"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="personalized-discharge-instructions" targetType="RiskFactor" targetId="follow-up-appointments" confidence="0.9" evidence="Patients should leave the hospital with personalized discharge instructions that include a list of all medications and follow-up appointments with both the outpatient diabetes provider and a diabetes educator whenever possible." sourceSpanStart="776" sourceSpanEnd="1003"/>
+</raw:RawExtractionResult>

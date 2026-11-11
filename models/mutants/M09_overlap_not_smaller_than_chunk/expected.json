@@ -1,0 +1,7 @@
+{
+  "id": "M09_overlap_not_smaller_than_chunk",
+  "family": "C3",
+  "expectedConstraint": "C3_OverlapSmallerThanChunk",
+  "mutatedFile": "extraction-pipeline.xmi",
+  "description": "literature task overlap equals chunk size"
+}

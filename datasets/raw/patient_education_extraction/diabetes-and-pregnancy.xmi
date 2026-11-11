@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/diabetes-and-pregnancy.txt" sourceUri="https://medlineplus.gov/diabetesandpregnancy.html" sourceSha256="d255aac12e2706bc750b6709c9468d7b34d2f21ac12cd43b03f1f4e8f768ee43" sourceText="# MedlinePlus health topic: Diabetes and Pregnancy&#10;&#10;Also called: Gestational Diabetes, Pregnancy and Diabetes&#10;&#10;What is diabetes? If you have diabetes, your blood glucose, or blood sugar, levels are too high. Glucose comes from the foods you eat. A hormone called insulin helps the glucose get into your cells to give them energy. With type 1 diabetes, your body does not make insulin. With type 2 diabetes, your body does not make or use insulin well. Without enough insulin, the glucose stays in your blood.&#10;&#10;What is gestational diabetes?Some people already have diabetes before they get pregnant. But others may develop diabetes during pregnancy. This type of diabetes is called gestational diabetes. It usually develops around the 24th week of pregnancy. It happens when your body can't make the extra insulin it needs during pregnancy. Researchers think gestational diabetes is caused by the hormonal changes of pregnancy, along with genetic and lifestyle factors.&#10;&#10;Who is more likely to develop gestational diabetes?Anyone who is pregnant could develop gestational diabetes. But you are more likely to develop it if you:&#10;&#10;Are overweight or have obesity&#10;&#10;Have a family history of diabetes&#10;&#10;Had gestational diabetes in a previous pregnancy&#10;&#10;Have given birth to a baby weighing 9 pounds or more&#10;&#10;Have polycystic ovary syndrome (PCOS)&#10;&#10;Are African American, Hispanic/Latino, American Indian, Alaska Native, Native Hawaiian, or Pacific Islander person&#10;&#10;How do I know if I have gestational diabetes?Gestational diabetes often has no symptoms. If you do have symptoms, they may be mild, such as being thirstier than normal or having to urinate (pee) more often.&#10;&#10;If you are pregnant, you will most likely be screened for gestational diabetes between 24 and 28 weeks of pregnancy. But if you have an increased chance of developing gestational diabetes, you may be tested during your first prenatal visit. Your health care provider will use one or more blood glucose tests to check for gestational diabetes. You may have the glucose challenge test, the oral glucose tolerance test (OGTT), or both.&#10;&#10;For these two tests, you will drink a sugary liquid and wait for an hour before your blood sample is taken. If you have an oral glucose tolerance test, you will also get your blood drawn after 2 and 3 hours.&#10;&#10;How can diabetes affect my pregnancy?Having diabetes during pregnancy can affect your health. For example:&#10;&#10;You are more likely to develop preeclampsia, a serious medical condition that causes a sudden increase in your blood pressure.&#10;&#10;You are more likely to need a cesarean delivery, because your baby is more likely to be bigger than average.&#10;&#10;Changes to your hormones and your body during pregnancy can affect your blood glucose levels. If you had diabetes before pregnancy, you may now need to adjust your meal plan, physical activity routine, and/or medicines. If you have any diabetes health problems, they may get worse during pregnancy.&#10;&#10;Gestational diabetes usually goes away after you have your baby. But you will be at higher risk of developing type 2 diabetes later.&#10;&#10;Having diabetes during pregnancy can also affect the health of your developing baby:&#10;&#10;If you have high blood glucose levels at the beginning of your pregnancy, there is a higher risk of birth defects.&#10;&#10;Your baby will be at risk for obesity and type 2 diabetes later in life.&#10;&#10;Your baby is more likely to be born early.&#10;&#10;Your baby may have breathing problems or hypoglycemia (low blood glucose levels) right after birth.&#10;&#10;There is a higher risk of miscarriage and stillbirth.&#10;&#10;How can I manage diabetes during pregnancy?There are steps you can take to manage your diabetes before, during, and after pregnancy.&#10;&#10;If you already have diabetes, the best time to control your blood glucose is before you get pregnant. High blood glucose levels can be harmful to your developing baby during the first weeks of pregnancy, even before you know you are pregnant. See your provider to help you plan for pregnancy. You can talk about how to lower the risk of health problems for you and your developing baby. You can also discuss your diet, physical activity, and which diabetes medicines are safe during pregnancy.&#10;&#10;During your pregnancy, you will work with your provider to manage your blood glucose levels. You may be able to manage them with a healthy diet and regular physical activity. If that's not enough, then you will need to take diabetes medicines. It's also important that you:&#10;&#10;Get regular prenatal checkups&#10;&#10;Take your prenatal vitamins&#10;&#10;Don't use harmful substances such as alcohol, tobacco, and illegal drugs&#10;&#10;After pregnancy, there are steps you need to take to stay healthy:&#10;&#10;If you had gestational diabetes, you are at risk of developing type 2 diabetes. You will be tested for it within 4 to 12 weeks after giving birth. Even if your blood glucose levels have returned to normal, you will need to get them tested every 1 to 3 years.&#10;&#10;If you already had diabetes before pregnancy, you and your provider will monitor changes to your blood glucose levels. They will tell you if you need to adjust your diabetes management plan.&#10;&#10;NIH: National Institute of Diabetes and Digestive and Kidney Diseases&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:19:37+00:00" xmi:version="2.0">
+  <chunks charEnd="3692"/>
+  <chunks index="1" charStart="3404" charEnd="5188"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="36">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="gestational-diabetes" mention="gestational diabetes" confidence="0.95" sourceSpanStart="65" sourceSpanEnd="85">
+    <properties key="name" value="gestational diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes" mention="type 1 diabetes" confidence="0.95" sourceSpanStart="335" sourceSpanEnd="350">
+    <properties key="name" value="type 1 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="390" sourceSpanEnd="405">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pcos" mention="polycystic ovary syndrome (PCOS)" confidence="0.95" sourceSpanStart="1303" sourceSpanEnd="1335">
+    <properties key="name" value="polycystic ovary syndrome"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="Condition" id="preeclampsia" mention="preeclampsia" confidence="0.95" sourceSpanStart="2443" sourceSpanEnd="2455">
+    <properties key="name" value="preeclampsia"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="3445" sourceSpanEnd="3457">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="3445" sourceSpanEnd="3457" chunkIndex="1">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="miscarriage" mention="miscarriage" confidence="0.95" sourceSpanStart="3531" sourceSpanEnd="3542" chunkIndex="1">
+    <properties key="name" value="miscarriage"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="stillbirth" mention="stillbirth" confidence="0.95" sourceSpanStart="3547" sourceSpanEnd="3557" chunkIndex="1">
+    <properties key="name" value="stillbirth"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="3577" sourceSpanEnd="3585" chunkIndex="1">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="gestational-diabetes" mention="gestational diabetes" confidence="0.95" sourceSpanStart="4677" sourceSpanEnd="4697" chunkIndex="1">
+    <properties key="name" value="gestational diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="4729" sourceSpanEnd="4744" chunkIndex="1">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="gestational-diabetes" targetType="Condition" targetId="type-2-diabetes" confidence="0.95" evidence="If you had gestational diabetes, you are at risk of developing type 2 diabetes." sourceSpanStart="4666" sourceSpanEnd="4745" chunkIndex="1"/>
+</raw:RawExtractionResult>

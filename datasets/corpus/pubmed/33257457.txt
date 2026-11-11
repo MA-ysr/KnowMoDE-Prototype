@@ -1,0 +1,15 @@
+# PubMed 33257457: Influence of polypharmacy on patients with heart failure with preserved ejection fraction: a retrospective analysis on adverse outcomes in the TOPCAT trial.
+
+The British journal of general practice : the journal of the Royal College of General Practitioners (2021), doi:10.3399/bjgp21X714245
+
+BACKGROUND: Polypharmacy is common in heart failure (HF), whereas its effect on adverse outcomes in patients with HF with preserved ejection fraction (HFpEF) is unclear.
+
+AIM: To evaluate the prevalence, prognostic impacts, and predictors of polypharmacy in HFpEF patients.
+
+DESIGN AND SETTING: A retrospective analysis performed on patients in the Americas region (including the US, Canada, Argentina, and Brazil) with symptomatic HF and a left ventricular ejection fraction ≥45% in the TOPCAT (Treatment of Preserved Cardiac Function Heart Failure with an Aldosterone Antagonist) trial, an international, randomised, double-blind, placebo-controlled study conducted during 2006-2013 in six countries.
+
+METHOD: Patients were categorised into four groups: controls (<5 medications), polypharmacy (5-9 medications), hyperpolypharmacy, (10-14 medications), and super hyperpolypharmacy (≥15 medications). The outcomes and predictors in all groups were assessed.
+
+RESULTS: Of 1761 participants, the median age was 72 years; 37.5% were polypharmacy, 35.9% were hyperpolypharmacy, and 19.6% were super hyperpolypharmacy, leaving 7.0% having a low medication burden. In multivariable regression models, three experimental groups with a high medication burden were all associated with a reduction in all-cause death, but increased risks of HF hospitalisation and all-cause hospitalisation. Furthermore, several comorbidities (dyslipidemia, thyroid diseases, diabetes mellitus, and chronic obstructive pulmonary disease), a history of angina pectoris, diastolic blood pressure <80 mmHg, and worse heart function (the New York Heart Association functional classification level III and IV) at baseline were independently associated with a high medication burden among patients with HFpEF.
+
+CONCLUSION: A high prevalence of high medication burden at baseline was reported in patients with HFpEF. The high medication burden might increase the risk of hospital readmission, but not the mortality.

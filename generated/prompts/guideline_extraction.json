@@ -1,0 +1,71 @@
+{
+  "task" : "guideline_extraction",
+  "pipeline" : "DiabetesReadmissionExtraction",
+  "targetSchema" : "DiabetesReadmissionKG",
+  "llmModel" : "gemini/gemini-3.5-flash-lite",
+  "temperature" : 0.1,
+  "maxTokens" : 4096,
+  "sourceCollection" : "corpus/pubmed/guidelines",
+  "outputFormat" : "JSON",
+  "chunking" : {
+    "chunkSize" : 3000,
+    "overlap" : 200,
+    "splitter" : "SENTENCE"
+  },
+  "targetConcepts" : [ "Recommendation", "Condition", "Drug", "LabTest", "RiskFactor" ],
+  "requiredProperties" : {
+    "Recommendation" : [ "statement", "source" ],
+    "Condition" : [ "name" ],
+    "Drug" : [ "name" ],
+    "LabTest" : [ "name" ],
+    "RiskFactor" : [ "name" ]
+  },
+  "explainableProperties" : {
+    "Recommendation" : [ "statement", "source", "strength" ],
+    "Condition" : [ "name", "category" ],
+    "Drug" : [ "name", "drugClass" ],
+    "LabTest" : [ "name", "abnormalThreshold" ],
+    "RiskFactor" : [ "name", "description" ]
+  },
+  "targetRelations" : [ {
+    "id" : "APPLIES_TO",
+    "name" : "APPLIES_TO",
+    "source" : "Recommendation",
+    "target" : "Condition",
+    "minCardinality" : 1,
+    "maxCardinality" : -1
+  }, {
+    "id" : "RECOMMENDS_Drug",
+    "name" : "RECOMMENDS",
+    "source" : "Recommendation",
+    "target" : "Drug",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "RECOMMENDS_LabTest",
+    "name" : "RECOMMENDS",
+    "source" : "Recommendation",
+    "target" : "LabTest",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  }, {
+    "id" : "RECOMMENDS_RiskFactor",
+    "name" : "RECOMMENDS",
+    "source" : "Recommendation",
+    "target" : "RiskFactor",
+    "minCardinality" : 0,
+    "maxCardinality" : -1
+  } ],
+  "fewShotExamples" : 2,
+  "promptFile" : "guideline_extraction.txt",
+  "promptId" : "guideline_extraction@9a20634981a4",
+  "promptHash" : "9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1",
+  "generatedAt" : "2026-11-01T19:22:28.693502Z",
+  "sourceModels" : {
+    "Decision:decision-bindings.xmi" : "e2113e3aa998712187c683da2cfd67cd34a5c7fee0f7c27c537e74d7b2168fa9",
+    "Explainability:explainability.xmi" : "7e3b3f77ef3ebc17655a71f704cbdddf8b21ae20dc1ae5b6b1628b6dbcb3070b",
+    "Pipeline:extraction-pipeline.xmi" : "e9ad894c5a7f3a4d8c724f75fda08a2456fbd17601e16e0074a759a539f8b413",
+    "Policy:validation-policy.xmi" : "f20cdba4b6a0133d1db0677e5c18d6c31c2c50e396d718c04900094dffbe3b6a",
+    "Schema:kg-schema.xmi" : "4f85cb83f677044bec61c0f50982e1f7adf4f301f9fa8641a5d81894e718fc4e"
+  }
+}

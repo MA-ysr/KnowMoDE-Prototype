@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34107481.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34107481/" sourceSha256="839dfa5ee5024415e2ab8b6d5997d9177b4cb12b04c50335ab48dc348c145826" sourceText="# PubMed 34107481: Factors and Outcomes of Intensive Care Unit Readmission in Elderly Patients.&#10;&#10;Gerontology (2022), doi:10.1159/000516297&#10;&#10;INTRODUCTION: An increase in age has been observed among patients admitted to the intensive care unit (ICU). Age is a well-known risk factor for ICU readmission and mortality. However, clinical characteristics and risk factors of ICU readmission of elderly patients (≥65 years) have not been studied.&#10;&#10;METHODS: This retrospective single-center cohort study was conducted in a total of 122-bed ICU of a tertiary care hospital in Seoul, Korea. A total of 85,413 patients were enrolled in this hospital between January 1, 2007, and December 31, 2017. The odds ratio of readmission and in-hospital mortality was calculated by logistic regression analysis.&#10;&#10;RESULTS: Totally, 29,503 patients were included in the study group, of which 2,711 (9.2%) had ICU readmissions. Of the 2,711 readmitted patients, 472 patients were readmitted more than once (readmitted 2 or more times to the ICU, 17.4%). In the readmitted patient group, there were more males, higher sequential organ failure assessment (SOFA) scores, and hospitalized for medical reasons. Length of stay (LOS) in ICU and in-hospital were longer, and 28-day and in-hospital mortality was higher in readmitted patients than in nonreadmitted patients. Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS. ICU readmission and age (over 85 years) were independent predictors of in-hospital mortality on multivariable analysis. The delayed ICU readmission group (&gt;72 h) had higher in-hospital mortality than the early readmission group (≤72 h) (20.6 vs. 16.2%, p = 0.005).&#10;&#10;CONCLUSIONS: ICU readmissions occurred in 9.2% of elderly patients and were associated with poor prognosis and higher mortality.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:45+00:00" xmi:version="2.0">
+  <chunks charEnd="1979"/>
+  <entities type="RiskFactor" id="age" mention="age" confidence="0.9" sourceSpanStart="169" sourceSpanEnd="172">
+    <properties key="name" value="age"/>
+    <properties key="description" value="increase in age of patients admitted to the intensive care unit"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="icu-readmission" mention="ICU readmission" confidence="0.95" sourceSpanStart="285" sourceSpanEnd="300">
+    <properties key="name" value="icu readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.95" sourceSpanStart="305" sourceSpanEnd="314">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="RiskFactor" id="icu-admission-due-to-medical-reason" mention="ICU admission due to medical reason" confidence="0.9" sourceSpanStart="1388" sourceSpanEnd="1423">
+    <properties key="name" value="icu admission due to medical reason"/>
+    <properties key="description" value="ICU admission due to medical reason"/>
+  </entities>
+  <entities type="RiskFactor" id="sofa-score" mention="SOFA score" confidence="0.9" sourceSpanStart="1425" sourceSpanEnd="1435">
+    <properties key="name" value="sofa score"/>
+    <properties key="description" value="sequential organ failure assessment score"/>
+  </entities>
+  <entities type="Condition" id="chronic-heart-disease" mention="chronic heart disease" confidence="0.9" sourceSpanStart="1449" sourceSpanEnd="1470">
+    <properties key="name" value="chronic heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1472" sourceSpanEnd="1489">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1491" sourceSpanEnd="1513">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="transplantation" mention="transplantation" confidence="0.9" sourceSpanStart="1515" sourceSpanEnd="1530">
+    <properties key="name" value="transplantation"/>
+    <properties key="description" value="presence of transplantation"/>
+  </entities>
+  <entities type="RiskFactor" id="use-of-mechanical-ventilation" mention="use of mechanical ventilation" confidence="0.9" sourceSpanStart="1532" sourceSpanEnd="1561">
+    <properties key="name" value="use of mechanical ventilation"/>
+    <properties key="description" value="use of mechanical ventilation"/>
+  </entities>
+  <entities type="RiskFactor" id="initial-icu-los" mention="initial ICU LOS" confidence="0.9" sourceSpanStart="1567" sourceSpanEnd="1582">
+    <properties key="name" value="initial icu los"/>
+    <properties key="description" value="initial ICU length of stay"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="in-hospital-mortality" mention="in-hospital mortality" confidence="0.95" sourceSpanStart="1655" sourceSpanEnd="1676">
+    <properties key="name" value="in-hospital mortality"/>
+  </entities>
+  <entities type="RiskFactor" id="age-over-85-years" mention="age (over 85 years)" confidence="0.9" sourceSpanStart="1604" sourceSpanEnd="1623">
+    <properties key="name" value="age over 85 years"/>
+    <properties key="description" value="age over 85 years"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="age" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Age is a well-known risk factor for ICU readmission and mortality." sourceSpanStart="249" sourceSpanEnd="315"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="age" targetType="ClinicalOutcome" targetId="mortality" confidence="0.9" evidence="Age is a well-known risk factor for ICU readmission and mortality." sourceSpanStart="249" sourceSpanEnd="315"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="icu-admission-due-to-medical-reason" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="sofa-score" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-heart-disease" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="transplantation" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="use-of-mechanical-ventilation" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="initial-icu-los" targetType="ClinicalOutcome" targetId="icu-readmission" confidence="0.9" evidence="Risk factors of ICU readmission included the ICU admission due to medical reason, SOFA score, presence of chronic heart disease, diabetes mellitus, chronic kidney disease, transplantation, use of mechanical ventilation, and initial ICU LOS." sourceSpanStart="1343" sourceSpanEnd="1583"/>
+  <relations type="INCREASES_RISK_OF" sourceType="ClinicalOutcome" sourceId="icu-readmission" targetType="ClinicalOutcome" targetId="in-hospital-mortality" confidence="0.95" evidence="ICU readmission and age (over 85 years) were independent predictors of in-hospital mortality on multivariable analysis." sourceSpanStart="1584" sourceSpanEnd="1703"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="age-over-85-years" targetType="ClinicalOutcome" targetId="in-hospital-mortality" confidence="0.95" evidence="ICU readmission and age (over 85 years) were independent predictors of in-hospital mortality on multivariable analysis." sourceSpanStart="1584" sourceSpanEnd="1703"/>
+</raw:RawExtractionResult>

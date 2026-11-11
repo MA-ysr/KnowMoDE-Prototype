@@ -1,0 +1,11 @@
+# PubMed 29992890: Diabetes Discharge Planning and Transitions of Care: A Focused Review.
+
+Current diabetes reviews (2019), doi:10.2174/1573399814666180711120830
+
+BACKGROUND: Diabetes is a growing problem in the United States. Increasing hospital admissions for diabetes patients demonstrate the need for evidence-based care of diabetes patients by inpatient providers, as well as the importance of continuity of care when transitioning patients from inpatient to outpatient providers.
+
+METHODS: A focused literature review of discharge planning and transitions of care in diabetes, conducted in PubMed is presented. Studies were selected for inclusion based on content focusing on transitions of care in diabetes, risk factors for readmission, the impact of inpatient diabetes education on patient outcomes, and optimal medication management of diabetes during care transitions. American Diabetes Association (ADA) guidelines for care of patients during the discharge process are presented, as well as considerations for designing treatment regimens for a hospitalized patient transitioning to various care settings.
+
+RESULTS: Multiple factors may make transitions of care difficult, including poor communication, poor patient education, inappropriate follow-up, and clinically complex patients. ADA recommendations provide guidance, but an individualized approach for medication management is needed. Use of scoring systems may help identify patients at higher risk for readmission. Good communication with patients and outpatient providers is needed to prevent patient harm. A team-based approach is needed, utilizing the skills of inpatient and outpatient providers, diabetes educators, nurses, and pharmacists.
+
+CONCLUSION: Structured discharge planning per guideline recommendations can help improve transitions in care for patients with diabetes. A team based, patient-centered approach can help improve patient outcomes by reducing medication errors, delay of care, and hospital readmissions.

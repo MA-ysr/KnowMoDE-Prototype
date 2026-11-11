@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33421275.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33421275/" sourceSha256="3a3e73ffe9aba041147964ed20db52b56519d6bdc81c88234358b768fea0ac30" sourceText="# PubMed 33421275: Electronic dashboard-based remote glycemic management program reduces length of stay and readmission rate among hospitalized adults.&#10;&#10;Journal of diabetes investigation (2021), doi:10.1111/jdi.13500&#10;&#10;AIMS/INTRODUCTION: Currently, the impact of hospital-wide glycemic control interventions on length of hospital stay (LOS) and readmission rates are largely unknown. We investigated the impact of a 4-year hospital-wide remote glycemic management program on LOS and 30-day readmission rates among hospitalized adults who received glucose monitoring.&#10;&#10;MATERIALS AND METHODS: In this retrospective study, hospitalized patients who received glucose monitoring were classified into groups 1 (high glucose variability), 2 (hypoglycemia), 3 (hyperglycemia) and 4 (relatively stable). The monthly percentage changes, and average monthly percentage changes of hyperglycemia, hypoglycemia and treat to target were determined using joinpoint regression analysis.&#10;&#10;RESULTS: A total of 106,528 hospitalized patients (mean age 60.9 ± 18.5 years, 57% men) were enrolled. We observed a significant reduction in the percentage of inpatients in poor glycemic control groups (groups 1, 2 and 3, all P &lt; 0.001), and a reciprocal increase in the relatively stable group (group 4) from 2016 to 2019. We found a significant reduction in LOS by 11.4% (10.5-9.3 days, P = 0.002, after adjustment for age, sex, and admission department). The 30-day readmission rate decreased from 29.9% to 29.3%, mainly among those in group 4 in 2019 (P &lt; 0.001 after adjustment of sex, age, admission department and LOS).&#10;&#10;CONCLUSIONS: Improved glycemic control through a hospital-wide electronic remote glycemic management system reduced LOS and 30-day readmission rates. Findings observed in this study might be associated with the reduction in cost of avoidable hospitalizations.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:15+00:00" xmi:version="2.0">
+  <chunks charEnd="1859"/>
+  <entities type="Condition" id="high-glucose-variability" mention="high glucose variability" confidence="0.9" sourceSpanStart="704" sourceSpanEnd="728">
+    <properties key="name" value="high glucose variability"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.9" sourceSpanStart="734" sourceSpanEnd="746">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.9" sourceSpanStart="752" sourceSpanEnd="765">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="30-day readmission rate" confidence="0.95" sourceSpanStart="1433" sourceSpanEnd="1456">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+</raw:RawExtractionResult>

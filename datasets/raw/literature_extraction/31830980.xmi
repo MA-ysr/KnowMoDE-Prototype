@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31830980.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31830980/" sourceSha256="8366e140c43216893cb8b47f878264939223f54531bc3f4c754e367f9218af6e" sourceText="# PubMed 31830980: Implementation of machine learning algorithms to create diabetic patient re-admission profiles.&#10;&#10;BMC medical informatics and decision making (2019), doi:10.1186/s12911-019-0990-x&#10;&#10;BACKGROUND: Machine learning is a branch of Artificial Intelligence that is concerned with the design and development of algorithms, and it enables today's computers to have the property of learning. Machine learning is gradually growing and becoming a critical approach in many domains such as health, education, and business.&#10;&#10;METHODS: In this paper, we applied machine learning to the diabetes dataset with the aim of recognizing patterns and combinations of factors that characterizes or explain re-admission among diabetes patients. The classifiers used include Linear Discriminant Analysis, Random Forest, k-Nearest Neighbor, Naïve Bayes, J48 and Support vector machine.&#10;&#10;RESULTS: Of the 100,000 cases, 78,363 were diabetic and over 47% were readmitted.Based on the classes that models produced, diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c.&#10;&#10;CONCLUSION: Diabetic patients who do not undergo vigorous lab assessments, diagnosis, medications are more likely to be readmitted when discharged without improvements and without receiving insulin administration, especially if they are women, Caucasians, or both.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:13+00:00" xmi:version="2.0">
+  <chunks charEnd="1610"/>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmitted" confidence="0.95" sourceSpanStart="947" sourceSpanEnd="957">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="women" mention="women" confidence="0.9" sourceSpanStart="1067" sourceSpanEnd="1072">
+    <properties key="name" value="female sex"/>
+    <properties key="description" value="patient is female"/>
+  </entities>
+  <entities type="RiskFactor" id="caucasians" mention="Caucasians" confidence="0.9" sourceSpanStart="1077" sourceSpanEnd="1087">
+    <properties key="name" value="caucasian race"/>
+    <properties key="description" value="patient is caucasian"/>
+  </entities>
+  <entities type="RiskFactor" id="outpatients" mention="outpatients" confidence="0.9" sourceSpanStart="1092" sourceSpanEnd="1103">
+    <properties key="name" value="outpatient status"/>
+    <properties key="description" value="patient is an outpatient"/>
+  </entities>
+  <entities type="RiskFactor" id="less-rigorous-lab-procedures" mention="less rigorous lab procedures" confidence="0.9" sourceSpanStart="1126" sourceSpanEnd="1154">
+    <properties key="name" value="less rigorous lab procedures"/>
+    <properties key="description" value="undergo less rigorous lab procedures"/>
+  </entities>
+  <entities type="RiskFactor" id="less-medication" mention="less medication" confidence="0.9" sourceSpanStart="1199" sourceSpanEnd="1214">
+    <properties key="name" value="less medication"/>
+    <properties key="description" value="receive less medication"/>
+  </entities>
+  <entities type="RiskFactor" id="discharged-without-proper-improvements" mention="discharged without proper improvements" confidence="0.9" sourceSpanStart="1229" sourceSpanEnd="1267">
+    <properties key="name" value="discharged without proper improvements"/>
+    <properties key="description" value="discharged without proper improvements"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="1289" sourceSpanEnd="1296">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="women" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="caucasians" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="outpatients" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="less-rigorous-lab-procedures" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="less-medication" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="discharged-without-proper-improvements" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="diabetic patients who are more likely to be readmitted are either women, or Caucasians, or outpatients, or those who undergo less rigorous lab procedures, treatment procedures, or those who receive less medication, and are thus discharged without proper improvements or administration of insulin despite having been tested positive for HbA1c." sourceSpanStart="1001" sourceSpanEnd="1343"/>
+</raw:RawExtractionResult>

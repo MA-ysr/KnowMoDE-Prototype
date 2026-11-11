@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/radiation-exposure.txt" sourceUri="https://medlineplus.gov/radiationexposure.html" sourceSha256="328b11e4add5aac4e112b6be126727662b8e40eaa2f2cdb04d1974e38ce11f3d" sourceText="# MedlinePlus health topic: Radiation Exposure&#10;&#10;What is radiation?Radiation is energy. It travels in the form of energy waves or high-speed particles. Radiation can occur naturally or be man-made. There are two types:&#10;&#10;Non-ionizing radiation, which includes radio waves, cell phones, microwaves, infrared radiation and visible light&#10;&#10;Ionizing radiation, which includes ultraviolet radiation, radon, x-rays, and gamma rays&#10;&#10;What are the sources of radiation exposure?Background radiation is all around us all the time. Most of it forms naturally from minerals. These radioactive minerals are in the ground, soil, water, and even our bodies. Background radiation can also come from outer space and the sun. Other sources are man-made, such as x-rays, radiation therapy to treat cancer, and electrical power lines.&#10;&#10;What are the health effects of radiation exposure?Radiation has been around us throughout our evolution. So our bodies are designed to deal with the low levels we're exposed to every day. But too much radiation can damage tissues by changing cell structure and damaging DNA. This can cause serious health problems, including cancer.&#10;&#10;The amount of damage that exposure to radiation can cause depends on several factors, including:&#10;&#10;The type of radiation&#10;&#10;The dose (amount) of radiation&#10;&#10;How you were exposed, such as through skin contact, swallowing or breathing it in, or having rays pass through your body&#10;&#10;Where the radiation concentrates in the body and how long it stays there&#10;&#10;How sensitive your body is to radiation. A fetus is most vulnerable to the effects of radiation. Infants, children, older adults, pregnant women, and people with compromised immune systems are more vulnerable to health effects than healthy adults.&#10;&#10;Being exposed to a lot of radiation over a short period of time, such as from a radiation emergency, can cause skin burns. It may also lead to acute radiation syndrome (ARS, or &quot;radiation sickness&quot;). The symptoms of ARS include headache and diarrhea. They usually start within hours. Those symptoms will go away and the person will seem healthy for a little while. But then they will get sick again. How soon they get sick again, which symptoms they have, and how sick they get depends on the amount of radiation they received. In some cases, ARS causes death in the following days or weeks.&#10;&#10;Exposure to low levels of radiation in the environment does not cause immediate health effects. But it can slightly increase your overall risk of cancer.&#10;&#10;What are the treatments for acute radiation sickness?Before they start treatment, health care professionals need to figure out how much radiation your body absorbed. They will ask about your symptoms, do blood tests, and may use a device that measures radiation. They also try get more information about the exposure, such as what type of radiation it was, how far away you were from the source of the radiation, and how long you were exposed.&#10;&#10;Treatment focuses on reducing and treating infections, preventing dehydration, and treating injuries and burns. Some people may need treatments that help the bone marrow recover its function. If you were exposed to certain types of radiation, your provider may give you a treatment that limits or removes the contamination that is inside your body. You may also get treatments for your symptoms.&#10;&#10;How can radiation exposure be prevented?There are steps you can take to prevent or reduce radiation exposure:&#10;&#10;If your health care provider recommends a test that uses radiation, ask about its risks and benefits. In some cases, you may be able to have a different test that does not use radiation. But if you do need a test that uses radiation, do some research into the local imaging facilities. Find one that monitors and uses techniques to reduce the doses they are giving patients.&#10;&#10;Reduce electromagnetic radiation exposure from your cell phone. At this time, scientific evidence has not found a link between cell phone use and health problems in humans. More research is needed to be sure. But if you still have concerns, you can reduce how much time you spend on your phone. You can also use speaker mode or a headset to place more distance between your head and the cell phone.&#10;&#10;If you live in a house, test the radon levels, and if you need to, get a radon reduction system.&#10;&#10;During a radiation emergency, get inside a building to take shelter. Stay inside, with all of the windows and doors shut. Stay tuned to and follow the advice of emergency responders and officials.&#10;&#10;Environmental Protection Agency&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:25:07+00:00" xmi:version="2.0">
+  <chunks charEnd="3820"/>
+  <chunks index="1" charStart="3822" charEnd="4550"/>
+  <entities type="Condition" id="cancer" mention="cancer" confidence="0.95" sourceSpanStart="776" sourceSpanEnd="782">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="acute-radiation-syndrome" mention="acute radiation syndrome (ARS, or &quot;radiation sickness&quot;)" confidence="0.95" sourceSpanStart="1888" sourceSpanEnd="1943">
+    <properties key="name" value="acute radiation syndrome"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.9" sourceSpanStart="1973" sourceSpanEnd="1981">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.9" sourceSpanStart="1986" sourceSpanEnd="1994">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="death" mention="death" confidence="0.9" sourceSpanStart="2299" sourceSpanEnd="2304">
+    <properties key="name" value="death"/>
+    <properties key="timeWindow" value="following days or weeks"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="skin-burns" mention="skin burns" confidence="0.9" sourceSpanStart="1856" sourceSpanEnd="1866">
+    <properties key="name" value="skin burns"/>
+  </entities>
+  <entities type="Condition" id="health-problems" mention="health problems" confidence="0.8" sourceSpanStart="3968" sourceSpanEnd="3983" chunkIndex="1">
+    <properties key="name" value="health problems"/>
+  </entities>
+  <entities type="Condition" id="radon" mention="radon" confidence="0.9" sourceSpanStart="4255" sourceSpanEnd="4260" chunkIndex="1">
+    <properties key="name" value="radon"/>
+  </entities>
+  <entities type="Recommendation" id="test-radon-levels" mention="test the radon levels" confidence="0.95" sourceSpanStart="4246" sourceSpanEnd="4267" chunkIndex="1">
+    <properties key="statement" value="test the radon levels"/>
+    <properties key="source" value="Environmental Protection Agency"/>
+  </entities>
+  <entities type="Recommendation" id="radon-reduction-system" mention="get a radon reduction system" confidence="0.95" sourceSpanStart="4289" sourceSpanEnd="4317" chunkIndex="1">
+    <properties key="statement" value="get a radon reduction system"/>
+    <properties key="source" value="Environmental Protection Agency"/>
+  </entities>
+  <entities type="Recommendation" id="radiation-emergency-shelter" mention="get inside a building to take shelter" confidence="0.95" sourceSpanStart="4350" sourceSpanEnd="4387" chunkIndex="1">
+    <properties key="statement" value="get inside a building to take shelter"/>
+    <properties key="source" value="Environmental Protection Agency"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="acute-radiation-syndrome" targetType="ClinicalOutcome" targetId="death" confidence="0.9" evidence="In some cases, ARS causes death in the following days or weeks." sourceSpanStart="2273" sourceSpanEnd="2336"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="test-radon-levels" targetType="Condition" targetId="radon" confidence="0.9" evidence="If you live in a house, test the radon levels, and if you need to, get a radon reduction system." sourceSpanStart="4222" sourceSpanEnd="4318" chunkIndex="1"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="radon-reduction-system" targetType="Condition" targetId="radon" confidence="0.9" evidence="If you live in a house, test the radon levels, and if you need to, get a radon reduction system." sourceSpanStart="4222" sourceSpanEnd="4318" chunkIndex="1"/>
+</raw:RawExtractionResult>

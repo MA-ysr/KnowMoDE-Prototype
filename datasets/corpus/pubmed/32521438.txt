@@ -1,0 +1,11 @@
+# PubMed 32521438: Thirty-day readmission after status epilepticus in the United States: Insights from the nationwide readmission database.
+
+Epilepsy research (2020), doi:10.1016/j.eplepsyres.2020.106346
+
+OBJECTIVE: To determine the incidence, causes, predictors, and costs of 30-day readmissions in patients admitted with status epilepticus (SE) from a large representative United States (US) population.
+
+METHODS: Adults (age ≥18 years) hospitalized with a primary diagnosis of SE (International Classification of Diseases-Ninth Revision-CM codes 345.2 or 345.3) between January 2013 and September 2015 were identified using the Nationwide Readmissions Database. A multivariable logistic regression model was used to identify predictors of 30-day readmissions.
+
+RESULTS: Of 42,232 patients with index SE, 6372 (15.0%) were readmitted within 30 days. In the multivariable analysis, intracranial hemorrhage (odds ratio, 1.56; 95% confidence interval, 1.12-2.18), psychosis (1.26 95%, 1.05-1.50), diabetes mellitus (1.12, 95%, 1.00-1.25), chronic kidney disease (1.50, 95%, 1.31-1.72), chronic liver disease (1.51; 95%, 1.24-1.84), >3 Elixhauser comorbidities (1.18; 95%, 1.06-1.31), length of stay >4 days during index hospitalization (1.41; 95%, 1.28-1.56) and discharge to skilled nursing facility (SNF) (1.14; 95%, 1.01-1.28) were independent predictors of 30-day readmission. The most common reason for readmission was seizures (45.1%). Median length of stay and costs of readmission were 4 days (interquartile range [IQR], 2-7 days) and $7882 (IQR, $4649-$15,012), respectively.
+
+CONCLUSION: Thirty-day readmissions after SE occurs in 15% of patients, the majority of which were due to seizures. Readmitted patients are more likely to have multiple comorbidities, a longer length of stay, and discharge to SNF. Awareness of these predictors can help identify and target high-risk patients for interventions to reduce readmissions and costs.

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/25753935.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/25753935/" sourceSha256="48608f9faffe66646e8a52422ae14d024eda288727f716d694e6e1478dca1614" sourceText="# PubMed 25753935: Multimorbidity in risk stratification tools to predict negative outcomes in adult population.&#10;&#10;European journal of internal medicine (2015), doi:10.1016/j.ejim.2015.02.010&#10;&#10;INTRODUCTION: Risk stratification tools were developed to assess risk of negative health outcomes. These tools assess a variety of variables and clinical factors and they can be used to identify targets of potential interventions and to develop care plans. The role of multimorbidity in these tools has never been assessed.&#10;&#10;OBJECTIVES: To summarize validated risk stratification tools for predicting negative outcomes, with a specific focus on multimorbidity.&#10;&#10;METHODS: MEDLINE, Cochrane Central Register of Controlled Trials and PubMed database were interrogated for studies concerning risk prediction models in medical populations. Review was conducted to identify prediction models tested with patients in both derivation and validation cohorts. A qualitative synthesis was performed focusing particularly on how multimorbidity is assessed by each algorithm and how much this weighs in the ability of discrimination.&#10;&#10;RESULTS: Of 3674 citations reviewed, 36 articles met criteria. Of these, 29 had as outcome hospital admission/readmission. The most common multimorbidity measure employed in the models was the Charlson Comorbidity Index (12 articles). C-statistics ranged between 0.5 and 0.85 in predicting hospital admission/ readmission. The highest c-statistics was 0.83 in models with disability as outcome. For healthcare cost, models which used ACG-PM case mix explained better the variability of total costs.&#10;&#10;CONCLUSIONS: This review suggests that predictive risk models which employ multimorbidity as predictor variable are more accurate; CHF, cerebro-vascular disease, COPD and diabetes were strong predictors in some of the reviewed models. However, the variability in the risk factors used in these models does not allow making assumptions.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:28:00+00:00" xmi:version="2.0">
+  <chunks charEnd="1950"/>
+  <entities type="ClinicalOutcome" id="hospital-admission-readmission" mention="hospital admission/readmission" confidence="0.95" sourceSpanStart="1205" sourceSpanEnd="1235">
+    <properties key="name" value="hospital admission or readmission"/>
+  </entities>
+  <entities type="Condition" id="chf" mention="CHF" confidence="0.9" sourceSpanStart="1745" sourceSpanEnd="1748">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cerebro-vascular-disease" mention="cerebro-vascular disease" confidence="0.9" sourceSpanStart="1750" sourceSpanEnd="1774">
+    <properties key="name" value="cerebrovascular disease"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="copd" mention="COPD" confidence="0.9" sourceSpanStart="1776" sourceSpanEnd="1780">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1785" sourceSpanEnd="1793">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31809421.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31809421/" sourceSha256="6827a8af112bf17e2e27335cb056cba42a639251aa5ca2543c3355bfeae24a9b" sourceText="# PubMed 31809421: Postpartum Readmissions Among Women With Diabetes.&#10;&#10;Obstetrics and gynecology (2020), doi:10.1097/AOG.0000000000003551&#10;&#10;OBJECTIVE: To estimate whether women with diabetes are at risk for 60-day postpartum readmissions and associated complications.&#10;&#10;METHODS: The Nationwide Readmissions Database from 2010 to 2014 was analyzed to determine risk for 60-day postpartum readmissions among women with type 1 diabetes mellitus (DM), type 2 DM, gestational diabetes mellitus (GDM), and unspecified DM compared with women with no diabetes. Secondary outcomes included evaluating risk for overall severe maternal morbidity during readmissions, as well as wound complications, acute diabetic complications such as diabetic ketoacidosis, venous thromboembolism, and hypertensive diseases of pregnancy. Billing data were used to ascertain both exposures and outcomes. Adjusted log-linear regression models including demographic, hospital, medical and obstetric, and hospital factors were performed with adjusted risk ratios (aRRs) and with 95% Cis as measures of association.&#10;&#10;RESULTS: Of an estimated 15.7 million delivery hospitalizations, 1.1 million occurred among women with diabetes, of whom 3.2% had type 1 DM, 9.1% type 2 DM, 86.6% GDM, and 1.1% unspecified diabetes. Compared with women without diabetes (1.5% risk for readmission), risk for readmission was significantly higher for women with type 1 DM (4.4%), unspecified diabetes (4.0%), type 2 DM (3.9%), and GDM (2.0%) (P&lt;.01). After adjusting for hospital, demographic, medical, and obstetric risk factors, type 1 DM (aRR 1.77, 95% CI 1.69-1.87), type 2 DM (aRR 1.46, 95% CI 1.42-1.51), unspecified (aRR 1.73, 95% CI 1.59-1.89) and gestational diabetes (aRR 1.16, 95% CI 1.14-1.17) retained increased risk. Among women with diabetes public insurance, lower ZIP code income quartiles, and hospitals with high safety net burdens were associated with higher risk for readmission. In both unadjusted and adjusted analyses, all diabetes diagnoses were associated with readmissions for wound complications, hypertensive diseases of pregnancy, and severe maternal morbidity.&#10;&#10;CONCLUSION: Although overall risk for readmission is low, pregnancies complicated by pregestational diabetes in particular are at increased risk. Women in this high-risk group should receive coordinated care and be monitored closely in the postpartum period.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:07+00:00" xmi:version="2.0">
+  <chunks charEnd="2400"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="60" sourceSpanEnd="68">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="60-day-postpartum-readmission" mention="60-day postpartum readmissions" confidence="0.95" sourceSpanStart="206" sourceSpanEnd="236">
+    <properties key="name" value="hospital readmission within 60 days"/>
+    <properties key="timeWindow" value="60 days"/>
+  </entities>
+  <entities type="Condition" id="type-1-diabetes-mellitus" mention="type 1 diabetes mellitus (DM)" confidence="0.95" sourceSpanStart="415" sourceSpanEnd="444">
+    <properties key="name" value="type 1 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 DM" confidence="0.95" sourceSpanStart="446" sourceSpanEnd="455">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="gestational-diabetes-mellitus" mention="gestational diabetes mellitus (GDM)" confidence="0.95" sourceSpanStart="457" sourceSpanEnd="492">
+    <properties key="name" value="gestational diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="unspecified-dm" mention="unspecified DM" confidence="0.95" sourceSpanStart="498" sourceSpanEnd="512">
+    <properties key="name" value="unspecified diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="723" sourceSpanEnd="744">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="venous-thromboembolism" mention="venous thromboembolism" confidence="0.95" sourceSpanStart="746" sourceSpanEnd="768">
+    <properties key="name" value="venous thromboembolism"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertensive-diseases-of-pregnancy" mention="hypertensive diseases of pregnancy" confidence="0.95" sourceSpanStart="774" sourceSpanEnd="808">
+    <properties key="name" value="hypertensive diseases of pregnancy"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="public-insurance" mention="public insurance" confidence="0.9" sourceSpanStart="1805" sourceSpanEnd="1821">
+    <properties key="name" value="public insurance"/>
+    <properties key="description" value="patient has public insurance"/>
+  </entities>
+  <entities type="RiskFactor" id="lower-zip-code-income-quartiles" mention="lower ZIP code income quartiles" confidence="0.9" sourceSpanStart="1823" sourceSpanEnd="1854">
+    <properties key="name" value="lower zip code income quartiles"/>
+    <properties key="description" value="residence in lower zip code income quartiles"/>
+  </entities>
+  <entities type="RiskFactor" id="hospitals-with-high-safety-net-burdens" mention="hospitals with high safety net burdens" confidence="0.9" sourceSpanStart="1860" sourceSpanEnd="1898">
+    <properties key="name" value="hospitals with high safety net burdens"/>
+    <properties key="description" value="delivery at hospitals with high safety net burdens"/>
+  </entities>
+  <entities type="Condition" id="wound-complications" mention="wound complications" confidence="0.9" sourceSpanStart="2052" sourceSpanEnd="2071">
+    <properties key="name" value="wound complications"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <entities type="Condition" id="severe-maternal-morbidity" mention="severe maternal morbidity" confidence="0.9" sourceSpanStart="2113" sourceSpanEnd="2138">
+    <properties key="name" value="severe maternal morbidity"/>
+    <properties key="category" value="maternal"/>
+  </entities>
+  <entities type="Condition" id="pregestational-diabetes" mention="pregestational diabetes" confidence="0.95" sourceSpanStart="2226" sourceSpanEnd="2249">
+    <properties key="name" value="pregestational diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="type-1-diabetes-mellitus" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.95" evidence="Compared with women without diabetes (1.5% risk for readmission), risk for readmission was significantly higher for women with type 1 DM (4.4%), unspecified diabetes (4.0%), type 2 DM (3.9%), and GDM (2.0%) (P&lt;.01)." sourceSpanStart="1283" sourceSpanEnd="1498"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="type-2-diabetes-mellitus" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.95" evidence="Compared with women without diabetes (1.5% risk for readmission), risk for readmission was significantly higher for women with type 1 DM (4.4%), unspecified diabetes (4.0%), type 2 DM (3.9%), and GDM (2.0%) (P&lt;.01)." sourceSpanStart="1283" sourceSpanEnd="1498"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="gestational-diabetes-mellitus" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.95" evidence="Compared with women without diabetes (1.5% risk for readmission), risk for readmission was significantly higher for women with type 1 DM (4.4%), unspecified diabetes (4.0%), type 2 DM (3.9%), and GDM (2.0%) (P&lt;.01)." sourceSpanStart="1283" sourceSpanEnd="1498"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="public-insurance" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.9" evidence="Among women with diabetes public insurance, lower ZIP code income quartiles, and hospitals with high safety net burdens were associated with higher risk for readmission." sourceSpanStart="1779" sourceSpanEnd="1948"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="lower-zip-code-income-quartiles" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.9" evidence="Among women with diabetes public insurance, lower ZIP code income quartiles, and hospitals with high safety net burdens were associated with higher risk for readmission." sourceSpanStart="1779" sourceSpanEnd="1948"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="hospitals-with-high-safety-net-burdens" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.9" evidence="Among women with diabetes public insurance, lower ZIP code income quartiles, and hospitals with high safety net burdens were associated with higher risk for readmission." sourceSpanStart="1779" sourceSpanEnd="1948"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="pregestational-diabetes" targetType="ClinicalOutcome" targetId="60-day-postpartum-readmission" confidence="0.95" evidence="Although overall risk for readmission is low, pregnancies complicated by pregestational diabetes in particular are at increased risk." sourceSpanStart="2153" sourceSpanEnd="2286"/>
+</raw:RawExtractionResult>

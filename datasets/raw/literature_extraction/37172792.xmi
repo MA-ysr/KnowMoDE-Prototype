@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37172792.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37172792/" sourceSha256="5af8755bc96b92e8f64bf2c1e7bda1d2ca869aeb52e34070d4d9fa9c1c628731" sourceText="# PubMed 37172792: Race Associated With Increased Complication Rates After Total Knee Arthroplasty.&#10;&#10;The Journal of arthroplasty (2023), doi:10.1016/j.arth.2023.04.064&#10;&#10;BACKGROUND: Racial and ethnic disparities have been suggested to be associated with poor outcomes after total knee arthroplasty (TKA). While socioeconomic disadvantage has been studied, analyses of race as the primary variable are lacking. Therefore, we examined the potential differences between Black and White TKA recipients. Specifically, we assessed 30-day and 90-day, as well as 1 year: (1) emergency department visits and readmissions; (2) total complications; (3) as well as risk factors for total complications.&#10;&#10;METHODS: A consecutive series of 1,641 primary TKAs from January 2015 to December 2021 at a tertiary health care system were reviewed. Patients were stratified according to race, Black (n = 1,003) and White (n = 638). Outcomes of interest were analyzed using bivariate Chi-square and multivariate regressions. Demographic variables such as sex, American Society of Anesthesiologists classification, diabetes, congestive heart failure, chronic pulmonary disease, and socioeconomic status based on Area Deprivation Index were controlled for across all patients.&#10;&#10;RESULTS: The unadjusted analyses found that Black patients had an increased likelihood of 30-day emergency department visits and readmissions (P &lt; .001). However, in the adjusted analyses, Black race was demonstrated to be a risk factor for increased total complications at all-time points (P ≤ .0279). Area Deprivation Index was not a risk for cumulative complications at these time points (P ≥ .2455).&#10;&#10;CONCLUSION: Black patients undergoing TKA may be at increased risk for complications with more risk factors including higher body mass index, tobacco use, substance abuse, chronic obstructive pulmonary disease, congestive heart failure, hypertension, chronic kidney disease, and diabetes and were thus, &quot;sicker&quot; initially than the White cohort. Surgeons are often treating these patients at the later stages of their diseases when risk factors are less modifiable, which necessitates a shift to early, preventable public health measures. While higher socioeconomic disadvantage has been associated with higher rates of complications, the results of this study suggest that race may play a greater role than previously thought.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:28:46+00:00" xmi:version="2.0">
+  <chunks charEnd="2384"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1090" sourceSpanEnd="1098">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="1100" sourceSpanEnd="1124">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-pulmonary-disease" mention="chronic pulmonary disease" confidence="0.95" sourceSpanStart="1126" sourceSpanEnd="1151">
+    <properties key="name" value="chronic pulmonary disease"/>
+    <properties key="category" value="pulmonary"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-body-mass-index" mention="higher body mass index" confidence="0.9" sourceSpanStart="1775" sourceSpanEnd="1797">
+    <properties key="name" value="higher body mass index"/>
+    <properties key="description" value="higher body mass index"/>
+  </entities>
+  <entities type="RiskFactor" id="tobacco-use" mention="tobacco use" confidence="0.9" sourceSpanStart="1799" sourceSpanEnd="1810">
+    <properties key="name" value="tobacco use"/>
+    <properties key="description" value="tobacco use"/>
+  </entities>
+  <entities type="RiskFactor" id="substance-abuse" mention="substance abuse" confidence="0.9" sourceSpanStart="1812" sourceSpanEnd="1827">
+    <properties key="name" value="substance abuse"/>
+    <properties key="description" value="substance abuse"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="chronic obstructive pulmonary disease" confidence="0.95" sourceSpanStart="1829" sourceSpanEnd="1866">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="pulmonary"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1894" sourceSpanEnd="1906">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1908" sourceSpanEnd="1930">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+</raw:RawExtractionResult>

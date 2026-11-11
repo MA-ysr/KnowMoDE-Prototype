@@ -1,0 +1,11 @@
+# PubMed 28203070: Determining prognosis in acute exacerbation of COPD.
+
+International journal of chronic obstructive pulmonary disease (2017), doi:10.2147/COPD.S122382
+
+BACKGROUND: Acute exacerbations are the leading causes of hospitalization and mortality in patients with COPD. Prognostic tools for patients with chronic COPD exist, but there are scarce data regarding acute exacerbations. We aimed to identify the prognostic factors of death and readmission after exacerbation of COPD.
+
+METHODS: This was a retrospective study conducted in the Department of Internal Medicine of Geneva University Hospitals. All patients admitted to the hospital with a diagnosis of exacerbation of COPD between 2008 and 2011 were included. The studied variables included comorbidities, Global Initiative for Chronic Obstructive Lung Disease (GOLD) severity classification, and biological and clinical parameters. The main outcome was death or readmission during a 5-year follow-up. The secondary outcome was death. Survival analysis was performed (log-rank and Cox).
+
+RESULTS: We identified a total of 359 patients (195 men and 164 women, average age 72 years). During 5-year follow-up, 242 patients died or were hospitalized for the exacerbation of COPD. In multivariate analysis, age (hazard ratio [HR] 1.03, 95% CI 1.02-1.05; P<0.0001), severity of airflow obstruction (forced expiratory volume in 1 s <30%; HR 4.65, 95% CI 1.42-15.1; P=0.01), diabetes (HR 1.47, 95% CI 1.003-2.16; P=0.048), cancer (HR 2.79, 95% CI 1.68-4.64; P<0.0001), creatinine (HR 1.003, 95% CI 1.0004-1.006; P=0.02), and respiratory rate (HR 1.03, 95% CI 1.003-1.05; P=0.028) on admission were significantly associated with the primary outcome. Age, cancer, and procalcitonin were significantly associated with the secondary outcome.
+
+CONCLUSION: COPD remains of ominous prognosis, especially after exacerbation requiring hospitalization. Baseline pulmonary function remains the strongest predictor of mortality and new admission. Demographic factors, such as age and comorbidities and notably diabetes and cancer, are closely associated with the outcome of the patient. Respiratory rate at admission appears to be the most prognostic clinical parameter. A prospective validation is, however, still required to enable the identification of patients at higher risk of death or readmission.

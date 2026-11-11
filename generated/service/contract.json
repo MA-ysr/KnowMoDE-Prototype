@@ -1,0 +1,50 @@
+{
+  "name": "DiabetesReadmissionExplainability",
+  "description": "Audience-specific explanations of 30-day readmission risk predictions, grounded in the clinical KG.",
+  "targetSchema": "DiabetesReadmissionKG",
+  "tracePattern": "provenance_trace",
+  "retrievalLimit": 100,
+  "audiences": [
+{"role": "patient", "technicalLevel": "LOW", "informationNeeds": "Why am I considered at risk of coming back to the hospital, and what can I do about it?",
+     "requiresFullProvenance": false,
+     "budget": {"maxFacts": 3, "maxWords": 120, "allowCodes": false, "plainLanguage": true, "allocation": "ROUND_ROBIN"}}
+,{"role": "clinician", "technicalLevel": "HIGH", "informationNeeds": "Which factors drive this prediction, what is the clinical evidence, which factors are modifiable?",
+     "requiresFullProvenance": false,
+     "budget": {"maxFacts": 10, "maxWords": 0, "allowCodes": true, "plainLanguage": false, "allocation": "ROUND_ROBIN"}}
+,{"role": "quality_officer", "technicalLevel": "MEDIUM", "informationNeeds": "Which guideline recommendations apply to this patient and which care-process factors could lower readmissions?",
+     "requiresFullProvenance": false,
+     "budget": {"maxFacts": 6, "maxWords": 0, "allowCodes": true, "plainLanguage": false, "allocation": "ROUND_ROBIN"}}
+,{"role": "auditor", "technicalLevel": "HIGH", "informationNeeds": "For every fact shown to any user: which source, which prompt version, which LLM, which validation decision, which model elements?",
+     "requiresFullProvenance": true,
+     "budget": {"maxFacts": 50, "maxWords": 0, "allowCodes": true, "plainLanguage": false, "allocation": "ROUND_ROBIN"}}
+  ],
+  "explanationTypes": [
+{"name": "PlainLanguageContrast", "slug": "plain_language_contrast", "category": "CONTRASTIVE", "description": "Tells a patient which of their factors differ from similar patients who were not readmitted, in plain language, with one source per fact.",
+     "queryPatterns": ["contrastive_difference", "causal_context"],
+     "audiences": ["patient"],
+     "template": "tpl_plain_contrast"}
+,{"name": "CausalEvidence", "slug": "causal_evidence", "category": "CAUSAL", "description": "Evidence paths from the attributed factors to the outcome, including drug-adverse-effect and lab-indication chains.",
+     "queryPatterns": ["causal_context", "drug_adverse_chain", "lab_indication_chain"],
+     "audiences": ["clinician", "quality_officer"],
+     "template": "tpl_causal_evidence"}
+,{"name": "ModifiableFactors", "slug": "modifiable_factors", "category": "COUNTERFACTUAL", "description": "What could change the predicted outcome: guideline recommendations on modifiable treatments for the conditions of the encounter, and modifiable protective factors reported in the literature, ranked by their relation to the encounter's active entities. Only entities declared modifiable in the vocabulary are advised on.",
+     "queryPatterns": ["counterfactual_recommendations", "protective_factors"],
+     "audiences": ["patient", "clinician", "quality_officer"],
+     "template": "tpl_modifiable_factors"}
+,{"name": "GuidelineCompliance", "slug": "guideline_compliance", "category": "RULE_BASED", "description": "All guideline statements applying to the patient's conditions, for care-quality review and compliance.",
+     "queryPatterns": ["guideline_rules"],
+     "audiences": ["quality_officer", "auditor"],
+     "template": "tpl_guideline_rules"}
+,{"name": "AttributionReport", "slug": "attribution_report", "category": "FEATURE_ATTRIBUTION", "description": "The model's feature attributions (SHAP) with each attributed feature grounded in KG evidence and provenance.",
+     "queryPatterns": ["causal_context"],
+     "audiences": ["clinician", "auditor"],
+     "template": "tpl_attribution_report"}
+  ],
+  "templates": [
+{"name": "tpl_plain_contrast", "format": "TEXT", "file": "templates/tpl_plain_contrast.j2"}
+,{"name": "tpl_causal_evidence", "format": "MARKDOWN", "file": "templates/tpl_causal_evidence.j2"}
+,{"name": "tpl_modifiable_factors", "format": "MARKDOWN", "file": "templates/tpl_modifiable_factors.j2"}
+,{"name": "tpl_guideline_rules", "format": "MARKDOWN", "file": "templates/tpl_guideline_rules.j2"}
+,{"name": "tpl_attribution_report", "format": "MARKDOWN", "file": "templates/tpl_attribution_report.j2"}
+  ]
+}

@@ -1,0 +1,17 @@
+# PubMed 41191374: Preoperative Hemoglobin A1C, Glycemic Status, and Postoperative Outcomes in General Surgery.
+
+JAMA surgery (2026), doi:10.1001/jamasurg.2025.4706
+
+IMPORTANCE: Dysglycemia is increasingly recognized as a major contributor to adverse surgical outcomes. However, the clinical utility of preoperative hemoglobin A1C (HbA1c) screening in general surgery remains unclear.
+
+OBJECTIVE: To determine whether elevated HbA1c is associated with increased 30-day postoperative complications, readmissions, and mortality in patients undergoing general surgery procedures.
+
+DESIGN, SETTING, AND PARTICIPANTS: This retrospective cohort study used the American College of Surgeons National Surgical Quality Improvement Program database from 2021 to 2023. Multivariable logistic regression was used to evaluate associations between glycemic status and complications within 30 days after surgery. The multicenter database comprised more than 700 participating institutions worldwide, predominantly in the US. Participants included adult patients (18 years or older) undergoing general surgery procedures with available HbA1c data.
+
+EXPOSURES: Glycemic status categorized by documented diabetes diagnosis and HbA1c levels, ranging from normoglycemia to very poor glycemic control. Patients without a diagnosis but HbA1c levels higher than 6.4% (to convert to proportion of total hemoglobin, multiply by 0.01) were considered to have undiagnosed diabetes.
+
+MAIN OUTCOMES AND MEASURES: Main outcomes included occurrence of any, surgical, and medical complications, as well as readmissions, reoperations, and mortality within 30 days after surgery.
+
+RESULTS: Among 282 131 patients (mean [SD] age, 60 [15] years), 36% had diagnosed diabetes, whereas 6.4% had HbA1c values in the diabetes range but no diagnosis. In those patients with diabetes, risk of any complication increased progressively from near normal (HbA1c level <6.0%; odds ratio [OR], 1.06; 95% CI, 1.00-1.11) to very poor glycemic control (HbA1c level >9.0%; OR, 1.32; 95% CI, 1.25-1.39). Undiagnosed diabetes was also associated with higher risks of medical complications (OR, 1.11; 95% CI, 1.04-1.18) and mortality (OR, 1.24; 95% CI, 1.07-1.42).
+
+CONCLUSIONS AND RELEVANCE: Dysglycemia-both diagnosed and undiagnosed-is highly prevalent among general surgery patients and independently associated with increased risks of complications, readmissions, or mortality. A significant proportion of patients had HbA1c levels in the diabetes range, despite lacking a diabetes diagnosis. These findings support routine preoperative HbA1c screening and the adoption of individualized glycemic management strategies to optimize surgical risk assessment, reduce complications, and improve perioperative outcomes.

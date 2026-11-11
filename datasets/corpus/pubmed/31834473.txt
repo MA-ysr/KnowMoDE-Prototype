@@ -1,0 +1,11 @@
+# PubMed 31834473: Discharge destination following rectal cancer resection: an analysis of preoperative and intraoperative factors.
+
+International journal of colorectal disease (2020), doi:10.1007/s00384-019-03487-9
+
+PURPOSE: Rectal cancer resections can be associated with long and complicated postoperative recoveries. Many patients undergoing these operations are discharged to rehabilitation or skilled nursing facilities. The purpose of this study was to identify preoperative and intraoperative factors associated with increased risk for non-home discharge after rectal cancer resection.
+
+METHODS: Rectal cancer resections were identified in the National Surgical Quality Improvement Program Targeted Proctectomy Dataset (years 2016 through 2017) by ICD code. Patients with unknown discharge destination or who experienced in-hospital mortality were excluded. Univariate and multivariate logistic regression analyses were performed to identify preoperative and intraoperative variables associated with non-home discharge destination. Multiple imputation was used to account for missing values.
+
+RESULTS: Among the 3637 patients comprising the study sample, 292 (8.0%) patients were discharged to rehabilitation, skilled care, or acute care facilities. Preoperative factors associated with non-home discharge on multivariate analysis included older age, non-independent functional status, insulin-dependent diabetes, and hypoalbuminemia (all p < 0.05). Having received neoadjuvant chemotherapy was associated with home discharge (OR 0.625, 95% CI 0.427-0.914, p = 0.015). Intraoperative factors associated with non-home discharge on multivariate analysis were concurrent cystectomy (p = 0.004) and myocutaneous flap reconstruction (p < 0.001). Patients discharged to non-home facilities had longer initial lengths of stay (14.1 versus 7.0 days, p < 0.001) and higher reoperation rates (12.7 versus 5.0%, p < 0.001), but similar readmission rates (14.7 versus 15.0%, p = 1.0).
+
+CONCLUSION: Several preoperative and intraoperative factors are associated with increased risk for non-home discharge after rectal cancer resection. These data can aid in perioperative planning and discharge optimization.

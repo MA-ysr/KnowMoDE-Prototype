@@ -1,0 +1,13 @@
+# PubMed 31401070: Bariatric surgery and the perioperative management of type 2 diabetes: Practical guidelines.
+
+Journal of visceral surgery (2020), doi:10.1016/j.jviscsurg.2019.07.012
+
+BACKGROUND: Metabolic surgery is now considered as a therapeutic option in type 2 diabetes (T2D). However, few data are available regarding perioperative management of T2D.
+
+OBJECTIVES: To assess current practice among bariatric teams regarding perioperative management of T2D in order to propose guidelines.
+
+METHODS: A two-round Delphi method using online surveys was employed among bariatric teams experts (surgeons, diabetologists, anesthetists, nutritionists): first round, 63 questions covering 6 topics (characteristics of experts/teams, characteristics of patients, operative technique, pre/postoperative management, diabetes remission); second round, 44 items needing clarification. They were discussed within national congress of corresponding learned societies. Consensus was defined as ≥66% agreement.
+
+RESULTS: A total of 170 experts participated. Experts favored gastric bypass to achieve remission (76.7%). Screening for retinopathy, cardiac ultrasound, and reaching an HbA1c<8% are required in the pre-operative period for 67%, 75.3% and 56.7% of experts, respectively. After surgery, insulin pump should not be stopped, basal insulin should be halved, and bolus insulin should be stopped except if severe hyperglycemia. DPP-IV inhibitors and metformin are preferred after surgery. Patients should be seen by a diabetologist within one month if on oral antidiabetic agents (71.8% of experts), 2 weeks if on injectable treatments (77.1% of experts), and immediately after surgery if on insulin pump (93.5% of experts). Long-term monitoring of HbA1c is necessary even if diabetes remission (100%).
+
+CONCLUSION: Rapid postoperative modifications of blood glucose require a close monitoring and a prompt adjustment of diabetes medications.

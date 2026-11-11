@@ -1,0 +1,11 @@
+# PubMed 24170760: Preoperative A1C and clinical outcomes in patients with diabetes undergoing major noncardiac surgical procedures.
+
+Diabetes care (2014), doi:10.2337/dc13-1929
+
+OBJECTIVE: To evaluate the relationship between preoperative A1C and clinical outcomes in individuals with diabetes mellitus undergoing noncardiac surgery.
+
+RESEARCH DESIGN AND METHODS: Data were obtained from the National Surgical Quality Improvement Program database and the Research Patient Data Registry of the Brigham and Women's Hospital. Patients admitted to the hospital for ≥1 day after undergoing noncardiac surgery from 2005 to 2010 were included in the study.
+
+RESULTS: Of 1,775 patients with diabetes, 622 patients (35%) had an A1C value available within 3 months before surgery. After excluding same-day surgeries, patients with diabetes were divided into four groups (A1C ≤6.5% [N = 109]; >6.5-8% [N = 202]; >8-10% [N = 91]; >10% [N = 47]) and compared with age-, sex-, and BMI-matched nondiabetic control subjects (N = 888). Individuals with A1C values between 6.5 and 8% had a hospital length of stay (LOS) similar to the matched control group (P = 0.5). However, in individuals with A1C values ≤6.5 or >8%, the hospital LOS was significantly longer compared with the control group (P < 0.05). Multivariate regression analysis demonstrated that a higher A1C value was associated with increased hospital LOS after adjustments for age, sex, BMI, race, type of surgery, Charlson Comorbidity Index, smoking status, and glucose level on the day of surgery (P = 0.02). There were too few events to meaningfully evaluate for death, infections, or readmission rate.
+
+CONCLUSIONS: Our study suggests that chronic hyperglycemia (A1C >8%) is associated with poor surgical outcomes (longer hospital LOS). Providing a preoperative intervention to improve glycemic control in individuals with A1C values >8% may improve surgical outcomes, but prospective studies are needed.

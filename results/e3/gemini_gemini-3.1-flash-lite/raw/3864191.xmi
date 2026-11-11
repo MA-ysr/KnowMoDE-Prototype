@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/3864191" sourceUri="https://pubmed.ncbi.nlm.nih.gov/3864191/" sourceSha256="b0b9d308fe721fc051d0894eac25e9b3676456fd1361b8ff198c515aee9b1d45" sourceText="Salicylate nephropathy in the Gunn rat: potential role of prostaglandins. We examined the potential role of prostaglandins in the development of analgesic nephropathy in the Gunn strain of rat. The homozygous Gunn rats have unconjugated hyperbilirubinemia due to the absence of glucuronyl transferase, leading to marked bilirubin deposition in renal medulla and papilla. These rats are also highly susceptible to develop papillary necrosis with analgesic administration. We used homozygous (jj) and phenotypically normal heterozygous (jJ) animals. Four groups of rats (n = 7) were studied: jj and jJ rats treated either with aspirin 300 mg/kg every other day or sham-treated. After one week, slices of cortex, outer and inner medulla from one kidney were incubated in buffer and prostaglandin synthesis was determined by radioimmunoassay. The other kidney was examined histologically. A marked corticomedullary gradient of prostaglandin synthesis was observed in all groups. PGE2 synthesis was significantly higher in outer medulla, but not cortex or inner medulla, of jj (38 +/- 6 ng/mg prot) than jJ rats (15 +/- 3) (p less than 0.01). Aspirin treatment reduced PGE2 synthesis in all regions, but outer medullary PGE2 remained higher in jj (18 +/- 3) than jJ rats (9 +/- 2) (p less than 0.05). PGF2 alpha was also significantly higher in the outer medulla of jj rats with and without aspirin administration (p less than 0.05). The changes in renal prostaglandin synthesis were accompanied by evidence of renal damage in aspirin-treated jj but not jJ rats as evidenced by: increased incidence and severity of hematuria (p less than 0.01); increased serum creatinine (p less than 0.05); and increase in outer medullary histopathologic lesions (p less than 0.005 compared to either sham-treated jj or aspirin-treated jJ). These results suggest that enhanced prostaglandin synthesis contributes to maintenance of renal function and morphological integrity, and that inhibition of prostaglandin synthesis may lead to pathological renal medullary lesions and deterioration of renal function." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:50:48+00:00" xmi:version="2.0">
+  <chunks charEnd="2087"/>
+  <entities type="Drug" id="aspirin" mention="aspirin" confidence="1.0" sourceSpanStart="625" sourceSpanEnd="632">
+    <properties key="name" value="aspirin"/>
+  </entities>
+  <entities type="Condition" id="analgesic-nephropathy" mention="analgesic nephropathy" confidence="1.0" sourceSpanStart="145" sourceSpanEnd="166">
+    <properties key="name" value="analgesic nephropathy"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="unconjugated-hyperbilirubinemia" mention="unconjugated hyperbilirubinemia" confidence="1.0" sourceSpanStart="224" sourceSpanEnd="255">
+    <properties key="name" value="unconjugated hyperbilirubinemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="papillary-necrosis" mention="papillary necrosis" confidence="1.0" sourceSpanStart="421" sourceSpanEnd="439">
+    <properties key="name" value="papillary necrosis"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hematuria" mention="hematuria" confidence="1.0" sourceSpanStart="1610" sourceSpanEnd="1619">
+    <properties key="name" value="hematuria"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="renal-damage" mention="renal damage" confidence="1.0" sourceSpanStart="1506" sourceSpanEnd="1518">
+    <properties key="name" value="renal damage"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="aspirin" targetType="Condition" targetId="papillary-necrosis" confidence="0.9" evidence="These rats are also highly susceptible to develop papillary necrosis with analgesic administration." sourceSpanStart="371" sourceSpanEnd="470"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="aspirin" targetType="Condition" targetId="renal-damage" confidence="0.95" evidence="The changes in renal prostaglandin synthesis were accompanied by evidence of renal damage in aspirin-treated jj but not jJ rats" sourceSpanStart="1429" sourceSpanEnd="1556"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="aspirin" targetType="Condition" targetId="hematuria" confidence="0.95" evidence="The changes in renal prostaglandin synthesis were accompanied by evidence of renal damage in aspirin-treated jj but not jJ rats as evidenced by: increased incidence and severity of hematuria" sourceSpanStart="1429" sourceSpanEnd="1619"/>
+</raw:RawExtractionResult>

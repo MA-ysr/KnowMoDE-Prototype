@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33539646.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33539646/" sourceSha256="cd08d19a02c7b04c46c9f19836edb43b33668383f52c412e95db11dc5388ebb7" sourceText="# PubMed 33539646: Risk factors for readmission with dehydration after ileostomy formation: A systematic review and meta-analysis.&#10;&#10;Colorectal disease : the official journal of the Association of Coloproctology of Great Britain and Ireland (2021), doi:10.1111/codi.15566&#10;&#10;AIM: Ileostomy formation is a commonly performed procedure with substantial associated morbidity. Patients with an ileostomy experience high rates of unplanned hospital readmission with dehydration, and such events have a long-term health and economic impact. Reports of the significant risk factors associated with these readmissions have been inconsistent. This study aimed to identify the significant risk factors for readmission with dehydration following ileostomy formation.&#10;&#10;METHOD: A systematic search was conducted using the Medline, Embase, Cochrane and CINAHL databases. All original research articles reporting risk factors for readmission with dehydration following ileostomy formation in adults were included. The primary outcome was the pooled risk ratio of clinically relevant variables potentially associated with dehydration-related readmission following ileostomy formation. The secondary outcome was the incidence of dehydration-related readmission.&#10;&#10;RESULTS: Ten studies (27 089 patients) were included. The incidences of 30- and 60-day readmission with dehydration were 5.0% (range 2.1%-13.2%) and 10.3% (range 7.3%-14.1%), respectively. Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission. A preoperative diagnosis of colorectal cancer was less likely to result in readmission with dehydration.&#10;&#10;CONCLUSION: Readmission with dehydration following ileostomy formation is a significant issue with several risk factors. Awareness of these risk factors will help inform the design of future studies addressing risk prediction, allow risk stratification of ileostomates and aid in the development of personalized prevention strategies.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:34+00:00" xmi:version="2.0">
+  <chunks charEnd="2167"/>
+  <entities type="ClinicalOutcome" id="readmission-with-dehydration-30-day" mention="30- and 60-day readmission with dehydration" confidence="0.95" sourceSpanStart="1315" sourceSpanEnd="1358">
+    <properties key="name" value="readmission with dehydration"/>
+    <properties key="timeWindow" value="30- and 60-day"/>
+  </entities>
+  <entities type="RiskFactor" id="age-greater-than-or-equal-to-65-years" mention="age ≥65 years" confidence="0.95" sourceSpanStart="1528" sourceSpanEnd="1541">
+    <properties key="name" value="age &gt;= 65 years"/>
+    <properties key="description" value="patient age of 65 years or older"/>
+  </entities>
+  <entities type="RiskFactor" id="body-mass-index-greater-than-or-equal-to-30-kg-m2" mention="body mass index ≥30 kg/m2" confidence="0.95" sourceSpanStart="1543" sourceSpanEnd="1568">
+    <properties key="name" value="body mass index &gt;= 30 kg/m2"/>
+    <properties key="description" value="body mass index of 30 kg/m2 or greater"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.98" sourceSpanStart="1571" sourceSpanEnd="1588">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1590" sourceSpanEnd="1602">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="renal-comorbidity" mention="renal comorbidity" confidence="0.95" sourceSpanStart="1604" sourceSpanEnd="1621">
+    <properties key="name" value="renal comorbidity"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="regular-diuretic-use" mention="regular diuretic use" confidence="0.95" sourceSpanStart="1623" sourceSpanEnd="1643">
+    <properties key="name" value="regular diuretic use"/>
+    <properties key="description" value="regular use of diuretics"/>
+  </entities>
+  <entities type="RiskFactor" id="ileal-pouch-anal-anastomosis-procedure" mention="ileal pouch-anal anastomosis procedure" confidence="0.95" sourceSpanStart="1645" sourceSpanEnd="1683">
+    <properties key="name" value="ileal pouch-anal anastomosis procedure"/>
+    <properties key="description" value="undergoing ileal pouch-anal anastomosis procedure"/>
+  </entities>
+  <entities type="RiskFactor" id="length-of-stay-after-index-admission" mention="length of stay after index admission" confidence="0.95" sourceSpanStart="1688" sourceSpanEnd="1724">
+    <properties key="name" value="length of stay after index admission"/>
+    <properties key="description" value="length of hospital stay after index admission"/>
+  </entities>
+  <entities type="Condition" id="colorectal-cancer" mention="colorectal cancer" confidence="0.95" sourceSpanStart="1754" sourceSpanEnd="1771">
+    <properties key="name" value="colorectal cancer"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="age-greater-than-or-equal-to-65-years" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="body-mass-index-greater-than-or-equal-to-30-kg-m2" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypertension" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="renal-comorbidity" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="regular-diuretic-use" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="ileal-pouch-anal-anastomosis-procedure" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="length-of-stay-after-index-admission" targetType="ClinicalOutcome" targetId="readmission-with-dehydration-30-day" confidence="0.9" evidence="Eight variables were found to be significantly associated with dehydration-related readmission: age ≥65 years, body mass index ≥30 kg/m2 , diabetes mellitus, hypertension, renal comorbidity, regular diuretic use, ileal pouch-anal anastomosis procedure and length of stay after index admission." sourceSpanStart="1432" sourceSpanEnd="1725"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  M1 model 3/5: Validation Policy of the diabetes readmission use case (conforms to xaikg::validation).
+
+  Each rule is a declarative model element (R3). T2 compiles the policy into an executable validator:
+  every rule becomes one constraint evaluated on each raw entity (scope ENTITY) or raw relation
+  (scope RELATION) produced by the LLM. The expression is OCL-style EOL over:
+     self      the raw entity / relation being checked (rawextraction metamodel)
+     schema    the target KGSchemaDefinition
+     config    this ValidationConfig (e.g. config.confidenceThreshold)
+     document  the RawExtractionResult containing self (sourceText, chunks, ...)
+     accepted  (RELATION rules only) the raw entities that passed every ERROR-level entity rule
+  ERROR rules reject the item (R4, recorded with the failing rule); WARNING rules only annotate it.
+-->
+<validation:ValidationConfig
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:validation="http://www.xaikg.org/1.0/validation"
+    name="DiabetesReadmissionValidation"
+    confidenceThreshold="0.7"
+    description="Schema conformance, span grounding, confidence, cardinality and provenance checks applied to every LLM extraction before it enters the graph.">
+  <targetSchema href="alt-schema.xmi#AlternativeKG"/>
+
+  <!-- ===================== entity rules ===================== -->
+  <rules name="entity_type_in_schema" ruleType="SCHEMA_CONFORMANCE" scope="ENTITY" severity="ERROR"
+      description="The entity type must be one of the declared KG concepts."
+      errorMessage="Entity type is not a concept of the KG schema">
+    <oclExpression>schema.concepts.exists(c | c.name = self.type)</oclExpression>
+  </rules>
+
+  <rules name="entity_has_id_and_mention" ruleType="SCHEMA_CONFORMANCE" scope="ENTITY" severity="ERROR"
+      description="Every entity needs a stable id and the verbatim mention it was extracted from."
+      errorMessage="Entity has no id or no mention">
+    <oclExpression>self.id.isDefined() and self.id.trim().length() > 0 and self.mention.isDefined() and self.mention.trim().length() > 0</oclExpression>
+  </rules>
+
+  <rules name="required_properties_present" ruleType="SCHEMA_CONFORMANCE" scope="ENTITY" severity="ERROR"
+      description="All properties marked isRequired in the concept must be present and non-empty."
+      errorMessage="A required property of the concept is missing">
+    <oclExpression>schema.concepts.select(c | c.name = self.type).forAll(c | c.properties.select(p | p.isRequired).forAll(p | self.properties.exists(q | q.key = p.name and q.value.isDefined() and q.value.trim().length() > 0)))</oclExpression>
+  </rules>
+
+  <rules name="declared_properties_only" ruleType="SCHEMA_CONFORMANCE" scope="ENTITY" severity="WARNING"
+      description="Properties not declared in the schema are dropped (the LLM invented an attribute)."
+      errorMessage="Entity carries a property that the concept does not declare">
+    <oclExpression>schema.concepts.select(c | c.name = self.type).forAll(c | self.properties.forAll(q | c.properties.exists(p | p.name = q.key)))</oclExpression>
+  </rules>
+
+  <rules name="mention_grounded_in_source" ruleType="HALLUCINATION_CHECK" scope="ENTITY" severity="ERROR"
+      description="The mention must occur verbatim (case-insensitive) in the source document at the reported span. LLM confidence is self-reported; span grounding is verifiable."
+      errorMessage="Entity mention is not found in the source text at the reported span (possible hallucination)">
+    <oclExpression>self.sourceSpanStart >= 0 and self.sourceSpanEnd > self.sourceSpanStart and self.sourceSpanEnd &lt;= document.sourceText.length() and document.sourceText.substring(self.sourceSpanStart, self.sourceSpanEnd).toLowerCase() = self.mention.toLowerCase()</oclExpression>
+  </rules>
+
+  <rules name="entity_confidence_above_threshold" ruleType="CONFIDENCE_CHECK" scope="ENTITY" severity="ERROR"
+      description="Low-confidence entities are rejected; the threshold is a model attribute, not a constant in code."
+      errorMessage="Entity confidence is below the policy threshold">
+    <oclExpression>self.confidence >= config.confidenceThreshold</oclExpression>
+  </rules>
+
+  <rules name="entity_provenance_complete" ruleType="PROVENANCE_CHECK" scope="ENTITY" severity="ERROR"
+      description="The extraction run must carry the provenance fields copied into every ProvenanceRecord (R7)."
+      errorMessage="Extraction result lacks provenance fields (document, model, prompt id or timestamp)">
+    <oclExpression>self.isDefined() and document.sourceDocument.isDefined() and document.llmModel.isDefined() and document.promptId.isDefined() and document.promptHash.isDefined() and document.extractionTimestamp.isDefined()</oclExpression>
+  </rules>
+
+  <!-- ===================== relation rules ===================== -->
+  <rules name="relation_type_and_endpoints_in_schema" ruleType="SCHEMA_CONFORMANCE" scope="RELATION" severity="ERROR"
+      description="A relation is valid only if the schema declares a relation with that name between exactly those endpoint types."
+      errorMessage="Relation type or its endpoint types are not declared in the KG schema">
+    <oclExpression>schema.relations.exists(r | r.name = self.type and r.source.name = self.sourceType and r.target.name = self.targetType)</oclExpression>
+  </rules>
+
+  <rules name="relation_endpoints_accepted" ruleType="SCHEMA_CONFORMANCE" scope="RELATION" severity="ERROR"
+      description="Both endpoints must be entities that passed every entity rule (no dangling relations)."
+      errorMessage="Relation refers to an entity that was rejected or never extracted">
+    <oclExpression>accepted.exists(e | e.type = self.sourceType and e.id = self.sourceId) and accepted.exists(e | e.type = self.targetType and e.id = self.targetId)</oclExpression>
+  </rules>
+
+  <rules name="relation_evidence_grounded_in_source" ruleType="HALLUCINATION_CHECK" scope="RELATION" severity="ERROR"
+      description="The evidence sentence must occur verbatim in the source document at the reported span."
+      errorMessage="Relation evidence is not found in the source text at the reported span (possible hallucination)">
+    <oclExpression>self.evidence.isDefined() and self.sourceSpanStart >= 0 and self.sourceSpanEnd > self.sourceSpanStart and self.sourceSpanEnd &lt;= document.sourceText.length() and document.sourceText.substring(self.sourceSpanStart, self.sourceSpanEnd).toLowerCase() = self.evidence.toLowerCase()</oclExpression>
+  </rules>
+
+  <rules name="relation_confidence_above_threshold" ruleType="CONFIDENCE_CHECK" scope="RELATION" severity="ERROR"
+      description="Low-confidence relations are rejected."
+      errorMessage="Relation confidence is below the policy threshold">
+    <oclExpression>self.confidence >= config.confidenceThreshold</oclExpression>
+  </rules>
+
+  <rules name="max_cardinality_respected" ruleType="CARDINALITY_CHECK" scope="RELATION" severity="WARNING"
+      description="For relations with a bounded maxCardinality, the number of relations of that type from the same source must not exceed it."
+      errorMessage="Relation exceeds the maximum cardinality declared in the schema">
+    <oclExpression>schema.relations.select(r | r.name = self.type and r.source.name = self.sourceType and r.maxCardinality &lt;> -1).forAll(r | document.relations.select(o | o.type = self.type and o.sourceType = self.sourceType and o.sourceId = self.sourceId).size() &lt;= r.maxCardinality)</oclExpression>
+  </rules>
+
+</validation:ValidationConfig>

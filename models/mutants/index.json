@@ -1,0 +1,156 @@
+[
+  {
+    "id": "M01_concept_without_property",
+    "family": "C1",
+    "expectedConstraint": "C1_ConceptHasProperty",
+    "mutatedFile": "kg-schema.xmi",
+    "description": "DrugClass loses its only property"
+  },
+  {
+    "id": "M02_negative_cardinality",
+    "family": "C1",
+    "expectedConstraint": "C1_CardinalitiesValid",
+    "mutatedFile": "kg-schema.xmi",
+    "description": "APPLIES_TO gets minCardinality -3"
+  },
+  {
+    "id": "M03_empty_query_template",
+    "family": "C1",
+    "expectedConstraint": "C1_PatternHasTemplate",
+    "mutatedFile": "kg-schema.xmi",
+    "description": "guideline_rules loses its Cypher template (parameters cleared and template emptied)"
+  },
+  {
+    "id": "M04_pattern_writes_graph",
+    "family": "C1",
+    "expectedConstraint": "C1_PatternReadsOnly",
+    "mutatedFile": "kg-schema.xmi",
+    "description": "protective_factors template mutates the graph"
+  },
+  {
+    "id": "M05_prompt_targets_undeclared_concept",
+    "family": "C2",
+    "expectedConstraint": "C2_PromptConceptsDeclaredInTargetSchema",
+    "mutatedFile": "extraction-pipeline.xmi",
+    "description": "drug_label task targets a concept that does not exist (dangling reference)"
+  },
+  {
+    "id": "M06_prompt_relation_without_endpoint",
+    "family": "C2",
+    "expectedConstraint": "C2_PromptRelationEndpointsAreTargeted",
+    "mutatedFile": "extraction-pipeline.xmi",
+    "description": "drug_label task drops DrugClass but still targets BELONGS_TO_CLASS"
+  },
+  {
+    "id": "M07_concept_extracted_by_no_task",
+    "family": "C2",
+    "expectedConstraint": "C2_EveryConceptTargetedBySomeTask",
+    "mutatedFile": "extraction-pipeline.xmi",
+    "description": "the only task that extracts DrugClass stops targeting it (with BELONGS_TO_CLASS and the few-shot items that use them): no task extracts DrugClass any more"
+  },
+  {
+    "id": "M08_threshold_out_of_range",
+    "family": "C3",
+    "expectedConstraint": "C3_ThresholdInRange",
+    "mutatedFile": "validation-policy.xmi",
+    "description": "confidence threshold 1.5"
+  },
+  {
+    "id": "M09_overlap_not_smaller_than_chunk",
+    "family": "C3",
+    "expectedConstraint": "C3_OverlapSmallerThanChunk",
+    "mutatedFile": "extraction-pipeline.xmi",
+    "description": "literature task overlap equals chunk size"
+  },
+  {
+    "id": "M10_rule_without_expression",
+    "family": "C3",
+    "expectedConstraint": "C3_RuleHasExpression",
+    "mutatedFile": "validation-policy.xmi",
+    "description": "entity_confidence_above_threshold loses its expression"
+  },
+  {
+    "id": "M11_no_provenance_rule",
+    "family": "C3",
+    "expectedConstraint": "C3_HasProvenanceRule",
+    "mutatedFile": "validation-policy.xmi",
+    "description": "the provenance rule is downgraded to WARNING (R7 no longer guaranteed)"
+  },
+  {
+    "id": "M12_uncovered_audience",
+    "family": "C4",
+    "expectedConstraint": "C4_AudienceCovered",
+    "mutatedFile": "explainability.xmi",
+    "description": "auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there"
+  },
+  {
+    "id": "M13_low_audience_gets_feature_attribution",
+    "family": "C4",
+    "expectedConstraint": "C4_LowAudienceNoFeatureAttribution",
+    "mutatedFile": "explainability.xmi",
+    "description": "patient (LOW) is added to the FEATURE_ATTRIBUTION type"
+  },
+  {
+    "id": "M14_low_audience_only_technical",
+    "family": "C4",
+    "expectedConstraint": "C4_LowAudienceGetsAccessibleExplanation",
+    "mutatedFile": "explainability.xmi",
+    "description": "patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there"
+  },
+  {
+    "id": "M15_decision_class_misses_audience",
+    "family": "C4",
+    "expectedConstraint": "C4_DecisionClassCoversEveryAudience",
+    "mutatedFile": "decision-bindings.xmi",
+    "description": "LowReadmissionRisk no longer offers anything to the patient"
+  },
+  {
+    "id": "M16_explanation_uses_undeclared_pattern",
+    "family": "C5",
+    "expectedConstraint": "C5_PatternsDeclaredInTargetSchema",
+    "mutatedFile": "explainability.xmi",
+    "description": "GuidelineCompliance references a query pattern that is not in the schema (dangling)"
+  },
+  {
+    "id": "M17_binding_feature_not_in_model",
+    "family": "C5",
+    "expectedConstraint": "C5_BindingFeatureExistsInModel",
+    "mutatedFile": "decision-bindings.xmi",
+    "description": "a feature binding refers to a feature the model does not have"
+  },
+  {
+    "id": "M18_binding_without_resolution",
+    "family": "C5",
+    "expectedConstraint": "C5_BindingHasResolution",
+    "mutatedFile": "decision-bindings.xmi",
+    "description": "number_emergency binding loses its entityName"
+  },
+  {
+    "id": "M19_configs_disagree_on_schema",
+    "family": "C5",
+    "expectedConstraint": "C5_AllConfigsShareOneSchema",
+    "mutatedFile": "validation-policy.xmi",
+    "description": "validation policy points to a different schema file"
+  },
+  {
+    "id": "M20_missing_trace_pattern",
+    "family": "C5",
+    "expectedConstraint": "C5_FullProvenanceAudienceHasTracePattern",
+    "mutatedFile": "explainability.xmi",
+    "description": "auditor requires full provenance but no trace pattern is bound"
+  },
+  {
+    "id": "M21_counterfactual_pattern_not_actionable",
+    "family": "C4",
+    "expectedConstraint": "C4_CounterfactualPatternsActionable",
+    "mutatedFile": "explainability.xmi",
+    "description": "ModifiableFactors (COUNTERFACTUAL) also runs causal_context, which may return non-modifiable risk factors"
+  },
+  {
+    "id": "M22_actionable_pattern_without_modifiability",
+    "family": "C1",
+    "expectedConstraint": "C1_ActionablePatternFiltersModifiable",
+    "mutatedFile": "kg-schema.xmi",
+    "description": "causal_context is declared actionableOnly without filtering on the modifiability property"
+  }
+]

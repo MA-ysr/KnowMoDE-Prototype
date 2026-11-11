@@ -1,0 +1,13 @@
+# PubMed 37772875: Outpatient Total Ankle Arthroplasty (TAA) as a Rising Alternative to Inpatient TAA: A Database Analysis.
+
+Foot & ankle international (2023), doi:10.1177/10711007231199090
+
+BACKGROUND: There is growing evidence that total ankle arthroplasty (TAA) can safely be performed as an outpatient procedure, with the benefit of decreased health care expenses and improved patient satisfaction. The purpose of our study was to compare readmissions, arthroplasty failures, infections, and annual trends between outpatient and inpatient TAA using a large publicly available for-fee database.
+
+METHODS: The PearlDiver Database was queried to identify outpatient and inpatient TAA-associated claims for several payer types from January 2010 to October 2021. Preoperative patient characteristics and annual trends were compared for inpatient and outpatient TAA. International Classification of Diseases, Ninth and Tenth Revision, diagnosis codes were used to identify infections and arthroplasty failures. Complications rates were compared after matching patients by age, gender, and the following comorbidities: diabetes, smoking, congestive heart failure (CHF), hypertension (HTN), obesity, and chronic kidney disease (CKD).
+
+RESULTS: A total of 12 274 patients were included in the final exact-matched analysis for complications, with 6137 patients in each group. Outpatients had a significantly lower rate of readmission within 90 days (2.6% vs 4.0%, P < .001), arthroplasty failure (4.1% vs 6.9%, P < .001), and infection (2.4% vs 3.1%, P = .015). Among database enrollees, outpatient TAA has risen in proportion to inpatient TAA from 2019 to 2021.
+
+CONCLUSION: Outpatient TAA had lower rates of risk-adjusted readmission, arthroplasty failure, and infection compared to inpatient TAA.
+
+LEVEL OF EVIDENCE: Level III, retrospective comparative database study.

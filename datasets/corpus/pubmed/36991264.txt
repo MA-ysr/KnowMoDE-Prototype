@@ -1,0 +1,11 @@
+# PubMed 36991264: High preoperative HbA1c does not affect early or late complication rates after bariatric surgery.
+
+Surgical endoscopy (2023), doi:10.1007/s00464-023-10009-w
+
+BACKGROUND: Preoperative HbA1c has been associated with an increased incidence of postoperative morbidity and mortality after abdominal and cardiovascular surgery. The literature on bariatric surgery is inconclusive and guidelines recommend postponement of surgery when HbA1c is above an arbitrary threshold (≥ 8.5%). In this study, we sought to understand the impact of preoperative HbA1c on early and late postoperative complications.
+
+METHODS: We performed a retrospective analysis of prospectively collected data on obese patients with diabetes who underwent laparoscopic bariatric surgery. Patients were categorized into three groups according to their preoperative HbA1c level: < 6.5% (group 1), 6.5-8.4% (group 2) and ≥ 8.5% (group 3). Primary outcomes were early and late postoperative complications (< and > 30 days, respectively) that were differentiated based on severity (major/minor). Secondary outcomes were length of stay (LOS), duration of surgery, and rate of readmission.
+
+RESULTS: In total, 6798 patients underwent laparoscopic bariatric surgery from 2006 to 2016, of which 1021 (15%) patients had Type 2 Diabetes (T2D). Complete data with a median follow-up of 45 months (3-120) were available for 914 patients with HbA1c < 6.5% (n = 227, 24.9%), 6.5-8.4% (n = 532, 58.5%) and ≥ 8.5% (n = 152, 16.6%). Early major surgical complication rate was similar across the groups ranging from 2.6 to 3.3%. No associations between high preoperative HbA1c and late complications-medical as well as surgical-was observed. Groups 2 and 3 had statistically significant more pronounced inflammatory status. LOS (1.8-1.9 days), readmission rates (1.7-2.0%) and surgical time was similar across the three groups.
+
+CONCLUSION: Elevated HbA1c is not associated with more early or late postoperative complications, longer LOS, longer surgical time or higher rates of readmission.

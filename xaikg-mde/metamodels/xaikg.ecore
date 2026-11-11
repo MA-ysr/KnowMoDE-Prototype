@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  XAI-KG metamodel (M2). Paper Sec. 4.2: four packages (kgschema, llmorchestration, validation,
+  explainability) plus the `decision` package (decision bindings, closes R5).
+
+  Conventions
+  - Elements that other models reference carry an ID attribute (iD="true"), so cross-file XMI
+    references read  href="kg-schema.xmi#Drug"  instead of index paths.
+  - Provenance of extracted facts is NOT modelled here: it lives in validatedkg.ecore
+    (ProvenanceRecord), because provenance is attached to runtime data (M0 lifted to a model),
+    not to the design-time schema.
+-->
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="xaikg" nsURI="http://www.xaikg.org/1.0" nsPrefix="xaikg">
+
+  <!-- ================================================================== -->
+  <!-- Package 1: KG Schema  (R1 single source of schema truth)             -->
+  <!-- ================================================================== -->
+  <eSubpackages name="kgschema" nsURI="http://www.xaikg.org/1.0/kgschema" nsPrefix="kgschema">
+
+    <eClassifiers xsi:type="ecore:EEnum" name="PropertyDataType">
+      <eLiterals name="STRING" value="0"/>
+      <eLiterals name="INTEGER" value="1"/>
+      <eLiterals name="FLOAT" value="2"/>
+      <eLiterals name="BOOLEAN" value="3"/>
+      <eLiterals name="DATE" value="4"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="KGSchemaDefinition">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="nsURI"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="concepts" upperBound="-1"
+          eType="#//kgschema/KGConcept" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="relations" upperBound="-1"
+          eType="#//kgschema/KGRelation" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="queryPatterns" upperBound="-1"
+          eType="#//kgschema/KGQueryPattern" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="KGConcept">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="uri"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="properties" upperBound="-1"
+          eType="#//kgschema/KGProperty" containment="true"/>
+      <!-- Controlled vocabulary for the entities that explanations must find (the "canonicalize" step
+           of Extract-Define-Canonicalize, declared in the schema): extracted mentions matching a
+           canonical name, an alias or the pattern are normalised to the canonical name by T2. -->
+      <eStructuralFeatures xsi:type="ecore:EReference" name="canonicalEntities" upperBound="-1"
+          eType="#//kgschema/CanonicalEntity" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="CanonicalEntity">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="aliases" upperBound="-1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- optional case-insensitive regular expression matched against the whole identifying value -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pattern"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- Declared by domain experts, never extracted by the LLM: the entity is something a patient or a
+           clinician can act upon (a care process, a medicine). T2 attaches the flag to the validated
+           entity and T5 writes it as the node property _modifiable; actionable query patterns filter on it. -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isModifiable"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
+      <!-- Wording of the entity for audiences whose presentation budget requires plain language
+           (written to the graph as _plain_label; templates use it instead of the clinical name). -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="plainLabel"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="KGProperty">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dataType"
+          eType="#//kgschema/PropertyDataType" defaultValueLiteral="STRING"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isRequired"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <!-- Paper Sec. 4.2: explainability promoted to a first-class schema attribute. -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="isExplainable"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    </eClassifiers>
+
+    <!-- A relation has exactly one source and one target concept. A relation NAME may be shared
+         by several KGRelation elements with different endpoints (e.g. INCREASES_RISK_OF from
+         Condition, RiskFactor and Drug); the ID attribute `id` is what stays unique. -->
+    <eClassifiers xsi:type="ecore:EClass" name="KGRelation">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="semantics"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="minCardinality"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+      <!-- -1 = unbounded -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxCardinality"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="-1"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+          eType="#//kgschema/KGConcept"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+          eType="#//kgschema/KGConcept"/>
+    </eClassifiers>
+
+    <!-- Reified, parameterised graph query executed by the explanation service (paper Sec. 4.2). -->
+    <eClassifiers xsi:type="ecore:EClass" name="KGQueryPattern">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="cypherTemplate"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- Names of the $parameters the template expects (bound by the explanation service). -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="parameters" upperBound="-1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- The pattern returns only advice about modifiable entities (CanonicalEntity.isModifiable,
+           node property _modifiable). Required for the patterns of COUNTERFACTUAL explanation types (C4);
+           an actionable pattern must filter on the modifiability property (C1). -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="actionableOnly"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
+      <!-- No back-reference to ExplanationType: the schema package must not depend on the
+           explainability package (the draft's linkedExplanationType created a package cycle).
+           "Which explanation types use this pattern" is a query over the Explainability model. -->
+    </eClassifiers>
+  </eSubpackages>
+
+  <!-- ================================================================== -->
+  <!-- Package 2: LLM Orchestration  (R2 schema evolution, prompt consistency) -->
+  <!-- ================================================================== -->
+  <eSubpackages name="llmorchestration" nsURI="http://www.xaikg.org/1.0/llm" nsPrefix="llm">
+
+    <eClassifiers xsi:type="ecore:EEnum" name="SplitterType">
+      <eLiterals name="SENTENCE" value="0"/>
+      <eLiterals name="PARAGRAPH" value="1"/>
+      <eLiterals name="TOKEN" value="2"/>
+      <eLiterals name="FIXED_SIZE" value="3"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EEnum" name="OutputFormat">
+      <eLiterals name="JSON" value="0"/>
+      <eLiterals name="JSON_LD" value="1"/>
+      <eLiterals name="TURTLE" value="2"/>
+      <eLiterals name="CSV" value="3"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="LLMPipelineConfig">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetSchema" lowerBound="1"
+          eType="#//kgschema/KGSchemaDefinition"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="extractionTasks" upperBound="-1"
+          eType="#//llmorchestration/ExtractionTask" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ExtractionTask">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- "provider/model", e.g. gemini/gemini-2.5-flash or ollama/qwen2.5:14b-instruct -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="llmModel"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="temperature"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" defaultValueLiteral="0.1"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxTokens"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="4096"/>
+      <!-- Folder (relative to datasets/) whose documents this task processes. -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="sourceCollection"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="promptTemplate" lowerBound="1"
+          eType="#//llmorchestration/PromptTemplate" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="chunkingStrategy" lowerBound="1"
+          eType="#//llmorchestration/ChunkingStrategy" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="PromptTemplate">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="systemInstruction"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="outputFormat"
+          eType="#//llmorchestration/OutputFormat" defaultValueLiteral="JSON"/>
+      <!-- Typed links to the schema: the reason schema-prompt drift cannot happen (P1). -->
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetConcepts" upperBound="-1"
+          eType="#//kgschema/KGConcept"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetRelations" upperBound="-1"
+          eType="#//kgschema/KGRelation"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="fewShotExamples" upperBound="-1"
+          eType="#//llmorchestration/FewShotExample" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="FewShotExample">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="inputText"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="expectedOutput"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ChunkingStrategy">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="chunkSize"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="2000"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="overlap"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="200"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="splitter"
+          eType="#//llmorchestration/SplitterType" defaultValueLiteral="PARAGRAPH"/>
+    </eClassifiers>
+  </eSubpackages>
+
+  <!-- ================================================================== -->
+  <!-- Package 3: Validation  (R3 declarative rules, R4 filtering as a step) -->
+  <!-- ================================================================== -->
+  <eSubpackages name="validation" nsURI="http://www.xaikg.org/1.0/validation" nsPrefix="validation">
+
+    <eClassifiers xsi:type="ecore:EEnum" name="ValidationSeverity">
+      <eLiterals name="ERROR" value="0"/>
+      <eLiterals name="WARNING" value="1"/>
+      <eLiterals name="INFO" value="2"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EEnum" name="ValidationRuleType">
+      <eLiterals name="SCHEMA_CONFORMANCE" value="0"/>
+      <eLiterals name="HALLUCINATION_CHECK" value="1"/>
+      <eLiterals name="CARDINALITY_CHECK" value="2"/>
+      <eLiterals name="PROVENANCE_CHECK" value="3"/>
+      <eLiterals name="CONFIDENCE_CHECK" value="4"/>
+    </eClassifiers>
+
+    <!-- What a rule is evaluated on: each raw entity, or each raw relation. -->
+    <eClassifiers xsi:type="ecore:EEnum" name="RuleScope">
+      <eLiterals name="ENTITY" value="0"/>
+      <eLiterals name="RELATION" value="1"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ValidationConfig">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="confidenceThreshold"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" defaultValueLiteral="0.7"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetSchema" lowerBound="1"
+          eType="#//kgschema/KGSchemaDefinition"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
+          eType="#//validation/ValidationRule" containment="true"/>
+    </eClassifiers>
+
+    <!-- A declarative rule. `oclExpression` is an OCL-style (EOL) boolean expression over `self`
+         (a raw entity or relation) with the variables `schema`, `config` and, for RELATION rules,
+         `accepted` (entities that passed all ERROR rules). T2 compiles it into the validator. -->
+    <eClassifiers xsi:type="ecore:EClass" name="ValidationRule">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="ruleType"
+          eType="#//validation/ValidationRuleType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="scope"
+          eType="#//validation/RuleScope" defaultValueLiteral="ENTITY"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="oclExpression"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="severity"
+          eType="#//validation/ValidationSeverity" defaultValueLiteral="ERROR"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="errorMessage"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+  </eSubpackages>
+
+  <!-- ================================================================== -->
+  <!-- Package 4: Explainability  (R5 explicit contract, R6 audience coverage) -->
+  <!-- ================================================================== -->
+  <eSubpackages name="explainability" nsURI="http://www.xaikg.org/1.0/explainability" nsPrefix="explainability">
+
+    <eClassifiers xsi:type="ecore:EEnum" name="ExplanationCategory">
+      <eLiterals name="CONTRASTIVE" value="0"/>
+      <eLiterals name="CAUSAL" value="1"/>
+      <eLiterals name="EXAMPLE_BASED" value="2"/>
+      <eLiterals name="COUNTERFACTUAL" value="3"/>
+      <eLiterals name="RULE_BASED" value="4"/>
+      <eLiterals name="FEATURE_ATTRIBUTION" value="5"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EEnum" name="TechnicalLevel">
+      <eLiterals name="LOW" value="0"/>
+      <eLiterals name="MEDIUM" value="1"/>
+      <eLiterals name="HIGH" value="2"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EEnum" name="TemplateFormat">
+      <eLiterals name="TEXT" value="0"/>
+      <eLiterals name="MARKDOWN" value="1"/>
+      <eLiterals name="HTML" value="2"/>
+      <eLiterals name="JSON" value="3"/>
+    </eClassifiers>
+
+    <!-- How the presentation budget (maxFacts) is spent on the candidate facts of an explanation:
+         ROUND_ROBIN gives one fact to each attributed factor in attribution order (then to the facts
+         of each query pattern that are not tied to an attributed factor) before giving a second one;
+         IN_ORDER keeps the facts in the order the query patterns return them. -->
+    <eClassifiers xsi:type="ecore:EEnum" name="FactAllocation">
+      <eLiterals name="ROUND_ROBIN" value="0"/>
+      <eLiterals name="IN_ORDER" value="1"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ExplainabilityConfig">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetSchema" lowerBound="1"
+          eType="#//kgschema/KGSchemaDefinition"/>
+      <!-- Query pattern behind the generated /trace endpoint (D7): traceability is cross-cutting,
+           so it is bound at configuration level, not as an explanation type. -->
+      <eStructuralFeatures xsi:type="ecore:EReference" name="traceQueryPattern"
+          eType="#//kgschema/KGQueryPattern"/>
+      <!-- Maximum number of candidate facts a query pattern returns ($limit) before the audience's
+           presentation budget selects among them; the facts available per attributed factor are
+           counted on these candidates, so an omitted fact is reported as omitted, not as absent. -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="retrievalLimit"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="100"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="audiences" upperBound="-1"
+          eType="#//explainability/Audience" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="explanationTypes" upperBound="-1"
+          eType="#//explainability/ExplanationType" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="templates" upperBound="-1"
+          eType="#//explainability/ExplanationTemplate" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="Audience">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="role" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="technicalLevel"
+          eType="#//explainability/TechnicalLevel" defaultValueLiteral="MEDIUM"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="informationNeeds"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- Audiences flagged here get a generated /trace endpoint (R8). -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="requiresFullProvenance"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="presentationBudget" lowerBound="1"
+          eType="#//explainability/PresentationBudget" containment="true"/>
+    </eClassifiers>
+
+    <!-- Presentation budget (paper R5/R6): how much, and in what register, an audience can absorb. -->
+    <eClassifiers xsi:type="ecore:EClass" name="PresentationBudget">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxFacts"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="5"/>
+      <!-- 0 = unlimited -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxWords"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" defaultValueLiteral="0"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowCodes"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="plainLanguage"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean" defaultValueLiteral="false"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="allocation"
+          eType="#//explainability/FactAllocation" defaultValueLiteral="ROUND_ROBIN"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ExplanationType">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="category"
+          eType="#//explainability/ExplanationCategory"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="queryPatterns" lowerBound="1" upperBound="-1"
+          eType="#//kgschema/KGQueryPattern"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="audiences" lowerBound="1" upperBound="-1"
+          eType="#//explainability/Audience"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="template" lowerBound="1"
+          eType="#//explainability/ExplanationTemplate"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="ExplanationTemplate">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="format"
+          eType="#//explainability/TemplateFormat" defaultValueLiteral="TEXT"/>
+      <!-- Jinja2 body rendered by the explanation service with `facts`, `decision`, `audience`. -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="templatePattern"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+  </eSubpackages>
+
+  <!-- ================================================================== -->
+  <!-- Package 5: Decision bindings  (R5: binds AI decision classes to the contract; -->
+  <!-- maps the black-box model's features onto KG concepts for grounding)   -->
+  <!-- ================================================================== -->
+  <eSubpackages name="decision" nsURI="http://www.xaikg.org/1.0/decision" nsPrefix="decision">
+
+    <eClassifiers xsi:type="ecore:EEnum" name="AttributionMethod">
+      <eLiterals name="SHAP" value="0"/>
+      <eLiterals name="LIME" value="1"/>
+      <eLiterals name="INTRINSIC" value="2"/>
+      <eLiterals name="NONE" value="3"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EEnum" name="BindingKind">
+      <!-- feature value selects a KG entity by name (e.g. medication -> Drug) -->
+      <eLiterals name="ENTITY" value="0"/>
+      <!-- categorical lab result mapped by valueMap to a LabTest level -->
+      <eLiterals name="LAB_LEVEL" value="1"/>
+      <!-- numeric/administrative feature mapped to a RiskFactor -->
+      <eLiterals name="RISK_FACTOR" value="2"/>
+      <!-- ICD-9 code mapped by range table to a Condition -->
+      <eLiterals name="ICD9_GROUP" value="3"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="DecisionBindingConfig">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="targetSchema" lowerBound="1"
+          eType="#//kgschema/KGSchemaDefinition"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="explainability" lowerBound="1"
+          eType="#//explainability/ExplainabilityConfig"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="aiModel" lowerBound="1"
+          eType="#//decision/AIModelSpec" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="decisionClasses" upperBound="-1"
+          eType="#//decision/DecisionClass" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="featureBindings" upperBound="-1"
+          eType="#//decision/FeatureBinding" containment="true"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="AIModelSpec">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="version"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="taskType"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="trainingDataset"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributionMethod"
+          eType="#//decision/AttributionMethod" defaultValueLiteral="SHAP"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="featureNames" upperBound="-1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+
+    <!-- The explanation contract of R5: a decision class is bound to explanation types. -->
+    <eClassifiers xsi:type="ecore:EClass" name="DecisionClass">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="label"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="positive"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <!-- name of the ClinicalOutcome (or other concept instance) this decision predicts; bound to the
+           $outcome parameter of the query patterns (the bridge between the decision and the KG) -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="predictedOutcome"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- probability threshold above which this class is the decision (positive classes only) -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="threshold"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble" defaultValueLiteral="0.5"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="explanationTypes" lowerBound="1" upperBound="-1"
+          eType="#//explainability/ExplanationType"/>
+    </eClassifiers>
+
+    <eClassifiers xsi:type="ecore:EClass" name="FeatureBinding">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="featureName" iD="true"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="description"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="kind"
+          eType="#//decision/BindingKind" defaultValueLiteral="ENTITY"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="concept" lowerBound="1"
+          eType="#//kgschema/KGConcept"/>
+      <!-- ENTITY / RISK_FACTOR: name of the KG entity the feature stands for -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="entityName"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- LAB_LEVEL / ICD9_GROUP: JSON object mapping feature values (or code ranges) to entity names -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="valueMap"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <!-- Python-like condition on `value` deciding whether the binding is active for a decision -->
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="activeWhen"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+  </eSubpackages>
+
+</ecore:EPackage>

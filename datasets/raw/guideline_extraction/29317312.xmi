@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29317312.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29317312/" sourceSha256="ae2346177b4507690f63e3f07ee4fe94ca1282bb1187e2b2be40de97cb902f11" sourceText="# PubMed 29317312: Perioperative management of adult diabetic patients. The role of the diabetologist.&#10;&#10;Anaesthesia, critical care &amp; pain medicine (2018), doi:10.1016/j.accpm.2017.10.009&#10;&#10;A patient should be referred to a diabetologist perioperatively in several circumstances: preoperative recognition of a previously unknown diabetes or detection of glycaemic imbalance (HbA1c &lt;5% or &gt;8%); during hospitalisation, recognition of a previously unknown diabetes, persisting glycaemic imbalance despite treatment or difficulty resuming previously used chronic treatment; postoperatively and after discharge from hospital, for all diabetic patients in whom HbA1c is &gt;8%.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:56:28+00:00" xmi:version="2.0">
+  <chunks charEnd="668"/>
+  <entities type="Recommendation" id="diabetologist-referral-preoperative" mention="A patient should be referred to a diabetologist perioperatively in several circumstances: preoperative recognition of a previously unknown diabetes or detection of glycaemic imbalance (HbA1c &lt;5% or &gt;8%)" confidence="0.92" sourceSpanStart="188" sourceSpanEnd="390">
+    <properties key="statement" value="refer patients to a diabetologist preoperatively if previously unknown diabetes or glycaemic imbalance (HbA1c &lt;5% or &gt;8%) is detected"/>
+    <properties key="source" value="Anaesthesia, critical care &amp; pain medicine"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="327" sourceSpanEnd="335">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-lt-5-or-gt-8" mention="HbA1c &lt;5% or &gt;8%" confidence="0.9" sourceSpanStart="373" sourceSpanEnd="389">
+    <properties key="name" value="HbA1c &lt;5% or &gt;8%"/>
+    <properties key="abnormalThreshold" value="&lt;5% or &gt;8%"/>
+  </entities>
+  <entities type="Recommendation" id="diabetologist-referral-hospitalisation" mention="during hospitalisation, recognition of a previously unknown diabetes, persisting glycaemic imbalance despite treatment or difficulty resuming previously used chronic treatment" confidence="0.91" sourceSpanStart="392" sourceSpanEnd="567">
+    <properties key="statement" value="refer patients to a diabetologist during hospitalisation for recognition of unknown diabetes, persisting glycaemic imbalance, or difficulty resuming chronic treatment"/>
+    <properties key="source" value="Anaesthesia, critical care &amp; pain medicine"/>
+  </entities>
+  <entities type="Recommendation" id="diabetologist-referral-postoperative-discharge" mention="postoperatively and after discharge from hospital, for all diabetic patients in whom HbA1c is &gt;8%" confidence="0.92" sourceSpanStart="569" sourceSpanEnd="666">
+    <properties key="statement" value="refer diabetic patients to a diabetologist postoperatively and after discharge if HbA1c is &gt;8%"/>
+    <properties key="source" value="Anaesthesia, critical care &amp; pain medicine"/>
+  </entities>
+  <entities type="LabTest" id="hba1c-gt-8" mention="HbA1c is &gt;8%" confidence="0.95" sourceSpanStart="654" sourceSpanEnd="666">
+    <properties key="name" value="HbA1c &gt;8%"/>
+    <properties key="abnormalThreshold" value="&gt;8%"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="diabetologist-referral-preoperative" targetType="Condition" targetId="diabetes" confidence="0.9" evidence="A patient should be referred to a diabetologist perioperatively in several circumstances: preoperative recognition of a previously unknown diabetes or detection of glycaemic imbalance (HbA1c &lt;5% or &gt;8%)" sourceSpanStart="188" sourceSpanEnd="390"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetologist-referral-preoperative" targetType="LabTest" targetId="hba1c-lt-5-or-gt-8" confidence="0.9" evidence="A patient should be referred to a diabetologist perioperatively in several circumstances: preoperative recognition of a previously unknown diabetes or detection of glycaemic imbalance (HbA1c &lt;5% or &gt;8%)" sourceSpanStart="188" sourceSpanEnd="390"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="diabetologist-referral-hospitalisation" targetType="Condition" targetId="diabetes" confidence="0.9" evidence="during hospitalisation, recognition of a previously unknown diabetes, persisting glycaemic imbalance despite treatment or difficulty resuming previously used chronic treatment" sourceSpanStart="392" sourceSpanEnd="567"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="diabetologist-referral-postoperative-discharge" targetType="Condition" targetId="diabetes" confidence="0.92" evidence="postoperatively and after discharge from hospital, for all diabetic patients in whom HbA1c is &gt;8%" sourceSpanStart="569" sourceSpanEnd="666"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="diabetologist-referral-postoperative-discharge" targetType="LabTest" targetId="hba1c-gt-8" confidence="0.92" evidence="postoperatively and after discharge from hospital, for all diabetic patients in whom HbA1c is &gt;8%" sourceSpanStart="569" sourceSpanEnd="666"/>
+</raw:RawExtractionResult>

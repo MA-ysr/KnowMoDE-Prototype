@@ -1,0 +1,11 @@
+# PubMed 38365207: Perioperative Insulin Pump Therapy Decreases Readmission Risk and Improves Outcomes in Patients with Diabetes.
+
+Experimental and clinical endocrinology & diabetes : official journal, German Society of Endocrinology [and] German Diabetes Association (2024), doi:10.1055/a-2218-4574
+
+OBJECTIVE: To evaluate the impact of temporary insulin pump use during hospitalization on glycemia, postoperative complications, and cost/utilization in perioperative patients with diabetes.
+
+METHODS: Patients (n=159) with type 2 diabetes and hospitalized for elective surgery were recruited from three hospitals. Subjects were categorized into the insulin pump group and the multiple daily subcutaneous insulin injection group according to their treatment therapy. Data were collected at admission, discharge, and 3 months post-discharge.
+
+RESULTS: Subjects in the CSII group who were still on insulin therapy transitioned from CSII to MDII; however, their daily insulin dosages were lower than those in the MDII group (15.31±10.98 U/d vs. 23.48±17.02 U/d, P=0.015) after discharge. In terms of medical costs, the CSII group had significantly higher hospitalization costs than the MDII group (112.36±103.43 thousand RMB vs. 82.65±77.98 thousand RMB, P=0.043). After 3 months, the CSII group had significantly lower outpatient costs than the MDII group (3.17±0.94 thousand RMB vs. 3.98±1.76 thousand RMB, P ˂ 0.001). In the MDII group, 10 patients reported severe postoperative complications requiring re-hospitalization; there were no similar reports in the CSII group.
+
+CONCLUSION: Temporary use of insulin pump therapy for perioperative patients with diabetes results in a reduction in blood glucose and blood glucose fluctuation during hospitalization, HbA1c, and the risk of postoperative complication and readmission, thus significantly decreasing costs in this complex patient cohort. Further work is needed to better understand indications for utilizing pump therapy based on diabetes phenotype and the complexity of planned surgical intervention.

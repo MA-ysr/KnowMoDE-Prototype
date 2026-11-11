@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="ASCII"?>
+<graphschema:GraphSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graphschema="http://www.xaikg.org/1.0/graphschema" databaseName="DiabetesReadmissionKG" sourceSchema="DiabetesReadmissionKG">
+  <nodeLabels name="Drug" description="A medication, identified by its generic (INN) name, e.g. metformin, insulin glargine, glipizide." sourceConcept="Drug">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="drugClass" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="rxnormCui" dataType="STRING"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="DrugClass" description="A pharmacological class of medications, e.g. sulfonylureas, thiazolidinediones, insulins." sourceConcept="DrugClass">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="Condition" description="A disease, disorder, symptom or clinical state, e.g. hypoglycemia, heart failure, chronic kidney disease, poor glycemic control." sourceConcept="Condition">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="icd9Range" dataType="STRING"/>
+    <properties name="category" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="LabTest" description="A laboratory measurement with a clinically meaningful level, e.g. 'HbA1c > 8%', 'serum glucose > 300 mg/dL'." sourceConcept="LabTest">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="abnormalThreshold" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="RiskFactor" description="A patient-level or utilisation factor that changes the probability of a clinical outcome, e.g. prior inpatient admissions, number of emergency visits, insulin dose change, discharge to a nursing facility." sourceConcept="RiskFactor">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="description" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="ClinicalOutcome" description="An outcome that risk factors, conditions and drugs may influence, e.g. hospital readmission within 30 days, mortality, hypoglycemic emergency." sourceConcept="ClinicalOutcome">
+    <properties name="name" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="timeWindow" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="Recommendation" description="A clinical guideline statement or care recommendation, e.g. 'measure HbA1c in hospitalized patients without a result in the previous 3 months'." sourceConcept="Recommendation">
+    <properties name="statement" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="source" dataType="STRING" isRequired="true" isIndexed="true" isExplainable="true"/>
+    <properties name="strength" dataType="STRING" isIndexed="true" isExplainable="true"/>
+    <properties name="_key" dataType="STRING" isRequired="true" isIndexed="true"/>
+  </nodeLabels>
+  <nodeLabels name="SourceDocument" description="A document of the corpus from which facts were extracted (provenance)" sourceConcept="(provenance)">
+    <properties name="id" dataType="STRING" isRequired="true" isIndexed="true"/>
+    <properties name="uri" dataType="STRING"/>
+    <properties name="sha256" dataType="STRING"/>
+    <properties name="licence" dataType="STRING"/>
+    <properties name="collection" dataType="STRING"/>
+  </nodeLabels>
+  <nodeLabels name="ExtractionRun" description="One LLM extraction run: prompt version, model, validation policy (provenance)" sourceConcept="(provenance)">
+    <properties name="runId" dataType="STRING" isRequired="true" isIndexed="true"/>
+    <properties name="promptId" dataType="STRING" isIndexed="true"/>
+    <properties name="promptHash" dataType="STRING"/>
+    <properties name="extractionTask" dataType="STRING"/>
+    <properties name="llmModel" dataType="STRING"/>
+    <properties name="validationPolicyVersion" dataType="STRING"/>
+    <properties name="timestamp" dataType="STRING"/>
+  </nodeLabels>
+  <relationshipTypes name="TREATS" sourceLabel="Drug" targetLabel="Condition" semantics="the drug is indicated for (treats, controls or prevents) the condition" sourceRelationId="TREATS"/>
+  <relationshipTypes name="MAY_CAUSE" sourceLabel="Drug" targetLabel="Condition" semantics="the drug can cause the condition as an adverse effect" sourceRelationId="MAY_CAUSE"/>
+  <relationshipTypes name="CONTRAINDICATED_IN" sourceLabel="Drug" targetLabel="Condition" semantics="the drug must not be used, or used with caution, in patients with the condition" sourceRelationId="CONTRAINDICATED_IN"/>
+  <relationshipTypes name="INTERACTS_WITH" sourceLabel="Drug" targetLabel="Drug" semantics="co-administration of the two drugs changes the effect or risk of one of them" sourceRelationId="INTERACTS_WITH"/>
+  <relationshipTypes name="BELONGS_TO_CLASS" sourceLabel="Drug" targetLabel="DrugClass" semantics="the drug is a member of the pharmacological class" maxCardinality="1" sourceRelationId="BELONGS_TO_CLASS"/>
+  <relationshipTypes name="INCREASES_RISK_OF" sourceLabel="Condition" targetLabel="ClinicalOutcome" semantics="having the condition raises the probability of the outcome" sourceRelationId="INCREASES_RISK_OF_Condition"/>
+  <relationshipTypes name="INCREASES_RISK_OF" sourceLabel="RiskFactor" targetLabel="ClinicalOutcome" semantics="the factor raises the probability of the outcome" sourceRelationId="INCREASES_RISK_OF_RiskFactor"/>
+  <relationshipTypes name="INCREASES_RISK_OF" sourceLabel="Drug" targetLabel="ClinicalOutcome" semantics="use of the drug is associated with a higher probability of the outcome" sourceRelationId="INCREASES_RISK_OF_Drug"/>
+  <relationshipTypes name="REDUCES_RISK_OF" sourceLabel="RiskFactor" targetLabel="ClinicalOutcome" semantics="the factor (often a care-process factor such as a test being performed) lowers the probability of the outcome" sourceRelationId="REDUCES_RISK_OF_RiskFactor"/>
+  <relationshipTypes name="REDUCES_RISK_OF" sourceLabel="Drug" targetLabel="ClinicalOutcome" semantics="use of the drug is associated with a lower probability of the outcome" sourceRelationId="REDUCES_RISK_OF_Drug"/>
+  <relationshipTypes name="INDICATES" sourceLabel="LabTest" targetLabel="Condition" semantics="the test level is a marker of the condition, e.g. HbA1c > 8% indicates poor glycemic control" sourceRelationId="INDICATES"/>
+  <relationshipTypes name="APPLIES_TO" sourceLabel="Recommendation" targetLabel="Condition" semantics="the recommendation concerns patients with the condition" minCardinality="1" sourceRelationId="APPLIES_TO"/>
+  <relationshipTypes name="RECOMMENDS" sourceLabel="Recommendation" targetLabel="LabTest" semantics="the recommendation advises performing or targeting the test level" sourceRelationId="RECOMMENDS_LabTest"/>
+  <relationshipTypes name="RECOMMENDS" sourceLabel="Recommendation" targetLabel="Drug" semantics="the recommendation advises using the drug" sourceRelationId="RECOMMENDS_Drug"/>
+  <relationshipTypes name="RECOMMENDS" sourceLabel="Recommendation" targetLabel="RiskFactor" semantics="the recommendation advises a care process or a change of a modifiable factor, e.g. diabetes education, follow-up after discharge, medication reconciliation" sourceRelationId="RECOMMENDS_RiskFactor"/>
+  <relationshipTypes name="EXTRACTED_FROM" sourceLabel="(any domain label)" targetLabel="SourceDocument" semantics="entity was extracted from this document" minCardinality="1" sourceRelationId="(provenance)"/>
+  <relationshipTypes name="PRODUCED_BY" sourceLabel="(any domain label)" targetLabel="ExtractionRun" semantics="entity was produced by this extraction run" minCardinality="1" sourceRelationId="(provenance)"/>
+  <constraints name="drug_name_unique" label="Drug" property="name"/>
+  <constraints name="drug_key_unique" label="Drug" property="_key"/>
+  <constraints name="drugclass_name_unique" label="DrugClass" property="name"/>
+  <constraints name="drugclass_key_unique" label="DrugClass" property="_key"/>
+  <constraints name="condition_name_unique" label="Condition" property="name"/>
+  <constraints name="condition_key_unique" label="Condition" property="_key"/>
+  <constraints name="labtest_name_unique" label="LabTest" property="name"/>
+  <constraints name="labtest_key_unique" label="LabTest" property="_key"/>
+  <constraints name="riskfactor_name_unique" label="RiskFactor" property="name"/>
+  <constraints name="riskfactor_key_unique" label="RiskFactor" property="_key"/>
+  <constraints name="clinicaloutcome_name_unique" label="ClinicalOutcome" property="name"/>
+  <constraints name="clinicaloutcome_key_unique" label="ClinicalOutcome" property="_key"/>
+  <constraints name="recommendation_statement_unique" label="Recommendation" property="statement"/>
+  <constraints name="recommendation_key_unique" label="Recommendation" property="_key"/>
+  <constraints name="sourcedocument_id_unique" label="SourceDocument" property="id"/>
+  <constraints name="extractionrun_runid_unique" label="ExtractionRun" property="runId"/>
+  <indexes name="drug_drugclass_idx" label="Drug" property="drugClass" indexType="TEXT"/>
+  <indexes name="condition_category_idx" label="Condition" property="category" indexType="TEXT"/>
+  <indexes name="labtest_abnormalthreshold_idx" label="LabTest" property="abnormalThreshold" indexType="TEXT"/>
+  <indexes name="riskfactor_description_idx" label="RiskFactor" property="description" indexType="TEXT"/>
+  <indexes name="clinicaloutcome_timewindow_idx" label="ClinicalOutcome" property="timeWindow" indexType="TEXT"/>
+  <indexes name="recommendation_source_idx" label="Recommendation" property="source" indexType="TEXT"/>
+  <indexes name="recommendation_strength_idx" label="Recommendation" property="strength" indexType="TEXT"/>
+  <indexes name="extractionrun_promptid_idx" label="ExtractionRun" property="promptId"/>
+  <storedQueries name="causal_context" cypherQuery="MATCH (f)-[r:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})&#xA;WHERE f._key IN $factors&#xA;WITH f, o, r ORDER BY r._prov_confidence DESC, r._prov_fact_id&#xA;WITH f, o, collect(r)[..$limit] AS rs&#xA;UNWIND rs AS r&#xA;RETURN labels(f)[0] AS factorType, f.name AS factor, f._key AS factorKey, f._plain_label AS factorLabel,&#xA;       type(r) AS relation, o.name AS outcome,&#xA;       r._prov_fact_id AS factId, r._prov_source_document AS sourceDocument, r._prov_char_start AS charStart,&#xA;       r._prov_char_end AS charEnd, r._prov_confidence AS confidence, r._prov_prompt_id AS promptId&#xA;ORDER BY confidence DESC, factId">
+    <parameters>factors</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="drug_adverse_chain" cypherQuery="MATCH (d:Drug)-[r1:MAY_CAUSE]->(c:Condition)-[r2:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})&#xA;WHERE d._key IN $factors&#xA;WITH d, c, o, r1, r2 ORDER BY r1._prov_confidence * r2._prov_confidence DESC, r1._prov_fact_id, r2._prov_fact_id&#xA;WITH d, collect({condition: c.name, outcome: o.name,&#xA;                 factId1: r1._prov_fact_id, source1: r1._prov_source_document, confidence1: r1._prov_confidence,&#xA;                 factId2: r2._prov_fact_id, source2: r2._prov_source_document, confidence2: r2._prov_confidence})[..$limit] AS chains&#xA;UNWIND chains AS x&#xA;RETURN d.name AS drug, d._key AS factorKey, x.condition AS condition, x.outcome AS outcome,&#xA;       x.factId1 AS factId1, x.source1 AS source1, x.confidence1 AS confidence1,&#xA;       x.factId2 AS factId2, x.source2 AS source2, x.confidence2 AS confidence2&#xA;ORDER BY confidence1 * confidence2 DESC, factId1, factId2">
+    <parameters>factors</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="lab_indication_chain" cypherQuery="MATCH (l:LabTest)-[r1:INDICATES]->(c:Condition)-[r2:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})&#xA;WHERE l._key IN $factors&#xA;WITH l, c, o, r1, r2 ORDER BY r1._prov_confidence * r2._prov_confidence DESC, r1._prov_fact_id, r2._prov_fact_id&#xA;WITH l, collect({condition: c.name, outcome: o.name,&#xA;                 factId1: r1._prov_fact_id, source1: r1._prov_source_document, confidence1: r1._prov_confidence,&#xA;                 factId2: r2._prov_fact_id, source2: r2._prov_source_document, confidence2: r2._prov_confidence})[..$limit] AS chains&#xA;UNWIND chains AS x&#xA;RETURN l.name AS labTest, l._key AS factorKey, x.condition AS condition, x.outcome AS outcome,&#xA;       x.factId1 AS factId1, x.source1 AS source1, x.confidence1 AS confidence1,&#xA;       x.factId2 AS factId2, x.source2 AS source2, x.confidence2 AS confidence2&#xA;ORDER BY confidence1 * confidence2 DESC, factId1, factId2">
+    <parameters>factors</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="contrastive_difference" cypherQuery="UNWIND [x IN $factors WHERE NOT x IN $contrastFactors] AS differing&#xA;MATCH (f {_key: differing})-[r:INCREASES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})&#xA;WITH f, o, r ORDER BY r._prov_confidence DESC, r._prov_fact_id&#xA;WITH f, o, collect(r)[..$limit] AS rs&#xA;UNWIND rs AS r&#xA;RETURN labels(f)[0] AS factorType, f.name AS factor, f._key AS factorKey, f._plain_label AS factorLabel, o.name AS outcome,&#xA;       r._prov_fact_id AS factId, r._prov_source_document AS sourceDocument, r._prov_confidence AS confidence&#xA;ORDER BY confidence DESC, factId">
+    <parameters>factors</parameters>
+    <parameters>contrastFactors</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="counterfactual_recommendations" cypherQuery="MATCH (f)&#xA;WHERE f._key IN $active&#xA;MATCH (rec:Recommendation)-[ra:APPLIES_TO]->(c:Condition)&#xA;WHERE (c = f OR (f)-[:INDICATES]->(c))&#xA;  AND (EXISTS { MATCH (f)-[:INCREASES_RISK_OF]->(:ClinicalOutcome {_key: $outcome}) }&#xA;       OR EXISTS { MATCH (c)-[:INCREASES_RISK_OF]->(:ClinicalOutcome {_key: $outcome}) })&#xA;MATCH (rec)-[rr:RECOMMENDS]->(t)&#xA;WHERE t._modifiable = true&#xA;WITH rec, ra, c, collect(DISTINCT f.name) AS via, collect(DISTINCT t.name) AS recommends,&#xA;     collect(DISTINCT coalesce(t._plain_label, t.name)) AS recommendsLabel, collect(DISTINCT t._key) AS actionKeys,&#xA;     collect(DISTINCT rr._prov_fact_id) AS factIdsRecommends&#xA;ORDER BY ra._prov_confidence DESC, ra._prov_fact_id&#xA;WITH c, collect({recommendation: rec.statement, guidelineSource: rec.source, strength: rec.strength, via: via,&#xA;                 recommends: recommends, recommendsLabel: recommendsLabel, actionKeys: actionKeys,&#xA;                 factId: ra._prov_fact_id, factIdsRecommends: factIdsRecommends,&#xA;                 sourceDocument: ra._prov_source_document, confidence: ra._prov_confidence})[..$limit] AS advice&#xA;UNWIND range(0, size(advice) - 1) AS conditionRank&#xA;WITH c, advice[conditionRank] AS x, conditionRank&#xA;RETURN x.recommendation AS recommendation, x.guidelineSource AS guidelineSource, x.strength AS strength,&#xA;       c.name AS condition, c._plain_label AS conditionLabel, x.via AS via, x.recommends AS recommends,&#xA;       x.recommendsLabel AS recommendsLabel, x.actionKeys AS actionKeys, x.factId AS factId,&#xA;       x.factIdsRecommends AS factIdsRecommends, x.sourceDocument AS sourceDocument, x.confidence AS confidence,&#xA;       conditionRank&#xA;ORDER BY conditionRank, confidence DESC, condition, factId">
+    <parameters>active</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="protective_factors" cypherQuery="MATCH (f)-[r:REDUCES_RISK_OF]->(o:ClinicalOutcome {_key: $outcome})&#xA;WHERE f._modifiable = true&#xA;  AND NOT EXISTS { MATCH (f)-[:CONTRAINDICATED_IN]->(x) WHERE x._key IN $active }&#xA;WITH f, o, collect(r) AS rs&#xA;OPTIONAL MATCH (f)-[:TREATS|INTERACTS_WITH]-(a)&#xA;WHERE a._key IN $active&#xA;WITH f, o, rs, collect(DISTINCT a.name) AS linked&#xA;OPTIONAL MATCH (m)-[:EXTRACTED_FROM]->(d:SourceDocument)&#xA;WHERE m._key IN $active AND NOT m = f AND d.id IN [x IN rs | x._prov_source_document]&#xA;WITH f, o, rs, linked, collect(DISTINCT m.name) AS studied&#xA;WITH f, o, rs, reduce(acc = CASE WHEN f._key IN $active THEN [f.name] ELSE [] END, x IN linked + studied |&#xA;       CASE WHEN x IN acc THEN acc ELSE acc + x END) AS relatedTo&#xA;WITH f, o, rs, relatedTo,&#xA;     reduce(b = head(rs), x IN rs | CASE WHEN x._prov_confidence > b._prov_confidence THEN x ELSE b END) AS best&#xA;RETURN labels(f)[0] AS factorType, f.name AS protectiveFactor, f._plain_label AS protectiveLabel, [f._key] AS actionKeys,&#xA;       o.name AS outcome, relatedTo, size(relatedTo) AS relevance, size(rs) AS sources,&#xA;       best._prov_fact_id AS factId, [x IN rs | x._prov_fact_id] AS factIds,&#xA;       best._prov_source_document AS sourceDocument, best._prov_confidence AS confidence&#xA;ORDER BY relevance DESC, sources DESC, confidence DESC, protectiveFactor&#xA;LIMIT $limit">
+    <parameters>active</parameters>
+    <parameters>outcome</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="guideline_rules" cypherQuery="MATCH (rec:Recommendation)-[ra:APPLIES_TO]->(c:Condition)&#xA;WHERE c._key IN $active&#xA;OPTIONAL MATCH (rec)-[:RECOMMENDS]->(target)&#xA;WITH rec, ra, c, collect(DISTINCT target.name) AS recommends&#xA;ORDER BY ra._prov_confidence DESC, ra._prov_fact_id&#xA;WITH c, collect({recommendation: rec.statement, guidelineSource: rec.source, strength: rec.strength,&#xA;                 recommends: recommends, factId: ra._prov_fact_id, sourceDocument: ra._prov_source_document,&#xA;                 confidence: ra._prov_confidence})[..$limit] AS statements&#xA;UNWIND range(0, size(statements) - 1) AS conditionRank&#xA;WITH c, statements[conditionRank] AS x, conditionRank&#xA;RETURN x.recommendation AS recommendation, x.guidelineSource AS guidelineSource, x.strength AS strength,&#xA;       c.name AS condition, x.recommends AS recommends,&#xA;       x.factId AS factId, x.sourceDocument AS sourceDocument, x.confidence AS confidence, conditionRank&#xA;ORDER BY conditionRank, confidence DESC, condition, factId">
+    <parameters>active</parameters>
+    <parameters>limit</parameters>
+  </storedQueries>
+  <storedQueries name="provenance_trace" cypherQuery="MATCH (s)-[r]->(t)&#xA;WHERE r._prov_fact_id IN $factIds&#xA;OPTIONAL MATCH (doc:SourceDocument {id: r._prov_source_document})&#xA;OPTIONAL MATCH (run:ExtractionRun {runId: r._prov_run_id})&#xA;RETURN r._prov_fact_id AS factId, labels(s)[0] AS sourceType, coalesce(s.name, s.statement) AS source, type(r) AS relation,&#xA;       labels(t)[0] AS targetType, coalesce(t.name, t.statement) AS target,&#xA;       properties(r) AS provenance, properties(doc) AS document, properties(run) AS extractionRun">
+    <parameters>factIds</parameters>
+  </storedQueries>
+</graphschema:GraphSchema>

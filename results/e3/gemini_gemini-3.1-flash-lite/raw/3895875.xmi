@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/3895875" sourceUri="https://pubmed.ncbi.nlm.nih.gov/3895875/" sourceSha256="66fe38a9ff5ae0f3e7f830a52a96150dee015e2e8a7ad8dbe10ec12ebc11372d" sourceText="Prophylactic lidocaine in the early phase of suspected myocardial infarction. Four hundred two patients with suspected myocardial infarction seen within 6 hours of the onset of symptoms entered a double-blind randomized trial of lidocaine vs placebo. During the 1 hour after administration of the drug the incidence of ventricular fibrillation or sustained ventricular tachycardia among the 204 patients with acute myocardial infarction was low, 1.5%. Lidocaine, given in a 300 mg dose intramuscularly followed by 100 mg intravenously, did not prevent sustained ventricular tachycardia, although there was a significant reduction in the number of patients with warning arrhythmias between 15 and 45 minutes after the administration of lidocaine (p less than 0.05). The average plasma lidocaine level 10 minutes after administration for patients without a myocardial infarction was significantly higher than that for patients with an acute infarction. The mean plasma lidocaine level of patients on beta-blocking agents was no different from that in patients not on beta blocking agents. During the 1-hour study period, the incidence of central nervous system side effects was significantly greater in the lidocaine group, hypotension occurred in 11 patients, nine of whom had received lidocaine, and four patients died from asystole, three of whom had had lidocaine. We cannot advocate the administration of lidocaine prophylactically in the early hours of suspected myocardial infarction." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:50:43+00:00" xmi:version="2.0">
+  <chunks charEnd="1489"/>
+  <entities type="Drug" id="lidocaine" mention="lidocaine" confidence="0.99" sourceSpanStart="13" sourceSpanEnd="22">
+    <properties key="name" value="lidocaine"/>
+  </entities>
+  <entities type="Condition" id="myocardial-infarction" mention="myocardial infarction" confidence="0.95" sourceSpanStart="55" sourceSpanEnd="76">
+    <properties key="name" value="myocardial infarction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="ventricular-fibrillation" mention="ventricular fibrillation" confidence="0.98" sourceSpanStart="319" sourceSpanEnd="343">
+    <properties key="name" value="ventricular fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="sustained-ventricular-tachycardia" mention="sustained ventricular tachycardia" confidence="0.98" sourceSpanStart="347" sourceSpanEnd="380">
+    <properties key="name" value="sustained ventricular tachycardia"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="warning-arrhythmias" mention="warning arrhythmias" confidence="0.95" sourceSpanStart="661" sourceSpanEnd="680">
+    <properties key="name" value="warning arrhythmias"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="central-nervous-system-side-effects" mention="central nervous system side effects" confidence="0.95" sourceSpanStart="1136" sourceSpanEnd="1171">
+    <properties key="name" value="central nervous system side effects"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.98" sourceSpanStart="1222" sourceSpanEnd="1233">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="asystole" mention="asystole" confidence="0.98" sourceSpanStart="1324" sourceSpanEnd="1332">
+    <properties key="name" value="asystole"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="DrugClass" id="beta-blocking-agents" mention="beta-blocking agents" confidence="0.95" sourceSpanStart="998" sourceSpanEnd="1018">
+    <properties key="name" value="beta-blocking agents"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lidocaine" targetType="Condition" targetId="central-nervous-system-side-effects" confidence="0.95" evidence="During the 1-hour study period, the incidence of central nervous system side effects was significantly greater in the lidocaine group" sourceSpanStart="1087" sourceSpanEnd="1220"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lidocaine" targetType="Condition" targetId="hypotension" confidence="0.95" evidence="hypotension occurred in 11 patients, nine of whom had received lidocaine" sourceSpanStart="1222" sourceSpanEnd="1294"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="lidocaine" targetType="Condition" targetId="asystole" confidence="0.95" evidence="four patients died from asystole, three of whom had had lidocaine." sourceSpanStart="1300" sourceSpanEnd="1366"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="lidocaine" targetType="DrugClass" targetId="beta-blocking-agents" confidence="0.8" evidence="The mean plasma lidocaine level of patients on beta-blocking agents was no different from that in patients not on beta blocking agents." sourceSpanStart="951" sourceSpanEnd="1086"/>
+</raw:RawExtractionResult>

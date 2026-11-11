@@ -1,0 +1,11 @@
+# PubMed 24447543: Risk score for unplanned vascular readmissions.
+
+Journal of vascular surgery (2014), doi:10.1016/j.jvs.2013.11.089
+
+OBJECTIVE: Vascular surgery patients have high readmission rates, and identification of high-risk groups that may be amenable to targeted interventions is an important strategy for readmission prevention. This study aimed to determine predictors of unplanned readmission and develop a risk score for predicting readmissions after vascular surgery.
+
+METHODS: The National Surgical Quality Improvement Program database for 2011 was queried for major vascular surgical procedures. The primary end point was unplanned 30-day readmissions. The data were randomly split into two-thirds for development and one-third for validation. Multivariable logistic regression was used to create and validate a point score system to predict unplanned readmissions.
+
+RESULTS: Overall, 24,929 patients were included, with 2507 readmissions (10.1%). A point-based scoring system was developed with the use of factors predictive for readmission, including procedure type; discharge destination; race; non-elective presentation; pulmonary, renal, and cardiac comorbidities; diabetes; steroid use; hypoalbuminemia; anemia; venothromboembolism before discharge; graft failure before discharge; and bleeding disorder. The point score stratified patients into 3 groups: low risk (0-3 points) with a readmission rate of 5.4%, moderate risk (4-7 points) with a readmission rate of 8.6%, and high risk (≥ 8 points) with a readmission rate of 16.4%. The model had a C-statistic = 0.67.
+
+CONCLUSIONS: Through the use of patient, operative, and predischarge events, this novel vascular surgery-specific readmission score accurately identified patients at high risk for 30-day unplanned readmission. This model could help direct discharge and home health care resources to patients at high risk, ultimately reducing readmissions and improving efficiency.

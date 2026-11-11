@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/24665854" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24665854/" sourceSha256="add2fc995180f7b7c0d9e9a9be9c1f711d31592f06d46c291d92158784ff9499" sourceText="Valproate-induced hyperammonemic encephalopathy in a renal transplanted patient. Neurological complications after renal transplantation constitute an important cause of morbidity and mortality. Their differential diagnosis is difficult and essential for subsequent patient's management. Valproate-induced hyperammonemic encephalopathy is an uncommon but serious effect of valproate treatment. Here, we describe the case of a 15-year-old girl who was on a long-term therapy with valproate due to epilepsy and revealed impaired consciousness with hyperammonemia 12 days after renal transplantation. After withdraw of valproate, patients' symptoms resolved within 24 h. Clinicians should increase their awareness for potential complication of valproate, especially in transplanted patients." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:59+00:00" xmi:version="2.0">
+  <chunks charEnd="787"/>
+  <entities type="Drug" id="valproate" mention="valproate" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="9">
+    <properties key="name" value="valproate"/>
+  </entities>
+  <entities type="Condition" id="hyperammonemic-encephalopathy" mention="hyperammonemic encephalopathy" confidence="0.95" sourceSpanStart="18" sourceSpanEnd="47">
+    <properties key="name" value="hyperammonemic encephalopathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.98" sourceSpanStart="495" sourceSpanEnd="503">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="renal-transplantation" mention="renal transplantation" confidence="0.9" sourceSpanStart="574" sourceSpanEnd="595">
+    <properties key="name" value="renal transplantation"/>
+    <properties key="category" value="surgical"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="valproate" targetType="Condition" targetId="hyperammonemic-encephalopathy" confidence="0.98" evidence="Valproate-induced hyperammonemic encephalopathy is an uncommon but serious effect of valproate treatment." sourceSpanStart="287" sourceSpanEnd="392"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="valproate" targetType="Condition" targetId="epilepsy" confidence="0.95" evidence="Here, we describe the case of a 15-year-old girl who was on a long-term therapy with valproate due to epilepsy" sourceSpanStart="393" sourceSpanEnd="503"/>
+</raw:RawExtractionResult>

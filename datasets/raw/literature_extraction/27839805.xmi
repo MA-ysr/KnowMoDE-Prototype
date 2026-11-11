@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/27839805.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/27839805/" sourceSha256="db76281d1be7fbe23dc7b57bf4f8b91beabee0c5119fe70b48e59525eaee8086" sourceText="# PubMed 27839805: Review of early hospitalisation after percutaneous coronary intervention.&#10;&#10;International journal of cardiology (2017), doi:10.1016/j.ijcard.2016.11.050&#10;&#10;BACKGROUND: Percutaneous coronary intervention (PCI) is the most common modality of revascularization in patients with coronary artery disease. Understanding the readmission rates and reasons for readmission after PCI is important because readmissions are a quality of care indicator, in addition to being a burden to patients and healthcare services.&#10;&#10;METHODS: A literature review was performed. Relevant studies are described by narrative synthesis with the use of tables to summarize study results.&#10;&#10;RESULTS: Data suggests that 30-day readmissions are not uncommon. The rate of readmission after PCI is highly influenced by the cohort and the healthcare system studied, with 30-day readmission rates reported to be between 4.7-% and 15.6%. Studies consistently report that a majority of readmissions within 30days are due to a cardiac-related disorders or complication-related disorders. Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission. Studies also suggest that there is greater risk of mortality among patients who are readmitted compared to those who are not readmitted.&#10;&#10;CONCLUSION: Readmission after PCI is common and its rate is highly influenced by the type of cohort studied. There is clear evidence that majority of readmissions within 30days are cardiac related. While there are many predictors of readmission following PCI, it is not known whether targeting patients with modifiable predictors could prevent or reduce the rates of readmission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:30:46+00:00" xmi:version="2.0">
+  <chunks charEnd="1707"/>
+  <entities type="ClinicalOutcome" id="readmission-within-30-days" mention="30-day readmissions" confidence="0.95" sourceSpanStart="703" sourceSpanEnd="722">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="female-sex" mention="Female sex" confidence="0.9" sourceSpanStart="1063" sourceSpanEnd="1073">
+    <properties key="name" value="female sex"/>
+    <properties key="category" value="demographic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-vascular-disease" mention="peripheral vascular disease" confidence="0.95" sourceSpanStart="1075" sourceSpanEnd="1102">
+    <properties key="name" value="peripheral vascular disease"/>
+    <properties key="category" value="circulatory"/>
+    <properties key="icd9Range" value="440-449"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1104" sourceSpanEnd="1121">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+    <properties key="icd9Range" value="250"/>
+  </entities>
+  <entities type="Condition" id="renal-failure" mention="renal failure" confidence="0.95" sourceSpanStart="1123" sourceSpanEnd="1136">
+    <properties key="name" value="renal failure"/>
+    <properties key="category" value="renal"/>
+    <properties key="icd9Range" value="585"/>
+  </entities>
+  <entities type="RiskFactor" id="non-elective-pci" mention="non-elective PCI" confidence="0.9" sourceSpanStart="1141" sourceSpanEnd="1157">
+    <properties key="name" value="non-elective pci"/>
+    <properties key="description" value="non-elective percutaneous coronary intervention procedure"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="female-sex" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission." sourceSpanStart="1063" sourceSpanEnd="1188"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="peripheral-vascular-disease" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission." sourceSpanStart="1063" sourceSpanEnd="1188"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission." sourceSpanStart="1063" sourceSpanEnd="1188"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="renal-failure" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission." sourceSpanStart="1063" sourceSpanEnd="1188"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="non-elective-pci" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.9" evidence="Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission." sourceSpanStart="1063" sourceSpanEnd="1188"/>
+</raw:RawExtractionResult>

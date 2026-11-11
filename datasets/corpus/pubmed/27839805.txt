@@ -1,0 +1,11 @@
+# PubMed 27839805: Review of early hospitalisation after percutaneous coronary intervention.
+
+International journal of cardiology (2017), doi:10.1016/j.ijcard.2016.11.050
+
+BACKGROUND: Percutaneous coronary intervention (PCI) is the most common modality of revascularization in patients with coronary artery disease. Understanding the readmission rates and reasons for readmission after PCI is important because readmissions are a quality of care indicator, in addition to being a burden to patients and healthcare services.
+
+METHODS: A literature review was performed. Relevant studies are described by narrative synthesis with the use of tables to summarize study results.
+
+RESULTS: Data suggests that 30-day readmissions are not uncommon. The rate of readmission after PCI is highly influenced by the cohort and the healthcare system studied, with 30-day readmission rates reported to be between 4.7-% and 15.6%. Studies consistently report that a majority of readmissions within 30days are due to a cardiac-related disorders or complication-related disorders. Female sex, peripheral vascular disease, diabetes mellitus, renal failure and non-elective PCI are predictive of readmission. Studies also suggest that there is greater risk of mortality among patients who are readmitted compared to those who are not readmitted.
+
+CONCLUSION: Readmission after PCI is common and its rate is highly influenced by the type of cohort studied. There is clear evidence that majority of readmissions within 30days are cardiac related. While there are many predictors of readmission following PCI, it is not known whether targeting patients with modifiable predictors could prevent or reduce the rates of readmission.

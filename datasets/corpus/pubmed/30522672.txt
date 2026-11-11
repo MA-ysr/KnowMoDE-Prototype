@@ -1,0 +1,13 @@
+# PubMed 30522672: 30-Day Readmissions After Endovascular Thrombectomy for Acute Ischemic Stroke.
+
+JACC. Cardiovascular interventions (2018), doi:10.1016/j.jcin.2018.09.006
+
+OBJECTIVES: The authors sought to investigate the incidence, predictors, and causes of 30-day nonelective readmissions after endovascular thrombectomy (EVT).
+
+BACKGROUND: Randomized trials have demonstrated that EVT improves outcomes in patients with acute ischemic stroke.
+
+METHODS: The Nationwide Readmissions Database, years 2013 and 2014, was used to identify hospitalizations for a primary diagnosis of acute ischemic stroke during which patients underwent EVT, with or without intravenous thrombolysis. The incidence and reasons of 30-day readmissions were investigated. A hierarchical Cox regression model was used to identify independent predictors of 30-day nonelective readmissions. A propensity score-matched analysis was performed to compare the risk of 30-day nonelective readmissions in those who underwent EVT versus thrombolysis alone.
+
+RESULTS: Among 2,055,365 weighted hospitalizations with acute ischemic stroke and survival to discharge, 10,795 (0.5%) underwent EVT. The 30-day readmission rate was 12.4% within a median of 9 days (interquartile range: 4 to 18 days). Diabetes mellitus, coagulopathy, Medicare or Medicaid insurance, and gastrostomy during the index hospitalization were independent predictors of 30-day readmission, but coadministration of thrombolytics with EVT was not an independent predictor. The most common reasons for readmission were infections (17.2%), cardiac causes (17.0%), and recurrent stroke or transient ischemic attack (14.8%). Compared with thrombolysis alone, the hazard of 30-day readmissions was similar (hazard ratio: 0.98; 95% confidence interval: 0.91 to 1.05; p = 0.55).
+
+CONCLUSIONS: In patients hospitalized with acute ischemic stroke who underwent EVT, 30-day nonelective readmissions were common, occurring in approximately 1 in 8 patients, but were similar to those of patients treated with thrombolysis alone. Risk of readmission was associated with certain patient demographics, comorbidities, and complications, but not thrombolysis coadministration. Infections, cardiac causes, and recurrent stroke or transient ischemic attack are the most common reasons for readmission after EVT, emphasizing the need for comprehensive multidisciplinary treatment in the transition to outpatient care.

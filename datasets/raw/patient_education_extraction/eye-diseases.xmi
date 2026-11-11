@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/eye-diseases.txt" sourceUri="https://medlineplus.gov/eyediseases.html" sourceSha256="5fbebb1f04e7cf899577e4fea530ef0f911d62e96ed5f6582f9658f0e6082fd6" sourceText="# MedlinePlus health topic: Eye Diseases&#10;&#10;Also called: Ophthalmology, Pinguecula&#10;&#10;What diseases can affect the eye?Even if your eyes feel healthy, you could have a problem and not know it. That's why regular eye exams are so important. Refractive errors are the most common type of vision problem that makes it hard to see clearly. But some eye conditions or diseases don't have any symptoms and can lead to a permanent loss of vision.&#10;&#10;Some common eye diseases and conditions include:&#10;&#10;Cataracts, which happens when the clear lens in the front of your eye becomes cloudy. Cataracts are common as you get older and can lead to vision loss.&#10;&#10;Optic nerve disorders, which includes glaucoma. Glaucoma usually happens when the fluid pressure inside your eyes slowly rises.&#10;&#10;Retinal disorders, which are problems with the nerve layer at the back of your eye.&#10;&#10;Macular degeneration, which is a disease that destroys your sharp, central vision.&#10;&#10;Diabetic eye problems, which can cause vision loss and blindness.&#10;&#10;Conjunctivitis, which is an infection also known as pink eye. It can cause pink or red itchy eyes. Some types of pink eye can spread very easily.&#10;&#10;What are the symptoms of eye diseases?Some eye conditions and diseases do not always have symptoms. Early detection through a comprehensive dilated eye exam could help your eye care provider detect diseases in the early stages. Proper treatment could help slow or prevent vision loss.&#10;&#10;Get regular eye exams and call your eye care professional right away if you notice any of these symptoms:&#10;&#10;A sudden change in vision&#10;&#10;Everything looks dim&#10;&#10;Flashes of light&#10;&#10;Eye pain&#10;&#10;Double vision&#10;&#10;Fluid coming from your eye&#10;&#10;Inflammation (swelling)&#10;&#10;Who is more likely to develop eye diseases?Getting older increases your risk of some eye diseases. Other things that may put you at a higher risk of some eye diseases can include if you:&#10;&#10;Are overweight or obese&#10;&#10;Have a family history of eye disease&#10;&#10;Are African American, Hispanic, or Native American&#10;&#10;Have certain health conditions such as Diabetic eye problems, or high blood pressure&#10;&#10;What are the treatments for eye diseases?Treatment may depend on the eye condition or disease but can include:&#10;&#10;A new prescription for eyeglasses or contacts&#10;&#10;Use of bright lights or magnifying lenses for reading and other activities&#10;&#10;Medicines&#10;&#10;Prescription eye drops or ointments&#10;&#10;Laser treatment&#10;&#10;Surgery&#10;&#10;Depending on your eye condition or disease, treatment may slow vision loss but may not restore vision. Talk to your provider about what treatment is best for you.&#10;&#10;Can eye diseases be prevented?Your best defense is to have regular checkups. Be sure to tell your provider if any eye diseases run in your family.&#10;&#10;You can also help take care of your vision by making lifestyle changes to lower your risk of health conditions that can cause vision problems. This could include by:&#10;&#10;Protecting your eyes from the sun&#10;&#10;Wearing protective eyewear while using tools or playing certain sports&#10;&#10;Getting regular physical activity&#10;&#10;Staying at a healthy weight&#10;&#10;Quitting smoking (or not starting)&#10;&#10;Eating a healthy diet&#10;&#10;NIH: National Eye Institute&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:21:38+00:00" xmi:version="2.0">
+  <chunks charEnd="3126"/>
+  <entities type="Condition" id="refractive-errors" mention="Refractive errors" confidence="0.95" sourceSpanStart="236" sourceSpanEnd="253">
+    <properties key="name" value="refractive errors"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="loss-of-vision" mention="permanent loss of vision" confidence="0.95" sourceSpanStart="410" sourceSpanEnd="434">
+    <properties key="name" value="loss of vision"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="cataracts" mention="Cataracts" confidence="0.95" sourceSpanStart="487" sourceSpanEnd="496">
+    <properties key="name" value="cataracts"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="vision-loss" mention="vision loss" confidence="0.95" sourceSpanStart="627" sourceSpanEnd="638">
+    <properties key="name" value="vision loss"/>
+  </entities>
+  <entities type="Condition" id="optic-nerve-disorders" mention="Optic nerve disorders" confidence="0.95" sourceSpanStart="641" sourceSpanEnd="662">
+    <properties key="name" value="optic nerve disorders"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="glaucoma" mention="Glaucoma" confidence="0.95" sourceSpanStart="679" sourceSpanEnd="687">
+    <properties key="name" value="glaucoma"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="retinal-disorders" mention="Retinal disorders" confidence="0.95" sourceSpanStart="770" sourceSpanEnd="787">
+    <properties key="name" value="retinal disorders"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="macular-degeneration" mention="Macular degeneration" confidence="0.95" sourceSpanStart="855" sourceSpanEnd="875">
+    <properties key="name" value="macular degeneration"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-eye-problems" mention="Diabetic eye problems" confidence="0.95" sourceSpanStart="939" sourceSpanEnd="960">
+    <properties key="name" value="diabetic eye problems"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="conjunctivitis" mention="Conjunctivitis" confidence="0.95" sourceSpanStart="1006" sourceSpanEnd="1020">
+    <properties key="name" value="conjunctivitis"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="Condition" id="pink-eye" mention="pink eye" confidence="0.95" sourceSpanStart="1058" sourceSpanEnd="1066">
+    <properties key="name" value="pink eye"/>
+    <properties key="category" value="ophthalmic"/>
+  </entities>
+  <entities type="RiskFactor" id="getting-older" mention="Getting older" confidence="0.95" sourceSpanStart="1734" sourceSpanEnd="1747">
+    <properties key="name" value="getting older"/>
+    <properties key="description" value="Getting older increases your risk of some eye diseases."/>
+  </entities>
+  <entities type="RiskFactor" id="overweight-or-obese" mention="Are overweight or obese" confidence="0.95" sourceSpanStart="1879" sourceSpanEnd="1902">
+    <properties key="name" value="overweight or obese"/>
+    <properties key="description" value="Being overweight or obese."/>
+  </entities>
+  <entities type="RiskFactor" id="family-history-of-eye-disease" mention="Have a family history of eye disease" confidence="0.95" sourceSpanStart="1904" sourceSpanEnd="1940">
+    <properties key="name" value="family history of eye disease"/>
+    <properties key="description" value="Having a family history of eye disease."/>
+  </entities>
+  <entities type="RiskFactor" id="african-american-hispanic-or-native-american" mention="Are African American, Hispanic, or Native American" confidence="0.95" sourceSpanStart="1942" sourceSpanEnd="1992">
+    <properties key="name" value="african american, hispanic, or native american"/>
+    <properties key="description" value="Being African American, Hispanic, or Native American."/>
+  </entities>
+  <entities type="Condition" id="high-blood-pressure" mention="high blood pressure" confidence="0.95" sourceSpanStart="2059" sourceSpanEnd="2078">
+    <properties key="name" value="high blood pressure"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cataracts" targetType="ClinicalOutcome" targetId="vision-loss" confidence="0.9" evidence="Cataracts are common as you get older and can lead to vision loss." sourceSpanStart="573" sourceSpanEnd="639"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="getting-older" targetType="Condition" targetId="cataracts" confidence="0.85" evidence="Getting older increases your risk of some eye diseases." sourceSpanStart="1734" sourceSpanEnd="1789"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="overweight-or-obese" targetType="Condition" targetId="diabetic-eye-problems" confidence="0.7" evidence="Other things that may put you at a higher risk of some eye diseases can include if you: &#10;&#10;Are overweight or obese&#10;&#10;Have a family history of eye disease&#10;&#10;Are African American, Hispanic, or Native American&#10;&#10;Have certain health conditions such as Diabetic eye problems, or high blood pressure" sourceSpanStart="1553" sourceSpanEnd="1801"/>
+</raw:RawExtractionResult>

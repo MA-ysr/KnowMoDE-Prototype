@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/40518836.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/40518836/" sourceSha256="698213503ede7cc540d3447a02bf8c756da77891c0f01c9ed495d68c14c35ab8" sourceText="# PubMed 40518836: Factors leading to escalations in hospital-at-home: a scoping review.&#10;&#10;Hospital practice (1995) (2025), doi:10.1080/21548331.2025.2520741&#10;&#10;OBJECTIVE: Hospital-at-Home (H@H) models are safe and cost-effective alternatives for patients with acute or subacute conditions, offering care in the comfort and familiarity of their homes. Escalations, where patients are transferred back to traditional inpatient settings, are key performance metrics but represent significant challenges for H@H programs by interrupting the continuity and advantages of home-based treatment. This scoping review analyzes the factors leading to escalations across H@H programs.&#10;&#10;METHODS: We searched 5 databases: Embase, Google Scholar, PubMed, Scopus, and Web of Science. Our search focused on papers reporting the reasons why patients needed further escalations to Brick and Mortar (B&amp;M) and the sociodemographic characteristics of these patients from 2005 to date. Besides factors leading to escalations, we charted the H@H program's objective, diseases treated, type of visit and personnel visiting, and predictors of escalation.&#10;&#10;RESULTS: Our search yielded 2932 papers, with 23 meeting our inclusion criteria. Common reasons for escalation included falling, lack of treatment response, exacerbation of the primary disease, cardiac symptoms, and medication adverse effects. Among our studies, higher escalation rates were observed in patients with infectious diseases (16%) and heart failure (9%). Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease.&#10;&#10;CONCLUSION: Escalations in H@H settings are influenced by primary underlying conditions, patient comorbidities, and care complexity. The novelty and ambiguity of the term 'escalation' and the diverse patient populations and H@H protocols limit statistical analysis. Standardizing definitions and consistent documentation of the number of patients needing care escalations and the reasons behind them is pivotal for proper analysis, nuanced understanding, and plausible prevention.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:47:01+00:00" xmi:version="2.0">
+  <chunks charEnd="2125"/>
+  <entities type="ClinicalOutcome" id="escalations-to-inpatient-settings" mention="escalations" confidence="0.95" sourceSpanStart="38" sourceSpanEnd="49">
+    <properties key="name" value="escalations to inpatient settings"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <entities type="Condition" id="infectious-diseases" mention="infectious diseases" confidence="0.95" sourceSpanStart="1446" sourceSpanEnd="1465">
+    <properties key="name" value="infectious diseases"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1476" sourceSpanEnd="1489">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="older-age" mention="older age" confidence="0.9" sourceSpanStart="1528" sourceSpanEnd="1537">
+    <properties key="name" value="older age"/>
+    <properties key="description" value="advanced patient age"/>
+  </entities>
+  <entities type="RiskFactor" id="higher-charlson-comorbidity-index" mention="higher Charlson Comorbidity Index (CCI)" confidence="0.9" sourceSpanStart="1539" sourceSpanEnd="1578">
+    <properties key="name" value="higher charlson comorbidity index"/>
+    <properties key="description" value="higher score on the Charlson Comorbidity Index"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1606" sourceSpanEnd="1614">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1619" sourceSpanEnd="1641">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="infectious-diseases" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Among our studies, higher escalation rates were observed in patients with infectious diseases (16%) and heart failure (9%)." sourceSpanStart="1372" sourceSpanEnd="1495"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Among our studies, higher escalation rates were observed in patients with infectious diseases (16%) and heart failure (9%)." sourceSpanStart="1372" sourceSpanEnd="1495"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="older-age" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease." sourceSpanStart="1496" sourceSpanEnd="1642"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="higher-charlson-comorbidity-index" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease." sourceSpanStart="1496" sourceSpanEnd="1642"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease." sourceSpanStart="1496" sourceSpanEnd="1642"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="escalations-to-inpatient-settings" confidence="0.9" evidence="Significant predictors included older age, higher Charlson Comorbidity Index (CCI), and comorbidities such as diabetes and chronic kidney disease." sourceSpanStart="1496" sourceSpanEnd="1642"/>
+</raw:RawExtractionResult>

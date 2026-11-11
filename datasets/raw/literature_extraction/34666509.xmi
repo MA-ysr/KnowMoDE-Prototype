@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34666509.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34666509/" sourceSha256="f03f50276529789743edf152f222da26f3b40603ed6ce1c25b5d5448f5e6bca3" sourceText="# PubMed 34666509: Readmissions, Death and Its Associated Predictors in Heart Failure With Preserved Versus Reduced Ejection Fraction.&#10;&#10;Journal of the American Heart Association (2021), doi:10.1161/JAHA.121.021414&#10;&#10;Background Data on rehospitalizations for heart failure (HF) in Asia are scarce. We sought to determine the burden and predictors of HF (first and recurrent) rehospitalizations and all-cause mortality in patients with HF and preserved versus reduced ejection fraction (preserved EF, ≥50%; reduced EF, &lt;40%), in the multinational ASIAN-HF (Asian Sudden Cardiac Death in Heart Failure) registry. Methods and Results Patients with symptomatic (stage C) chronic HF were followed up for death and recurrent HF hospitalizations for 1 year. Predictors of HF hospitalizations or all-cause mortality were examined with Cox regression for time to first event and other methods for recurrent events analyses. Among 1666 patients with HF with preserved EF (mean age, 68±12 years; 50% women), and 4479 with HF with reduced EF (mean age, 61±13 years; 22% women), there were 642 and 2302 readmissions, with 28% and 45% attributed to HF, respectively. The 1-year composite event rate for first HF hospitalization or all-cause death was 11% and 21%, and for total HF hospitalization and all-cause death was 17.7 and 38.7 per 100 patient-years in HF with preserved EF and HF with reduced EF, respectively. In HF with preserved EF, consistent independent predictors of these clinical end points included enrollment as an inpatient, Southeast Asian location, and comorbid chronic kidney disease or atrial fibrillation. The same variables were predictive of outcomes in HF with reduced EF except atrial fibrillation, and also included Northeast Asian location, older age, elevated heart rate, decreased systolic blood pressure, diabetes, smoking, and non-usage of beta blockers. Conclusions One-year HF rehospitalization and mortality rates were high among Asian patients with HF. Predictors of outcomes identified in this study could aid in risk stratification and timely interventions. Registration URL: https://www.clinicaltrials.gov; Unique identifier: NCT01633398.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:43:20+00:00" xmi:version="2.0">
+  <chunks charEnd="2164"/>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="72" sourceSpanEnd="85">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hf-hospitalization-or-all-cause-death" mention="first HF hospitalization or all-cause death" confidence="0.95" sourceSpanStart="1187" sourceSpanEnd="1230">
+    <properties key="name" value="first heart failure hospitalization or all-cause death"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="RiskFactor" id="enrollment-as-an-inpatient" mention="enrollment as an inpatient" confidence="0.9" sourceSpanStart="1500" sourceSpanEnd="1526">
+    <properties key="name" value="enrollment as an inpatient"/>
+    <properties key="description" value="enrollment as an inpatient"/>
+  </entities>
+  <entities type="RiskFactor" id="southeast-asian-location" mention="Southeast Asian location" confidence="0.9" sourceSpanStart="1528" sourceSpanEnd="1552">
+    <properties key="name" value="southeast asian location"/>
+    <properties key="description" value="Southeast Asian location"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1567" sourceSpanEnd="1589">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="1593" sourceSpanEnd="1612">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1822" sourceSpanEnd="1830">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="smoking" confidence="0.9" sourceSpanStart="1832" sourceSpanEnd="1839">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="smoking status"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="enrollment-as-an-inpatient" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="In HF with preserved EF, consistent independent predictors of these clinical end points included enrollment as an inpatient, Southeast Asian location, and comorbid chronic kidney disease or atrial fibrillation." sourceSpanStart="1403" sourceSpanEnd="1613"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="southeast-asian-location" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="In HF with preserved EF, consistent independent predictors of these clinical end points included enrollment as an inpatient, Southeast Asian location, and comorbid chronic kidney disease or atrial fibrillation." sourceSpanStart="1403" sourceSpanEnd="1613"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="In HF with preserved EF, consistent independent predictors of these clinical end points included enrollment as an inpatient, Southeast Asian location, and comorbid chronic kidney disease or atrial fibrillation." sourceSpanStart="1403" sourceSpanEnd="1613"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="atrial-fibrillation" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="In HF with preserved EF, consistent independent predictors of these clinical end points included enrollment as an inpatient, Southeast Asian location, and comorbid chronic kidney disease or atrial fibrillation." sourceSpanStart="1403" sourceSpanEnd="1613"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="The same variables were predictive of outcomes in HF with reduced EF except atrial fibrillation, and also included Northeast Asian location, older age, elevated heart rate, decreased systolic blood pressure, diabetes, smoking, and non-usage of beta blockers." sourceSpanStart="1614" sourceSpanEnd="1872"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="smoking" targetType="ClinicalOutcome" targetId="hf-hospitalization-or-all-cause-death" confidence="0.85" evidence="The same variables were predictive of outcomes in HF with reduced EF except atrial fibrillation, and also included Northeast Asian location, older age, elevated heart rate, decreased systolic blood pressure, diabetes, smoking, and non-usage of beta blockers." sourceSpanStart="1614" sourceSpanEnd="1872"/>
+</raw:RawExtractionResult>

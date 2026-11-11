@@ -1,0 +1,21 @@
+# PubMed 37115159: Readmission and Mortality After Hospitalization With Acute Kidney Injury.
+
+American journal of kidney diseases : the official journal of the National Kidney Foundation (2023), doi:10.1053/j.ajkd.2022.12.008
+
+RATIONALE & OBJECTIVE: Acute kidney injury (AKI) carries high rates of morbidity and mortality. This study quantified various short- and long-term outcomes after hospitalization with AKI.
+
+STUDY DESIGN: Retrospective propensity score (PS)-matched cohort study.
+
+SETTING & PARTICIPANTS: Optum Clinformatics, a national claims database, was used to identify patients hospitalized with and without an AKI discharge diagnosis between January 2007 and September 2020.
+
+EXPOSURE: Among patients with prior continuous enrollment for at least 2years without AKI hospitalization, 471,176 patients hospitalized with AKI were identified and PS-matched to 471,176 patients hospitalized without AKI.
+
+OUTCOME(S): All-cause and selected-cause rehospitalizations and mortality 90 and 365 days after index hospitalization.
+
+ANALYTICAL APPROACH: After PS matching, rehospitalization and death incidences were estimated using the cumulative incidence function method and compared using Gray's test. The association of AKI hospitalization with each outcome was tested using Cox models for all-cause mortality and, with mortality as competing risk, cause-specific hazard modeling for all-cause and selected-cause rehospitalization. Overall and stratified analyses were performed to evaluate for interaction between an AKI hospitalization and preexisting chronic kidney disease (CKD).
+
+RESULTS: After PS matching, AKI was associated with higher rates of rehospitalization for any cause (hazard ratio [HR], 1.62; 95% CI, 1.60-1.65), end-stage renal disease (HR, 6.21; 95% CI, 1.04-36.92), heart failure (HR, 2.81; 95% CI, 2.66, 2.97), sepsis (HR, 2.62; 95% CI, 2.49-2.75), pneumonia (HR, 1.47; 95% CI, 1.37-1.57), myocardial infarction (HR, 1.48; 95% CI, 1.33-1.65), and volume depletion (HR, 1.64; 95% CI, 1.37-1.96) at 90 days after discharge compared with the group without AKI, with similar findings at 365 days. Mortality rate was higher in the group with AKI than in the group without AKI at 90 (HR, 2.66; 95% CI, 2.61-2.72) and 365 days (HR, 2.11; 95% CI, 2.08-2.14). The higher risk of outcomes persisted when participants were stratified by CKD status (P<0.01).
+
+LIMITATIONS: Causal associations between AKI and the reported outcomes cannot be inferred.
+
+CONCLUSIONS: AKI during hospitalization in patients with and without CKD is associated with increased risk of 90- and 365-day all-cause/selected-cause rehospitalization and death.

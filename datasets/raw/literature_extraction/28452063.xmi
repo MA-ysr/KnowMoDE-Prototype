@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/28452063.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/28452063/" sourceSha256="b08c78bb9946ff63141d6d57cc5079313c4934b2e7af76308ec67e681371dc1c" sourceText="# PubMed 28452063: Risk factors of adverse health outcomes after hospital discharge modifiable by clinical pharmacist interventions: a review with a systematic approach.&#10;&#10;British journal of clinical pharmacology (2017), doi:10.1111/bcp.13318&#10;&#10;The present review assessed the evidence on risk factors for the occurrence of adverse health outcomes after discharge (i.e. unplanned readmission or adverse drug event after discharge) that are potentially modifiable by clinical pharmacist interventions. The findings were compared with patient characteristics reported in guidelines that supposedly indicate a high risk of drug-related problems. First, guidelines and risk assessment tools were searched for patient characteristics indicating a high risk of drug-related problems. Second, a systematic PubMed search was conducted to identify risk factors significantly associated with adverse health outcomes after discharge that are potentially modifiable by a clinical pharmacist intervention. After the PubMed search, 37 studies were included, reporting 16 risk factors. Only seven of 34 patient characteristics mentioned in pertinent guidelines corresponded to one of these risk factors. Diabetes mellitus (n = 11), chronic obstructive lung disease (n = 9), obesity (n = 7), smoking (n = 5) and polypharmacy (n = 5) were the risk factors reported most frequently in the studies. Additionally, single studies also found associations of adverse health outcomes with different drug classes {e.g. warfarin [hazard ratio 1.50; odds ratio (OR) 3.52], furosemide [OR 2.25] or high beta-blocker starting doses [OR 3.10]}. Although several modifiable risk factors were found, many patient characteristics supposedly indicating a high risk of drug-related problems were not part of the assessed risk factors in the context of an increased risk of adverse health outcomes after discharge. Therefore, an obligatory set of modifiable patient characteristics should be created and implemented in future studies investigating the risk for adverse health outcomes after discharge.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:31:22+00:00" xmi:version="2.0">
+  <chunks charEnd="2064"/>
+  <entities type="Condition" id="diabetes-mellitus" mention="Diabetes mellitus" confidence="0.95" sourceSpanStart="1187" sourceSpanEnd="1204">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-lung-disease" mention="chronic obstructive lung disease" confidence="0.95" sourceSpanStart="1215" sourceSpanEnd="1247">
+    <properties key="name" value="chronic obstructive lung disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="obesity" mention="obesity" confidence="0.95" sourceSpanStart="1257" sourceSpanEnd="1264">
+    <properties key="name" value="obesity"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="smoking" mention="smoking" confidence="0.95" sourceSpanStart="1274" sourceSpanEnd="1281">
+    <properties key="name" value="smoking"/>
+    <properties key="description" value="smoking status"/>
+  </entities>
+  <entities type="RiskFactor" id="polypharmacy" mention="polypharmacy" confidence="0.95" sourceSpanStart="1294" sourceSpanEnd="1306">
+    <properties key="name" value="polypharmacy"/>
+    <properties key="description" value="concurrent use of multiple medications"/>
+  </entities>
+  <entities type="Drug" id="warfarin" mention="warfarin" confidence="0.95" sourceSpanStart="1492" sourceSpanEnd="1500">
+    <properties key="name" value="warfarin"/>
+    <properties key="drugClass" value="anticoagulant"/>
+  </entities>
+  <entities type="Drug" id="furosemide" mention="furosemide" confidence="0.95" sourceSpanStart="1544" sourceSpanEnd="1554">
+    <properties key="name" value="furosemide"/>
+    <properties key="drugClass" value="diuretic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="adverse-health-outcomes-after-discharge" mention="adverse health outcomes after discharge" confidence="0.9" sourceSpanStart="1836" sourceSpanEnd="1875">
+    <properties key="name" value="adverse health outcomes after discharge"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="warfarin" targetType="ClinicalOutcome" targetId="adverse-health-outcomes-after-discharge" confidence="0.85" evidence="Additionally, single studies also found associations of adverse health outcomes with different drug classes {e.g. warfarin [hazard ratio 1.50; odds ratio (OR) 3.52], furosemide [OR 2.25] or high beta-blocker starting doses [OR 3.10]}." sourceSpanStart="1378" sourceSpanEnd="1612"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Drug" sourceId="furosemide" targetType="ClinicalOutcome" targetId="adverse-health-outcomes-after-discharge" confidence="0.85" evidence="Additionally, single studies also found associations of adverse health outcomes with different drug classes {e.g. warfarin [hazard ratio 1.50; odds ratio (OR) 3.52], furosemide [OR 2.25] or high beta-blocker starting doses [OR 3.10]}." sourceSpanStart="1378" sourceSpanEnd="1612"/>
+</raw:RawExtractionResult>

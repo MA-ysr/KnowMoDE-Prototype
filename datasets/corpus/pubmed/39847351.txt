@@ -1,0 +1,17 @@
+# PubMed 39847351: Medicare Risk Arrangement and Use and Outcomes Among Physician Groups.
+
+JAMA network open (2025), doi:10.1001/jamanetworkopen.2024.56074
+
+IMPORTANCE: Many physician groups are in 2-sided risk payment arrangements with Medicare Advantage plans (at-risk MA). Analysis of quality and health resource use under such arrangements may inform ongoing Medicare policy concerning payment and service delivery.
+
+OBJECTIVE: To compare quality and efficiency measures under 2 payment models: at-risk MA and fee-for-service (FFS) MA.
+
+DESIGN, SETTING, AND PARTICIPANTS: This cross-sectional study used Medicare encounter and enrollment data from 2016 to 2019 covering 17 physician groups, 15 488 physicians, and 35 health insurers to compare quality and health resource use for Medicare beneficiaries within the same physician groups. The data were analyzed between August 4 and October 30, 2024.
+
+EXPOSURES: Care delivered under at-risk MA and FFS MA payment arrangements by the same physicians and medical groups.
+
+MAIN OUTCOMES AND MEASURES: Twenty quality and efficiency measures across 4 domains of patient care (hospital care, avoidance of the emergency department [ED], avoidance of disease-specific admissions, and outpatient care) were examined using logistic regression analysis.
+
+RESULTS: The overall sample comprised 5 278 717 person-years (37.7% at-risk MA and 62.3% FFS MA). The mean (SD) age of beneficiaries was 73.6 (9.2) years in the at-risk MA group (56.8% women) and 71.8 (10.4) years in the FFS MA group (57.4% women). For at-risk MA compared with FFS MA, inpatient admissions and 30-day readmissions per 1000 were 10.03 (95% CI, -10.61 to -9.44) and 1.95 (95% CI, -2.18 to -1.73) lower. ED use measures per 1000 ranged from 2.95 (95% CI, -3.28 to -2.63) lower for avoidable ED visits to 26.02 (95% CI, -26.92 to -25.12) lower for overall ED visits. Avoidance of disease-specific admissions per 1000 ranged from 0.24 (95% CI, -0.35 to -0.13) lower for composite diabetes-related admissions to 2.18 (95% CI, -2.43 to -1.94) lower for the composite of chronic disease-related admissions. High-risk drug use per 1000 was 14.26 (95% CI, -14.85 to -13.67) lower. Overall, compared with FFS MA, at-risk MA was associated with higher quality and efficiency in 18 of 20 measures after adjusting for differences in demographics, Hierarchical Condition Categories Risk Adjustment Factor scores, and other health characteristics.
+
+CONCLUSIONS AND RELEVANCE: In this cross-sectional study, at-risk MA payment arrangements managed by physician groups were associated with higher quality and efficiency compared with FFS MA managed by the same groups. The population and methods used provide robust evidence that at-risk payment arrangements in MA may improve health care delivery for the MA population.

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31108341.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31108341/" sourceSha256="85123ecbecd105e0aa19c762d188876a114417576b833e8317e4a3aeaca594f1" sourceText="# PubMed 31108341: Prediction of post-operative delayed hyponatremia after endoscopic transsphenoidal surgery.&#10;&#10;Clinical neurology and neurosurgery (2019), doi:10.1016/j.clineuro.2019.05.007&#10;&#10;OBJECTIVES: Delayed symptomatic hyponatremia is a known phenomenon occurring &gt; 3 days after transsphenoidal surgery. This is a significant cause of post-operative emergency room visits and re-admissions. We describe and characterize post-operative hyponatremia in patients undergoing endoscopic transsphenoidal surgery, identify predictive factors, and create a clinical tool for predicting high risk patients.&#10;&#10;PATIENTS &amp; METHODS: We retrospectively reviewed a series of over 300 consecutive patients undergoing endoscopic transsphenoidal surgery and identified patients with delayed hyponatremia as well as patient, tumor, and surgical characteristics. In addition, we recorded inpatient post-operative sodium and specific gravity values as well as treatment upond discharge. Univariate and multivariate analyses were carried out to identify predictors of delayed hyponatremia and stratify patients into risk groups.&#10;&#10;RESULTS: We found that 15% of patients developed delayed hyponatremia and that this occurred most commonly on post-operative day 7. This accounted for more than half of re-admissions after this type of surgery. Female patients and patients needing fluid restriction or fludrocortisone upon discharge were more likely to develop delayed hyponatremia. Patients with post-operative diabetes insipidus were less likely to develop delayed hyponatremia. Using ROC analysis we developed a score which reliably could stratify patients at risk for delayed hyponatremia.&#10;&#10;CONCLUSIONS: We confirm the risk of delayed hyponatremia after transphenoidal surgery and identify factors that are revealed before discharge to identify patients at higher risk of delayed hyponatremia. These data may help identify patients who require treatment upon discharge and short interval follow up to avoid significant costs of re-admission.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:35:18+00:00" xmi:version="2.0">
+  <chunks charEnd="2025"/>
+  <entities type="Condition" id="delayed-hyponatremia" mention="delayed hyponatremia" confidence="0.95" sourceSpanStart="48" sourceSpanEnd="68">
+    <properties key="name" value="delayed hyponatremia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="re-admissions" mention="re-admissions" confidence="0.9" sourceSpanStart="381" sourceSpanEnd="394">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="RiskFactor" id="female-gender" mention="Female patients" confidence="0.9" sourceSpanStart="1323" sourceSpanEnd="1338">
+    <properties key="name" value="female gender"/>
+    <properties key="description" value="patient is female"/>
+  </entities>
+  <entities type="RiskFactor" id="fluid-restriction-upon-discharge" mention="fluid restriction or fludrocortisone upon discharge" confidence="0.9" sourceSpanStart="1360" sourceSpanEnd="1411">
+    <properties key="name" value="fluid restriction or fludrocortisone upon discharge"/>
+    <properties key="description" value="needing fluid restriction or fludrocortisone upon discharge"/>
+  </entities>
+  <entities type="Condition" id="post-operative-diabetes-insipidus" mention="post-operative diabetes insipidus" confidence="0.9" sourceSpanStart="1476" sourceSpanEnd="1509">
+    <properties key="name" value="post-operative diabetes insipidus"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="female-gender" targetType="ClinicalOutcome" targetId="re-admissions" confidence="0.85" evidence="Female patients and patients needing fluid restriction or fludrocortisone upon discharge were more likely to develop delayed hyponatremia." sourceSpanStart="1323" sourceSpanEnd="1461"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="fluid-restriction-upon-discharge" targetType="ClinicalOutcome" targetId="re-admissions" confidence="0.85" evidence="Female patients and patients needing fluid restriction or fludrocortisone upon discharge were more likely to develop delayed hyponatremia." sourceSpanStart="1323" sourceSpanEnd="1461"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36154554.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36154554/" sourceSha256="5bfce3fdf0e054f781450fb868e00830387a7833ed0dfb2930d37b5f468eca96" sourceText="# PubMed 36154554: Cumulative rehospitalizations and implications for subsequent mortality after first-ever ischemic stroke.&#10;&#10;Hospital practice (1995) (2022), doi:10.1080/21548331.2022.2128575&#10;&#10;INTRODUCTION: Clinical implications of readmission following initial hospitalization for acute ischemic stroke (AIS) are not known. We examined predictors of readmissions and impact of readmissions on subsequent mortality after first-ever AIS.&#10;&#10;MATERIALS AND METHODS: Adults aged ≥18 years who survived to discharge after hospitalization for first-ever AIS from 2003 to 2019 were included in the study. For each patient, the overall burden of hospitalizations was measured as total number of hospitalizations and aggregate days spent hospitalized during follow-up. We used Poisson regression to estimate incident rate ratios (IRR) for predictors of re-hospitalization and time-dependent Cox regression to estimate hazard ratios (HR) for mortality.&#10;&#10;RESULTS: Of 908 AIS survivors, 537 died, 669 had 2,645 readmissions over 4,535 person-years follow-up. Adjusted independent predictors of cumulative readmission inlcuded being white (IRR 1.21, 95% CI 1.03-1.42), dependency on discharge (IRR 1.27, 95% CI 1.17-1.38), cardio-embolism (IRR 1.35, 95% CI 1.18-1.45), smoking (IRR 1.21, 95% CI 1.08-1.35), anemia (IRR 1.40, 95% CI 1.24-1.57), arthritis (IRR 1.20, 95% CI 1.10-1.31), coronary artery disease (IRR 1.34, 95% CI 1.23-1.47), cancer (IRR 1.96, 95% CI 1.64-2.30), chronic kidney disease (IRR 1.36, 95% CI 1.21-1.57), COPD (IRR 1.18, 95% CI 1.04-1.34), depression (IRR 1.50, 95% CI 1.37-1.66), diabetes mellitus (IRR 1.48, 95% CI 1.36-1.48), and heart failure (IRR 1.17, 95% CI 1.03-1.34). Conversely, hyperlipidemia was associated with a lower risk of readmission (IRR 0.79, 95% CI 0.71-0.88). Mortality was significantly increased with each hospitalization and cumulative days spent in hospital.&#10;&#10;CONCLUSIONS: Among survivors of AIS hospitalization, certain sociodemographic indicators, stroke-specific features, and several key comorbid conditions were associated with increased risk of readmissions, which in turn correlated with increased mortality. Therefore, lifestyle modification and optimal treatment of comorbidities are likely to improve the outcome after AIS.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:47:34+00:00" xmi:version="2.0">
+  <chunks charEnd="2269"/>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.95" sourceSpanStart="1293" sourceSpanEnd="1299">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="arthritis" mention="arthritis" confidence="0.95" sourceSpanStart="1330" sourceSpanEnd="1339">
+    <properties key="name" value="arthritis"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="1370" sourceSpanEnd="1393">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cancer" mention="cancer" confidence="0.95" sourceSpanStart="1424" sourceSpanEnd="1430">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1461" sourceSpanEnd="1483">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="copd" mention="COPD" confidence="0.95" sourceSpanStart="1514" sourceSpanEnd="1518">
+    <properties key="name" value="copd"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="depression" mention="depression" confidence="0.95" sourceSpanStart="1549" sourceSpanEnd="1559">
+    <properties key="name" value="depression"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1590" sourceSpanEnd="1607">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1642" sourceSpanEnd="1655">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hyperlipidemia" mention="hyperlipidemia" confidence="0.95" sourceSpanStart="1698" sourceSpanEnd="1712">
+    <properties key="name" value="hyperlipidemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="cumulative readmission" confidence="0.9" sourceSpanStart="1081" sourceSpanEnd="1103">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="anemia" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... anemia (IRR 1.40, 95% CI 1.24-1.57)" sourceSpanStart="648" sourceSpanEnd="846"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="arthritis" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... arthritis (IRR 1.20, 95% CI 1.10-1.31)" sourceSpanStart="648" sourceSpanEnd="873"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="coronary-artery-disease" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... coronary artery disease (IRR 1.34, 95% CI 1.23-1.47)" sourceSpanStart="648" sourceSpanEnd="921"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cancer" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... cancer (IRR 1.96, 95% CI 1.64-2.30)" sourceSpanStart="648" sourceSpanEnd="948"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... chronic kidney disease (IRR 1.36, 95% CI 1.21-1.57)" sourceSpanStart="648" sourceSpanEnd="995"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="copd" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... COPD (IRR 1.18, 95% CI 1.04-1.34)" sourceSpanStart="648" sourceSpanEnd="1021"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="depression" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... depression (IRR 1.50, 95% CI 1.37-1.66)" sourceSpanStart="648" sourceSpanEnd="1054"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... diabetes mellitus (IRR 1.48, 95% CI 1.36-1.48)" sourceSpanStart="648" sourceSpanEnd="1093"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="readmission" confidence="0.9" evidence="Adjusted independent predictors of cumulative readmission inlcuded ... and heart failure (IRR 1.17, 95% CI 1.03-1.34)." sourceSpanStart="648" sourceSpanEnd="1133"/>
+</raw:RawExtractionResult>

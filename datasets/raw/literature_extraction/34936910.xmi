@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34936910.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34936910/" sourceSha256="639055919d3b2138c1ce2ae6baaf9a17d0027456c6ad8dd1307219118ce5b819" sourceText="# PubMed 34936910: Clinical Outcomes of Acute Myocardial Infarction Hospitalizations With Systemic Lupus Erythematosus: An Analysis of Nationwide Readmissions Database.&#10;&#10;Current problems in cardiology (2022), doi:10.1016/j.cpcardiol.2021.101086&#10;&#10;Hospital readmissions post-acute myocardial infarctions (AMIs) are associated with adverse cardiovascular outcomes and also incur huge healthcare costs. Patients with systemic lupus erythematosus (SLE) are at an increased risk of AMI likely due to multifactorial mechanisms including higher levels of inflammation and accelerated atherosclerosis. We investigated if patients with SLE are at higher risk of hospital readmissions post-AMI compared to the patients without SLE. Furthermore, we sought to assess if inpatient outcomes of AMI in SLE patients are different than AMI without SLE. We conducted a retrospective analysis of adult hospital discharges with the principal diagnosis of AMI using the Nationwide Readmissions Database in 2018. We used the International Classification of Diseases, Tenth Revision, Clinical Modification/Procedure Coding System (ICD-10-CM/PCS) to identify comorbid conditions. The primary outcome was all-cause 30-day readmission. Secondary outcomes were cardiac procedures at index hospitalization (percutaneous coronary intervention [PCI] and coronary artery bypass grafting [CABG]), and adverse events at index hospitalization, including inpatient mortality, cardiac arrest, cardiogenic shock, cardiac assist device, coronary artery dissection, acute kidney injury, gastrointestinal bleeding, stroke, post-procedural hemorrhage, sepsis, and hospital costs. Complex samples multivariable logistic regression models were used to determine the association of SLE with outcomes. The patients with AMI and SLE had a higher 30-day readmission rate (15.5% vs 12.5%, aOR = 1.33, CI 1.12-1.57, P = 0.001), and inpatient mortality (aOR = 1.40 CI 1.1-1.79, P = 0.006) compared to the AMI without SLE cohort. The rates of acute kidney injury (aOR = 1.41 CI 1.21-1.64, P &lt; 0.0001) and sepsis (aOR = 1.61 CI 1.16-2.23, P = 0.004) were higher among AMI with SLE group as compared to AMI without SLE group. Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009). The length of stay in days during index hospitalization (5.10 vs 4.67) was similar in both cohorts. In the multivariable-adjusted regression model, no statistically significant differences were noted between the AMI with SLE and AMI without SLE cohorts for most inpatient adverse events during the index hospitalization. Patients with AMI and SLE had higher inpatient mortality during the index hospitalization and higher 30-day hospital readmissions compared to AMI patients without SLE. There were no significant differences in most of the other major inpatient outcomes between the 2 cohorts.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:44:16+00:00" xmi:version="2.0">
+  <chunks charEnd="2867"/>
+  <chunks index="1" charStart="2868" charEnd="3143"/>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="1189" sourceSpanEnd="1207">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="2251" sourceSpanEnd="2268">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-vascular-disease" mention="peripheral vascular disease" confidence="0.95" sourceSpanStart="2307" sourceSpanEnd="2334">
+    <properties key="name" value="peripheral vascular disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.95" sourceSpanStart="2373" sourceSpanEnd="2379">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="end-stage-renal-disease" mention="end-stage renal disease" confidence="0.95" sourceSpanStart="2418" sourceSpanEnd="2441">
+    <properties key="name" value="end-stage renal disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.95" sourceSpanStart="2484" sourceSpanEnd="2508">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="ami" mention="AMI" confidence="0.95" sourceSpanStart="2882" sourceSpanEnd="2885" chunkIndex="1">
+    <properties key="name" value="acute myocardial infarction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="sle" mention="SLE" confidence="0.95" sourceSpanStart="2890" sourceSpanEnd="2893" chunkIndex="1">
+    <properties key="name" value="systemic lupus erythematosus"/>
+    <properties key="category" value="autoimmune"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="inpatient-mortality" mention="inpatient mortality during the index hospitalization" confidence="0.95" sourceSpanStart="2905" sourceSpanEnd="2957" chunkIndex="1">
+    <properties key="name" value="inpatient mortality"/>
+    <properties key="timeWindow" value="index hospitalization"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="30-day-hospital-readmissions" mention="30-day hospital readmissions" confidence="0.95" sourceSpanStart="2969" sourceSpanEnd="2997" chunkIndex="1">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009)." sourceSpanStart="2172" sourceSpanEnd="2546"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="peripheral-vascular-disease" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009)." sourceSpanStart="2172" sourceSpanEnd="2546"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="anemia" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009)." sourceSpanStart="2172" sourceSpanEnd="2546"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="end-stage-renal-disease" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009)." sourceSpanStart="2172" sourceSpanEnd="2546"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="congestive-heart-failure" targetType="ClinicalOutcome" targetId="30-day-readmission" confidence="0.9" evidence="Within the AMI with SLE cohort, the independent predictors of readmission were diabetes mellitus (aOR = 1.38 CI 0.99-1.91, P = 0.054), peripheral vascular disease (aOR = 2.10 CI 1.22-3.62, P = 0.007), anemia (aOR = 1.50 CI 1.07-2.11, P = 0.019), end-stage renal disease (aOR = 1.91 CI 1.10-3.31, P = 0.021), and congestive heart failure (aOR = 1.55 CI 1.12-2.16, P = 0.009)." sourceSpanStart="2172" sourceSpanEnd="2546"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="sle" targetType="ClinicalOutcome" targetId="inpatient-mortality" confidence="0.9" evidence="Patients with AMI and SLE had higher inpatient mortality during the index hospitalization and higher 30-day hospital readmissions compared to AMI patients without SLE." sourceSpanStart="2868" sourceSpanEnd="3035" chunkIndex="1"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="sle" targetType="ClinicalOutcome" targetId="30-day-hospital-readmissions" confidence="0.9" evidence="Patients with AMI and SLE had higher inpatient mortality during the index hospitalization and higher 30-day hospital readmissions compared to AMI patients without SLE." sourceSpanStart="2868" sourceSpanEnd="3035" chunkIndex="1"/>
+</raw:RawExtractionResult>

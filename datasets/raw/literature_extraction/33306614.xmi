@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33306614.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33306614/" sourceSha256="ca5bd5ce01949529608240dc42bac8fd11aeb0182aeab137c9080997a251d69b" sourceText="# PubMed 33306614: Predictors of Readmission and Prolonged Length of Stay After Cervical Disc Arthroplasty.&#10;&#10;Spine (2021), doi:10.1097/BRS.0000000000003839&#10;&#10;STUDY DESIGN: Retrospective cohort study.&#10;&#10;OBJECTIVE: The aim of the study was to assess which factors increase risk of readmission within 30 days of surgery or prolonged length of stay (LOS) (≥2 days) after cervical disc arthroplasty (CDA).&#10;&#10;SUMMARY OF BACKGROUND DATA: Several studies have shown noninferiority at mid- and long-term outcomes after cervical disc arthroplasty (CDA) compared to anterior cervical discectomy and fusion ACDF, but few have evaluated short-term outcomes regarding risk of readmission or prolonged LOS after surgery.&#10;&#10;METHODS: Demographics, comorbidities, operative details, postoperative complications, and perioperative outcomes were collected for patients undergoing single level CDA in the National Surgical Quality Improvement Program (NSQIP) database. Patients with prolonged LOS, defined as &gt;2 days, and readmission within 30 days following CDA were identified. Univariable and multivariable logistic regression models were used to identify risk factors for prolonged LOS and readmission.&#10;&#10;RESULTS: A total of 3221 patients underwent single level CDA. Average age was 45.6 years (range 19-82) and 53% of patients were male. A total of 472 (14.7%) experienced a prolonged LOS and 36 (1.1%) patients were readmitted within 30 days following surgery. Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P &lt; 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02). Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS.&#10;&#10;CONCLUSION: From a nationwide database analysis of 3221 patients, wound complications are predictors of both prolonged LOS and readmission. Patient comorbidities, including diabetes, higher ASA classification, female sex, and higher BMI also increased risk of prolonged LOS or readmission.Level of Evidence: 3.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:06+00:00" xmi:version="2.0">
+  <chunks charEnd="2245"/>
+  <entities type="ClinicalOutcome" id="readmission-within-30-days" mention="readmission within 30 days" confidence="0.95" sourceSpanStart="277" sourceSpanEnd="303">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="prolonged-los" mention="prolonged length of stay (LOS)" confidence="0.95" sourceSpanStart="318" sourceSpanEnd="348">
+    <properties key="name" value="prolonged length of stay"/>
+    <properties key="timeWindow" value="&gt;=2 days"/>
+  </entities>
+  <entities type="RiskFactor" id="postoperative-superficial-wound-infection" mention="postoperative superficial wound infection" confidence="0.95" sourceSpanStart="1472" sourceSpanEnd="1513">
+    <properties key="name" value="postoperative superficial wound infection"/>
+    <properties key="description" value="postoperative superficial wound infection"/>
+  </entities>
+  <entities type="RiskFactor" id="asa-classification" mention="American Society of Anesthesiologists (ASA) classification" confidence="0.95" sourceSpanStart="1552" sourceSpanEnd="1610">
+    <properties key="name" value="american society of anesthesiologists classification"/>
+    <properties key="description" value="american society of anesthesiologists classification"/>
+  </entities>
+  <entities type="RiskFactor" id="body-mass-index" mention="body mass index (BMI)" confidence="0.95" sourceSpanStart="1639" sourceSpanEnd="1660">
+    <properties key="name" value="body mass index"/>
+    <properties key="description" value="body mass index"/>
+  </entities>
+  <entities type="RiskFactor" id="female-sex" mention="Female sex" confidence="0.95" sourceSpanStart="1684" sourceSpanEnd="1694">
+    <properties key="name" value="female sex"/>
+    <properties key="description" value="female sex"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1719" sourceSpanEnd="1727">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="postoperative-wound-dehiscence" mention="postoperative wound dehiscence" confidence="0.95" sourceSpanStart="1752" sourceSpanEnd="1782">
+    <properties key="name" value="postoperative wound dehiscence"/>
+    <properties key="description" value="postoperative wound dehiscence"/>
+  </entities>
+  <entities type="RiskFactor" id="operative-time" mention="operative time" confidence="0.95" sourceSpanStart="1845" sourceSpanEnd="1859">
+    <properties key="name" value="operative time"/>
+    <properties key="description" value="operative time"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="postoperative-superficial-wound-infection" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.95" evidence="Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P &lt; 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02)." sourceSpanStart="1262" sourceSpanEnd="1489"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="asa-classification" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.95" evidence="Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P &lt; 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02)." sourceSpanStart="1262" sourceSpanEnd="1489"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="body-mass-index" targetType="ClinicalOutcome" targetId="readmission-within-30-days" confidence="0.95" evidence="Predictors of readmission were postoperative superficial wound infection (odds ratio [OR] = 73.83, P &lt; 0.001), American Society of Anesthesiologists (ASA) classification (OR = 1.98, P = 0.048), and body mass index (BMI) (OR = 1.06, P = 0.02)." sourceSpanStart="1262" sourceSpanEnd="1489"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="female-sex" targetType="ClinicalOutcome" targetId="prolonged-los" confidence="0.95" evidence="Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS." sourceSpanStart="1494" sourceSpanEnd="1720"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes" targetType="ClinicalOutcome" targetId="prolonged-los" confidence="0.95" evidence="Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS." sourceSpanStart="1494" sourceSpanEnd="1720"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="postoperative-wound-dehiscence" targetType="ClinicalOutcome" targetId="prolonged-los" confidence="0.95" evidence="Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS." sourceSpanStart="1494" sourceSpanEnd="1720"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="asa-classification" targetType="ClinicalOutcome" targetId="prolonged-los" confidence="0.95" evidence="Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS." sourceSpanStart="1494" sourceSpanEnd="1720"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="operative-time" targetType="ClinicalOutcome" targetId="prolonged-los" confidence="0.95" evidence="Female sex (OR = 1.76, P &lt; 0.001), diabetes (OR = 1.50, P = 0.024), postoperative wound dehiscence (OR = 13.11, P = 0.042), ASA class (OR = 1.43, P &lt; 0.01), and operative time (OR = 1.01, P &lt; 0.001) were significantly associated with prolonged LOS." sourceSpanStart="1494" sourceSpanEnd="1720"/>
+</raw:RawExtractionResult>

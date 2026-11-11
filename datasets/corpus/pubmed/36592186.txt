@@ -1,0 +1,9 @@
+# PubMed 36592186: Cardiovascular and renal effects of SGLT2 inhibitor initiation in acute heart failure: a meta-analysis of randomized controlled trials.
+
+Clinical research in cardiology : official journal of the German Cardiac Society (2023), doi:10.1007/s00392-022-02148-2
+
+BACKGROUND: We sought to compare cardiovascular outcomes, renal function, and diuresis in patients receiving standard diuretic therapy for acute heart failure (AHF) with or without the addition of SGLT2i.
+
+METHODS AND RESULTS: Systematic search of three electronic databases identified nine eligible randomized controlled trials involving 2,824 patients. The addition of SGLT2i to conventional therapy for AHF reduced all-cause death (odds ratio [OR] 0.75; 95% CI 0.56-0.99; p = 0.049), readmissions for heart failure (HF) (OR 0.54; 95% CI 0.44-0.66; p < 0.001), and the composite of cardiovascular death and readmissions for HF (hazard ratio 0.71; 95% CI 0.60-0.84; p < 0.001). Furthermore, SGLT2i increased mean daily urinary output in liters (mean difference [MD] 0.45; 95% CI 0.03-0.87; p = 0.035) and decreased mean daily doses of loop diuretics in mg of furosemide equivalent (MD -34.90; 95% CI [- 52.58, - 17.21]; p < 0.001) without increasing the incidence worsening renal function (OR 0.75; 95% CI 0.43-1.29; p = 0.290).
+
+CONCLUSION: SGLT2i addition to conventional diuretic therapy reduced all-cause death, readmissions for HF, and the composite of cardiovascular death or readmissions for HF. Moreover, SGLT2i was associated with a higher volume of diuresis with a lower dose of loop diuretics.

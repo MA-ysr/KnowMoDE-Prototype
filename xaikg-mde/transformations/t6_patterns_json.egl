@@ -1,0 +1,11 @@
+[% var j = ids; %]
+{
+  "schema": [%=j.json(s.name)%],
+  "patterns": [
+[% var first = true; for (q in s.queryPatterns) { %]
+    [% if (not first) { %],[% } %]{"name": [%=j.json(q.name)%], "description": [%=j.json(q.description)%], "parameters": [[%=q.parameters.collect(p | j.json(p)).concat(", ")%]],
+     "actionableOnly": [%=q.actionableOnly%],
+     "cypher": [%=j.json(q.cypherTemplate)%]}
+[% first = false; } %]
+  ]
+}

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/heart-health-tests.txt" sourceUri="https://medlineplus.gov/hearthealthtests.html" sourceSha256="ab4814f664a054d9646af93e0692bcc25b596c954c3bba065dfc960b4dae179a" sourceText="# MedlinePlus health topic: Heart Health Tests&#10;&#10;Also called: Cardiac Test, Heart Test, Cardiac Diagnostic Tests&#10;&#10;Heart diseases are the number one killer in the United States. They are also a major cause of disability. If you do have heart disease, it is important to find it early, when it is easier to treat. Blood tests and heart health tests can help find heart diseases or identify problems that can lead to heart diseases. There are several different types of heart health tests. Your health care provider will decide which test or tests you need, based on your symptoms (if any), risk factors, and medical history.&#10;&#10;Cardiac CatheterizationCardiac catheterization is a medical procedure used to diagnose and treat some heart conditions. For the procedure, your provider puts a catheter (a long, thin, flexible tube) into a blood vessel in your arm, groin, or neck, and threads it to your heart. The provider can use the catheter to:&#10;&#10;Do a coronary angiography. This involves putting a special type of dye in the catheter, so the dye can flow through your bloodstream to your heart. Then your provider takes x-rays of your heart. The dye allows your provider to see your coronary arteries on the x-ray, and to check for coronary artery disease (CAD). CAD is caused by plaque buildup in the arteries.&#10;&#10;Take samples of your blood and heart muscle.&#10;&#10;Examine your heart valves.&#10;&#10;Do procedures such as angioplasty or minor heart surgeries to repair congenital heart defects or replace heart valves.&#10;&#10;Cardiac CT ScanA cardiac CT (computed tomography) scan is a painless imaging test that uses x-rays to take detailed pictures of your heart and its blood vessels. Computers can combine these pictures to create a three-dimensional (3D) model of your whole heart. This test can help providers detect or evaluate various heart problems, including:&#10;&#10;Coronary artery disease&#10;&#10;Calcium buildup in the coronary arteries&#10;&#10;Congenital heart defects&#10;&#10;Problems with the aorta (the main artery that carries blood away from the heart)&#10;&#10;Problems with heart function and valves&#10;&#10;Pericardial diseases&#10;&#10;Before you have the test, you get an injection of contrast dye. The dye highlights your heart and blood vessels in the pictures. The CT scanner is a large, tunnel-like machine. You lie still on a table that slides you into the scanner, and the scanner takes the pictures.&#10;&#10;Cardiac MRICardiac MRI (magnetic resonance imaging) is a painless imaging test that uses radio waves, magnets, and a computer to create detailed pictures of your heart. It can help your provider figure out whether you have heart disease, and if so, how severe it is. A cardiac MRI can also help your provider decide the best way to treat heart problems such as:&#10;&#10;Congenital heart defects&#10;&#10;Coronary artery disease&#10;&#10;Heart valve problems&#10;&#10;Pericarditis&#10;&#10;Cardiac tumors&#10;&#10;Damage from a heart attack&#10;&#10;The MRI is a large, tunnel-like machine. You lie still on a table that slides you into the MRI machine. The machine makes loud noises as it takes pictures of your heart. Sometimes before the test, you might get an injection of contrast dye. The dye highlights your heart and blood vessels in the pictures.&#10;&#10;Chest X-RayA chest x-ray creates pictures of the organs and structures inside your chest, such as your heart, lungs, and blood vessels. It can reveal signs of heart failure, as well as lung disorders and other causes of symptoms not related to heart disease.&#10;&#10;Coronary AngiographyCoronary angiography (angiogram) is a procedure that uses contrast dye and x-ray pictures to look at the insides of your arteries. It can show whether plaque is blocking your arteries and how severe the blockage is. Providers use this procedure to diagnose heart diseases after chest pain, sudden cardiac arrest (SCA), or abnormal results from other heart tests such as an EKG or a stress test.&#10;&#10;You usually have a cardiac catheterization to inject the dye into your coronary arteries. Then the provider will take special x-rays while the dye is flowing through your coronary arteries. The dye lets your provider study the flow of blood through your heart and blood vessels.&#10;&#10;EchocardiographyEchocardiography, or echo, is a painless test that uses sound waves to create moving pictures of your heart. The pictures show the size and shape of your heart. They also show how well your heart's chambers and valves are working. Providers use an echo to diagnose many different heart problems, and to check how severe they are.&#10;&#10;There are several different types of echocardiography. For transthoracic echocardiography (the most common type), a technician applies gel to your chest. The gel helps sound waves reach your heart. The technician moves a transducer (wand-like device) across your chest. The transducer connects to a computer. It transmits ultrasound waves into your chest, and the waves bounce (echo) back. The computer converts the echoes into pictures of your heart.&#10;&#10;Electrocardiogram (EKG), (ECG)An electrocardiogram, also called an ECG or EKG, is a painless test that detects and records your heart's electrical activity. It shows how fast your heart is beating and whether its rhythm is steady or irregular.&#10;&#10;An EKG may be part of a routine exam to screen for heart disease. Or you may get it to detect and study heart problems such as heart attacks, arrhythmia, and heart failure.&#10;&#10;For the test, you lie still on a table and a nurse or technician attaches electrodes (patches that have sensors) to the skin on your chest, arms, and legs. Wires connect the electrodes to a machine that records your heart's electrical activity.&#10;&#10;Stress TestingStress testing looks at how your heart works during physical stress. It can help to diagnose coronary artery disease, and to check how severe it is. It can also check for other problems, including heart valve disease and heart failure.&#10;&#10;For the test, you exercise (or are given medicine if you are unable to exercise) to make your heart work hard and beat fast. While this is happening, you get an EKG and blood pressure monitoring. Before or after the test, you might also have an echocardiogram, or other imaging tests such as a nuclear scan. For the nuclear scan, you get an injection of a tracer (a radioactive substance), which travels to your heart. Special cameras detect the energy from the tracer to craeate pictures of your heart. You have pictures taken after you exercise, and then after you rest.&#10;&#10;NIH: National Heart, Lung, and Blood Institute&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:22:07+00:00" xmi:version="2.0">
+  <chunks charEnd="3831"/>
+  <chunks index="1" charStart="3833" charEnd="6450"/>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="113" sourceSpanEnd="126">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease (CAD)" confidence="0.95" sourceSpanStart="1225" sourceSpanEnd="1254">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="congenital-heart-defects" mention="congenital heart defects" confidence="0.95" sourceSpanStart="1449" sourceSpanEnd="1473">
+    <properties key="name" value="congenital heart defects"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="pericardial-diseases" mention="Pericardial diseases" confidence="0.95" sourceSpanStart="2061" sourceSpanEnd="2081">
+    <properties key="name" value="pericardial diseases"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="pericarditis" mention="Pericarditis" confidence="0.95" sourceSpanStart="2792" sourceSpanEnd="2804">
+    <properties key="name" value="pericarditis"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cardiac-tumors" mention="Cardiac tumors" confidence="0.95" sourceSpanStart="2806" sourceSpanEnd="2820">
+    <properties key="name" value="cardiac tumors"/>
+    <properties key="category" value="neoplastic"/>
+  </entities>
+  <entities type="Condition" id="heart-attack" mention="heart attack" confidence="0.95" sourceSpanStart="2836" sourceSpanEnd="2848">
+    <properties key="name" value="heart attack"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="3316" sourceSpanEnd="3329">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chest-pain" mention="chest pain" confidence="0.95" sourceSpanStart="3715" sourceSpanEnd="3725">
+    <properties key="name" value="chest pain"/>
+    <properties key="category" value="symptom"/>
+  </entities>
+  <entities type="Condition" id="sudden-cardiac-arrest" mention="sudden cardiac arrest (SCA)" confidence="0.95" sourceSpanStart="3727" sourceSpanEnd="3754">
+    <properties key="name" value="sudden cardiac arrest"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-disease" mention="heart disease" confidence="0.95" sourceSpanStart="5209" sourceSpanEnd="5222" chunkIndex="1">
+    <properties key="name" value="heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-attacks" mention="heart attacks" confidence="0.95" sourceSpanStart="5285" sourceSpanEnd="5298" chunkIndex="1">
+    <properties key="name" value="heart attack"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="arrhythmia" mention="arrhythmia" confidence="0.95" sourceSpanStart="5300" sourceSpanEnd="5310" chunkIndex="1">
+    <properties key="name" value="arrhythmia"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="5316" sourceSpanEnd="5329" chunkIndex="1">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="5685" sourceSpanEnd="5708" chunkIndex="1">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-valve-disease" mention="heart valve disease" confidence="0.95" sourceSpanStart="5789" sourceSpanEnd="5808" chunkIndex="1">
+    <properties key="name" value="heart valve disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+</raw:RawExtractionResult>

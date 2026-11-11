@@ -1,0 +1,8 @@
+**Feature attribution report** - model {{ decision.model }} ({{ decision.attributionMethod }}), prediction {{ decision.label }} p = {{ '%.3f' | format(decision.probability) }}
+
+| Feature | Value | Attribution | KG entity | Grounded evidence |
+|---|---|---|---|---|
+{% for a in decision.factors %}| {{ a.feature }} | {{ a.value }} | {{ '%+.4f' | format(a.attribution) }} | {{ a.entity or '(unbound)' }} | {% set ev = facts | selectattr('factorKey', 'equalto', a.key) | list %}{% set n = available_facts.get(a.entity, 0) %}{% if n == 0 %}none{% elif not ev %}{{ n }} fact(s) omitted (budget){% else %}{{ ev | length }} fact(s): {% for f in ev %}{{ f.factId }} ({{ f.sourceDocument }}){% if not loop.last %}; {% endif %}{% endfor %}{% if n > ev | length %} + {{ n - ev | length }} omitted (budget){% endif %}{% endif %} |
+{% endfor %}
+
+"none" means the knowledge graph holds no validated evidence for the factor; facts that exist but do not fit the presentation budget are reported as omitted. Nothing is invented to fill the table.

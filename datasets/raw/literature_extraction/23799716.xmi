@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/23799716.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/23799716/" sourceSha256="4c022fc35e8bbd72ab505e627773506c7df48d2861489230edbaf2f1a9da670a" sourceText="# PubMed 23799716: Epidemiology of polypharmacy among family medicine patients at hospital discharge.&#10;&#10;Journal of primary care &amp; community health (2013), doi:10.1177/2150131912472905&#10;&#10;BACKGROUND: Polypharmacy has been identified as a quality indicator, but no studies have been reported about the epidemiology of polypharmacy among hospital patients at discharge.&#10;&#10;METHODS: Records of 142 family medicine patients aged ≥65 years who were discharged from the hospital during the period November 2008 to October 2009 were extracted. Forty-six of these patients were readmitted within 30 days and the remaining 96 not readmitted within 30 days. Polypharmacy was measured as &gt;16 medications at dismissal. Independent variables related to person (use of medical care in the 12 months prior to hospitalization, number of high-risk diagnoses, and demographic characteristics), place (living situation at admission and disposition location), and time (month of admission). Chronic obstructive pulmonary disease, cancer, diabetes mellitus, congestive heart failure, and coronary artery disease were diagnoses determined to be high-risk.&#10;&#10;RESULTS: Mean number of medications at dismissal was 13.5 and 23.2% of patients were prescribed more than 16 medications. No interactions were found between readmission status and any of the independent variables. Use of medical services in the previous year was not related to polypharmacy and no seasonal pattern was detected. Two or more high-risk diagnoses were independently related to polypharmacy (odds ratio [OR] = 4.75, confidence interval [CI] = 1.0-11.2, P = .00). Being discharged to a location with personal health services such as home care or a skilled nursing facility was also related to polypharmacy (OR = 3.07, CI = 1.3-7.2, P = .01).&#10;&#10;CONCLUSION: Drug reviews intended to reduce the rate of polypharmacy among discharged persons aged ≥65 years can be targeted at patients who have 2 or more high-risk diagnoses and at those discharged to receive personal health services either at home or in a convalescence facility.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:26:33+00:00" xmi:version="2.0">
+  <chunks charEnd="2067"/>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="readmitted within 30 days" confidence="0.95" sourceSpanStart="564" sourceSpanEnd="589">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="polypharmacy" mention="Polypharmacy" confidence="0.9" sourceSpanStart="642" sourceSpanEnd="654">
+    <properties key="name" value="polypharmacy"/>
+    <properties key="description" value="measured as &gt;16 medications at dismissal"/>
+  </entities>
+  <entities type="Condition" id="chronic-obstructive-pulmonary-disease" mention="Chronic obstructive pulmonary disease" confidence="0.9" sourceSpanStart="965" sourceSpanEnd="1002">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="cancer" mention="cancer" confidence="0.9" sourceSpanStart="1004" sourceSpanEnd="1010">
+    <properties key="name" value="cancer"/>
+    <properties key="category" value="neoplasm"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.9" sourceSpanStart="1012" sourceSpanEnd="1029">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="congestive-heart-failure" mention="congestive heart failure" confidence="0.9" sourceSpanStart="1031" sourceSpanEnd="1055">
+    <properties key="name" value="congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.9" sourceSpanStart="1061" sourceSpanEnd="1084">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+</raw:RawExtractionResult>

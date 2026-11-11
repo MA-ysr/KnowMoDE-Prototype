@@ -1,0 +1,11 @@
+# PubMed 31523844: Personalized diabetes management recommendations at hospital discharge based on a computerized, pre-hospitalization clinical profile analysis: A prospective, electronic health records-based study.
+
+The International journal of health planning and management (2019), doi:10.1002/hpm.2906
+
+BACKGROUND: While glycemic control of hospitalized diabetic patients is straightforward, personalization of management at discharge is challenging. Treatment guidelines base recommendations on the clinical profile of patients. We checked the feasibility of implementing discharge recommendations, based on the clinical profile in the patients' electronic health records (EHR).
+
+METHODS: A decision-making algorithm was devised according to current guidelines. It was incorporated into the EHR. A prospective follow-up of eligible diabetes patients was done.
+
+RESULTS: During 15 months, 835 patients (HbA1c was 6.9% [6.2%-7.8%]) met our inclusion criteria. The rate of HbA1c acquisition increased from 55% during Q1 to 85%, 86%, 88%, and 87% thereafter. Also, the rate of incorporating personalized management recommendations to discharge letters increased: from 14.9% during Q1 to 42.9%, 43.0%, 47.2%, and 53.4% thereafter. Fifty-eight (17.3%) of patients who got personalized recommendations upon discharge were found to have HbA1c values that were over 1% deviating from suggested target HbA1c. They got the most stringent recommendations. Twenty-nine (50%) of them had available follow-up HbA1c values showing a significant drop in HbA1c: from 9.1% (8.4%-10.2%) to 8.5% (7.4%-9.5%), P = .03.
+
+CONCLUSIONS: Personalized, EHR algorithm-based, management recommendations for diabetes upon discharge from hospitalization are feasible and beneficial.

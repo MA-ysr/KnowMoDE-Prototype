@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/7477981" sourceUri="https://pubmed.ncbi.nlm.nih.gov/7477981/" sourceSha256="d339317b06802540a636d7f30857656df0186ffb6ffafedc15f755cdaecc2947" sourceText="Levodopa-induced dyskinesias are improved by fluoxetine. We evaluated the severity of motor disability and dyskinesias in seven levodopa-responsive patients with Parkinson's disease after an acute challenge with the mixed dopamine agonist, apomorphine, before and after the administration of fluoxetine (20 mg twice per day) for 11 +/- 1 days. After fluoxetine treatment, there was a significant 47% improvement (p &lt; 0.05) of apomorphine-induced dyskinesias without modification of parkinsonian motor disability. The dyskinesias were reduced predominantly in the lower limbs during the onset and disappearance of dystonic dyskinesias (onset- and end-of-dose dyskinesias) and in the upper limbs during choreic mid-dose dyskinesias. The results suggest that increased brain serotoninergic transmission with fluoxetine may reduce levodopa- or dopamine agonist-induced dyskinesias without aggravating parkinsonian motor disability." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:03+00:00" xmi:version="2.0">
+  <chunks charEnd="927"/>
+  <entities type="Drug" id="levodopa" mention="levodopa" confidence="0.95" sourceSpanStart="0" sourceSpanEnd="8">
+    <properties key="name" value="levodopa"/>
+  </entities>
+  <entities type="Drug" id="fluoxetine" mention="fluoxetine" confidence="0.95" sourceSpanStart="45" sourceSpanEnd="55">
+    <properties key="name" value="fluoxetine"/>
+  </entities>
+  <entities type="Drug" id="apomorphine" mention="apomorphine" confidence="0.95" sourceSpanStart="240" sourceSpanEnd="251">
+    <properties key="name" value="apomorphine"/>
+  </entities>
+  <entities type="Condition" id="dyskinesias" mention="dyskinesias" confidence="0.9" sourceSpanStart="446" sourceSpanEnd="457">
+    <properties key="name" value="dyskinesias"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="parkinsons-disease" mention="Parkinson's disease" confidence="0.98" sourceSpanStart="162" sourceSpanEnd="181">
+    <properties key="name" value="parkinson's disease"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="fluoxetine" targetType="Drug" targetId="levodopa" confidence="0.9" evidence="Levodopa-induced dyskinesias are improved by fluoxetine." sourceSpanStart="0" sourceSpanEnd="56"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="fluoxetine" targetType="Drug" targetId="apomorphine" confidence="0.9" evidence="After fluoxetine treatment, there was a significant 47% improvement (p &lt; 0.05) of apomorphine-induced dyskinesias without modification of parkinsonian motor disability." sourceSpanStart="344" sourceSpanEnd="512"/>
+</raw:RawExtractionResult>

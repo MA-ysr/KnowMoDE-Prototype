@@ -1,0 +1,7 @@
+# PubMed 28573408: Practical Recommendations for Transitioning Patients with Type 2 Diabetes from Hospital to Home.
+
+Current diabetes reports (2017), doi:10.1007/s11892-017-0876-1
+
+PURPOSE OF REVIEW: The purpose of this review is to provide practical evidence-based recommendations for transitioning hospitalized patients with type 2 diabetes (T2DM) to home.
+
+RECENT FINDINGS: Hospitalized patients who have newly diagnosed or poorly controlled T2DM require initiation or intensification of their outpatient diabetes regimen. Potential barriers to medication access and continuity of care should be identified early in the hospitalization. Throughout hospitalization, patients should receive diabetes education focused on basic survival skills and tailored to learning needs. Patients should leave the hospital with personalized discharge instructions that include a list of all medications and follow-up appointments with both the outpatient diabetes provider and a diabetes educator whenever possible. An approach to transitioning patients with T2DM from hospital to home that focuses on optimizing the patient's discharge diabetes regimen, anticipating patients' needs during the immediate post-discharge period, providing survival skills education, and ensuring continuation of diabetes care and education following hospital discharge has the potential to improve glycemic control and reduce emergency department visits and hospital readmissions.

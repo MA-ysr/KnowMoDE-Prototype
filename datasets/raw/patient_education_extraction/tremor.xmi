@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/tremor.txt" sourceUri="https://medlineplus.gov/tremor.html" sourceSha256="fb4310d0cd76120d1011c2dc0dca63e3d994c93d961886c39f9c98abba50fa2f" sourceText="# MedlinePlus health topic: Tremor&#10;&#10;Also called: Essential Tremor&#10;&#10;What is a tremor?A tremor is a neurological condition that includes shaking or trembling movements in one or more parts of your body. It most often affects the hands. But it can also affect the arms, legs, head, vocal cords, and torso (trunk). A tremor is involuntary, meaning that you cannot control it. It happens because of muscle contractions.&#10;&#10;A tremor may come and go, or it may be constant. It can happen on its own or be caused by another disorder. It is not life threatening, but it may cause challenges. It can make it hard to do daily life tasks such as writing, typing, eating, and dressing. In some cases, a tremor can even lead to disabilities.&#10;&#10;What are the types of tremor?There are several types of tremor, including:&#10;&#10;Essential tremor, sometimes called benign essential tremor or familial tremor. This is the most common type. It usually affects both your hands and arms while you are moving them. It can also affect your head, voice, or legs.&#10;&#10;Parkinsonian tremor, which is a common symptom in people who have Parkinson's disease. It usually affects one or both hands when they are at rest, but it can affect the chin, lips, face, and legs.&#10;&#10;Dystonic tremor, which happens in people who have dystonia. Dystonia is a movement disorder in which you have involuntary muscle contractions. The contractions cause you to have twisting and repetitive movements. It can affect any muscle in the body.&#10;&#10;What causes tremor?Generally, tremor is caused by a problem in the deep parts of the brain that control movements. For most types, the cause is unknown. Some types are inherited and run in families. There can also be other causes, such as:&#10;&#10;Neurologic disorders, including multiple sclerosis, Parkinson's disease, stroke, and traumatic brain injury&#10;&#10;Certain medicines, such as asthma medicines, chemotherapy, corticosteroids, and medicines used for certain psychiatric and neurological disorders&#10;&#10;Alcohol use disorder (AUD) or alcohol withdrawal&#10;&#10;Poisoning from certain toxic substances, including pesticides and heavy metals such as mercury and lead&#10;&#10;Hyperthyroidism (overactive thyroid)&#10;&#10;Liver or kidney failure&#10;&#10;Anxiety or panic&#10;&#10;Too much caffeine&#10;&#10;Who is at risk for tremor?Anyone can get tremor, but it is most common in middle-aged and older adults. For certain types of tremor, having a family history raises your risk of getting it.&#10;&#10;What are the symptoms of tremor?Symptoms of tremor may include:&#10;&#10;Rhythmic shaking in the hands, arms, head, legs, or torso&#10;&#10;Shaky voice&#10;&#10;Difficulty writing or drawing&#10;&#10;Problems holding and controlling utensils, such as a spoon&#10;&#10;How is tremor diagnosed?Your health care provider may use many tools to make a diagnosis:&#10;&#10;A medical history, which includes asking about your symptoms&#10;&#10;A physical exam, which includes checking:&#10;Whether the tremor happens when the muscles are at rest or in action&#10;&#10;The location of the tremor&#10;&#10;How often you have the tremor and how strong it is&#10;&#10;A neurological exam, including checking for:&#10;Problems with balance&#10;&#10;Problems with speech&#10;&#10;Increased muscle stiffness&#10;&#10;Blood or urine tests to look for the cause&#10;&#10;Imaging tests to help figure out if the cause is damage to your brain&#10;&#10;Tests that check your abilities to do daily tasks such as handwriting and holding a fork or cup&#10;&#10;An electromyogram, a test that measures involuntary muscle activity and how your muscles respond to nerve stimulation&#10;&#10;What are the treatments for tremor?There is no cure for most forms of tremor, but there are treatments to help manage symptoms. In some cases, the symptoms may be so mild that you do not need treatment.&#10;&#10;Finding the right treatment depends on getting the right diagnosis of the cause. Tremor caused by another medical condition may get better or go away when you treat that condition. If your tremor is caused by a certain medicine, stopping that medicine usually makes the tremor go away.&#10;&#10;Treatments for tremor can include:&#10;&#10;Medicines. There are different medicines for the specific types of tremor. Another option is Botox injections, which can treat several different types of tremor.&#10;&#10;Surgery may be used for severe cases that do not get better with medicines. The most common type is deep brain stimulation (DBS). DBS uses electrodes that are implanted in the brain. The electrodes send electrical pulses to the parts of the brain that are causing the tremor.&#10;&#10;Physical, speech-language, and occupational therapy, which may help to control tremor and deal with the daily challenges caused by the tremor.&#10;&#10;If you find that caffeine and other stimulants trigger your tremors, it may be helpful to cut them from your diet.&#10;&#10;NIH: National Institute of Neurological Disorders and Stroke&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:25:26+00:00" xmi:version="2.0">
+  <chunks charEnd="3969"/>
+  <chunks index="1" charStart="3935" charEnd="4732"/>
+  <entities type="Condition" id="tremor" mention="tremor" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="34">
+    <properties key="name" value="tremor"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="essential-tremor" mention="Essential Tremor" confidence="0.95" sourceSpanStart="49" sourceSpanEnd="65">
+    <properties key="name" value="essential tremor"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="parkinsons-disease" mention="Parkinson's disease" confidence="0.95" sourceSpanStart="1096" sourceSpanEnd="1115">
+    <properties key="name" value="parkinson's disease"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="multiple-sclerosis" mention="multiple sclerosis" confidence="0.95" sourceSpanStart="1753" sourceSpanEnd="1771">
+    <properties key="name" value="multiple sclerosis"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="stroke" mention="stroke" confidence="0.95" sourceSpanStart="1794" sourceSpanEnd="1800">
+    <properties key="name" value="stroke"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="traumatic-brain-injury" mention="traumatic brain injury" confidence="0.95" sourceSpanStart="1806" sourceSpanEnd="1828">
+    <properties key="name" value="traumatic brain injury"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="hyperthyroidism" mention="Hyperthyroidism" confidence="0.95" sourceSpanStart="2132" sourceSpanEnd="2147">
+    <properties key="name" value="hyperthyroidism"/>
+    <properties key="category" value="endocrine"/>
+  </entities>
+  <entities type="RiskFactor" id="family-history" mention="family history" confidence="0.9" sourceSpanStart="2374" sourceSpanEnd="2388">
+    <properties key="name" value="family history"/>
+    <properties key="description" value="having a family history raises your risk of getting it."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="disabilities" mention="disabilities" confidence="0.9" sourceSpanStart="712" sourceSpanEnd="724">
+    <properties key="name" value="disabilities"/>
+  </entities>
+  <entities type="Condition" id="tremor" mention="tremor" confidence="0.95" sourceSpanStart="3950" sourceSpanEnd="3956" chunkIndex="1">
+    <properties key="name" value="tremor"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Drug" id="botox" mention="Botox" confidence="0.95" sourceSpanStart="4064" sourceSpanEnd="4069" chunkIndex="1">
+    <properties key="name" value="botox"/>
+  </entities>
+  <entities type="RiskFactor" id="caffeine-and-other-stimulants" mention="caffeine and other stimulants" confidence="0.9" sourceSpanStart="4572" sourceSpanEnd="4601" chunkIndex="1">
+    <properties key="name" value="caffeine and other stimulants"/>
+    <properties key="description" value="caffeine and other stimulants trigger your tremors"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="tremors" mention="tremors" confidence="0.9" sourceSpanStart="4615" sourceSpanEnd="4622" chunkIndex="1">
+    <properties key="name" value="tremors"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="tremor" targetType="ClinicalOutcome" targetId="disabilities" confidence="0.9" evidence="In some cases, a tremor can even lead to disabilities." sourceSpanStart="671" sourceSpanEnd="725"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="family-history" targetType="Condition" targetId="tremor" confidence="0.9" evidence="For certain types of tremor, having a family history raises your risk of getting it." sourceSpanStart="2336" sourceSpanEnd="2420"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="caffeine-and-other-stimulants" targetType="ClinicalOutcome" targetId="tremors" confidence="0.85" evidence="If you find that caffeine and other stimulants trigger your tremors, it may be helpful to cut them from your diet." sourceSpanStart="4555" sourceSpanEnd="4669" chunkIndex="1"/>
+</raw:RawExtractionResult>

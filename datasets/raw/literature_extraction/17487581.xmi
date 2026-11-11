@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/17487581.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/17487581/" sourceSha256="cf1bc1452d714ea9a25b3719e52a8f6567e3da62bb6777d8323eb95801081cd8" sourceText="# PubMed 17487581: Acute heart failure syndromes: clinical scenarios and pathophysiologic targets for therapy.&#10;&#10;Heart failure reviews (2007), doi:10.1007/s10741-007-9011-8&#10;&#10;Acute heart failure syndromes (AHFS) represent the most common discharge diagnosis in patients over age 65 years, with an exceptionally high mortality and readmission rates at 60-90 days. Recent surveys and registries have generated important information concerning the clinical characteristics of patients with AHFS and their prognosis. Most patients with AHFS present either with normal systolic blood pressure or elevated blood pressure. Patients who present with elevated systolic blood pressure usually have pulmonary congestion, a relatively preserved left ventricular ejection fraction (LVEF), are often elderly women, and their symptoms develop typically and abruptly. Patients with normal systolic blood pressure present with systemic congestion, reduced LVEF, are usually younger with a history of chronic HF, and have symptoms that develop gradually over days or weeks. In addition to the abnormal hemodynamics (increase in pulmonary capillary wedge pressure and/or decrease in cardiac output) that characterize patients with AHFS, myocardial injury, which may be related to a decrease in coronary perfusion and/or further activation of neurohormones and renal dysfunction, probably contributes to short-term and post-discharge cardiac events. Patients with AHFS also have significant cardiac and noncardiac underlying conditions that contribute to the pathogenesis of AHFS, including coronary artery disease (ischemia, hibernating myocardium, and endothelial dysfunction), hypertension, atrial fibrillation, and type 2 diabetes mellitus. Therefore, the targets of therapy for AHFS should be not only to improve symptoms and hemodynamics but also to preserve or improve renal function, prevent myocardial damage, modulate neurohumoral and inflammatory activation, and to manage other comorbidities that may cause and/or contribute to the progression of this syndrome.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:13:32+00:00" xmi:version="2.0">
+  <chunks charEnd="2052"/>
+  <entities type="Condition" id="acute-heart-failure-syndromes" mention="Acute heart failure syndromes (AHFS)" confidence="0.95" sourceSpanStart="173" sourceSpanEnd="209">
+    <properties key="name" value="acute heart failure syndromes"/>
+    <properties key="category" value="circulatory"/>
+    <properties key="icd9Range" value="428"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality-and-readmission-rates-at-60-90-days" mention="mortality and readmission rates at 60-90 days" confidence="0.9" sourceSpanStart="314" sourceSpanEnd="359">
+    <properties key="name" value="mortality and readmission at 60-90 days"/>
+    <properties key="timeWindow" value="60-90 days"/>
+  </entities>
+  <entities type="Condition" id="coronary-artery-disease" mention="coronary artery disease" confidence="0.95" sourceSpanStart="1569" sourceSpanEnd="1592">
+    <properties key="name" value="coronary artery disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1658" sourceSpanEnd="1670">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+    <properties key="icd9Range" value="401-405"/>
+  </entities>
+  <entities type="Condition" id="atrial-fibrillation" mention="atrial fibrillation" confidence="0.95" sourceSpanStart="1672" sourceSpanEnd="1691">
+    <properties key="name" value="atrial fibrillation"/>
+    <properties key="category" value="circulatory"/>
+    <properties key="icd9Range" value="427.31"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="1697" sourceSpanEnd="1721">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+    <properties key="icd9Range" value="250"/>
+  </entities>
+</raw:RawExtractionResult>

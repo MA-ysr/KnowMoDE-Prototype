@@ -1,0 +1,10 @@
+**What could lower this risk** ({{ audience.role }} view)
+{% set ns = namespace(said=[]) %}
+{% for f in facts %}
+{% if audience.budget.plainLanguage %}{% set line = ('A guideline (' ~ f.guidelineSource ~ ') recommends ' ~ (f.recommendsLabel | join(', ')) ~ ' for people with ' ~ (f.conditionLabel or f.condition) ~ '. Your care team can discuss it with you') if f.recommendation else (((f.protectiveLabel or f.protectiveFactor) | plain) ~ ': linked to a lower chance of returning to the hospital') %}{% else %}{% set line = (f.recommendation ~ ' (' ~ f.guidelineSource ~ ((', ' ~ f.strength) if f.strength else '') ~ '; applies to ' ~ f.condition ~ '; concerns: ' ~ (f.recommends | join(', ')) ~ ')') if f.recommendation else (f.protectiveFactor ~ ' (' ~ f.factorType ~ ') is associated with a lower risk of ' ~ f.outcome ~ ' (' ~ f.sources ~ ' source' ~ ('s' if f.sources > 1 else '') ~ ')' ~ (("; related to this encounter's " ~ (f.relatedTo | join(', '))) if f.relatedTo else '')) %}{% endif %}
+{% if line not in ns.said %}{% set ns.said = ns.said + [line] %}
+- {{ line }}{% if audience.budget.plainLanguage %} (source: {{ f.sourceDocument | source_title }}).{% else %} [source: {{ f.sourceDocument }}, confidence {{ '%.2f' | format(f.confidence) }}, fact {{ f.factId }}]{% endif %}{{ '\n' }}
+{%- endif %}
+{% else %}
+No modifiable factor with evidence in the knowledge graph applies to this decision.{{ '\n' }}
+{%- endfor %}

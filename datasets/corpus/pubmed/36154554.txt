@@ -1,0 +1,11 @@
+# PubMed 36154554: Cumulative rehospitalizations and implications for subsequent mortality after first-ever ischemic stroke.
+
+Hospital practice (1995) (2022), doi:10.1080/21548331.2022.2128575
+
+INTRODUCTION: Clinical implications of readmission following initial hospitalization for acute ischemic stroke (AIS) are not known. We examined predictors of readmissions and impact of readmissions on subsequent mortality after first-ever AIS.
+
+MATERIALS AND METHODS: Adults aged ≥18 years who survived to discharge after hospitalization for first-ever AIS from 2003 to 2019 were included in the study. For each patient, the overall burden of hospitalizations was measured as total number of hospitalizations and aggregate days spent hospitalized during follow-up. We used Poisson regression to estimate incident rate ratios (IRR) for predictors of re-hospitalization and time-dependent Cox regression to estimate hazard ratios (HR) for mortality.
+
+RESULTS: Of 908 AIS survivors, 537 died, 669 had 2,645 readmissions over 4,535 person-years follow-up. Adjusted independent predictors of cumulative readmission inlcuded being white (IRR 1.21, 95% CI 1.03-1.42), dependency on discharge (IRR 1.27, 95% CI 1.17-1.38), cardio-embolism (IRR 1.35, 95% CI 1.18-1.45), smoking (IRR 1.21, 95% CI 1.08-1.35), anemia (IRR 1.40, 95% CI 1.24-1.57), arthritis (IRR 1.20, 95% CI 1.10-1.31), coronary artery disease (IRR 1.34, 95% CI 1.23-1.47), cancer (IRR 1.96, 95% CI 1.64-2.30), chronic kidney disease (IRR 1.36, 95% CI 1.21-1.57), COPD (IRR 1.18, 95% CI 1.04-1.34), depression (IRR 1.50, 95% CI 1.37-1.66), diabetes mellitus (IRR 1.48, 95% CI 1.36-1.48), and heart failure (IRR 1.17, 95% CI 1.03-1.34). Conversely, hyperlipidemia was associated with a lower risk of readmission (IRR 0.79, 95% CI 0.71-0.88). Mortality was significantly increased with each hospitalization and cumulative days spent in hospital.
+
+CONCLUSIONS: Among survivors of AIS hospitalization, certain sociodemographic indicators, stroke-specific features, and several key comorbid conditions were associated with increased risk of readmissions, which in turn correlated with increased mortality. Therefore, lifestyle modification and optimal treatment of comorbidities are likely to improve the outcome after AIS.

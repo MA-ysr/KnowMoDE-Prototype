@@ -1,0 +1,21 @@
+[% var j = ids; var m = d.aiModel; %]
+{
+  "name": [%=j.json(d.name)%],
+  "targetSchema": [%=j.json(d.targetSchema.name)%],
+  "aiModel": {"name": [%=j.json(m.name)%], "version": [%=j.json(m.version)%], "taskType": [%=j.json(m.taskType)%],
+              "trainingDataset": [%=j.json(m.trainingDataset)%], "attributionMethod": [%=j.json(m.attributionMethod.name)%],
+              "features": [[%=m.featureNames.collect(f | j.json(f)).concat(", ")%]]},
+  "decisionClasses": [
+[% var first = true; for (dc in d.decisionClasses) { %]
+    [% if (not first) { %],[% } %]{"name": [%=j.json(dc.name)%], "label": [%=j.json(dc.label)%], "positive": [%=dc.positive%], "predictedOutcome": [%=j.json(dc.predictedOutcome)%],
+     "threshold": [%=dc.threshold%], "explanationTypes": [[%=dc.explanationTypes.collect(t | j.json(t.name)).concat(", ")%]]}
+[% first = false; } %]
+  ],
+  "featureBindings": [
+[% first = true; for (b in d.featureBindings) { %]
+    [% if (not first) { %],[% } %]{"feature": [%=j.json(b.featureName)%], "kind": [%=j.json(b.kind.name)%], "concept": [%=j.json(b.concept.name)%],
+     "entityName": [% if (b.entityName.isDefined()) { %][%=j.json(b.entityName)%][% } else { %]null[% } %], "valueMap": [% if (b.valueMap.isDefined()) { %][%=j.json(b.valueMap)%][% } else { %]null[% } %],
+     "activeWhen": [% if (b.activeWhen.isDefined()) { %][%=j.json(b.activeWhen)%][% } else { %]null[% } %]}
+[% first = false; } %]
+  ]
+}

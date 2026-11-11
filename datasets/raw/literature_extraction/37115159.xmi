@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37115159.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37115159/" sourceSha256="99ede8f548ca2895a503cb7073251dd6cae284953cc578cb0f61347bcc7106c2" sourceText="# PubMed 37115159: Readmission and Mortality After Hospitalization With Acute Kidney Injury.&#10;&#10;American journal of kidney diseases : the official journal of the National Kidney Foundation (2023), doi:10.1053/j.ajkd.2022.12.008&#10;&#10;RATIONALE &amp; OBJECTIVE: Acute kidney injury (AKI) carries high rates of morbidity and mortality. This study quantified various short- and long-term outcomes after hospitalization with AKI.&#10;&#10;STUDY DESIGN: Retrospective propensity score (PS)-matched cohort study.&#10;&#10;SETTING &amp; PARTICIPANTS: Optum Clinformatics, a national claims database, was used to identify patients hospitalized with and without an AKI discharge diagnosis between January 2007 and September 2020.&#10;&#10;EXPOSURE: Among patients with prior continuous enrollment for at least 2years without AKI hospitalization, 471,176 patients hospitalized with AKI were identified and PS-matched to 471,176 patients hospitalized without AKI.&#10;&#10;OUTCOME(S): All-cause and selected-cause rehospitalizations and mortality 90 and 365 days after index hospitalization.&#10;&#10;ANALYTICAL APPROACH: After PS matching, rehospitalization and death incidences were estimated using the cumulative incidence function method and compared using Gray's test. The association of AKI hospitalization with each outcome was tested using Cox models for all-cause mortality and, with mortality as competing risk, cause-specific hazard modeling for all-cause and selected-cause rehospitalization. Overall and stratified analyses were performed to evaluate for interaction between an AKI hospitalization and preexisting chronic kidney disease (CKD).&#10;&#10;RESULTS: After PS matching, AKI was associated with higher rates of rehospitalization for any cause (hazard ratio [HR], 1.62; 95% CI, 1.60-1.65), end-stage renal disease (HR, 6.21; 95% CI, 1.04-36.92), heart failure (HR, 2.81; 95% CI, 2.66, 2.97), sepsis (HR, 2.62; 95% CI, 2.49-2.75), pneumonia (HR, 1.47; 95% CI, 1.37-1.57), myocardial infarction (HR, 1.48; 95% CI, 1.33-1.65), and volume depletion (HR, 1.64; 95% CI, 1.37-1.96) at 90 days after discharge compared with the group without AKI, with similar findings at 365 days. Mortality rate was higher in the group with AKI than in the group without AKI at 90 (HR, 2.66; 95% CI, 2.61-2.72) and 365 days (HR, 2.11; 95% CI, 2.08-2.14). The higher risk of outcomes persisted when participants were stratified by CKD status (P&lt;0.01).&#10;&#10;LIMITATIONS: Causal associations between AKI and the reported outcomes cannot be inferred.&#10;&#10;CONCLUSIONS: AKI during hospitalization in patients with and without CKD is associated with increased risk of 90- and 365-day all-cause/selected-cause rehospitalization and death.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:28:15+00:00" xmi:version="2.0">
+  <chunks charEnd="2649"/>
+  <entities type="Condition" id="acute-kidney-injury" mention="Acute kidney injury" confidence="0.99" sourceSpanStart="72" sourceSpanEnd="91">
+    <properties key="name" value="acute kidney injury"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="aki" mention="AKI" confidence="0.99" sourceSpanStart="271" sourceSpanEnd="274">
+    <properties key="name" value="acute kidney injury"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.98" sourceSpanStart="1561" sourceSpanEnd="1583">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="rehospitalization-at-90-days" mention="rehospitalization for any cause ... at 90 days after discharge" confidence="0.95" sourceSpanStart="1083" sourceSpanEnd="1285">
+    <properties key="name" value="hospital readmission"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality-at-90-days" mention="Mortality rate was higher in the group with AKI than in the group without AKI at 90" confidence="0.95" sourceSpanStart="2122" sourceSpanEnd="2205">
+    <properties key="name" value="mortality"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality-at-365-days" mention="365 days" confidence="0.95" sourceSpanStart="2240" sourceSpanEnd="2248">
+    <properties key="name" value="mortality"/>
+    <properties key="timeWindow" value="365 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="aki" targetType="ClinicalOutcome" targetId="rehospitalization-at-90-days" confidence="0.95" evidence="After PS matching, AKI was associated with higher rates of rehospitalization for any cause (hazard ratio [HR], 1.62; 95% CI, 1.60-1.65), end-stage renal disease (HR, 6.21; 95% CI, 1.04-36.92), heart failure (HR, 2.81; 95% CI, 2.66, 2.97), sepsis (HR, 2.62; 95% CI, 2.49-2.75), pneumonia (HR, 1.47; 95% CI, 1.37-1.57), myocardial infarction (HR, 1.48; 95% CI, 1.33-1.65), and volume depletion (HR, 1.64; 95% CI, 1.37-1.96) at 90 days after discharge compared with the group without AKI, with similar findings at 365 days." sourceSpanStart="1601" sourceSpanEnd="2121"/>
+</raw:RawExtractionResult>

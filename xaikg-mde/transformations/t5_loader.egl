@@ -1,0 +1,127 @@
+[*
+  T5 (paper, Phase 4, M2T): ValidatedKG model(s) -> Cypher loader script for Neo4j 5.
+
+  Only accepted, provenance-tagged facts reach the graph (T2 guarantees it). Every domain node is
+  MERGEd on `_key` (lower-cased identifying property, so "Metformin" and "metformin" are one node)
+  and carries the vocabulary flags of its canonical entity (`_modifiable`, `_plain_label`);
+  every extracted relation becomes one relationship carrying its provenance as `_prov_*` properties
+  (fact id, source document, span, LLM, prompt id/hash, confidence, policy version). Provenance
+  nodes (:SourceDocument, :ExtractionRun) link each node to where and how it was obtained (D7).
+
+  Input model alias: VKG (all validated-kg files, expanded). `ids` and `schema` are injected.
+  Statements are batched (UNWIND over literal lists) so the script applies with cypher-shell or the
+  Bolt driver without parameters.
+*]
+[%
+var BATCH = 200;
+var roots = VKG!ValidatedKG.all;
+var entities = roots.collect(r | r.validEntities).flatten();
+var relations = roots.collect(r | r.validRelations).flatten();
+
+out.println("// Documents ....... " + roots.size());
+out.println("// Entities ........ " + entities.size() + " accepted (" + entities.collect(e | e.type).asSet().size() + " concepts)");
+out.println("// Relations ....... " + relations.size() + " accepted (" + relations.collect(r | r.type).asSet().size() + " relationship types)");
+out.print("\n");
+
+// ---- provenance: source documents and extraction runs -----------------------------------------
+out.println("// ---- Provenance nodes ----");
+var docs = roots.collect(r | r.validEntities.collect(e | e.provenance)).flatten()
+             .includingAll(roots.collect(r | r.validRelations.collect(e | e.provenance)).flatten());
+var docKeys = docs.collect(p | p.sourceDocument).asSet().asSequence().sortBy(s | s);
+for (dk in docKeys) {
+  var p = docs.selectOne(x | x.sourceDocument = dk);
+  out.println("MERGE (d:SourceDocument {id: " + dk.cy() + "}) SET d.uri = " + p.sourceUri.cy() + ", d.sha256 = " + p.sourceSha256.cy()
+              + ", d.collection = " + dk.split("/").first().cy() + ";");
+}
+var runs = docs.collect(p | p.runId()).asSet().asSequence().sortBy(s | s);
+for (rk in runs) {
+  var p = docs.selectOne(x | x.runId() = rk);
+  out.println("MERGE (x:ExtractionRun {runId: " + rk.cy() + "}) SET x.promptId = " + p.promptId.cy() + ", x.promptHash = " + p.promptHash.cy()
+              + ", x.extractionTask = " + p.extractionTask.cy() + ", x.llmModel = " + p.llmModel.cy()
+              + ", x.validationPolicyVersion = " + p.validationPolicyVersion.cy() + ", x.timestamp = " + p.extractionTimestamp.cy() + ";");
+}
+out.print("\n");
+
+// ---- domain nodes, grouped by label -----------------------------------------------------------
+out.println("// ---- Domain nodes (MERGE on _key = lower-cased identifying property) ----");
+for (label in entities.collect(e | e.type).asSet().asSequence().sortBy(s | s)) {
+  var concept = schema.concepts.selectOne(c | c.name = label);
+  var idProp = concept.properties.selectOne(p | p.isRequired);
+  var items = entities.select(e | e.type = label);
+  var i = 0;
+  while (i < items.size()) {
+    var batch = items.subList(i, (i + BATCH).min(items.size()));
+    out.println("UNWIND [");
+    var first = true;
+    for (e in batch) {
+      var idValue = e.identifyingValue(idProp.name);
+      var props = e.properties.select(p | concept.properties.exists(cp | cp.name = p.key) and p.value.isDefined() and p.value.trim().length() > 0);
+      out.println((first ? "  " : " ,") + "{key: " + idValue.toLowerCase().trim().cy() + ", idValue: " + idValue.cy()
+        + ", props: {" + props.collect(p | p.key + ": " + p.value.trim().cy()).concat(", ") + "}"
+        + ", doc: " + e.provenance.sourceDocument.cy() + ", run: " + e.provenance.runId().cy() + ", prompt: " + e.provenance.promptId.cy()
+        + ", mention: " + e.provenance.mention.cy() + ", start: " + e.provenance.charStart + ", end: " + e.provenance.charEnd
+        + ", confidence: " + e.confidence + ", task: " + e.provenance.extractionTask.cy()
+        + ", normalizedFrom: " + e.provenance.normalizedFrom.cy()
+        + ", modifiable: " + e.modifiable + ", plainLabel: " + e.plainLabel.cy() + "}");
+      first = false;
+    }
+    out.println("] AS e");
+    out.println("MERGE (n:" + label + " {_key: e.key})");
+    out.println("  ON CREATE SET n." + idProp.name + " = e.idValue, n += e.props");
+    out.println("  ON MATCH SET n += e.props");
+    // vocabulary-declared flags (canonical entities): identical for every mention of the same key
+    out.println("SET n._modifiable = e.modifiable, n._plain_label = e.plainLabel");
+    out.println("WITH n, e");
+    out.println("MATCH (d:SourceDocument {id: e.doc})");
+    out.println("MERGE (n)-[x:EXTRACTED_FROM {_prov_char_start: e.start, _prov_char_end: e.end}]->(d)");
+    out.println("  SET x._prov_mention = e.mention, x._prov_confidence = e.confidence, x._prov_prompt_id = e.prompt, x._prov_run_id = e.run, x._prov_extraction_task = e.task, x._prov_normalized_from = e.normalizedFrom");
+    out.println("WITH n, e");
+    out.println("MATCH (r:ExtractionRun {runId: e.run})");
+    out.println("MERGE (n)-[:PRODUCED_BY]->(r);");
+    out.print("\n");
+    i = i + BATCH;
+  }
+}
+
+// ---- relationships, grouped by (type, sourceLabel, targetLabel) ---------------------------------
+out.println("// ---- Relationships (one per accepted fact, provenance as _prov_* properties) ----");
+var groups = relations.collect(r | r.type + "|" + r.sourceType + "|" + r.targetType).asSet().asSequence().sortBy(s | s);
+for (g in groups) {
+  var parts = g.split("\\|");
+  var type = parts.at(0); var sl = parts.at(1); var tl = parts.at(2);
+  var items = relations.select(r | r.type = type and r.sourceType = sl and r.targetType = tl);
+  var i = 0;
+  while (i < items.size()) {
+    var batch = items.subList(i, (i + BATCH).min(items.size()));
+    out.println("UNWIND [");
+    var first = true;
+    for (r in batch) {
+      var p = r.provenance;
+      out.println((first ? "  " : " ,") + "{s: " + r.sourceKey.toLowerCase().trim().cy() + ", t: " + r.targetKey.toLowerCase().trim().cy()
+        + ", fact: " + r.factId.cy() + ", doc: " + p.sourceDocument.cy() + ", start: " + p.charStart + ", end: " + p.charEnd
+        + ", evidence: " + p.mention.cy() + ", confidence: " + r.confidence + ", run: " + p.promptId.cy() + ", runId: " + p.runId().cy() + ", hash: " + p.promptHash.cy()
+        + ", llm: " + p.llmModel.cy() + ", policy: " + p.validationPolicyVersion.cy() + ", ts: " + p.extractionTimestamp.cy() + "}");
+      first = false;
+    }
+    out.println("] AS r");
+    out.println("MATCH (s:" + sl + " {_key: r.s}), (t:" + tl + " {_key: r.t})");
+    out.println("MERGE (s)-[x:" + type + " {_prov_fact_id: r.fact}]->(t)");
+    out.println("  SET x._prov_source_document = r.doc, x._prov_char_start = r.start, x._prov_char_end = r.end, x._prov_evidence = r.evidence,");
+    out.println("      x._prov_confidence = r.confidence, x._prov_prompt_id = r.run, x._prov_run_id = r.runId, x._prov_prompt_hash = r.hash, x._prov_llm_model = r.llm,");
+    out.println("      x._prov_policy_version = r.policy, x._prov_extracted_at = r.ts;");
+    out.print("\n");
+    i = i + BATCH;
+  }
+}
+%]
+[%
+// Cypher string literal (single-quoted) via the Java helper (handles quotes, backslashes, newlines).
+operation String cy() : String { return ids.cypher(self); }
+operation VKG!ProvenanceRecord runId() : String { return self.promptId + "@" + self.llmModel; }
+operation Any cy() : String { return (self.isDefined()) ? ids.cypher(self.asString()) : "null"; }
+operation VKG!ValidEntity identifyingValue(prop : String) : String {
+  var p = self.properties.selectOne(q | q.key = prop);
+  if (p.isDefined() and p.value.isDefined() and p.value.trim().length() > 0) { return p.value.trim(); }
+  return self.provenance.mention;
+}
+%]

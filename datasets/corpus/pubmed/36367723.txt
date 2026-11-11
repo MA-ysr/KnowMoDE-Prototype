@@ -1,0 +1,17 @@
+# PubMed 36367723: Postdischarge Glucocorticoid Use and Clinical Outcomes of Multisystem Inflammatory Syndrome in Children.
+
+JAMA network open (2022), doi:10.1001/jamanetworkopen.2022.41622
+
+IMPORTANCE: Minimal data are available regarding the postdischarge treatment of multisystem inflammatory syndrome in children (MIS-C).
+
+OBJECTIVES: To evaluate clinical characteristics associated with duration of postdischarge glucocorticoid use and assess postdischarge clinical course, laboratory test result trajectories, and adverse events in a multicenter cohort with MIS-C.
+
+DESIGN, SETTING, AND PARTICIPANTS: This retrospective cohort study included patients with MIS-C hospitalized with severe illness and followed up for 3 months in an ambulatory setting. Patients younger than 21 years who were admitted between May 15, 2020, and May 31, 2021, at 13 US hospitals were included. Inclusion criteria were inpatient treatment comprising intravenous immunoglobulin, diagnosis of cardiovascular dysfunction (vasopressor requirement or left ventricular ejection fraction ≤55%), and availability of complete outpatient data for 3 months.
+
+EXPOSURES: Glucocorticoid treatment.
+
+MAIN OUTCOMES AND MEASURES: Main outcomes were patient characteristics associated with postdischarge glucocorticoid treatment, laboratory test result trajectories, and adverse events. Multivariable regression was used to evaluate factors associated with postdischarge weight gain (≥2 kg in 3 months) and hyperglycemia during illness.
+
+RESULTS: Among 186 patients, the median age was 10.4 years (IQR, 6.7-14.2 years); most were male (107 [57.5%]), Black non-Hispanic (60 [32.3%]), and Hispanic or Latino (59 [31.7%]). Most children were critically ill (intensive care unit admission, 163 [87.6%]; vasopressor receipt, 134 [72.0%]) and received inpatient glucocorticoid treatment (178 [95.7%]). Most were discharged with continued glucocorticoid treatment (173 [93.0%]); median discharge dose was 42 mg/d (IQR, 30-60 mg/d) or 1.1 mg/kg/d (IQR, 0.7-1.7 mg/kg/d). Inpatient severity of illness was not associated with duration of postdischarge glucocorticoid treatment. Outpatient treatment duration varied (median, 23 days; IQR, 15-32 days). Time to normalization of C-reactive protein and ferritin levels was similar for glucocorticoid duration of less than 3 weeks vs 3 or more weeks. Readmission occurred in 7 patients (3.8%); none was for cardiovascular dysfunction. Hyperglycemia developed in 14 patients (8.1%). Seventy-five patients (43%) gained 2 kg or more after discharge (median 4.1 kg; IQR, 3.0-6.0 kg). Inpatient high-dose intravenous and oral glucocorticoid therapy was associated with postdischarge weight gain (adjusted odds ratio, 6.91; 95% CI, 1.92-24.91).
+
+CONCLUSIONS AND RELEVANCE: In this multicenter cohort of patients with MIS-C and cardiovascular dysfunction, postdischarge glucocorticoid treatment was often prolonged, but clinical outcomes were similar in patients prescribed shorter courses. Outpatient weight gain was common. Readmission was infrequent, with none for cardiovascular dysfunction. These findings suggest that strategies are needed to optimize postdischarge glucocorticoid courses for patients with MIS-C.

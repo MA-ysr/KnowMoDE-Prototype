@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/920167" sourceUri="https://pubmed.ncbi.nlm.nih.gov/920167/" sourceSha256="595e8844756ef0da354b50e526d1614405b9a407d337436bee211aa642f346ac" sourceText="Fetal risks due to warfarin therapy during pregnancy. Two mothers with heart valve prosthesis were treated with warfarin during pregnancy. In the first case a caesarean section was done one week after replacement of warfarin with heparin. The baby died of cerebral and pulmonary hemorrhage. The second mother had a male infant by caesarean section. The baby showed warfarin-induced embryopathy with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata). Nasal hypoplasia with or without stippled epiphyses has now been reported in 11 infants born to mothers treated with warfarin during the first trimester, and a causal association is probable. In view of the risks to both mother and fetus in women with prosthetic cardiac valves it is recommended that therapeutic abortion be advised as the first alternative." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:51:32+00:00" xmi:version="2.0">
+  <chunks charEnd="826"/>
+  <entities type="Drug" id="warfarin" mention="warfarin" confidence="0.95" sourceSpanStart="19" sourceSpanEnd="27">
+    <properties key="name" value="warfarin"/>
+  </entities>
+  <entities type="Drug" id="heparin" mention="heparin" confidence="0.95" sourceSpanStart="230" sourceSpanEnd="237">
+    <properties key="name" value="heparin"/>
+  </entities>
+  <entities type="Condition" id="cerebral-and-pulmonary-hemorrhage" mention="cerebral and pulmonary hemorrhage" confidence="0.85" sourceSpanStart="256" sourceSpanEnd="289">
+    <properties key="name" value="cerebral and pulmonary hemorrhage"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="warfarin-induced-embryopathy" mention="warfarin-induced embryopathy" confidence="0.95" sourceSpanStart="365" sourceSpanEnd="393">
+    <properties key="name" value="warfarin-induced embryopathy"/>
+    <properties key="category" value="congenital"/>
+  </entities>
+  <entities type="Condition" id="nasal-hypoplasia" mention="nasal hypoplasia" confidence="0.95" sourceSpanStart="399" sourceSpanEnd="415">
+    <properties key="name" value="nasal hypoplasia"/>
+    <properties key="category" value="congenital"/>
+  </entities>
+  <entities type="Condition" id="stippled-epiphyses" mention="stippled epiphyses" confidence="0.95" sourceSpanStart="420" sourceSpanEnd="438">
+    <properties key="name" value="stippled epiphyses"/>
+    <properties key="category" value="congenital"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="warfarin" targetType="Condition" targetId="cerebral-and-pulmonary-hemorrhage" confidence="0.7" evidence="Two mothers with heart valve prosthesis were treated with warfarin during pregnancy. ... The baby died of cerebral and pulmonary hemorrhage." sourceSpanStart="47" sourceSpanEnd="199"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="warfarin" targetType="Condition" targetId="warfarin-induced-embryopathy" confidence="0.95" evidence="The baby showed warfarin-induced embryopathy with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata)." sourceSpanStart="349" sourceSpanEnd="467"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="warfarin" targetType="Condition" targetId="nasal-hypoplasia" confidence="0.95" evidence="The baby showed warfarin-induced embryopathy with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata)." sourceSpanStart="349" sourceSpanEnd="467"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="warfarin" targetType="Condition" targetId="stippled-epiphyses" confidence="0.95" evidence="The baby showed warfarin-induced embryopathy with nasal hypoplasia and stippled epiphyses (chondrodysplasia punctata)." sourceSpanStart="349" sourceSpanEnd="467"/>
+</raw:RawExtractionResult>

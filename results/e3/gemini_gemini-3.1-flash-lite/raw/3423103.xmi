@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/3423103" sourceUri="https://pubmed.ncbi.nlm.nih.gov/3423103/" sourceSha256="b768230acd1694bd8ec8178bae8ec23aff56d251f6f91a717dcc2f14125e4edf" sourceText="Participation of a bulbospinal serotonergic pathway in the rat brain in clonidine-induced hypotension and bradycardia. The effects of microinjection of clonidine (1-10 micrograms in 1 microliter) into a region adjacent to the ventrolateral surface of the medulla oblongata on cardiovascular function were assessed in urethane-anesthetized rats. Intramedullary administration of clonidine, but not saline vehicle, caused a dose-dependent decrease in both the mean arterial pressure and the heart rate. The clonidine-induced hypotension was antagonized by prior spinal transection, but not bilateral vagotomy. On the other hand, the clonidine-induced bradycardia was antagonized by prior bilateral vagotomy, but not spinal transection. Furthermore, selective destruction of the spinal 5-HT nerves, produced by bilateral spinal injection of 5,7-dihydroxytryptamine, reduced the magnitude of the vasodepressor or the bradycardiac responses to clonidine microinjected into the area near the ventrolateral surface of the medulla oblongata in rats. The data indicate that a bulbospinal serotonergic pathway is involved in development of clonidine-induced hypotension and bradycardia. The induced hypotension is brought about by a decrease in sympathetic efferent activity, whereas the induced bradycardia was due to an increase in vagal efferent activity." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:50:58+00:00" xmi:version="2.0">
+  <chunks charEnd="1348"/>
+  <entities type="Drug" id="clonidine" mention="clonidine" confidence="0.99" sourceSpanStart="72" sourceSpanEnd="81">
+    <properties key="name" value="clonidine"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.95" sourceSpanStart="90" sourceSpanEnd="101">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Condition" id="bradycardia" mention="bradycardia" confidence="0.95" sourceSpanStart="106" sourceSpanEnd="117">
+    <properties key="name" value="bradycardia"/>
+    <properties key="category" value="cardiovascular"/>
+  </entities>
+  <entities type="Drug" id="5,7-dihydroxytryptamine" mention="5,7-dihydroxytryptamine" confidence="0.9" sourceSpanStart="838" sourceSpanEnd="861">
+    <properties key="name" value="5,7-dihydroxytryptamine"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="clonidine" targetType="Condition" targetId="hypotension" confidence="0.9" evidence="Intramedullary administration of clonidine, but not saline vehicle, caused a dose-dependent decrease in both the mean arterial pressure and the heart rate." sourceSpanStart="345" sourceSpanEnd="500"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="clonidine" targetType="Condition" targetId="bradycardia" confidence="0.9" evidence="Intramedullary administration of clonidine, but not saline vehicle, caused a dose-dependent decrease in both the mean arterial pressure and the heart rate." sourceSpanStart="345" sourceSpanEnd="500"/>
+</raw:RawExtractionResult>

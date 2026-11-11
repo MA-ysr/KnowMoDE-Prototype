@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/38870358.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/38870358/" sourceSha256="47f5d293b92779bd42c0b532171f1c00927681636e5f77ee72a18b2bbd9bedce" sourceText="# PubMed 38870358: Stroke Prevention and Management in Rural Georgia: Evaluating the Effectiveness of a Community Paramedicine Program.&#10;&#10;Journal of public health management and practice : JPHMP (2024 Jul-Aug 01), doi:10.1097/PHH.0000000000001951&#10;&#10;CONTEXT: Stroke remains a major public health concern in the state of Georgia with high mortality, disproportionately affecting rural and socioeconomically disadvantaged communities. Georgia's age-standardized stroke death rate is 10.8% higher than the national average, and related comorbidities remain elevated in adult Georgians, contributing to higher stroke prevalence.&#10;&#10;PROGRAM: The Georgia Department of Public Health piloted a Community Paramedicine (CP) program in 2 rural counties to improve stroke management, readmissions, and mortality. Various supportive interventions to address barriers to chronic disease management were provided by a local emergency medical service agency for 90 days. This study aims to evaluate the effectiveness of the CP care delivery model in improving stroke outcomes among high-risk individuals.&#10;&#10;IMPLEMENTATION: CP leverages emergency medical service infrastructure to provide community health services such as home visits, telemedicine, care coordination, education, and access to social support services. The Georgia Hospital Discharge data and Georgia death records were used to measure stroke rehospitalization and deaths at 30, 60, and 90 days post-discharge for stroke. We compared the health outcomes of high-risk individuals who participated in the CP program to those who did not.&#10;&#10;EVALUATION: Multivariable analysis suggested a reduction in stroke mortality rates among the intervention groups in both counties.&#10;&#10;DISCUSSION: The CP program demonstrated effectiveness in assisting patients with managing risk factors through medication adherence for conditions such as hypertension, hypercholesterolemia, and diabetes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:44:13+00:00" xmi:version="2.0">
+  <chunks charEnd="1918"/>
+  <entities type="RiskFactor" id="community-paramedicine-program" mention="Community Paramedicine (CP) program" confidence="0.95" sourceSpanStart="682" sourceSpanEnd="717">
+    <properties key="name" value="community paramedicine program"/>
+    <properties key="description" value="A program providing supportive interventions to address barriers to chronic disease management, including home visits, telemedicine, care coordination, education, and access to social support services."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="stroke-mortality" mention="stroke mortality" confidence="0.95" sourceSpanStart="1641" sourceSpanEnd="1657">
+    <properties key="name" value="stroke mortality"/>
+    <properties key="timeWindow" value="not specified"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1868" sourceSpanEnd="1880">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hypercholesterolemia" mention="hypercholesterolemia" confidence="0.95" sourceSpanStart="1882" sourceSpanEnd="1902">
+    <properties key="name" value="hypercholesterolemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1908" sourceSpanEnd="1916">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="community-paramedicine-program" targetType="ClinicalOutcome" targetId="stroke-mortality" confidence="0.9" evidence="Multivariable analysis suggested a reduction in stroke mortality rates among the intervention groups in both counties." sourceSpanStart="1593" sourceSpanEnd="1711"/>
+</raw:RawExtractionResult>

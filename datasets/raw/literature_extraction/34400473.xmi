@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34400473.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34400473/" sourceSha256="aa01d7ace49c84ae15a157349a2f5bc2375d33c84004ee0a93fb791505a14a44" sourceText="# PubMed 34400473: Analysis of outcome of 6-month readmissions after percutaneous left atrial appendage occlusion.&#10;&#10;Heart (British Cardiac Society) (2022), doi:10.1136/heartjnl-2021-319345&#10;&#10;OBJECTIVE: Percutaneous left atrial appendage occlusion (LAAO) is an alternative strategy for prevention of thromboembolic events in patients with atrial fibrillation and unsuitable for long-term oral anticoagulation. The study aimed to evaluate the causes and timing of readmissions within 6 months following percutaneous LAAO in a real-world setting.&#10;&#10;METHODS: We conducted a retrospective cohort study of percutaneous LAAO performed in the USA between January and June of 2016-2018 using the Nationwide Readmissions Database.&#10;&#10;RESULTS: Overall, 12 446 patients who underwent LAAO were included in the analyses and 3477 patients (28%) were readmitted within 6 months following the interventions. Readmitted patients were more often women (p=0.001). The index hospitalisation was characterised by longer duration of hospital stay (p&lt;0.001) and complicated with acute kidney injury (p&lt;0.001) among readmitted patients compared with those without readmissions. Readmissions within 6 months following the index intervention were mainly due to heart failure (13%) and gastrointestinal bleeding (12%). Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84) and chronic kidney disease (HR 1.42; 95% CI 1.03 to 1.94). Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81) and previous anaemia (HR 2.41; 95% CI 1.54 to 3.77).&#10;&#10;CONCLUSIONS: After percutaneous LAAO, over a quarter of the patients in the USA required rehospitalisation within 6 months, mainly due to heart failure and gastrointestinal bleeding.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:42:20+00:00" xmi:version="2.0">
+  <chunks charEnd="1947"/>
+  <entities type="ClinicalOutcome" id="readmissions-within-6-months" mention="readmissions within 6 months" confidence="0.95" sourceSpanStart="461" sourceSpanEnd="489">
+    <properties key="name" value="hospital readmission within 6 months"/>
+    <properties key="timeWindow" value="6 months"/>
+  </entities>
+  <entities type="RiskFactor" id="women" mention="women" confidence="0.9" sourceSpanStart="924" sourceSpanEnd="929">
+    <properties key="name" value="female sex"/>
+    <properties key="description" value="patient is female"/>
+  </entities>
+  <entities type="RiskFactor" id="longer-duration-of-hospital-stay" mention="longer duration of hospital stay" confidence="0.9" sourceSpanStart="988" sourceSpanEnd="1020">
+    <properties key="name" value="longer duration of hospital stay"/>
+    <properties key="description" value="longer duration of hospital stay during index hospitalisation"/>
+  </entities>
+  <entities type="Condition" id="acute-kidney-injury" mention="acute kidney injury" confidence="0.95" sourceSpanStart="1052" sourceSpanEnd="1071">
+    <properties key="name" value="acute kidney injury"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmissions-due-to-heart-failure" mention="readmissions due to heart failure" confidence="0.95" sourceSpanStart="1320" sourceSpanEnd="1353">
+    <properties key="name" value="readmissions due to heart failure"/>
+    <properties key="timeWindow" value="6 months"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmissions-due-to-gastrointestinal-bleeding" mention="Readmissions due to gastrointestinal bleeding" confidence="0.95" sourceSpanStart="1539" sourceSpanEnd="1584">
+    <properties key="name" value="readmissions due to gastrointestinal bleeding"/>
+    <properties key="timeWindow" value="6 months"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="1902" sourceSpanEnd="1915">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="valvular-heart-disease" mention="valvular heart disease" confidence="0.95" sourceSpanStart="1426" sourceSpanEnd="1448">
+    <properties key="name" value="valvular heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="1484" sourceSpanEnd="1506">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1606" sourceSpanEnd="1623">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="previous-anaemia" mention="previous anaemia" confidence="0.95" sourceSpanStart="1714" sourceSpanEnd="1730">
+    <properties key="name" value="previous anaemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="heart-failure" targetType="ClinicalOutcome" targetId="readmissions-due-to-heart-failure" confidence="0.95" evidence="Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37)" sourceSpanStart="1288" sourceSpanEnd="1424"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="valvular-heart-disease" targetType="ClinicalOutcome" targetId="readmissions-due-to-heart-failure" confidence="0.95" evidence="Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84)" sourceSpanStart="771" sourceSpanEnd="927"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="readmissions-due-to-heart-failure" confidence="0.95" evidence="Characteristics associated with readmissions due to heart failure included previously known heart failure (HR 2.39; 95% CI 1.70 to 3.37), valvular heart disease (HR 1.39; 95% CI 1.05 to 1.84) and chronic kidney disease (HR 1.42; 95% CI 1.03 to 1.94)." sourceSpanStart="771" sourceSpanEnd="981"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="diabetes-mellitus" targetType="ClinicalOutcome" targetId="readmissions-due-to-gastrointestinal-bleeding" confidence="0.95" evidence="Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53)" sourceSpanStart="724" sourceSpanEnd="851"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="chronic-kidney-disease" targetType="ClinicalOutcome" targetId="readmissions-due-to-gastrointestinal-bleeding" confidence="0.95" evidence="Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81)" sourceSpanStart="724" sourceSpanEnd="898"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="previous-anaemia" targetType="ClinicalOutcome" targetId="readmissions-due-to-gastrointestinal-bleeding" confidence="0.95" evidence="Readmissions due to gastrointestinal bleeding were associated with diabetes mellitus (HR 1.78; 95% CI 1.25 to 2.53), chronic kidney disease (HR 1.86; 95% CI 1.23 to 2.81) and previous anaemia (HR 2.41; 95% CI 1.54 to 3.77)." sourceSpanStart="724" sourceSpanEnd="929"/>
+</raw:RawExtractionResult>

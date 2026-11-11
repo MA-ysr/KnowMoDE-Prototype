@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/29550098.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/29550098/" sourceSha256="2e8137a331d293ce67ff1c52554e1a75feda78e1d2b915a47f13ca8337a9cb21" sourceText="# PubMed 29550098: Evaluating the Emergency Department Observation Unit for the management of hyperglycemia in adults.&#10;&#10;The American journal of emergency medicine (2018), doi:10.1016/j.ajem.2018.02.027&#10;&#10;OBJECTIVE: To determine whether hyperglycemic patients can be successfully managed in the Emergency Department Observation Unit (EDOU), as determined by the frequency of inpatient admission following their EDOU stay.&#10;&#10;METHODS: This was a retrospective chart review of patients≥18years presenting to an academic tertiary care ED between May 1, 2014 and May 31, 2016, found to have a glucose≥300mg/dL, and selected for EDOU admission. Patient demographic information, lab results including an HbA1c, disposition, and hospital revisits within 30days of discharge were recorded.&#10;&#10;RESULTS: There were 124 EDOU patients meeting criteria. A total of 98/124 (79.0%) had a history of type 1 or 2 diabetes, and 26/124 (21.0%) were newly diagnosed with diabetes in the EDOU. The mean initial ED serum glucose was 467±126mg/dL. Of the 119 patients with HbA1c analyzed, the mean value was 12.1±2.2% (109±24mmol/mol) and in 112/119 (94.1%) the level was ≥9.0% (75mmol/mol). Overall, 104/124 (83.9%) were discharged from the EDOU, 18/124 (14.5%) were admitted to the inpatient service, and 2/124 (1.6%) left the EDOU against medical advice. A total of 7/124 (5.6%) patients returned to the ED within 30days of discharge with hypoglycemia, hyperglycemia, or diabetic ketoacidosis, 6/7 (85.7%) of whom had been discharged from the EDOU.&#10;&#10;CONCLUSIONS: Results suggest hyperglycemic patients selected by ED physicians can be managed in the EDOU setting. Nearly all patients managed in the EDOU for hyperglycemia had an HbA1c≥9.0%, suggesting unrecognized or poorly controlled chronic diabetes as the basis for hyperglycemia.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:33:00+00:00" xmi:version="2.0">
+  <chunks charEnd="1809"/>
+  <entities type="Condition" id="hyperglycemia" mention="hyperglycemia" confidence="0.95" sourceSpanStart="94" sourceSpanEnd="107">
+    <properties key="name" value="hyperglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="LabTest" id="glucose-300-mg-dl" mention="glucose≥300mg/dL" confidence="0.95" sourceSpanStart="585" sourceSpanEnd="601">
+    <properties key="name" value="serum glucose &gt;= 300 mg/dL"/>
+    <properties key="abnormalThreshold" value="&gt;= 300 mg/dL"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-revisits-within-30-days" mention="hospital revisits within 30days of discharge" confidence="0.9" sourceSpanStart="718" sourceSpanEnd="762">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+</raw:RawExtractionResult>

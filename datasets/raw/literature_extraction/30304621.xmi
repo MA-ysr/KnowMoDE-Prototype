@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/30304621.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/30304621/" sourceSha256="e5670c617efb3422ffdcd9fa50922390af15ad5816c786f918f05340d32670fa" sourceText="# PubMed 30304621: Impact of Population Differences: Post-Kidney Transplant Readmissions.&#10;&#10;Nephrology nursing journal : journal of the American Nephrology Nurses' Association (2018)&#10;&#10;Early hospital readmissions after kidney transplantation are common and considered an indicator of healthcare quality. The purpose of this study was to identify and describe the risk factors for and causes of 30-day readmission post-kidney transplant for adults in a predominantly Hispanic Southern Texas population in comparison to the United States kidney transplant population and published research. A single-center, descriptive, retrospective study of adult kidney transplant recipients readmitted to a hospital in southern Texas was conducted. Results indicated that this population had lower education levels, a greater percentage of Spanish-speaking patients, and a high number of patients with either or both diabetes mellitus and hypertension, necessitating the development of additional methods of increasing understanding and adherence to restrictions, requirements, and medication regimes.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:34:04+00:00" xmi:version="2.0">
+  <chunks charEnd="1086"/>
+  <entities type="ClinicalOutcome" id="30-day-readmission" mention="30-day readmission" confidence="0.95" sourceSpanStart="392" sourceSpanEnd="410">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="901" sourceSpanEnd="918">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="923" sourceSpanEnd="935">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+</raw:RawExtractionResult>

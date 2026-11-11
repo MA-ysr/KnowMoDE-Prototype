@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31923009.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31923009/" sourceSha256="f32d8971f561d70ffaa250db375c7f9a0524e387722b63e7fd151bba76d61257" sourceText="# PubMed 31923009: Reducing Diabetic Ketoacidosis Intensive Care Unit Admissions Through an Electronic Health Record-Driven, Standardized Care Pathway.&#10;&#10;Journal for healthcare quality : official publication of the National Association for Healthcare Quality (2020), doi:10.1097/JHQ.0000000000000247&#10;&#10;Diabetic ketoacidosis (DKA) is a common condition, with wide variation in admission location and clinical practice. We aimed to decrease intensive care unit (ICU) admission for DKA by implementing a standardized, electronic health record-driven clinical care pathway that used subcutaneous insulin, rather than a continuous insulin infusion, for patients with nonsevere DKA. This is a retrospective, observational preintervention to postintervention study of 214 hospital admissions for DKA that evaluated the effect of our intervention on clinical, safety, and cost outcomes. The primary outcome was ICU admission, which decreased from 67.0% to 41.7% (p &lt; .001). Diabetes nurse educator consultation increased from 45.3% to 63.9% (p = .006), and 30-day Emergency Department (ED) return visit decreased from 12.3% to 2.8% (p = .008). Time to initiation of basal insulin increased from 18.19 ± 1.25 hours to 22.47 ± 1.76 hours (p = .05) and reopening of the anion gap increased from 4.7% to 13.9% (p = .02). No changes in ED length of stay (LOS), hospital LOS, hypoglycemia, treatment-induced hypokalemia, 30-day hospital readmission, or inpatient mortality were observed. The implementation of a standardized DKA care pathway using subcutaneous insulin for nonsevere DKA resulted in decreased ICU use and increased diabetes education, without affecting patient safety.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:42+00:00" xmi:version="2.0">
+  <chunks charEnd="1669"/>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="Diabetic ketoacidosis" confidence="0.98" sourceSpanStart="28" sourceSpanEnd="49">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="insulin" confidence="0.95" sourceSpanStart="590" sourceSpanEnd="597">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="icu-admission" mention="ICU admission" confidence="0.95" sourceSpanStart="901" sourceSpanEnd="914">
+    <properties key="name" value="intensive care unit admission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="emergency-department-return-visit-within-30-days" mention="30-day Emergency Department (ED) return visit" confidence="0.95" sourceSpanStart="1047" sourceSpanEnd="1092">
+    <properties key="name" value="emergency department return visit"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="30-day hospital readmission" confidence="0.95" sourceSpanStart="1405" sourceSpanEnd="1432">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="1360" sourceSpanEnd="1372">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="treatment-induced-hypokalemia" mention="treatment-induced hypokalemia" confidence="0.95" sourceSpanStart="1374" sourceSpanEnd="1403">
+    <properties key="name" value="treatment-induced hypokalemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+</raw:RawExtractionResult>

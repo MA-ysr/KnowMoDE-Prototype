@@ -1,0 +1,11 @@
+# PubMed 31542449: Early Readmission to Hospital in Patients With Cancer With Malignant Pleural Effusions: Analysis of the Nationwide Readmissions Database.
+
+Chest (2020), doi:10.1016/j.chest.2019.09.007
+
+BACKGROUND: Hospital readmissions are costly to health-care systems and represent a measure of quality care. Patients with cancer with malignant pleural effusions (MPEs) are at high risk for rehospitalization; however, risk factors for readmissions in this population are not well described. Understanding the incidence and risk factors for readmission could facilitate the development of a readmission reduction strategy in this patient population.
+
+METHODS: We conducted a retrospective cohort study using the Nationwide Readmissions Database (NRD) (2014 sample) to determine the proportion of all-cause, unplanned, 30-day readmissions to hospital among patients with MPEs. Survey weighting methods that accounted for the NRD sampling design were used to generate nationally representative estimates. We used multivariable logistic regression to determine predictors of early readmission.
+
+RESULTS: There were 27,900 unplanned readmissions after 108,824 index hospitalizations for MPEs, a rate of 25.6% (95% CI, 25.0%-26.3%). The mortality rate during readmission to hospital was 17.3% (n = 4,840; 95% CI, 16.6%-18.1%). Mean cost per readmission was $15,452 ± $415, with total aggregate costs of > $400 million. Predictors of early readmission included having Medicaid insurance status, treatment with thoracentesis only, and discharge to a care facility or home health care.
+
+CONCLUSIONS: One in four patients with cancer and MPEs are readmitted to hospital within 30 days of discharge, and nearly one in five die during the readmission. Nondefinitive management with thoracentesis led to more readmissions. A further understanding of factors that drive preventable readmissions could significantly improve quality of care in this population.

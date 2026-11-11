@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/3084231" sourceUri="https://pubmed.ncbi.nlm.nih.gov/3084231/" sourceSha256="ff01cb81ff18446d8795c6bfa0e1198c3b53219fa9bd47cf3145769d06475991" sourceText="Reversible valproic acid-induced dementia: a case report. Reversible valproic acid-induced dementia was documented in a 21-year-old man with epilepsy who had a 3-year history of insidious progressive decline in global cognitive abilities documented by serial neuropsychological studies. Repeat neuropsychological testing 7 weeks after discontinuation of the drug revealed dramatic improvement in IQ, memory, naming, and other tasks commensurate with clinical recovery in his intellectual capacity. Possible pathophysiological mechanisms which may have been operative in this case include: a direct central nervous system (CNS) toxic effect of valproic acid; a paradoxical epileptogenic effect secondary to the drug; and an indirect CNS toxic effect mediated through valproic acid-induced hyperammonemia." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:38+00:00" xmi:version="2.0">
+  <chunks charEnd="803"/>
+  <entities type="Drug" id="valproic-acid" mention="valproic acid" confidence="0.95" sourceSpanStart="11" sourceSpanEnd="24">
+    <properties key="name" value="valproic acid"/>
+  </entities>
+  <entities type="Condition" id="dementia" mention="dementia" confidence="0.9" sourceSpanStart="33" sourceSpanEnd="41">
+    <properties key="name" value="dementia"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.9" sourceSpanStart="141" sourceSpanEnd="149">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="hyperammonemia" mention="hyperammonemia" confidence="0.9" sourceSpanStart="788" sourceSpanEnd="802">
+    <properties key="name" value="hyperammonemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="valproic-acid" targetType="Condition" targetId="dementia" confidence="0.95" evidence="Reversible valproic acid-induced dementia: a case report." sourceSpanStart="0" sourceSpanEnd="57"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="valproic-acid" targetType="Condition" targetId="epilepsy" confidence="0.8" evidence="Reversible valproic acid-induced dementia was documented in a 21-year-old man with epilepsy" sourceSpanStart="58" sourceSpanEnd="149"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="valproic-acid" targetType="Condition" targetId="hyperammonemia" confidence="0.9" evidence="Possible pathophysiological mechanisms which may have been operative in this case include: ... an indirect CNS toxic effect mediated through valproic acid-induced hyperammonemia." sourceSpanStart="376" sourceSpanEnd="802"/>
+</raw:RawExtractionResult>

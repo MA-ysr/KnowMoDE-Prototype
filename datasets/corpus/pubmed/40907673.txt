@@ -1,0 +1,11 @@
+# PubMed 40907673: Is Semaglutide a Safer Weight-Management Option Than Bariatric Surgery for Patients Undergoing Total Hip Arthroplasty (THA)?
+
+The Journal of arthroplasty (2026), doi:10.1016/j.arth.2025.08.068
+
+BACKGROUND: Weight management strategies before total hip arthroplasty (THA) include bariatric surgery and Glucagon-like peptide-1 receptor agonists, including semaglutide. Previous studies have reported higher THA implant failure in patients who had prior bariatric surgery. This study aimed to evaluate semaglutide as a weight management alternative for patients undergoing THA and any effects on perioperative outcomes.
+
+METHODS: A retrospective review of primary, elective THAs performed between 2012 and 2024 was conducted at a single, urban, academic center. The study identified 224 patients who had a history of bariatric surgery, 202 patients who had perioperative semaglutide use, and a control group of 2,991 patients who had a body mass index (BMI) > 35. Demographic variables and clinical outcomes were compared between cohorts.
+
+RESULTS: The bariatric patients were younger (57 versus 61, P = 0.012) and more often women (65.6 versus 57.4 versus 55.4%, P < 0.001) than semaglutide and control patients. Preoperative hemoglobin A1c was lowest in semaglutide patients (6.2 versus 5.7 versus 5.8%, P < 0.001). The changes in BMI varied across groups one year before and after THA (P < 0.001). The bariatric and semaglutide groups decreased their BMI by 1.4 and 0.8, respectively, and control patients increased by 0.4. Implant survivorship was 95.5% at 10 years. There was no correlation found between any cohort and 90-day emergency department visits, readmissions, and all-time revision. Higher American Society of Anesthesiologists class and Charlson Comorbidity Index ≥ 5 conferred increased complications.
+
+CONCLUSIONS: Semaglutide appears to be a safe alternative to bariatric surgery for weight management before THA, with similar implant survival and postoperative complication rates. Further studies are warranted to understand outcomes for THA patients who use semaglutide.

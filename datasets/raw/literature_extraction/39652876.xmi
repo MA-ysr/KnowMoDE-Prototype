@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39652876.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39652876/" sourceSha256="feeb5c69e021642964e509496acae9863755d02da257ad6f81ac999e652057d3" sourceText="# PubMed 39652876: Management of Hyperglycemia in Hospitalized Patients.&#10;&#10;Annals of internal medicine (2024), doi:10.7326/ANNALS-24-02754&#10;&#10;People with diabetes account for 25% of hospitalizations, or 8 million admissions annually. Poor glycemic control in the hospital is associated with increased morbidity, mortality, length of stay, and readmissions. Key considerations of inpatient diabetes management include initiation of appropriate insulin or medication regimens and frequent dose adjustments based on patient-specific factors. Inpatient diabetes management teams and new technologies are increasingly prevalent and can assist in achieving glycemic targets in the hospital. At discharge, standardized checklists should be used to ensure successful transitions of care.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:45:34+00:00" xmi:version="2.0">
+  <chunks charEnd="777"/>
+  <entities type="Condition" id="poor-glycemic-control" mention="Poor glycemic control" confidence="0.95" sourceSpanStart="231" sourceSpanEnd="252">
+    <properties key="name" value="poor glycemic control"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="readmissions" confidence="0.9" sourceSpanStart="340" sourceSpanEnd="352">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="poor-glycemic-control" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.95" evidence="Poor glycemic control in the hospital is associated with increased morbidity, mortality, length of stay, and readmissions." sourceSpanStart="231" sourceSpanEnd="353"/>
+</raw:RawExtractionResult>

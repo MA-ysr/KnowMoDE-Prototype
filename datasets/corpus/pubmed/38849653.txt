@@ -1,0 +1,11 @@
+# PubMed 38849653: Postoperative outcomes in patients with diabetes after enhanced recovery thoracoscopic lobectomy.
+
+Surgical endoscopy (2024), doi:10.1007/s00464-024-10936-2
+
+BACKGROUND: Diabetes is considered a general surgical risk factor, but with few data from enhanced recovery (ERAS) otherwise known to improve outcome. Therefore, this study aimed to investigate postoperative outcomes of patients with diabetes who underwent video-assisted thoracoscopic surgery (VATS) lobectomy in an established ERAS setting.
+
+METHODS: We retrospectively analysed outcome data (hospital stay (LOS), readmissions, and mortality) from a prospective database with consecutive unselected ERAS VATS lobectomies from 2012 to 2022. Complete follow-up was secured by the registration system in East Denmark.
+
+RESULTS: We included 3164 patients of which 323 had diabetes, including 186 treated with insulin and antidiabetic medicine, 35 with insulin only and 102 with antidiabetic medicine only. The median LOS was 3 days, stable over the study period. There were no differences in terms of LOS, postoperative complications, readmissions or 30 days alive and out of hospital. Patients with diabetes had significantly higher 30- and 90-day mortality rates compared to those without diabetes (p < .001), but also had higher preoperative comorbidity. Preoperative HbA1c levels did not correlate with postoperative outcomes.
+
+CONCLUSION: In an ERAS setting, diabetes may not increase the risk for prolonged LOS, complications, and readmissions after VATS lobectomy, however with higher 30- and 90-day mortality probably related to more preoperative comorbidities.

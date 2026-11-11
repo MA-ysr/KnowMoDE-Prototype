@@ -1,0 +1,11 @@
+# PubMed 30220102: Prevalence of diabetes and its effects on stroke outcomes: A meta-analysis and literature review.
+
+Journal of diabetes investigation (2019), doi:10.1111/jdi.12932
+
+AIMS/INTRODUCTION: Diabetes mellitus is an established risk factor for stroke and maybe associated with poorer outcomes after stroke. The aims of the present literature review were to determine: (i) the prevalence of diabetes in acute stroke patients through a meta-analysis; (ii) the association between diabetes and outcomes after ischemic and hemorrhagic stroke; and (iii) to review the value of glycated hemoglobin and admission glucose-based tests in predicting stroke outcomes.
+
+MATERIALS AND METHODS: Ovid MEDLINE and EMBASE searches were carried out to find studies relating to diabetes and inpatient stroke populations published between January 2004 and April 2017. A meta-analysis of the prevalence of diabetes from included studies was undertaken. A narrative review on the associations of diabetes and different diagnostic methods on stroke outcomes was carried out.
+
+RESULTS: A total of 66 eligible articles met inclusion criteria. A meta-analysis of 39 studies (n = 359,783) estimated the prevalence of diabetes to be 28% (95% confidence interval 26-31). The rate was higher in ischemic (33%, 95% confidence interval 28-38) compared with hemorrhagic stroke (26%, 95% confidence interval 19-33) inpatients. Most, but not all, studies found that acute hyperglycemia and diabetes were associated with poorer outcomes after ischemic or hemorrhagic strokes: including higher mortality, poorer neurological and functional outcomes, longer hospital stay, higher readmission rates, and stroke recurrence. Diagnostic methods for establishing diagnosis were heterogeneous between the reviewed studies.
+
+CONCLUSIONS: Approximately one-third of all stroke patients have diabetes. Uniform methods to screen for diabetes after stroke are required to identify individuals with diabetes to design interventions aimed at reducing poor outcomes in this high-risk population.

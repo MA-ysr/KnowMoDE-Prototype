@@ -1,0 +1,11 @@
+# PubMed 23299035: Outcomes associated with post-discharge insulin continuity in US patients with type 2 diabetes mellitus initiating insulin in the hospital.
+
+Hospital practice (1995) (2012), doi:10.3810/hp.2012.10.1002
+
+AIM: Hyperglycemia in hospitalized patients is associated with adverse outcomes; treatment of hyperglycemia in the hospital improves outcomes. We investigated clinical outcomes and hospital readmissions associated with insulin continuation and discontinuation post-discharge in patients with type 2 diabetes mellitus (T2DM) who initiated insulin therapy during hospitalization.
+
+MATERIALS AND METHODS: This observational retrospective database analysis was performed using medical records obtained from a US coordinated health system. Patients with T2DM, glycated hemoglobin (HbA1c) levels ≥ 8.0%, naïve to insulin, and initiating insulin during hospitalization were included. Clinical outcomes and hospital readmissions were compared between patients who continued and discontinued insulin post-discharge.
+
+RESULTS: Of 732 patients initiating insulin during hospitalization, 180 (24.6%) continued and 552 (75.4%) discontinued insulin. Higher mean baseline HbA1c levels were observed in patients continuing insulin compared with those discontinuing insulin (11.1% vs 9.5%; P < 0.001). A significantly higher percentage of patients continuing insulin achieved target HbA1c levels (< 7.0%) compared with those discontinuing insulin (P = 0.023), with no difference in hypoglycemia rates. In patients with a baseline HbA1c of ≥ 9.0%, insulin continuation was significantly associated with lower risks of all-cause (adjusted hazard ratio, 0.58; 95% CI, 0.36-0.93; P = 0.0276) and diabetes-related (adjusted hazard ratio, 0.46; 95% CI, 0.23-0.87; P = 0.0204) hospital readmissions.
+
+CONCLUSION: Continuation of insulin post-discharge in insulin-naïve patients with T2DM is associated with better HbA1c target level achievement, no difference in hypoglycemia rates, and a reduced risk of hospital readmission in patients with baseline HbA1c levels ≥ 9.0%.

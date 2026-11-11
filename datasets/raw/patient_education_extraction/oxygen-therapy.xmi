@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/oxygen-therapy.txt" sourceUri="https://medlineplus.gov/oxygentherapy.html" sourceSha256="6f0749fb6ca4cc8f98ab4cedc540d495841f8f70e8400f859ad65866ddc33f28" sourceText="# MedlinePlus health topic: Oxygen Therapy&#10;&#10;Also called: Hyperbaric Oxygen&#10;&#10;What is oxygen?Oxygen is a gas that your body needs to work properly. Your cells need oxygen to make energy. Your lungs absorb oxygen from the air you breathe. The oxygen enters your blood from your lungs and travels to your organs and body tissues.&#10;&#10;Certain medical conditions can cause your blood oxygen levels to be too low. Low blood oxygen may make you feel short of breath, tired, and confused. It can also damage your body. Oxygen therapy can help you get more oxygen.&#10;&#10;What is oxygen therapy?Oxygen therapy is a treatment that provides you with extra oxygen to breathe in. It is also called supplemental oxygen. It is only available through a prescription from your health care provider. You may get it in the hospital, another medical setting, or at home. Some people only need it for a short period of time. Others will need long-term oxygen therapy.&#10;&#10;There are different types of devices that can give you oxygen. Some use tanks of liquid or gas oxygen. Others use an oxygen concentrator, which pulls oxygen out of the air. You will get the oxygen through a nose tube (cannula), a mask, or a tent. The extra oxygen is breathed in along with normal air.&#10;&#10;There are portable versions of the tanks and oxygen concentrators. They can make it easier for you to move around while using your therapy.&#10;&#10;Who needs oxygen therapy?You may need oxygen therapy if you have a condition that causes low blood oxygen, such as:&#10;&#10;COPD (chronic obstructive pulmonary disease)&#10;&#10;Pneumonia&#10;&#10;COVID-19&#10;&#10;A severe asthma attack&#10;&#10;Late-stage heart failure&#10;&#10;Cystic fibrosis&#10;&#10;Sleep apnea&#10;&#10;What are the risks of using oxygen therapy?Oxygen therapy is generally safe, but it can cause side effects. They include a dry or bloody nose, tiredness, and morning headaches.&#10;&#10;Oxygen poses a fire risk, so you should never smoke or use flammable materials when using oxygen. If you use oxygen tanks, make sure your tank is secured and stays upright. If it falls and cracks or the top breaks off, the tank can fly like a missile.&#10;&#10;What is hyperbaric oxygen therapy?Hyperbaric oxygen therapy (HBOT) is a different type of oxygen therapy. It involves breathing oxygen in a pressurized chamber or tube. That allows your lungs to gather up to three times more oxygen than you would get by breathing oxygen at normal air pressure. The extra oxygen moves through your blood and to your organs and body tissues.&#10;&#10;HBOT is used to treat certain serious wounds, burns, injuries, and infections. It also treats air or gas embolisms (bubbles of air in your bloodstream), decompression sickness suffered by divers, and carbon monoxide poisoning.&#10;&#10;But some treatment centers claim that HBOT can treat almost anything, including Alzheimer's disease, autism, cancer, and Lyme disease. The U.S. Food and Drug Administration (FDA) has not cleared or approved the use of HBOT for these conditions. There are risks to using HBOT, so always check with your provider before you try it.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:24:21+00:00" xmi:version="2.0">
+  <chunks charEnd="3010"/>
+  <entities type="Condition" id="low-blood-oxygen" mention="low blood oxygen" confidence="0.95" sourceSpanStart="404" sourceSpanEnd="420">
+    <properties key="name" value="low blood oxygen"/>
+  </entities>
+  <entities type="Condition" id="copd" mention="COPD (chronic obstructive pulmonary disease)" confidence="0.95" sourceSpanStart="1499" sourceSpanEnd="1543">
+    <properties key="name" value="chronic obstructive pulmonary disease"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="Pneumonia" confidence="0.95" sourceSpanStart="1545" sourceSpanEnd="1554">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="covid-19" mention="COVID-19" confidence="0.95" sourceSpanStart="1556" sourceSpanEnd="1564">
+    <properties key="name" value="covid-19"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="Condition" id="severe-asthma-attack" mention="A severe asthma attack" confidence="0.95" sourceSpanStart="1566" sourceSpanEnd="1588">
+    <properties key="name" value="severe asthma attack"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="late-stage-heart-failure" mention="Late-stage heart failure" confidence="0.95" sourceSpanStart="1590" sourceSpanEnd="1614">
+    <properties key="name" value="late-stage heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cystic-fibrosis" mention="Cystic fibrosis" confidence="0.95" sourceSpanStart="1616" sourceSpanEnd="1631">
+    <properties key="name" value="cystic fibrosis"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="sleep-apnea" mention="Sleep apnea" confidence="0.95" sourceSpanStart="1633" sourceSpanEnd="1644">
+    <properties key="name" value="sleep apnea"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+</raw:RawExtractionResult>

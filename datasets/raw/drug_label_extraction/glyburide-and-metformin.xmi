@@ -1,0 +1,653 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="openfda/glyburide-and-metformin.txt" sourceUri="https://api.fda.gov/drug/label.json?search=openfda.generic_name:%22glyburide and metformin hydrochloride%22" sourceSha256="4621f460c05b5a2ffab9255c543c585b8710bdbf9d706d8188d8abf9ca7b4b84" sourceText="# FDA prescribing information: glyburide and metformin&#10;&#10;Generic name: GLYBURIDE AND METFORMIN HYDROCHLORIDE&#10;Brand name: glyburide and metformin hydrochloride&#10;Pharmacologic class: Sulfonylurea [EPC]&#10;Label set id: 2239742b-74e1-4bc2-b5a8-15c4758d6f7b, effective 20260610&#10;&#10;## Boxed warning&#10;&#10;WARNING: LACTIC ACIDOSIS Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias. The onset of metforminassociated lactic acidosis is often subtle, accompanied only by nonspecific symptoms such as malaise, myalgias, respiratory distress, somnolence, and abdominal pain. Metformin-associated lactic acidosis was characterized by elevated blood lactate levels (&gt;5 mmol/Liter), anion gap acidosis (without evidence of ketonuria or ketonemia), an increased lactate/pyruvate ratio; and metformin plasma levels generally &gt;5 mcg/mL [see Warnings and Precautions ( 5.1 ) ]. Risk factors for metformin-associated lactic acidosis include renal impairment, concomitant use of certain drugs (e.g., carbonic anhydrase inhibitors such as topiramate), age 65 years old or greater, having a radiological study with contrast, surgery and other procedures, hypoxic states (e.g. , acute congestive heart failure), excessive alcohol intake, hepatic impairment , and mitochondrial diseases [see Warnings and Precautions ( 5.1 ) ] . Steps to reduce the risk of and manage metformin-associated lactic acidosis in these high risk groups are provided [see Dosage and Administration ( 2.3 ), Contraindications ( 4 ) and Warnings and Precautions ( 5.1 ) ]. If metformin-associated lactic acidosis is suspected, immediately discontinue glyburide and metformin hydrochloride and institute general supportive measures in a hospital setting. Prompt hemodialysis is recommended [see Warnings and Precautions ( 5.1 ) ]. WARNING: LACTIC ACIDOSIS See full prescribing information for complete boxed warning. Post-marketing cases of metformin -associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias. Symptoms include malaise, myalgias, respiratory distress, somnolence, and abdominal pain. Laboratory abnormalities included elevated blood lactate levels, anion gap acidosis, increased lactate/pyruvate ratio; and metformin plasma levels generally &gt;5 mcg/mL. ( 5.1 ) Risk factors include renal impairment, concomitant use of certain drugs, age &gt;65 years old, radiological studies with contrast, surgery and other procedures, hypoxic states, excessive alcohol intake, hepatic impairment, and mitochondrial diseases. Steps to reduce the risk of and manage metformin-associated lactic acidosis in these high risk groups are provided in the Full Prescribing Information. ( 5.1 ) If lactic acidosis is suspected, discontinue glyburide and metformin hydrochloride tablets and institute general supportive measures in a hospital setting. Prompt hemodialysis is recommended. ( 5.1 )&#10;&#10;## Indications and usage&#10;&#10;1 INDICATIONS AND USAGE Glyburide and metformin hydrochloride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. Glyburide and metformin hydrochloride tablets are a combination of glyburide, a sulfonylurea, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus. ( 1 )&#10;&#10;## Contraindications&#10;&#10;4 CONTRAINDICATIONS Glyburide and metformin hydrochloride tablets are contraindicated in patients with: Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) [see Warnings and Precautions ( 5.1 ) ]. Hypersensitivity to metformin or glyburide. Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma. Concomitant administration of bosentan [see Drug Interactions ( 7 ) ]. Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) ( 4 , 5.1 ) Hypersensitivity to metformin or glyburide. ( 4 ) Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma. ( 4 ) Concomitant administration of bosentan. ( 4 , 7 )&#10;&#10;## Warnings and precautions&#10;&#10;5 WARNINGS AND PRECAUTIONS Lactic Acidosis: See boxed warning. ( 5.1 ) Hypoglycemia: May be severe. Ensure proper patient selection, dosing, and instructions, particularly in at-risk populations (e.g., elderly, renally impaired) and when used with other anti-diabetic medications. ( 5.2 ) Potential Increased Risk of Cardiovascular Mortality with Sulfonylureas: Inform patient of risks, benefits and treatment alternatives. ( 5.3 ) Hemolytic anemia: Can occur if glucose 6-phosphate dehydrogenase (G6PD) deficient. Consider a non-sulfonylurea alternative. ( 5.4 ) Vitamin B 12 Deficiency: Metformin may lower vitamin B 12 levels. Measure hematological parameters annually and vitamin B 12 at 2 to 3 year intervals and manage any abnormalities. ( 5.5 ) 5.1 Lactic Acidosis There have been postmarketing cases of metformin-associated lactic acidosis, including fatal cases. These cases had a subtle onset and were accompanied by nonspecific symptoms such as malaise, myalgias, abdominal pain, respiratory distress, or increased somnolence; however, hypotension and resistant bradyarrhythmias have occurred with severe acidosis. Metformin-associated lactic acidosis was characterized by elevated blood lactate concentrations (&gt;5 mmol/L), anion gap acidosis (without evidence of ketonuria or ketonemia), and an increased lactate: pyruvate ratio; metformin plasma levels were generally &gt;5 mcg/mL. Metformin decreases liver uptake of lactate increasing lactate blood levels which may increase the risk of lactic acidosis, especially in patients at risk. If metformin-associated lactic acidosis is suspected, general supportive measures should be instituted promptly in a hospital setting, along with immediate discontinuation of glyburide and metformin hydrochloride. In glyburide and metformin hydrochloride treated patients with a diagnosis or strong suspicion of lactic acidosis, prompt hemodialysis is recommended to correct the acidosis and remove accumulated metformin (metformin HCl is dialyzable with a clearance of up to 170 mL/min under good hemodynamic conditions). Hemodialysis has often resulted in reversal of symptoms and recovery. Educate patients and their families about the symptoms of lactic acidosis and, if these symptoms occur, instruct them to discontinue glyburide and metformin hydrochloride tablets and report these symptoms to their healthcare provider. For each of the known and possible risk factors for metformin-associated lactic acidosis, recommendations to reduce the risk of and manage metformin-associated lactic acidosis are provided below: Renal Impairment —The postmarketing metformin-associated lactic acidosis cases primarily occurred in patients with significant renal impairment. The risk of metformin accumulation and metformin-associated lactic acidosis increases with the severity of renal impairment because metformin is substantially excreted by the kidney. Clinical recommendations based upon the patient's renal function include [see Dosage and Administration ( 2.1 ) , Clinical Pharmacology ( 12.3 ) ]: o Before initiating glyburide and metformin hydrochloride, obtain an estimated glomerular filtration rate (eGFR). o Glyburide and metformin hydrochloride is contraindicated in patients with an eGFR less than 30 mL/min/1.73 m 2 [see CONTRAINDICATIONS ( 4 )]. o Initiation of glyburide and metformin hydrochloride is not recommended in patients with eGFR between 30 to 45 mL/min/1.73 m 2 . o Obtain an eGFR at least annually in all patient taking glyburide and metformin hydrochloride. In patients at risk for the development of renal impairment (e.g., the elderly), renal function should be assessed more frequently. o In patients taking glyburide and metformin hydrochloride whose eGFR falls below 45 mL/min/ 1.73 m 2 , assess the benefit and risk of continuing therapy. Drug interactions— The concomitant use of glyburide and metformin hydrochloride with specific drugs may increase the risk of metformin-associated lactic acidosis: those that impair renal function, result in significant hemodynamic change, interfere with acid-base balance, or increase metformin accumulation [ see Drug Interactions ( 7 ) ] . Consider more frequent monitoring of patients. Age 65 or Greater— The risk of metformin-associated lactic acidosis increases with the patient's age because elderly patients have a greater likelihood of having hepatic, renal, or cardiac impairment than younger patients. Assess renal function more frequently in elderly patients. Radiologic studies with contrast— Administration of intravascular iodinated contrast agents in metformin-treated patients has led to an acute decrease in renal function and the occurrence of lactic acidosis. Stop glyburide and metformin hydrochloride at the time of, or prior to, an iodinated contrast imaging procedure in patients with an eGFR between 30 and 60 mL/min/1.73 m 2 ; in patients with a history of hepatic impairment, alcoholism or heart failure, or in patients who will be administered intra-arterial iodinated contrast. Reevaluate eGFR 48 hours after the imaging procedure, and restart glyburide and metformin hydrochloride if renal function is stable. Surgery and other procedures— Withholding of food and fluids during surgical or other procedures may increase the risk for volume depletion, hypotension, and renal impairment. Glyburide and metformin hydrochloride should be temporarily discontinued while patients have restricted food and fluid intake. Hypoxic states— Several of the postmarketing cases of metformin-associated lactic acidosis occurred in the setting of acute congestive heart failure (particularly when accompanied by hypoperfusion and hypoxemia). Cardiovascular collapse (shock), acute myocardial infarction, sepsis, and other conditions associated with hypoxemia have been associated with lactic acidosis and may cause prerenal azotemia. When such an event occurs, discontinue glyburide and metformin hydrochloride. Excessive Alcohol intake— Alcohol potentiates the effect of metformin on lactate metabolism. Patients should be warned against excessive alcohol intake, acute or chronic, while receiving glyburide and metformin hydrochloride. Hepatic impairment— Patients with hepatic impairment have developed cases of metformin-associated lactic acidosis. This may be due to impaired lactate clearance resulting in higher lactate blood levels. Therefore, avoid use of glyburide and metformin hydrochloride in patients with clinical or laboratory evidence of hepatic disease. Mitochondrial Diseases — Metformin may increase the risk of lactic acidosis in patients with mitochondrial diseases such as mitochondrial encephalomyopathy with lactic acidosis, and stroke-like episodes (MELAS) syndrome and maternally inherited diabetes and deafness (MIDD). Glyburide and metformin hydrochloride is not recommended in patients with mitochondrial diseases such as MELAS syndrome and MIDD. If a patient taking glyburide and metformin hydrochloride develops elevated lactic acid levels (with or without accompanying neurologic signs and symptoms), discontinue Glyburide and metformin hydrochloride. Depending on the clinical context, consider evaluating the patient for MELAS, MIDD, or other mitochondrial disease. 5.2 Hypoglycemia All sulfonylurea drugs, including glyburide and metformin hydrochloride, are capable of producing severe hypoglycemia [see Adverse Reactions ( 6 ) ]. Concomitant use of glyburide and metformin hydrochloride with other anti-diabetic medication can increase the risk of hypoglycemia. A lower dose of glyburide and metformin hydrochloride may be required to minimize the risk of hypoglycemia when combining it with other anti-diabetic medications. Educate patients to recognize and manage hypoglycemia. When initiating and increasing glyburide and metformin hydrochloride in patients who may be predisposed to hypoglycemia (e.g., the elderly, patients with renal impairment, patients on other anti-diabetic medications) start with a lower dose. Debilitated or malnourished patients, and those with adrenal, pituitary, or hepatic impairment are particularly susceptible to the hypoglycemic action of anti-diabetic medications. Hypoglycemia is also more likely to occur when caloric intake is deficient, after severe or prolonged exercise, or when alcohol is ingested. The patient's ability to concentrate and react may be impaired as a result of hypoglycemia. Early warning symptoms of hypoglycemia may be different or less pronounced in patients with autonomic neuropathy, the elderly, and in patients who are taking beta-adrenergic blocking medications or other sympatholytic agents. These situations may result in severe hypoglycemia before the patient is aware of the hypoglycemia. These impairments may present a risk in situations where these abilities are especially important, such as driving or operating other machinery. Severe hypoglycemia can lead to unconsciousness or convulsions and may result in temporary or permanent impairment of brain function or death. 5.3 Cardiovascular Mortality The administration of oral hypoglycemic drugs has been reported to be associated with increased cardiovascular mortality as compared to treatment with diet alone or diet plus insulin. This warning is based on the study conducted by the University Group Diabetes Program (UGDP), a long-term prospective clinical study designed to evaluate the effectiveness of glucose-lowering drugs in preventing or delaying vascular complications in patients with type 2 diabetes mellitus. The study involved 823 patients who were randomly assigned to 1 of 4 treatment groups. UGDP reported that patients treated for 5 to 8 years with diet plus a fixed dose of tolbutamide (1.5 grams per day) had a rate of cardiovascular mortality approximately 2½ times that of patients treated with diet alone. A significant increase in total mortality was not observed, but the use of tolbutamide was discontinued based on the increase in cardiovascular mortality, thus limiting the opportunity for the study to show an increase in overall mortality. Despite controversy regarding the interpretation of these results, the findings of the UGDP study provide an adequate basis for this warning. The patient should be informed of the potential risks and benefits of glyburide and of alternative modes of therapy. Although only one drug in the sulfonylurea class (tolbutamide) was included in this study, it is prudent from a safety standpoint to consider that this warning may also apply to other hypoglycemic drugs in this class, in view of their close similarities in mode of action and chemical structure. 5.4 Hemolytic Anemia Treatment of patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency with sulfonylurea agents, including glyburide and metformin hydrochloride, can lead to hemolytic anemia. Avoid use of glyburide and metformin hydrochloride in patients with G6PD deficiency. In postmarketing reports, hemolytic anemia has also been reported in patients who did not have known G6PD deficiency. 5.5 Vitamin B12 Deficiency In clinical studies of 29-week duration with metformin HCl tablets, a decrease to subnormal levels of previously normal serum vitamin B 12 levels, was observed in approximately 7% of patients. Such decrease, possibly due to interference with B 12 absorption from the B 12 -intrinsic factor complex, may be associated with anemia but appears to be rapidly reversible with discontinuation of metformin or vitamin B 12 supplementation. Certain individuals (those with inadequate vitamin B 12 or calcium intake or absorption) appear to be predisposed to developing subnormal vitamin B 12 levels. Measure hematologic parameters on an annual basis and vitamin B 12 at 2 to 3 year intervals in patients on glyburide and metformin hydrochloride and manage any abnormalities [see Adverse Reactions ( 6.1 ) ]. 5.6 Macrovascular Outcomes There have been no clinical studies establishing conclusive evidence of macrovascular risk reduction with glyburide and metformin hydrochloride.&#10;&#10;## Adverse reactions&#10;&#10;6 ADVERSE REACTIONS The following adverse reactions are also discussed elsewhere in the labeling: Lactic Acidosis [see Boxed Warning and Warnings and Precautions ( 5.1 ) ] Hypoglycemia [see Warnings and Precautions ( 5.2 ) ] Cardiovascular mortality [see Warnings and Precautions ( 5.3 ) ] Hemolytic anemia [see Warnings and Precautions ( 5.4 )] Vitamin B 12 Deficiency [ see Warnings and Precautions ( 5.5 ) ] Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness. ( 6.1 ) To report SUSPECTED ADVERSE REACTIONS, contact Zydus Pharmaceuticals (USA) Inc. at 1-877-993-8779 or FDA at 1-800-FDA-1088 or http://www.fda.gov/medwatch. 6.1 Clinical Studies Experience Because clinical studies are conducted under widely varying conditions, adverse reaction rates observed in the clinical studies of a drug cannot be directly compared to rates in the clinical studies of another drug and may not reflect the rates observed in practice. In double-blind clinical studies with glyburide and metformin hydrochloride as initial therapy or as second-line therapy of 20 and 14 weeks, respectively (see section 14), a total of 642 patients received glyburide and metformin hydrochloride, 312 received metformin HCl, 324 received glyburide, and 161 received placebo. Adverse reactions are listed in Table 1. Table 1: Adverse Reactions Occurring &gt;5% in Double-Blind Clinical Studies of Glyburide and Metformin Hydrochloride Used as Initial (20 Weeks) or Second-Line (14 Weeks) Therapy Number (%) of Patients Adverse Reaction Placebo N=161 Glyburide N=324 Metformin HCl N=312 Glyburide and Metformin Hydrochloride N=642 Diarrhea 6% 6% 21% 17% Headache 11% 11% 9% 9% Nausea/vomiting 6% 5% 12% 8% Abdominal pain 4% 3% 8% 7% Dizziness 4% 6% 4% 6% Hypoglycemia The incidence of reported symptoms of hypoglycemia (such as dizziness, shakiness, sweating, and hunger), in the initial therapy study of glyburide and metformin hydrochloride are summarized in Table 2. For patients with a baseline HbA1c between 8% and 11% treated with glyburide and metformin hydrochloride 2.5 mg/500 mg as initial therapy, the frequency of hypoglycemic symptoms was 30% to 35%. As second-line therapy in patients inadequately controlled on sulfonylurea alone, approximately 6.8% of all patients treated with glyburide and metformin hydrochloride experienced hypoglycemic symptoms. Gastrointestinal Reactions The incidence of gastrointestinal (GI) side effects (diarrhea, nausea/vomiting, and abdominal pain) in the glyburide and metformin hydrochloride initial therapy study are summarized in Table 2. Across all glyburide and metformin hydrochloride studies, GI symptoms were the most common adverse events with glyburide and metformin hydrochloride and were more frequent at higher dose levels. In controlled studies, &lt;2% of patients discontinued glyburide and metformin hydrochloride therapy due to GI adverse events. Table 2: Hypoglycemia or Gastrointestinal Adverse Reactions in a Placebo and Active-Controlled Study of Glyburide and Metformin Hydrochloride as Initial Therapy (20 Weeks) Variable Placebo N=161 Glyburide Tablets N=160 Metformin HCl Tablets N=159 Glyburide and Metformin Hydrochloride 1.25 mg/250 mg Tablets N=158 Glyburide and Metformin Hydrochloride 2.5 mg/500 mg Tablets N=162 Number (%) of patients with symptoms of hypoglycemia 3% 21% 3% 11% 38% Number (%) of patients with gastrointestinal adverse events 24% 24% 43% 32% 38% Dermatologic Reactions Allergic skin reactions, e.g., pruritus, erythema, urticaria, and morbilliform or maculopapular eruptions, occur in 1.5% of glyburide-treated patients. These may be transient and may disappear despite continued use. 6.2 Postmarketing Adverse Reactions The following adverse reactions have been identified during post-approval use of glyburide and metformin hydrochloride. Because these reactions are reported voluntarily from a population of uncertain size, it is not always possible to reliably estimate their frequency or establish a causal relationship to drug exposure. Allergic: Angioedema, arthralgia, myalgia, and vasculitis have been reported. Dermatologic: Porphyria cutanea tarda and photosensitivity reactions have been reported with sulfonylureas. Hematologic: Leukopenia, agranulocytosis, thrombocytopenia, which occasionally may present as purpura, hemolytic anemia, aplastic anemia, and pancytopenia, have been reported with sulfonylureas. Hepatic: Cholestatic, hepatocellular, and mixed hepatocellular liver injury have been reported with postmarketing use of metformin. Cholestatic jaundice and hepatitis may occur rarely with glyburide, which may progress to liver failure. Liver function abnormalities, including isolated transaminase elevations, have been reported. Metabolic : Hepatic porphyria reactions have been reported with sulfonylureas; however, these have not been reported with glyburide. Disulfiram-like reactions have been reported very rarely with glyburide. Cases of hyponatremia have been reported with glyburide and all other sulfonylureas, most often in patients who are on other medications or have medical conditions known to cause hyponatremia or increase release of antidiuretic hormone. Other Reactions: Changes in accommodation and/or blurred vision have been reported with glyburide and other sulfonylureas. These are thought to be related to fluctuation in glucose levels.&#10;&#10;## Drug interactions&#10;&#10;7 DRUG INTERACTIONS Table 3 presents clinically significant drug interactions with glyburide and metformin hydrochloride. Table 3: Clinically Significant Drug Interactions with Glyburide and Metformin Hydrochloride Carbonic Anhydrase Inhibitors Clinical Impact: Carbonic anhydrase inhibitors frequently cause a decrease in serum bicarbonate and induce non-anion gap, hyperchloremic metabolic acidosis. Concomitant use of these drugs with glyburide and metformin hydrochloride may increase the risk for lactic acidosis. Intervention: Consider more frequent monitoring of these patients. Examples: Topiramate, zonisamide, acetazolamide and dichlorphenamide. Drugs that Reduce Metformin Clearance Clinical Impact: Concomitant use of drugs that interfere with common renal tubular transport systems involved in the renal elimination of metformin (e.g., organic cationic transporter-2 [OCT2] / multidrug and toxin extrusion [MATE] inhibitors) could increase systemic exposure to metformin and may increase the risk for lactic acidosis [ see Clinical Pharmacology ( 12.3 ) ]. Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride. Examples: Ranolazine, vandetanib, dolutegravir, and cimetidine. Alcohol Clinical Impact: Alcohol is known to potentiate the effect of metformin on lactate metabolism. Intervention: Warn patients against excessive alcohol intake while receiving glyburide and metformin hydrochloride. Drugs that potentiate the hypoglycemic action of glyburide and metformin hydrochloride Clinical Impact: Certain drugs may potentiate the hypoglycemic action of sulfonylureas, one of the components of glyburide and metformin hydrochloride. Intervention: Closely observe patient for hypoglycemia during co-administration and for loss of glycemic control when withdrawing these agents. Examples: Nonsteroidal anti-inflammatory agents and other highly protein-boind drugs, salicylcates, sulfonamides, chloramphenicol, probenecid, coumarins, monoamine oxidase inhibitors, beta-adrenergic blocking agents; potentially with ciprofloxacin, micronazole. Bosentan Clinical Impact: Increased risk of liver enzyme elevations was observed. Intervention: Concomitant administration is contraindicated. Colesevalam Clinical Impact: Concomitant administration may led to reduced glyburide absorption (AUC and C max : -32% and -47%, respectively). Intervention: Glyburide and metformin hydrochloride should be administered at least 4 hours prior to colesevelam. Drugs Reducing Glycemic Control Clinical Impact: Certain drugs tend to produce hyperglycemia and may lead to loss of glycemic control. Intervention: When such drugs are administered to a patient receiving glyburide and metformin hydrochloride observe the patient closely for loss of blood glucose control. When such drugs are withdrawn from a patient receiving glyburide and metformin hydrochloride, observe the patient closely for hypoglycemia. Examples: Thiazides and other diuretics, corticosteroids, phenothiazines, thyroid products, estrogens, oral contraceptives, phenytoin, nicotinic acid, sympathomimetics, calcium channel blockers, and isoniazid. Carbonic anhydrase inhibitors may increase risk of lactic acidosis. Consider more frequent monitoring. ( 7 ) Drugs that reduce metformin clearance (such as ranolazine, vandetanib, dolutegravir, and cimetidine) may increase the accumulation of metformin. Consider the benefits and risks of concomitant use. ( 7 ) Alcohol can potentiate the effect of metformin on lactate metabolism. Warn patients against excessive alcohol intake. ( 7 ) The hypoglycemic action of glyburide and metformin hydrochloride may be potentiated by certain drugs. ( 7 ) Concomitant administration of colesevalam may led to reduced glyburide absorption. ( 7 )&#10;&#10;## Use in specific populations&#10;&#10;8 USE IN SPECIFIC POPULATIONS Pregnancy: Glyburide and metformin hydrochloride tablets should be discontinued at least two weeks before expected delivery. ( 8.1 ) Females and Males of Reproductive Potential: Advise premenopausal females of the potential for an unintended pregnancy. ( 8.3 ) Geriatric Use: Assess renal function more frequently. ( 8.5 ) Hepatic Impairment: Avoid use in patients with hepatic impairment. ( 8.7 ) 8.1 Pregnancy Risk Summary Available data from a small number of published studies and postmarketing experience with glyburide use in pregnancy over decades have not identified any drug associated risks for major birth defects, miscarriage, or adverse maternal outcomes. However, sulfonylureas (including glyburide) cross the placenta and have been associated with neonatal adverse reactions such as hypoglycemia. Therefore, glyburide and metformin hydrochloride should be discontinued at least two weeks before expected delivery [see Clinical Considerations ]. Limited data with metformin in pregnant women are not sufficient to determine a drug-associated risk for major birth defects or miscarriage. Published studies with metformin use during pregnancy have not reported a clear association with metformin and major birth defect or miscarriage risk [see Data ]. There are risks to the mother and fetus associated with poorly controlled diabetes mellitus in pregnancy [see Clinical Considerations ]. No evidence of harm to the fetus was observed when doses up to 500 times the maximum recommended human dose of 20 mg of glyburide, based on body surface area, were administered to rats and rabbits in reproduction studies. No adverse developmental effects were observed when metformin was administered to pregnant Sprague Dawley rats and rabbits during the period of organogenesis at doses up to 3- and 6- times, respectively, a 2,000 mg clinical dose, based on body surface area [see Data ]. The estimated background risk of major birth defects is 6 to 10% in women with pre-gestational diabetes mellitus with an HbA1c &gt;7 and has been reported to be as high as 20 to 25% in women with a HbA1c &gt;10. The estimated background risk of miscarriage for the indicated population is unknown. In the U.S. general population, the estimated background risk of major birth defects and miscarriage in clinically recognized pregnancies is 2 to 4% and 15 to 20%, respectively. Clinical Considerations Disease-associated maternal and/or embryo/fetal risk Poorly controlled diabetes mellitus in pregnancy increases the maternal risk for diabetic ketoacidosis, pre-eclampsia, spontaneous abortions, preterm delivery, and delivery complications. Poorly controlled diabetes mellitus increases the fetal risk for major birth defects, stillbirth, and macrosomia related morbidity. Fetal/Neonatal Adverse Reactions Neonates of women with gestational diabetes who are treated with sulfonylureas during pregnancy may be at increased risk for neonatal intensive care admission and may develop respiratory distress, hypoglycemia, birth injury, and be large for gestational age. Prolonged severe hypoglycemia, lasting 4 to 10 days, has been reported in neonates born to mothers receiving a sulfonylurea at the time of delivery and has been reported with the use of agents with a prolonged half-life. Observe newborns for symptoms of hypoglycemia and respiratory distress and manage accordingly. Dose adjustments during pregnancy and the postpartum period Due to reports of prolonged severe hypoglycemia in neonates born to mothers receiving a sulfonylurea at the time of delivery, glyburide and metformin hydrochloride should be discontinued at least two weeks before expected delivery [see Fetal/Neonatal Adverse Reactions ]. Data Human Data Published data from post-marketing studies have not reported a clear association with metformin and major birth defects, miscarriage, or adverse maternal or fetal outcomes when metformin was used during pregnancy. However, these studies cannot definitely establish the absence of any metformin-associated risk because of methodological limitations, including small sample size and inconsistent comparator groups. Animal Data Reproduction studies were performed in rats and rabbits at doses up to 500 times the maximum recommended human dose of 20 mg of glyburide based on body surface area comparisons and revealed no evidence of harm to the fetus. Metformin did not adversely affect development outcomes when administered to pregnant rats and rabbits at doses up to 600 mg/kg/day. This represents an exposure of about 3 and 6 times a 2,000 mg clinical dose based on body surface area comparisons for rats and rabbits, respectively. Determination of fetal concentrations demonstrated a partial placental barrier to metformin. 8.2 Lactation Risk Summary Breastfed infants of lactating women using glyburide and metformin hydrochloride should be monitored for symptoms of hypoglycemia [see Clinical Considerations ]. Although glyburide was negligible in human milk in one small clinical lactation study; this result is not conclusive because of the limitations of the assay used in the study. There are no data on the effects of glyburide on milk production. Limited published studies report that metformin is present in human milk [see Data ] . However, there is insufficient information to determine the effects of metformin on the breastfed infant and no available information on the effects of metformin on milk production. Therefore, the developmental and health benefits of breastfeeding should be considered along with the mother's clinical need for glyburide and metformin hydrochloride and any potential adverse effects on the breastfed child from glyburide and metformin hydrochloride or from the underlying maternal condition. Clinical Considerations Monitoring for adverse reactions Monitor breastfed infants for signs of hypoglycemia (e.g., jitters, cyanosis, apnea, hypothermia, excessive sleepiness, poor feeding, seizures). Data Published clinical lactation studies report that metformin is present in human milk which resulted in infant doses approximately 0.11% to 1% of the maternal weight-adjusted dosage and a milk/plasma ratio ranging between 0.13 and 1. However, the studies were not designed to definitely establish the risk of use of metformin during lactation because of small sample size and limited adverse event data collected in infants. 8.3 Females and Males of Reproductive Potential Discuss the potential for unintended pregnancy with premenopausal women as therapy with glyburide and metformin hydrochloride may result in ovulation in some anovulatory women. 8.4 Pediatric Use Safety and effectiveness of glyburide and metformin hydrochloride have not been established in pediatric patients. 8.5 Geriatric Use Of the 642 patients who received glyburide and metformin hydrochloride in double-blind clinical studies, 23.8% were 65 and older while 2.8% were 75 and older. No overall differences in effectiveness or safety were observed between these patients and younger patients, but greater sensitivity of some older individuals cannot be ruled out. Elderly patients are particularly susceptible to the hypoglycemic action of anti-diabetic agents. Hypoglycemia may be difficult to recognize in these patients. In general, dose selection for an elderly patient should be cautious, usually starting at the low end of the dosing range, reflecting the greater frequency of decreased hepatic, renal, or cardiac function, and of concomitant disease or other drug therapy and the higher risk of hypoglycemia and lactic acidosis. Assess renal function more frequently in elderly patients [see Dosage and Administration ( 2 ) and Warnings and Precautions ( 5.1 ) ]. 8.6 Renal Impairment Metformin is substantially excreted by the kidney, and the risk of metformin accumulation and lactic acidosis increases with the degree of renal impairment. Glyburide and metformin hydrochloride is contraindicated in severe renal impairment, patients with an estimated glomerular filtration rate (eGFR) below 30 mL/min/1.73 m 2 [see Dosage and Administration ( 2.3 ), Contraindications ( 4 ), Warnings and Precautions ( 5.1 ), and Clinical Pharmacology ( 12.3 ) ]. 8.7 Hepatic Impairment Use of metformin in patients with hepatic impairment has been associated with some cases of lactic acidosis. Glyburide and metformin hydrochloride is not recommended in patients with hepatic impairment [see Warnings and Precautions ( 5.1 ) ].&#10;&#10;" extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T12:09:57+00:00" xmi:version="2.0">
+  <chunks charEnd="3462"/>
+  <chunks index="1" charStart="3442" charEnd="4168"/>
+  <chunks index="2" charStart="4141" charEnd="4168"/>
+  <chunks index="3" charStart="4170" charEnd="8170"/>
+  <chunks index="4" charStart="7870" charEnd="11870"/>
+  <chunks index="5" charStart="11570" charEnd="15570"/>
+  <chunks index="6" charStart="15270" charEnd="16202"/>
+  <chunks index="7" charStart="16204" charEnd="16224"/>
+  <chunks index="8" charStart="16226" charEnd="20226"/>
+  <chunks index="9" charStart="19926" charEnd="21672"/>
+  <chunks index="10" charStart="21674" charEnd="25523"/>
+  <chunks index="11" charStart="25493" charEnd="25523"/>
+  <chunks index="12" charStart="25525" charEnd="29525"/>
+  <chunks index="13" charStart="29225" charEnd="33225"/>
+  <chunks index="14" charStart="32925" charEnd="34010"/>
+  <entities type="Drug" id="glyburide-and-metformin-hydrochloride" mention="GLYBURIDE AND METFORMIN HYDROCHLORIDE" confidence="0.95" sourceSpanStart="70" sourceSpanEnd="107">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylurea" confidence="0.9" sourceSpanStart="179" sourceSpanEnd="191">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="LACTIC ACIDOSIS" confidence="0.95" sourceSpanStart="297" sourceSpanEnd="312">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="336" sourceSpanEnd="345">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="death" mention="death" confidence="0.9" sourceSpanStart="390" sourceSpanEnd="395">
+    <properties key="name" value="death"/>
+  </entities>
+  <entities type="Condition" id="hypothermia" mention="hypothermia" confidence="0.9" sourceSpanStart="397" sourceSpanEnd="408">
+    <properties key="name" value="hypothermia"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.9" sourceSpanStart="410" sourceSpanEnd="421">
+    <properties key="name" value="hypotension"/>
+  </entities>
+  <entities type="Condition" id="resistant-bradyarrhythmias" mention="resistant bradyarrhythmias" confidence="0.9" sourceSpanStart="427" sourceSpanEnd="453">
+    <properties key="name" value="resistant bradyarrhythmias"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="malaise" mention="malaise" confidence="0.9" sourceSpanStart="570" sourceSpanEnd="577">
+    <properties key="name" value="malaise"/>
+  </entities>
+  <entities type="Condition" id="myalgias" mention="myalgias" confidence="0.9" sourceSpanStart="579" sourceSpanEnd="587">
+    <properties key="name" value="myalgias"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="respiratory-distress" mention="respiratory distress" confidence="0.9" sourceSpanStart="589" sourceSpanEnd="609">
+    <properties key="name" value="respiratory distress"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="somnolence" mention="somnolence" confidence="0.9" sourceSpanStart="611" sourceSpanEnd="621">
+    <properties key="name" value="somnolence"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="abdominal pain" confidence="0.9" sourceSpanStart="627" sourceSpanEnd="641">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Drug" id="topiramate" mention="topiramate" confidence="0.95" sourceSpanStart="1097" sourceSpanEnd="1107">
+    <properties key="name" value="topiramate"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.9" sourceSpanStart="2377" sourceSpanEnd="2393">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="acute-congestive-heart-failure" mention="acute congestive heart failure" confidence="0.9" sourceSpanStart="1235" sourceSpanEnd="1265">
+    <properties key="name" value="acute congestive heart failure"/>
+    <properties key="category" value="cardiac"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.9" sourceSpanStart="2556" sourceSpanEnd="2574">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="2809" sourceSpanEnd="2818">
+    <properties key="name" value="glyburide"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="DrugClass" id="biguanides" mention="biguanide" confidence="0.9" sourceSpanStart="3310" sourceSpanEnd="3319">
+    <properties key="name" value="biguanides"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="3409" sourceSpanEnd="3433">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="Glyburide and metformin hydrochloride tablets" confidence="0.98" sourceSpanStart="3484" sourceSpanEnd="3529" chunkIndex="1">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="3484" sourceSpanEnd="3493" chunkIndex="1">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="3498" sourceSpanEnd="3507" chunkIndex="1">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="severe-renal-impairment" mention="Severe renal impairment" confidence="0.98" sourceSpanStart="3568" sourceSpanEnd="3591" chunkIndex="1">
+    <properties key="name" value="severe renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hypersensitivity" mention="Hypersensitivity to metformin or glyburide" confidence="0.95" sourceSpanStart="3666" sourceSpanEnd="3708" chunkIndex="1">
+    <properties key="name" value="hypersensitivity"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="acute-or-chronic-metabolic-acidosis" mention="Acute or chronic metabolic acidosis" confidence="0.98" sourceSpanStart="3710" sourceSpanEnd="3745" chunkIndex="1">
+    <properties key="name" value="acute or chronic metabolic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.98" sourceSpanStart="3757" sourceSpanEnd="3778" chunkIndex="1">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="bosentan" mention="bosentan" confidence="0.95" sourceSpanStart="3832" sourceSpanEnd="3840" chunkIndex="1">
+    <properties key="name" value="bosentan"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="4759" sourceSpanEnd="4768" chunkIndex="3">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="4241" sourceSpanEnd="4253" chunkIndex="3">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="Sulfonylureas" confidence="0.95" sourceSpanStart="4517" sourceSpanEnd="4530" chunkIndex="3">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-mortality" mention="Cardiovascular Mortality" confidence="0.9" sourceSpanStart="4487" sourceSpanEnd="4511" chunkIndex="3">
+    <properties key="name" value="cardiovascular mortality"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="Hemolytic anemia" confidence="0.95" sourceSpanStart="4602" sourceSpanEnd="4618" chunkIndex="3">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="glucose-6-phosphate-dehydrogenase-deficiency" mention="glucose 6-phosphate dehydrogenase (G6PD) deficient" confidence="0.9" sourceSpanStart="4633" sourceSpanEnd="4683" chunkIndex="3">
+    <properties key="name" value="glucose 6-phosphate dehydrogenase deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="non-sulfonylureas" mention="non-sulfonylurea" confidence="0.9" sourceSpanStart="4696" sourceSpanEnd="4712" chunkIndex="3">
+    <properties key="name" value="non-sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="vitamin-b12-deficiency" mention="Vitamin B 12 Deficiency" confidence="0.95" sourceSpanStart="4734" sourceSpanEnd="4757" chunkIndex="3">
+    <properties key="name" value="vitamin b12 deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="Lactic Acidosis" confidence="0.95" sourceSpanStart="4926" sourceSpanEnd="4941" chunkIndex="3">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin-hydrochloride" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="5893" sourceSpanEnd="5930" chunkIndex="3">
+    <properties key="name" value="glyburide and metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="5893" sourceSpanEnd="5902" chunkIndex="3">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin hydrochloride" confidence="0.98" sourceSpanStart="8045" sourceSpanEnd="8068" chunkIndex="4">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="8873" sourceSpanEnd="8910" chunkIndex="4">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.98" sourceSpanStart="9706" sourceSpanEnd="9721" chunkIndex="4">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="9486" sourceSpanEnd="9502" chunkIndex="4">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="volume-depletion" mention="volume depletion" confidence="0.9" sourceSpanStart="9451" sourceSpanEnd="9467" chunkIndex="4">
+    <properties key="name" value="volume depletion"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypotension" mention="hypotension" confidence="0.95" sourceSpanStart="9469" sourceSpanEnd="9480" chunkIndex="4">
+    <properties key="name" value="hypotension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="acute-congestive-heart-failure" mention="acute congestive heart failure" confidence="0.95" sourceSpanStart="9749" sourceSpanEnd="9779" chunkIndex="4">
+    <properties key="name" value="acute congestive heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-collapse" mention="Cardiovascular collapse (shock)" confidence="0.95" sourceSpanStart="9844" sourceSpanEnd="9875" chunkIndex="4">
+    <properties key="name" value="cardiovascular collapse"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="acute-myocardial-infarction" mention="acute myocardial infarction" confidence="0.95" sourceSpanStart="9877" sourceSpanEnd="9904" chunkIndex="4">
+    <properties key="name" value="acute myocardial infarction"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="sepsis" mention="sepsis" confidence="0.95" sourceSpanStart="9906" sourceSpanEnd="9912" chunkIndex="4">
+    <properties key="name" value="sepsis"/>
+    <properties key="category" value="immunological"/>
+  </entities>
+  <entities type="Condition" id="prerenal-azotemia" mention="prerenal azotemia" confidence="0.95" sourceSpanStart="10017" sourceSpanEnd="10034" chunkIndex="4">
+    <properties key="name" value="prerenal azotemia"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="Hepatic impairment" confidence="0.95" sourceSpanStart="10340" sourceSpanEnd="10358" chunkIndex="4">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="mitochondrial-diseases" mention="mitochondrial diseases" confidence="0.95" sourceSpanStart="10674" sourceSpanEnd="10696" chunkIndex="4">
+    <properties key="name" value="mitochondrial diseases"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="melas-syndrome" mention="MELAS syndrome" confidence="0.95" sourceSpanStart="11054" sourceSpanEnd="11068" chunkIndex="4">
+    <properties key="name" value="melas syndrome"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="midd" mention="MIDD" confidence="0.95" sourceSpanStart="11073" sourceSpanEnd="11077" chunkIndex="4">
+    <properties key="name" value="midd"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylurea" confidence="0.95" sourceSpanStart="11424" sourceSpanEnd="11436" chunkIndex="4">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="11454" sourceSpanEnd="11463" chunkIndex="4">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Condition" id="severe-hypoglycemia" mention="severe hypoglycemia" confidence="0.95" sourceSpanStart="11518" sourceSpanEnd="11537" chunkIndex="4">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="11525" sourceSpanEnd="11537" chunkIndex="4">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin-hydrochloride" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="11589" sourceSpanEnd="11626" chunkIndex="5">
+    <properties key="name" value="glyburide and metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="11589" sourceSpanEnd="11598" chunkIndex="5">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin-hydrochloride" mention="metformin hydrochloride" confidence="0.95" sourceSpanStart="11603" sourceSpanEnd="11626" chunkIndex="5">
+    <properties key="name" value="metformin hydrochloride"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.98" sourceSpanStart="11688" sourceSpanEnd="11700" chunkIndex="5">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="renal-impairment" mention="renal impairment" confidence="0.95" sourceSpanStart="12074" sourceSpanEnd="12090" chunkIndex="5">
+    <properties key="name" value="renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="12238" sourceSpanEnd="12256" chunkIndex="5">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="autonomic-neuropathy" mention="autonomic neuropathy" confidence="0.95" sourceSpanStart="12668" sourceSpanEnd="12688" chunkIndex="5">
+    <properties key="name" value="autonomic neuropathy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Drug" id="tolbutamide" mention="tolbutamide" confidence="0.95" sourceSpanStart="13864" sourceSpanEnd="13875" chunkIndex="5">
+    <properties key="name" value="tolbutamide"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes" mention="type 2 diabetes" confidence="0.95" sourceSpanStart="13667" sourceSpanEnd="13682" chunkIndex="5">
+    <properties key="name" value="type 2 diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylurea" confidence="0.95" sourceSpanStart="14530" sourceSpanEnd="14542" chunkIndex="5">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="glucose-6-phosphate-dehydrogenase-deficiency" mention="glucose-6-phosphate dehydrogenase (G6PD) deficiency" confidence="0.95" sourceSpanStart="14844" sourceSpanEnd="14895" chunkIndex="5">
+    <properties key="name" value="glucose-6-phosphate dehydrogenase deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="hemolytic anemia" confidence="0.95" sourceSpanStart="14983" sourceSpanEnd="14999" chunkIndex="5">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="g6pd-deficiency" mention="G6PD deficiency" confidence="0.95" sourceSpanStart="15069" sourceSpanEnd="15084" chunkIndex="5">
+    <properties key="name" value="g6pd deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="15276" sourceSpanEnd="15285" chunkIndex="6">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="vitamin-b12" mention="vitamin B 12" confidence="0.9" sourceSpanStart="15357" sourceSpanEnd="15369" chunkIndex="6">
+    <properties key="name" value="vitamin b12"/>
+  </entities>
+  <entities type="Condition" id="anemia" mention="anemia" confidence="0.9" sourceSpanStart="15553" sourceSpanEnd="15559" chunkIndex="6">
+    <properties key="name" value="anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin-hydrochloride" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="15930" sourceSpanEnd="15967" chunkIndex="6">
+    <properties key="name" value="glyburide and metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="15930" sourceSpanEnd="15939" chunkIndex="6">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin-hydrochloride" mention="metformin hydrochloride" confidence="0.95" sourceSpanStart="15944" sourceSpanEnd="15967" chunkIndex="6">
+    <properties key="name" value="metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="16676" sourceSpanEnd="16713" chunkIndex="8">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="16676" sourceSpanEnd="16685" chunkIndex="8">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin-hcl" mention="metformin HCl" confidence="0.95" sourceSpanStart="17509" sourceSpanEnd="17522" chunkIndex="8">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="Lactic Acidosis" confidence="0.95" sourceSpanStart="16324" sourceSpanEnd="16339" chunkIndex="8">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="Hypoglycemia" confidence="0.95" sourceSpanStart="18049" sourceSpanEnd="18061" chunkIndex="8">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="cardiovascular-mortality" mention="Cardiovascular mortality" confidence="0.95" sourceSpanStart="16451" sourceSpanEnd="16475" chunkIndex="8">
+    <properties key="name" value="cardiovascular mortality"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="Hemolytic anemia" confidence="0.95" sourceSpanStart="16516" sourceSpanEnd="16532" chunkIndex="8">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematological"/>
+  </entities>
+  <entities type="Condition" id="vitamin-b12-deficiency" mention="Vitamin B 12 Deficiency" confidence="0.95" sourceSpanStart="16572" sourceSpanEnd="16595" chunkIndex="8">
+    <properties key="name" value="vitamin b12 deficiency"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diarrhea" mention="diarrhea" confidence="0.95" sourceSpanStart="18741" sourceSpanEnd="18749" chunkIndex="8">
+    <properties key="name" value="diarrhea"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="headache" mention="headache" confidence="0.95" sourceSpanStart="16732" sourceSpanEnd="16740" chunkIndex="8">
+    <properties key="name" value="headache"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="nausea-vomiting" mention="nausea/vomiting" confidence="0.95" sourceSpanStart="18751" sourceSpanEnd="18766" chunkIndex="8">
+    <properties key="name" value="nausea/vomiting"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="abdominal-pain" mention="abdominal pain" confidence="0.95" sourceSpanStart="18772" sourceSpanEnd="18786" chunkIndex="8">
+    <properties key="name" value="abdominal pain"/>
+    <properties key="category" value="gastrointestinal"/>
+  </entities>
+  <entities type="Condition" id="dizziness" mention="dizziness" confidence="0.95" sourceSpanStart="16779" sourceSpanEnd="16788" chunkIndex="8">
+    <properties key="name" value="dizziness"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="20088" sourceSpanEnd="20125" chunkIndex="9">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Condition" id="angioedema" mention="Angioedema" confidence="0.9" sourceSpanStart="20339" sourceSpanEnd="20349" chunkIndex="9">
+    <properties key="name" value="angioedema"/>
+    <properties key="category" value="immunologic"/>
+  </entities>
+  <entities type="Condition" id="arthralgia" mention="arthralgia" confidence="0.9" sourceSpanStart="20351" sourceSpanEnd="20361" chunkIndex="9">
+    <properties key="name" value="arthralgia"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="myalgia" mention="myalgia" confidence="0.9" sourceSpanStart="20363" sourceSpanEnd="20370" chunkIndex="9">
+    <properties key="name" value="myalgia"/>
+    <properties key="category" value="musculoskeletal"/>
+  </entities>
+  <entities type="Condition" id="vasculitis" mention="vasculitis" confidence="0.9" sourceSpanStart="20376" sourceSpanEnd="20386" chunkIndex="9">
+    <properties key="name" value="vasculitis"/>
+    <properties key="category" value="vascular"/>
+  </entities>
+  <entities type="Condition" id="porphyria-cutanea-tarda" mention="Porphyria cutanea tarda" confidence="0.9" sourceSpanStart="20421" sourceSpanEnd="20444" chunkIndex="9">
+    <properties key="name" value="porphyria cutanea tarda"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="Condition" id="photosensitivity-reactions" mention="photosensitivity reactions" confidence="0.9" sourceSpanStart="20449" sourceSpanEnd="20475" chunkIndex="9">
+    <properties key="name" value="photosensitivity reactions"/>
+    <properties key="category" value="dermatologic"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.95" sourceSpanStart="20500" sourceSpanEnd="20513" chunkIndex="9">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Condition" id="leukopenia" mention="Leukopenia" confidence="0.9" sourceSpanStart="20528" sourceSpanEnd="20538" chunkIndex="9">
+    <properties key="name" value="leukopenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="agranulocytosis" mention="agranulocytosis" confidence="0.9" sourceSpanStart="20540" sourceSpanEnd="20555" chunkIndex="9">
+    <properties key="name" value="agranulocytosis"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="thrombocytopenia" mention="thrombocytopenia" confidence="0.9" sourceSpanStart="20557" sourceSpanEnd="20573" chunkIndex="9">
+    <properties key="name" value="thrombocytopenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="purpura" mention="purpura" confidence="0.9" sourceSpanStart="20609" sourceSpanEnd="20616" chunkIndex="9">
+    <properties key="name" value="purpura"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="hemolytic-anemia" mention="hemolytic anemia" confidence="0.9" sourceSpanStart="20618" sourceSpanEnd="20634" chunkIndex="9">
+    <properties key="name" value="hemolytic anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="aplastic-anemia" mention="aplastic anemia" confidence="0.9" sourceSpanStart="20636" sourceSpanEnd="20651" chunkIndex="9">
+    <properties key="name" value="aplastic anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="pancytopenia" mention="pancytopenia" confidence="0.9" sourceSpanStart="20657" sourceSpanEnd="20669" chunkIndex="9">
+    <properties key="name" value="pancytopenia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="cholestatic-liver-injury" mention="Cholestatic, hepatocellular, and mixed hepatocellular liver injury" confidence="0.9" sourceSpanStart="20719" sourceSpanEnd="20785" chunkIndex="9">
+    <properties key="name" value="cholestatic, hepatocellular, and mixed hepatocellular liver injury"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="20831" sourceSpanEnd="20840" chunkIndex="9">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="cholestatic-jaundice" mention="Cholestatic jaundice" confidence="0.9" sourceSpanStart="20842" sourceSpanEnd="20862" chunkIndex="9">
+    <properties key="name" value="cholestatic jaundice"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="hepatitis" mention="hepatitis" confidence="0.9" sourceSpanStart="20867" sourceSpanEnd="20876" chunkIndex="9">
+    <properties key="name" value="hepatitis"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="20899" sourceSpanEnd="20908" chunkIndex="9">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Condition" id="liver-failure" mention="liver failure" confidence="0.9" sourceSpanStart="20932" sourceSpanEnd="20945" chunkIndex="9">
+    <properties key="name" value="liver failure"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="liver-function-abnormalities" mention="Liver function abnormalities" confidence="0.9" sourceSpanStart="20947" sourceSpanEnd="20975" chunkIndex="9">
+    <properties key="name" value="liver function abnormalities"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="isolated-transaminase-elevations" mention="isolated transaminase elevations" confidence="0.9" sourceSpanStart="20987" sourceSpanEnd="21019" chunkIndex="9">
+    <properties key="name" value="isolated transaminase elevations"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="hepatic-porphyria-reactions" mention="Hepatic porphyria reactions" confidence="0.9" sourceSpanStart="21053" sourceSpanEnd="21080" chunkIndex="9">
+    <properties key="name" value="hepatic porphyria reactions"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="disulfiram-like-reactions" mention="Disulfiram-like reactions" confidence="0.9" sourceSpanStart="21174" sourceSpanEnd="21199" chunkIndex="9">
+    <properties key="name" value="disulfiram-like reactions"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyponatremia" mention="hyponatremia" confidence="0.9" sourceSpanStart="21256" sourceSpanEnd="21268" chunkIndex="9">
+    <properties key="name" value="hyponatremia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="changes-in-accommodation" mention="Changes in accommodation" confidence="0.9" sourceSpanStart="21501" sourceSpanEnd="21525" chunkIndex="9">
+    <properties key="name" value="changes in accommodation"/>
+    <properties key="category" value="ocular"/>
+  </entities>
+  <entities type="Condition" id="blurred-vision" mention="blurred vision" confidence="0.9" sourceSpanStart="21533" sourceSpanEnd="21547" chunkIndex="9">
+    <properties key="name" value="blurred vision"/>
+    <properties key="category" value="ocular"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin-hydrochloride" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="21779" sourceSpanEnd="21816" chunkIndex="10">
+    <properties key="name" value="glyburide and metformin hydrochloride"/>
+  </entities>
+  <entities type="Drug" id="topiramate" mention="Topiramate" confidence="0.95" sourceSpanStart="22292" sourceSpanEnd="22302" chunkIndex="10">
+    <properties key="name" value="topiramate"/>
+  </entities>
+  <entities type="Drug" id="zonisamide" mention="zonisamide" confidence="0.95" sourceSpanStart="22304" sourceSpanEnd="22314" chunkIndex="10">
+    <properties key="name" value="zonisamide"/>
+  </entities>
+  <entities type="Drug" id="acetazolamide" mention="acetazolamide" confidence="0.95" sourceSpanStart="22316" sourceSpanEnd="22329" chunkIndex="10">
+    <properties key="name" value="acetazolamide"/>
+  </entities>
+  <entities type="Drug" id="dichlorphenamide" mention="dichlorphenamide" confidence="0.95" sourceSpanStart="22334" sourceSpanEnd="22350" chunkIndex="10">
+    <properties key="name" value="dichlorphenamide"/>
+  </entities>
+  <entities type="Drug" id="ranolazine" mention="Ranolazine" confidence="0.95" sourceSpanStart="22885" sourceSpanEnd="22895" chunkIndex="10">
+    <properties key="name" value="ranolazine"/>
+  </entities>
+  <entities type="Drug" id="vandetanib" mention="vandetanib" confidence="0.95" sourceSpanStart="22897" sourceSpanEnd="22907" chunkIndex="10">
+    <properties key="name" value="vandetanib"/>
+  </entities>
+  <entities type="Drug" id="dolutegravir" mention="dolutegravir" confidence="0.95" sourceSpanStart="22909" sourceSpanEnd="22921" chunkIndex="10">
+    <properties key="name" value="dolutegravir"/>
+  </entities>
+  <entities type="Drug" id="cimetidine" mention="cimetidine" confidence="0.95" sourceSpanStart="22927" sourceSpanEnd="22937" chunkIndex="10">
+    <properties key="name" value="cimetidine"/>
+  </entities>
+  <entities type="Drug" id="alcohol" mention="Alcohol" confidence="0.95" sourceSpanStart="22939" sourceSpanEnd="22946" chunkIndex="10">
+    <properties key="name" value="alcohol"/>
+  </entities>
+  <entities type="Drug" id="bosentan" mention="Bosentan" confidence="0.95" sourceSpanStart="23803" sourceSpanEnd="23811" chunkIndex="10">
+    <properties key="name" value="bosentan"/>
+  </entities>
+  <entities type="Drug" id="colesevelam" mention="Colesevalam" confidence="0.95" sourceSpanStart="23946" sourceSpanEnd="23957" chunkIndex="10">
+    <properties key="name" value="colesevelam"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="Glyburide" confidence="0.95" sourceSpanStart="25566" sourceSpanEnd="25575" chunkIndex="12">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="25580" sourceSpanEnd="25589" chunkIndex="12">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="DrugClass" id="sulfonylureas" mention="sulfonylureas" confidence="0.95" sourceSpanStart="26233" sourceSpanEnd="26246" chunkIndex="12">
+    <properties key="name" value="sulfonylureas"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="26258" sourceSpanEnd="26267" chunkIndex="12">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="26353" sourceSpanEnd="26365" chunkIndex="12">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="26378" sourceSpanEnd="26387" chunkIndex="12">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="26392" sourceSpanEnd="26401" chunkIndex="12">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="poorly-controlled-diabetes-mellitus" mention="poorly controlled diabetes mellitus" confidence="0.95" sourceSpanStart="26875" sourceSpanEnd="26910" chunkIndex="12">
+    <properties key="name" value="poorly controlled diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="0.95" sourceSpanStart="28076" sourceSpanEnd="28097" chunkIndex="12">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="pre-eclampsia" mention="pre-eclampsia" confidence="0.95" sourceSpanStart="28099" sourceSpanEnd="28112" chunkIndex="12">
+    <properties key="name" value="pre-eclampsia"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="spontaneous-abortions" mention="spontaneous abortions" confidence="0.95" sourceSpanStart="28114" sourceSpanEnd="28135" chunkIndex="12">
+    <properties key="name" value="spontaneous abortions"/>
+    <properties key="category" value="reproductive"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="28545" sourceSpanEnd="28557" chunkIndex="12">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="severe-hypoglycemia" mention="severe hypoglycemia" confidence="0.95" sourceSpanStart="28617" sourceSpanEnd="28636" chunkIndex="12">
+    <properties key="name" value="severe hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.95" sourceSpanStart="29109" sourceSpanEnd="29118" chunkIndex="12">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="29123" sourceSpanEnd="29132" chunkIndex="12">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.99" sourceSpanStart="29357" sourceSpanEnd="29366" chunkIndex="13">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="glyburide" mention="glyburide" confidence="0.99" sourceSpanStart="29824" sourceSpanEnd="29833" chunkIndex="13">
+    <properties key="name" value="glyburide"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="30367" sourceSpanEnd="30404" chunkIndex="13">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="30441" sourceSpanEnd="30453" chunkIndex="13">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycemia" mention="hypoglycemia" confidence="0.95" sourceSpanStart="33090" sourceSpanEnd="33102" chunkIndex="14">
+    <properties key="name" value="hypoglycemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="33107" sourceSpanEnd="33122" chunkIndex="14">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="0.95" sourceSpanStart="33280" sourceSpanEnd="33289" chunkIndex="14">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="33374" sourceSpanEnd="33389" chunkIndex="14">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="Glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="33437" sourceSpanEnd="33474" chunkIndex="14">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Condition" id="severe-renal-impairment" mention="severe renal impairment" confidence="0.95" sourceSpanStart="33497" sourceSpanEnd="33520" chunkIndex="14">
+    <properties key="name" value="severe renal impairment"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Drug" id="metformin" mention="metformin" confidence="0.95" sourceSpanStart="33775" sourceSpanEnd="33784" chunkIndex="14">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="33802" sourceSpanEnd="33820" chunkIndex="14">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <entities type="Condition" id="lactic-acidosis" mention="lactic acidosis" confidence="0.95" sourceSpanStart="33860" sourceSpanEnd="33875" chunkIndex="14">
+    <properties key="name" value="lactic acidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="glyburide-and-metformin" mention="Glyburide and metformin hydrochloride" confidence="0.95" sourceSpanStart="33877" sourceSpanEnd="33914" chunkIndex="14">
+    <properties key="name" value="glyburide and metformin"/>
+  </entities>
+  <entities type="Condition" id="hepatic-impairment" mention="hepatic impairment" confidence="0.95" sourceSpanStart="33951" sourceSpanEnd="33969" chunkIndex="14">
+    <properties key="name" value="hepatic impairment"/>
+    <properties key="category" value="hepatic"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="313" sourceSpanEnd="454"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="death" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="313" sourceSpanEnd="454"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="hypothermia" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="313" sourceSpanEnd="454"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="hypotension" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="313" sourceSpanEnd="454"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="resistant-bradyarrhythmias" confidence="0.9" evidence="Postmarketing cases of metformin-associated lactic acidosis have resulted in death, hypothermia, hypotension, and resistant bradyarrhythmias." sourceSpanStart="313" sourceSpanEnd="454"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glyburide" targetType="DrugClass" targetId="sulfonylureas" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are a combination of glyburide, a sulfonylurea, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3179" sourceSpanEnd="3434"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="metformin" targetType="DrugClass" targetId="biguanides" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are a combination of glyburide, a sulfonylurea, and metformin hydrochloride (HCl), a biguanide, indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3179" sourceSpanEnd="3434"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="type-2-diabetes-mellitus" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are indicated as an adjunct to diet and exercise to improve glycemic control in adults with type 2 diabetes mellitus." sourceSpanStart="3015" sourceSpanEnd="3178"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="severe-renal-impairment" confidence="0.98" evidence="Glyburide and metformin hydrochloride tablets are contraindicated in patients with: Severe renal impairment (eGFR below 30 mL/min/1.73 m 2 ) [see Warnings and Precautions ( 5.1 ) ]." sourceSpanStart="3484" sourceSpanEnd="3665" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="hypersensitivity" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Hypersensitivity to metformin or glyburide." sourceSpanStart="3467" sourceSpanEnd="3620" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="acute-or-chronic-metabolic-acidosis" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma." sourceSpanStart="3467" sourceSpanEnd="3702" chunkIndex="1"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Acute or chronic metabolic acidosis, including diabetic ketoacidosis, with or without coma." sourceSpanStart="3467" sourceSpanEnd="3702" chunkIndex="1"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Drug" targetId="bosentan" confidence="0.95" evidence="Glyburide and metformin hydrochloride tablets are contraindicated in patients with: ... Concomitant administration of bosentan [see Drug Interactions ( 7 ) ]." sourceSpanStart="3467" sourceSpanEnd="3761" chunkIndex="1"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.95" evidence="There have been postmarketing cases of metformin-associated lactic acidosis, including fatal cases." sourceSpanStart="4942" sourceSpanEnd="5041" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="vitamin-b12-deficiency" confidence="0.95" evidence="Metformin may lower vitamin B 12 levels." sourceSpanStart="4759" sourceSpanEnd="4799" chunkIndex="3"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.85" evidence="Drug interactions— The concomitant use of glyburide and metformin hydrochloride with specific drugs may increase the risk of metformin-associated lactic acidosis: those that impair renal function, result in significant hemodynamic change, interfere with acid-base balance, or increase metformin accumulation [ see Drug Interactions ( 7 ) ] ." sourceSpanStart="7989" sourceSpanEnd="8330" chunkIndex="4"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glyburide" targetType="DrugClass" targetId="sulfonylureas" confidence="0.9" evidence="All sulfonylurea drugs, including glyburide and metformin hydrochloride, are capable of producing severe hypoglycemia [see Adverse Reactions ( 6 ) ]." sourceSpanStart="11420" sourceSpanEnd="11569" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="severe-hypoglycemia" confidence="0.95" evidence="All sulfonylurea drugs, including glyburide and metformin hydrochloride, are capable of producing severe hypoglycemia [see Adverse Reactions ( 6 ) ]." sourceSpanStart="11420" sourceSpanEnd="11569" chunkIndex="4"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="hypoglycemia" confidence="0.95" evidence="Concomitant use of glyburide and metformin hydrochloride with other anti-diabetic medication can increase the risk of hypoglycemia." sourceSpanStart="11570" sourceSpanEnd="11701" chunkIndex="5"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="glucose-6-phosphate-dehydrogenase-deficiency" confidence="0.95" evidence="Avoid use of glyburide and metformin hydrochloride in patients with G6PD deficiency." sourceSpanStart="15001" sourceSpanEnd="15085" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Condition" targetId="hemolytic-anemia" confidence="0.95" evidence="Treatment of patients with glucose-6-phosphate dehydrogenase (G6PD) deficiency with sulfonylurea agents, including glyburide and metformin hydrochloride, can lead to hemolytic anemia." sourceSpanStart="14817" sourceSpanEnd="15000" chunkIndex="5"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="anemia" confidence="0.85" evidence="Such decrease, possibly due to interference with B 12 absorption from the B 12 -intrinsic factor complex, may be associated with anemia but appears to be rapidly reversible with discontinuation of metformin or vitamin B 12 supplementation." sourceSpanStart="15424" sourceSpanEnd="15663" chunkIndex="6"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="The following adverse reactions are also discussed elsewhere in the labeling: Lactic Acidosis [see Boxed Warning and Warnings and Precautions ( 5.1 ) ]" sourceSpanStart="16246" sourceSpanEnd="16397" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="hypoglycemia" confidence="0.9" evidence="Hypoglycemia [see Warnings and Precautions ( 5.2 ) ]" sourceSpanStart="16398" sourceSpanEnd="16450" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="cardiovascular-mortality" confidence="0.9" evidence="Cardiovascular mortality [see Warnings and Precautions ( 5.3 ) ]" sourceSpanStart="16451" sourceSpanEnd="16515" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="hemolytic-anemia" confidence="0.9" evidence="Hemolytic anemia [see Warnings and Precautions ( 5.4 )]" sourceSpanStart="16516" sourceSpanEnd="16571" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="vitamin-b12-deficiency" confidence="0.9" evidence="Vitamin B 12 Deficiency [ see Warnings and Precautions ( 5.5 ) ]" sourceSpanStart="16572" sourceSpanEnd="16636" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="diarrhea" confidence="0.9" evidence="Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness." sourceSpanStart="16637" sourceSpanEnd="16789" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="headache" confidence="0.9" evidence="Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness." sourceSpanStart="16637" sourceSpanEnd="16789" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="nausea-vomiting" confidence="0.9" evidence="Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness." sourceSpanStart="16637" sourceSpanEnd="16789" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="abdominal-pain" confidence="0.9" evidence="Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness." sourceSpanStart="16637" sourceSpanEnd="16789" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="dizziness" confidence="0.9" evidence="Most common (&gt;5%) adverse reactions to glyburide and metformin hydrochloride tablets diarrhea, headache, nausea/vomiting, abdominal pain, and dizziness." sourceSpanStart="16637" sourceSpanEnd="16789" chunkIndex="8"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="angioedema" confidence="0.9" evidence="Allergic: Angioedema, arthralgia, myalgia, and vasculitis have been reported." sourceSpanStart="20329" sourceSpanEnd="20406" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="arthralgia" confidence="0.9" evidence="Allergic: Angioedema, arthralgia, myalgia, and vasculitis have been reported." sourceSpanStart="20329" sourceSpanEnd="20406" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="myalgia" confidence="0.9" evidence="Allergic: Angioedema, arthralgia, myalgia, and vasculitis have been reported." sourceSpanStart="20329" sourceSpanEnd="20406" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="vasculitis" confidence="0.9" evidence="Allergic: Angioedema, arthralgia, myalgia, and vasculitis have been reported." sourceSpanStart="20329" sourceSpanEnd="20406" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="cholestatic-jaundice" confidence="0.9" evidence="Cholestatic jaundice and hepatitis may occur rarely with glyburide, which may progress to liver failure." sourceSpanStart="20842" sourceSpanEnd="20946" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="hepatitis" confidence="0.9" evidence="Cholestatic jaundice and hepatitis may occur rarely with glyburide, which may progress to liver failure." sourceSpanStart="20842" sourceSpanEnd="20946" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="liver-failure" confidence="0.9" evidence="Cholestatic jaundice and hepatitis may occur rarely with glyburide, which may progress to liver failure." sourceSpanStart="20842" sourceSpanEnd="20946" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="cholestatic-liver-injury" confidence="0.9" evidence="Cholestatic, hepatocellular, and mixed hepatocellular liver injury have been reported with postmarketing use of metformin." sourceSpanStart="20719" sourceSpanEnd="20841" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="disulfiram-like-reactions" confidence="0.9" evidence="Disulfiram-like reactions have been reported very rarely with glyburide." sourceSpanStart="21174" sourceSpanEnd="21246" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="hyponatremia" confidence="0.9" evidence="Cases of hyponatremia have been reported with glyburide and all other sulfonylureas" sourceSpanStart="21247" sourceSpanEnd="21330" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="changes-in-accommodation" confidence="0.9" evidence="Changes in accommodation and/or blurred vision have been reported with glyburide and other sulfonylureas." sourceSpanStart="21501" sourceSpanEnd="21606" chunkIndex="9"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="blurred-vision" confidence="0.9" evidence="Changes in accommodation and/or blurred vision have been reported with glyburide and other sulfonylureas." sourceSpanStart="21501" sourceSpanEnd="21606" chunkIndex="9"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="topiramate" confidence="0.9" evidence="Concomitant use of these drugs with glyburide and metformin hydrochloride may increase the risk for lactic acidosis." sourceSpanStart="22098" sourceSpanEnd="22214" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="zonisamide" confidence="0.9" evidence="Concomitant use of these drugs with glyburide and metformin hydrochloride may increase the risk for lactic acidosis." sourceSpanStart="22098" sourceSpanEnd="22214" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="acetazolamide" confidence="0.9" evidence="Concomitant use of these drugs with glyburide and metformin hydrochloride may increase the risk for lactic acidosis." sourceSpanStart="22098" sourceSpanEnd="22214" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="dichlorphenamide" confidence="0.9" evidence="Concomitant use of these drugs with glyburide and metformin hydrochloride may increase the risk for lactic acidosis." sourceSpanStart="22098" sourceSpanEnd="22214" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="ranolazine" confidence="0.9" evidence="Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride." sourceSpanStart="22766" sourceSpanEnd="22874" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="vandetanib" confidence="0.9" evidence="Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride." sourceSpanStart="22766" sourceSpanEnd="22874" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="dolutegravir" confidence="0.9" evidence="Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride." sourceSpanStart="22766" sourceSpanEnd="22874" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="cimetidine" confidence="0.9" evidence="Intervention: Consider the benefits and risks of concomitant use with glyburide and metformin hydrochloride." sourceSpanStart="22766" sourceSpanEnd="22874" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="alcohol" confidence="0.9" evidence="Intervention: Warn patients against excessive alcohol intake while receiving glyburide and metformin hydrochloride." sourceSpanStart="23042" sourceSpanEnd="23157" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="bosentan" confidence="0.9" evidence="Intervention: Concomitant administration is contraindicated." sourceSpanStart="23885" sourceSpanEnd="23945" chunkIndex="10"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="glyburide-and-metformin-hydrochloride" targetType="Drug" targetId="colesevelam" confidence="0.9" evidence="Intervention: Glyburide and metformin hydrochloride should be administered at least 4 hours prior to colesevelam." sourceSpanStart="24089" sourceSpanEnd="24202" chunkIndex="10"/>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="glyburide" targetType="DrugClass" targetId="sulfonylureas" confidence="0.9" evidence="However, sulfonylureas (including glyburide) cross the placenta" sourceSpanStart="26224" sourceSpanEnd="26287" chunkIndex="12"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="hypoglycemia" confidence="0.85" evidence="However, sulfonylureas (including glyburide) cross the placenta and have been associated with neonatal adverse reactions such as hypoglycemia." sourceSpanStart="26224" sourceSpanEnd="26366" chunkIndex="12"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="glyburide" targetType="Condition" targetId="hypoglycemia" confidence="0.85" evidence="Breastfed infants of lactating women using glyburide and metformin hydrochloride should be monitored for symptoms of hypoglycemia [see Clinical Considerations ]." sourceSpanStart="30324" sourceSpanEnd="30485" chunkIndex="13"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="hypoglycemia" confidence="0.85" evidence="Breastfed infants of lactating women using glyburide and metformin hydrochloride should be monitored for symptoms of hypoglycemia [see Clinical Considerations ]." sourceSpanStart="30324" sourceSpanEnd="30485" chunkIndex="13"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="lactic-acidosis" confidence="0.9" evidence="Use of metformin in patients with hepatic impairment has been associated with some cases of lactic acidosis." sourceSpanStart="33768" sourceSpanEnd="33876" chunkIndex="14"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="severe-renal-impairment" confidence="0.95" evidence="Glyburide and metformin hydrochloride is contraindicated in severe renal impairment, patients with an estimated glomerular filtration rate (eGFR) below 30 mL/min/1.73 m 2 [see Dosage and Administration ( 2.3 ), Contraindications ( 4 ), Warnings and Precautions ( 5.1 ), and Clinical Pharmacology ( 12.3 ) ]." sourceSpanStart="33437" sourceSpanEnd="33744" chunkIndex="14"/>
+  <relations type="CONTRAINDICATED_IN" sourceType="Drug" sourceId="glyburide-and-metformin" targetType="Condition" targetId="hepatic-impairment" confidence="0.9" evidence="Glyburide and metformin hydrochloride is not recommended in patients with hepatic impairment [see Warnings and Precautions ( 5.1 ) ]." sourceSpanStart="33877" sourceSpanEnd="34010" chunkIndex="14"/>
+</raw:RawExtractionResult>

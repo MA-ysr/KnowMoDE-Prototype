@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/26804367.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/26804367/" sourceSha256="60f44a24a2b2b12c8d0db75850cb25db7113d19d9d3dc7c73179715accd2b457" sourceText="# PubMed 26804367: The management of diabetic foot: A clinical practice guideline by the Society for Vascular Surgery in collaboration with the American Podiatric Medical Association and the Society for Vascular Medicine.&#10;&#10;Journal of vascular surgery (2016), doi:10.1016/j.jvs.2015.10.003&#10;&#10;BACKGROUND: Diabetes mellitus continues to grow in global prevalence and to consume an increasing amount of health care resources. One of the key areas of morbidity associated with diabetes is the diabetic foot. To improve the care of patients with diabetic foot and to provide an evidence-based multidisciplinary management approach, the Society for Vascular Surgery in collaboration with the American Podiatric Medical Association and the Society for Vascular Medicine developed this clinical practice guideline.&#10;&#10;METHODS: The committee made specific practice recommendations using the Grades of Recommendation Assessment, Development, and Evaluation system. This was based on five systematic reviews of the literature. Specific areas of focus included (1) prevention of diabetic foot ulceration, (2) off-loading, (3) diagnosis of osteomyelitis, (4) wound care, and (5) peripheral arterial disease.&#10;&#10;RESULTS: Although we identified only limited high-quality evidence for many of the critical questions, we used the best available evidence and considered the patients' values and preferences and the clinical context to develop these guidelines. We include preventive recommendations such as those for adequate glycemic control, periodic foot inspection, and patient and family education. We recommend using custom therapeutic footwear in high-risk diabetic patients, including those with significant neuropathy, foot deformities, or previous amputation. In patients with plantar diabetic foot ulcer (DFU), we recommend off-loading with a total contact cast or irremovable fixed ankle walking boot. In patients with a new DFU, we recommend probe to bone test and plain films to be followed by magnetic resonance imaging if a soft tissue abscess or osteomyelitis is suspected. We provide recommendations on comprehensive wound care and various débridement methods. For DFUs that fail to improve (&gt;50% wound area reduction) after a minimum of 4 weeks of standard wound therapy, we recommend adjunctive wound therapy options. In patients with DFU who have peripheral arterial disease, we recommend revascularization by either surgical bypass or endovascular therapy.&#10;&#10;CONCLUSIONS: Whereas these guidelines have addressed five key areas in the care of DFUs, they do not cover all the aspects of this complex condition. Going forward as future evidence accumulates, we plan to update our recommendations accordingly.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:55:48+00:00" xmi:version="2.0">
+  <chunks charEnd="2703"/>
+  <entities type="Recommendation" id="custom-therapeutic-footwear" mention="We recommend using custom therapeutic footwear in high-risk diabetic patients, including those with significant neuropathy, foot deformities, or previous amputation." confidence="0.95" sourceSpanStart="1580" sourceSpanEnd="1745">
+    <properties key="statement" value="use custom therapeutic footwear in high-risk diabetic patients"/>
+    <properties key="source" value="Society for Vascular Surgery, American Podiatric Medical Association, and Society for Vascular Medicine"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetic" confidence="0.9" sourceSpanStart="1640" sourceSpanEnd="1648">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="custom-therapeutic-footwear-risk" mention="custom therapeutic footwear" confidence="0.92" sourceSpanStart="1599" sourceSpanEnd="1626">
+    <properties key="name" value="custom therapeutic footwear"/>
+    <properties key="description" value="use of custom therapeutic footwear in high-risk patients"/>
+  </entities>
+  <entities type="Recommendation" id="off-loading-dfu" mention="In patients with plantar diabetic foot ulcer (DFU), we recommend off-loading with a total contact cast or irremovable fixed ankle walking boot." confidence="0.95" sourceSpanStart="1746" sourceSpanEnd="1889">
+    <properties key="statement" value="off-load plantar diabetic foot ulcers with a total contact cast or irremovable fixed ankle walking boot"/>
+    <properties key="source" value="Society for Vascular Surgery, American Podiatric Medical Association, and Society for Vascular Medicine"/>
+  </entities>
+  <entities type="Condition" id="plantar-diabetic-foot-ulcer" mention="plantar diabetic foot ulcer (DFU)" confidence="0.94" sourceSpanStart="1763" sourceSpanEnd="1796">
+    <properties key="name" value="plantar diabetic foot ulcer"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="off-loading" mention="off-loading" confidence="0.9" sourceSpanStart="1811" sourceSpanEnd="1822">
+    <properties key="name" value="off-loading"/>
+    <properties key="description" value="off-loading with a total contact cast or irremovable fixed ankle walking boot"/>
+  </entities>
+  <entities type="Recommendation" id="revascularization-dfu" mention="In patients with DFU who have peripheral arterial disease, we recommend revascularization by either surgical bypass or endovascular therapy." confidence="0.95" sourceSpanStart="2314" sourceSpanEnd="2454">
+    <properties key="statement" value="perform revascularization by surgical bypass or endovascular therapy in patients with DFU and peripheral arterial disease"/>
+    <properties key="source" value="Society for Vascular Surgery, American Podiatric Medical Association, and Society for Vascular Medicine"/>
+  </entities>
+  <entities type="Condition" id="dfu" mention="DFU" confidence="0.92" sourceSpanStart="2331" sourceSpanEnd="2334">
+    <properties key="name" value="diabetic foot ulcer"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="peripheral-arterial-disease" mention="peripheral arterial disease" confidence="0.95" sourceSpanStart="2344" sourceSpanEnd="2371">
+    <properties key="name" value="peripheral arterial disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="revascularization" mention="revascularization" confidence="0.93" sourceSpanStart="2386" sourceSpanEnd="2403">
+    <properties key="name" value="revascularization"/>
+    <properties key="description" value="revascularization by surgical bypass or endovascular therapy"/>
+  </entities>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="custom-therapeutic-footwear" targetType="Condition" targetId="diabetes" confidence="0.9" evidence="We recommend using custom therapeutic footwear in high-risk diabetic patients, including those with significant neuropathy, foot deformities, or previous amputation." sourceSpanStart="1580" sourceSpanEnd="1745"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="custom-therapeutic-footwear" targetType="RiskFactor" targetId="custom-therapeutic-footwear-risk" confidence="0.92" evidence="We recommend using custom therapeutic footwear in high-risk diabetic patients, including those with significant neuropathy, foot deformities, or previous amputation." sourceSpanStart="1580" sourceSpanEnd="1745"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="off-loading-dfu" targetType="Condition" targetId="plantar-diabetic-foot-ulcer" confidence="0.95" evidence="In patients with plantar diabetic foot ulcer (DFU), we recommend off-loading with a total contact cast or irremovable fixed ankle walking boot." sourceSpanStart="1746" sourceSpanEnd="1889"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="off-loading-dfu" targetType="RiskFactor" targetId="off-loading" confidence="0.9" evidence="In patients with plantar diabetic foot ulcer (DFU), we recommend off-loading with a total contact cast or irremovable fixed ankle walking boot." sourceSpanStart="1746" sourceSpanEnd="1889"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="revascularization-dfu" targetType="Condition" targetId="dfu" confidence="0.92" evidence="In patients with DFU who have peripheral arterial disease, we recommend revascularization by either surgical bypass or endovascular therapy." sourceSpanStart="2314" sourceSpanEnd="2454"/>
+  <relations type="APPLIES_TO" sourceType="Recommendation" sourceId="revascularization-dfu" targetType="Condition" targetId="peripheral-arterial-disease" confidence="0.95" evidence="In patients with DFU who have peripheral arterial disease, we recommend revascularization by either surgical bypass or endovascular therapy." sourceSpanStart="2314" sourceSpanEnd="2454"/>
+  <relations type="RECOMMENDS" sourceType="Recommendation" sourceId="revascularization-dfu" targetType="RiskFactor" targetId="revascularization" confidence="0.93" evidence="In patients with DFU who have peripheral arterial disease, we recommend revascularization by either surgical bypass or endovascular therapy." sourceSpanStart="2314" sourceSpanEnd="2454"/>
+</raw:RawExtractionResult>

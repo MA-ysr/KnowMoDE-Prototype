@@ -1,0 +1,11 @@
+# PubMed 25641833: Expedited diagnosis and management of inpatient hyperosmolar hyperglycemic nonketotic syndrome.
+
+Journal of the American Association of Nurse Practitioners (2015), doi:10.1002/2327-6924.12205
+
+PURPOSE: This practice improvement project was formulated to determine accuracy rate in differentiating between two hyperglycemic crises (diabetes ketoacidosis [DKA] and hyperosmolar hyperglycemic nonketotic syndrome [HHNKS]) in a clinical population of individuals who manifested hyperglycemia and diabetes mellitus (DM). We hypothesized that HHNKS was commonly misdiagnosed as DKA. Our primary aim was to determine frequency of correct HHNKS diagnoses. A second aim was to review the literature and present an evidence-based protocol to assist providers with the differential diagnosis of HHNKS from DKA.
+
+DATA SOURCES: Electronic health records (N = 911) were selected by ICD-9 codes for hyperglycemia, DKA, and HHNKS. A retrospective record review indicated n = 436 met the blood glucose level depicting HHNKS. Additional laboratory findings were compared with diagnostic criteria from the literature.
+
+CONCLUSIONS: HHNKS was commonly misdiagnosed and mismanaged as DKA. Only n = 9 (5%) patients with type 2 DM were correctly diagnosed and managed as having HHNKS. Of the records misdiagnosed with DKA, 74 (39%) actually manifested HHNKS clinical features. Of these, n = 24 (36%) were readmitted within 2 weeks.
+
+IMPLICATIONS FOR PRACTICE: Early recognition of HHNKS is essential for appropriate condition management. HHNKS-specific algorithms are essential for expediting accurate diagnosis, managing appropriately, minimizing mortality, reducing stay length, and avoiding readmissions.

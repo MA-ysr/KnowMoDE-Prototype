@@ -1,0 +1,11 @@
+# PubMed 34107289: Regional variation of effects of new antidiabetic medications in cardiovascular outcome trials.
+
+American heart journal (2021), doi:10.1016/j.ahj.2021.06.001
+
+BACKGROUND: In international trials, glucagon-like protein-1 receptor agonists (GLP-1RAs) and sodium-glucose cotransporter-2 inhibitors (SGLT2Is) were effective in improving cardiovascular (CV) outcomes.
+
+METHODS: We assessed the effect of GLP-1RAs and SGLT2Is treatment effect on CV endpoints by geographical region in multiple international trials using random effects weighted least squares meta-regressions.
+
+RESULTS: The estimated effects of both SGLT2Is and GLP-1RAs on major adverse CV events (MACE) in North America (SGLT2Is n = 12,399, HR 0.90, 95% CI 0.81-1.01; GLP-1RAs n = 12,515, HR 0.95, 95% CI 0.83- 1.09) and in Europe (SGLT2Is n = 19,435, HR 0.93, 95% CI 0.85-1.02; GLP-1RAs n = 22,812, HR 0.88, 95% CI 0.79-0.99) were numerically lower but not statistically different to the rest of the world (ROW) (SGLT2Is n = 15,127, HR 0.83, 95% CI 0.75-0.92, p-value for interaction 0.26; GLP-1RAs n = 17,494, HR 0.82, 95% CI 0.73-0.92, p-value for interaction 0.28). Effects of SGLT2Is on heart failure readmission or CV death varied significantly by region (P = 0.0094). The effect of SGLT2Is was significantly smaller in Europe (n = 18,653, HR 0.86, 95% CI 0.78-0.95) than in the ROW (n = 12,463, HR 0.68, 95% CI 0.61-0.76, P = 0.0024). The smaller effect in North America (n = 9776, HR 0.76, 95% CI 0.66-0.87) did not differ significantly from that in the ROW (P = 0.2370).
+
+CONCLUSION: The effects of SGLT2Is on HF events are larger in the ROW. Further analyses and studies are needed to better elucidate the differential effects of SGLTIs and GLP-1RAs by geographical regions.

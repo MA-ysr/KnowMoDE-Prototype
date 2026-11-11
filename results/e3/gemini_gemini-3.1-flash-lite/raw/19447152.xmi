@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/19447152" sourceUri="https://pubmed.ncbi.nlm.nih.gov/19447152/" sourceSha256="c54aa04b7cbde7aa9c2c95da7f45887b3dcbcfd945c1124928145974532a82cb" sourceText="Animal model of mania induced by ouabain: Evidence of oxidative stress in submitochondrial particles of the rat brain. The intracerebroventricular (ICV) administration of ouabain (a Na(+)/K(+)-ATPase inhibitor) in rats has been suggested to mimic some symptoms of human bipolar mania. Clinical studies have shown that bipolar disorder may be related to mitochondrial dysfunction. Herein, we investigated the behavioral and biochemical effects induced by the ICV administration of ouabain in rats. To achieve this aim, the effects of ouabain injection immediately after and 7 days following a single ICV administration (at concentrations of 10(-2) and 10(-3)M) on locomotion was measured using the open-field test. Additionally, thiobarbituric acid reactive substances (TBARSs) and superoxide production were measured in submitochondrial particles of the prefrontal cortex, hippocampus, striatum and amygdala. Our findings demonstrated that ouabain at 10(-2) and 10(-3)M induced hyperlocomotion in rats, and this response remained up to 7 days following a single ICV injection. In addition, we observed that the persistent increase in the rat spontaneous locomotion is associated with increased TBARS levels and superoxide generation in submitochondrial particles in the prefrontal cortex, striatum and amygdala. In conclusion, ouabain-induced mania-like behavior may provide a useful animal model to test the hypothesis of the involvement of oxidative stress in bipolar disorder." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:20+00:00" xmi:version="2.0">
+  <chunks charEnd="1479"/>
+  <entities type="Drug" id="ouabain" mention="ouabain" confidence="0.95" sourceSpanStart="33" sourceSpanEnd="40">
+    <properties key="name" value="ouabain"/>
+  </entities>
+  <entities type="Condition" id="bipolar-mania" mention="bipolar mania" confidence="0.9" sourceSpanStart="270" sourceSpanEnd="283">
+    <properties key="name" value="bipolar mania"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="bipolar-disorder" mention="bipolar disorder" confidence="0.9" sourceSpanStart="318" sourceSpanEnd="334">
+    <properties key="name" value="bipolar disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="mania" mention="mania" confidence="0.85" sourceSpanStart="1343" sourceSpanEnd="1348">
+    <properties key="name" value="mania"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="ouabain" targetType="Condition" targetId="mania" confidence="0.9" evidence="Animal model of mania induced by ouabain" sourceSpanStart="0" sourceSpanEnd="40"/>
+</raw:RawExtractionResult>

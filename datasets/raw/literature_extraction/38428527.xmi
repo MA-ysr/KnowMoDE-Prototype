@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/38428527.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/38428527/" sourceSha256="fe51fef0c03b1dfd3202bbef562d55646adfdfaae57712dfefe4f413e5d5fde2" sourceText="# PubMed 38428527: Pros of Inpatient Sodium Glucose Cotransporter-2 Inhibitor Use.&#10;&#10;Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists (2024), doi:10.1016/j.eprac.2024.02.004&#10;&#10;OBJECTIVE: Sodium-glucose-cotransporter 2 (SGLT-2) inhibitors are widely used for diabetes management especially because their effects go beyond glucose control. More recently, their indications and usage have expanded to heart failure (HF) and renal dysfunction therapy in patients both with and without diabetes. Beneficial effects, especially for HF readmission, accrue very early in their treatment trajectory, and this has promoted their use in the hospital setting. Data on their safety and efficacy for inpatient use are accumulating but have lagged behind the outpatient data for their use. The objective of this counterpoint piece is to highlight areas of benefit for starting or continuing SGLT-2 inhibitors in the inpatient setting.&#10;&#10;METHODS: Discussion after literature review of available studies with a focus on HF outcomes and SGLT-2 inhibitor use.&#10;&#10;RESULTS: The benefits of starting or continuing an SGLT-2 inhibitor in the inpatient setting are well documented, mainly in HF. Similar data are not available for glucose or renal outcomes alone. Starting in the hospital allows the ability to titrate medications with similar effects, such as diabetes and HF agents, as well as reducing treatment inertia to obtain and start new medications after patients are discharged home. It is important to choose patients appropriately and hold these drugs when patients are without nutrition or on low-carbohydrate diets which can lead to diabetic ketoacidosis.&#10;&#10;CONCLUSION: In the right setting, using an SGLT-2 inhibitor in the hospital can affect multiple aspects of a patient's treatment trajectory and should be a consideration.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:43:51+00:00" xmi:version="2.0">
+  <chunks charEnd="1902"/>
+  <entities type="Drug" id="sglt-2-inhibitors" mention="SGLT-2 inhibitors" confidence="1.0" sourceSpanStart="962" sourceSpanEnd="979">
+    <properties key="name" value="sglt-2 inhibitors"/>
+    <properties key="drugClass" value="sodium-glucose-cotransporter 2 inhibitor"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="1.0" sourceSpanStart="484" sourceSpanEnd="497">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="renal-dysfunction" mention="renal dysfunction" confidence="1.0" sourceSpanStart="507" sourceSpanEnd="524">
+    <properties key="name" value="renal dysfunction"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hf-readmission" mention="HF readmission" confidence="0.95" sourceSpanStart="612" sourceSpanEnd="626">
+    <properties key="name" value="heart failure readmission"/>
+  </entities>
+  <entities type="Condition" id="diabetic-ketoacidosis" mention="diabetic ketoacidosis" confidence="1.0" sourceSpanStart="1707" sourceSpanEnd="1728">
+    <properties key="name" value="diabetic ketoacidosis"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="Drug" sourceId="sglt-2-inhibitors" targetType="ClinicalOutcome" targetId="hf-readmission" confidence="0.95" evidence="Beneficial effects, especially for HF readmission, accrue very early in their treatment trajectory, and this has promoted their use in the hospital setting." sourceSpanStart="577" sourceSpanEnd="733"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="sglt-2-inhibitors" targetType="Condition" targetId="diabetic-ketoacidosis" confidence="0.9" evidence="It is important to choose patients appropriately and hold these drugs when patients are without nutrition or on low-carbohydrate diets which can lead to diabetic ketoacidosis." sourceSpanStart="1554" sourceSpanEnd="1729"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,17 @@
+# PubMed 31339547: Hospital Readmission of Adolescents and Young Adults With Complex Chronic Disease.
+
+JAMA network open (2019), doi:10.1001/jamanetworkopen.2019.7613
+
+IMPORTANCE: Adolescents and young adults (AYA) who have complex chronic disease (CCD) are a growing population that requires hospitalization to treat severe, acute health problems. These patients may have increased risk of readmission as demands on their self-management increase and as they transfer care from pediatric to adult health care practitioners.
+
+OBJECTIVE: To assess variation across CCDs in the likelihood of readmission for AYA with increasing age.
+
+DESIGN, SETTING, AND PARTICIPANTS: Retrospective 1-year cross-sectional study of the 2014 Agency for Healthcare Research and Quality Nationwide Readmissions Database for all US hospitals. Participants were 215 580 hospitalized individuals aged 15 to 30 years with cystic fibrosis (n = 15 213), type 1 diabetes (n = 86 853), inflammatory bowel disease (n = 48 073), spina bifida (n = 7819), and sickle cell anemia (n = 57 622) from January 1, 2014, to December 1, 2014.
+
+EXPOSURES: Increasing age at index admission.
+
+MAIN OUTCOMES AND MEASURES: Unplanned 30-day hospital readmission. Readmission odds were compared by patients' ages in 2-year epochs (with age 15-16 years as the reference) using logistic regression, accounting for confounding patient characteristics and data clustering by hospital.
+
+RESULTS: Of 215 580 participants, 115 982 (53.8%) were female; the median (interquartile range) age was 24 (20-27) years. Across CCDs, multimorbidity was common; the percentages of index hospitalizations with 4 or more coexisting conditions ranged from to 33.4% for inflammatory bowel disease to 74.2% for spina bifida. Thirty-day hospital readmission rates varied significantly across CCDs: 20.2% (cystic fibrosis), 19.8% (inflammatory bowel disease), 20.4% (spina bifida), 22.5% (type 1 diabetes), and 34.6% (sickle cell anemia). As age increased from 15 to 30 years, unadjusted, 30-day, unplanned hospital readmission rates increased significantly for all 5 CCD cohorts. In multivariable analysis, age trends in the adjusted odds of readmission varied across CCDs. For example, for AYA who had cystic fibrosis, the adjusted odds of readmission increased to 1.9 (95% CI, 1.5-2.3) by age 21 years and remained elevated through age 30 years. For AYA who had type 1 diabetes, the adjusted odds of readmission peaked at ages 23 to 24 years (odds ratio, 2.3; 95% CI, 2.1-2.6) and then declined through age 30 years.
+
+CONCLUSIONS AND RELEVANCE: These findings suggest that hospitalized AYA who have CCDs have high rates of multimorbidity and 30-day readmission. The adjusted odds of readmission for AYA varied significantly across CCDs with increasing age. Further attention is needed to hospital discharge care, self-management, and prevention of readmission in AYA with CCD.

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/9889429" sourceUri="https://pubmed.ncbi.nlm.nih.gov/9889429/" sourceSha256="1056c97769d276bef816ea964d24d68e446639cec44bc91716e1fb7ba1cc0b5b" sourceText="Long-term efficacy and adverse event of nifedipine sustained-release tablets for cyclosporin A-induced hypertension in patients with psoriasis. Thirteen psoriatic patients with hypertension during the course of cyclosporin A therapy were treated for 25 months with a calcium channel blocker, sustained-release nifedipine, to study the clinical antihypertensive effects and adverse events during treatment with both drugs. Seven of the 13 patients had exhibited a subclinical hypertensive state before cyclosporin A therapy. Both systolic and diastolic blood pressures of these 13 patients were decreased significantly after 4 weeks of nifedipine therapy, and blood pressure was maintained within the normal range thereafter for 25 months. The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients. Our findings indicate that sustained-release nifedipine is useful for hypertensive psoriatic patients under long-term treatment with cyclosporin A, but that these patients should be monitored for gingival hyperplasia." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:52:55+00:00" xmi:version="2.0">
+  <chunks charEnd="1173"/>
+  <entities type="Drug" id="nifedipine" mention="nifedipine" confidence="0.95" sourceSpanStart="40" sourceSpanEnd="50">
+    <properties key="name" value="nifedipine"/>
+  </entities>
+  <entities type="Drug" id="cyclosporin-a" mention="cyclosporin A" confidence="0.95" sourceSpanStart="81" sourceSpanEnd="94">
+    <properties key="name" value="cyclosporin a"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="103" sourceSpanEnd="115">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="psoriasis" mention="psoriasis" confidence="0.95" sourceSpanStart="133" sourceSpanEnd="142">
+    <properties key="name" value="psoriasis"/>
+    <properties key="category" value="dermatological"/>
+  </entities>
+  <entities type="Condition" id="gingival-hyperplasia" mention="gingival hyperplasia" confidence="0.95" sourceSpanStart="910" sourceSpanEnd="930">
+    <properties key="name" value="gingival hyperplasia"/>
+    <properties key="category" value="dental"/>
+  </entities>
+  <entities type="Condition" id="increased-blood-urea-nitrogen-levels" mention="increase in blood urea nitrogen levels" confidence="0.9" sourceSpanStart="828" sourceSpanEnd="866">
+    <properties key="name" value="increased blood urea nitrogen levels"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="nifedipine" targetType="Condition" targetId="hypertension" confidence="0.95" evidence="Thirteen psoriatic patients with hypertension during the course of cyclosporin A therapy were treated for 25 months with a calcium channel blocker, sustained-release nifedipine, to study the clinical antihypertensive effects" sourceSpanStart="144" sourceSpanEnd="368"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nifedipine" targetType="Condition" targetId="gingival-hyperplasia" confidence="0.85" evidence="The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients." sourceSpanStart="739" sourceSpanEnd="955"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="nifedipine" targetType="Condition" targetId="increased-blood-urea-nitrogen-levels" confidence="0.85" evidence="The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients." sourceSpanStart="739" sourceSpanEnd="955"/>
+  <relations type="INTERACTS_WITH" sourceType="Drug" sourceId="nifedipine" targetType="Drug" targetId="cyclosporin-a" confidence="0.9" evidence="The adverse events during combined therapy with cyclosporin A and nifedipine included an increase in blood urea nitrogen levels in 9 of the 13 patients and development of gingival hyperplasia in 2 of the 13 patients." sourceSpanStart="739" sourceSpanEnd="955"/>
+</raw:RawExtractionResult>

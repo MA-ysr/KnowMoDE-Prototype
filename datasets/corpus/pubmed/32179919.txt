@@ -1,0 +1,11 @@
+# PubMed 32179919: Hospital Readmissions After Laboratory-Confirmed Influenza Hospitalization.
+
+The Journal of infectious diseases (2020), doi:10.1093/infdis/jiaa117
+
+BACKGROUND: Influenza infection causes substantial morbidity and mortality. However, little is known about hospital readmissions after an influenza hospitalization. The aim of our study was to characterize frequency of hospital readmissions among patients hospitalized with laboratory-confirmed influenza.
+
+METHODS: We conducted a retrospective study using Tennessee Emerging Infections Program Influenza Surveillance data from 2006 to 2016 and the concurrent Tennessee Hospital Discharge Data System. We analyzed demographic characteristics and outcomes to better understand frequency and factors associated with hospital readmissions.
+
+RESULTS: Of the 2897 patients with a laboratory-confirmed influenza hospitalization, 409 (14%) and 1364 (47%) had at least 1 hospital readmission within 30 days and 1 year of the influenza hospitalization, respectively. Multiple readmissions occurred in 739 patients (54%). The readmission group was older, female predominant, and had more comorbidities than patients not hospitalized. Pneumonia, acute chronic obstructive pulmonary disease/asthma exacerbation, septicemia, acute respiratory failure, and acute renal failure were the most common causes for readmission at 30 days. Underlying cardiovascular disease, lung disease, kidney disease, diabetes, immunosuppression, and liver disease were associated with increased risk of readmission during the subsequent year.
+
+CONCLUSIONS: After an admission with laboratory-confirmed influenza, there is a high likelihood of readmission within 30 days and 1 year adding to the morbidity of influenza.

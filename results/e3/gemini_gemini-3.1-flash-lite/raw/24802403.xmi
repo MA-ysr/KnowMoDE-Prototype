@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/24802403" sourceUri="https://pubmed.ncbi.nlm.nih.gov/24802403/" sourceSha256="9f761c0d2e1b77b1f7399f9323ba1586c17c1e2179cc608a50f0724df96233cd" sourceText="Metformin protects against seizures, learning and memory impairments and oxidative damage induced by pentylenetetrazole-induced kindling in mice. Cognitive impairment, the most common and severe comorbidity of epilepsy, greatly diminishes the quality of life. However, current therapeutic interventions for epilepsy can also cause untoward cognitive effects. Thus, there is an urgent need for new kinds of agents targeting both seizures and cognition deficits. Oxidative stress is considered to play an important role in epileptogenesis and cognitive deficits, and antioxidants have a putative antiepileptic potential. Metformin, the most commonly prescribed antidiabetic oral drug, has antioxidant properties. This study was designed to evaluate the ameliorative effects of metformin on seizures, cognitive impairment and brain oxidative stress markers observed in pentylenetetrazole-induced kindling animals. Male C57BL/6 mice were administered with subconvulsive dose of pentylenetetrazole (37 mg/kg, i.p.) every other day for 14 injections. Metformin was injected intraperitoneally in dose of 200mg/kg along with alternate-day PTZ. We found that metformin suppressed the progression of kindling, ameliorated the cognitive impairment and decreased brain oxidative stress. Thus the present study concluded that metformin may be a potential agent for the treatment of epilepsy as well as a protective medicine against cognitive impairment induced by seizures." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:13+00:00" xmi:version="2.0">
+  <chunks charEnd="1460"/>
+  <entities type="Drug" id="metformin" mention="Metformin" confidence="1.0" sourceSpanStart="0" sourceSpanEnd="9">
+    <properties key="name" value="metformin"/>
+  </entities>
+  <entities type="Drug" id="pentylenetetrazole" mention="pentylenetetrazole" confidence="1.0" sourceSpanStart="101" sourceSpanEnd="119">
+    <properties key="name" value="pentylenetetrazole"/>
+  </entities>
+  <entities type="Condition" id="seizures" mention="seizures" confidence="0.95" sourceSpanStart="428" sourceSpanEnd="436">
+    <properties key="name" value="seizures"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="cognitive-impairment" mention="cognitive impairment" confidence="0.95" sourceSpanStart="798" sourceSpanEnd="818">
+    <properties key="name" value="cognitive impairment"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <entities type="Condition" id="oxidative-damage" mention="oxidative damage" confidence="0.95" sourceSpanStart="73" sourceSpanEnd="89">
+    <properties key="name" value="oxidative damage"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="epilepsy" mention="epilepsy" confidence="0.95" sourceSpanStart="1369" sourceSpanEnd="1377">
+    <properties key="name" value="epilepsy"/>
+    <properties key="category" value="neurological"/>
+  </entities>
+  <relations type="TREATS" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="seizures" confidence="0.95" evidence="Metformin protects against seizures, learning and memory impairments and oxidative damage induced by pentylenetetrazole-induced kindling in mice." sourceSpanStart="0" sourceSpanEnd="145"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="cognitive-impairment" confidence="0.95" evidence="We found that metformin suppressed the progression of kindling, ameliorated the cognitive impairment and decreased brain oxidative stress." sourceSpanStart="1136" sourceSpanEnd="1274"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="metformin" targetType="Condition" targetId="epilepsy" confidence="0.9" evidence="Thus the present study concluded that metformin may be a potential agent for the treatment of epilepsy as well as a protective medicine against cognitive impairment induced by seizures." sourceSpanStart="1275" sourceSpanEnd="1460"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="pentylenetetrazole" targetType="Condition" targetId="seizures" confidence="0.9" evidence="Metformin protects against seizures, learning and memory impairments and oxidative damage induced by pentylenetetrazole-induced kindling in mice." sourceSpanStart="0" sourceSpanEnd="145"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="pentylenetetrazole" targetType="Condition" targetId="oxidative-damage" confidence="0.9" evidence="Metformin protects against seizures, learning and memory impairments and oxidative damage induced by pentylenetetrazole-induced kindling in mice." sourceSpanStart="0" sourceSpanEnd="145"/>
+</raw:RawExtractionResult>

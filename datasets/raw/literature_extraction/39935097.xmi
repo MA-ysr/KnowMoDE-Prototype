@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39935097.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39935097/" sourceSha256="75242dbe8baa40484ebbdbc6098a9b1c3a774d42bf7ae47f6dd5251352b112e3" sourceText="# PubMed 39935097: Ranibizumab with luseogliflozin in type 2 diabetes with diabetic macular oedema: A randomised clinical trial.&#10;&#10;Diabetes, obesity &amp; metabolism (2025), doi:10.1111/dom.16244&#10;&#10;AIMS: Anti-vascular endothelial growth factor (VEGF) therapy is the standard treatment for diabetic macular oedema (DMO); however, unmet needs remain. This study aimed to assess the effectiveness of sodium-glucose cotransporter 2 inhibitors (SGLT2i) in treating DMO.&#10;&#10;MATERIALS AND METHODS: This multicentre randomised open-label trial included 60 patients with DMO who were eligible for anti-VEGF therapy. Patients were randomised to receive luseogliflozin or glimepiride. Ranibizumab was administered initially to the target eye, with additional doses per protocol. The number of ranibizumab doses up to week 48, and re-admission rates were evaluated. Fellow eye injections were also assessed.&#10;&#10;RESULTS: Sixty participants, mostly with diabetic retinopathy and half previously treated with anti-VEGF therapy, were included. SGLT2i and sulfonylurea (SU) groups achieved equivalent glycated haemoglobin, central retinal thickness (CRT), and best-corrected visual acuity improvements. Injection frequency for the target eye was similar between groups (SGLT2i vs. SU: 3.9 ± 0.7 vs. 4.7 ± 0.7 times, p = 0.36). Re-administration rates were decreased significantly after the fourth injection in the SGLT2i group (p = 0.030, hazard ratio: 0.45, 95% confidence interval: 0.22-0.92). Fellow eyes in the SGLT2i group showed significant CRT reduction and fewer injections compared with those in the SU group (1.3 ± 0.6 vs. 3.4 ± 0.8, p = 0.016).&#10;&#10;CONCLUSIONS: Although the overall number of anti-VEGF injections in the target eye showed no significant difference, some patients responded favourably to SGLT2i and required fewer injections. The reduction in fellow eye injections suggests SGLT2i's efficacy in treating early-stage DMO.&#10;&#10;TRIAL REGISTRATION: University Hospital Medical Information Network Clinical Trial Registry (UMIN000033961); Japan Registry of Clinical Trials (jRCTs031180210).&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:45:52+00:00" xmi:version="2.0">
+  <chunks charEnd="2080"/>
+  <entities type="Drug" id="luseogliflozin" mention="luseogliflozin" confidence="1.0" sourceSpanStart="36" sourceSpanEnd="50">
+    <properties key="name" value="luseogliflozin"/>
+    <properties key="drugClass" value="SGLT2i"/>
+  </entities>
+  <entities type="Drug" id="glimepiride" mention="glimepiride" confidence="1.0" sourceSpanStart="653" sourceSpanEnd="664">
+    <properties key="name" value="glimepiride"/>
+    <properties key="drugClass" value="sulfonylurea"/>
+  </entities>
+  <entities type="Drug" id="ranibizumab" mention="Ranibizumab" confidence="1.0" sourceSpanStart="666" sourceSpanEnd="677">
+    <properties key="name" value="ranibizumab"/>
+    <properties key="drugClass" value="anti-VEGF"/>
+  </entities>
+  <entities type="Condition" id="diabetic-macular-oedema" mention="diabetic macular oedema" confidence="1.0" sourceSpanStart="75" sourceSpanEnd="98">
+    <properties key="name" value="diabetic macular oedema"/>
+    <properties key="category" value="ophthalmologic"/>
+  </entities>
+  <entities type="RiskFactor" id="luseogliflozin-treatment" mention="SGLT2i" confidence="0.9" sourceSpanStart="1018" sourceSpanEnd="1024">
+    <properties key="name" value="luseogliflozin treatment"/>
+    <properties key="description" value="treatment with luseogliflozin (SGLT2i)"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="re-administration-of-ranibizumab" mention="Re-administration" confidence="0.9" sourceSpanStart="1300" sourceSpanEnd="1317">
+    <properties key="name" value="re-administration of ranibizumab"/>
+    <properties key="timeWindow" value="after the fourth injection"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="luseogliflozin-treatment" targetType="ClinicalOutcome" targetId="re-administration-of-ranibizumab" confidence="0.95" evidence="Re-administration rates were decreased significantly after the fourth injection in the SGLT2i group (p = 0.030, hazard ratio: 0.45, 95% confidence interval: 0.22-0.92)." sourceSpanStart="833" sourceSpanEnd="956"/>
+</raw:RawExtractionResult>

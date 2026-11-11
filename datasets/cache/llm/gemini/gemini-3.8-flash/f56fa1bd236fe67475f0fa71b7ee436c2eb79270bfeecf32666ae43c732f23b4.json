@@ -1,0 +1,1 @@
+{"text": "{\"ok\": true, \"model\": \"gemini-2.5-flash\"}", "usage": {"input": 22, "output": 18}, "error": null, "model": "gemini-3.8-flash", "provider": "gemini", "latency": 71.87368383400008}

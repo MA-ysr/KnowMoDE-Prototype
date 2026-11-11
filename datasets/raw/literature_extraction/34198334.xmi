@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/34198334.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/34198334/" sourceSha256="220c97b7667cf992cb9b3d1824b00138c0dd8bd784747e7fb74923e4096d7b0a" sourceText="# PubMed 34198334: The cost of non-response to cardiac resynchronization therapy: characterizing heart failure events following cardiac resynchronization therapy.&#10;&#10;Europace : European pacing, arrhythmias, and cardiac electrophysiology : journal of the working groups on cardiac pacing, arrhythmias, and cardiac cellular electrophysiology of the European Society of Cardiology (2021), doi:10.1093/europace/euab123&#10;&#10;AIMS: The aim of this study is to quantify healthcare resource utilization among non-responders to cardiac resynchronization therapy (CRT-NR) by heart failure (HF) events and influence of comorbidities.&#10;&#10;METHODS AND RESULTS: The ADVANCE CRT registry (2013-2015) prospectively identified responders/CRT-NRs 6 months post-implant using the clinical composite score. Heart failure event rates and associated cost, both overall and separated for inpatient hospitalizations, office visits, emergency room visits, and observational stays, were quantified. Costs of events were imputed from payments for similar real-world encounters in subjects with CRT-D/P devices in the MarketScan™ commercial and Medicare Supplemental insurance claims databases. Effects of patient demographics and comorbidities on event rates and cost were evaluated. Of 879 US patients (age 69 ± 11 years, 29% female, ischaemic disease 52%), 310 (35%) were CRT-NR. Among CRT-NRs vs. responders, more patients developed HF (41% vs. 11%, P &lt; 0.001), HF event rate was higher (67.0 ± 21.7 vs. 11.4 ± 3.7/100 pt-year, P &lt; 0.001), and HF readmission within 30 days was more common [hazard ratio 7.06, 95% confidence interval (2.1-43.7)]. Inpatient hospitalization was the most common and most expensive event type in CRT-NR. Comorbid HF was increased by diabetes, hypertension, and pulmonary disorders. Over 2 years, compared to CRT responders, each CRT-NR resulted in excess cost of $6388 ($3859-$10 483) to Medicare (P = 0.015) or $10 197 ($6161-$17 394) to private insurances (P = 0.014).&#10;&#10;CONCLUSION: Healthcare expenditures associated with contemporary CRT non-response management are among the highest for any HF patient group. This illustrates an unmet need for interventions to improve HF outcomes and reduce costs among some CRT recipients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:41:53+00:00" xmi:version="2.0">
+  <chunks charEnd="2226"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="1730" sourceSpanEnd="1738">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1740" sourceSpanEnd="1752">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="pulmonary-disorders" mention="pulmonary disorders" confidence="0.95" sourceSpanStart="1758" sourceSpanEnd="1777">
+    <properties key="name" value="pulmonary disorders"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="comorbid-hf" mention="Comorbid HF" confidence="0.9" sourceSpanStart="1701" sourceSpanEnd="1712">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+</raw:RawExtractionResult>

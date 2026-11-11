@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/17028363" sourceUri="https://pubmed.ncbi.nlm.nih.gov/17028363/" sourceSha256="6e5b25e00bd6c26609acba4aa44427be9430d419289ffb7fae72f14c8ec0ebd3" sourceText="Acute renal failure associated with prolonged intake of slimming pills containing anthraquinones. Chinese herbal medicine preparations are widely available and often regarded by the public as natural and safe remedies for a variety of medical conditions. Nephropathy caused by Chinese herbs has previously been reported, usually involving the use of aristolochic acids. We report a 23-year-old woman who developed acute renal failure following prolonged use of a proprietary Chinese herbal slimming pill that contained anthraquinone derivatives, extracted from Rhizoma Rhei (rhubarb). The renal injury was probably aggravated by the concomitant intake of a non-steroidal anti-inflammatory drug, diclofenac. Renal pathology was that of hypocellular interstitial fibrosis. Spontaneous renal recovery occurred upon cessation of the slimming pills, but mild interstitial fibrosis and tubular atrophy was still evident histologically 4 months later. Although a causal relationship between the use of an anthraquinone-containing herbal agent and renal injury remains to be proven, phytotherapy-associated interstitial nephropathy should be considered in patients who present with unexplained renal failure." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:53:07+00:00" xmi:version="2.0">
+  <chunks charEnd="1200"/>
+  <entities type="Drug" id="diclofenac" mention="diclofenac" confidence="0.95" sourceSpanStart="695" sourceSpanEnd="705">
+    <properties key="name" value="diclofenac"/>
+  </entities>
+  <entities type="Condition" id="acute-renal-failure" mention="acute renal failure" confidence="0.98" sourceSpanStart="0" sourceSpanEnd="19">
+    <properties key="name" value="acute renal failure"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="nephropathy" mention="Nephropathy" confidence="0.9" sourceSpanStart="1112" sourceSpanEnd="1123">
+    <properties key="name" value="nephropathy"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="interstitial-fibrosis" mention="interstitial fibrosis" confidence="0.9" sourceSpanStart="748" sourceSpanEnd="769">
+    <properties key="name" value="interstitial fibrosis"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="tubular-atrophy" mention="tubular atrophy" confidence="0.9" sourceSpanStart="880" sourceSpanEnd="895">
+    <properties key="name" value="tubular atrophy"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="diclofenac" targetType="Condition" targetId="acute-renal-failure" confidence="0.85" evidence="The renal injury was probably aggravated by the concomitant intake of a non-steroidal anti-inflammatory drug, diclofenac." sourceSpanStart="585" sourceSpanEnd="706"/>
+</raw:RawExtractionResult>

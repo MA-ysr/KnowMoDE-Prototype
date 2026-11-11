@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39367367.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39367367/" sourceSha256="17c4d6401eaafbe620a263c6033f09405d252dcd0ea9f5e6225ece8e7f491682" sourceText="# PubMed 39367367: Comprehensive comorbidity assessment for the ECOPD: a long-term multi-centre retrospective study.&#10;&#10;BMC pulmonary medicine (2024), doi:10.1186/s12890-024-03257-6&#10;&#10;BACKGROUND: Exacerbation of chronic obstructive pulmonary disease (ECOPD) results in severe adverse outcomes and mortality. It is often associated with increased local and systemic inflammation. However, individual susceptibility to exacerbations remains largely unknown. Our study aimed to investigate the association between comorbidities and exacerbation outcomes.&#10;&#10;METHODS: We included patients with the primary discharge diagnosis of exacerbation for more 10 years in China. Data on all comorbidities were collected and analysed to determine the impact of the comorbidities on 1-year exacerbation readmission, length of hospital stay, and hospital cost. Univariable and multivariable logistic regression analyses were performed, and predictive models were developed.&#10;&#10;RESULTS: This extensive investigation evaluated a total of 15,708 individuals from five prominent locations in China, revealing notable variations in the prevalence of comorbidities and healthcare expenses among different regions. The study shows that there is a high rate of readmission within one year, namely 15.8%. The most common conditions among readmitted patients are hypertension (38.6%), ischemic heart disease (16.9%), and diabetes mellitus (16.6%). An extensive multivariable study revealed that age, gender, and particular comorbidities such as malnutrition and hyperlipidemia are important factors that can significantly predict greater readmission rates, longer hospital stays or increased healthcare costs. The multivariable models show a moderate to good ability to predict patient outcomes, with concordance index ranging from 0.701 to 0.752. This suggests that targeted interventions in these areas could improve patient outcomes and make better use of healthcare resources.&#10;&#10;CONCLUSIONS: The results regarding the association between severe exacerbations and systemic disease status support the integration of systematic evaluation of comorbidities into the management of exacerbations and the intensification of treatment of important comorbidities as a appropriate measure for prevention of further exacerbations. Our models also provide a novel tool for clinicians to determine the risk of the 1-year recurrence of severe ECOPD in hospitalised patients.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:45:24+00:00" xmi:version="2.0">
+  <chunks charEnd="2431"/>
+  <entities type="ClinicalOutcome" id="1-year-exacerbation-readmission" mention="1-year exacerbation readmission" confidence="0.95" sourceSpanStart="763" sourceSpanEnd="794">
+    <properties key="name" value="1-year exacerbation readmission"/>
+    <properties key="timeWindow" value="1 year"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="1330" sourceSpanEnd="1342">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="ischemic-heart-disease" mention="ischemic heart disease" confidence="0.95" sourceSpanStart="1352" sourceSpanEnd="1374">
+    <properties key="name" value="ischemic heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="diabetes-mellitus" mention="diabetes mellitus" confidence="0.95" sourceSpanStart="1388" sourceSpanEnd="1405">
+    <properties key="name" value="diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="malnutrition" mention="malnutrition" confidence="0.9" sourceSpanStart="1512" sourceSpanEnd="1524">
+    <properties key="name" value="malnutrition"/>
+    <properties key="description" value="nutritional deficiency state"/>
+  </entities>
+  <entities type="RiskFactor" id="hyperlipidemia" mention="hyperlipidemia" confidence="0.9" sourceSpanStart="1529" sourceSpanEnd="1543">
+    <properties key="name" value="hyperlipidemia"/>
+    <properties key="description" value="elevated lipid levels"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="malnutrition" targetType="ClinicalOutcome" targetId="1-year-exacerbation-readmission" confidence="0.85" evidence="An extensive multivariable study revealed that age, gender, and particular comorbidities such as malnutrition and hyperlipidemia are important factors that can significantly predict greater readmission rates, longer hospital stays or increased healthcare costs." sourceSpanStart="1415" sourceSpanEnd="1676"/>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="hyperlipidemia" targetType="ClinicalOutcome" targetId="1-year-exacerbation-readmission" confidence="0.85" evidence="An extensive multivariable study revealed that age, gender, and particular comorbidities such as malnutrition and hyperlipidemia are important factors that can significantly predict greater readmission rates, longer hospital stays or increased healthcare costs." sourceSpanStart="1415" sourceSpanEnd="1676"/>
+</raw:RawExtractionResult>

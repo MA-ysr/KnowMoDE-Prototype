@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31145236.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31145236/" sourceSha256="91ef11b2781119d01e822844e9b5bffde410828aa09d70d83ede9d4fb62192df" sourceText="# PubMed 31145236: The Impact of Case Management on Reducing Readmission for Patients Diagnosed With Heart Failure and Diabetes.&#10;&#10;Professional case management (2019), doi:10.1097/NCM.0000000000000359&#10;&#10;PURPOSE OF THE STUDY: To determine the impact of integrated case management services versus treatment as usual (TAU) for patients diagnosed with diabetes and concomitant heart failure.&#10;&#10;PRIMARY SETTING: This medical chart review was conducted at a single-site facility. The retrospective study design can be implemented at other facilities with a similar landscape.&#10;&#10;METHODS: A retrospective, descriptive, comparative analysis of integrated case management services compared with TAU from a medical chart review of 68 patients from September 1, 2015, through July 31, 2017. A medical chart review was conducted to generate the study sample for data collection and analysis. The data were organized, cleaned, and prepared and then analyzed. The data were analyzed using SPSS and verified with SAS and R. Applied were descriptive statistics and statistical tests-t test, χ test, Mann-Whitney U test, and Logistic Regression.&#10;&#10;RESULTS: For the integrated case management group, there were 18.4% who readmitted whereas 81.6% did not. For the TAU group, there were 52.6% who readmitted and 47.4% who did not. The association between readmission and case management was χ (1, n = 68) = 6.372, p = .012.&#10;&#10;NURSING IMPLICATIONS: Integrated case management services were statistically significant in reducing readmission for the sample. Demographics tested in this study were not significant predictors for readmission. Extending length of stay for patients who are not medically ready for discharge should be considered because there is a cost difference, as there is evidence of readmission reduction. Policy and procedural amendments can be obtained from this study.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:35:25+00:00" xmi:version="2.0">
+  <chunks charEnd="1861"/>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="119" sourceSpanEnd="127">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="371" sourceSpanEnd="384">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="integrated-case-management" mention="integrated case management services" confidence="0.95" sourceSpanStart="631" sourceSpanEnd="666">
+    <properties key="name" value="integrated case management services"/>
+    <properties key="description" value="integrated case management services versus treatment as usual"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmission" mention="readmission" confidence="0.95" sourceSpanStart="1329" sourceSpanEnd="1340">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="REDUCES_RISK_OF" sourceType="RiskFactor" sourceId="integrated-case-management" targetType="ClinicalOutcome" targetId="readmission" confidence="0.95" evidence="Integrated case management services were statistically significant in reducing readmission for the sample." sourceSpanStart="1421" sourceSpanEnd="1527"/>
+</raw:RawExtractionResult>

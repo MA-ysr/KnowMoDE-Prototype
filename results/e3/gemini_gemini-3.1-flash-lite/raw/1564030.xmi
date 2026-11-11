@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="bc5cdr/1564030" sourceUri="https://pubmed.ncbi.nlm.nih.gov/1564030/" sourceSha256="37a4bf737a7e550152208bcf368424cb27b084d297812c9d6cd0e152aa73b907" sourceText="Mania associated with fluoxetine treatment in adolescents. Fluoxetine, a selective serotonin reuptake inhibitor, is gaining increased acceptance in the treatment of adolescent depression. Generally safe and well tolerated by adults, fluoxetine has been reported to induce mania. The cases of five depressed adolescents, 14-16 years of age, who developed mania during pharmacotherapy with fluoxetine, are reported here. Apparent risk factors for the development of mania or hypomania during fluoxetine pharmacotherapy in this population were the combination of attention-deficit hyperactivity disorder and affective instability; major depression with psychotic features; a family history of affective disorder, especially bipolar disorder; and a diagnosis of bipolar disorder. Further study is needed to determine the optimal dosage and to identify risk factors that increase individual vulnerability to fluoxetine induced mania in adolescents." extractionTask="drug_label_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="drug_label_extraction@fc3d922aa277" promptHash="fc3d922aa27751cd23bc5136339e3e9669ebbfd16084612234d8ae7245fceda4" extractionTimestamp="2026-10-15T14:54:28+00:00" xmi:version="2.0">
+  <chunks charEnd="943"/>
+  <entities type="Drug" id="fluoxetine" mention="fluoxetine" confidence="0.99" sourceSpanStart="22" sourceSpanEnd="32">
+    <properties key="name" value="fluoxetine"/>
+    <properties key="drugClass" value="selective serotonin reuptake inhibitor"/>
+  </entities>
+  <entities type="DrugClass" id="selective-serotonin-reuptake-inhibitors" mention="selective serotonin reuptake inhibitor" confidence="0.95" sourceSpanStart="73" sourceSpanEnd="111">
+    <properties key="name" value="selective serotonin reuptake inhibitors"/>
+  </entities>
+  <entities type="Condition" id="mania" mention="mania" confidence="0.98" sourceSpanStart="0" sourceSpanEnd="5">
+    <properties key="name" value="mania"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="adolescent-depression" mention="adolescent depression" confidence="0.95" sourceSpanStart="165" sourceSpanEnd="186">
+    <properties key="name" value="adolescent depression"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="attention-deficit-hyperactivity-disorder" mention="attention-deficit hyperactivity disorder" confidence="0.95" sourceSpanStart="560" sourceSpanEnd="600">
+    <properties key="name" value="attention-deficit hyperactivity disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="affective-instability" mention="affective instability" confidence="0.95" sourceSpanStart="605" sourceSpanEnd="626">
+    <properties key="name" value="affective instability"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="major-depression-with-psychotic-features" mention="major depression with psychotic features" confidence="0.95" sourceSpanStart="628" sourceSpanEnd="668">
+    <properties key="name" value="major depression with psychotic features"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="bipolar-disorder" mention="bipolar disorder" confidence="0.95" sourceSpanStart="721" sourceSpanEnd="737">
+    <properties key="name" value="bipolar disorder"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <entities type="Condition" id="hypomania" mention="hypomania" confidence="0.95" sourceSpanStart="473" sourceSpanEnd="482">
+    <properties key="name" value="hypomania"/>
+    <properties key="category" value="psychiatric"/>
+  </entities>
+  <relations type="BELONGS_TO_CLASS" sourceType="Drug" sourceId="fluoxetine" targetType="DrugClass" targetId="selective-serotonin-reuptake-inhibitors" confidence="0.95" evidence="Fluoxetine, a selective serotonin reuptake inhibitor, is gaining increased acceptance in the treatment of adolescent depression." sourceSpanStart="59" sourceSpanEnd="187"/>
+  <relations type="TREATS" sourceType="Drug" sourceId="fluoxetine" targetType="Condition" targetId="adolescent-depression" confidence="0.95" evidence="Fluoxetine, a selective serotonin reuptake inhibitor, is gaining increased acceptance in the treatment of adolescent depression." sourceSpanStart="59" sourceSpanEnd="187"/>
+  <relations type="MAY_CAUSE" sourceType="Drug" sourceId="fluoxetine" targetType="Condition" targetId="mania" confidence="0.98" evidence="Generally safe and well tolerated by adults, fluoxetine has been reported to induce mania." sourceSpanStart="188" sourceSpanEnd="278"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 35882487: Inpatient hyperglycaemia, and impact on morbidity, mortality and re-hospitalisation rates.
+
+Clinical medicine (London, England) (2022), doi:10.7861/clinmed.2022-0112
+
+INTRODUCTION: Hyperglycaemia is related to poorer outcomes among hospital inpatients. We investigated the impact of hyperglycaemia at admission on length of hospital stay, readmission rate and mortality rate.
+
+METHOD: We retrospectively analysed the records of 1,132 patients admitted to hospital in January 2019, April 2019, August 2019 and April 2020.
+
+RESULTS: Hyperglycaemia was present in 14.1% of patients. New-onset hyperglycaemia on admission (in 3.9% of patients) was related to a higher mortality rate than in patients known to have diabetes admitted with hyperglycaemia (43.3% vs 17.9%; p=0.006). Mortality at 90 days and 1 year increased with higher admission glucose levels (p=0.03 and p=0.005, respectively), severe hyperglycaemia (>20 mmol/L) having a 1-year mortality of 34.3%. After accounting for confounding variables, admission glucose and length of stay remained significant predictors of 1-year mortality (p=0.034 and p=0.003, respectively).
+
+CONCLUSION: Hyperglycaemia is an important prognostic marker and may indicate a more severe illness. These patients should be highlighted for a greater level of care.

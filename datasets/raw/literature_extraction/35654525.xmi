@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/35654525.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/35654525/" sourceSha256="b5b634c29e7246acdd501dcded99076fb323b1a8b617e3d6a3014a2bdbd9111f" sourceText="# PubMed 35654525: Acute Decompensated Heart Failure in the Setting of Acute Coronary Syndrome.&#10;&#10;JACC. Heart failure (2022), doi:10.1016/j.jchf.2022.02.008&#10;&#10;Acute coronary syndrome (ACS) is frequently complicated by evidence of heart failure (HF). Those at highest risk for acute decompensated HF in the setting of ACS (ACS-HF) are older, female, and have preexisting heart disease, type 2 diabetes mellitus, hypertension, and/or kidney disease. The presence of ACS-HF is strongly associated with higher mortality and more frequent readmissions, especially for HF. Low implementation of guideline-directed medical therapy has further complicated the clinical care of this high-risk population. Improved utilization of current therapies, coupled with further investigation of strategies to manage ACS-HF, is desperately needed to improve outcomes in this vulnerable population, and the results of currently ongoing or recently concluded ACS-HF studies in this population are of great interest. In this review, we explore the pathophysiology, epidemiology, risk factors, and outcomes for patients with ACS-HF, and describe both existing evidence for management of this challenging condition and areas requiring further research.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:45:52+00:00" xmi:version="2.0">
+  <chunks charEnd="1227"/>
+  <entities type="Condition" id="acute-coronary-syndrome" mention="Acute coronary syndrome" confidence="0.95" sourceSpanStart="71" sourceSpanEnd="94">
+    <properties key="name" value="acute coronary syndrome"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="heart-failure" mention="heart failure" confidence="0.95" sourceSpanStart="103" sourceSpanEnd="116">
+    <properties key="name" value="heart failure"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="RiskFactor" id="older-age" mention="older" confidence="0.9" sourceSpanStart="332" sourceSpanEnd="337">
+    <properties key="name" value="older age"/>
+    <properties key="description" value="Patients are older"/>
+  </entities>
+  <entities type="RiskFactor" id="female-sex" mention="female" confidence="0.9" sourceSpanStart="339" sourceSpanEnd="345">
+    <properties key="name" value="female sex"/>
+    <properties key="description" value="Patients are female"/>
+  </entities>
+  <entities type="RiskFactor" id="preexisting-heart-disease" mention="preexisting heart disease" confidence="0.9" sourceSpanStart="356" sourceSpanEnd="381">
+    <properties key="name" value="preexisting heart disease"/>
+    <properties key="description" value="Patients have preexisting heart disease"/>
+  </entities>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus" confidence="0.95" sourceSpanStart="383" sourceSpanEnd="407">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="409" sourceSpanEnd="421">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="kidney-disease" mention="kidney disease" confidence="0.95" sourceSpanStart="430" sourceSpanEnd="444">
+    <properties key="name" value="kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="acs-hf" mention="ACS-HF" confidence="0.95" sourceSpanStart="462" sourceSpanEnd="468">
+    <properties key="name" value="acute decompensated heart failure in the setting of acute coronary syndrome"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="mortality" mention="mortality" confidence="0.95" sourceSpanStart="504" sourceSpanEnd="513">
+    <properties key="name" value="mortality"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmissions" mention="readmissions" confidence="0.95" sourceSpanStart="532" sourceSpanEnd="544">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="acs-hf" targetType="ClinicalOutcome" targetId="mortality" confidence="0.9" evidence="The presence of ACS-HF is strongly associated with higher mortality and more frequent readmissions, especially for HF." sourceSpanStart="446" sourceSpanEnd="564"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="acs-hf" targetType="ClinicalOutcome" targetId="readmissions" confidence="0.9" evidence="The presence of ACS-HF is strongly associated with higher mortality and more frequent readmissions, especially for HF." sourceSpanStart="446" sourceSpanEnd="564"/>
+</raw:RawExtractionResult>

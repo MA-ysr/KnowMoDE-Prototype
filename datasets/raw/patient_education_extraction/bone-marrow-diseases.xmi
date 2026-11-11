@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="medlineplus/bone-marrow-diseases.txt" sourceUri="https://medlineplus.gov/bonemarrowdiseases.html" sourceSha256="b90986f46c7eed7a61a864e5ed24aaf2d9656966d1a9e2c36508ad101719579a" sourceText="# MedlinePlus health topic: Bone Marrow Diseases&#10;&#10;Also called: Myeloproliferative Disorders&#10;&#10;Bone marrow is the spongy tissue inside some of your bones, such as your hip and thigh bones. It contains stem cells. The stem cells can develop into the red blood cells that carry oxygen through your body, the white blood cells that fight infections, and the platelets that help with blood clotting.&#10;&#10;With bone marrow disease, there are problems with the stem cells or how they develop:&#10;&#10;In leukemia, a cancer of the blood, the bone marrow makes abnormal white blood cells&#10;&#10;In aplastic anemia, the bone marrow doesn't make red blood cells&#10;&#10;In myeloproliferative disorders, the bone marrow makes too many white blood cells&#10;&#10;Other diseases, such as lymphoma, can spread into the bone marrow and affect the production of blood cells&#10;&#10;Causes of bone marrow diseases include genetics and environmental factors. Tests for bone marrow diseases include blood and bone marrow tests. Treatments depend on the disorder and how severe it is. They might involve medicines, blood transfusions or a bone marrow transplant.&#10;" extractionTask="patient_education_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="patient_education_extraction@6fb3bf908974" promptHash="6fb3bf908974d1d5f147589cd6258432e2d6cb32a95cd8a052d4c74c03d75f00" extractionTimestamp="2026-10-15T12:19:04+00:00" xmi:version="2.0">
+  <chunks charEnd="1102"/>
+  <entities type="Condition" id="bone-marrow-diseases" mention="Bone Marrow Diseases" confidence="0.95" sourceSpanStart="28" sourceSpanEnd="48">
+    <properties key="name" value="bone marrow diseases"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="myeloproliferative-disorders" mention="Myeloproliferative Disorders" confidence="0.95" sourceSpanStart="63" sourceSpanEnd="91">
+    <properties key="name" value="myeloproliferative disorders"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="leukemia" mention="leukemia" confidence="0.95" sourceSpanStart="485" sourceSpanEnd="493">
+    <properties key="name" value="leukemia"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+  <entities type="Condition" id="aplastic-anemia" mention="aplastic anemia" confidence="0.95" sourceSpanStart="571" sourceSpanEnd="586">
+    <properties key="name" value="aplastic anemia"/>
+    <properties key="category" value="hematologic"/>
+  </entities>
+  <entities type="Condition" id="lymphoma" mention="lymphoma" confidence="0.95" sourceSpanStart="741" sourceSpanEnd="749">
+    <properties key="name" value="lymphoma"/>
+    <properties key="category" value="oncology"/>
+  </entities>
+</raw:RawExtractionResult>

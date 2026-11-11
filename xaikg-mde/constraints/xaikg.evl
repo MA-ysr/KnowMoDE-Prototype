@@ -1,0 +1,713 @@
+/*
+ * XAI-KG constraint layer (paper, Phase 2: Verifying the Models) as OCL-style invariants in EVL.
+ *
+ *   constraint  = ERROR   -> blocks every transformation (Phase 2: nothing is generated until the models are fixed)
+ *   critique    = WARNING -> reported, does not block
+ *
+ * Naming: <family>_<Name>, family in {C1 structural, C2 schema-prompt, C3 validation soundness,
+ * C4 audience coverage, C5 traceability}. Model aliases: Schema, Pipeline, Policy, Explainability,
+ * Decision (one .xmi each, loaded into a shared resource set so cross-file references are identical
+ * objects).
+ */
+
+// ---------------------------------------------------------------------------------------------
+// C1 - Structural well-formedness (KG Schema)
+// ---------------------------------------------------------------------------------------------
+context Schema!KGSchemaDefinition {
+
+  constraint C1_SchemaHasName {
+    check : self.name.isDefined() and self.name.trim().length() > 0
+    message : "The KG schema has no name"
+  }
+
+  constraint C1_SchemaHasConcepts {
+    check : self.concepts.notEmpty()
+    message : "Schema '" + self.name + "' declares no concept"
+  }
+
+  constraint C1_UniqueConceptNames {
+    check : self.concepts.collect(c | c.name).asSet().size() = self.concepts.size()
+    message : "Schema '" + self.name + "' has duplicate concept names"
+  }
+
+  constraint C1_UniqueRelationIds {
+    check : self.relations.collect(r | r.id).asSet().size() = self.relations.size()
+    message : "Schema '" + self.name + "' has duplicate relation ids"
+  }
+
+  constraint C1_UniqueQueryPatternNames {
+    check : self.queryPatterns.collect(q | q.name).asSet().size() = self.queryPatterns.size()
+    message : "Schema '" + self.name + "' has duplicate query pattern names"
+  }
+
+  constraint C1_SameNameRelationsHaveDistinctEndpoints {
+    // D6 option A: several KGRelation elements may share a name (one relationship type, several
+    // allowed endpoint pairs), but two of them must not declare the same (source, target) pair.
+    check : self.relations.forAll(r | self.relations.select(o | o.name = r.name and o.source = r.source and o.target = r.target).size() = 1)
+    message : "Schema '" + self.name + "': two relations share the same name and the same endpoints"
+  }
+}
+
+context Schema!KGConcept {
+
+  constraint C1_ConceptHasName {
+    check : self.name.isDefined() and self.name.matches("[A-Z][A-Za-z0-9]*")
+    message : "Concept name '" + self.name + "' must be UpperCamelCase (it becomes a node label)"
+  }
+
+  constraint C1_ConceptHasProperty {
+    check : self.properties.notEmpty()
+    message : "Concept '" + self.name + "' declares no property"
+  }
+
+  constraint C1_ConceptHasIdentifyingProperty {
+    check : self.properties.exists(p | p.isRequired)
+    message : "Concept '" + self.name + "' has no required property; the first required property identifies its instances in the graph"
+  }
+
+  constraint C1_UniquePropertyNames {
+    check : self.properties.collect(p | p.name).asSet().size() = self.properties.size()
+    message : "Concept '" + self.name + "' has duplicate property names"
+  }
+
+  critique C1_ConceptHasExplainableProperty {
+    check : self.properties.exists(p | p.isExplainable)
+    message : "Concept '" + self.name + "' exposes no explainable property; it can never surface in an explanation"
+  }
+
+  critique C1_ConceptHasDescription {
+    check : self.description.isDefined() and self.description.trim().length() > 0
+    message : "Concept '" + self.name + "' has no description (descriptions are emitted into the LLM prompt)"
+  }
+}
+
+context Schema!CanonicalEntity {
+
+  constraint C1_CanonicalEntityHasName {
+    check : self.name.isDefined() and self.name.trim().length() > 0
+    message : "A canonical entity of concept '" + self.eContainer().name + "' has no name"
+  }
+
+  constraint C1_CanonicalEntityNamesUniqueInConcept {
+    check : self.eContainer().canonicalEntities.select(c | c.name.toLowerCase() = self.name.toLowerCase()).size() = 1
+    message : "Concept '" + self.eContainer().name + "' declares the canonical entity '" + self.name + "' twice"
+  }
+
+  constraint C1_CanonicalEntityAliasesDistinct {
+    check : not self.aliases.exists(a | a.toLowerCase() = self.name.toLowerCase())
+        and self.aliases.collect(a | a.toLowerCase()).asSet().size() = self.aliases.size()
+    message : "Canonical entity '" + self.name + "' repeats an alias or lists its own name as alias"
+  }
+
+  critique C4_CanonicalEntityHasPlainLabel {
+    // C4 (audience coverage) evaluated on the vocabulary: plain-language audiences see canonical entities
+    // of explainable concepts through their plain label, not through the clinical name
+    guard : self.eContainer().properties.exists(p | p.isExplainable)
+        and Explainability!Audience.all.exists(a | a.presentationBudget.isDefined() and a.presentationBudget.plainLanguage)
+    check : self.plainLabel.isDefined() and self.plainLabel.trim().length() > 0
+    message : "Canonical entity '" + self.name + "' of concept '" + self.eContainer().name + "' has no plainLabel; plain-language audiences would see its clinical name"
+  }
+
+  constraint C1_CanonicalEntityAliasesNotShared {
+    check : not self.eContainer().canonicalEntities.exists(o | o <> self and (o.aliases.exists(a | self.aliases.exists(b | a.toLowerCase() = b.toLowerCase())) or o.aliases.exists(a | a.toLowerCase() = self.name.toLowerCase())))
+    message : "Canonical entity '" + self.name + "' shares an alias with another canonical entity of the same concept (ambiguous normalisation)"
+  }
+}
+
+context Schema!KGProperty {
+
+  constraint C1_PropertyHasName {
+    check : self.name.isDefined() and self.name.matches("[a-z][A-Za-z0-9_]*")
+    message : "Property of concept '" + self.eContainer().name + "' has an invalid name '" + self.name + "' (lowerCamelCase expected)"
+  }
+}
+
+context Schema!KGRelation {
+
+  constraint C1_RelationHasId {
+    check : self.id.isDefined() and self.id.trim().length() > 0
+    message : "Relation '" + self.name + "' has no id"
+  }
+
+  constraint C1_RelationHasName {
+    check : self.name.isDefined() and self.name.matches("[A-Z][A-Z0-9_]*")
+    message : "Relation '" + self.id + "' name must be UPPER_SNAKE_CASE (it becomes a relationship type)"
+  }
+
+  constraint C1_RelationHasEndpoints {
+    check : self.source.isDefined() and self.target.isDefined()
+    message : "Relation '" + self.id + "' must have both a source and a target concept"
+  }
+
+  constraint C1_RelationEndpointsDeclaredInSchema {
+    guard : self.source.isDefined() and self.target.isDefined()
+    check : self.eContainer().concepts.includes(self.source) and self.eContainer().concepts.includes(self.target)
+    message : "Relation '" + self.id + "' references a concept outside its schema"
+  }
+
+  constraint C1_CardinalitiesValid {
+    check : self.minCardinality >= 0 and (self.maxCardinality = -1 or self.maxCardinality >= self.minCardinality) and self.maxCardinality <> 0
+    message : "Relation '" + self.id + "' has invalid cardinalities [" + self.minCardinality + ".." + self.maxCardinality + "]"
+  }
+
+  critique C1_RelationHasSemantics {
+    check : self.semantics.isDefined() and self.semantics.trim().length() > 0
+    message : "Relation '" + self.id + "' has no semantics text (emitted into the LLM prompt)"
+  }
+}
+
+context Schema!KGQueryPattern {
+
+  constraint C1_PatternHasName {
+    check : self.name.isDefined() and self.name.matches("[a-z][a-z0-9_]*")
+    message : "Query pattern name '" + self.name + "' must be lower_snake_case"
+  }
+
+  constraint C1_PatternHasTemplate {
+    check : self.cypherTemplate.isDefined() and self.cypherTemplate.trim().length() > 0
+    message : "Query pattern '" + self.name + "' has an empty Cypher template"
+  }
+
+  constraint C1_PatternDeclaresItsParameters {
+    // every $param used in the template must be declared, so the service knows what to bind
+    guard : self.cypherTemplate.isDefined()
+    check : self.parameters.forAll(p | self.cypherTemplate.indexOf("$" + p) >= 0)
+    message : "Query pattern '" + self.name + "' declares a parameter that the template never uses"
+  }
+
+  constraint C1_PatternReadsOnly {
+    guard : self.cypherTemplate.isDefined()
+    check : not self.cypherTemplate.toUpperCase().matches("(?s).*\\b(CREATE|MERGE|DELETE|SET|REMOVE|DROP|DETACH)\\b.*")
+    message : "Query pattern '" + self.name + "' must be read-only (explanations never modify the graph)"
+  }
+
+  constraint C1_ActionablePatternFiltersModifiable {
+    // an actionable pattern must select on the modifiability that T5 writes from the vocabulary
+    // (CanonicalEntity.isModifiable -> node property _modifiable); a flag without a filter promises nothing
+    guard : self.actionableOnly and self.cypherTemplate.isDefined()
+    check : self.cypherTemplate.indexOf("_modifiable") >= 0
+    message : "Query pattern '" + self.name + "' is declared actionableOnly but its Cypher template never references the modifiability property _modifiable"
+  }
+
+  critique C1_PatternUsedByAnExplanation {
+    check : Explainability!ExplanationType.all.exists(t | t.queryPatterns.includes(self))
+         or Explainability!ExplainabilityConfig.all.exists(c | c.traceQueryPattern = self)
+    message : "Query pattern '" + self.name + "' is used neither by an explanation type nor as the trace pattern"
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+// C2 - Schema-prompt consistency (LLM Pipeline vs KG Schema)
+// ---------------------------------------------------------------------------------------------
+context Pipeline!LLMPipelineConfig {
+
+  constraint C2_PipelineHasTargetSchema {
+    check : self.targetSchema.isDefined()
+    message : "Pipeline '" + self.name + "' does not reference a target KG schema"
+  }
+
+  constraint C2_PipelineHasTasks {
+    check : self.extractionTasks.notEmpty()
+    message : "Pipeline '" + self.name + "' declares no extraction task"
+  }
+
+  constraint C2_UniqueTaskNames {
+    check : self.extractionTasks.collect(t | t.name).asSet().size() = self.extractionTasks.size()
+    message : "Pipeline '" + self.name + "' has duplicate task names"
+  }
+
+  constraint C2_EveryConceptTargetedBySomeTask {
+    guard : self.targetSchema.isDefined()
+    check : self.targetSchema.concepts.forAll(c | self.extractionTasks.exists(t | t.promptTemplate.targetConcepts.includes(c)))
+    message : "Pipeline '" + self.name + "': concepts extracted by no task (they would stay empty in the KG): "
+              + self.targetSchema.concepts.reject(c | self.extractionTasks.exists(t | t.promptTemplate.targetConcepts.includes(c))).collect(c | c.name).concat(", ")
+  }
+
+  critique C2_EveryRelationTargetedBySomeTask {
+    guard : self.targetSchema.isDefined()
+    check : self.targetSchema.relations.forAll(r | self.extractionTasks.exists(t | t.promptTemplate.targetRelations.includes(r)))
+    message : "Pipeline '" + self.name + "': relations extracted by no task: "
+              + self.targetSchema.relations.reject(r | self.extractionTasks.exists(t | t.promptTemplate.targetRelations.includes(r))).collect(r | r.id).concat(", ")
+  }
+}
+
+context Pipeline!ExtractionTask {
+
+  constraint C2_TaskHasName {
+    check : self.name.isDefined() and self.name.matches("[a-z][a-z0-9_]*")
+    message : "Extraction task name '" + self.name + "' must be lower_snake_case (used in file names)"
+  }
+
+  constraint C2_TaskHasPromptTemplate {
+    check : self.promptTemplate.isDefined()
+    message : "Task '" + self.name + "' has no prompt template"
+  }
+
+  constraint C2_TaskHasChunkingStrategy {
+    check : self.chunkingStrategy.isDefined()
+    message : "Task '" + self.name + "' has no chunking strategy"
+  }
+
+  constraint C2_TaskHasLlmModel {
+    check : self.llmModel.isDefined() and self.llmModel.matches("[a-z0-9]+/[A-Za-z0-9._:-]+")
+    message : "Task '" + self.name + "' must name its LLM as provider/model (e.g. gemini/gemini-2.5-flash)"
+  }
+
+  constraint C2_TaskHasSourceCollection {
+    check : self.sourceCollection.isDefined() and self.sourceCollection.trim().length() > 0
+    message : "Task '" + self.name + "' does not say which document collection it processes"
+  }
+}
+
+context Pipeline!PromptTemplate {
+
+  constraint C2_PromptHasSystemInstruction {
+    check : self.systemInstruction.isDefined() and self.systemInstruction.trim().length() > 0
+    message : "Prompt template of task '" + self.eContainer().name + "' has no system instruction"
+  }
+
+  constraint C2_PromptTargetsAtLeastOneConcept {
+    check : self.targetConcepts.notEmpty()
+    message : "Prompt template of task '" + self.eContainer().name + "' targets no KG concept"
+  }
+
+  constraint C2_PromptConceptsDeclaredInTargetSchema {
+    guard : self.eContainer().eContainer().targetSchema.isDefined()
+    check : self.targetConcepts.forAll(c | self.eContainer().eContainer().targetSchema.concepts.includes(c))
+    message : "Prompt template of task '" + self.eContainer().name + "' targets a concept that is not in the pipeline's target schema"
+  }
+
+  constraint C2_PromptRelationsDeclaredInTargetSchema {
+    guard : self.eContainer().eContainer().targetSchema.isDefined()
+    check : self.targetRelations.forAll(r | self.eContainer().eContainer().targetSchema.relations.includes(r))
+    message : "Prompt template of task '" + self.eContainer().name + "' targets a relation that is not in the pipeline's target schema"
+  }
+
+  constraint C2_PromptRelationEndpointsAreTargeted {
+    // a relation can only be extracted if the LLM is also asked for its endpoint concepts
+    check : self.targetRelations.forAll(r | self.targetConcepts.includes(r.source) and self.targetConcepts.includes(r.target))
+    message : "Prompt template of task '" + self.eContainer().name + "' targets a relation whose source or target concept it does not target"
+  }
+
+  critique C2_PromptHasFewShotExample {
+    check : self.fewShotExamples.notEmpty()
+    message : "Prompt template of task '" + self.eContainer().name + "' has no few-shot example"
+  }
+
+  constraint C2_FewShotExamplesComplete {
+    check : self.fewShotExamples.forAll(e | e.inputText.isDefined() and e.inputText.trim().length() > 0 and e.expectedOutput.isDefined() and e.expectedOutput.trim().length() > 0)
+    message : "Prompt template of task '" + self.eContainer().name + "' has an incomplete few-shot example"
+  }
+
+  constraint C2_FewShotOutputsMentionOnlyTargetedTypes {
+    // cheap textual check: every "type": "X" in the examples must be a targeted concept or relation name
+    check : self.fewShotExamples.forAll(e |
+      self.targetConcepts.collect(c | c.name).includingAll(self.targetRelations.collect(r | r.name)).asSet()
+        .includesAll(e.expectedOutput.split("\"type\"\\s*:\\s*\"").excluding(e.expectedOutput.split("\"type\"\\s*:\\s*\"").first())
+        .collect(s | s.split("\"").first())))
+    message : "A few-shot example of task '" + self.eContainer().name + "' uses an entity or relation type the prompt does not target"
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+// C3 - Validation soundness (Validation Policy, and numeric LLM parameters)
+// ---------------------------------------------------------------------------------------------
+context Policy!ValidationConfig {
+
+  constraint C3_ThresholdInRange {
+    check : self.confidenceThreshold >= 0.0 and self.confidenceThreshold <= 1.0
+    message : "Validation policy '" + self.name + "': confidence threshold " + self.confidenceThreshold + " is not in [0,1]"
+  }
+
+  constraint C3_PolicyHasTargetSchema {
+    check : self.targetSchema.isDefined()
+    message : "Validation policy '" + self.name + "' does not reference a target KG schema"
+  }
+
+  constraint C3_PolicyHasRules {
+    check : self.rules.notEmpty()
+    message : "Validation policy '" + self.name + "' declares no rule"
+  }
+
+  constraint C3_UniqueRuleNames {
+    check : self.rules.collect(r | r.name).asSet().size() = self.rules.size()
+    message : "Validation policy '" + self.name + "' has duplicate rule names"
+  }
+
+  constraint C3_HasSchemaConformanceRules {
+    check : self.rules.exists(r | r.ruleType.name = "SCHEMA_CONFORMANCE" and r.scope.name = "ENTITY")
+        and self.rules.exists(r | r.ruleType.name = "SCHEMA_CONFORMANCE" and r.scope.name = "RELATION")
+    message : "Validation policy '" + self.name + "' needs a SCHEMA_CONFORMANCE rule for entities and one for relations (R3)"
+  }
+
+  constraint C3_HasHallucinationOrConfidenceRule {
+    check : self.rules.exists(r | r.ruleType.name = "HALLUCINATION_CHECK" or r.ruleType.name = "CONFIDENCE_CHECK")
+    message : "Validation policy '" + self.name + "' has no hallucination or confidence rule (R4)"
+  }
+
+  constraint C3_HasProvenanceRule {
+    check : self.rules.exists(r | r.ruleType.name = "PROVENANCE_CHECK" and r.severity.name = "ERROR")
+    message : "Validation policy '" + self.name + "' has no blocking PROVENANCE_CHECK rule (R7: provenance by construction)"
+  }
+}
+
+context Policy!ValidationRule {
+
+  constraint C3_RuleHasName {
+    check : self.name.isDefined() and self.name.matches("[a-z][a-z0-9_]*")
+    message : "Validation rule name '" + self.name + "' must be lower_snake_case (it becomes a constraint name)"
+  }
+
+  constraint C3_RuleHasExpression {
+    check : self.oclExpression.isDefined() and self.oclExpression.trim().length() > 0
+    message : "Validation rule '" + self.name + "' has no expression"
+  }
+
+  constraint C3_RuleExpressionIsNotTrivial {
+    guard : self.oclExpression.isDefined()
+    check : self.oclExpression.trim() <> "true" and self.oclExpression.trim() <> "false"
+    message : "Validation rule '" + self.name + "' has a trivial expression"
+  }
+
+  constraint C3_RuleHasMessage {
+    check : self.errorMessage.isDefined() and self.errorMessage.trim().length() > 0
+    message : "Validation rule '" + self.name + "' has no error message"
+  }
+
+  constraint C3_RuleExpressionUsesSelf {
+    guard : self.oclExpression.isDefined()
+    check : self.oclExpression.indexOf("self") >= 0
+    message : "Validation rule '" + self.name + "' never refers to the checked element (self)"
+  }
+}
+
+context Pipeline!ChunkingStrategy {
+
+  constraint C3_ChunkSizePositive {
+    check : self.chunkSize > 0
+    message : "Task '" + self.eContainer().name + "': chunk size must be positive"
+  }
+
+  constraint C3_OverlapNonNegative {
+    check : self.overlap >= 0
+    message : "Task '" + self.eContainer().name + "': chunk overlap must be >= 0"
+  }
+
+  constraint C3_OverlapSmallerThanChunk {
+    check : self.overlap < self.chunkSize
+    message : "Task '" + self.eContainer().name + "': chunk overlap (" + self.overlap + ") must be smaller than chunk size (" + self.chunkSize + ")"
+  }
+
+  critique C3_ChunkFitsPromptBudget {
+    check : self.chunkSize <= 8000
+    message : "Task '" + self.eContainer().name + "': chunks above 8000 characters degrade extraction recall"
+  }
+}
+
+context Pipeline!ExtractionTask {
+
+  constraint C3_TemperatureInRange {
+    check : self.temperature >= 0.0 and self.temperature <= 1.0
+    message : "Task '" + self.name + "': temperature " + self.temperature + " is not in [0,1]"
+  }
+
+  critique C3_LowTemperatureForExtraction {
+    check : self.temperature <= 0.3
+    message : "Task '" + self.name + "': temperature " + self.temperature + " is high for extraction (<= 0.3 recommended)"
+  }
+
+  constraint C3_MaxTokensPositive {
+    check : self.maxTokens > 0
+    message : "Task '" + self.name + "': maxTokens must be positive"
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+// C4 - Audience coverage (Explainability, Decision)
+// ---------------------------------------------------------------------------------------------
+context Explainability!ExplainabilityConfig {
+
+  constraint C4_HasAudiences {
+    check : self.audiences.notEmpty()
+    message : "Explainability config '" + self.name + "' declares no audience"
+  }
+
+  constraint C4_HasExplanationTypes {
+    check : self.explanationTypes.notEmpty()
+    message : "Explainability config '" + self.name + "' declares no explanation type"
+  }
+
+  constraint C4_UniqueAudienceRoles {
+    check : self.audiences.collect(a | a.role).asSet().size() = self.audiences.size()
+    message : "Explainability config '" + self.name + "' has duplicate audience roles"
+  }
+
+  constraint C4_UniqueExplanationTypeNames {
+    check : self.explanationTypes.collect(t | t.name).asSet().size() = self.explanationTypes.size()
+    message : "Explainability config '" + self.name + "' has duplicate explanation type names"
+  }
+
+  constraint C4_UniqueTemplateNames {
+    check : self.templates.collect(t | t.name).asSet().size() = self.templates.size()
+    message : "Explainability config '" + self.name + "' has duplicate template names"
+  }
+
+  critique C4_RetrievalLimitCoversBudgets {
+    check : self.audiences.forAll(a | a.presentationBudget.isUndefined() or self.retrievalLimit >= a.presentationBudget.maxFacts)
+    message : "Explainability config '" + self.name + "': retrievalLimit " + self.retrievalLimit + " is smaller than the presentation budget of an audience; budgets cannot be filled and omitted facts are under-counted"
+  }
+}
+
+context Explainability!Audience {
+
+  constraint C4_AudienceHasRole {
+    check : self.role.isDefined() and self.role.matches("[a-z][a-z0-9_]*")
+    message : "Audience role '" + self.role + "' must be lower_snake_case (used in endpoint paths)"
+  }
+
+  constraint C4_AudienceCovered {
+    check : self.eContainer().explanationTypes.exists(t | t.audiences.includes(self))
+    message : "Audience '" + self.role + "' is served by no explanation type (R6)"
+  }
+
+  constraint C4_LowAudienceGetsAccessibleExplanation {
+    // D5 policy: low technical level -> at least one contrastive, example-based or counterfactual type
+    guard : self.technicalLevel.name = "LOW"
+    check : self.eContainer().explanationTypes.exists(t | t.audiences.includes(self)
+              and (t.category.name = "CONTRASTIVE" or t.category.name = "EXAMPLE_BASED" or t.category.name = "COUNTERFACTUAL"))
+    message : "Low-proficiency audience '" + self.role + "' gets no contrastive, example-based or counterfactual explanation (C4)"
+  }
+
+  constraint C4_LowAudienceNoFeatureAttribution {
+    guard : self.technicalLevel.name = "LOW"
+    check : not self.eContainer().explanationTypes.exists(t | t.audiences.includes(self) and t.category.name = "FEATURE_ATTRIBUTION")
+    message : "Low-proficiency audience '" + self.role + "' must not receive feature-attribution explanations (C4)"
+  }
+
+  constraint C4_AudienceHasBudget {
+    check : self.presentationBudget.isDefined() and self.presentationBudget.maxFacts > 0 and self.presentationBudget.maxWords >= 0
+    message : "Audience '" + self.role + "' has no valid presentation budget (maxFacts must be > 0)"
+  }
+
+  constraint C4_LowAudiencePlainLanguage {
+    guard : self.technicalLevel.name = "LOW" and self.presentationBudget.isDefined()
+    check : self.presentationBudget.plainLanguage and not self.presentationBudget.allowCodes
+    message : "Low-proficiency audience '" + self.role + "' must have a plain-language budget without codes"
+  }
+
+  critique C4_LowAudienceSmallBudget {
+    guard : self.technicalLevel.name = "LOW" and self.presentationBudget.isDefined()
+    check : self.presentationBudget.maxFacts <= 5
+    message : "Low-proficiency audience '" + self.role + "' has a budget above 5 facts"
+  }
+}
+
+context Explainability!ExplanationType {
+
+  constraint C4_TypeHasName {
+    check : self.name.isDefined() and self.name.matches("[A-Z][A-Za-z0-9]*")
+    message : "Explanation type name '" + self.name + "' must be UpperCamelCase"
+  }
+
+  constraint C4_TypeHasAudience {
+    check : self.audiences.notEmpty()
+    message : "Explanation type '" + self.name + "' serves no audience"
+  }
+
+  constraint C4_TypeHasQueryPattern {
+    check : self.queryPatterns.notEmpty()
+    message : "Explanation type '" + self.name + "' executes no query pattern (no evidence path)"
+  }
+
+  constraint C4_TypeHasTemplate {
+    check : self.template.isDefined()
+    message : "Explanation type '" + self.name + "' has no rendering template"
+  }
+
+  constraint C4_TypeAudiencesDeclaredHere {
+    check : self.audiences.forAll(a | self.eContainer().audiences.includes(a))
+    message : "Explanation type '" + self.name + "' references an audience outside its configuration"
+  }
+
+  constraint C4_CounterfactualPatternsActionable {
+    // "what could lower this risk" may only be about entities a patient or a clinician can act upon
+    guard : self.category.isDefined() and self.category.name = "COUNTERFACTUAL"
+    check : self.queryPatterns.forAll(q | q.actionableOnly)
+    message : "Counterfactual explanation type '" + self.name + "' uses query patterns that are not declared actionableOnly: " + self.queryPatterns.reject(q | q.actionableOnly).collect(q | q.name).concat(", ")
+  }
+
+  constraint C4_FeatureAttributionNeedsAttributionMethod {
+    guard : self.category.name = "FEATURE_ATTRIBUTION"
+    check : Decision!AIModelSpec.all.forAll(m | m.attributionMethod.name <> "NONE")
+    message : "Explanation type '" + self.name + "' is FEATURE_ATTRIBUTION but the AI model declares no attribution method"
+  }
+}
+
+context Explainability!ExplanationTemplate {
+
+  constraint C4_TemplateHasBody {
+    check : self.templatePattern.isDefined() and self.templatePattern.trim().length() > 0
+    message : "Explanation template '" + self.name + "' is empty"
+  }
+
+  constraint C4_TemplateRendersFacts {
+    check : self.templatePattern.indexOf("facts") >= 0
+    message : "Explanation template '" + self.name + "' never renders the KG facts (variable 'facts')"
+  }
+
+  critique C4_TemplateUsed {
+    check : self.eContainer().explanationTypes.exists(t | t.template = self)
+    message : "Explanation template '" + self.name + "' is not used by any explanation type"
+  }
+}
+
+context Decision!DecisionClass {
+
+  constraint C5_DecisionClassNamesItsOutcome {
+    check : self.predictedOutcome.isDefined() and self.predictedOutcome.trim().length() > 0
+    message : "Decision class '" + self.name + "' does not name the outcome it predicts (needed to bind $outcome in query patterns)"
+  }
+
+  constraint C5_PredictedOutcomeIsCanonical {
+    guard : self.predictedOutcome.isDefined()
+    check : self.eContainer().targetSchema.concepts.exists(c | c.canonicalEntities.exists(x | x.name.toLowerCase() = self.predictedOutcome.toLowerCase()))
+    message : "Decision class '" + self.name + "' predicts '" + self.predictedOutcome + "', which is not a canonical entity of any concept"
+  }
+
+  constraint C5_DecisionClassThresholdInRange {
+    check : self.threshold > 0.0 and self.threshold < 1.0
+    message : "Decision class '" + self.name + "' has a threshold outside (0,1)"
+  }
+
+  constraint C4_DecisionClassHasExplanationTypes {
+    check : self.explanationTypes.notEmpty()
+    message : "Decision class '" + self.name + "' is bound to no explanation type (R5: explicit explanation contract)"
+  }
+
+  constraint C4_DecisionClassCoversEveryAudience {
+    check : self.eContainer().explainability.audiences.forAll(a | self.explanationTypes.exists(t | t.audiences.includes(a)))
+    message : "Decision class '" + self.name + "' leaves at least one audience without an explanation (R6)"
+  }
+}
+
+// ---------------------------------------------------------------------------------------------
+// C5 - Traceability across packages
+// ---------------------------------------------------------------------------------------------
+context Explainability!ExplainabilityConfig {
+
+  constraint C5_HasTargetSchema {
+    check : self.targetSchema.isDefined()
+    message : "Explainability config '" + self.name + "' does not reference a target KG schema"
+  }
+
+  constraint C5_FullProvenanceAudienceHasTracePattern {
+    // R8: an audience entitled to the full chain needs a declared, schema-owned trace query
+    guard : self.audiences.exists(a | a.requiresFullProvenance)
+    check : self.traceQueryPattern.isDefined() and self.targetSchema.isDefined() and self.targetSchema.queryPatterns.includes(self.traceQueryPattern)
+    message : "Explainability config '" + self.name + "' has an audience requiring full provenance but no trace query pattern declared in the target schema"
+  }
+
+  constraint C5_TracePatternTakesFactIds {
+    guard : self.traceQueryPattern.isDefined()
+    check : self.traceQueryPattern.parameters.includes("factIds")
+    message : "Trace query pattern '" + self.traceQueryPattern.name + "' must accept the $factIds parameter used by the /trace endpoint"
+  }
+}
+
+context Explainability!ExplanationType {
+
+  constraint C5_PatternsDeclaredInTargetSchema {
+    guard : self.eContainer().targetSchema.isDefined()
+    check : self.queryPatterns.forAll(q | self.eContainer().targetSchema.queryPatterns.includes(q))
+    message : "Explanation type '" + self.name + "' uses a query pattern that is not declared in the target KG schema (C5)"
+  }
+
+  constraint C5_TemplateDeclaredHere {
+    guard : self.template.isDefined()
+    check : self.eContainer().templates.includes(self.template)
+    message : "Explanation type '" + self.name + "' uses a template outside its configuration"
+  }
+}
+
+context Decision!DecisionBindingConfig {
+
+  constraint C5_HasTargetSchema {
+    check : self.targetSchema.isDefined()
+    message : "Decision bindings '" + self.name + "' do not reference a target KG schema"
+  }
+
+  constraint C5_HasAiModel {
+    check : self.aiModel.isDefined()
+    message : "Decision bindings '" + self.name + "' declare no AI model"
+  }
+
+  constraint C5_HasDecisionClass {
+    check : self.decisionClasses.notEmpty()
+    message : "Decision bindings '" + self.name + "' declare no decision class"
+  }
+
+  constraint C5_UniqueFeatureBindings {
+    check : self.featureBindings.collect(b | b.featureName).asSet().size() = self.featureBindings.size()
+    message : "Decision bindings '" + self.name + "' bind the same feature twice"
+  }
+
+  constraint C5_AllConfigsShareOneSchema {
+    // the single source of schema truth (R1): pipeline, policy, explainability and decisions must
+    // all point at the same KGSchemaDefinition object
+    check : Pipeline!LLMPipelineConfig.all.forAll(p | p.targetSchema = self.targetSchema)
+        and Policy!ValidationConfig.all.forAll(v | v.targetSchema = self.targetSchema)
+        and self.explainability.targetSchema = self.targetSchema
+    message : "Not all M1 models reference the same KG schema (R1 single source of truth)"
+  }
+
+  constraint C5_DecisionTypesDeclaredInExplainability {
+    check : self.decisionClasses.forAll(d | d.explanationTypes.forAll(t | self.explainability.explanationTypes.includes(t)))
+    message : "Decision bindings '" + self.name + "' reference an explanation type outside the linked explainability configuration"
+  }
+}
+
+context Decision!AIModelSpec {
+
+  constraint C5_ModelHasFeatures {
+    check : self.featureNames.notEmpty()
+    message : "AI model '" + self.name + "' lists no feature; nothing can be grounded"
+  }
+
+  constraint C5_ModelHasVersion {
+    check : self.version.isDefined() and self.version.trim().length() > 0
+    message : "AI model '" + self.name + "' has no version (needed in every provenance record)"
+  }
+
+  critique C5_AllFeaturesBound {
+    check : self.featureNames.forAll(f | self.eContainer().featureBindings.exists(b | b.featureName = f))
+    message : "AI model '" + self.name + "': some features have no KG binding and cannot be grounded in explanations"
+  }
+}
+
+context Decision!FeatureBinding {
+
+  constraint C5_BoundEntityIsCanonical {
+    // the bridge between the model's features and the KG is explicit: a bound entity must be a declared
+    // canonical entity of its concept, otherwise explanations could silently find nothing
+    guard : self.entityName.isDefined() and self.concept.isDefined()
+    check : self.concept.canonicalEntities.exists(c | c.name.toLowerCase() = self.entityName.toLowerCase())
+    message : "Feature binding '" + self.featureName + "' points to '" + self.entityName + "', which is not a canonical entity of concept '" + self.concept.name + "'"
+  }
+
+  constraint C5_BindingFeatureExistsInModel {
+    check : self.eContainer().aiModel.featureNames.includes(self.featureName)
+    message : "Feature binding '" + self.featureName + "' refers to a feature the AI model does not use"
+  }
+
+  constraint C5_BindingConceptDeclaredInSchema {
+    guard : self.eContainer().targetSchema.isDefined()
+    check : self.concept.isDefined() and self.eContainer().targetSchema.concepts.includes(self.concept)
+    message : "Feature binding '" + self.featureName + "' points to a concept that is not in the target KG schema"
+  }
+
+  constraint C5_BindingHasResolution {
+    check : ((self.kind.name = "ENTITY" or self.kind.name = "RISK_FACTOR") and self.entityName.isDefined() and self.entityName.trim().length() > 0)
+         or ((self.kind.name = "LAB_LEVEL" or self.kind.name = "ICD9_GROUP") and self.valueMap.isDefined() and self.valueMap.trim().startsWith("{"))
+    message : "Feature binding '" + self.featureName + "' has no resolution (entityName for ENTITY/RISK_FACTOR, JSON valueMap for LAB_LEVEL/ICD9_GROUP)"
+  }
+}

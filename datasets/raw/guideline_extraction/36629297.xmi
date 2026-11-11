@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/36629297.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/36629297/" sourceSha256="fecf1917844773b39411b1eee12205475aaa474f0935d4089596b63558b6ad12" sourceText="# PubMed 36629297: In-hospital management of type 2 diabetes in Denmark is inconsistent with international guidelines.&#10;&#10;Danish medical journal (2022)&#10;&#10;INTRODUCTION: Insulin is the preferred treatment for hyperglycaemia in hospitalised patients with type 2 diabetes mellitus (T2DM). However, which insulin regimen to prefer is debated. We described Danish regional guidelines on the management of non-critically ill hospitalised patients with T2DM and compared them with international guidelines.&#10;&#10;METHODS: The Danish regional guidelines have been obtained via Danish regional web portals and by request to the regions. The guidelines were reviewed independently by the authors of this article to ensure uniformity in the interpretation of their contents.&#10;&#10;RESULTS: The recommended treatment of in-hospital hyperglycaemia is sliding scale insulin (SSI) in all five Danish regions. Insulin dosing by SSI is adjusted to bodyweight in two of the five regions. The recommended number of daily glucose point-of-care tests ranges from 4-8 to reach glucose levels of 5-10 mmol/l (90-180 mg/dl). In all regions, continuation of out-hospital insulin and non-insulin antidiabetic drugs is recommended; however, the latter is paused on wide indications.&#10;&#10;CONCLUSIONS: In-hospital hyperglycaemia for non-critically ill hospitalised patients with T2DM is treated by SSI, based on short-acting insulin, in all five Danish regions. International guidelines recommend a basal-bolus or basal-plus regimen based on both short- and long-acting insulin for most hospitalised non-critically ill patients with diabetes and discourage SSI. Danish regions should consider replacing SSI with a basal-bolus or basal-plus regimen.&#10;&#10;FUNDING: none.&#10;&#10;TRIAL REGISTRATION: not relevant.&#10;" extractionTask="guideline_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="guideline_extraction@9a20634981a4" promptHash="9a20634981a4d5610008f111dfa602adaad743c48baa8bd5b7384c8b98fb8af1" extractionTimestamp="2026-11-01T18:59:25+00:00" xmi:version="2.0">
+  <chunks charEnd="1754"/>
+  <entities type="Condition" id="type-2-diabetes-mellitus" mention="type 2 diabetes mellitus (T2DM)" confidence="0.95" sourceSpanStart="249" sourceSpanEnd="280">
+    <properties key="name" value="type 2 diabetes mellitus"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hyperglycaemia" mention="hyperglycaemia" confidence="0.95" sourceSpanStart="806" sourceSpanEnd="820">
+    <properties key="name" value="hyperglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Drug" id="insulin" mention="Insulin" confidence="0.95" sourceSpanStart="838" sourceSpanEnd="845">
+    <properties key="name" value="insulin"/>
+    <properties key="drugClass" value="insulin"/>
+  </entities>
+</raw:RawExtractionResult>

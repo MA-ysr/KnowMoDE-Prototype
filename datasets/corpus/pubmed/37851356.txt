@@ -1,0 +1,11 @@
+# PubMed 37851356: Impact of Guideline-Directed Statin Intervention for Primary Prevention in Patients With Diabetes.
+
+Diabetes care (2023), doi:10.2337/dc23-0816
+
+OBJECTIVE: We examined guideline-directed statin intensity (GDSI) use and atherosclerotic cardiovascular disease (ASCVD) outcomes in patients with diabetes across a contemporary health care system.
+
+RESEARCH DESIGN AND METHODS: Patients without preexisting ASCVD were categorized by diabetes status and 10-year ASCVD risk (borderline [5-7.4%], intermediate [7.5-19.9%], high [≥20%]). Mean ±SD time to start of or change to GDSI was calculated. Incident ASCVD and all-cause mortality association, stratified by ASCVD risk, was calculated using Cox regression.
+
+RESULTS: Among 282,298 patients, 28,807 (10.2%) had diabetes and 253,491 (89.8%) did not. Only two-thirds of intermediate- and high-risk patients with diabetes were receiving GDSI therapy at 5-year follow-up. In fully adjusted models, patients with diabetes not taking a statin (vs. GDSI) had a significantly higher risk of stroke and mortality in the intermediate- and high-risk groups (hazard ratio for mortality 1.81 [95% CI 1.58-2.07] vs. 1.41 [1.26-1.57]; P for interaction < 0.01).
+
+CONCLUSIONS: Significant gaps remain in GDSI use for high-risk patients with diabetes, conferring an increased risk of ASCVD outcomes and all-cause mortality.

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/37778931.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/37778931/" sourceSha256="24dcadb53446abdf8964aa16adc458acac2744eba3b75b8db1cd631d7c788797" sourceText="# PubMed 37778931: Importance of Frailty in Kidney Transplant Recipients.&#10;&#10;Transplantation proceedings (2023), doi:10.1016/j.transproceed.2023.08.028&#10;&#10;BACKGROUND: Frailty is a persistent chronic inflammatory syndrome present in many patients with chronic kidney disease. After kidney transplant (KT), it has been associated with complications such as delayed graft function, hospital readmission, or poorer KT survival.&#10;&#10;PURPOSE: To assess the impact of frailty on the results of KT.&#10;&#10;METHODS: Longitudinal prospective study of 65 patients included on the waiting list (WL) between October 2019 and October 2021. We used the FRAIL scale and recorded clinical characteristics, including demographic, dependency scales, and analytical parameters at the moment of the inclusion on the WL and at months 3 and 12 after KT.&#10;&#10;RESULTS: The mean age was 58 years old, and 70% of KT were men. The comorbidity burden was 26% diabetes, 83% hypertension, and 12% ischemic heart disease. Forty patients (61.5%) presented ≥1 point on the FRAIL scale, and 25 (38.4%) were robust. Frail patients (FRAIL score≥3) had a higher Charlson comorbidity index at the time of KT, a lower Barthel index, and a lower quality of life measured by KDQOL-36. No significant differences were observed in other variables, such as days of admission, surgical complications, or delayed graft function. There were 3 graft losses censored for death and 4 deaths, all in frail or prefrail patients. These patients had lower graft survival (P = .164) and patient survival (P = .096). At 12 months post KT, frailty improved in 67% of patients evaluated.&#10;&#10;CONCLUSION: Frailty is a common condition among patients on the WL, leading to poorer quality of life, greater dependency, and a higher risk of graft loss and mortality. Frailty conditions can be reversed in many patients after KT.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:42:05+00:00" xmi:version="2.0">
+  <chunks charEnd="1846"/>
+  <entities type="Condition" id="chronic-kidney-disease" mention="chronic kidney disease" confidence="0.95" sourceSpanStart="247" sourceSpanEnd="269">
+    <properties key="name" value="chronic kidney disease"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="RiskFactor" id="frailty" mention="frailty" confidence="0.98" sourceSpanStart="454" sourceSpanEnd="461">
+    <properties key="name" value="frailty"/>
+    <properties key="description" value="A persistent chronic inflammatory syndrome present in many patients with chronic kidney disease."/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission" mention="hospital readmission" confidence="0.95" sourceSpanStart="375" sourceSpanEnd="395">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="Condition" id="diabetes" mention="diabetes" confidence="0.95" sourceSpanStart="914" sourceSpanEnd="922">
+    <properties key="name" value="diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypertension" mention="hypertension" confidence="0.95" sourceSpanStart="928" sourceSpanEnd="940">
+    <properties key="name" value="hypertension"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <entities type="Condition" id="ischemic-heart-disease" mention="ischemic heart disease" confidence="0.95" sourceSpanStart="950" sourceSpanEnd="972">
+    <properties key="name" value="ischemic heart disease"/>
+    <properties key="category" value="circulatory"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="RiskFactor" sourceId="frailty" targetType="ClinicalOutcome" targetId="hospital-readmission" confidence="0.9" evidence="After kidney transplant (KT), it has been associated with complications such as delayed graft function, hospital readmission, or poorer KT survival." sourceSpanStart="271" sourceSpanEnd="419"/>
+</raw:RawExtractionResult>

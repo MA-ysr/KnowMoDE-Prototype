@@ -1,0 +1,5 @@
+# PubMed 37126811: KDIGO provided recommendations on SGLT2 inhibitors and nonsteroidal MRAs in patients with diabetes and CKD.
+
+Annals of internal medicine (2023), doi:10.7326/J23-0023
+
+Navaneethan SD, Zoungas S, Caramori ML, et al. Diabetes management in chronic kidney disease: synopsis of the KDIGO 2022 clinical practice guideline update. Ann Intern Med. 2023;176:381-387. 36623286.

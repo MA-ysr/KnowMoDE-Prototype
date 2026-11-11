@@ -1,0 +1,13 @@
+{
+  "audiences": ["patient", "clinician", "quality_officer", "auditor"],
+  "explanationTypes": ["PlainLanguageContrast", "CausalEvidence", "ModifiableFactors", "GuidelineCompliance", "AttributionReport"],
+  "matrix": {
+"patient": {"PlainLanguageContrast": true, "CausalEvidence": false, "ModifiableFactors": true, "GuidelineCompliance": false, "AttributionReport": false}
+,"clinician": {"PlainLanguageContrast": false, "CausalEvidence": true, "ModifiableFactors": true, "GuidelineCompliance": false, "AttributionReport": true}
+,"quality_officer": {"PlainLanguageContrast": false, "CausalEvidence": true, "ModifiableFactors": true, "GuidelineCompliance": true, "AttributionReport": false}
+,"auditor": {"PlainLanguageContrast": false, "CausalEvidence": false, "ModifiableFactors": false, "GuidelineCompliance": true, "AttributionReport": true}
+  },
+  "endpointsPerAudience": {"patient": 2, "clinician": 3, "quality_officer": 3, "auditor": 3},
+  "totalEndpoints": 11,
+  "uncoveredAudiences": []
+}

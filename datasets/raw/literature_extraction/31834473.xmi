@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/31834473.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/31834473/" sourceSha256="639e3a29436c00c86a3c3e4a2ab455d294e966dc042992c321bf20cc86e6302e" sourceText="# PubMed 31834473: Discharge destination following rectal cancer resection: an analysis of preoperative and intraoperative factors.&#10;&#10;International journal of colorectal disease (2020), doi:10.1007/s00384-019-03487-9&#10;&#10;PURPOSE: Rectal cancer resections can be associated with long and complicated postoperative recoveries. Many patients undergoing these operations are discharged to rehabilitation or skilled nursing facilities. The purpose of this study was to identify preoperative and intraoperative factors associated with increased risk for non-home discharge after rectal cancer resection.&#10;&#10;METHODS: Rectal cancer resections were identified in the National Surgical Quality Improvement Program Targeted Proctectomy Dataset (years 2016 through 2017) by ICD code. Patients with unknown discharge destination or who experienced in-hospital mortality were excluded. Univariate and multivariate logistic regression analyses were performed to identify preoperative and intraoperative variables associated with non-home discharge destination. Multiple imputation was used to account for missing values.&#10;&#10;RESULTS: Among the 3637 patients comprising the study sample, 292 (8.0%) patients were discharged to rehabilitation, skilled care, or acute care facilities. Preoperative factors associated with non-home discharge on multivariate analysis included older age, non-independent functional status, insulin-dependent diabetes, and hypoalbuminemia (all p &lt; 0.05). Having received neoadjuvant chemotherapy was associated with home discharge (OR 0.625, 95% CI 0.427-0.914, p = 0.015). Intraoperative factors associated with non-home discharge on multivariate analysis were concurrent cystectomy (p = 0.004) and myocutaneous flap reconstruction (p &lt; 0.001). Patients discharged to non-home facilities had longer initial lengths of stay (14.1 versus 7.0 days, p &lt; 0.001) and higher reoperation rates (12.7 versus 5.0%, p &lt; 0.001), but similar readmission rates (14.7 versus 15.0%, p = 1.0).&#10;&#10;CONCLUSION: Several preoperative and intraoperative factors are associated with increased risk for non-home discharge after rectal cancer resection. These data can aid in perioperative planning and discharge optimization.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:37:20+00:00" xmi:version="2.0">
+  <chunks charEnd="2204"/>
+  <entities type="Condition" id="insulin-dependent-diabetes" mention="insulin-dependent diabetes" confidence="0.95" sourceSpanStart="1394" sourceSpanEnd="1420">
+    <properties key="name" value="insulin-dependent diabetes"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="RiskFactor" id="older-age" mention="older age" confidence="0.9" sourceSpanStart="1348" sourceSpanEnd="1357">
+    <properties key="name" value="older age"/>
+    <properties key="description" value="advanced patient age"/>
+  </entities>
+  <entities type="RiskFactor" id="non-independent-functional-status" mention="non-independent functional status" confidence="0.9" sourceSpanStart="1359" sourceSpanEnd="1392">
+    <properties key="name" value="non-independent functional status"/>
+    <properties key="description" value="patient lacks independent functional status"/>
+  </entities>
+  <entities type="RiskFactor" id="hypoalbuminemia" mention="hypoalbuminemia" confidence="0.9" sourceSpanStart="1426" sourceSpanEnd="1441">
+    <properties key="name" value="hypoalbuminemia"/>
+    <properties key="description" value="low serum albumin levels"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="non-home-discharge" mention="non-home discharge" confidence="0.95" sourceSpanStart="1616" sourceSpanEnd="1634">
+    <properties key="name" value="non-home discharge"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="insulin-dependent-diabetes" targetType="ClinicalOutcome" targetId="non-home-discharge" confidence="0.95" evidence="Preoperative factors associated with non-home discharge on multivariate analysis included older age, non-independent functional status, insulin-dependent diabetes, and hypoalbuminemia (all p &lt; 0.05)." sourceSpanStart="989" sourceSpanEnd="1118"/>
+</raw:RawExtractionResult>

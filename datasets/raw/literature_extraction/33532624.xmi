@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/33532624.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/33532624/" sourceSha256="ec47c1b7336063106ebadfb46d51db55da866d1a05c7ae81825c193fcee8aa3e" sourceText="# PubMed 33532624: The impact of diabetology consultations on length of stay in hospitalized patients with diabetes.&#10;&#10;Endocrinology, diabetes &amp; metabolism (2021), doi:10.1002/edm2.199&#10;&#10;INTRODUCTION: Both hyperglycaemia and hypoglycaemia in hospitalized patients have been shown to be associated with a longer length of stay, higher readmission rates, and higher rates of morbidity and mortality. With 25%-30% of all hospitalized patients carrying a diagnosis of diabetes, it is important to optimize glycaemic control. Current guidelines for care of inpatients with diabetes now suggest consulting a specialized diabetes team for all patients when possible.&#10;&#10;AIM: This study was a retrospective cohort study to evaluate the impact of an inpatient diabetology consult within 48 hours of admission on patients' length of stay.&#10;&#10;METHODS: All patients admitted to the general medicine service between 2013 and 2018 with a diagnosis of diabetes in their medical record were included, which consisted of 11 477 inpatient stays. We looked at the effect of an inpatient diabetology consultation within the first 48 hours on length of stay, complications and 30-day readmission rates.&#10;&#10;RESULTS: We found that patients whose care included a diabetology consult within 48 hours of admission had a statistically significant shorter length of stay by 1.56 days compared to the remainder of the group. There was no difference in complications or 30-day readmission rates between the groups.&#10;&#10;CONCLUSION: Among general medicine patients with a diagnosis of diabetes, timely diabetology consultations reduced patients' length of stay and have the potential to improve their care and lessen the economic impact.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.5-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T12:40:32+00:00" xmi:version="2.0">
+  <chunks charEnd="1695"/>
+  <entities type="Condition" id="hyperglycaemia" mention="hyperglycaemia" confidence="0.95" sourceSpanStart="204" sourceSpanEnd="218">
+    <properties key="name" value="hyperglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="Condition" id="hypoglycaemia" mention="hypoglycaemia" confidence="0.95" sourceSpanStart="223" sourceSpanEnd="236">
+    <properties key="name" value="hypoglycaemia"/>
+    <properties key="category" value="metabolic"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="higher-readmission-rates" mention="higher readmission rates" confidence="0.9" sourceSpanStart="325" sourceSpanEnd="349">
+    <properties key="name" value="hospital readmission"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="hospital-readmission-within-30-days" mention="30-day readmission rates" confidence="0.95" sourceSpanStart="1150" sourceSpanEnd="1174">
+    <properties key="name" value="hospital readmission within 30 days"/>
+    <properties key="timeWindow" value="30 days"/>
+  </entities>
+  <entities type="RiskFactor" id="diabetology-consult" mention="diabetology consult within 48 hours of admission" confidence="0.95" sourceSpanStart="1231" sourceSpanEnd="1279">
+    <properties key="name" value="diabetology consultation within 48 hours of admission"/>
+    <properties key="description" value="patient received an inpatient diabetology consultation within 48 hours of admission"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hyperglycaemia" targetType="ClinicalOutcome" targetId="higher-readmission-rates" confidence="0.85" evidence="Both hyperglycaemia and hypoglycaemia in hospitalized patients have been shown to be associated with a longer length of stay, higher readmission rates, and higher rates of morbidity and mortality." sourceSpanStart="199" sourceSpanEnd="395"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="hypoglycaemia" targetType="ClinicalOutcome" targetId="higher-readmission-rates" confidence="0.85" evidence="Both hyperglycaemia and hypoglycaemia in hospitalized patients have been shown to be associated with a longer length of stay, higher readmission rates, and higher rates of morbidity and mortality." sourceSpanStart="199" sourceSpanEnd="395"/>
+</raw:RawExtractionResult>

@@ -1,0 +1,11 @@
+# PubMed 34632532: Influence of Pre-operative HbA1c on Bariatric Surgery Outcomes-the Sunderland (UK) Experience.
+
+Obesity surgery (2022), doi:10.1007/s11695-021-05741-y
+
+PURPOSE: UK guidelines recommend an HbA1c < 8.5% prior to elective surgery. Optimisation of pre-operative glycaemic control can be often difficult. Aim to correlate the effect of pre-operative HbA1c on the peri-operative complication rates and whether elective bariatric surgery should be delayed in poorly controlled diabetics.
+
+MATERIAL AND METHODS: Retrospective data of consecutive patients who underwent laparoscopic Roux-en-Y gastric bypass, one-anastomosis gastric bypass and laparoscopic sleeve gastrectomy during January 2014 and April 2018. Patients were categorised into group 1, non-diabetics with an HbA1c < 6.5%; group 2, well-controlled diabetics with HbA1c between 6.5 and 8.4%; and group 3, poorly controlled diabetics with HbA1c ≥ 8.5%. Primary outcome was peri-operative complication rates.
+
+RESULTS: Group 1 (n = 978), 81.8% female, median (i.q.r.) age 44.0 (34-52) years, median (i.q.r.) BMI 42.0 (38.7-46.7); group 2 (n = 350), 66.3% female, age 51.0 (45-59) years, BMI 41.8 (37.5-46.5); and group 3 (n = 90), 60% female, age 52.0 (45-56) years and BMI 41.4(36.9-44.8). Early complication rates in each group were low, 1.0% vs 1.7% vs 1.1% (p = 0.592). Mean length of stay was 2 days across the groups (p > 0.05). There was no difference in 30-day re-admission rates between groups 2.8%, 2.9% and 3.3% (p = 0.983). At 6 months and 1 year, there was sustained and equal reduction in HbA1c in all groups (p < 0.05).
+
+CONCLUSION: Patients undergoing metabolic surgery for poorly controlled diabetes achieve non-inferior peri-operative outcomes. Hence, delaying metabolic surgery in an attempt to optimise diabetic control is not justifiable.

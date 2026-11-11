@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<raw:RawExtractionResult xmlns:xmi="http://www.omg.org/XMI" xmlns:raw="http://www.xaikg.org/1.0/raw" sourceDocument="pubmed/39019470.txt" sourceUri="https://pubmed.ncbi.nlm.nih.gov/39019470/" sourceSha256="e6144f52f4a46302033e926869c4738b8062a9a95739bddd289e451e620e3ddf" sourceText="# PubMed 39019470: Total Knee Arthroplasty in Patients with Cerebral Palsy: A Large Database Analysis.&#10;&#10;The journal of knee surgery (2024), doi:10.1055/a-2368-4807&#10;&#10;Cerebral palsy (CP) is a neurodevelopmental condition that can result in altered gait biomechanics, joint dysfunction, and imbalance. The complications associated with total knee arthroplasty (TKA) in patients with CP have not yet been well described. Therefore, our analysis sought to compare the 90-day and 2-year complications following TKA in patients with and without CP. The PearlDiver Mariner database was utilized to identify patients with CP undergoing primary TKA between 2010 and 2020. This cohort was matched 1:4 to a control cohort without neurodegenerative disorders based on age, sex, Elixhauser Comorbidity Index (ECI), tobacco use, obesity, and diabetes. A total of 3,257 patients (657 CP patients 2,600 controls) were included in our final analysis. A multivariable logistic regression analysis was utilized to determine the risk of CP on medical and surgical complications at 90 days and all-cause revision rates at 2 years. Patients with CP had an increased risk of acute kidney injury (odds ratio [OR]: 1.66; 95% confidence interval [CI]: 1.07-2.5; p = 0.019), pneumonia (OR: 5.63; 95% CI: 3.69-8.67; p &lt; 0.001), urinary tract infection (OR: 5.01; 95% CI: 3.85-6.52; p &lt; 0.001), and transfusion (OR: 2.21; 95% CI: 1.50-3.23; p &lt; 0.001). CP patients additionally had a higher incidence of emergency department (ED) visits (OR: 5.24; 95% CI: 3.76-7.32; p &lt; 0.001) and readmissions (OR: 5.24; 95% CI: 2.57-4.96; p &lt; 0.001). There were no differences in rates of periprosthetic joint infection (PJI; OR: 1.23; 95% CI: 0.69-2.10; p = 0.463), surgical site infection (SSI; OR: 0.51; 95% CI: 0.12-1.46; p = 0.463), and reoperation (OR: 1.35; 95% CI: 0.71-2.43; p = 0.339) at 90 days postoperatively. The all-cause revision rates at 2 years were comparable (OR: 1.02; 95% CI: 0.67-1.51; p = 0.927). In this database review, we found that CP patients have a higher risk of medical complications in the acute postoperative period following TKA. The 90-day surgical complication and 2-year revision rates in CP patients were comparable to matched controls.&#10;" extractionTask="literature_extraction" llmModel="gemini/gemini-3.1-flash-lite" promptId="literature_extraction@9b00038fb5d2" promptHash="9b00038fb5d29957f1a4c7b2ee263124e8e3f36ea91607373a2d87988fc5b5cb" extractionTimestamp="2026-10-15T14:44:39+00:00" xmi:version="2.0">
+  <chunks charEnd="2232"/>
+  <entities type="Condition" id="cerebral-palsy" mention="Cerebral palsy" confidence="1.0" sourceSpanStart="60" sourceSpanEnd="74">
+    <properties key="name" value="cerebral palsy"/>
+    <properties key="category" value="neurodevelopmental"/>
+  </entities>
+  <entities type="Condition" id="acute-kidney-injury" mention="acute kidney injury" confidence="1.0" sourceSpanStart="1151" sourceSpanEnd="1170">
+    <properties key="name" value="acute kidney injury"/>
+    <properties key="category" value="renal"/>
+  </entities>
+  <entities type="Condition" id="pneumonia" mention="pneumonia" confidence="1.0" sourceSpanStart="1247" sourceSpanEnd="1256">
+    <properties key="name" value="pneumonia"/>
+    <properties key="category" value="respiratory"/>
+  </entities>
+  <entities type="Condition" id="urinary-tract-infection" mention="urinary tract infection" confidence="1.0" sourceSpanStart="1299" sourceSpanEnd="1322">
+    <properties key="name" value="urinary tract infection"/>
+    <properties key="category" value="infectious"/>
+  </entities>
+  <entities type="RiskFactor" id="transfusion" mention="transfusion" confidence="0.95" sourceSpanStart="1369" sourceSpanEnd="1380">
+    <properties key="name" value="transfusion"/>
+    <properties key="description" value="blood transfusion"/>
+  </entities>
+  <entities type="ClinicalOutcome" id="readmissions" mention="readmissions" confidence="0.95" sourceSpanStart="1552" sourceSpanEnd="1564">
+    <properties key="name" value="readmissions"/>
+    <properties key="timeWindow" value="90 days"/>
+  </entities>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-palsy" targetType="Condition" targetId="acute-kidney-injury" confidence="1.0" evidence="Patients with CP had an increased risk of acute kidney injury (odds ratio [OR]: 1.66; 95% confidence interval [CI]: 1.07-2.5; p = 0.019)" sourceSpanStart="1109" sourceSpanEnd="1245"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-palsy" targetType="Condition" targetId="pneumonia" confidence="1.0" evidence="Patients with CP had an increased risk of ... pneumonia (OR: 5.63; 95% CI: 3.69-8.67; p &lt; 0.001)" sourceSpanStart="837" sourceSpanEnd="991"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-palsy" targetType="Condition" targetId="urinary-tract-infection" confidence="1.0" evidence="Patients with CP had an increased risk of ... urinary tract infection (OR: 5.01; 95% CI: 3.85-6.52; p &lt; 0.001)" sourceSpanStart="837" sourceSpanEnd="1052"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-palsy" targetType="RiskFactor" targetId="transfusion" confidence="1.0" evidence="Patients with CP had an increased risk of ... and transfusion (OR: 2.21; 95% CI: 1.50-3.23; p &lt; 0.001)." sourceSpanStart="837" sourceSpanEnd="1110"/>
+  <relations type="INCREASES_RISK_OF" sourceType="Condition" sourceId="cerebral-palsy" targetType="ClinicalOutcome" targetId="readmissions" confidence="1.0" evidence="CP patients additionally had a higher incidence of ... readmissions (OR: 5.24; 95% CI: 2.57-4.96; p &lt; 0.001)." sourceSpanStart="1111" sourceSpanEnd="1245"/>
+</raw:RawExtractionResult>

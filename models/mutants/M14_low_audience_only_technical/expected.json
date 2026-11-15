@@ -3,5 +3,5 @@
   "family": "C4",
   "expectedConstraint": "C4_LowAudienceGetsAccessibleExplanation",
   "mutatedFile": "explainability.xmi",
-  "description": "patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there"
+  "description": "patient removed from PlainLanguageContrast and ModifiableFactors, so it receives no plain-language explanation"
 }

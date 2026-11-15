@@ -3,5 +3,5 @@
   "family": "C4",
   "expectedConstraint": "C4_AudienceCovered",
   "mutatedFile": "explainability.xmi",
-  "description": "auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there"
+  "description": "auditor removed from GuidelineCompliance and AttributionReport, its only two explanation types"
 }

@@ -10,23 +10,7 @@ prompts, the validator, the loader and the explanation service. The case study e
 diabetes** to four audiences (patient, clinician, quality officer, auditor), with a knowledge graph built by an LLM from 433 public
 documents.
 
-Everything needed to inspect and re-run the evaluation is committed: models, generated artifacts, datasets, the LLM response cache
-and all results. **The experiments can be re-run without network access and without an LLM key** ([docs/reproduce.md](docs/reproduce.md)).
-
-## From the paper to the repository
-
-| Paper | In this repository | Documentation |
-|---|---|---|
-| Section 3 — requirements R1–R8 | how each requirement is realized and evaluated | [framework.md](docs/framework.md#requirements-r1r8) |
-| Section 4.1 — architecture (Fig. 1) and the six phases (Fig. 2) | the four layers: [`xaikg-mde/metamodels/`](xaikg-mde/metamodels/) (M2), [`models/`](models/) (M1), [`generated/`](generated/) and [`xaikg-pipeline/`](xaikg-pipeline/) (M0) | [framework.md](docs/framework.md) |
-| Section 4.2 — Phase 1, modeling the pipeline (Fig. 3) | metamodel [`xaikg.ecore`](xaikg-mde/metamodels/xaikg.ecore); the five case-study models [`models/diabetes-readmission/`](models/diabetes-readmission/) | [metamodel.md](docs/metamodel.md), [models.md](docs/models.md) |
-| Section 4.3 — Phase 2, verifying the models | constraint layer [`xaikg.evl`](xaikg-mde/constraints/xaikg.evl) (113 invariants, C1–C5) | [constraints.md](docs/constraints.md) |
-| Section 4.4 — Phase 3, generating the pipeline | transformations [`xaikg-mde/transformations/`](xaikg-mde/transformations/) → [`generated/`](generated/) | [transformations.md](docs/transformations.md) |
-| Section 4.5 — Phase 4, building the knowledge graph | extraction [`xaikg/llm/`](xaikg-pipeline/xaikg/llm/), validated KG [`generated/validated/`](generated/validated/), loader [`load.cypher`](generated/load.cypher), [`datasets/`](datasets/) | [kg-construction.md](docs/kg-construction.md), [datasets.md](docs/datasets.md) |
-| Section 4.6 — Phase 5, explaining decisions | generated service [`generated/service/`](generated/service/), runtime [`xaikg/explain/`](xaikg-pipeline/xaikg/explain/) | [runtime.md](docs/runtime.md) |
-| Section 4.7 — Phase 6, evolving and auditing | the make targets; fingerprints in every generated file; [explanation log](results/explanations/explanations.jsonl) | [framework.md](docs/framework.md#phase-6-in-practice) |
-| Section 5 — evaluation (E1–E6) | [`results/`](results/), [`xaikg/eval/`](xaikg-pipeline/xaikg/eval/), [`tools/`](xaikg-pipeline/tools/) | [experiments.md](docs/experiments.md) |
-| Artifact availability | this repository | [reproduce.md](docs/reproduce.md) |
+This repository contains the models, generated artifacts, datasets, the LLM response cache and all results. **The experiments can be re-run offline, without an LLM key.**
 
 ## Repository structure
 
@@ -38,12 +22,12 @@ and all results. **The experiments can be re-run without network access and with
 ├── compose.yaml                  Neo4j 5 Community (graph database), bound to 127.0.0.1
 ├── .env.example                  template for .env (NEO4J_PASSWORD; GEMINI_API_KEY only for live LLM runs)
 ├── docs/                         documentation (see the index below) and figures
-├── xaikg-mde/                    PROJECT 1 (Java): metamodels, constraint layer, transformations, CLI
+├── xaikg-mde/                    ava project: metamodels, constraint layer, transformations, CLI
 │   ├── metamodels/               xaikg.ecore (5 packages) + graphschema, rawextraction, validatedkg
 │   ├── constraints/xaikg.evl     constraint layer C1–C5
 │   ├── transformations/          T1–T6 (ETL, EGL, EGX)
 │   └── src/                      Java CLI (main) and acceptance tests (test)
-├── xaikg-pipeline/               PROJECT 2 (Python): runtime kernel, data acquisition, predictor, experiments
+├── xaikg-pipeline/               Python project: runtime kernel, data acquisition, predictor, experiments
 │   ├── xaikg/                    package: cli, corpus/, llm/, kg/, ml/, explain/, eval/, mde_bridge.py
 │   ├── tools/                    E0, E1 and E2 runners, mutant generator
 │   └── tests/                    offline tests
@@ -57,7 +41,7 @@ and all results. **The experiments can be re-run without network access and with
 
 ## The two projects
 
-| | [`xaikg-mde`](xaikg-mde/) — the model-driven side | [`xaikg-pipeline`](xaikg-pipeline/) — the runtime kernel |
+| | [`xaikg-mde`](xaikg-mde/): the model-driven side | [`xaikg-pipeline`](xaikg-pipeline/): the runtime kernel |
 |---|---|---|
 | Role | everything model-driven: metamodels (M2), constraint layer, transformations T1–T6; never calls an LLM or a database | model-independent kernel: LLM client and extractor, graph loading, predictor, explanation runtime; data acquisition; experiments |
 | Language | Java 17 | Python 3.12 |

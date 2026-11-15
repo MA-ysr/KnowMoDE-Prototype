@@ -1,4 +1,4 @@
-# xaikg-mde — the model-driven side of KnowMoDE
+# xaikg-mde: the model-driven side of KnowMoDE
 
 Java 17 project (Maven) that contains everything model-driven: the metamodels (M2), the constraint layer and the transformations, executed by Eclipse Epsilon from a standalone command-line tool. It never calls an LLM or a database.
 

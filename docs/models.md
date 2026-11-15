@@ -1,4 +1,4 @@
-# Phase 1 — The five models of the case study (M1)
+# The case-study models
 
 The case study explains **30-day readmission risk for patients with diabetes** to four audiences (paper, Section 5.1). Its five models are in [`models/diabetes-readmission/`](../models/diabetes-readmission/); each conforms to one package of the [XAI-KG metamodel](metamodel.md) and is written by one role.
 
@@ -12,15 +12,15 @@ The case study explains **30-day readmission risk for patients with diabetes** t
 
 ## KG Schema
 
-| Concept | Canonical entities (modifiable) | Relations (as source) |
-|---|---|---|
-| Drug | 16 (16) | `TREATS`, `MAY_CAUSE`, `CONTRAINDICATED_IN` a Condition; `INTERACTS_WITH` a Drug; `BELONGS_TO_CLASS` |
-| DrugClass | – | – |
-| Condition | 14 | `INCREASES_RISK_OF` an outcome |
-| LabTest | 6 | `INDICATES` a Condition |
-| RiskFactor | 28 (15) | `INCREASES_RISK_OF`, `REDUCES_RISK_OF` an outcome |
-| ClinicalOutcome | 3 | – |
-| Recommendation | – | `APPLIES_TO` a Condition; `RECOMMENDS` a LabTest, Drug or RiskFactor |
+| Concept | Represents | Canonical entities (modifiable) | Relations (as source) |
+|---|---|---|---|
+| Drug | medication, by generic name | 16 (16) | `TREATS`, `MAY_CAUSE`, `CONTRAINDICATED_IN` a Condition; `INTERACTS_WITH` a Drug; `BELONGS_TO_CLASS` |
+| DrugClass | pharmacological class | – | – |
+| Condition | disease or clinical state, ICD-9 range | 14 | `INCREASES_RISK_OF` an outcome |
+| LabTest | test with abnormal level  | 6 | `INDICATES` a Condition |
+| RiskFactor | patient or care-process characteristic | 28 (15) | `INCREASES_RISK_OF`, `REDUCES_RISK_OF` an outcome |
+| ClinicalOutcome | outcome with time window | 3 | – |
+| Recommendation | guideline statement, issuer, strength | – | `APPLIES_TO` a Condition; `RECOMMENDS` a LabTest, Drug or RiskFactor |
 
 The 31 modifiable entities are the 16 medications and 15 care-process factors such as polypharmacy or transitional care. Modifiability is **declared** by domain experts, not extracted. The query patterns `counterfactual_recommendations` and `protective_factors` are marked `actionableOnly`, so they may only return modifiable entities (checked by `C1_ActionablePatternFiltersModifiable`).
 
@@ -35,7 +35,7 @@ The 31 modifiable entities are the 16 medications and 15 care-process factors su
 
 All tasks use temperature 0.1 and Gemini models; the documents are described in [datasets.md](datasets.md).
 
-**Chunking.** A document is sent to the LLM in pieces (*chunks*). The *splitter* is the unit that is never cut: whole paragraphs (`PARAGRAPH`) or whole sentences (`SENTENCE`). The chunker packs consecutive units into a chunk as long as the chunk stays within *size* characters; the next chunk then starts by repeating the last units of the previous one, up to *overlap* characters, so that a fact stated across a chunk boundary appears complete in at least one chunk. Example: a drug label of about 10,000 characters, with size 4,000, overlap 300 and paragraph splitting, gives three or four chunks of at most 4,000 characters each, and each new chunk starts with the last paragraph(s) of the previous one when they total 300 characters or less. The repeated text is also why a few relations are extracted twice and later merged ([kg-construction.md](kg-construction.md)). Implementation: [`chunking.py`](../xaikg-pipeline/xaikg/llm/chunking.py).
+**Chunking.** A document is sent to the LLM in pieces (*chunks*). The *splitter* is the unit that is never cut: whole paragraphs (`PARAGRAPH`) or whole sentences (`SENTENCE`). The chunker packs consecutive units into a chunk as long as the chunk stays within *size* characters; the next chunk then starts by repeating the last units of the previous one, up to *overlap* characters, so that a fact stated across a chunk boundary appears complete in at least one chunk. Example: a drug label of about 10,000 characters, with size 4,000, overlap 300 and paragraph splitting, gives three or four chunks of at most 4,000 characters each, and each new chunk starts with the last paragraph(s) of the previous one when they total 300 characters or less. The repeated text is also why a few relations are extracted twice and later merged. Implementation: [`chunking.py`](../xaikg-pipeline/xaikg/llm/chunking.py).
 
 ## Validation Policy
 
@@ -75,8 +75,8 @@ T2a compiles each rule into one constraint of the generated validator ([transfor
 
 ## Decision Binding
 
-The predictor is a gradient-boosting classifier explained with SHAP (see [datasets.md](datasets.md#the-tabular-data-and-the-predictor)). Two decision classes, `HighReadmissionRisk` and `LowReadmissionRisk` (threshold 0.5), grant explanation types: the high-risk class grants all five, the low-risk class four (no counterfactual advice), which is why E5 counts 58 counterfactual explanations per audience, one per high-risk encounter. The 33 features are bound to 14 medications, 14 utilization, care-process or demographic factors, three diagnosis codes mapped to condition groups through ICD-9 ranges, and two laboratory levels.
+The predictor is a gradient-boosting classifier explained with SHAP . Two decision classes, `HighReadmissionRisk` and `LowReadmissionRisk` (threshold 0.5), grant explanation types: the high-risk class grants all five, the low-risk class four (no counterfactual advice), which is why E5 counts 58 counterfactual explanations per audience, one per high-risk encounter. The 33 features are bound to 14 medications, 14 utilization, care-process or demographic factors, three diagnosis codes mapped to condition groups through ICD-9 ranges, and two laboratory levels.
 
 ## Mutants (experiment E2)
 
-[`models/mutants/`](../models/mutants/) holds 22 copies of the five models, each with one injected design fault, generated by [`make_mutants.py`](../xaikg-pipeline/tools/make_mutants.py). See [E2](experiments.md#e2--fault-detection-by-mutation-analysis).
+[`models/mutants/`](../models/mutants/) holds 22 copies of the five models, each with one injected design fault, generated by [`make_mutants.py`](../xaikg-pipeline/tools/make_mutants.py). They are used in experiment [E2](experiments.md#e2--fault-detection-by-mutation-analysis).

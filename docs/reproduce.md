@@ -14,7 +14,7 @@ There are three levels, from simply inspecting the committed results to re-runni
 
 ## Level 1: inspect (nothing to install)
 
-All models, generated artifacts, datasets, intermediate models and results of the paper are committed. Start from the [README](../README.md); each experiment page in [experiments/](experiments.md) links to its result files.
+All models, generated artifacts, datasets, intermediate models and results of the paper are available in this repository. Start from the [README](../README.md); [experiments](experiments.md) lists the result files of each experiment.
 
 ## Level 2: re-run offline (no network, no LLM key)
 
@@ -25,7 +25,7 @@ make neo4j-up               # Neo4j on 127.0.0.1 only
 make reproduce              # jar, generate, extract (from the cache), validate, ddl-apply, load, train, e1, e2, e3, e4, coverage, e0
 ```
 
-Before re-running E4 and E5, move the committed explanation log aside (`mv results/explanations/explanations.jsonl results/explanations/paper-run.jsonl`): `make e4` appends a new run, and `make coverage` counts every logged explanation of the current service version, so the paper's run and the new one would be counted together. The new name is only an example: any name works, because E5 reads only `results/explanations/explanations.jsonl`.
+Before re-running E4 and E5, move the committed explanation log aside (`mv results/explanations/explanations.jsonl results/explanations/paper-run.jsonl`): `make e4` appends a new run, and `make coverage` counts every logged explanation of the current service version, so the paper's run and the new one would be counted together.
 
 
 What to expect:
@@ -49,4 +49,4 @@ Set `GEMINI_API_KEY` in `.env` and run `xaikg-pipeline/.venv/bin/xaikg extract -
 
 ## Changing the models (Phase 6)
 
-Edit a model in [`models/diabetes-readmission/`](../models/diabetes-readmission/) and re-run the targets listed in [framework.md](framework.md#phase-6-in-practice): a policy change only needs `make validate load`, a change to the contract or the bindings only `make generate`, and a schema change regenerates the prompts, so only the extraction tasks whose prompts changed call the LLM again.
+Edit a model in [`models/diabetes-readmission/`](../models/diabetes-readmission/) and re-run the targets: a policy change only needs `make validate load`, a change to the contract or the bindings only `make generate`, and a schema change regenerates the prompts, so only the extraction tasks whose prompts changed call the LLM again.

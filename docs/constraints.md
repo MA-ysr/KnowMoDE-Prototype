@@ -1,14 +1,12 @@
 # Constraint layer (Phase 2)
 
-*Paper: Section 4.3 (Phase 2: Verifying the Models). Code: [`xaikg-mde/constraints/xaikg.evl`](../xaikg-mde/constraints/xaikg.evl).*
-
 Before any artifact is generated, the constraint layer evaluates the five case-study models **together**, as one resource set, with invariants written in the style of OCL in the Epsilon Validation Language (EVL). The layer has **113 invariants** grouped into five families. **100 are blocking** (`constraint`): if one is violated, the command reports it and exits with code 2, and nothing is generated until the models are fixed. **13 are critiques** (`critique`): they only warn the modeler about questionable choices, such as a high sampling temperature, without stopping generation.
 
 ```bash
 make check                      # or: java -jar xaikg-mde/target/xaikg-mde.jar check --mde-home xaikg-mde -m models/diabetes-readmission
 ```
 
-The command prints one JSON report listing every violation (the invariant, its message and whether it is a critique). `make generate` runs the same check first and refuses to run any transformation if a blocking invariant fails. Two kinds of fault are caught even earlier, when the models are loaded: for example a reference to an element that does not exist  makes loading fail (see E2 in [experiments.md](experiments.md#e2--fault-detection-by-mutation-analysis)).
+The command prints one JSON report listing every violation (the invariant, its message and whether it is a critique). `make generate` runs the same check first and refuses to run any transformation if a blocking invariant fails. Unresolved cross-model references are caught even earlier, when the models are loaded.
 
 ## The five families
 
@@ -29,7 +27,7 @@ Kind: **B** = blocking constraint, *c* = critique.
 
 In the message, `…` stands for a value inserted from the model element.
 
-### C1 — Structural well-formedness
+### C1: Structural well-formedness
 
 | # | Invariant | Kind | Context | Message when violated | Line |
 |---|---|---|---|---|---|
@@ -63,7 +61,7 @@ In the message, `…` stands for a value inserted from the model element.
 | 28 | `C1_ActionablePatternFiltersModifiable` | **B** | `Schema!KGQueryPattern` | Query pattern ‘…’ is declared actionableOnly but its Cypher template never references the modifiability property _modifiable | 184 |
 | 29 | `C1_PatternUsedByAnExplanation` | *c* | `Schema!KGQueryPattern` | Query pattern ‘…’ is used neither by an explanation type nor as the trace pattern | 192 |
 
-### C2 — Schema–prompt consistency
+### C2: Schema–prompt consistency
 
 | # | Invariant | Kind | Context | Message when violated | Line |
 |---|---|---|---|---|---|
@@ -86,7 +84,7 @@ In the message, `…` stands for a value inserted from the model element.
 | 17 | `C2_FewShotExamplesComplete` | **B** | `Pipeline!PromptTemplate` | Prompt template of task ‘…’ has an incomplete few-shot example | 297 |
 | 18 | `C2_FewShotOutputsMentionOnlyTargetedTypes` | **B** | `Pipeline!PromptTemplate` | A few-shot example of task ‘…’ uses an entity or relation type the prompt does not target | 302 |
 
-### C3 — Validation soundness
+### C3: Validation soundness
 
 | # | Invariant | Kind | Context | Message when violated | Line |
 |---|---|---|---|---|---|
@@ -94,9 +92,9 @@ In the message, `…` stands for a value inserted from the model element.
 | 2 | `C3_PolicyHasTargetSchema` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ does not reference a target KG schema | 322 |
 | 3 | `C3_PolicyHasRules` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ declares no rule | 327 |
 | 4 | `C3_UniqueRuleNames` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ has duplicate rule names | 332 |
-| 5 | `C3_HasSchemaConformanceRules` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ needs a SCHEMA_CONFORMANCE rule for entities and one for relations (R3) | 337 |
-| 6 | `C3_HasHallucinationOrConfidenceRule` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ has no hallucination or confidence rule (R4) | 343 |
-| 7 | `C3_HasProvenanceRule` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ has no blocking PROVENANCE_CHECK rule (R7: provenance by construction) | 348 |
+| 5 | `C3_HasSchemaConformanceRules` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ needs a SCHEMA_CONFORMANCE rule for entities and one for relations | 337 |
+| 6 | `C3_HasHallucinationOrConfidenceRule` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ has no hallucination or confidence rule | 343 |
+| 7 | `C3_HasProvenanceRule` | **B** | `Policy!ValidationConfig` | Validation policy ‘…’ has no blocking PROVENANCE_CHECK rule | 348 |
 | 8 | `C3_RuleHasName` | **B** | `Policy!ValidationRule` | Validation rule name ‘…’ must be lower_snake_case (it becomes a constraint name) | 356 |
 | 9 | `C3_RuleHasExpression` | **B** | `Policy!ValidationRule` | Validation rule ‘…’ has no expression | 361 |
 | 10 | `C3_RuleExpressionIsNotTrivial` | **B** | `Policy!ValidationRule` | Validation rule ‘…’ has a trivial expression | 366 |
@@ -110,7 +108,7 @@ In the message, `…` stands for a value inserted from the model element.
 | 18 | `C3_LowTemperatureForExtraction` | *c* | `Pipeline!ExtractionTask` | Task ‘…’: temperature … is high for extraction (<= 0.3 recommended) | 414 |
 | 19 | `C3_MaxTokensPositive` | **B** | `Pipeline!ExtractionTask` | Task ‘…’: maxTokens must be positive | 419 |
 
-### C4 — Audience coverage
+### C4: Audience coverage
 
 | # | Invariant | Kind | Context | Message when violated | Line |
 |---|---|---|---|---|---|
@@ -122,7 +120,7 @@ In the message, `…` stands for a value inserted from the model element.
 | 6 | `C4_UniqueTemplateNames` | **B** | `Explainability!ExplainabilityConfig` | Explainability config ‘…’ has duplicate template names | 450 |
 | 7 | `C4_RetrievalLimitCoversBudgets` | *c* | `Explainability!ExplainabilityConfig` | Explainability config ‘…’: retrievalLimit … is smaller than the presentation budget of an audience; budgets cannot be filled and omitted facts are under-counted | 455 |
 | 8 | `C4_AudienceHasRole` | **B** | `Explainability!Audience` | Audience role ‘…’ must be lower_snake_case (used in endpoint paths) | 463 |
-| 9 | `C4_AudienceCovered` | **B** | `Explainability!Audience` | Audience ‘…’ is served by no explanation type (R6) | 468 |
+| 9 | `C4_AudienceCovered` | **B** | `Explainability!Audience` | Audience ‘…’ is served by no explanation type | 468 |
 | 10 | `C4_LowAudienceGetsAccessibleExplanation` | **B** | `Explainability!Audience` | Low-proficiency audience ‘…’ gets no contrastive, example-based or counterfactual explanation (C4) | 473 |
 | 11 | `C4_LowAudienceNoFeatureAttribution` | **B** | `Explainability!Audience` | Low-proficiency audience ‘…’ must not receive feature-attribution explanations (C4) | 481 |
 | 12 | `C4_AudienceHasBudget` | **B** | `Explainability!Audience` | Audience ‘…’ has no valid presentation budget (maxFacts must be > 0) | 487 |
@@ -138,10 +136,10 @@ In the message, `…` stands for a value inserted from the model element.
 | 22 | `C4_TemplateHasBody` | **B** | `Explainability!ExplanationTemplate` | Explanation template ‘…’ is empty | 548 |
 | 23 | `C4_TemplateRendersFacts` | **B** | `Explainability!ExplanationTemplate` | Explanation template ‘…’ never renders the KG facts (variable 'facts') | 553 |
 | 24 | `C4_TemplateUsed` | *c* | `Explainability!ExplanationTemplate` | Explanation template ‘…’ is not used by any explanation type | 558 |
-| 25 | `C4_DecisionClassHasExplanationTypes` | **B** | `Decision!DecisionClass` | Decision class ‘…’ is bound to no explanation type (R5: explicit explanation contract) | 582 |
-| 26 | `C4_DecisionClassCoversEveryAudience` | **B** | `Decision!DecisionClass` | Decision class ‘…’ leaves at least one audience without an explanation (R6) | 587 |
+| 25 | `C4_DecisionClassHasExplanationTypes` | **B** | `Decision!DecisionClass` | Decision class ‘…’ is bound to no explanation type | 582 |
+| 26 | `C4_DecisionClassCoversEveryAudience` | **B** | `Decision!DecisionClass` | Decision class ‘…’ leaves at least one audience without an explanation | 587 |
 
-### C5 — Cross-model traceability
+### C5: Cross-model traceability
 
 | # | Invariant | Kind | Context | Message when violated | Line |
 |---|---|---|---|---|---|
@@ -157,7 +155,7 @@ In the message, `…` stands for a value inserted from the model element.
 | 10 | `C5_HasAiModel` | **B** | `Decision!DecisionBindingConfig` | Decision bindings ‘…’ declare no AI model | 639 |
 | 11 | `C5_HasDecisionClass` | **B** | `Decision!DecisionBindingConfig` | Decision bindings ‘…’ declare no decision class | 644 |
 | 12 | `C5_UniqueFeatureBindings` | **B** | `Decision!DecisionBindingConfig` | Decision bindings ‘…’ bind the same feature twice | 649 |
-| 13 | `C5_AllConfigsShareOneSchema` | **B** | `Decision!DecisionBindingConfig` | Not all M1 models reference the same KG schema (R1 single source of truth) | 654 |
+| 13 | `C5_AllConfigsShareOneSchema` | **B** | `Decision!DecisionBindingConfig` | Not all M1 models reference the same KG schema | 654 |
 | 14 | `C5_DecisionTypesDeclaredInExplainability` | **B** | `Decision!DecisionBindingConfig` | Decision bindings ‘…’ reference an explanation type outside the linked explainability configuration | 663 |
 | 15 | `C5_ModelHasFeatures` | **B** | `Decision!AIModelSpec` | AI model ‘…’ lists no feature; nothing can be grounded | 671 |
 | 16 | `C5_ModelHasVersion` | **B** | `Decision!AIModelSpec` | AI model ‘…’ has no version (needed in every provenance record) | 676 |
@@ -166,9 +164,3 @@ In the message, `…` stands for a value inserted from the model element.
 | 19 | `C5_BindingFeatureExistsInModel` | **B** | `Decision!FeatureBinding` | Feature binding ‘…’ refers to a feature the AI model does not use | 697 |
 | 20 | `C5_BindingConceptDeclaredInSchema` | **B** | `Decision!FeatureBinding` | Feature binding ‘…’ points to a concept that is not in the target KG schema | 702 |
 | 21 | `C5_BindingHasResolution` | **B** | `Decision!FeatureBinding` | Feature binding ‘…’ has no resolution (entityName for ENTITY/RISK_FACTOR, JSON valueMap for LAB_LEVEL/ICD9_GROUP) | 708 |
-
-## Relation to the paper
-
-- Section 4.3 of the paper states that most invariants are blocking and the others are critiques; the tables above give the exact split (100 blocking, 13 critiques). The paper relates the families to the problems they address: C2 to schema–prompt drift (P1), and C1, C4 and C5 to implicit explanation contracts (P3).
-- Invariant **C2_FewShotOutputsMentionOnlyTargetedTypes** is the one that caught the deliberately incomplete renaming in **E1** (schema–prompt drift, problem P1).
-- **E2** injects 22 faults, three to five per family, and checks that each is caught by the intended invariant ([experiments.md](experiments.md#e2--fault-detection-by-mutation-analysis)).

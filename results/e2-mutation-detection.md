@@ -15,9 +15,9 @@
 | M09_overlap_not_smaller_than_chunk | C3 | literature task overlap equals chunk size | yes | C3_OverlapSmallerThanChunk |
 | M10_rule_without_expression | C3 | entity_confidence_above_threshold loses its expression | yes | C3_RuleHasExpression |
 | M11_no_provenance_rule | C3 | the provenance rule is downgraded to WARNING (R7 no longer guaranteed) | yes | C3_HasProvenanceRule |
-| M12_uncovered_audience | C4 | auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there | yes | C4_AudienceCovered |
+| M12_uncovered_audience | C4 | auditor removed from GuidelineCompliance and AttributionReport, its only two explanation types | yes | C4_AudienceCovered |
 | M13_low_audience_gets_feature_attribution | C4 | patient (LOW) is added to the FEATURE_ATTRIBUTION type | yes | C4_LowAudienceNoFeatureAttribution |
-| M14_low_audience_only_technical | C4 | patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there | yes | C4_LowAudienceGetsAccessibleExplanation |
+| M14_low_audience_only_technical | C4 | patient removed from PlainLanguageContrast and ModifiableFactors, so it receives no plain-language explanation | yes | C4_LowAudienceGetsAccessibleExplanation |
 | M15_decision_class_misses_audience | C4 | LowReadmissionRisk no longer offers anything to the patient | yes | C4_DecisionClassCoversEveryAudience |
 | M16_explanation_uses_undeclared_pattern | C5 | GuidelineCompliance references a query pattern that is not in the schema (dangling) | yes | unresolved reference (load time) |
 | M17_binding_feature_not_in_model | C5 | a feature binding refers to a feature the model does not have | yes | C5_BindingFeatureExistsInModel |

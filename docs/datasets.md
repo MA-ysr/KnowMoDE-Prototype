@@ -1,8 +1,8 @@
 # Datasets: sources, acquisition and licences
 
-All data used in the paper is **committed** in [`datasets/`](../datasets/), so every experiment can be re-run without network access. The data were collected with the acquisition scripts of the Python project ([`xaikg-pipeline/xaikg/corpus/`](../xaikg-pipeline/xaikg/corpus/)), configured by [`datasets/corpus/sources.json`](../datasets/corpus/sources.json) and by the case-study models. Every file is recorded in a manifest ([`datasets/manifests/`](../datasets/manifests/)) with its source URI, licence and SHA-256 checksum. Document acquisition lies outside the framework (paper, Section 4.5): the corpus was assembled by the authors with these scripts.
+All data used in the paper is available in [`datasets/`](../datasets/), so every experiment can be re-run without network access. The data were collected with the acquisition scripts of the Python project ([`xaikg-pipeline/xaikg/corpus/`](../xaikg-pipeline/xaikg/corpus/)), configured by [`datasets/corpus/sources.json`](../datasets/corpus/sources.json) and by the case-study models. Every file is recorded in a manifest ([`datasets/manifests/`](../datasets/manifests/)) with its source URI, licence and SHA-256 checksum. Document acquisition lies outside the framework (paper, Section 4.5): the corpus was assembled by the authors with these scripts.
 
-> **Licences.** The datasets are third-party data redistributed for research reproducibility under their own licences and terms of use (table below). They are **not** covered by the Apache License of the code (see [`NOTICE`](../NOTICE)).
+**Licences.** The datasets are third-party data redistributed for research reproducibility under their own licences and terms of use (table below). They are **not** covered by the Apache License of the code (see [`NOTICE`](../NOTICE)).
 
 ## Overview
 

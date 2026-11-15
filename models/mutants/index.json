@@ -81,7 +81,7 @@
     "family": "C4",
     "expectedConstraint": "C4_AudienceCovered",
     "mutatedFile": "explainability.xmi",
-    "description": "auditor is removed from GuidelineCompliance; AttributionReport still serves auditor, so ALSO remove it there"
+    "description": "auditor removed from GuidelineCompliance and AttributionReport, its only two explanation types"
   },
   {
     "id": "M13_low_audience_gets_feature_attribution",
@@ -95,7 +95,7 @@
     "family": "C4",
     "expectedConstraint": "C4_LowAudienceGetsAccessibleExplanation",
     "mutatedFile": "explainability.xmi",
-    "description": "patient loses the contrastive type; keeps only ModifiableFactors... so ALSO remove patient there"
+    "description": "patient removed from PlainLanguageContrast and ModifiableFactors, so it receives no plain-language explanation"
   },
   {
     "id": "M15_decision_class_misses_audience",

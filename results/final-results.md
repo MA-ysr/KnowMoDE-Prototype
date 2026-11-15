@@ -1,11 +1,6 @@
 # Final results
 
-All figures are produced by the scripted experiments of this artefact from the five M1 models of the
-diabetes readmission use case, the 438-document corpus, the LLM response cache and the loaded knowledge
-graph. Detailed outputs: `e0-context.md`, `e2-mutation-detection.md`, `e4-e6-explanations.md`,
-`e5-substantive-coverage.md` (and their `.json` versions), `explanations/explanations.jsonl` and
-`../generated/validated/rejection-report.json`. The design-time check evaluates 113 invariants of
-C1-C5 on the five models: 0 errors, 0 critiques.
+All figures are produced by the scripted experiments of this artifact from the five M1 models of the diabetes readmission use case, the 438-document corpus, the LLM response cache and the loaded knowledge graph. Detailed outputs: `e0-context.md`, `e2-mutation-detection.md`, `e4-e6-explanations.md`, `e5-substantive-coverage.md` (and their `.json` versions), `explanations/explanations.jsonl` and `../generated/validated/rejection-report.json`. The design-time check evaluates 113 invariants of C1-C5 on the five models: 0 errors, 0 critiques.
 
 ## E0 - Corpus, extraction, validation and knowledge graph
 
@@ -33,14 +28,11 @@ Rejections by first failing validation rule:
 | relation_confidence_above_threshold | 2 |
 | Total | 300 |
 
-Graph nodes by label: Condition 564, RiskFactor 330, ClinicalOutcome 185, Drug 136, Recommendation 71,
-LabTest 36, DrugClass 24, SourceDocument 369, ExtractionRun 5.
+Graph nodes by label: Condition 564, RiskFactor 330, ClinicalOutcome 185, Drug 136, Recommendation 71, LabTest 36, DrugClass 24, SourceDocument 369, ExtractionRun 5.
 
 ## E2 - Design-time fault detection
 
-22 mutants of the valid models, each injecting one modelling fault: 22 blocked before any
-transformation, 22 by the intended invariant (2 of them as dangling cross-model references at load
-time). Mean check time 1.6 s. The two invariants of the counterfactual contract each have a mutant:
+22 mutants of the valid models, each injecting one modelling fault: 22 blocked before any transformation, 22 by the intended invariant (2 of them as unresolved cross-model references at load time). Mean check time 1.6 s. The two invariants of the counterfactual contract each have a mutant:
 
 | Mutant | Fault | Caught by |
 |---|---|---|
@@ -49,8 +41,7 @@ time). Mean check time 1.6 s. The two invariants of the counterfactual contract 
 
 ## E4 - Traceability
 
-200 held-out encounters (58 predicted at high risk, 142 at low risk), every explanation type the
-contract grants to the predicted class, for every audience of the type.
+200 held-out encounters (58 predicted at high risk, 142 at low risk), every explanation type the contract grants to the predicted class, for every audience of the type.
 
 | Measure | Value |
 |---|---|
@@ -96,11 +87,7 @@ contract grants to the predicted class, for every audience of the type.
 | `ModifiableFactors` explanations containing a fact about a non-modifiable entity | 0 (14 advised entities checked against the graph) |
 | Factor rows of attribution reports shown as "none" while facts exist (clinician and auditor reports of the same 200 decisions paired) | 0 of 1,764 rows |
 
-The counterfactual advice is ranked by its relation to the encounter's active entities (the entity is
-active, it treats or interacts with an active entity, or its evidence studies the active entities),
-and recommendations follow the encounter's conditions. The graph holds 10 modifiable protective factors
-linked to the outcome, so the 10-fact clinician budget contains most of them for every encounter; what
-varies between encounters is their order, the reasons given, and the guideline recommendations.
+The counterfactual advice is ranked by its relation to the encounter's active entities (the entity is active, it treats or interacts with an active entity, or its evidence studies the active entities), and recommendations follow the encounter's conditions. The graph holds 10 modifiable protective factors linked to the outcome, so the 10-fact clinician budget contains most of them for every encounter; what varies between encounters is their order, the reasons given, and the guideline recommendations.
 
 ## E6 - Grounding and presentation budgets
 
@@ -114,8 +101,7 @@ varies between encounters is their order, the reasons given, and the guideline r
 
 ## Example: every explanation type for one high-risk encounter
 
-Encounter predicted at high risk of readmission within 30 days (p = 0.697); active conditions:
-musculoskeletal disease, circulatory disease, diabetes. Verbatim from the explanation log.
+Encounter predicted at high risk of readmission within 30 days (p = 0.697); active conditions: musculoskeletal disease, circulatory disease, diabetes. Verbatim from the explanation log.
 
 ### PlainLanguageContrast, patient (explanation 29c91de8-da62-4125-9b3a-84e91d16c4ac)
 
